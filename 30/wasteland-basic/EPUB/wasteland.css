@@ -1,8 +1,11 @@
+@charset "UTF-8";
+
 body {
     margin-left : 6em;
     margin-right : 16em;
     color:black;
     font-family: arial, helvetica, sans-serif;
+    background-color: rgb(250,250,250);
 }
 
 h2 {
@@ -13,7 +16,7 @@ h3 {
     margin-top: 3em;
 }
 
-span.ln { 
+div.ln { 
     display: block;
     margin-bottom: 0.5em;
 }
