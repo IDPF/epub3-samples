@@ -13,3 +13,7 @@ span.lnum {
 a.noteref {
     color: rgb(120,120,120);
 }
+
+section#rearnotes a {
+    color: rgb(255,250,205);
+}
