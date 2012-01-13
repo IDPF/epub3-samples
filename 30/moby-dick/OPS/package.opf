@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <package xmlns="http://www.idpf.org/2007/opf" version="3.0" xml:lang="en" unique-identifier="pub-id">
-<!--I'm assuming prefixes for marc, onix, and xsd are predefined-->
+
 
 <metadata xmlns:dc="http://purl.org/dc/elements/1.1/">
 
@@ -11,15 +11,15 @@
 <meta refines="#creator" property="file-as">MELVILLE, HERMAN</meta>
 <meta refines="#creator" property="role" scheme="marc:relators">aut</meta>
 
-<dc:identifier id="pub-id">urn:isbn:9780316000000</dc:identifier>
-<meta refines="#pub-id" property="identifier-type" scheme="onix:codelist5">15</meta>
+<dc:identifier id="pub-id">code.google.com.epub-samples.moby-dick-basic</dc:identifier>
+
 
 
 
 
 <dc:language>en-US</dc:language>
 
-<meta property="dcterms:modified">2012-01-13T12:08:00Z</meta>
+<meta property="dcterms:modified">2012-01-13T12:28:00Z</meta>
 
 <dc:publisher>Harper &amp; Brothers, Publishers</dc:publisher>
 
