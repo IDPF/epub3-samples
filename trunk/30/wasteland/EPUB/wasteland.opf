@@ -6,9 +6,12 @@
         <dc:creator>T.S. Eliot</dc:creator>
         <dc:language>en-US</dc:language>
         <dc:date>2011-09-01</dc:date>
-        <meta property="dcterms:modified">2012-01-12T13:44:00Z</meta>          
-        <dc:rights>Attribution-ShareAlike 3.0 Unported (CC BY-SA 3.0)</dc:rights>
-        <link rel="cc:license" href="http://creativecommons.org/licenses/by-sa/3.0/"/>        
+        <meta property="dcterms:modified">2012-01-13T13:44:00Z</meta>
+        <!-- rights expressions for the work as a whole -->
+        <dc:rights>This work is shared with the public using the Attribution-ShareAlike 3.0 Unported (CC BY-SA 3.0) license.</dc:rights>        
+        <link rel="cc:license" href="http://creativecommons.org/licenses/by-sa/3.0/"/>
+        <meta property="cc:attributionURL">http://code.google.com/p/epub-samples/</meta>
+        <!-- rights expression for the cover image -->       
         <link rel="cc:license" refines="#cover" href="http://creativecommons.org/licenses/by-sa/3.0/" />
         <link rel="cc:attributionURL" refines="#cover" href="http://en.wikipedia.org/wiki/Simon_Fieldhouse" />        
         <!-- cover meta element included for 2.0 reading system compatibility: -->

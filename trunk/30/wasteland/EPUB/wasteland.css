@@ -33,3 +33,10 @@ a.noteref {
     margin-left: 0.5em;
     margin-right: 0.5em;
 }
+
+section#rearnotes a {
+    color:black;
+    text-decoration: none;
+    border-bottom : 1px dotted gray;
+    margin-right: 0.8em;
+}
