@@ -1,54 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<package xmlns="http://www.idpf.org/2007/opf" version="3.0" xml:lang="en" unique-identifier="pub-id">
-
-
-<metadata xmlns:dc="http://purl.org/dc/elements/1.1/">
-
-<dc:title id="title">Moby-Dick</dc:title>
-<meta refines="#title" property="title-type">main</meta>
-
-<dc:creator id="creator">Herman Melville</dc:creator>
-<meta refines="#creator" property="file-as">MELVILLE, HERMAN</meta>
-<meta refines="#creator" property="role" scheme="marc:relators">aut</meta>
-
-<dc:identifier id="pub-id">code.google.com.epub-samples.moby-dick-basic</dc:identifier>
-
-
-
-
-
-<dc:language>en-US</dc:language>
-
-<meta property="dcterms:modified">2012-01-13T12:28:00Z</meta>
-
-<dc:publisher>Harper &amp; Brothers, Publishers</dc:publisher>
-
-<dc:contributor id="contrib1">Dave Cramer</dc:contributor>
-<meta refines="#contrib1" property="role" scheme="marc:relators">mrk</meta>
-
-
+<package xmlns="http://www.idpf.org/2007/opf" version="3.0" xml:lang="en" unique-identifier="pub-id" prefix="cc: http://creativecommons.org/ns#">
+  <metadata xmlns:dc="http://purl.org/dc/elements/1.1/">
+    <dc:title id="title">Moby-Dick</dc:title>
+    <meta refines="#title" property="title-type">main</meta>
+    <dc:creator id="creator">Herman Melville</dc:creator>
+    <meta refines="#creator" property="file-as">MELVILLE, HERMAN</meta>
+    <meta refines="#creator" property="role" scheme="marc:relators">aut</meta>
+    <dc:identifier id="pub-id">code.google.com.epub-samples.moby-dick-basic</dc:identifier>
+    <dc:language>en-US</dc:language>
+    <meta property="dcterms:modified">2012-01-18T12:47:00Z</meta>
+    <dc:publisher>Harper &amp; Brothers, Publishers</dc:publisher>
+    <dc:contributor id="contrib1">Dave Cramer</dc:contributor>
+    <meta refines="#contrib1" property="role" scheme="marc:relators">mrk</meta>
+    <dc:rights>This work is shared with the public using the Attribution-ShareAlike 3.0 Unported (CC BY-SA 3.0) license.</dc:rights>        
+    <link rel="cc:license" href="http://creativecommons.org/licenses/by-sa/3.0/"/>
+    <meta property="cc:attributionURL">http://code.google.com/p/epub-samples/</meta>
   </metadata>
   <manifest>
-    <item id="font.stix.regular" href="fonts/STIXGeneral.otf" media-type="application/vnd.ms-opentype"/>
-    <item id="font.stix.italic" href="fonts/STIXGeneralItalic.otf" media-type="application/vnd.ms-opentype"/>
-    <item id="font.stix.bold" href="fonts/STIXGeneralBol.otf" media-type="application/vnd.ms-opentype"/>
-    <item id="font.stix.bold.italic" href="fonts/STIXGeneralBolIta.otf" media-type="application/vnd.ms-opentype"/>
+    <item id="font.stix.regular" href="fonts/STIXGeneral.otf"
+      media-type="application/vnd.ms-opentype"/>
+    <item id="font.stix.italic" href="fonts/STIXGeneralItalic.otf"
+      media-type="application/vnd.ms-opentype"/>
+    <item id="font.stix.bold" href="fonts/STIXGeneralBol.otf"
+      media-type="application/vnd.ms-opentype"/>
+    <item id="font.stix.bold.italic" href="fonts/STIXGeneralBolIta.otf"
+      media-type="application/vnd.ms-opentype"/>
     <item id="toc" properties="nav" href="toc.xhtml" media-type="application/xhtml+xml"/>
     <item id="copyright" href="copyright.xhtml" media-type="application/xhtml+xml"/>
     <item id="titlepage" href="titlepage.xhtml" media-type="application/xhtml+xml"/>
     <item id="cover" href="cover.xhtml" media-type="application/xhtml+xml"/>
-    <item id="cover-image" properties="cover-image" href="images/9780316000000.jpg" media-type="image/jpeg"/>
+    <item id="cover-image" properties="cover-image" href="images/9780316000000.jpg"
+      media-type="image/jpeg"/>
     <item id="style" href="css/stylesheet.css" media-type="text/css"/>
-    <item id="aMoby-Dick_FE_title_page" href="images/Moby-Dick_FE_title_page.jpg" media-type="image/jpeg"/>
+    <item id="aMoby-Dick_FE_title_page" href="images/Moby-Dick_FE_title_page.jpg"
+      media-type="image/jpeg"/>
     <item id="xpreface_001" href="preface_001.xhtml" media-type="application/xhtml+xml"/>
     <item id="xintroduction_001" href="introduction_001.xhtml" media-type="application/xhtml+xml"/>
     <item id="xepigraph_001" href="epigraph_001.xhtml" media-type="application/xhtml+xml"/>
     <item id="xchapter_001" href="chapter_001.xhtml" media-type="application/xhtml+xml"/>
-
     <item id="xchapter_002" href="chapter_002.xhtml" media-type="application/xhtml+xml"/>
-
     <item id="xchapter_003" href="chapter_003.xhtml" media-type="application/xhtml+xml"/>
-
     <item id="xchapter_004" href="chapter_004.xhtml" media-type="application/xhtml+xml"/>
     <item id="xchapter_005" href="chapter_005.xhtml" media-type="application/xhtml+xml"/>
     <item id="xchapter_006" href="chapter_006.xhtml" media-type="application/xhtml+xml"/>
@@ -184,15 +175,15 @@
     <item id="xchapter_136" href="chapter_136.xhtml" media-type="application/xhtml+xml"/>
     <item id="brief-toc" href="toc-short.xhtml" media-type="application/xhtml+xml"/>
 
-<!-- 
+    <!-- 
     <item id="ncx" href="toc.ncx" media-type="application/x-dtbncx+xml"/>
  -->
 
-</manifest>
+  </manifest>
   <spine>
     <itemref idref="cover" linear="no"/>
     <itemref idref="titlepage" linear="yes"/>
-<itemref idref="brief-toc" linear="yes"/>
+    <itemref idref="brief-toc" linear="yes"/>
     <itemref linear="yes" idref="xpreface_001"/>
     <itemref linear="yes" idref="xintroduction_001"/>
     <itemref linear="yes" idref="xepigraph_001"/>
@@ -333,6 +324,6 @@
     <itemref linear="yes" idref="xchapter_135"/>
     <itemref linear="yes" idref="xchapter_136"/>
     <itemref idref="copyright" linear="yes"/>
-<itemref idref="toc" linear="no"/>
+    <itemref idref="toc" linear="no"/>
   </spine>
 </package>
