@@ -28,10 +28,10 @@
 
 
     <!--MEDIA OVERLAY METADATA-->
-    <meta property="media:duration" refines="#chapter_001_overlay">0:14:43</meta>
-    <meta property="media:duration" refines="#chapter_002_overlay">0:09:03</meta>
-    <meta property="media:duration">0:23:46</meta>
-    <meta property="media:narrator">Stuart Wills</meta>
+  <meta property="media:duration" refines="#chapter_001_overlay">0:14:20.500</meta>
+  <meta property="media:duration" refines="#chapter_002_overlay">0:09:03.000</meta>
+  <meta property="media:duration">0:23:23.500</meta>
+  <meta property="media:narrator">Stuart Wills</meta>
 
     <meta property="media:active-class">-epub-media-overlay-active</meta>
   </metadata>
