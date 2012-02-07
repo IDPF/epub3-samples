@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+	<head>
+		<link type="text/css" href="reset.css" rel="stylesheet"></link>
+		<link type="text/css" href="figure-gallery.css" rel="stylesheet"></link>
+		<script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+		<script type="text/javascript" src="figure-gallery.js"></script>
+		
+		<script><![CDATA[
+			$(document).ready(function() {
+				var datasource = getParameterByName('src');
+				var gallery = Object.create(FigureGallery);
+				gallery.init(datasource);
+			});
+			function getParameterByName(name) {
+ 		   		name = String(name).replace(/[.*+?|()[\]{}\\]/g, '\\$&');
+ 			    var match = RegExp('[?&]' + name + '=([^&]*)').exec(window.location.search);
+			    return match ?
+			        decodeURIComponent(match[1].replace(/\+/g, ' '))
+			        : null;
+			}
+		]]>
+		</script>
+	</head>
+	<body>
+		<div id="figure-gallery-impl-target"></div>
+	</body>
+</html>
