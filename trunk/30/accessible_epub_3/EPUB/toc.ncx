@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<ncx xmlns="http://www.daisy.org/z3986/2005/ncx/" version="2005-1">
+	<head>
+		<meta name="cover" content="cover"/>
+		<meta name="dtb:uid" content="urn:isbn:9781449328030"/>
+	</head>
+	<docTitle>
+		<text>Accessible EPUB 3</text>
+	</docTitle>
+	<navMap>
+		<navPoint id="id2442754" playOrder="1">
+			<navLabel>
+				<text>Accessible EPUB 3</text>
+			</navLabel>
+			<content src="index.xhtml"/>
+			<navPoint id="id2632344" playOrder="2">
+				<navLabel>
+					<text>Preface</text>
+				</navLabel>
+				<content src="pr01.xhtml"/>
+				<navPoint id="id2630251" playOrder="3">
+					<navLabel>
+						<text>Conventions Used in This Book</text>
+					</navLabel>
+					<content src="pr01.xhtml#I_sect1_d1e137"/>
+				</navPoint>
+				<navPoint id="id2604743" playOrder="4">
+					<navLabel>
+						<text>Using Code Examples</text>
+					</navLabel>
+					<content src="pr01s02.xhtml"/>
+				</navPoint>
+				<navPoint id="id2629773" playOrder="5">
+					<navLabel>
+						<text>Safari® Books Online</text>
+					</navLabel>
+					<content src="pr01s03.xhtml"/>
+				</navPoint>
+				<navPoint id="id2620395" playOrder="6">
+					<navLabel>
+						<text>How to Contact Us</text>
+					</navLabel>
+					<content src="pr01s04.xhtml"/>
+				</navPoint>
+				<navPoint id="id2638681" playOrder="7">
+					<navLabel>
+						<text>Acknowledgments</text>
+					</navLabel>
+					<content src="pr01s05.xhtml"/>
+				</navPoint>
+			</navPoint>
+			<navPoint id="id2611884" playOrder="8">
+				<navLabel>
+					<text>Introduction</text>
+				</navLabel>
+				<content src="ch01.xhtml"/>
+				<navPoint id="id2621076" playOrder="9">
+					<navLabel>
+						<text>The Digital Famine</text>
+					</navLabel>
+					<content src="ch01.xhtml#_the_digital_famine"/>
+				</navPoint>
+				<navPoint id="id2627310" playOrder="10">
+					<navLabel>
+						<text>Accessibility and Usability</text>
+					</navLabel>
+					<content src="ch01s02.xhtml"/>
+				</navPoint>
+			</navPoint>
+			<navPoint id="id2635343" playOrder="11">
+				<navLabel>
+					<text>Building a Better EPUB: Fundamental Accessibility</text>
+				</navLabel>
+				<content src="ch02.xhtml"/>
+				<navPoint id="id2614856" playOrder="12">
+					<navLabel>
+						<text>A Solid Foundation: Structure and Semantics</text>
+					</navLabel>
+					<content src="ch02.xhtml#_a_solid_foundation_structure_and_semantics"/>
+					<navPoint id="id2617403" playOrder="13">
+						<navLabel>
+							<text>Data Integrity</text>
+						</navLabel>
+						<content src="ch02.xhtml#_data_integrity"/>
+					</navPoint>
+					<navPoint id="id2620262" playOrder="14">
+						<navLabel>
+							<text>Separation of Style</text>
+						</navLabel>
+						<content src="ch02.xhtml#_separation_of_style"/>
+					</navPoint>
+					<navPoint id="id2627159" playOrder="15">
+						<navLabel>
+							<text>Semantic Inflection</text>
+						</navLabel>
+						<content src="ch02.xhtml#_semantic_inflection"/>
+					</navPoint>
+					<navPoint id="id2622666" playOrder="16">
+						<navLabel>
+							<text>Language</text>
+						</navLabel>
+						<content src="ch02.xhtml#_language"/>
+					</navPoint>
+					<navPoint id="id2617190" playOrder="17">
+						<navLabel>
+							<text>Logical Reading Order</text>
+						</navLabel>
+						<content src="ch02.xhtml#_logical_reading_order"/>
+					</navPoint>
+					<navPoint id="id2618999" playOrder="18">
+						<navLabel>
+							<text>Sections and Headings</text>
+						</navLabel>
+						<content src="ch02.xhtml#_sections_and_headings"/>
+					</navPoint>
+					<navPoint id="id2625100" playOrder="19">
+						<navLabel>
+							<text>Context Changes</text>
+						</navLabel>
+						<content src="ch02.xhtml#_context_changes"/>
+					</navPoint>
+					<navPoint id="id2629336" playOrder="20">
+						<navLabel>
+							<text>Lists</text>
+						</navLabel>
+						<content src="ch02.xhtml#_lists"/>
+					</navPoint>
+					<navPoint id="id2622793" playOrder="21">
+						<navLabel>
+							<text>Tables</text>
+						</navLabel>
+						<content src="ch02.xhtml#_tables"/>
+					</navPoint>
+					<navPoint id="id2635069" playOrder="22">
+						<navLabel>
+							<text>Figures</text>
+						</navLabel>
+						<content src="ch02.xhtml#_figures"/>
+					</navPoint>
+					<navPoint id="id2617496" playOrder="23">
+						<navLabel>
+							<text>Images</text>
+						</navLabel>
+						<content src="ch02.xhtml#_images"/>
+					</navPoint>
+					<navPoint id="id2628295" playOrder="24">
+						<navLabel>
+							<text>SVG</text>
+						</navLabel>
+						<content src="ch02.xhtml#_svg"/>
+					</navPoint>
+					<navPoint id="id2628217" playOrder="25">
+						<navLabel>
+							<text>MathML</text>
+						</navLabel>
+						<content src="ch02.xhtml#_mathml"/>
+					</navPoint>
+					<navPoint id="id2619856" playOrder="26">
+						<navLabel>
+							<text>Footnotes</text>
+						</navLabel>
+						<content src="ch02.xhtml#_footnotes"/>
+					</navPoint>
+					<navPoint id="id2622503" playOrder="27">
+						<navLabel>
+							<text>Page Numbering</text>
+						</navLabel>
+						<content src="ch02.xhtml#_page_numbering"/>
+					</navPoint>
+				</navPoint>
+				<navPoint id="id2622654" playOrder="28">
+					<navLabel>
+						<text>Getting Around: Navigating an EPUB</text>
+					</navLabel>
+					<content src="ch02s02.xhtml"/>
+				</navPoint>
+				<navPoint id="id2624850" playOrder="29">
+					<navLabel>
+						<text>The Untold Story: Metadata</text>
+					</navLabel>
+					<content src="ch02s03.xhtml"/>
+				</navPoint>
+			</navPoint>
+			<navPoint id="id2640702" playOrder="30">
+				<navLabel>
+					<text>It’s Alive: Rich Content Accessibility</text>
+				</navLabel>
+				<content src="ch03.xhtml"/>
+				<navPoint id="id2640734" playOrder="31">
+					<navLabel>
+						<text>The Sound and the Fury: Audio and Video</text>
+					</navLabel>
+					<content src="ch03.xhtml#_the_sound_and_the_fury_audio_and_video"/>
+					<navPoint id="id2640891" playOrder="32">
+						<navLabel>
+							<text>Timed Tracks</text>
+						</navLabel>
+						<content src="ch03.xhtml#_timed_tracks"/>
+					</navPoint>
+				</navPoint>
+				<navPoint id="id2641220" playOrder="33">
+					<navLabel>
+						<text>Talk to Me: Media Overlays</text>
+					</navLabel>
+					<content src="ch03s02.xhtml"/>
+					<navPoint id="id2641481" playOrder="34">
+						<navLabel>
+							<text>Building an Overlay</text>
+						</navLabel>
+						<content src="ch03s02.xhtml#_building_an_overlay"/>
+					</navPoint>
+					<navPoint id="id2642163" playOrder="35">
+						<navLabel>
+							<text>Structural Considerations</text>
+						</navLabel>
+						<content src="ch03s02.xhtml#_structural_considerations"/>
+					</navPoint>
+				</navPoint>
+				<navPoint id="id2642385" playOrder="36">
+					<navLabel>
+						<text>Tell It Like It Is: Text-to-Speech (TTS)</text>
+					</navLabel>
+					<content src="ch03s03.xhtml"/>
+					<navPoint id="id2642616" playOrder="37">
+						<navLabel>
+							<text>PLS Lexicons</text>
+						</navLabel>
+						<content src="ch03s03.xhtml#_pls_lexicons"/>
+					</navPoint>
+					<navPoint id="id2643094" playOrder="38">
+						<navLabel>
+							<text>SSML</text>
+						</navLabel>
+						<content src="ch03s03.xhtml#_ssml"/>
+					</navPoint>
+					<navPoint id="id2643585" playOrder="39">
+						<navLabel>
+							<text>CSS3 Speech</text>
+						</navLabel>
+						<content src="ch03s03.xhtml#_css3_speech"/>
+					</navPoint>
+				</navPoint>
+				<navPoint id="id2644001" playOrder="40">
+					<navLabel>
+						<text>The Coded Word: Scripted Interactivity</text>
+					</navLabel>
+					<content src="ch03s04.xhtml"/>
+				</navPoint>
+				<navPoint id="id2644238" playOrder="41">
+					<navLabel>
+						<text>A Little Help: WAI-ARIA</text>
+					</navLabel>
+					<content src="ch03s05.xhtml"/>
+					<navPoint id="id2644281" playOrder="42">
+						<navLabel>
+							<text>Custom Controls</text>
+						</navLabel>
+						<content src="ch03s05.xhtml#_custom_controls"/>
+					</navPoint>
+					<navPoint id="id2644946" playOrder="43">
+						<navLabel>
+							<text>Forms</text>
+						</navLabel>
+						<content src="ch03s05.xhtml#_forms"/>
+					</navPoint>
+					<navPoint id="id2645270" playOrder="44">
+						<navLabel>
+							<text>Live Regions</text>
+						</navLabel>
+						<content src="ch03s05.xhtml#_live_regions"/>
+					</navPoint>
+				</navPoint>
+				<navPoint id="id2645594" playOrder="45">
+					<navLabel>
+						<text>A Blank Slate: Canvas</text>
+					</navLabel>
+					<content src="ch03s06.xhtml"/>
+				</navPoint>
+			</navPoint>
+			<navPoint id="id2645682" playOrder="46">
+				<navLabel>
+					<text>Conclusion</text>
+				</navLabel>
+				<content src="ch04.xhtml"/>
+				<navPoint id="id2645742" playOrder="47">
+					<navLabel>
+						<text>EPUB 3 Best Practices Teaser</text>
+					</navLabel>
+					<content src="ch04.xhtml#_epub_3_best_practices_teaser"/>
+					<navPoint id="id2645804" playOrder="48">
+						<navLabel>
+							<text>About the Book</text>
+						</navLabel>
+						<content src="ch04.xhtml#_about_the_book"/>
+					</navPoint>
+				</navPoint>
+			</navPoint>
+			<navPoint id="id2645862" playOrder="49">
+				<navLabel>
+					<text>Colophon</text>
+				</navLabel>
+				<content src="co01.xhtml"/>
+			</navPoint>
+		</navPoint>
+	</navMap>
+</ncx>

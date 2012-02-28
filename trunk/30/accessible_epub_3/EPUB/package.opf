@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<package xmlns="http://www.idpf.org/2007/opf" xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:dcterms="http://purl.org/dc/terms/" version="3.0" xml:lang="en"
+	unique-identifier="pub-identifier">
+	<metadata>
+		<dc:identifier id="pub-identifier">urn:isbn:9781449328030</dc:identifier>
+		<meta id="meta-identifier" property="dcterms:identifier">urn:isbn:9781449328030</meta>
+		<dc:title id="pub-title">Accessible EPUB 3</dc:title>
+		<meta property="dcterms:title" id="meta-title">Accessible EPUB 3</meta>
+		<dc:language id="pub-language">en</dc:language>
+		<meta property="dcterms:language" id="meta-language">en</meta>
+		<meta property="dcterms:modified">2012-02-20T22:17:24Z</meta>
+		<!--The preceding date value is actually local time (not UTC) in UTC format because there is no function in XSLT 1.0 to generate a correct UTC time-->
+		<meta property="dcterms:contributor">O’Reilly Production Services</meta>
+		<dc:contributor>O’Reilly Production Services</dc:contributor>
+		<meta property="dcterms:contributor">DavidFutato</meta>
+		<dc:contributor>DavidFutato</dc:contributor>
+		<meta property="dcterms:contributor">RobertRomano</meta>
+		<dc:contributor>RobertRomano</dc:contributor>
+		<meta property="dcterms:publisher">O’Reilly Media, Inc.</meta>
+		<dc:publisher>O’Reilly Media, Inc.</dc:publisher>
+		<meta id="meta-creator12" property="dcterms:creator">Matt Garrish</meta>
+		<dc:creator id="pub-creator12">Matt Garrish</dc:creator>
+		<meta property="dcterms:contributor">BrianSawyer</meta>
+		<dc:contributor>BrianSawyer</dc:contributor>
+		<meta property="dcterms:date">2012</meta>
+		<dc:date>2012</dc:date>
+		<meta property="dcterms:rights">Copyright © 2012 O’Reilly Media, Inc</meta>
+		<dc:rights>Copyright © 2012 O’Reilly Media, Inc</dc:rights>
+		<meta property="dcterms:rightsHolder">O’Reilly Media, Inc</meta>
+		<meta property="dcterms:contributor">DanFauxsmith</meta>
+		<dc:contributor>DanFauxsmith</dc:contributor>
+		<meta property="dcterms:contributor">KarenMontgomery</meta>
+		<dc:contributor>KarenMontgomery</dc:contributor>
+	</metadata>
+	<manifest>
+		<item id="ncx" href="toc.ncx" media-type="application/x-dtbncx+xml"/>
+		<item id="htmltoc" properties="nav" media-type="application/xhtml+xml" href="bk01-toc.xhtml"/>
+		<item media-type="text/css" id="epub-css" href="css/epub.css"/>
+		<item media-type="text/css" id="epub-tss-css" href="css/synth.css"/>
+		<item id="cover" href="cover.xhtml" media-type="application/xhtml+xml"/>
+		<item id="cover-image" properties="cover-image" href="covers/9781449328030_lrg.jpg" media-type="image/jpeg"/>
+		<item id="id-id2442754" href="index.xhtml" media-type="application/xhtml+xml"/>
+		<item id="id-id2632344" href="pr01.xhtml" media-type="application/xhtml+xml"/>
+		<item id="id-id2604743" href="pr01s02.xhtml" media-type="application/xhtml+xml"/>
+		<item id="id-id2629773" href="pr01s03.xhtml" media-type="application/xhtml+xml"/>
+		<item id="id-id2620395" href="pr01s04.xhtml" media-type="application/xhtml+xml"/>
+		<item id="id-id2638681" href="pr01s05.xhtml" media-type="application/xhtml+xml"/>
+		<item id="id-id2611884" href="ch01.xhtml" media-type="application/xhtml+xml"/>
+		<item id="id-id2627310" href="ch01s02.xhtml" media-type="application/xhtml+xml"/>
+		<item id="id-id2635343" href="ch02.xhtml" media-type="application/xhtml+xml"/>
+		<item id="id-id2622654" href="ch02s02.xhtml" media-type="application/xhtml+xml"/>
+		<item id="id-id2624850" href="ch02s03.xhtml" media-type="application/xhtml+xml"/>
+		<item id="id-id2640702" href="ch03.xhtml" media-type="application/xhtml+xml"/>
+		<item id="id-id2641220" href="ch03s02.xhtml" media-type="application/xhtml+xml"/>
+		<item id="id-id2642385" href="ch03s03.xhtml" media-type="application/xhtml+xml"/>
+		<item id="id-id2644001" href="ch03s04.xhtml" media-type="application/xhtml+xml"/>
+		<item id="id-id2644238" href="ch03s05.xhtml" media-type="application/xhtml+xml"/>
+		<item id="id-id2645594" href="ch03s06.xhtml" media-type="application/xhtml+xml"/>
+		<item id="id-id2645682" href="ch04.xhtml" media-type="application/xhtml+xml"/>
+		<item id="id-id2645862" href="co01.xhtml" media-type="application/xhtml+xml"/>
+		<item id="id2670620" href="images/web/epub3_0401.png" media-type="image/png"/>
+		<item id="spi_ad" href="spi-ad.xhtml" media-type="application/xhtml+xml"/>
+		<item id="spi_global_ad" href="images/spi_global_ad.png" media-type="image/png"/>
+		<item id="epub.embedded.font.1" href="fonts/UbuntuMono-B.ttf" media-type="font/truetype"/>
+		<item id="epub.embedded.font.2" href="fonts/UbuntuMono-BI.ttf" media-type="font/truetype"/>
+		<item id="epub.embedded.font.3" href="fonts/UbuntuMono-R.ttf" media-type="font/truetype"/>
+		<item id="epub.embedded.font.4" href="fonts/UbuntuMono-RI.ttf" media-type="font/truetype"/>
+		<item id="epub.embedded.font.5" href="fonts/FreeSerif.otf" media-type="font/opentype"/>
+		<item id="epub.embedded.font.6" href="fonts/FreeSansBold.otf" media-type="font/opentype"/>
+		<item id="pls-en" href="lexicon/en.pls" media-type="application/pls+xml"/>
+		<item id="pls-fr" href="lexicon/fr.pls" media-type="application/pls+xml"/>
+	</manifest>
+	<spine toc="ncx">
+		<itemref idref="cover" linear="no"/>
+		<itemref idref="spi_ad"/>
+		<itemref idref="id-id2442754"/>
+		<itemref idref="htmltoc" linear="yes"/>
+		<itemref idref="id-id2632344"/>
+		<itemref idref="id-id2604743"/>
+		<itemref idref="id-id2629773"/>
+		<itemref idref="id-id2620395"/>
+		<itemref idref="id-id2638681"/>
+		<itemref idref="id-id2611884"/>
+		<itemref idref="id-id2627310"/>
+		<itemref idref="id-id2635343"/>
+		<itemref idref="id-id2622654"/>
+		<itemref idref="id-id2624850"/>
+		<itemref idref="id-id2640702"/>
+		<itemref idref="id-id2641220"/>
+		<itemref idref="id-id2642385"/>
+		<itemref idref="id-id2644001"/>
+		<itemref idref="id-id2644238"/>
+		<itemref idref="id-id2645594"/>
+		<itemref idref="id-id2645682"/>
+		<itemref idref="id-id2645862"/>
+	</spine>
+	<guide>
+		<reference href="cover.xhtml" type="cover" title="Cover"/>
+		<reference href="bk01-toc.xhtml" type="toc" title="Table of Contents"/>
+	</guide>
+</package>
