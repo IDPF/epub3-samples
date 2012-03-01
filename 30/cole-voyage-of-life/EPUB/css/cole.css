@@ -13,6 +13,10 @@ h1, h2 {
     letter-spacing: 0.16em;
 }
 
+nav#toc ol {
+    list-style-type:none;
+}
+
 body.reflow { /* first spine item only*/
     margin: 2em 4em 2em 4em;
     background-color: rgb(255,255,230);
