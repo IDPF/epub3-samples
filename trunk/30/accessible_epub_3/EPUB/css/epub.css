@@ -861,3 +861,10 @@ div.blockquote_sampler_toc {
 body {
   font-family: "Free Serif", serif;
 }
+
+
+/* remove numbering from nav ol */
+
+nav#toc ol {
+	list-style-type: none;
+}
