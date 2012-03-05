@@ -1,0 +1,12 @@
+
+
+body {
+	width: 1200px;
+	height: 1577px;
+	margin: 0;
+}
+img {
+	position: absolute;
+	margin: 0;
+	z-index: 0;
+}
