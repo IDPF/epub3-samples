@@ -21,3 +21,12 @@ nav#toc ol li {
     text-decoration : none;
     color : black;
 }
+
+span.num {
+    margin-left: 2em;
+    margin-right: 1em;
+}
+
+span.lin {
+    margin-left: 5em;
+}
