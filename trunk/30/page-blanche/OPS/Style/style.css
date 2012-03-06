@@ -1,5 +1,5 @@
 
-
+/* FL */
 body {
 	width: 1200px;
 	height: 1577px;
@@ -9,4 +9,13 @@ img {
 	position: absolute;
 	margin: 0;
 	z-index: 0;
+}
+
+/* NAV */
+a {
+color: black !important;
+}
+
+#guide {
+display: none;
 }
