@@ -13,7 +13,7 @@
 	  <meta refines="#creator2" property="display-seq">2</meta>
       <dc:publisher>éditions Delcourt</dc:publisher>
       <dc:date>2012-01-18</dc:date>
-      <dc:rights>éditions Delcourt</dc:rights>
+      <dc:rights>This work is shared with the public using the Attribution-ShareAlike 3.0 Unported (CC BY-SA 3.0) license.</dc:rights>
 	  <dc:identifier id="pub-id">urn:uuid:d5803940-647f-11e1-ad77-0002a5d5c51b</dc:identifier>
       <meta refines="#pub-id" property="identifier-type" scheme="onix:codelist5">01</meta>
       <dc:language>fr</dc:language>
@@ -25,7 +25,7 @@
 	  <meta property="rendition:spread">auto</meta>
 	  
 	  <!-- CONTRIBUTION -->
-	  <meta property="dcterms:modified">2012-03-02T12:00:00Z</meta>
+	  <meta property="dcterms:modified">2012-03-06T12:00:00Z</meta>
 	  <dc:contributor id="contrib1">Vincent Gros</dc:contributor>
 	  <meta refines="#contrib1" property="role" scheme="marc:relators">mrk</meta>
    </metadata>
