@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <package xmlns="http://www.idpf.org/2007/opf" version="3.0" unique-identifier="uid" xml:lang="en-US" prefix="cc: http://creativecommons.org/ns#">
     <metadata xmlns:dc="http://purl.org/dc/elements/1.1/">
-        <dc:identifier id="uid">code.google.com.epub-samples.widgets</dc:identifier>
-        <dc:title>EPUB Widgets</dc:title>
+        <dc:identifier id="uid">code.google.com.epub-samples.widget-figure-gallery</dc:identifier>
+        <dc:title>EPUB Widgets: Figure Gallery</dc:title>
         <dc:creator>Marisa DeMeglio</dc:creator>
         <dc:language>en-US</dc:language>
         <dc:date>2012-01-17</dc:date>
@@ -25,21 +25,21 @@
 		<link rel="cc:attributionURL" refines="#fig8" href="http://www.flickr.com/photos/gsfc/5837032862" /> 
 		
 		<!-- text attribution -->
-		<link rel="cc:attributionURL" refines="01.figure-gallery.xhtml#moon-text" href="http://en.wikipedia.org/wiki/Lunar_phase" />
-		<link rel="cc:attributionURL" refines="01.figure-gallery.xhtml#moon-figures" href="http://www.flickr.com/photos/gsfc/sets/72157626962784062/"/>
+		<link rel="cc:attributionURL" refines="text.xhtml#moon-text" href="http://en.wikipedia.org/wiki/Lunar_phase" />
+		<link rel="cc:attributionURL" refines="text.xhtml#moon-figures" href="http://www.flickr.com/photos/gsfc/sets/72157626962784062/"/>
 		<link rel="cc:attributionURL" refines="#moon-phases-xml" href="http://www.flickr.com/photos/gsfc/sets/72157626962784062/"/>
-		<link rel="cc:attributionURL" refines="01.figure-gallery.xhtml#moon-figures" href="http://www.flickr.com/photos/gsfc/sets/72157626962784062/"/>
+		<link rel="cc:attributionURL" refines="text.xhtml#moon-figures" href="http://www.flickr.com/photos/gsfc/sets/72157626962784062/"/>
 		
         <!-- cover meta element included for 2.0 reading system compatibility: -->
         <meta name="cover" content="cover"/>
     </metadata> 
     <manifest>
         <item id="cover" 
-			href="images/widgets-cover.jpg" 
+			href="images/cover.jpg" 
 			media-type="image/jpeg" 
 			properties="cover-image" />
         <item id="nav" 
-			href="widgets-nav.xhtml" 
+			href="nav.xhtml" 
 			properties="nav" 
 			media-type="application/xhtml+xml" />
         <item id="epub-css"
@@ -47,12 +47,12 @@
             media-type="text/css"/>
             
         <item id="t1" 
-    		href="01.figure-gallery.xhtml" 
+    		href="text.xhtml" 
     		media-type="application/xhtml+xml" />
         
         <!-- ncx included for 2.0 reading system compatibility: -->
         <item id="ncx" 
-			href="widgets.ncx" 
+			href="nav.ncx" 
 			media-type="application/x-dtbncx+xml" />
 		
 		<!-- figure gallery data -->
