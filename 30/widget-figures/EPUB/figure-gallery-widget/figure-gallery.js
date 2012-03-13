@@ -18,7 +18,7 @@ if (typeof Object.create !== 'function') {
 // main object
 FigureGallery = {
 	// this string represents our gallery viewport.  we'll load the figure data into it as we go.
-	HTML: "<div id='figure-gallery'><figure><div id='contents'></div><figcaption></figcaption></figure><div id='thumbnails'></div><div id='navigation'><a id='previous' href='#'>Previous</a><span id='count'></span><a href='#' id='next'>Next</a></div></div>",
+	HTML: "<div id='figure-gallery'><figure aria-live='assertive' aria-relevant='all'><div id='contents' aria-describedBy='caption'></div><figcaption id='caption'></figcaption></figure><nav id='thumbnails'></nav><div id='navigation'><a id='previous' href='#' aria-controls='contents caption'>Previous</a><span id='count'></span><a href='#' id='next' aria-controls='contents caption'>Next</a></div></div>",
 	// show this if there's an error
 	ERROR: "<p class='error'>Error initializing figure gallery</p>",
 	
@@ -48,10 +48,12 @@ FigureGallery = {
 		
 		var self = this;			
 		// bind navigation actions
-		$("#previous").click(function() {
+		$("#previous").click(function(e) {
+			e.preventDefault(); // added prevent default or else the iframe navigates away
 			self.previous();
 		});
-		$("#next").click(function() {
+		$("#next").click(function(e) {
+			e.preventDefault(); // added prevent default or else the iframe navigates away
 			self.next();
 		});
 					
@@ -135,26 +137,47 @@ FigureGallery = {
 		var galleryFigcaption = $("#figure-gallery figcaption");
 					
 		// clear the contents of the current display
-		$(galleryFigure).children().each(function() {
+        $(galleryFigure).contents().each(function() {
 			$(this).remove();
 		});
-		$(galleryFigcaption).children().each(function() {
+        
+        // clear the contents of the current figure caption
+		$(galleryFigcaption).contents().each(function() {
 			$(this).remove();
 		});
 					
 		$(galleryFigure).css("visibility", "hidden");
 					
-		var container = $("#contents");
-					
-		// grab all figure contents except for figcaption
-		$(dataFigure).children().each(function() {
+		
+		$(dataFigure).contents().each(function() {
 			if ($(this).is('figcaption')) return;
-			var elm = $(this).clone();
-			$(galleryFigure).append(elm);						
+            
+            // images and videos need special treatment: create a new element instead of cloning the existing one
+            // this is not apparent with the standalone example but it is with a webkit app, e.g. Readium
+            if ($(this).is('img') || $(this).is('video')) {
+    			var elm = $("<" + this.tagName + "/>");
+                
+                // copy all the attributes
+                $.each(this.attributes, function(i, attr) {
+                    elm.attr(attr.name, attr.value);
+                });
+                
+                // copy the children of video elements. note that video cannot contain media element descendants, so no special copying is required
+                if ($(this).is("video")) {
+                    $(this).contents().each(function() {
+                        elm.append($(this).clone());
+                    });
+                }
+                
+                $(galleryFigure).append(elm);	
+            }
+            else {
+                $(galleryFigure).append($(this).clone());
+            }
 		});
-					
-		// append the figcaption children
-		$(dataFigcaption).children().each(function() {
+		
+        // append the figcaption children
+		$(dataFigcaption).contents().each(function() {
 			$(galleryFigcaption).append($(this).clone());						
 		});
 					
@@ -231,23 +254,12 @@ FigureGallery = {
 	},
 				
 };
-
-// utility functions
-function getParameterByName(name) {
-  name = name.replace(/[\[]/, "\\\[").replace(/[\]]/, "\\\]");
-  var regexS = "[\\?&]" + name + "=([^&#]*)";
-  var regex = new RegExp(regexS);
-  var results = regex.exec(window.location.href);
-  if(results == null)
-    return "";
-  else
-    return decodeURIComponent(results[1].replace(/\+/g, " "));
-}
-
 // load xml (synchronous)
 function loadXml(uri) {
 	var request = new XMLHttpRequest();
 	request.open("GET", uri, false);
 	request.send(null);  
 	return request.responseXML;
-}	
+}		
+
+		

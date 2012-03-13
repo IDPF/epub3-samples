@@ -7,6 +7,7 @@ body {
     margin-right: 16em;
     color: black;    
     font-family: times, 'times new roman', serif;    
+    
     background-color: rgb(255,255,245);
     line-height: 1.5em;
 }
@@ -56,6 +57,11 @@ section#rearnotes a {
     padding-left: 2em;
 }
 
-figure {
-	border-bottom: solid thin black;
+figure.fallback {
+    margin-bottom: 30px;
+}
+figure.fallback figcaption h2 {
+    font-size: medium;
+    margin-top: inherit !important;
+    margin-bottom: inherit !important;
 }
