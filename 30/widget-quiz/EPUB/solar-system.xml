@@ -1,0 +1,94 @@
+<quiz>
+    <!-- quiz @format can be 'show-one', 'show-all' (default), or 'flashcard' -->
+    <title>The Solar System and Beyond</title>
+    <item type='select-one'>
+       <question>What is the name given to planets like Jupiter and Neptune?</question>
+       <list type='a'>
+           <choice correct='true'>Gas Giants</choice>
+           <choice>Gas Monsters</choice>
+           <choice>Rocky Dwarves</choice>
+           <choice>Rocky Giants</choice>
+       </list>
+    </item>
+    <item type='select-one'>
+       <question>Why does Saturn have a longer year than Earth?</question>
+       <list type='a'>
+           <choice>Saturn is closer to the Sun than Earth</choice>
+           <choice>Saturn spins slower than Earth</choice>
+           <choice>Saturn is bigger than Earth</choice>
+           <choice correct='true'>Saturn is further away from the Sun than Earth</choice>
+       </list>
+    </item>
+    <item type='select-one'>
+       <question>When do you get a lunar eclipse?</question>
+       <list type='a'>
+           <choice>The Moon is between the Earth and the Sun</choice>
+           <choice correct='true'>The Earth is between the Moon and the Sun</choice>
+           <choice>The Sun is between the Moon and the Earth</choice>
+           <choice>The Moon is between the Earth and Mars</choice>
+       </list>
+    </item>
+    <item type='select-one'>
+       <question>When do you get a solar eclipse?</question>
+       <list type='a'>
+           <choice correct='true'>The Moon is between the Earth and the Sun</choice>
+           <choice>The Earth is between the Moon and the Sun</choice>
+           <choice>The Sun is between the Moon and the Earth</choice>
+           <choice>The Moon is between the Earth and Mars</choice>
+       </list>
+    </item>
+    <item type='select-one'>
+       <question>What causes the seasons?</question>
+       <list type='a'>
+           <choice>The Earth is closer to the Sun during the Summer</choice>
+           <choice>The Sun cools down during the Winter</choice>
+           <choice correct='true'>The Earth's axis is tilted</choice>
+           <choice>The Earth cools down during the Winter</choice>
+       </list>
+    </item>
+    <item type='select-one'>
+       <question>Which of these objects does not make its own light?</question>
+       <list type='a'>
+           <choice>The Sun</choice>
+           <choice>A Star</choice>
+           <choice>A Fire</choice>
+           <choice correct='true'>The Moon</choice>
+       </list>
+    </item>
+    <item type='select-one'>
+       <question>How long does it take the Earth to rotate once on its axis?</question>
+       <list type='a'>
+           <choice correct='true'>24 hours</choice>
+           <choice>12 hours</choice>
+           <choice>28 days</choice>
+           <choice>365 days</choice>
+       </list>
+    </item>
+    <item type='select-one'>
+       <question>How long does it take the Earth to travel once around the Sun?</question>
+       <list type='a'>
+           <choice>24 hours</choice>
+           <choice>7 days</choice>
+           <choice correct='true'>365 days</choice>
+           <choice>28 days</choice>
+       </list>
+    </item>
+    <item type='select-one'>
+       <question>Which planet is 4th in order from the Sun?</question>
+       <list type='a'>
+           <choice correct='true'>Mars</choice>
+           <choice>Jupiter</choice>
+           <choice>Saturn</choice>
+           <choice>Uranus</choice>
+       </list>
+    </item>
+    <item type='select-one'>
+       <question>What force keeps the planets in their orbits?</question>
+       <list type='a'>
+           <choice>Air resistance</choice>
+           <choice>Magnetism</choice>
+           <choice correct='true'>Gravity</choice>
+           <choice>Weight</choice>
+       </list>
+    </item>
+</quiz>
