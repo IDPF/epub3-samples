@@ -6,7 +6,7 @@
         <dc:creator>Marisa DeMeglio</dc:creator>
         <dc:language>en-US</dc:language>
         <dc:date>2012-01-17</dc:date>
-        <meta property="dcterms:modified">2012-01-18T12:47:00Z</meta>
+        <meta property="dcterms:modified">2012-03-13T12:47:00Z</meta>
         
 		<!-- rights expressions for the work as a whole -->
         <dc:rights>This work is shared with the public using the Attribution-ShareAlike 3.0 Unported (CC BY-SA 3.0) license.</dc:rights>        
@@ -27,88 +27,91 @@
 		<!-- text attribution -->
 		<link rel="cc:attributionURL" refines="01.figure-gallery.xhtml#moon-text" href="http://en.wikipedia.org/wiki/Lunar_phase" />
 		<link rel="cc:attributionURL" refines="01.figure-gallery.xhtml#moon-figures" href="http://www.flickr.com/photos/gsfc/sets/72157626962784062/"/>
-		<link rel="cc:attributionURL" refines="#figures-xml" href="http://www.flickr.com/photos/gsfc/sets/72157626962784062/"/>
+		<link rel="cc:attributionURL" refines="#moon-phases-xml" href="http://www.flickr.com/photos/gsfc/sets/72157626962784062/"/>
 		<link rel="cc:attributionURL" refines="01.figure-gallery.xhtml#moon-figures" href="http://www.flickr.com/photos/gsfc/sets/72157626962784062/"/>
 		
         <!-- cover meta element included for 2.0 reading system compatibility: -->
         <meta name="cover" content="cover"/>
     </metadata> 
     <manifest>
-        <item id="t1" 
-			href="01.figure-gallery.xhtml" 
-			media-type="application/xhtml+xml" />
         <item id="cover" 
-			href="widgets-cover.jpg" 
+			href="images/widgets-cover.jpg" 
 			media-type="image/jpeg" 
 			properties="cover-image" />
         <item id="nav" 
 			href="widgets-nav.xhtml" 
 			properties="nav" 
 			media-type="application/xhtml+xml" />
-        <item id="css"
-			href="widgets.css"
-			media-type="text/css"/>
-		<!-- ncx included for 2.0 reading system compatibility: -->
+        <item id="epub-css"
+            href="epub.css"
+            media-type="text/css"/>
+            
+        <item id="t1" 
+    		href="01.figure-gallery.xhtml" 
+    		media-type="application/xhtml+xml" />
+        
+        <!-- ncx included for 2.0 reading system compatibility: -->
         <item id="ncx" 
 			href="widgets.ncx" 
 			media-type="application/x-dtbncx+xml" />
 		
 		<!-- figure gallery data -->
-		<item id="figures-xml"
-			href="figures.xml"
+		<item id="moon-phases-xml"
+			href="moon-phases.xml"
 			media-type="application/x-epub-figure-gallery"/>
-		
+            
+        
 		<!-- figure gallery images -->
 		<item id="fig1"
-			href="moon-images/1.new-moon.jpg"
+			href="images/moon-images/1.new-moon.jpg"
 			media-type="image/jpeg"/>
 		<item id="fig2"
-			href="moon-images/2.waxing-crescent.jpg"
+			href="images/moon-images/2.waxing-crescent.jpg"
 			media-type="image/jpeg"/>
 		<item id="fig3"
-			href="moon-images/3.first-quarter.jpg"
+			href="images/moon-images/3.first-quarter.jpg"
 			media-type="image/jpeg"/>
 		<item id="fig4"
-			href="moon-images/4.waxing-gibbous.jpg"
+			href="images/moon-images/4.waxing-gibbous.jpg"
 			media-type="image/jpeg"/>
 		<item id="fig5"
-			href="moon-images/5.full-moon.jpg"
+			href="images/moon-images/5.full-moon.jpg"
 			media-type="image/jpeg"/>
 		<item id="fig6"
-			href="moon-images/6.waning-gibbous.jpg"
+			href="images/moon-images/6.waning-gibbous.jpg"
 			media-type="image/jpeg"/>
 		<item id="fig7"
-			href="moon-images/7.third-quarter.jpg"
+			href="images/moon-images/7.third-quarter.jpg"
 			media-type="image/jpeg"/>
 		<item id="fig8"
-			href="moon-images/8.waning-crescent.jpg"
+			href="images/moon-images/8.waning-crescent.jpg"
 			media-type="image/jpeg"/>
 		<item id="fig1thumb"
-			href="moon-images/1.new-moon-thumb.jpg"
+			href="images/moon-images/1.new-moon-thumb.jpg"
 			media-type="image/jpeg"/>
 		<item id="fig2thumb"
-			href="moon-images/2.waxing-crescent-thumb.jpg"
+			href="images/moon-images/2.waxing-crescent-thumb.jpg"
 			media-type="image/jpeg"/>
 		<item id="fig3thumb"
-			href="moon-images/3.first-quarter-thumb.jpg"
+			href="images/moon-images/3.first-quarter-thumb.jpg"
 			media-type="image/jpeg"/>
 		<item id="fig4thumb"
-			href="moon-images/4.waxing-gibbous-thumb.jpg"
+			href="images/moon-images/4.waxing-gibbous-thumb.jpg"
 			media-type="image/jpeg"/>
 		<item id="fig5thumb"
-			href="moon-images/5.full-moon-thumb.jpg"
+			href="images/moon-images/5.full-moon-thumb.jpg"
 			media-type="image/jpeg"/>
 		<item id="fig6thumb"
-			href="moon-images/6.waning-gibbous-thumb.jpg"
+			href="images/moon-images/6.waning-gibbous-thumb.jpg"
 			media-type="image/jpeg"/>
 		<item id="fig7thumb"
-			href="moon-images/7.third-quarter-thumb.jpg"
+			href="images/moon-images/7.third-quarter-thumb.jpg"
 			media-type="image/jpeg"/>
 		<item id="fig8thumb"
-			href="moon-images/8.waning-crescent-thumb.jpg"
+			href="images/moon-images/8.waning-crescent-thumb.jpg"
 			media-type="image/jpeg"/>
 		
-		<!-- widget implementation -->
+		<!-- figure gallery widget files -->
 		<item id="figure-gallery-impl" 
 			href="figure-gallery-widget/figure-gallery-impl.xhtml" 
 		    media-type="application/xhtml+xml" 
@@ -119,22 +122,17 @@
 		<item id="figure-gallery-css"
 			href="figure-gallery-widget/figure-gallery.css"
 			media-type="text/css"/>
-		<item id="jquery"
+		<item id="figure-gallery-jquery"
 			href="figure-gallery-widget/jquery-1.7.1.min.js"
 			media-type="text/javascript"/>
-		<item id="reset-css"
+		<item id="figure-gallery-reset-css"
 			href="figure-gallery-widget/reset.css"
 			media-type="text/css"/>
-		
-		<!-- TODO remove this file from the book and from this manifest -->
-		<item id="figure-gallery-example"
-			href="figure-gallery-standalone-example.html"
-			media-type="application/html"/>
-		
+            
     </manifest>
 	
 	<spine toc="ncx">
-		<itemref idref="t1" />        
+		<itemref idref="t1" />      
     </spine>    
 	
 	<bindings>
