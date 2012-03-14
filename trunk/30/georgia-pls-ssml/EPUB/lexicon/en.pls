@@ -13,7 +13,7 @@
     <phoneme>ˈæbrəˌgeɪt</phoneme>
   </lexeme>
   <lexeme>
-    <grapheme>agnes</grapheme>
+    <grapheme>Agnes</grapheme>
     <phoneme>ˈægnɪs</phoneme>
   </lexeme>
   <lexeme>
@@ -21,7 +21,7 @@
     <phoneme>ˈægrɪˌkʌltʃərɑl</phoneme>
   </lexeme>
   <lexeme>
-    <grapheme>alabama</grapheme>
+    <grapheme>Alabama</grapheme>
     <phoneme>ˌæləˈbæmə</phoneme>
   </lexeme>
   <lexeme>
@@ -33,11 +33,11 @@
     <phoneme>ˌeɪlyəˈneɪʃəns</phoneme>
   </lexeme>
   <lexeme>
-    <grapheme>altamaha</grapheme>
+    <grapheme>Altamaha</grapheme>
     <phoneme>ˈɔltəməˌhɔ</phoneme>
   </lexeme>
   <lexeme>
-    <grapheme>americus</grapheme>
+    <grapheme>Americus</grapheme>
     <phoneme>əˈmɛrɪkəs</phoneme>
   </lexeme>
   <lexeme>
@@ -53,11 +53,11 @@
     <phoneme>ænˈtɪkwɪtis</phoneme>
   </lexeme>
   <lexeme>
-    <grapheme>apalachicola</grapheme>
+    <grapheme>Apalachicola</grapheme>
     <phoneme>ˌæpəˌlætʃəˈkoʊlə</phoneme>
   </lexeme>
   <lexeme>
-    <grapheme>appalachian</grapheme>
+    <grapheme>Appalachian</grapheme>
     <phoneme>ˌæpəˈleɪtʃiən</phoneme>
   </lexeme>
   <lexeme>
@@ -65,7 +65,7 @@
     <phoneme>əˌproʊpriˈeɪʃən</phoneme>
   </lexeme>
   <lexeme>
-    <grapheme>archibald</grapheme>
+    <grapheme>Archibald</grapheme>
     <phoneme>ˈɑrtʃəˌbɔld</phoneme>
   </lexeme>
   <lexeme>
@@ -73,7 +73,7 @@
     <phoneme>æsˈbɛstəs</phoneme>
   </lexeme>
   <lexeme>
-    <grapheme>augusta</grapheme>
+    <grapheme>Augusta</grapheme>
     <phoneme>ɔˈgʌstə</phoneme>
   </lexeme>
   <lexeme>
@@ -85,7 +85,7 @@
     <phoneme>bəˈriə</phoneme>
   </lexeme>
   <lexeme>
-    <grapheme>bartow</grapheme>
+    <grapheme>Bartow</grapheme>
     <phoneme>ˈbɑrtoʊ</phoneme>
   </lexeme>
   <lexeme>
@@ -97,11 +97,11 @@
     <phoneme>ˈbɔksaɪt</phoneme>
   </lexeme>
   <lexeme>
-    <grapheme>bessie</grapheme>
+    <grapheme>Bessie</grapheme>
     <phoneme>ˈbɛsi</phoneme>
   </lexeme>
   <lexeme>
-    <grapheme>bethesda</grapheme>
+    <grapheme>Bethesda</grapheme>
     <phoneme>bəˈθɛzdə</phoneme>
   </lexeme>
   <lexeme>
@@ -121,31 +121,31 @@
     <phoneme>kælˈkɛəriəs</phoneme>
   </lexeme>
   <lexeme>
-    <grapheme>canton</grapheme>
+    <grapheme>Canton</grapheme>
     <phoneme>ˈkæntn</phoneme>
   </lexeme>
   <lexeme>
-    <grapheme>chattahoochee</grapheme>
+    <grapheme>Chattahoochee</grapheme>
     <phoneme>ˌtʃætəˈhutʃi</phoneme>
   </lexeme>
   <lexeme>
-    <grapheme>chattanooga</grapheme>
+    <grapheme>Chattanooga</grapheme>
     <phoneme>ˌtʃætəˈnugə</phoneme>
   </lexeme>
   <lexeme>
-    <grapheme>cherokee</grapheme>
+    <grapheme>Cherokee</grapheme>
     <phoneme>ˈtʃɛrəˌki</phoneme>
   </lexeme>
   <lexeme>
-    <grapheme>congregationalists</grapheme>
+    <grapheme>Congregationalists</grapheme>
     <phoneme>ˌkɒŋgrɪˈgeɪʃənlˌɪsts</phoneme>
   </lexeme>
   <lexeme>
-    <grapheme>coosa</grapheme>
+    <grapheme>Coosa</grapheme>
     <phoneme>kusə</phoneme>
   </lexeme>
   <lexeme>
-    <grapheme>corundum</grapheme>
+    <grapheme>Corundum</grapheme>
     <phoneme>kəˈrʌndəm</phoneme>
   </lexeme>
   <lexeme>
@@ -153,11 +153,11 @@
     <phoneme>ˈkyubɛb</phoneme>
   </lexeme>
   <lexeme>
-    <grapheme>dalton</grapheme>
+    <grapheme>Dalton</grapheme>
     <phoneme>ˈdɔltn</phoneme>
   </lexeme>
   <lexeme>
-    <grapheme>decatur</grapheme>
+    <grapheme>Decatur</grapheme>
     <phoneme>dɪˈkeɪtər</phoneme>
   </lexeme>
   <lexeme>
@@ -169,11 +169,11 @@
     <phoneme>ˈdɪləˌtɔri</phoneme>
   </lexeme>
   <lexeme>
-    <grapheme>dooly</grapheme>
+    <grapheme>Dooly</grapheme>
     <phoneme>ˈduli</phoneme>
   </lexeme>
   <lexeme>
-    <grapheme>effingham</grapheme>
+    <grapheme>Effingham</grapheme>
     <phoneme>ˈɛfɪŋˌhæm</phoneme>
   </lexeme>
   <lexeme>
@@ -181,15 +181,15 @@
     <phoneme>ɪˌmænsəˈpeɪʃən</phoneme>
   </lexeme>
   <lexeme>
-    <grapheme>episcopal</grapheme>
+    <grapheme>Episcopal</grapheme>
     <phoneme>ɪˈpɪskəpəl</phoneme>
   </lexeme>
   <lexeme>
-    <grapheme>episcopalians</grapheme>
+    <grapheme>Episcopalians</grapheme>
     <phoneme>ɪˌpɪskəˈpeɪlyəns</phoneme>
   </lexeme>
   <lexeme>
-    <grapheme>floradora</grapheme>
+    <grapheme>Floradora</grapheme>
     <phoneme>ˈflɔrəˈdɔrə</phoneme>
   </lexeme>
   <lexeme>
@@ -197,19 +197,19 @@
     <phoneme>ˌdʒiəˈlɒdʒɪˌkæl</phoneme>
   </lexeme>
   <lexeme>
-    <grapheme>habersham</grapheme>
+    <grapheme>Habersham</grapheme>
     <phoneme>ˌhæbˈɜrˌʃæm</phoneme>
   </lexeme>
   <lexeme>
-    <grapheme>haralson</grapheme>
+    <grapheme>Haralson</grapheme>
     <phoneme>ˈhærəlsʌn</phoneme>
   </lexeme>
   <lexeme>
-    <grapheme>indian</grapheme>
+    <grapheme>Indian</grapheme>
     <phoneme>ˈɪndiən</phoneme>
   </lexeme>
   <lexeme>
-    <grapheme>jefferson</grapheme>
+    <grapheme>Jefferson</grapheme>
     <phoneme>ˈdʒɛfərsən</phoneme>
   </lexeme>
   <lexeme>
@@ -221,27 +221,27 @@
     <phoneme>ˈbʊʃəlz</phoneme>
   </lexeme>
   <lexeme>
-    <grapheme>louis</grapheme>
+    <grapheme>Louis</grapheme>
     <phoneme>ˈluiz</phoneme>
   </lexeme>
   <lexeme>
-    <grapheme>louisiana</grapheme>
+    <grapheme>Louisiana</grapheme>
     <phoneme>luˌiziˈænə</phoneme>
   </lexeme>
   <lexeme>
-    <grapheme>louisville</grapheme>
+    <grapheme>Louisville</grapheme>
     <phoneme>ˈluiˌvɪl</phoneme>
   </lexeme>
   <lexeme>
-    <grapheme>lowndes</grapheme>
+    <grapheme>Lowndes</grapheme>
     <phoneme>laʊndz</phoneme>
   </lexeme>
   <lexeme>
-    <grapheme>macon</grapheme>
+    <grapheme>Macon</grapheme>
     <phoneme>ˈmeɪkən</phoneme>
   </lexeme>
   <lexeme>
-    <grapheme>milledgeville</grapheme>
+    <grapheme>Milledgeville</grapheme>
     <phoneme>ˈmɪlɪdʒˌvɪl</phoneme>
   </lexeme>
   <lexeme>
@@ -249,11 +249,11 @@
     <phoneme>ˈmʌlˌbɛri</phoneme>
   </lexeme>
   <lexeme>
-    <grapheme>ocmulgee</grapheme>
+    <grapheme>Ocmulgee</grapheme>
     <phoneme>oʊkˈmʌlgi</phoneme>
   </lexeme>
   <lexeme>
-    <grapheme>piedmont</grapheme>
+    <grapheme>Piedmont</grapheme>
     <phoneme>ˈpidmɒnt</phoneme>
   </lexeme>
   <lexeme>
@@ -261,19 +261,19 @@
     <phoneme>ˌrætəfɪˈkeɪʃən</phoneme>
   </lexeme>
   <lexeme>
-    <grapheme>savannah</grapheme>
+    <grapheme>Savannah</grapheme>
     <phoneme>səˈvænə</phoneme>
   </lexeme>
   <lexeme>
-    <grapheme>tallapoosa</grapheme>
+    <grapheme>Tallapoosa</grapheme>
     <phoneme>ˌtæləˈpusə</phoneme>
   </lexeme>
   <lexeme>
-    <grapheme>tallulah</grapheme>
+    <grapheme>Tallulah</grapheme>
     <phoneme>ˌtɑˈlulɑ</phoneme>
   </lexeme>
   <lexeme>
-    <grapheme>va.</grapheme>
+    <grapheme>Va.</grapheme>
     <phoneme>vərˈdʒɪnyə</phoneme>
   </lexeme>
   <lexeme>
