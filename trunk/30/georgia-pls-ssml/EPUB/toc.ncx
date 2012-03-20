@@ -70,4 +70,51 @@
             <content src="georgia.xhtml#d10e304"/>
         </navPoint>
     </navMap>
+    <pageList>
+        <navLabel>
+            <text>Pages</text>
+        </navLabel>
+        <pageTarget type="normal" id="page752" value="752" playOrder="1">
+            <navLabel>
+                <text>752</text>
+            </navLabel>
+            <content src="georgia.xhtml#page752"/>
+        </pageTarget>
+        <pageTarget type="normal" id="page753" value="753" playOrder="2">
+            <navLabel>
+                <text>753</text>
+            </navLabel>
+            <content src="georgia.xhtml#page753"/>
+        </pageTarget>
+        <pageTarget type="normal" id="page754" value="754" playOrder="3">
+            <navLabel>
+                <text>754</text>
+            </navLabel>
+            <content src="georgia.xhtml#page754"/>
+        </pageTarget>
+        <pageTarget type="normal" id="page755" value="755" playOrder="4">
+            <navLabel>
+                <text>755</text>
+            </navLabel>
+            <content src="georgia.xhtml#page755"/>
+        </pageTarget>
+        <pageTarget type="normal" id="page756" value="756" playOrder="5">
+            <navLabel>
+                <text>756</text>
+            </navLabel>
+            <content src="georgia.xhtml#page756"/>
+        </pageTarget>
+        <pageTarget type="normal" id="page757" value="757" playOrder="6">
+            <navLabel>
+                <text>757</text>
+            </navLabel>
+            <content src="georgia.xhtml#page757"/>
+        </pageTarget>
+        <pageTarget type="normal" id="page758" value="758" playOrder="7">
+            <navLabel>
+                <text>758</text>
+            </navLabel>
+            <content src="georgia.xhtml#page758"/>
+        </pageTarget>
+    </pageList>
 </ncx>
