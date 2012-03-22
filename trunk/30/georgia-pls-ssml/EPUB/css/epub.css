@@ -12,6 +12,6 @@ span.repeat { padding-left: 45px; }
 span.repeatDem { padding-left: 45px; }
 span.repeatRep { padding-left: 100px; }
 
-span[epub|type='pagebreak'], span[epub\:type='pagebreak'] { display: none; }
+*[epub|type='pagebreak'] { display: none; }
 
-a[epub|type='noteref'], a[epub\:type='noteref'] { vertical-align: super; }
+a[epub|type='noteref'] { vertical-align: super; }
