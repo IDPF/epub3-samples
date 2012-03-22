@@ -4,11 +4,11 @@
 	<dc:title id="title">Sous le vent</dc:title>
 	<meta refines="#title" property="title-type">main</meta>
 	<dc:creator id="creator1">Jean-Bernard Pouy</dc:creator>
-	<meta refines="#creator1" property="file-as">Boulet</meta>
+	<meta refines="#creator1" property="file-as">Pouy, Jean-Bernard</meta>
 	<meta refines="#creator1" property="role" scheme="marc:relators">aut</meta>
 	<meta refines="#creator1" property="display-seq">1</meta>
 	<dc:creator id="creator2">Joe G. Pinelli</dc:creator>
-	<meta refines="#creator2" property="file-as">Bagieu, Pénélope</meta>
+	<meta refines="#creator2" property="file-as">Pinelli, Joe G.</meta>
 	<meta refines="#creator2" property="role" scheme="marc:relators">ill</meta>
 	<meta refines="#creator2" property="display-seq">2</meta>
 	<dc:publisher>éditions Jean-Claude Lattès</dc:publisher>
