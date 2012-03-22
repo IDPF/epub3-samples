@@ -1,7 +1,7 @@
 @echo off & setLocal EnableDelayedExpansion
 
-for /F "tokens=1,2,3,4 delims=/ " %%A in ('Date /t') do @( 
-	set fullDate=%%D%%B%%C
+for /F "tokens=1,2,3 delims=/ " %%A in ('Date /t') do @( 
+	set fullDate=%%C%%B%%A
 )
 
 set fileName=%~n1
