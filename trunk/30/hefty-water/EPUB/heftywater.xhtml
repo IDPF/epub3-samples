@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>Hefty Water</title>
+        <style type="text/css">
+            body {
+                font-family : verdana, sans-serif;
+                margin : 2em 2em 2em 2em;
+            }
+            p#fallback,
+            p#rubyp {
+                border : dotted 2px gray;
+                background : rgb(230, 230, 230);
+                padding : 2em;
+            }
+            p#rubyp {
+                -epub-ruby-position : under;
+            }</style>
+    </head>
+    <body>
+        <h1 id="title">Hefty Water</h1>
+        <p>This document serves to test Reading System support for the <code><a
+                    href="http://idpf.org/epub/30/spec/epub30-contentdocs.html#sec-xhtml-content-switch"
+                    >epub:switch</a></code> element. There is also a little bit of <a
+                href="http://www.w3.org/TR/html5/the-ruby-element.html#the-ruby-element"><code>ruby
+                markup</code></a> available.</p>
+        
+        <section id="switch">
+            <h2>The Switch</h2>
+            <p>Below is an instance of the <code>epub:switch</code> element, containing <a
+                    href="http://en.wikipedia.org/wiki/Chemical_Markup_Language">Chemical Markup
+                    Language</a> (CML). The fallback content is a chunk of plain XHTML5.</p>
+            <ul>
+                <li>If your Reading System supports <code>epub:switch</code>
+                    <em>and</em>
+                    <code>CML</code>, it will render the CML formula natively, and ignore (a.k.a not
+                    display) the XHTML fallback.</li>
+                <li>If your Reading System supports <code>epub:switch</code>
+                    <em>but not</em>
+                    <code>CML</code>, it will ignore (not display) the CML formula, and render the
+                    the XHTML fallback instead.</li>
+                <li>If your Reading System does not support <code>epub:switch</code> at all, then
+                    the rendering results are somewhat unpredictable, but the most likely result is
+                    that it will display both a failed attempt to render the CML and the XHTML
+                    fallback.</li>
+            </ul>
+            <p><em>Note: the XHTML fallback is bold and enclosed in a gray dotted box with a
+                    slightly gray background. A failed CML rendering will most likely appear above
+                    the gray fallback box and read:<br /> "H hydrogen O oxygen hefty H O
+                    water".</em></p>
+
+            <p>Here the switch begins...</p>
+
+            <br />
+            <switch xmlns="http://www.idpf.org/2007/ops">
+                <case required-namespace="http://www.xml-cml.org/schema">
+                    <chem xmlns="http://www.xml-cml.org/schema">
+                        <reaction>
+                            <molecule n="2">
+                                <atom n="2"> H </atom>
+                                <caption> hydrogen </caption>
+                            </molecule>
+                            <plus></plus>
+                            <molecule>
+                                <atom n="2"> O </atom>
+                                <caption> oxygen </caption>
+                            </molecule>
+                            <gives>
+                                <caption> hefty </caption>
+                            </gives>
+                            <molecule n="2">
+                                <atom n="2"> H </atom>
+                                <atom> O </atom>
+                                <caption> water </caption>
+                            </molecule>
+                        </reaction>
+                    </chem>
+                </case>
+                <default>
+                    <p xmlns="http://www.w3.org/1999/xhtml" id="fallback">
+                        <span>2H<sub>2</sub></span>
+                        <span>+</span>
+                        <span>O<sub>2</sub></span>
+                        <span>&#10230;</span>
+                        <span>2H<sub>2</sub>O</span>
+                    </p>
+                </default>
+            </switch>
+            <p>... and here the switch ends.</p>
+
+        </section>
+        <section id="source">
+            <h2>The Source</h2>
+            <p>Below is a rendition of the source code of the switch element. Your Reading System
+                should display this correctly regardless of whether it supports the
+                    <code>switch</code> element.
+                <!-- Note that the XHTML5 fallback uses
+                    <code>ruby</code> to render the captions (these should appear below the formula
+                    segments).--></p>
+            <pre><code>
+&lt;switch xmlns="http://www.idpf.org/2007/ops"&gt;
+    &lt;case required-namespace="http://www.xml-cml.org/schema"&gt;
+        &lt;chem xmlns="http://www.xml-cml.org/schema"&gt;
+            &lt;reaction&gt;
+                &lt;molecule n="2"&gt;
+                    &lt;atom n="2"&gt; H &lt;/atom&gt;
+                    &lt;caption&gt; hydrogen &lt;/caption&gt;
+                &lt;/molecule&gt;
+                &lt;plus&gt;&lt;/plus&gt;
+                &lt;molecule&gt;
+                    &lt;atom n="2"&gt; O &lt;/atom&gt;
+                    &lt;caption&gt; oxygen &lt;/caption&gt;
+                &lt;/molecule&gt;
+                &lt;gives&gt;
+                    &lt;caption&gt; hefty &lt;/caption&gt;
+                &lt;/gives&gt;
+                &lt;molecule n="2"&gt;
+                    &lt;atom n="2"&gt; H &lt;/atom&gt;
+                    &lt;atom&gt; O &lt;/atom&gt;
+                    &lt;caption&gt; water &lt;/caption&gt;
+                &lt;/molecule&gt;
+            &lt;/reaction&gt;
+        &lt;/chem&gt;
+    &lt;/case&gt;
+    &lt;default&gt;
+        &lt;p xmlns="http://www.w3.org/1999/xhtml" id="fallback"&gt;
+            &lt;span&gt;2H&lt;sub&gt;2&lt;/sub&gt;&lt;/span&gt;
+            &lt;span&gt;+&lt;/span&gt;
+            &lt;span&gt;O&lt;sub&gt;2&lt;/sub&gt;&lt;/span&gt;
+            &lt;span&gt;&#10230;&lt;/span&gt;
+            &lt;span&gt;2H&lt;sub&gt;2&lt;/sub&gt;O&lt;/span&gt;
+        &lt;/p&gt;
+    &lt;/default&gt;                
+&lt;/switch&gt;    
+    
+</code></pre>
+        </section>
+        <section id="ruby">
+            <h2>Hefty Ruby Water</h2>
+            <p>While the <code>ruby</code> element is mostly used in east-asian languages, it can
+                also be useful in other contexts. As an example, and as you can see in the <a
+                    href="#source">source of the CML element</a> above, the code includes a
+                    <code>caption</code> element which is intended to be displayed below the formula
+                segments. Following this paragraph is a reworked version of the XHTML fallback used
+                    <a href="#switch">above</a>, using the <code>ruby</code> element. If your
+                Reading System does not support <code>ruby</code> markup, then the captions will
+                appear in parentheses on the same line as the formula segments.</p>
+            <p id="rubyp">
+                <ruby>2H<sub>2</sub><rp>(</rp><rt>hydrogen</rt><rp>)</rp></ruby>
+                <span>+</span>
+                <ruby>O<sub>2</sub><rp>(</rp><rt>oxygen</rt><rp>)</rp></ruby>
+                <ruby>&#10230;<rp>(</rp><rt>hefty</rt><rp>)</rp></ruby>
+                <ruby>2H<sub>2</sub>O<rp>(</rp><rt>water</rt><rp>)</rp></ruby>
+            </p>
+            <p>If your Reading System in addition to supporting <code>ruby</code> markup also
+                supports the <a
+                    href="http://idpf.org/epub/30/spec/epub30-contentdocs.html#sec-css-ruby-position"
+                        ><code>-epub-ruby-position</code></a> property, then the captions will
+                appear <em>under</em> the formula segments instead of <em>over</em> them.</p>
+
+            <p>The source code for the <code>ruby</code> version of the XHTML fallback looks as
+                follows:</p>
+            <pre><code>
+&lt;p id="rubyp"&gt;
+    &lt;ruby&gt;2H&lt;sub&gt;2&lt;/sub&gt;&lt;rp&gt;(&lt;/rp&gt;&lt;rt&gt;hydrogen&lt;/rt&gt;&lt;rp&gt;)&lt;/rp&gt;&lt;/ruby&gt;
+    &lt;span&gt;+&lt;/span&gt;
+    &lt;ruby&gt;O&lt;sub&gt;2&lt;/sub&gt;&lt;rp&gt;(&lt;/rp&gt;&lt;rt&gt;oxygen&lt;/rt&gt;&lt;rp&gt;)&lt;/rp&gt;&lt;/ruby&gt;
+    &lt;ruby&gt;&#10230;&lt;rp&gt;(&lt;/rp&gt;&lt;rt&gt;hefty&lt;/rt&gt;&lt;rp&gt;)&lt;/rp&gt;&lt;/ruby&gt;
+    &lt;ruby&gt;2H&lt;sub&gt;2&lt;/sub&gt;O&lt;rp&gt;(&lt;/rp&gt;&lt;rt&gt;water&lt;/rt&gt;&lt;rp&gt;)&lt;/rp&gt;&lt;/ruby&gt;
+&lt;/p&gt;                
+            </code></pre>
+
+            <p>... and the css declaration using the <code>-epub-ruby-position</code> property looks
+                like this:</p>
+            <pre><code>
+p#rubyp {
+    -epub-ruby-position : under;
+}                
+            </code></pre>
+        </section>
+    </body>
+</html>
