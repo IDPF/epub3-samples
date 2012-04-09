@@ -1,0 +1,82 @@
+@namespace epub "http://www.idpf.org/2007/ops";
+
+body {
+    font-family: Georgia, serif;
+    margin: 0;
+    padding: 0;
+}
+
+div[epub|type="chapter"] {
+    background-image: url('childrens-book-swans.jpg'),
+                      url('childrens-book-flowers.jpg');
+    background-position: 100% 50%, bottom center;
+    background-size: 50% auto, auto auto;
+    background-repeat: no-repeat, repeat-x;
+    background-color: #fdefc2;
+
+    padding: 2em;
+}
+
+p {
+    font-size: .75em;
+    text-align: left;
+}
+
+p:last-child {
+    padding-bottom: 2em;
+}
+
+
+h1 {
+    margin-top: 0;
+    text-transform: uppercase;
+    font-weight: 200;
+}
+
+p > span {
+    display: block;
+}
+
+p > span:nth-child(even) {
+    text-indent: 1em;
+}
+
+@media screen and (max-width:480px) { 
+ 
+    div[epub|type="chapter"] {
+        background-position: top center, bottom center;
+        background-size: 30% auto, 50% auto;
+
+        padding: 1em;
+        margin: auto;
+        text-align: center;
+    }
+    
+    h1 {
+        margin: 50% auto 0 0;
+        font-size: 1em;
+        text-align: center;
+    }
+    p {
+        margin-left: 25%;
+    }
+    
+}
+
+@media screen and (orientation:landscape) { 
+ 
+    div[epub|type="chapter"] {
+        background-position: 97% 40%, bottom center;
+        background-size: 20% auto, 50% auto;
+
+        -webkit-column-count: 2;
+        -moz-column-count: 2;
+        column-count: 2;
+
+        -webkit-column-gap: 0;
+        -moz-column-count: 0;
+        column-gap: 0;
+
+        padding: 2em 4em 5em 4em;
+    }
+}
