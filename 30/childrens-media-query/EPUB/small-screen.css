@@ -1,0 +1,22 @@
+/* Layout designed for smaller devices */
+
+@namespace epub "http://www.idpf.org/2007/ops";
+ 
+div[epub|type="chapter"] {
+    background-position: top center, bottom center;
+    background-size: 30% auto, 50% auto;
+    background-repeat: no-repeat, repeat-x;
+    padding: 1em;
+    margin: auto;
+}
+
+h1 {
+    margin: 50% auto 0 0;
+    font-size: 1em;
+}
+div {
+    text-align: center;
+}
+p {
+    margin-left: 25%;
+}
