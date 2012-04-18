@@ -46,11 +46,11 @@
     <item id="ch5" href="Content/pageNum-5.svg" media-type="image/svg+xml" />
     <item id="ch8" href="Content/pageNum-8.svg" media-type="image/svg+xml" />
     <item id="ch9" href="Content/pageNum-9.svg" media-type="image/svg+xml" />
-    <item id="img3" href="Image/img-3.jpg" media-type="image/jpeg" />
+    <item id="img3" href="Image/img3.jpg" media-type="image/jpeg" />
     <item id="ch10" href="Content/pageNum-10.svg" media-type="image/svg+xml" />
     <item id="ch11" href="Content/pageNum-11.svg" media-type="image/svg+xml" />
     <item id="ch12" href="Content/pageNum-12.svg" media-type="image/svg+xml" />
-    <item id="img4" href="Image/img-4.jpg" media-type="image/jpeg" />
+    <item id="img4" href="Image/img4.jpg" media-type="image/jpeg" />
     <item id="ch13" href="Content/pageNum-13.svg" media-type="image/svg+xml" />
 	<item id="ch14" href="Content/pageNum-14.svg" media-type="image/svg+xml" />
     <item id="ch15" href="Content/pageNum-15.svg" media-type="image/svg+xml" />
