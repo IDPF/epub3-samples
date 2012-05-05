@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!-- For compatibility with ePub2 Player -->
+<ncx:ncx xmlns:ncx="http://www.daisy.org/z3986/2005/ncx/" version="2005-1">
+  <ncx:head>
+    <ncx:meta name="dtb:uid" content="http://www.aozora.gr.jp/cards/000148/card776.html"/>
+    <ncx:meta name="dtb:depth" content="-1"/>
+    <ncx:meta name="dtb:totalPageCount" content="0"/>
+    <ncx:meta name="dtb:maxPageNumber" content="0"/>
+  </ncx:head>
+  <ncx:docTitle>
+    <ncx:text>草枕</ncx:text>
+  </ncx:docTitle>
+  <ncx:docAuthor>
+    <ncx:text>夏目漱石</ncx:text>
+  </ncx:docAuthor>
+  <ncx:navMap>
+
+    <ncx:navPoint id="表紙" playOrder="1">
+      <ncx:navLabel><ncx:text>表紙</ncx:text></ncx:navLabel>
+      <ncx:content src="表紙.xhtml"/>
+    </ncx:navPoint>
+
+    <ncx:navPoint id="一" playOrder="2">
+      <ncx:navLabel><ncx:text>一</ncx:text></ncx:navLabel>
+      <ncx:content src="一.xhtml"/>
+    </ncx:navPoint>
+
+    <ncx:navPoint id="二" playOrder="3">
+      <ncx:navLabel><ncx:text>二</ncx:text></ncx:navLabel>
+      <ncx:content src="二.xhtml"/>
+    </ncx:navPoint>
+
+    <ncx:navPoint id="三" playOrder="4">
+      <ncx:navLabel><ncx:text>三</ncx:text></ncx:navLabel>
+      <ncx:content src="三.xhtml"/>
+    </ncx:navPoint>
+
+    <ncx:navPoint id="四" playOrder="5">
+      <ncx:navLabel><ncx:text>四</ncx:text></ncx:navLabel>
+      <ncx:content src="四.xhtml"/>
+    </ncx:navPoint>
+
+    <ncx:navPoint id="五" playOrder="6">
+      <ncx:navLabel><ncx:text>五</ncx:text></ncx:navLabel>
+      <ncx:content src="五.xhtml"/>
+    </ncx:navPoint>
+
+    <ncx:navPoint id="六" playOrder="7">
+      <ncx:navLabel><ncx:text>六</ncx:text></ncx:navLabel>
+      <ncx:content src="六.xhtml"/>
+    </ncx:navPoint>
+
+    <ncx:navPoint id="七" playOrder="8">
+      <ncx:navLabel><ncx:text>七</ncx:text></ncx:navLabel>
+      <ncx:content src="七.xhtml"/>
+    </ncx:navPoint>
+
+    <ncx:navPoint id="八" playOrder="9">
+      <ncx:navLabel><ncx:text>八</ncx:text></ncx:navLabel>
+      <ncx:content src="八.xhtml"/>
+    </ncx:navPoint>
+
+    <ncx:navPoint id="九" playOrder="10">
+      <ncx:navLabel><ncx:text>九</ncx:text></ncx:navLabel>
+      <ncx:content src="九.xhtml"/>
+    </ncx:navPoint>
+
+    <ncx:navPoint id="十" playOrder="11">
+      <ncx:navLabel><ncx:text>十</ncx:text></ncx:navLabel>
+      <ncx:content src="十.xhtml"/>
+    </ncx:navPoint>
+
+    <ncx:navPoint id="十一" playOrder="12">
+      <ncx:navLabel><ncx:text>十一</ncx:text></ncx:navLabel>
+      <ncx:content src="十一.xhtml"/>
+    </ncx:navPoint>
+
+    <ncx:navPoint id="十二" playOrder="13">
+      <ncx:navLabel><ncx:text>十二</ncx:text></ncx:navLabel>
+      <ncx:content src="十二.xhtml"/>
+    </ncx:navPoint>
+
+    <ncx:navPoint id="十三" playOrder="14">
+      <ncx:navLabel><ncx:text>十三</ncx:text></ncx:navLabel>
+      <ncx:content src="十三.xhtml"/>
+    </ncx:navPoint>
+
+    <ncx:navPoint id="後付" playOrder="15">
+      <ncx:navLabel><ncx:text>この文書について</ncx:text></ncx:navLabel>
+      <ncx:content src="後付.xhtml"/>
+    </ncx:navPoint>
+
+  </ncx:navMap>
+</ncx:ncx>

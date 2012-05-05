@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja"
+      xmlns:epub="http://www.idpf.org/2007/ops">
+<head>
+  <title>後付</title>
+  <!-- metadata -->
+  <!--
+  <link rel="dcterms:isPartOf" href="http://www.epubcafe.jp/download/kusamakura.epub" />
+  <meta about="http://www.epubcafe.jp/download/kusamakura.epub" 
+    property="dc:title"    content="草枕"/>
+  <meta about="http://www.epubcafe.jp/download/kusamakura.epub" 
+    property="dc:title"    content="Kusamakura" xml:lang="en" />
+  <meta property="dc:creator"  content="夏目漱石" />
+  <meta property="dc:creator"  content="Natsume, S・seki" xml:lang="en" />
+  <link rel="dc:source"        href="http://www.aozora.gr.jp/cards/000148/card776.html" />
+  <meta property="marcrel:dtc" content="柴田卓治" />
+  <meta property="marcrel:pfr" content="伊藤時也" />
+  <link rel="dc:publisher"     href="http://www.aozora.gr.jp"/>
+  <meta about="http://www.aozora.gr.jp" 
+    property="foaf:name"   content="青空文庫" />
+  <link rel="marcrel:sht"      href="http://www.somu.go.jp"/>
+  <meta about="http://www.somu.go.jp" 
+    property="foaf:name"   content="総務省" />
+  <link rel="marcrel:mrk"      href="#epub_egls"/>
+  <meta about="#epub_egls" 
+    property="foaf:name"   content="EPUB日本語拡張仕様プロジェクト" />
+  <link about="#epub_egls" 
+    rel="foaf:homepage"    href="http://www.epubcafe.jp/" />
+  <meta property="dc:date"     content="2011-06-17" xml:lang=""/>-->
+  <link rel="license"          href="http://creativecommons.org/publicdomain/zero/1.0/" />
+  <!-- stylesheets -->
+  <link rel="alternate stylesheet" type="text/css" href="../css/horizontal.css"
+        class="horizontal" title="横組" />
+  <link rel="stylesheet" type="text/css" href="../css/vertical.css"
+        class="vertical" title="縦組" />
+  <!-- 読み上げアプリ用（ manifest に含まれないので一般リーダでは読み込まれない。） -->
+<!--  <link rel="stylesheet" href="../../webapp/smil.css" type="text/css" />-->
+</head>
+
+<body class="backmatter" epub:type="backmatter">
+<section epub:type="backmatter" class="about">
+  <section epub:type="colophon">
+    <h2>この文書について</h2>
+    <p>この文書は、総務省平成<span class="tcy">22</span>年度「新 ICT 利活用サービス創出支援事業」に含まれる「EPUB 日本語拡張仕様策定」事業の一環として、イースト株式会社が製作したものです。この文書の目的は、オープンソースのレンダリングエンジン WebKit における、CSS による日本語組版の実装を検証することであり、スタイルシートには縦書き、ルビ、圏点をはじめとする日本語組版に関わるプロパティが指定されています。</p>
+    <p>製作にあたっては、青空文庫にて公開されている『草枕』のXHTML版 (<a href="http://www.aozora.gr.jp/cards/000148/card776.html">http://www.aozora.gr.jp/cards/000148/card776.html</a>) をベースとして利用させて頂きました。青空文庫の皆様に感謝申し上げます。</p>
+    <p>この文書はベースとした XHTML ファイルから次の変更を行っております。</p>
+    <ul>
+      <li>文字コードを Shift-JIS から UTF-8 に変更</li>
+      <li>画像化された外字を、文字データに置換（Shift-JIS で表現できなかった文字が UTF-8 では扱うことができるため）</li>
+      <li>コンテンツ全体の、要素、クラス名等の再マークアップ</li>
+      <li>本文書独自のスタイルシートの作成</li>
+      <li>著者（夏目漱石）の画像および略歴の追加</li>
+    </ul>
+  </section>
+
+  <section epub:type="warning">
+    <h2>注意事項</h2>
+    <p>この文書のスタイルシートは CSS3 の縦書きをサポートするブラウザに最適化して作成されました。縦書きをサポートしないブラウザでは正常に表示されない可能性があります。</p>
+    <p>製作の際には、次のブラウザで表示確認を行いました。</p>
+
+    <ul>
+      <li>WebKit Nightly Builds (<a href="http://nightly.webkit.org/">http://nightly.webkit.org/</a>): r75891(Mac OS X), r74232(Windows)</li>
+      <li>Chrome Early Access Release Channels (<a href="https://sites.google.com/a/chromium.org/dev/getting-involved/dev-channel">https://sites.google.com/a/chromium.org/dev/getting-involved/dev-channel</a>): DEV Channel 10.0.634.0 dev(Mac OS X), Canary build 10.0.634.0 dev (Windows) </li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>更新履歴</h2>
+    <dl class="history">
+      <dt>2011年<span class="tcy">1</span>月</dt><dd>新規作成</dd>
+      <dt>2011年<span class="tcy">2</span>月</dt>
+      <dd>
+        <ul>
+          <li>body要素に指定していたwriting-modeプロパティをhtml要素に指定するよう修正しました。</li>
+          <li>アラビア数字の一部にtext-combineプロパティを指定して縦中横を表現するようにしました。</li>
+          <li>著者の略歴を一部修正しました。</li>
+        </ul>
+      </dd>
+      <dt>2011年<span class="tcy">6</span>月</dt>
+      <dd>
+        <ul>
+          <li>ファイル名を日本語に修正し、IRIによって参照するように修正。</li>
+          <li>Media Overlayを一章と二章に対して追加(IDPFから提供されているスクリプト等を使用）。</li>
+          <li>パッケージ文書にメタデータを追記</li>
+          <li>XMPによってメタデータを追記</li>
+        </ul>
+      </dd>
+      <dt>2011年<span class="tcy">7</span>月</dt>
+      <dd>
+        <ul>
+          <li>U+2014(EM DASH)が正しく表示されるようにフォントを追加</li>
+        </ul>
+      </dd>
+      <dt>2012年<span class="tcy">4</span>月</dt>
+      <dd>
+        <ul>
+          <li>メタデータを追記</li>
+          <li>EPUB 3.0に適合するように修正</li>
+        </ul>
+      </dd>
+    </dl>
+  </section>
+  <section epub:type="bibliography">
+    <h2>ベースとした青空文庫の書誌情報</h2>
+    
+    <div class="original_information">
+      <div class="bibliographical_information">
+
+        <dl class="information_list">
+          <dt>底本：</dt>
+
+          <dd><cite>「夏目漱石全集<span class="tcy">3</span>」</cite>ちくま文庫、筑摩書房<br />
+            1987（昭和<span class="tcy">62</span>）年<span class="tcy">12</span>月<span class="tcy">1</span>日第<span class="tcy">1</span>刷発行</dd>
+
+          <dt>底本の親本：</dt>
+
+          <dd><cite>「筑摩全集類聚版夏目漱石全集」</cite>筑摩書房<br />
+            1971（昭和<span class="tcy">46</span>）年<span class="tcy">4</span>月～1972（昭和<span class="tcy">47</span>）年<span class="tcy">1</span>月</dd>
+
+          <dt>入力：</dt>
+
+          <dd>柴田卓治</dd>
+
+          <dt>校正：</dt>
+
+          <dd>伊藤時也</dd>
+
+          <dt>1999年<span class="tcy">2</span>月<span class="tcy">17</span>日</dt>
+
+          <dd>公開</dd>
+
+          <dt>2007年<span class="tcy">5</span>月<span class="tcy">28</span>日</dt>
+
+          <dd>修正</dd>
+
+          <dt class="format">青空文庫作成ファイル：</dt>
+
+          <dd>このファイルは、インターネットの図書館、青空文庫（http://www.aozora.gr.jp）で作られました。入力、校正、制作にあたったのは、ボランティアの皆さんです。</dd>
+        </dl>
+      </div>
+
+      <div class="notation_notes">
+        <p>●表記について</p>
+
+        <ul class="notes_list">
+          <li>このファイルは W3C 勧告 XHTML1.1 にそった形式で作成されています。</li>
+
+          <li>［＃…］は、入力者による注を表す記号です。</li>
+
+          <li>「くの字点」をのぞくJIS X 0213にある文字は、画像化して埋め込みました。</li>
+
+          <li>傍点や圏点、傍線の付いた文字は、強調表示にしました。</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+</section>
+</body>
+</html>

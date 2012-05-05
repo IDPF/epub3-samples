@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="file:/C:/EPub/epub-revision/build/30/schema/package-30.rnc" type="application/relax-ng-compact-syntax"?>
+<package xmlns="http://www.idpf.org/2007/opf" version="3.0" xml:lang="ja"
+         prefix="foaf: http://xmlns.com/foaf/spec/" dir="rtl"
+         unique-identifier="aozora-id"> <!--pub-id-->
+  <metadata xmlns:opf="http://www.idpf.org/2007/opf"
+            xmlns:dc="http://purl.org/dc/elements/1.1/"
+            xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+            xmlns:dcterms="http://purl.org/dc/terms/">
+
+    <!-- identifier -->
+    <!-- ISBN番号がある場合は、以下を利用。`unique-identifier' を、`pub-id' にする。
+    <dc:identifier id="isbn" id="pub-id"
+                   >urn:isbn:978-4-XXXX-YYYY-Z</dc:identifier>
+    <meta property="dcterms:identifier" id="isbn"
+          >urn:isbn:978-4-XXXX-YYYY-Z</meta>
+    <meta refines="#pub-id" property="scheme" datatype="xsd:string">isbn</meta>
+    -->
+    <dc:identifier id="aozora-id"
+                   >http://www.aozora.gr.jp/cards/000148/card776.html</dc:identifier>
+
+    <!-- title -->
+    <dc:title id="title" xml:lang="ja-JP" dir="rtl">草枕</dc:title>
+    <meta refines="#title" property="title-type" id="title-type">main</meta>
+    <meta refines="#title" property="file-as" xml:lang="ja-Hrkt-JP">くさまくら</meta>
+    <meta refines="#title" property="alternate-script" xml:lang="ja-Hrkt-JP">くさまくら</meta>
+    <meta refines="#title" property="alternate-script" xml:lang="en">Kusamakura</meta>
+
+    <!-- language -->
+    <dc:language>ja-jp</dc:language>
+
+    <!-- author -->
+    <meta property="dcterms:creator" id="auth">夏目 漱石</meta>
+    <meta refines="#auth" property="file-as" xml:lang="ja-Hrkt-JP">なつめ そうせき</meta>
+    <meta refines="#auth" property="alternate-script" xml:lang="ja-Hrkt-JP">なつめ そうせき</meta>
+    <meta refines="#auth" property="alternate-script" xml:lang="en">Natsume, Sōseki</meta>
+    <meta refines="#auth" property="role" scheme="marc:relators">aut</meta>
+
+    <!-- contributors -->
+    <meta property="dcterms:contributor" id="contrib1">柴田 卓治</meta>
+    <meta refines="#contrib1" property="role" scheme="marc:relators" >dtc</meta> 
+    <meta refines="#contrib1" property="dcterms:date" scheme="dcterms:W3CDTF"
+          >1999-02-17</meta>
+
+    <meta property="dcterms:contributor" id="contrib2">伊藤 時也</meta>
+    <meta refines="#contrib2" property="role" scheme="marc:relators">pfr</meta> 
+    <meta refines="#contrib2" property="dcterms:date" scheme="dcterms:W3CDTF"
+          >2007-05-28</meta>
+
+    <meta property="dcterms:contributor" id="contrib3">総務省</meta>
+    <meta refines="#contrib3" property="alternate-script" xml:lang="en"
+          >Ministry of Internal Affairs and Communications</meta>
+    <meta refines="#contrib3" property="role" scheme="marc:relators">sht</meta> 
+
+    <meta property="dcterms:contributor" id="contrib4"
+          >EPUB日本語拡張仕様策定プロジェクト</meta>
+    <meta refines="#contrib4" property="foaf:mbox" scheme="xsd:anyURI"
+          >mailto:epubcafe@googlegroups.com</meta>
+    <meta refines="#contrib4" property="foaf:homepage" scheme="xsd:anyURI"
+          >http://www.epubcafe.jp/</meta>
+    <meta refines="#contrib4" property="alternate-script" xml:lang="en"
+          >Japanese EPUB Specification Settlement Project</meta>
+    <meta refines="#contrib4" property="role" id="contrib4-role">mrk</meta> 
+    <meta refines="#contrib4" property="role" scheme="marc:relators">mrk</meta> 
+
+    <meta property="dcterms:contributor" id="contrib5">持田 怜香</meta>
+    <meta refines="#contrib5" property="alternate-script" xml:lang="en">Reika Mochida</meta>
+    <meta refines="#contrib5" property="foaf:Organization" id="contrib5affilitiation" xml:lang="ja-jp"
+          >NPO 支援技術開発機構</meta>
+    <meta refines="#contrib5affilitiation" property="alternate-script" xml:lang="en"
+          >Assistive Technology Development Organization</meta>
+    <meta refines="#contrib5" property="role" scheme="marc:relators">nrt</meta> 
+
+    <meta property="dcterms:contributor" id="contrib6">濱田 麻邑</meta>
+    <meta refines="#contrib6" property="alternate-script" xml:lang="en">Mayu Hamada</meta>
+    <meta refines="#contrib6" property="foaf:Organization" id="contrib6affilitiation" xml:lang="ja-jp"
+              >NPO 支援技術開発機構</meta>
+    <meta refines="#contrib6affilitiation" property="alternate-script" xml:lang="en"
+              >Assistive Technology Development Organization</meta>
+    <meta refines="#contrib6" property="role" scheme="marc:relators">drt</meta> 
+        
+    <meta property="dcterms:contributor" id="contrib7">川幡 太一</meta>
+    <meta refines="#contrib7" property="alternate-script" xml:lang="en">Taichi Kawabata</meta>
+    <meta refines="#contrib7" property="foaf:organization" id="contrib7affilitiation"
+              >NTT未来ねっと研究所</meta>
+    <meta refines="#contrib7affilitiation" property="alternate-script" xml:lang="en"
+              >Network Innovation Laboratories, NTT</meta>
+    <meta refines="#contrib7" property="role" scheme="marc:relators">mrk</meta> 
+             
+        <meta property="dcterms:contributor" id="contrib8">村田 真</meta>
+        <meta refines="#contrib8" property="alternate-script" xml:lang="en">Makoto Murata</meta>
+        <meta refines="#contrib8" property="foaf:organization" id="contrib8affilitiation"
+              >国際大学</meta>
+        <meta refines="#contrib8affilitiation" property="alternate-script" xml:lang="en"
+              >International University of Japan</meta>
+    <meta refines="#contrib8" property="role" scheme="marc:relators">mrk</meta> 
+        
+    <!-- media-overlays -->
+    <meta property="media:duration" refines="#一_overlay">0:33:35.025</meta>
+    <meta property="media:duration" refines="#二_overlay">0:26:28.006</meta>
+    <meta property="media:duration">1:00:03.031</meta>
+    <meta property="media:narrator">c</meta>
+
+    <!-- copyright -->
+    <meta property="dcterms:rights" refines="#一_audio"
+          >Assistive Technology Development Organization</meta>
+    <meta property="dcterms:rights" refines="#二_audio"
+          >Assistive Technology Development Organization</meta>
+    <meta property="dcterms:rights">EPUB日本語拡張仕様策定プロジェクト</meta>
+
+    <!-- license -->
+    <meta property="dcterms:license" refines="#一_audio" scheme="xsd:anyURI"
+          >http://creativecommons.org/licenses/by-nc-sa/3.0/</meta>
+    <meta property="dcterms:license" refines="#二_audio" scheme="xsd:anyURI"
+          >http://creativecommons.org/licenses/by-nc-sa/3.0/</meta>
+    <meta property="dcterms:license" scheme="xsd:anyURI"
+          >http://creativecommons.org/publicdomain/zero/1.0/</meta>
+
+    <!-- source -->
+    <meta property="dcterms:source" scheme="xsd:anyURI"
+          >http://www.aozora.gr.jp/cards/000148/card776.html</meta>
+    <link rel="xmp-record" href="meta/底本.xmp"/>
+    <meta property="dcterms:isPartOf" scheme="xsd:IDREF">底本</meta>
+
+    <!-- misc -->
+    <meta property="dcterms:publisher">青空文庫</meta>
+    <meta property="dcterms:modified" scheme="dcterms:W3CDTF">2012-04-24T00:00:00Z</meta>
+  </metadata>
+
+  <manifest>
+    <!-- stylesheets -->
+    <item id="hstyle" href="css/horizontal.css" media-type="text/css"/>
+    <item id="vstyle" href="css/vertical.css" media-type="text/css"/>
+    <!-- documents -->
+        <item id="表紙" href="xhtml/表紙.xhtml" media-type="application/xhtml+xml"/>
+    <item id="目次" properties="nav" href="xhtml/目次.xhtml" media-type="application/xhtml+xml"/>
+    <item id="一" href="xhtml/一.xhtml" media-type="application/xhtml+xml"
+          media-overlay="一_overlay"/>
+    <item id="二" href="xhtml/二.xhtml" media-type="application/xhtml+xml"
+          media-overlay="二_overlay"/>
+    <item id="三" href="xhtml/三.xhtml" media-type="application/xhtml+xml"/>
+    <item id="四" href="xhtml/四.xhtml" media-type="application/xhtml+xml"/>
+    <item id="五" href="xhtml/五.xhtml" media-type="application/xhtml+xml"/>
+    <item id="六" href="xhtml/六.xhtml" media-type="application/xhtml+xml"/>
+    <item id="七" href="xhtml/七.xhtml" media-type="application/xhtml+xml"/>
+    <item id="八" href="xhtml/八.xhtml" media-type="application/xhtml+xml"/>
+    <item id="九" href="xhtml/九.xhtml" media-type="application/xhtml+xml"/>
+    <item id="十" href="xhtml/十.xhtml" media-type="application/xhtml+xml"/>
+    <item id="十一" href="xhtml/十一.xhtml" media-type="application/xhtml+xml"/>
+    <item id="十二" href="xhtml/十二.xhtml" media-type="application/xhtml+xml"/>
+    <item id="十三" href="xhtml/十三.xhtml" media-type="application/xhtml+xml"/>
+    <item id="後付" href="xhtml/後付.xhtml" media-type="application/xhtml+xml"/>
+    <!-- images -->
+    <item id="夏目漱石" href="images/夏目漱石.jpg" media-type="image/jpeg"/>
+    <item id="書デジ" href="images/書デジ.png" media-type="image/png"/>
+    <!-- smil -->
+    <item id="一_overlay" href="xhtml/一.smil" media-type="application/smil+xml"/>
+    <item id="二_overlay" href="xhtml/二.smil" media-type="application/smil+xml"/>
+    <!-- audio -->
+    <item id="一_audio" href="audio/fmse004b.mp3" media-type="audio/mpeg"/> 
+    <item id="二_audio" href="audio/ulnr0036.mp3" media-type="audio/mpeg"/> 
+    <!-- fonts -->
+    <item id="foobar" href="fonts/foobar.ttf" media-type="application/vnd.ms-opentype"/>
+    <!-- misc -->
+<!--    <item id="底本" href="meta/底本.xmp" media-type="application/rdf+xml"/>-->
+    <!-- for EPUB2 compatibility -->
+    <item id="ncxtoc" href="xhtml/toc.ncx" media-type="application/x-dtbncx+xml"/>
+  </manifest>
+
+  <spine toc="ncxtoc" page-progression-direction="rtl">
+    <itemref idref="表紙" linear="yes"/>
+    <itemref idref="目次" linear="no"/>
+    <itemref idref="一" linear="yes"/>
+    <itemref idref="二" linear="yes"/>
+    <itemref idref="三" linear="yes"/>
+    <itemref idref="四" linear="yes"/>
+    <itemref idref="五" linear="yes"/>
+    <itemref idref="六" linear="yes"/>
+    <itemref idref="七" linear="yes"/>
+    <itemref idref="八" linear="yes"/>
+    <itemref idref="九" linear="yes"/>
+    <itemref idref="十" linear="yes"/>
+    <itemref idref="十一" linear="yes"/>
+    <itemref idref="十二" linear="yes"/>
+    <itemref idref="十三" linear="yes"/>
+    <itemref idref="後付" linear="yes"/>
+  </spine>
+</package>
