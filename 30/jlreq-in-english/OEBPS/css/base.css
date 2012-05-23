@@ -1,0 +1,301 @@
+/* Style sheet for Japanese Layout Requirements */
+/* $Id: base.css,v 1.42 2011/11/15 09:28:06 tkobayas4 Exp $ */
+
+@media screen {
+
+body {
+	font-family: Arial, sans-serif;
+}
+html:lang(ja) {
+	line-height: 1.5;
+}
+
+}
+
+p, li {
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+}
+
+div.navigation { text-align: center; }
+
+span.toc-number { font-family: monospace; }
+span.toc-page { display: none; }
+div.toc-level1 { }
+div.toc-level2 { margin-left: 1em; }
+div.toc-level3 { margin-left: 2em; }
+div.toc-levelA { margin-left: 1em; }
+div.index-item2 { margin-left: 1em; }
+span.index-page { display: none; }
+
+div.body { background-color:transparent; }
+div.div1 { background-color:transparent; }
+div.div2 { background-color:transparent; }
+div.div3 { background-color:transparent; }
+div.index { background-color:transparent; }
+
+h1 { font: 170% Arial, sans-serif; color: #005A9C; }
+h2 { font: 140% Arial, sans-serif; color: #005A9C; }
+h3 { font: 120% Arial, sans-serif; color: #005A9C; }
+.div3 > h3,
+h4 { font: 115% Arial, sans-serif; color: #005A9C; }
+
+hr {
+	margin-top: 1em;
+	margin-bottom: 1em;
+}
+hr.chapter-ruler {
+	display: none;
+}
+
+ol, ul {
+	/*padding-left: 2.5em;*/
+}
+ol {
+	list-style-type: lower-alpha;
+}
+ol.decimal,
+ol ol {
+	list-style-type: decimal;
+}
+ol.decimal ol {
+	list-style-type: lower-alpha;
+}
+ol.decimal ol ol,
+ol ol ol {
+	list-style-type: lower-roman;
+}
+ol.decimal ol ol ol,
+ol ol ol ol {
+	list-style-type: decimal;
+}
+
+div.figure {
+	text-align: center;
+	margin-top: 1em;
+	margin-bottom: 1em;
+	/*border: solid thin red;*/
+}
+div.figure img {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+.figureCaption {
+	font-size: 0.8em;
+	font-style: italic;
+	display: block;
+	text-align: center;
+	margin-bottom: 1em;
+}
+
+table.t_note {
+	border-collapse: collapse;
+	border-spacing: 0;
+	margin-left: 2em;
+}
+table.t_note td {
+	vertical-align: top;
+	/*border: 1px solid red;*/
+	border: none;
+}
+table.t_note td {
+	padding: 0;
+}
+table.t_note td.ft {
+	white-space: nowrap;
+	padding-right: 0.5em;
+}
+table.t_note td p {
+	font-size: 0.85em;
+	font-weight: normal;
+}
+table.t_note td ol {
+	margin-top: 0;
+	margin-bottom: 0;
+}
+table.t_note .figureCaption {
+}
+
+ol table.t_note,
+ul table.t_note {
+	margin-left: 1em;
+}
+
+table.t_sample {
+	margin-left: 1em;
+	border-spacing: 0;
+	border-collapse: collapse;
+}
+table.t_sample td {
+	vertical-align: top;
+	padding-right: 0.5em;
+	/*border: 1px solid green;*/
+	border: none;
+}
+table.t_sample td.ft {
+	white-space: nowrap;
+	padding-right: 0.5em;
+}
+table.t_sample td p {
+	font-size: 1em;
+	font-weight: normal;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+table.t_sample td ol {
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+table.t_note table.t_sample td p {
+	font-size: 0.8em;
+}
+
+span.digit { }
+span.unit { }
+i.quantity,
+span.math-i {
+	font-style: italic;
+}
+
+.termdef {
+	font-weight: bold;
+	text-decoration: none;
+}
+a.termref:link,
+a.termref:visited {
+}
+a.termref2nd:link,
+a.termref2nd:visited {
+	color: black;
+	text-decoration: none;
+	background-color: transparent;
+}
+.chapter_ref {
+	font-weight: bold;
+}
+.figure_ref {
+}
+
+.rfc2119 {
+	font-variant: small-caps;
+}
+
+span.character:lang(ja) {
+	padding-left: 0.25em;
+	padding-right: 0.25em;
+}
+
+table.termlist {
+	border-collapse: collapse;
+}
+table.termlist th,
+table.termlist td {
+	border: solid thin gray;
+	padding: 0.2em;
+}
+
+table.charclass {
+	border-collapse: collapse;
+}
+table.charclass col.character,
+table.charclass col.ucs {
+	text-align: center;
+}
+table.charclass tr > td {
+	text-align: center;
+}
+table.charclass tr > td + td + td {
+	text-align: left;
+}
+table.charclass th,
+table.charclass td {
+	border: solid thin gray;
+	padding: 0.2em;
+}
+table.charclass td.character {
+	font-family: 'MS Mincho'
+}
+table.charclass td.character-latn {
+	font-family: 'Times New Roman'
+}
+
+
+span.math,
+span.expr {
+	/*font-famiy: monospace;*/
+	/*font-size: 0.9em;*/
+}
+
+span.math,
+div.div-pdf,
+object.pdf,
+object.svg {
+	display: none;
+}
+
+/* ------------------ */
+
+@media screen {
+
+.sec_ref {
+	font-style: italic;
+}
+
+.termdef {
+	color: #008000;
+}
+a.termref:link,
+a.termref:visited {
+	background-color: #FF8;
+}
+a.termref2nd:link,
+a.termref2nd:visited {
+}
+
+ins { text-decoration: underline; background-color: #CCFFCC; }
+del, del a { text-decoration: line-through; color:#CCCCCC; }
+em.change { background-color:#CC3333; color: white; }
+/* em { background-color:#CC3333; color: white; }
+em.conflict-term { background-color:#882288; } */
+span.change { color: red; }
+span.index-link { margin-left: 1em;}
+
+} /*end of screen*/
+
+/* ------------------ */
+
+@media print {
+
+ins { text-decoration: none; background-color: transparent; }
+del { display: none; }
+
+:link,
+:visited {
+	color: black;
+	text-decoration: none;
+	background-color: transparent;
+}
+
+} /*end of print*/
+
+/* ------------------ */
+/*
+h1, h2, h3, h4 { background-color: transparent; }
+div.head { background-color: #EFF; }
+div.div1 { background-color: #EFF; }
+div.div2 { background-color: #FFE; }
+div.div3 { background-color: #EEE; }
+p.body { background-color: #FEF; }
+div.figure { background-color: #EFE; }
+table.t_note { border: solid 1pt red; }
+table.t_sample { border: solid 1pt #CCF; }
+table.t_list { border: solid 1pt #CCC; }
+span.lln { background-color: #DDF; }
+a.termref:link,
+a.termref:visited { background-color: #FF8; }
+*/
+
+.div1 h2 {
+	margin-top: 4em;
+}

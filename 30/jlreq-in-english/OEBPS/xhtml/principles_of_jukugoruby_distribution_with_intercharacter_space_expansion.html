@@ -1,0 +1,42 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"><head><meta charset="UTF-8"/><title>Requirements for Japanese Text Layout</title><link rel="stylesheet" type="text/css" href="../css/base.css"/><link rel="stylesheet" type="text/css" href="../css/W3C-WG-NOTE.css"/></head><body><h3 id="principles_of_jukugoruby_distribution_with_intercharacter_space_expansion">F.3 <span class="heading"><span class="index" id="en-app6_3">Principles of Jukugo-Ruby Distribution with Inter-Character Space Expansion</span></span></h3><p>Principles for a method of jukugo-ruby distribution which allows inter-character spacing to expand, are as follows.</p><ol>
+				<li>
+			
+				
+				<p>Try first to let ruby characters overhang other base characters associated with the same kanji compound word. If ruby still does not fit, then look for adjacent non-base characters that allow ruby to overhang. Lastly when both approaches still cannot settle the positioning of the ruby characters, combine the method of expanding inter-character spacing of the compound word with the previous two.</p>
+			
+			</li>
+				<li>
+			
+				
+				<p>Inter-character spacing can be expanded only for those base characters which are accompanied by more than two ruby characters.</p>
+			
+			</li>
+				<li>
+			
+				
+				<p>The total amount of inter-character spacing should be determined as follows.</p>
+			
+			
+				
+				<p>Total inter-character space = (the sum of the length of those ruby characters forced out from the corresponding base character) - (the sum of the length of those ruby characters which overhang other base characters) - (the sum of the length of those ruby characters which overhang other non-base characters).</p>
+			
+			</li>
+				<li>
+			
+				
+				<p>Distribute the amount of space across those base characters accompanied by more than two ruby characters in accordance with the number of ruby characters (or the length of ruby characters when set solid).</p>
+			
+			</li>
+				<li>
+			
+				
+				<p>For each base character, expand the preceding and succeeding inter-character space equally by  half of the assigned space. Note that, depending on the position of the base character, it could be the expansion of inter-character spacing between two base characters, or it could be the expansion between the base character and a non-base character.</p>
+			
+			</li>
+				<li>
+			
+				
+				<p>In a special case where a jukugo-ruby character complex is at the line-head and the base character and the ruby character at the line-head are supposed to be aligned, expand only the succeeding inter-character space of the base character by all of the assigned space. Similarly, when a jukugo-ruby character complex is at the line-end and the base character and the ruby character at the line-end are supposed to be aligned, expand the preceding inter-character space of the base character by all of the assigned space.</p>
+			
+			</li>
+			</ol></body></html>
