@@ -1,3 +1,3 @@
 #!/bin/sh
 
-java -jar lib/epubcheck-3.0-rc1-pre1/epubcheck-3.0-rc1-pre1.jar $@ -mode exp
+java -jar lib/epubcheck-201206d1/epubcheck-201206d1.jar $@ -mode exp
