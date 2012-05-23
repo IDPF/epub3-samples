@@ -3,14 +3,12 @@
       prefix="rendition: http://www.idpf.org/vocab/rendition/#"
       unique-identifier="ootuya-id">
       <metadata xmlns:opf="http://www.idpf.org/2007/opf" xmlns:dc="http://purl.org/dc/elements/1.1/"
-            xmlns:xsd="http://www.w3.org/2001/XMLSchema"
-            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
             xmlns:dcterms="http://purl.org/dc/terms/">
             
             <dc:identifier id="ootuya-id">urn:uuid:A649F639-6C1F-1014-8CC3-F813564D7508</dc:identifier>
             <dc:title>ハルコさんの彼氏</dc:title>
             <dc:language>ja-jp</dc:language>
-            <meta property="dcterms:modified">2011-06-30T21:37:00Z</meta>
+            <meta property="dcterms:modified">2012-05-24T00:00:00Z</meta>
             <meta property="rendition:layout">pre-paginated</meta>
             <meta property="rendition:orientation">portrait</meta>
             <meta property="rendition:spread">landscape</meta>
