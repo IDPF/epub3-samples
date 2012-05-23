@@ -1,0 +1,20 @@
+@charset "utf-8";
+
+ol {
+list-style-type: none;
+}
+a {
+text-decoration: none;
+}
+a:hover {
+text-decoration: underline;
+}
+body
+{
+    font-size: 14pt;
+    font-family: "KozMinPr6N-Medium", "HiraMinProN-W3", "ＭＳ 明朝", serif, sans-serif;
+    margin: auto 1em;
+    padding: 1em 0;
+    max-height: 28em;
+    background-color: #fff4e7;
+}
