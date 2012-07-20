@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="file:/C:/EPub/epub-revision/build/30/schema/package-30.rnc" type="application/relax-ng-compact-syntax"?>
 <package xmlns="http://www.idpf.org/2007/opf" version="3.0" xml:lang="ja"
-         prefix="foaf: http://xmlns.com/foaf/spec/" dir="rtl"
+         prefix="foaf: http://xmlns.com/foaf/spec/"
          unique-identifier="aozora-id"> <!--pub-id-->
   <metadata xmlns:opf="http://www.idpf.org/2007/opf"
             xmlns:dc="http://purl.org/dc/elements/1.1/"
