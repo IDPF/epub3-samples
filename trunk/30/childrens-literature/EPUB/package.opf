@@ -30,8 +30,9 @@
 		<dc:rights>Public domain in the USA.</dc:rights>
 	</metadata>
 	<manifest>
-		<item href="images/cover.png" id="cover" media-type="image/png" properties="cover-image"/>
+		<item href="images/cover.png" id="cover-img" media-type="image/png" properties="cover-image"/>
 		<item href="css/epub.css" id="css" media-type="text/css"/>
+		<item href="cover.xhtml" id="cover" media-type="application/xhtml+xml"/>
 		<item href="s04.xhtml" id="s04" media-type="application/xhtml+xml"/>
 		<item href="nav.xhtml" id="nav" media-type="application/xhtml+xml" properties="nav"/>
 	</manifest>
