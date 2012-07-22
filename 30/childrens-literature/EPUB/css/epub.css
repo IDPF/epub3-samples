@@ -82,12 +82,21 @@ ol > li:first-child {
 	margin-top: 0.5em;
 }
 
+nav[epub|type~='toc'] > ol > li > ol > li {
+	margin-top: 0.5em;
+}
+
 li.front {
 	font-style: italic;
 }
 
 li.front + li.body {
 	margin-top: 1.5em;
+}
+
+span.author {
+	font-family: arial, helvetica, sans-serif;
+	font-weight: bold;
 }
 
 span[epub|type~='pagebreak'] {
