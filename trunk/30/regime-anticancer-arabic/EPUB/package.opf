@@ -36,7 +36,7 @@
 		<dc:contributor id="contributor">Vincent Gros</dc:contributor>
 		<meta refines="#contributor" property="role" scheme="marc:relators">mrk</meta>
 		<meta refines="#contributor" property="file-as">Gros, Vincent</meta>
-		<meta property="dcterms:modified">2012-03-26T12:00:00Z</meta>
+		<meta property="dcterms:modified">2012-08-08T12:00:00Z</meta>
 <!-- meta for the cover -->
 		<meta name="cover" content="cover"/>
 	</metadata>

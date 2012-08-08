@@ -1,11 +1,5 @@
 @charset "UTF-8";
 
-/* direction: error in epubcheck3.0b4 and b5 */
-section {
-	direction:rtl;
-}
-/**/
-
 /* Cover and titlepage (fullpage image) */
 figure.fullpage {
 	max-height:100%;
