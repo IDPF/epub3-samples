@@ -37,7 +37,6 @@
             <item id="ncxtoc" href="xhtml/toc.ncx" media-type="application/x-dtbncx+xml"/>
       </manifest>
       <spine toc="ncxtoc" page-progression-direction="rtl">
-            <itemref idref="toc"  />
             <itemref idref="j01" properties="page-spread-left" />
             <itemref idref="j02" properties="page-spread-right" />
             <itemref idref="j03" properties="page-spread-left" />
