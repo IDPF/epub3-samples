@@ -2,12 +2,12 @@
 <package xmlns="http://www.idpf.org/2007/opf" prefix="cc: http://creativecommons.org/ns# rendition: http://www.idpf.org/vocab/rendition/#" version="3.0" unique-identifier="bookid" xml:lang="fr" dir="ltr" id="package">
 	<metadata xmlns:dc="http://purl.org/dc/elements/1.1/">
 <!-- unique identifier -->
-		<dc:identifier id="bookid">code.gogle.com.epub-sample.sous-le-vent_svg-in-spine</dc:identifier>
+		<dc:identifier id="bookid">code.gogle.com.epub-sample.sous-le-vent</dc:identifier>
 		<meta refines="#bookid" property="identifier-type" scheme="onix:codelist5">01</meta>
 <!-- language of the book -->
 		<dc:language>fr</dc:language>
 <!-- title -->
-		<dc:title id="title">Sous le vent (SVG directly in spine)</dc:title>
+		<dc:title id="title">Sous le vent</dc:title>
 		<meta refines="#title" property="title-type">main</meta>
 <!-- creator -->
 	<!-- 1 -->
@@ -32,11 +32,11 @@
 		<dc:contributor id="contributor">Vincent Gros</dc:contributor>
 		<meta refines="#contributor" property="role" scheme="marc:relators">mrk</meta>
 		<meta refines="#contributor" property="file-as">Gros, Vincent</meta>
-		<meta property="dcterms:modified">2012-08-22T11:00:00Z</meta>
+		<meta property="dcterms:modified">2012-08-22T10:00:00Z</meta>
 <!-- fixed-layout options -->
 		<meta property="rendition:layout">pre-paginated</meta>
 		<meta property="rendition:orientation">portrait</meta>
-		<meta property="rendition:spread">none</meta>
+		<meta property="rendition:spread">auto</meta>
 <!-- meta for the cover -->
 		<meta name="cover" content="cover" />
 	</metadata>
@@ -49,23 +49,23 @@
 		<item id="id2" href="Font/agaramondpro-bold.otf" media-type="application/x-font-otf" />
 		<item id="id3" href="Font/agaramondpro-italic.otf" media-type="application/x-font-otf" />
 
-		<item id="cover" href="Image/cover.jpg" properties="cover-image" media-type="image/jpeg" />
+		<item id="cover" href="Image/9782709641609_Couv.jpg" properties="cover-image" media-type="image/jpeg" />
 		
-		<item id="ch1" href="Content/pageNum-1.svg" media-type="image/svg+xml" />
-		<item id="ch2" href="Content/pageNum-2.svg" media-type="image/svg+xml" />
-		<item id="ch3" href="Content/pageNum-3.svg" media-type="image/svg+xml" />
-		<item id="ch4" href="Content/pageNum-4.svg" media-type="image/svg+xml" />
-		<item id="ch5" href="Content/pageNum-5.svg" media-type="image/svg+xml" />
-		<item id="ch8" href="Content/pageNum-8.svg" media-type="image/svg+xml" />
-		<item id="ch9" href="Content/pageNum-9.svg" media-type="image/svg+xml" />
-		<item id="img3" href="Image/img3.jpg" media-type="image/jpeg" />
-		<item id="ch10" href="Content/pageNum-10.svg" media-type="image/svg+xml" />
-		<item id="ch11" href="Content/pageNum-11.svg" media-type="image/svg+xml" />
-		<item id="ch12" href="Content/pageNum-12.svg" media-type="image/svg+xml" />
-		<item id="img4" href="Image/img4.jpg" media-type="image/jpeg" />
-		<item id="ch13" href="Content/pageNum-13.svg" media-type="image/svg+xml" />
-		<item id="ch14" href="Content/pageNum-14.svg" media-type="image/svg+xml" />
-		<item id="ch15" href="Content/pageNum-15.svg" media-type="image/svg+xml" />
+		<item id="ch1" href="Content/pageNum-1.xhtml" properties="svg" media-type="application/xhtml+xml" />
+		<item id="ch2" href="Content/pageNum-2.xhtml" properties="svg" media-type="application/xhtml+xml" />
+		<item id="ch3" href="Content/pageNum-3.xhtml" properties="svg" media-type="application/xhtml+xml" />
+		<item id="ch4" href="Content/pageNum-4.xhtml" properties="svg" media-type="application/xhtml+xml" />
+		<item id="ch5" href="Content/pageNum-5.xhtml" properties="svg" media-type="application/xhtml+xml" />
+		<item id="ch8" href="Content/pageNum-8.xhtml" properties="svg" media-type="application/xhtml+xml" />
+		<item id="ch9" href="Content/pageNum-9.xhtml" properties="svg" media-type="application/xhtml+xml" />
+		<item id="img3" href="Image/img-3.jpg" media-type="image/jpeg" />
+		<item id="ch10" href="Content/pageNum-10.xhtml" properties="svg" media-type="application/xhtml+xml" />
+		<item id="ch11" href="Content/pageNum-11.xhtml" properties="svg" media-type="application/xhtml+xml" />
+		<item id="ch12" href="Content/pageNum-12.xhtml" properties="svg" media-type="application/xhtml+xml" />
+		<item id="img4" href="Image/img-4.jpg" media-type="image/jpeg" />
+		<item id="ch13" href="Content/pageNum-13.xhtml" properties="svg" media-type="application/xhtml+xml" />
+		<item id="ch14" href="Content/pageNum-14.xhtml" properties="svg" media-type="application/xhtml+xml" />
+		<item id="ch15" href="Content/pageNum-15.xhtml" properties="svg" media-type="application/xhtml+xml" />
 	</manifest>
 	<spine toc="ncx">
 		<itemref idref="ch1" properties="page-spread-right"/>
