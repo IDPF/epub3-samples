@@ -29,53 +29,23 @@ a {
 	font-family:AGaramondPro-Regular-0908;
 	font-style:normal;
 	font-weight:normal;
-	src:url(../Font/AGaramondPro-Regular-0908.otf);
+	src:url(../Font/agaramondpro-regular.otf);
 }
 @font-face {
 	font-family:AGaramondPro-Bold-0656;
 	font-style:normal;
 	font-weight:normal;
-	src:url(../Font/AGaramondPro-Bold-0656.otf);
-}
-@font-face {
-	font-family:Garamond-0662;
-	font-style:normal;
-	font-weight:normal;
-	src:url(../Font/Garamond-0662.otf);
-}
-@font-face {
-	font-family:Helvetica-0850;
-	font-style:normal;
-	font-weight:normal;
-	src:url(../Font/Helvetica-0850.otf);
-}
-@font-face {
-	font-family:NewsGothicBT-Roman-0848;
-	font-style:normal;
-	font-weight:normal;
-	src:url(../Font/NewsGothicBT-Roman-0848.otf);
-}
-@font-face {
-	font-family:AdobeArabic-Bold-0851;
-	font-style:normal;
-	font-weight:normal;
-	src:url(../Font/AdobeArabic-Bold-0851.otf);
-}
-@font-face {
-	font-family:HelveticaNeueLTStd-Cn-0846;
-	font-style:normal;
-	font-weight:normal;
-	src:url(../Font/HelveticaNeueLTStd-Cn-0846.otf);
+	src:url(../Font/agaramondpro-bold.otf);
 }
 @font-face {
 	font-family:AGaramondPro-Italic-0855;
 	font-style:normal;
 	font-weight:normal;
-	src:url(../Font/AGaramondPro-Italic-0855.otf);
+	src:url(../Font/agaramondpro-italic.otf);
 }
 @font-face {
-	font-family:Calibri-0660;
+	font-family:Garamond-0662;
 	font-style:normal;
 	font-weight:normal;
-	src:url(../Font/Calibri-0660.otf);
+	src:url(../Font/agaramondpro-regular.otf);
 }
