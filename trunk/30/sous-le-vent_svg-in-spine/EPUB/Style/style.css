@@ -8,10 +8,6 @@ svg {
 	left:0px;
 	margin:0px;
 	padding:0px;
-	image-rendering:optimizeSpeed;
-	shape-rendering:optimizeSpeed;
-	color-rendering:optimizeSpeed;
-	text-rendering:optimizeSpeed;
 }
 
 /* Navigation */

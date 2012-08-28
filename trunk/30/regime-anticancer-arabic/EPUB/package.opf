@@ -13,17 +13,17 @@
 	<!-- 1 -->
 		<dc:creator id="creator1">Pr David Khayat</dc:creator>
 		<meta refines="#creator1" property="role" scheme="marc:relators">aut</meta>
-		<meta refines="#creator1" property="alternate-script" xml:lang="ar" dir="rtl">دافيد  خيّاط لبروفيسورا</meta>
+		<meta refines="#creator1" property="alternate-script" xml:lang="ar">دافيد  خيّاط لبروفيسورا</meta>
 		<meta refines="#creator1" property="display-seq">1</meta>
 	<!-- 2 -->
 		<dc:creator id="creator2">Nathalie Hutter-Lardeau</dc:creator>
 		<meta refines="#creator2" property="role" scheme="marc:relators">aut</meta>
-		<meta refines="#creator2" property="alternate-script" xml:lang="ar" dir="rtl">اردو هاتر ناتالي</meta>
+		<meta refines="#creator2" property="alternate-script" xml:lang="ar">اردو هاتر ناتالي</meta>
 		<meta refines="#creator2" property="display-seq">2</meta>
 	<!-- 3 -->
 		<dc:creator id="creator3">Marina Khalil Fayad</dc:creator>
 		<meta refines="#creator3" property="role" scheme="marc:relators">trl</meta>
-		<meta refines="#creator3" property="alternate-script" xml:lang="ar" dir="rtl">فيّاض خليل مارينا</meta>
+		<meta refines="#creator3" property="alternate-script" xml:lang="ar">فيّاض خليل مارينا</meta>
 <!-- When the display-seq property is attached to some, but not all, of the members in a set, only the elements identified as having a sequence should be included in any rendering. -->
 <!-- publisher -->
 		<dc:publisher>Hachette Antoine</dc:publisher>
@@ -36,7 +36,7 @@
 		<dc:contributor id="contributor">Vincent Gros</dc:contributor>
 		<meta refines="#contributor" property="role" scheme="marc:relators">mrk</meta>
 		<meta refines="#contributor" property="file-as">Gros, Vincent</meta>
-		<meta property="dcterms:modified">2012-08-08T12:00:00Z</meta>
+		<meta property="dcterms:modified">2012-08-28T18:00:00Z</meta>
 <!-- meta for the cover -->
 		<meta name="cover" content="cover"/>
 	</metadata>
