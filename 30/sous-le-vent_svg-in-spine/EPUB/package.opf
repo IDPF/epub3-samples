@@ -22,7 +22,6 @@
 		<meta refines="#creator2" property="display-seq">2</meta>
 <!-- publisher -->
 		<dc:publisher>éditions Jean-Claude Lattès</dc:publisher>
-		<dc:language>fr</dc:language>
 <!-- date -->
 		<dc:date>2012-02-01</dc:date>
 <!-- rights -->
