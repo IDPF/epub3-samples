@@ -4,34 +4,19 @@
 	unique-identifier="pub-identifier">
 	<metadata>
 		<dc:identifier id="pub-identifier">urn:isbn:9781449328030</dc:identifier>
-		<meta id="meta-identifier" property="dcterms:identifier">urn:isbn:9781449328030</meta>
 		<dc:title id="pub-title">Accessible EPUB 3</dc:title>
-		<meta property="dcterms:title" id="meta-title">Accessible EPUB 3</meta>
 		<dc:language id="pub-language">en</dc:language>
-		<meta property="dcterms:language" id="meta-language">en</meta>
+		<dc:date>2012-02-20</dc:date>
 		<meta property="dcterms:modified">2012-02-20T22:17:24Z</meta>
-		<!--The preceding date value is actually local time (not UTC) in UTC format because there is no function in XSLT 1.0 to generate a correct UTC time-->
-		<meta property="dcterms:contributor">O’Reilly Production Services</meta>
-		<dc:contributor>O’Reilly Production Services</dc:contributor>
-		<meta property="dcterms:contributor">DavidFutato</meta>
-		<dc:contributor>DavidFutato</dc:contributor>
-		<meta property="dcterms:contributor">RobertRomano</meta>
-		<dc:contributor>RobertRomano</dc:contributor>
-		<meta property="dcterms:publisher">O’Reilly Media, Inc.</meta>
-		<dc:publisher>O’Reilly Media, Inc.</dc:publisher>
-		<meta id="meta-creator12" property="dcterms:creator">Matt Garrish</meta>
 		<dc:creator id="pub-creator12">Matt Garrish</dc:creator>
-		<meta property="dcterms:contributor">BrianSawyer</meta>
-		<dc:contributor>BrianSawyer</dc:contributor>
-		<meta property="dcterms:date">2012</meta>
-		<dc:date>2012</dc:date>
-		<meta property="dcterms:rights">Copyright © 2012 O’Reilly Media, Inc</meta>
+		<dc:contributor>O’Reilly Production Services</dc:contributor>
+		<dc:contributor>David Futato</dc:contributor>
+		<dc:contributor>Robert Romano</dc:contributor>
+		<dc:contributor>Brian Sawyer</dc:contributor>
+		<dc:contributor>Dan Fauxsmith</dc:contributor>
+		<dc:contributor>Karen Montgomery</dc:contributor>
+		<dc:publisher>O’Reilly Media, Inc.</dc:publisher>
 		<dc:rights>Copyright © 2012 O’Reilly Media, Inc</dc:rights>
-		<meta property="dcterms:rightsHolder">O’Reilly Media, Inc</meta>
-		<meta property="dcterms:contributor">DanFauxsmith</meta>
-		<dc:contributor>DanFauxsmith</dc:contributor>
-		<meta property="dcterms:contributor">KarenMontgomery</meta>
-		<dc:contributor>KarenMontgomery</dc:contributor>
 	</metadata>
 	<manifest>
 		<item id="ncx" href="toc.ncx" media-type="application/x-dtbncx+xml"/>
