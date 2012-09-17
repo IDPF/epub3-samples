@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:epub="http://www.idpf.org/2007/ops">
+    <head>        
+        <meta charset="utf-8" />
+        <link rel="stylesheet" type="text/css" href="../css/base.css" />
+    </head>
+    <body>
+        
+        <section id="switch-010" class="ctest">
+            <h2><span class="test-id">switch-010</span>The <code>epub:switch</code> element</h2>
+            
+            <p class="desc">Test whether the <code><a
+                href="http://idpf.org/epub/30/spec/epub30-contentdocs.html#sec-xhtml-content-switch"
+                >epub:switch</a></code> element is supported.</p>            
+
+            <epub:switch >
+                <epub:case required-namespace="http://www.example.com/unsupported/namespace">
+                    <element xmlns="http://www.example.com/unsupported/namespace">
+                        FAIL
+                    </element>
+                </epub:case>
+                <epub:default>
+                    <p id="fallback">
+                        If the text "FAIL" appears above or before this paragraph, the test fails.
+                    </p>
+                </epub:default>
+            </epub:switch>
+            
+        </section>
+        
+    </body>
+</html>

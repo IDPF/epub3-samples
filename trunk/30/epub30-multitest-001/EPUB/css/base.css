@@ -1,0 +1,45 @@
+@charset "utf-8";
+
+body {
+    font-family: arial, helvetica, sans-serif;
+    color: black;
+    background: white;        
+}
+
+.test-id, .demo-ctest {    
+    font-size: 80%;
+    font-style: normal;    
+    color:gray;
+    margin-right: 1em;    
+    padding: 0.3em;
+}
+
+.ctest .test-id {
+    border: 3px solid red;
+}
+
+.otest .test-id {
+    border: 3px solid blue;
+}
+
+.ctest, .otest {
+    margin-bottom: 1em;
+    padding-left: 1em;
+}
+
+.ctest {
+    border: 1px solid gray;
+    margin-bottom: 1em;
+    padding-left: 1em;
+}
+
+.otest {
+    border: 1px dotted gray;
+    margin-bottom: 1em;
+    padding-left: 1em;
+}
+
+dl.info dt {
+    font-weight: bold;
+    margin-bottom: 1em;
+}
