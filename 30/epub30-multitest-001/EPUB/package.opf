@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package xmlns="http://www.idpf.org/2007/opf" version="3.0" unique-identifier="uid">
+   <metadata xmlns:dc="http://purl.org/dc/elements/1.1/">
+      <dc:identifier id="uid">code.google.com.epub-samples.epub30-multitest-001</dc:identifier>
+      <dc:title>EPUB 3.0 MultiTest Suite: Document 01 [UNDER CONSTRUCTION]</dc:title>
+      <!-- repeat creator element for all contributors -->
+      <dc:creator>Markus Gylling</dc:creator>
+      <dc:creator>Vincent Gros</dc:creator>
+      <dc:creator>Toshiaki Koike</dc:creator>
+      <dc:language>en</dc:language>
+      <dc:language>jp</dc:language>
+      <meta property="dcterms:modified">2012-09-04T16:38:35Z</meta>
+            
+      <!-- 
+                  
+       This is one of the documents in the EPUB3 multitest suite. 
+       
+       This particular document focuses on human-evaluated binary (pass/fail) 
+       tests in a reflowable context. Tests for fixed-layout content and 
+       other individual tests that require a dedicated epub file are available 
+       in additional sibling documents. 
+                                                                              
+       Included tests are of two types: A) required and B) optional 
+       Reading System functionality. While the tests in category A are the
+       ones used for "formal" specification conformance testing, the tests in 
+       category B are included since they nevertheless provide useful information. 
+              
+       This document and its siblings use markup conventions to provide easy 
+       navigation and clarity, and to allow the automated generation of a results 
+       form template.
+       
+       Following the markup conventions, the process for adding a new test is:
+       
+        1) Locate the, or create a new, content document to contain the test 
+            (note that content docs are themed by functionality areas)     
+        
+        2) Add a wrapper element with an ID and class='ctest' (for required RS
+            functionality) or class='otest' (for optional RS functionality) 
+        
+        3) Echo the ID value given in 2 above in a descendant element text node 
+            with class 'test-id'
+        
+        4) Add the human readable description of the test intent inside the wrapper. 
+            Give the element the class 'desc'. The description typically has the form 
+            "Test whether [feature] is supported"
+        
+        5) Add the evaluation criteria for the test pass/fail states inside the wrapper 
+            This typically has the form "If [observable or invokable condition], the 
+            test passes".
+         
+        6) Add a link to the test in the navigation document. Note that the Navigation 
+            Document serves as the self-documenting list of available tests. Each test, 
+            regardless of whether it is required or optional, is linked to from the 
+            nav doc using the wrapper ID mentioned above.
+
+       -->
+      
+   </metadata>
+   <manifest>
+      <item href="xhtml/front.xhtml" id="front" media-type="application/xhtml+xml"/>
+      <item href="xhtml/nav.xhtml" id="nav" media-type="application/xhtml+xml" properties="nav"/>
+      
+      <item href="xhtml/content-xhtml-001.xhtml" id="xhtml-001" media-type="application/xhtml+xml"/>
+      <item href="xhtml/content-xhtml-002.xhtml" id="xhtml-002" media-type="application/xhtml+xml" properties="switch"/>
+      <item href="xhtml/content-xhtml-003.xhtml" id="xhtml-003" media-type="application/xhtml+xml" />
+      <item href="xhtml/content-svg-001.xhtml" id="xhtml-svg-001" media-type="application/xhtml+xml"/>
+      <item href="svg/content-svg-001.svg" id="svg-001" media-type="image/svg+xml"/>
+      <item href="xhtml/styling-xhtml-001.xhtml" id="css-001" media-type="application/xhtml+xml"/>
+      <item href="xhtml/fonts-001.xhtml" id="fonts-001" media-type="application/xhtml+xml" />
+      <item href="xhtml/scripting-001.xhtml" id="scr-001" media-type="application/xhtml+xml"/>
+      <item href="xhtml/mo-001.xhtml" id="mo-001" media-type="application/xhtml+xml"/>
+                  
+      <item href="css/base.css" media-type="text/css" id="css"/>
+      <item href="css/fonts.css" media-type="text/css" id="css-fonts"/>
+      <item id="font-woff" href="fonts/OldStandard-Regular.woff" media-type="application/font-woff"/>
+      <item id="font-otf" href="fonts/OldStandard-Regular.otf" media-type="application/vnd.ms-opentype"/>
+      <item id="font-ttf" href="fonts/OldStandard-Regular.ttf" media-type="application/vnd.ms-opentype"/>
+      <item id="font-woff-obf" href="fonts/OldStandard-Regular.obf.woff" media-type="application/font-woff"/>
+      <item id="font-otf-obf" href="fonts/OldStandard-Regular.obf.otf" media-type="application/vnd.ms-opentype"/>
+      <item id="font-ttf-obf" href="fonts/OldStandard-Regular.obf.ttf" media-type="application/vnd.ms-opentype"/>
+      <item id="mp3-1" href="audio/allison64.mp3" media-type="audio/mpeg"/>
+      <item id="mp4-1" href="audio/allison64.mp4" media-type="audio/mp4"/>       
+   </manifest>
+    
+   <spine>
+      <itemref idref="front"/>
+      <itemref idref="nav" linear="no"/>
+      <itemref idref="xhtml-001"/>
+      <itemref idref="xhtml-002"/>
+      <itemref idref="xhtml-003"/>
+      <itemref idref="xhtml-svg-001"/>
+      <itemref idref="svg-001"/>
+      <itemref idref="css-001"/>
+      <itemref idref="fonts-001"/>
+      <itemref idref="scr-001"/>
+      <itemref idref="mo-001"/>
+   </spine>
+</package>
