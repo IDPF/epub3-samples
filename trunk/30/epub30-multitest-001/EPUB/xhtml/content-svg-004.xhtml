@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:epub="http://www.idpf.org/2007/ops">
+    <head>        
+        <meta charset="utf-8" />
+        <link rel="stylesheet" type="text/css" href="../css/base.css" />
+    </head>
+    <body>
+		<h2>SVG: bitmap called using <code>SVG</code> code</h2>
+        <section id="svg-210" class="ctest">
+            <h2><span class="test-id">svg-210</span>A bitmap called using embedded <code>SVG</code> code</h2>
+            <p class="desc">Test whether the <code>SVG</code> code for calling a bitmap is supported when <code>SVG</code> is embedded directly in the XHTML file.</p>
+			<svg width="100%" height="200" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+				<image x="20" y="20" width="182px" height="185px" xlink:href="../img/circle.jpg" />
+			</svg>
+			<p class="fallback">If the black circle does not appear above or before this paragraph, the test fails.</p>
+        </section>
+    </body>
+</html>

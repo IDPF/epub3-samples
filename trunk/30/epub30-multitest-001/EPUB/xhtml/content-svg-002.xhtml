@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:epub="http://www.idpf.org/2007/ops">
+    <head>        
+        <meta charset="utf-8" />
+        <link rel="stylesheet" type="text/css" href="../css/base.css" />
+		<link rel="stylesheet" type="text/css" href="../css/svg.css" />
+    </head>
+    <body>
+		<h2>SVG: shapes using vectors</h2>
+        <section id="svg-010" class="ctest">
+            <h2><span class="test-id">svg-010</span>A simple shape, with embedded <code>SVG</code> code</h2>
+            <p class="desc">Test whether the <code>SVG</code> code for a simple vector shape is supported when <code>SVG</code> is embedded directly in the XHTML file.</p>
+			<svg width="100" height="100" version="1.1" xmlns="http://www.w3.org/2000/svg">
+				<circle cx="50" cy="50" r="40" style="fill:#000"/>
+			</svg>
+			<p class="fallback">If the black circle does not appear above or before this paragraph, the test fails.</p>
+        </section>
+        
+        <section id="svg-020" class="ctest">
+            <h2><span class="test-id">svg-020</span>A simple shape but transformed, with embedded <code>SVG</code> code</h2>
+            <p class="desc">Test whether the <code>SVG</code> code for a simple vector shape, but transformed, is supported when <code>SVG</code> is embedded directly in the XHTML file.</p>
+            <svg width="100" height="100" version="1.1" xmlns="http://www.w3.org/2000/svg">
+				<rect x="25" y="25" width="50" height="50" transform="translate(50 12.5) scale(1 0.5) rotate(45)" />
+			</svg>
+			<p class="fallback">If the black diamond does not appear above or before this paragraph, the test fails.</p>
+        </section>
+        
+		<section id="svg-030" class="ctest">
+            <h2><span class="test-id">svg-030</span>A simple shape, with <code>SVG</code> code called in an <code>img</code> element</h2>
+            <p class="desc">Test whether the <code>SVG</code> code for a simple vector shape is supported when <code>SVG</code> is called in an <code>img</code> element.</p>
+            <img src="../svg/content-svg-001.svg" alt="a grey circle" />
+			<p class="fallback">If the grey circle does not appear above or before this paragraph, the test fails.</p>
+        </section>
+		
+		<section id="svg-040" class="ctest">
+            <h2><span class="test-id">svg-040</span>A simple shape, with <code>SVG</code> code called in an <code>object</code> element</h2>
+            <p class="desc">Test whether the <code>SVG</code> code for a simple vector shape is supported when <code>SVG</code> is called in an <code>object</code> element.</p>
+            <object type="image/svg+xml" data="../svg/content-svg-001.svg">
+			<p>FAIL</p>
+			</object>
+			<p class="fallback">If the text "FAIL" appears above or before this paragraph, the test fails.</p>
+        </section>
+		
+		<section id="svg-050" class="ctest">
+            <h2><span class="test-id">svg-050</span>A simple shape, with <code>SVG</code> code called as a <code>background-image</code> in the <code>CSS</code> file</h2>
+            <p class="desc">Test whether the <code>SVG</code> code for a simple vector shape is supported when <code>SVG</code> is called int the <code>CSS</code> file as <code>background-image</code>.</p>
+			<p class="fallback">If the grey circle does not appear at the right bottom of this section, the test fails.</p>
+        </section>
+    </body>
+</html>

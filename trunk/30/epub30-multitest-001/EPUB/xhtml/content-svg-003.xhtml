@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:epub="http://www.idpf.org/2007/ops">
+    <head>        
+        <meta charset="utf-8" />
+        <link rel="stylesheet" type="text/css" href="../css/base.css" />
+    </head>
+    <body>
+		<h2>SVG: textual content</h2>
+        <section id="svg-110" class="ctest">
+            <h2><span class="test-id">svg-110</span>Text positioned using <code>SVG</code></h2>
+            <p class="desc">Test whether the <code>SVG</code> code for positioning is supported.</p>
+			<svg width="100%" height="250" version="1.1" xmlns="http://www.w3.org/2000/svg">
+				<text x="2" y="20">First text line using SVG</text>
+				<text x="30" y="100">Second text line using SVG</text>
+				<text x="80" y="200">Third and last text line using SVG</text>
+			</svg>
+			<p class="fallback">If the three lines do not appear or if their begin is the same, the test fails.</p>
+        </section>
+        
+        <section id="svg-120" class="ctest">
+            <h2><span class="test-id">svg-120</span>Text positioned and transformed using <code>SVG</code></h2>
+            <p class="desc">Test whether the <code>SVG</code> code for a simple vector shape, but transformed, is supported when <code>SVG</code> is embedded directly in the XHTML file.</p>
+			<svg width="100%" height="100" version="1.1" xmlns="http://www.w3.org/2000/svg">
+				<text x="100" y="80">This
+				<tspan dy="-2">i</tspan>
+				<tspan dy="-3">s</tspan>
+				<tspan dy="-4"></tspan>
+				<tspan dy="-5">a</tspan>
+				<tspan dy="-6"> </tspan>
+				<tspan dy="-8">v</tspan>
+				<tspan dy="-9">e</tspan>
+				<tspan dy="-8">e</tspan>
+				<tspan dy="-7">e</tspan>
+				<!-- -59 -->
+				<tspan dy="9">r</tspan>
+				<tspan dy="10">y</tspan>
+				<tspan dy="9"></tspan>
+				<tspan dy="8">b</tspan>
+				<tspan dy="7">i</tspan>
+				<tspan dy="6">i</tspan>
+				<tspan dy="5">i</tspan>
+				<tspan dy="3">g</tspan>
+				<tspan dy="2"> </tspan>
+				<!-- +59 -->
+				wave.</text>
+			</svg>
+			<p class="fallback">If the text does not appear or if the "wave-style" does not appear, the test fails.</p>
+        </section>
+    </body>
+</html>

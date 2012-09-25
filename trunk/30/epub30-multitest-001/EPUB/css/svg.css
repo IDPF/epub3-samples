@@ -1,0 +1,8 @@
+@charset "utf-8";
+
+#svg-050 {
+   width: 100%;      
+   background-image: url(../svg/content-svg-001.svg);
+   background-repeat: no-repeat;
+   background-position:right bottom;
+}
