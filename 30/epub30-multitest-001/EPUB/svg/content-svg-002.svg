@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100">
+    <desc>A black diamond</desc>
+    <rect x="25" y="25" width="50" height="50" transform="translate(50 12.5) scale(1 0.5) rotate(45)" />
+</svg>

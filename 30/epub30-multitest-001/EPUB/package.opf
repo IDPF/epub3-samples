@@ -9,7 +9,7 @@
       <dc:creator>Toshiaki Koike</dc:creator>
       <dc:language>en</dc:language>
       <dc:language>jp</dc:language>
-      <meta property="dcterms:modified">2012-09-04T16:38:35Z</meta>
+      <meta property="dcterms:modified">2012-09-25T12:11:00Z</meta>
             
       <!-- 
                   
@@ -57,27 +57,47 @@
       
    </metadata>
    <manifest>
+   <!-- frontmatter -->
       <item href="xhtml/front.xhtml" id="front" media-type="application/xhtml+xml"/>
       <item href="xhtml/nav.xhtml" id="nav" media-type="application/xhtml+xml" properties="nav"/>
-      
+   <!-- bodymatter -->
+	<!-- xhtml -->
       <item href="xhtml/content-xhtml-001.xhtml" id="xhtml-001" media-type="application/xhtml+xml"/>
       <item href="xhtml/content-xhtml-002.xhtml" id="xhtml-002" media-type="application/xhtml+xml" properties="switch"/>
       <item href="xhtml/content-xhtml-003.xhtml" id="xhtml-003" media-type="application/xhtml+xml" />
+	<!-- svg -->  
       <item href="xhtml/content-svg-001.xhtml" id="xhtml-svg-001" media-type="application/xhtml+xml"/>
+	  <item href="xhtml/content-svg-002.xhtml" id="xhtml-svg-002" properties="svg" media-type="application/xhtml+xml"/>
+	  <item href="xhtml/content-svg-003.xhtml" id="xhtml-svg-003" properties="svg" media-type="application/xhtml+xml"/>
+	  <item href="xhtml/content-svg-004.xhtml" id="xhtml-svg-004" properties="svg" media-type="application/xhtml+xml"/>
       <item href="svg/content-svg-001.svg" id="svg-001" media-type="image/svg+xml"/>
+	  <item href="svg/content-svg-002.svg" id="svg-002" media-type="image/svg+xml"/>
+	  <item href="svg/content-svg-003.svg" id="svg-003" media-type="image/svg+xml"/>
+	  <item href="svg/content-svg-004.svg" id="svg-004" media-type="image/svg+xml"/>
+	<!-- layout -->
       <item href="xhtml/styling-xhtml-001.xhtml" id="css-001" media-type="application/xhtml+xml"/>
+	<!-- fonts -->
       <item href="xhtml/fonts-001.xhtml" id="fonts-001" media-type="application/xhtml+xml" />
+	<!-- scripting -->
       <item href="xhtml/scripting-001.xhtml" id="scr-001" media-type="application/xhtml+xml"/>
+	<!-- media-overlay -->
       <item href="xhtml/mo-001.xhtml" id="mo-001" media-type="application/xhtml+xml"/>
-                  
+    
+   <!-- secondary files -->
+	<!-- css -->
       <item href="css/base.css" media-type="text/css" id="css"/>
+	  <item href="css/svg.css" media-type="text/css" id="css-svg"/>
       <item href="css/fonts.css" media-type="text/css" id="css-fonts"/>
+	<!-- images -->
+	  <item href="img/circle.jpg" id="img-001" media-type="image/jpeg"/>
+	<!-- fonts -->
       <item id="font-woff" href="fonts/OldStandard-Regular.woff" media-type="application/font-woff"/>
       <item id="font-otf" href="fonts/OldStandard-Regular.otf" media-type="application/vnd.ms-opentype"/>
       <item id="font-ttf" href="fonts/OldStandard-Regular.ttf" media-type="application/vnd.ms-opentype"/>
       <item id="font-woff-obf" href="fonts/OldStandard-Regular.obf.woff" media-type="application/font-woff"/>
       <item id="font-otf-obf" href="fonts/OldStandard-Regular.obf.otf" media-type="application/vnd.ms-opentype"/>
       <item id="font-ttf-obf" href="fonts/OldStandard-Regular.obf.ttf" media-type="application/vnd.ms-opentype"/>
+	<!-- audio -->
       <item id="mp3-1" href="audio/allison64.mp3" media-type="audio/mpeg"/>
       <item id="mp4-1" href="audio/allison64.mp4" media-type="audio/mp4"/>       
    </manifest>
@@ -89,7 +109,13 @@
       <itemref idref="xhtml-002"/>
       <itemref idref="xhtml-003"/>
       <itemref idref="xhtml-svg-001"/>
+	  <itemref idref="xhtml-svg-002"/>
+	  <itemref idref="xhtml-svg-003"/>
+	  <itemref idref="xhtml-svg-004"/>
       <itemref idref="svg-001"/>
+	  <itemref idref="svg-002"/>
+	  <itemref idref="svg-003"/>
+	  <itemref idref="svg-004"/>
       <itemref idref="css-001"/>
       <itemref idref="fonts-001"/>
       <itemref idref="scr-001"/>
