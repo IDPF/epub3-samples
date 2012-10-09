@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package xmlns="http://www.idpf.org/2007/opf" prefix="cc: http://creativecommons.org/ns# rendition: http://www.idpf.org/vocab/rendition/#" version="3.0" unique-identifier="bookid" xml:lang="fr" id="package">
+	<metadata xmlns:dc="http://purl.org/dc/elements/1.1/">
+<!-- unique identifier -->
+		<dc:identifier id="bookid">code.google.com.epub-samples.guide-des-vins_header-and-footer</dc:identifier>
+		<meta refines="#bookid" property="identifier-type" scheme="onix:codelist5">01</meta>
+<!-- language of the book -->
+		<dc:language>fr</dc:language>
+<!-- title -->
+		<dc:title id="title">Guide Hachette des Vins 2011</dc:title>
+<!-- creator -->
+		<dc:creator id="creator1">Collectif</dc:creator>
+		<meta refines="#creator1" property="role" scheme="marc:relators">aut</meta>
+<!-- publisher -->
+		<dc:publisher>Hachette Pratique</dc:publisher>
+<!-- date -->
+		<dc:date>2010</dc:date>
+<!-- rights -->
+		<dc:rights xml:lang="en">This work is shared with the public using the Attribution-ShareAlike 3.0 Unported (CC BY-SA 3.0) license.</dc:rights>
+		<link rel="cc:license" href="http://creativecommons.org/licenses/by-sa/3.0/"/>
+<!-- contributor -->
+		<dc:contributor id="contributor">Vincent Gros</dc:contributor>
+		<meta refines="#contributor" property="role" scheme="marc:relators">mrk</meta>
+		<meta refines="#contributor" property="file-as">Gros, Vincent</meta>
+		<meta property="dcterms:modified">2012-10-02T18:00:00Z</meta>
+<!-- meta for the cover -->
+		<meta name="cover" content="cover"/>
+	</metadata>
+	<manifest>
+<!-- navigation -->
+		<item id="nav" href="Navigation/nav.xhtml" properties="nav" media-type="application/xhtml+xml"/>
+<!-- style -->
+		<item id="css" href="Style/style.css" media-type="text/css"/>
+<!-- content -->
+		<item id="cover-page" href="Content/couverture.xhtml" media-type="application/xhtml+xml"/>
+		<item id="title-page" href="Content/pagetitre.xhtml" media-type="application/xhtml+xml"/>
+		<item id="copyright-page" href="Content/copyright.xhtml" media-type="application/xhtml+xml"/>
+		<item id="modedemploi-page" href="Content/mode-d-emploi.xhtml" media-type="application/xhtml+xml"/>
+		<item id="symboles-page" href="Content/symboles-utilises.xhtml" media-type="application/xhtml+xml"/>
+		<item id="alsace-lorraine-content1" href="Content/Alsace-Lorraine-1.xhtml" media-type="application/xhtml+xml"/>
+		<item id="alsace-lorraine-content2" href="Content/Alsace-Lorraine-2.xhtml" media-type="application/xhtml+xml"/>
+		<item id="beaujolais-lyonnais-content1" href="Content/Beaujolais-Lyonnais-1.xhtml" media-type="application/xhtml+xml"/>
+		<item id="beaujolais-lyonnais-content2" href="Content/Beaujolais-Lyonnais-2.xhtml" media-type="application/xhtml+xml"/>
+<!-- image -->
+		<item id="cover" href="Image/cover.jpg" media-type="image/jpeg"/>
+		<item id="title-img" href="Image/titlepage.jpg" media-type="image/jpeg"/>
+		<item id="qualibris-img" href="Image/qualibris.jpg" media-type="image/jpeg"/>
+		<item id="howto-img" href="Image/howto.jpg" media-type="image/jpeg"/>
+		<item id="symboles-img" href="Image/symboles.jpg" media-type="image/jpeg"/>
+		<item id="img1" href="Image/carte-alsace.jpg" media-type="image/jpeg"/>
+		<item id="img2" href="Image/LOGO_GITE_3.jpg" media-type="image/jpeg"/>
+		<item id="img3" href="Image/PICTO_CUVE.jpg" media-type="image/jpeg"/>
+		<item id="img4" href="Image/PICTO_BLANC_EFFERVESCENT.jpg" media-type="image/jpeg"/>
+		<item id="img5" href="Image/PICTO_FUT.jpg" media-type="image/jpeg"/>
+		<item id="img6" href="Image/CONDITION_DE_VISITE.jpg" media-type="image/jpeg"/>
+		<item id="img7" href="Image/2011-101souzy.jpg" media-type="image/jpeg"/>
+		<item id="img8" href="Image/LOGO_GITE_5.jpg" media-type="image/jpeg"/>
+		<item id="img9" href="Image/2011-100arnau.jpg" media-type="image/jpeg"/>
+		<item id="img10" href="Image/2011-91renck.jpg" media-type="image/jpeg"/>
+		<item id="img11" href="Image/PICTO_BLANC_TRANQUILLE.jpg" media-type="image/jpeg"/>
+		<item id="img12" href="Image/COEUR.jpg" media-type="image/jpeg"/>
+		<item id="img13" href="Image/LOGO_GITE.jpg" media-type="image/jpeg"/>
+		<item id="img14" href="Image/LOGO_HOTE_4.jpg" media-type="image/jpeg"/>
+		<item id="img15" href="Image/2011-100creuz.jpg" media-type="image/jpeg"/>
+		<item id="img16" href="Image/LOGO_PRODUCTEUR.jpg" media-type="image/jpeg"/>
+		<item id="img17" href="Image/2011-98laropp.jpg" media-type="image/jpeg"/>
+		<item id="img18" href="Image/LOGO_PROPRIETAIRE.jpg" media-type="image/jpeg"/>
+		<item id="img19" href="Image/LOGO_VENTE_ROUGE.jpg" media-type="image/jpeg"/>
+		<item id="img20" href="Image/2011-101nugue.jpg" media-type="image/jpeg"/>
+		<item id="img21" href="Image/2011-101chize.jpg" media-type="image/jpeg"/>
+		<item id="img22" href="Image/2011-100guere.jpg" media-type="image/jpeg"/>
+		<item id="img23" href="Image/PICTO_ROSE_EFFERVESCENT.jpg" media-type="image/jpeg"/>
+		<item id="img24" href="Image/LOGO_HOTE_3.jpg" media-type="image/jpeg"/>
+		<item id="img25" href="Image/03beaujolais.jpg" media-type="image/jpeg"/>
+		<item id="img26" href="Image/VinsdeLorraine.jpg" media-type="image/jpeg"/>
+		<item id="img27" href="Image/LOGO_HOTE_2.jpg" media-type="image/jpeg"/>
+		<item id="img28" href="Image/2011-98leliev.jpg" media-type="image/jpeg"/>
+		<item id="img29" href="Image/LOGO_HOTE_6.jpg" media-type="image/jpeg"/>
+		<item id="img30" href="Image/LOGO_GITE_2.jpg" media-type="image/jpeg"/>
+		<item id="img31" href="Image/LOGO_DEGUSTATION.jpg" media-type="image/jpeg"/>
+		<item id="img32" href="Image/PICTO_ROSE_TRANQUILLE.jpg" media-type="image/jpeg"/>
+		<item id="img33" href="Image/2011-99stromb.jpg" media-type="image/jpeg"/>
+		<item id="img34" href="Image/2011-99ourysc.jpg" media-type="image/jpeg"/>
+		<item id="img35" href="Image/PICTO_ROUGE_TRANQUILLE.jpg" media-type="image/jpeg"/>
+		<item id="img36" href="Image/LOGO_GITE_4.jpg" media-type="image/jpeg"/>
+	</manifest>
+	<spine>
+		<itemref idref="cover-page" properties="page-spread-right"/>
+		<itemref idref="title-page" properties="page-spread-right"/>
+		<itemref idref="copyright-page"/>
+		<itemref idref="modedemploi-page"/>
+		<itemref idref="symboles-page"/>
+		<itemref idref="alsace-lorraine-content1" properties="page-spread-right"/>
+		<itemref idref="alsace-lorraine-content2"/>
+		<itemref idref="beaujolais-lyonnais-content1" properties="page-spread-right"/>
+		<itemref idref="beaujolais-lyonnais-content2"/>
+	</spine>
+</package>
