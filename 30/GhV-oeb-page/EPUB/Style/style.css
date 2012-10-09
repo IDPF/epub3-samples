@@ -1,0 +1,1280 @@
+@charset "UTF-8";
+
+.oeb-header {
+	display:none;
+	display:oeb-page-head;
+}
+
+.oeb-footer{
+	display:none; 
+	display:oeb-page-foot;
+}
+
+figure.fullpage {
+	max-height:100%;
+	max-width:100%;
+	margin:0;
+	padding:0;
+}
+img {
+	max-height:100%;
+	max-width:100%;
+	margin:0;
+	padding:0;
+}
+
+figure.fullpage figcaption, .titre-ours, .titre-mde {
+	font-weight: bold;
+	font-size:x-large;
+	margin-top:25px;
+	margin-bottom:50px;
+	text-align:center;
+}
+
+.ours {
+	text-align:justify;
+}
+
+.ours article {
+	margin-top:25px;
+	margin-bottom:25px;
+	line-height:17px;
+}
+
+.titres-ours{
+	color:purple;
+	font-weight: bold;   
+}
+
+.p-intro, .p-mde {
+	font-size:large;
+	text-align:justify;
+	line-height:20px;
+}
+
+.p-tit-intro {
+	text-align:center;
+}
+
+.niv-pc {
+	margin-top:25px;
+	font-variant:small-caps;
+	font-size:large;
+}
+
+.stitre {
+	font-weight:bold;
+	font-size:x-large;
+	margin-top:25px;
+	margin-bottom:50px;
+	text-align:center;
+	color:red;
+}
+
+.encadre {
+	margin-top:25px;
+	margin-bottom:15px;
+	background-color:#DDA0DD;
+}
+
+
+.p-encadre {
+	text-align:justify;
+	line-height:17px;
+	background-color:#DDA0DD;
+}
+
+.tit-encadre {
+  	margin-top:25px;
+  	margin-bottom:15px;
+  	font-variant:small-caps;
+  	font-size:large;
+  	font-weight: bold;
+  	background-color:#DDA0DD;
+}
+
+.tit-intro {
+	font-weight:bold;
+	font-size:xx-large;
+	margin-top:25px;
+	margin-bottom:20px;
+	text-align:center;
+	color:#4B088A;
+}
+
+.tit-niv2-intro {
+	font-weight:bold;
+	font-size:large;
+	margin-top:20px;
+	margin-bottom:2px;
+	text-align:left;
+	color:#A0522D;
+}
+
+.tit-niv3-intro {
+	font-weight:bold;
+	font-size:medium;
+	text-align:left;
+	margin-top:5px;
+	margin-bottom:5px;
+}
+
+.tit-niv1-intro {
+	font-weight:bold;
+	font-size:xx-large;
+	margin-top:20px;
+	margin-bottom:20px;
+	text-align:left;
+	color:#4B088A;
+}
+
+.niv1-intro-hr {
+	color:maroon;
+	margin-top:5px;
+	margin-bottom:0px;
+}
+
+.imgpicto, .imgpictoprod, .imgpictocle{
+	width: 12px;
+	height: 12px;   
+}
+
+.imgpictogite {
+	width:30px;
+	height:12px;
+}
+
+.imgpictohote {
+	width:25px;
+	height:12px;
+}
+.imgpp {
+	max-width: 100%;
+	height: 100%;
+}
+
+.imgcarte, .imgtableau {
+	text-align:center;
+	margin-top:2px;
+	margin-bottom:2px;
+}
+
+.etiquette {
+	max-width:25%;
+	height:25%;
+	margin-top:2px;
+	margin-bottom:2px;
+}
+
+.align_etiquette {
+	text-align:center;
+}
+
+.img-debut-al {
+	text-align:center;
+	margin-top:5px;
+	margin-bottom:6px;
+}
+
+.img-debut {
+	max-width:50%;
+	height:50%;	
+}
+	
+.H {
+	font-size: small;
+	vertical-align:super;
+}
+
+.subtext {
+	font-size: xx-small;
+}
+
+.TITREGSE, .num, .TITREGPA  {
+	font-size:x-large;
+	text-align: center;	
+	margin-top: 2em;
+	margin-right: 1em;
+	margin-left: 1em;
+	margin-bottom: 1em;
+}
+
+.TCRREGSE {
+	font-size: medium; 
+	text-align: center;	
+	margin-top: 2em;
+	margin-right: 1em;
+	margin-left: 1em;
+	margin-bottom: 1em;
+}
+
+.TITSSREG {
+	font-size: medium; 
+	text-align: left;
+	font-weight: bold;
+	margin-top: 2em;
+	margin-right: 1em;
+	margin-left: 1em;
+	margin-bottom: 1em;
+	color:maroon;
+	
+}
+
+.LETREGPA, .LETSSREG {
+	font-size: medium; 
+	margin-top: 2em;
+	font-weight: bold;
+	margin-bottom: 1em;
+}
+
+.LETREGSE {
+	font-size: larger;	
+	font-weight: bold;
+
+}
+
+.LETAPPEL {
+	font-size:larger;
+}
+
+.nouvprod1 {
+	background-color :#FFF68F;
+}
+.nouvprod2 {
+	background-color:#FFC1C1;
+}
+.nouvprod3 {
+	background-color :#CD853F;
+}
+.nouvprod4 {
+	background-color :#EED2EE;
+}
+.nouvprod5 {
+	background-color :#FFE4B5;
+}
+.nouvprod6 {
+	background-color :#6B8E23;
+}
+.nouvprod7 {
+	background-color :#FF7F00;
+}
+.nouvprod8 {
+	background-color :#E066FF;
+}
+.nouvprod9 {
+	background-color :#DA70D6;
+}
+.nouvprod10 {
+	background-color :#FFB5C5;
+}
+.nouvprod11 {
+	background-color:#B452CD;
+}
+.nouvprod12 {
+	background-color :#F4A460;
+}
+.nouvprod13 {
+	background-color :#C6E2FF;
+}
+.nouvprod15 {
+	background-color :#FFD700;
+}
+.nouvprod16 {
+	background-color :#FFB90F;
+}
+
+.NOMAPPEL  {
+	font-size:xx-large; 
+	text-align: right;
+	font-weight: normal;
+	margin-top:2px;
+	margin-right:1px;
+	margin-left:1px;
+	margin-bottom:1px;
+}
+
+.NOMVIN {
+  	font-weight: bold;
+ 	font-variant:small-caps;
+  	font-size:medium;
+ 	margin-top: 2em;
+  	margin-bottom: 1em;
+}
+
+.COMPLVIN {
+	font-size:large;
+	margin-top: 2em;
+	margin-bottom: 1em;
+}
+
+.APPREC  {
+	font-weight:bold;
+	vertical-align: text-top;
+	font-size:large;
+}
+
+.PARREGPA {
+	font-size:larger;
+	text-align: justify;
+	text-indent:1em;
+	margin-top:5px;
+	margin-right: 1em;
+	margin-bottom:5px;
+}
+.PARSSREG  {
+	font-size:larger;
+	text-align: justify;
+	text-indent:1em;
+	margin-top:5px;
+	margin-right: 1em;
+	margin-bottom:5px;
+}
+
+.PARREGSE  {
+	font-size:large;
+	text-align: justify;
+	text-indent:1em;
+	margin-top:5px;
+	margin-right: 1em;
+	margin-bottom:5px;
+	line-height:20px;
+}
+
+
+.TEXVIN  {
+	font-size:medium;
+	text-align:justify;	
+	margin-top: 3px;
+	margin-right: 1em;
+	margin-bottom: 3px;
+	line-height:20px;
+}
+
+.PARAPPEL {
+	font-size:large;
+	text-align: justify;	
+	margin-top:5px;
+	margin-right: 1em;
+	margin-bottom:5px;
+	line-height:20px;
+}
+
+.PRODUCT  {
+	font-size:small;
+	text-align: justify;	
+	margin-top:4px;
+	margin-right:0px;
+	margin-bottom:5px;
+	
+}
+
+.NOUV_PRODUCT  {
+   	background-color:blue;
+	font-size: small;
+	text-align: justify;	
+	margin-top:4px;
+	margin-right:0px;
+	margin-bottom:5px;
+	
+}
+
+.ROUGE, .encercl_rouge  {
+	color:red;
+}
+
+.rouge_gras  {
+	color:red;
+	font-weight: bold
+}
+
+.niv1-rouge-gras {
+ 	margin-bottom:5px;
+	margin-top:6px;
+	color:red;
+	font-weight: bold
+}
+
+.tab-center {
+  	text-align: center;
+}
+
+.underline  {
+	text-decoration: underline;
+}
+
+.bold{
+	font-weight: bold;
+}
+
+.bi  {
+	font-weight: bold;
+	font-style: italic;
+}
+
+.bold-pc  {
+	font-weight: bold;
+	font-variant: small-caps;
+	margin-top:5px;
+	margin-bottom:5px;
+}
+
+.italic  {
+	font-style: italic;
+}
+
+.roman  {
+	font-style: normal;
+	font-weight: normal;
+}
+
+.smallcap  {
+	font-variant: small-caps;
+}
+
+.sep  {
+	text-align: center;
+	margin-top: 2em;
+	margin-right: 1em;
+	margin-left: 1em;
+	margin-bottom: 1em;
+}
+
+.tableau_emploi1 {
+	font-size:medium;
+	margin-top:1px;
+	margin-bottom:1px;
+	text-align:left;
+   
+}
+
+.headtab {
+	text-align: center;
+	font-weight: bold;
+
+}
+
+TABLE {
+	font-size:medium;
+	border-collapse:collapse;
+	margin-top:1px;
+	margin-bottom:2px;
+	margin-left:0px;
+   	margin-right:auto;
+}
+
+.td {
+	 width:auto;
+ 
+}
+
+.nomapel1 {   
+   	width:100%;
+   	border-color:#FFD700;
+  	text-align: left;  
+  	border-width:1px;
+   	border-style:solid;
+ 	margin-top:1px;
+}
+
+.nomapel2 {   
+	width:100%;
+	border-color:#9932CC;
+	text-align: left;  
+   	border-width:1px;
+   	border-style:solid;
+   	margin-top:1px;
+}
+
+.nomapel3 {   
+  	width:100%;
+	border-color:#D2691E;
+	text-align: left;  
+  	border-width:1px;
+  	border-style:solid;
+  	margin-top:1px;
+}
+
+.nomapel4 {   
+  	width:100%;
+	border-color:#8B008B;
+	text-align: left;  
+   	border-width:1px;
+   	border-style:solid;
+   	margin-top:1px;
+}
+
+.nomapel5{   
+  	width:100%;
+  	border-color:#DAA520;
+  	text-align: left;  
+   	border-width:1px;
+   	border-style:solid;
+   	margin-top:1px;
+}
+
+.nomapel6{   
+  	 width:100%;
+   	border-color:#6B8E23;
+   	text-align: left;  
+   	border-width:1px;
+   	border-style:solid;
+   	margin-top:1px;
+}
+
+.nomapel7 {   
+   	width:100%;
+   	border-color:#FF7F00;
+  	text-align: left;  
+   	border-width:1px;
+   	border-style:solid;
+   	margin-top:1px;
+}
+
+.nomapel8 {   
+   	width:100%;
+   	border-color:#BA55D3;
+   	text-align: left;  
+  	border-width:1px;
+   	border-style:solid;
+   	margin-top:1px;
+}
+
+.nomapel9 {   
+  	width:100%;
+   	border-color:#C71585;
+   	text-align: left;  
+   	border-width:1px;
+  	border-style:solid;
+   	margin-top:1px;
+}
+
+.nomapel10 {   
+   	width:100%;
+   	border-color:#D87093;
+   	text-align: left;  
+   	border-width:1px;
+   	border-style:solid;
+   	margin-top:1px;
+}
+
+.nomapel11 {   
+	width:100%;
+	border-color:#6A5ACD;
+	text-align: left;  
+  	border-width:1px;
+  	border-style:solid;
+   	margin-top:1px;
+}
+
+.nomapel12 {   
+   	width:100%;
+   	border-color:#B22222;
+   	text-align: left;  
+  	border-width:1px;
+   	border-style:solid;
+   	margin-top:1px;
+}
+
+.nomapel13 {   
+   	width:100%;
+   	border-color:#4682B4;
+   	text-align: left;  
+   	border-width:1px;
+   	border-style:solid;
+   	margin-top:1px;
+}
+
+.nomapel14 {   
+   	width:100%;
+   	border-color:#FFA500;
+  	 text-align: left;  
+   	border-width:1px;
+   	border-style:solid;
+   	margin-top:1px;
+}
+
+.nomapel15 {   
+   	width:100%;
+   	border-color:#FFD700;
+   	text-align: left;  
+   	border-width:1px;
+   	border-style:solid;
+   	margin-top:1px;
+}
+
+.nomapel16 {   
+   	font-weight:bold;
+   	background-color:#FFA500;
+   	color:white;
+   	font-size:medium;
+   	text-align:center;   
+   	margin-top:5px;
+   	margin-top:5px;
+}
+
+.np1 {
+	color:#FFD700;
+	font-variant:small-caps;
+	font-size:medium;
+	margin-bottom:1px;
+	margin-top:2px;
+}
+
+.np2 {   
+	color:#9932CC;
+	font-variant:small-caps;
+	font-size:medium;
+	margin-bottom:1px;
+	margin-top:2px;
+}
+
+.np3 {   
+	color:#D2691E;
+	font-variant:small-caps;
+	font-size:medium;
+	margin-bottom:1px;
+	margin-top:2px;
+}
+
+.np4 {   
+	color:#8B008B;
+	font-variant:small-caps;
+	font-size:medium;
+	margin-bottom:1px;
+	margin-top:2px;
+}
+
+.np5{   
+	color:#DAA520;
+	font-variant:small-caps;
+	font-size:medium;
+	margin-bottom:1px;
+	margin-top:2px;
+}
+
+.np6{   
+
+	color:#6B8E23;
+	font-variant:small-caps;
+	font-size:medium;
+	margin-bottom:1px;
+	margin-top:2px;
+}
+
+.np7 {   
+	color:#FF7F00;
+	font-variant:small-caps;
+	font-size:medium;
+	margin-bottom:1px;
+}
+
+.np8 {   
+	color:#BA55D3;
+	font-variant:small-caps;
+	font-size:medium;
+	margin-bottom:1px;
+}
+
+.np9 {   
+
+	color:#C71585;
+	font-variant:small-caps;
+	font-size:medium;
+	margin-bottom:1px;
+}
+
+.np10 {   
+	color:#D87093;
+	font-variant:small-caps;
+	font-size:medium;
+	margin-bottom:1px;
+}
+
+.np11 {   
+	color:#6A5ACD;
+	font-variant:small-caps;
+	font-size:medium;
+	margin-bottom:1px;
+}
+
+.np12 {   
+	color:#B22222;
+	font-variant:small-caps;
+	font-size:medium;
+	margin-bottom:1px;
+}
+
+.np13 {   
+	color:#4682B4;
+	font-variant:small-caps;
+	font-size:medium;
+	margin-bottom:1px;
+}
+
+.np14 {   
+	color:#FFA500;
+	font-variant:small-caps;
+	font-size:medium;
+	margin-bottom:1px;
+}
+
+.np15 {
+	color:#FFD700;
+	font-variant:small-caps;
+	font-size:medium;
+	margin-bottom:1px;
+}
+
+
+.np16 {   
+	color:#FFA500;
+	font-variant:small-caps;
+	font-size:medium;
+	margin-bottom:1px;
+}
+
+.tr1 {   
+   	border-top-color:#FFD700;
+   	border-bottom-color:#FFD700;
+   	border-left-color:white;
+   	border-right-color:white;
+   	border-width:1px;
+   	border-style:solid;  
+}
+
+.tr2 {   
+   	border-top-color:	#9932CC;
+   	border-bottom-color:#9932CC;
+   	border-left-color:white;
+   	border-right-color:white;
+   	border-width:1px;
+   	border-style:solid;
+   
+}
+
+.tr3 {   
+   	border-top-color:#D2691E;
+   	border-bottom-color:#D2691E;
+   	border-left-color:white;
+   	border-right-color:white;
+   	border-width:1px;
+   	border-style:solid; 
+}
+
+.tr4 {   
+   	border-top-color:#8B008B;
+   	border-bottom-color:#8B008B;
+   	border-left-color:white;
+   	border-right-color:white;
+   	border-width:1px;
+   	border-style:solid;   
+}
+
+.tr5 {   
+   	border-top-color:#DAA520;
+   	border-bottom-color:#DAA520;
+   	border-left-color:white;
+   	border-right-color:white;
+   	border-width:1px;
+   	border-style:solid;   
+}
+
+.tr6 {   
+   	border-top-color:#6B8E23;
+   	border-bottom-color:#6B8E23;
+   	border-left-color:white;
+   	border-right-color:white;
+   	border-width:1px;
+   	border-style:solid;   
+}
+
+.tr7 {   
+   	border-top-color:#FF7F00;
+   	border-bottom-color:#FF7F00;
+   	border-left-color:white;
+   	border-right-color:white;
+   	border-width:1px;
+   	border-style:solid;   
+}
+
+.tr8 {   
+   	border-top-color:#BA55D3;
+   	border-bottom-color:#BA55D3;
+   	border-left-color:white;
+   	border-right-color:white;
+   	border-width:1px;
+   	border-style:solid;   
+}
+
+.tr9 {   
+   	border-top-color:#C71585;
+   	border-bottom-color:#C71585;
+   	border-left-color:white;
+   	border-right-color:white;
+   	border-width:1px;
+   	border-style:solid;   
+}
+
+.tr10 {   
+   	border-top-color:#D87093;
+   	border-bottom-color:#D87093;
+   	border-left-color:white;
+   	border-right-color:white;
+   	border-width:1px;
+   	border-style:solid;   
+}
+
+.tr11 {   
+   	border-top-color:#6A5ACD;
+   	border-bottom-color:#6A5ACD;
+   	border-left-color:white;
+   	border-right-color:white;
+   	border-width:1px;
+   	border-style:solid;   
+}
+
+.tr12 {   
+   	border-top-color:#B22222;
+   	border-bottom-color:#B22222;
+   	border-left-color:white;
+   	border-right-color:white;
+   	border-width:1px;
+   	border-style:solid;   
+}
+
+.tr13 {   
+   	border-top-color:#4682B4;
+  	border-bottom-color:#4682B4;
+   	border-left-color:white;
+   	border-right-color:white;
+   	border-width:1px;
+   	border-style:solid;   
+}
+
+.tr14, .tr16 {   
+   	border-top-color:#FFA500;
+   	border-bottom-color:#FFA500;
+   	border-left-color:white;
+   	border-right-color:white;
+   	border-width:1px;
+   	border-style:solid;   
+}
+
+.tr15 {   
+   	border-top-color:#FFD700;
+   	border-bottom-color:#FFD700;
+   	border-left-color:white;
+   	border-right-color:white;
+   	border-width:1px;
+   	border-style:solid;   
+}
+
+.miltr1 {   
+   	border-top-color:white;
+   	border-bottom-color:#FFD700;
+   	border-left-color:white;
+   	border-right-color:white;
+   	border-width:1px;
+   	border-style:solid;  
+}
+
+.miltr2 {   
+   	border-top-color:white;
+   	border-bottom-color:#9932CC;
+   	border-left-color:white;
+   	border-right-color:white;
+   	border-width:1px;
+   	border-style:solid;
+}
+
+.miltr3 {   
+ 	border-top-color:white;
+	border-bottom-color:#D2691E;
+	border-left-color:white;
+	border-right-color:white;
+	border-width:1px;
+	border-style:solid;
+}
+
+.miltr4{
+	border-top-color:white;
+	border-bottom-color:#8B008B;
+	border-left-color:white;
+	border-right-color:white;
+	border-width:1px;
+  	border-style:solid;   
+}
+
+.miltr5 {   
+   	border-top-color:white;
+   	border-bottom-color:#DAA520;
+   	border-left-color:white;
+   	border-right-color:white;
+   	border-width:1px;
+   	border-style:solid;   
+}
+
+.miltr6 {   
+   	border-top-color:white;
+   	border-bottom-color:#6B8E23;
+   	border-left-color:white;
+   	border-right-color:white;
+   	border-width:1px;
+   	border-style:solid;   
+}
+
+.miltr7 {   
+   	border-top-color:white;
+   	border-bottom-color:#FF7F00;
+   	border-left-color:white;
+   	border-right-color:white;
+   	border-width:1px;
+   	border-style:solid;   
+}
+
+.miltr8 {   
+   	border-top-color:white;
+   	border-bottom-color:#BA55D3;
+   	border-left-color:white;
+   	border-right-color:white;
+   	border-width:1px;
+   	border-style:solid;   
+}
+
+.miltr9 {   
+   	border-top-color:white;
+   	border-bottom-color:#C71585;
+   	border-left-color:white;
+   	border-right-color:white;
+   	border-width:1px;
+   	border-style:solid;   
+}
+
+.miltr10 {   
+   	border-top-color:white;
+   	border-bottom-color:#D87093;
+   	border-left-color:white;
+   	border-right-color:white;
+   	border-width:1px;
+   	border-style:solid;   
+}
+
+.miltr11 {   
+   	border-top-color:white;
+   	border-bottom-color:#6A5ACD;
+   	border-left-color:white;
+   	border-right-color:white;
+   	border-width:1px;
+   	border-style:solid;   
+}
+
+.miltr12 {   
+   	border-top-color:white;
+   	border-bottom-color:#B22222;
+   	border-left-color:white;
+   	border-right-color:white;
+   	border-width:1px;
+   	border-style:solid;   
+}
+
+.miltr13 {   
+   	border-top-color:white;
+   	border-bottom-color:#4682B4;
+   	border-left-color:white;
+   	border-right-color:white;
+   	border-width:1px;
+   	border-style:solid;   
+}
+
+.miltr14 {   
+   	border-top-color:white; 
+   	border-bottom-color:#FFA500;
+   	border-left-color:white;
+   	border-right-color:white;
+	border-width:1px;
+   	border-style:solid;   
+}
+
+.miltr15 {   
+   	border-top-color:white;
+   	border-bottom-color:#FFD700;
+   	border-left-color:white;
+   	border-right-color:white;
+   	border-width:1px;
+   	border-style:solid;   
+}
+
+.miltr16 { 
+   	border-top-color:white;
+   	border-bottom-color:#FFA500;
+   	border-left-color:white;
+   	border-right-color:white;
+   	border-width:1px;
+   	border-style:solid;
+}
+
+.TCRVINS1 {   
+  	color:#FFD700;
+ 	text-align:right;
+   	font-weight: bold;
+   	margin-bottom:2px;
+   	font-size:medium;
+
+}
+
+.TCRVINS2 {   
+ 	  color:#9932CC;
+ 	  text-align:right;
+  	  font-weight: bold;
+	  margin-bottom:2px;
+ 	  font-size:medium;
+}
+
+.TCRVINS3 {   
+   	color:#D2691E;
+  	text-align:right;
+   	font-weight: bold;
+   	margin-bottom:2px;
+
+}
+
+.TCRVINS4 {   
+   	color:#8B008B;
+  	text-align:right;
+   	font-weight: bold;
+  	margin-bottom:2px;
+
+}
+.TCRVINS5 {   
+   	color:#DAA520;
+   	text-align:right;
+   	font-weight: bold;
+   	margin-bottom:2px;
+
+}
+.TCRVINS6 {   
+   	color:#6B8E23;
+   	text-align:right;
+   	font-weight: bold;
+   	margin-bottom:2px;
+
+}
+.TCRVINS7 {   
+   	color:#FF7F00;
+  	 text-align:right;
+  	 font-weight: bold;
+  	 margin-bottom:2px;
+
+}
+
+.TCRVINS8 {   
+   	color:#BA55D3;
+ 	text-align:right;
+   	font-weight: bold;
+   	margin-bottom:2px;
+
+}
+
+.TCRVINS9 {   
+   	color:#C71585;
+   	text-align:right;
+   	font-weight: bold;
+   	margin-bottom:2px;
+
+}
+
+.TCRVINS10 {   
+   	color:#D87093;
+   	text-align:right;
+   	font-weight: bold;
+   	margin-bottom:2px;
+
+}
+
+.TCRVINS11 {   
+  	color:#6A5ACD;
+  	 text-align:right;
+  	 font-weight: bold;
+   	margin-bottom:2px;
+
+}
+
+.TCRVINS12 {   
+   	color:#B22222;
+   	text-align:right;
+  	 font-weight: bold;
+   	margin-bottom:2px;
+
+}
+
+.TCRVINS13 {   
+   	color:#4682B4;
+   	text-align:right;
+  	font-weight: bold;
+   	margin-bottom:2px;
+
+}
+
+.TCRVINS14 {   
+   	color:#FFA500;
+  	text-align:right;
+   	font-weight: bold;
+   	margin-bottom:2px;
+}
+
+.TCRVINS15 {   
+   	color:#FFD700;
+   	text-align:right;
+   	font-weight: bold;
+   	margin-bottom:2px;
+}
+
+.TCRVINS16 {   
+   	color:#FFA500;
+  	text-align:right;
+  	font-weight: bold;
+  	margin-bottom:2px;
+}
+
+
+.TITSSREG1{   
+	color:#FFD700;
+	font-weight: bold;
+	font-size:x-large;
+	margin-bottom:3px;
+	margin-top:3px;
+}
+
+.TITSSREG2 {   
+	color:	#9932CC;
+	font-weight: bold;
+	font-size:x-large;
+	margin-bottom:3px;
+	margin-top:3px;
+}
+
+.TITSSREG3 {   
+	color:#D2691E;
+	font-weight: bold;
+	font-size:x-large;
+	margin-bottom:3px;
+	margin-top:3px;
+}
+
+.TITSSREG4 {   
+	color:#8B008B;
+	font-weight: bold;
+	font-size:x-large;
+	margin-bottom:3px;
+	margin-top:3px;
+}
+
+.TITSSREG5 {   
+	color:#DAA520;
+	font-weight: bold;
+	font-size:x-large;
+	margin-bottom:3px;
+	margin-top:3px;
+}
+
+.TITSSREG6 {   
+	color:#6B8E23;
+	font-weight: bold;
+	font-size:x-large;
+	margin-bottom:3px;
+	margin-top:3px;
+}
+
+.TITSSREG7 {   
+	color:#FF7F00;
+	font-weight: bold;
+	font-size:x-large;
+	margin-bottom:3px;
+	margin-top:3px;
+   
+}
+
+.TITSSREG8 {   
+	color:#BA55D3;
+	font-weight: bold;
+	font-size:x-large;
+	margin-bottom:3px;
+	margin-top:3px;
+ 
+}
+
+.TITSSREG9 {   
+	color:#C71585;
+	font-weight: bold;
+	font-size:x-large;
+	margin-bottom:3px;
+	margin-top:3px;
+  
+}
+
+.TITSSREG10 {   
+	color:#D87093;
+	font-weight: bold;
+	font-size:x-large;
+	margin-bottom:3px;
+	margin-top:3px;
+}
+
+.TITSSREG11 {   
+	color:#6A5ACD;
+	font-weight: bold;
+	font-size:x-large;
+	margin-bottom:3px;
+	margin-top:3px;   
+}
+
+.TITSSREG12 {   
+	color:#B22222;
+	font-weight: bold;
+	font-size:x-large;
+	margin-bottom:3px;
+	margin-top:3px; 
+}
+
+.TITSSREG13 {   
+	color:#4682B4;
+	font-weight: bold;
+	font-size:x-large;
+	margin-bottom:3px;
+	margin-top:3px; 
+}
+
+.TITSSREG14 {   
+	color:#FFA500;
+	font-weight: bold;
+	font-size:x-large;
+	margin-bottom:3px;
+	margin-top:3px;
+}
+
+.TITSSREG15 {   
+	color:#FFD700;
+	font-weight: bold;
+	font-size:x-large;
+	margin-bottom:3px;
+	margin-top:3px;
+ }
+
+.TITSSREG16 {   
+	color:#FFA500;
+	font-weight: bold;
+	font-size:x-large;
+	margin-bottom:3px;
+	margin-top:3px;
+}
+
+.sup {
+	font-size:small;
+	vertical-align:super;
+}
+
+.indexvins {
+	text-decoration:none;
+	font-size:medium;
+	color:black;
+}
