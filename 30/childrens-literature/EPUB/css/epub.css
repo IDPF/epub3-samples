@@ -2,7 +2,7 @@
 
 body {
     color: rgb(0,0,0);
-    font-family: arial, helvetica, sans-serif;
+    font-family: calibri,arial,helvetica, sans-serif;
     background-color: rgb(255,255,255);
     margin: 0.5em 1em 0 0.5em;
     border: 0;
@@ -74,31 +74,6 @@ span.c8 {
     margin-left: 1em
 }
 
-nav[epub|type~='toc'] ol {
-	list-style-type: none;
-}
-
-ol > li:first-child {
-	margin-top: 0.5em;
-}
-
-nav[epub|type~='toc'] > ol > li > ol > li {
-	margin-top: 0.5em;
-}
-
-li.front {
-	font-style: italic;
-}
-
-li.front + li.body {
-	margin-top: 1.5em;
-}
-
-span.author {
-	font-family: arial, helvetica, sans-serif;
-	font-weight: bold;
-}
-
 span[epub|type~='pagebreak'] {
     font-size: smaller;
     color: rgb(180,180,180);
@@ -112,4 +87,9 @@ aside[epub|type~='annotation'] {
 	border-top: 0.1em solid rgb(100,100,100);
 	font-size: 0.7em;
 	width: 50%;
+}
+
+.hidden {
+	display: none;
+	visibility: hidden;
 }
