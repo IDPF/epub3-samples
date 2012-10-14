@@ -4,12 +4,13 @@
 	lang="en">
 	<head>
 		<title>Children's Literature</title>
-		<link href="css/epub.css" type="text/css" rel="stylesheet" />
+		<link href="css/epub.css" rel="stylesheet" type="text/css"/>
+		<link href="css/nav.css" rel="stylesheet" type="text/css"/>
 	</head>
 	<body>
 		<nav epub:type="toc" id="toc">
 			<h2>THE CONTENTS</h2>
-			<ol>
+			<ol id="tocList">
 				<li id="np-313">
 					<a href="s04.xhtml#pgepubid00492">SECTION IV FAIRY STORIES—MODERN FANTASTIC TALES</a>
 					<ol>
@@ -24,6 +25,28 @@
 							<ol>
 								<li id="np-319" class="body">
 									<a href="s04.xhtml#pgepubid00503">190 A FOUR-LEAVED CLOVER</a>
+									<ol hidden="hidden">
+										<li>
+											<a href="s04.xhtml#pgepubid99001">
+												I. The Rabbi and the Diadem
+											</a>
+										</li>
+										<li>
+											<a href="s04.xhtml#pgepubid99002">
+												II. Friendship
+											</a>
+										</li>
+										<li>
+											<a href="s04.xhtml#pgepubid99003">
+												III. True Charity
+											</a>
+										</li>
+										<li>
+											<a href="s04.xhtml#pgepubid99004">
+												IV. An Eastern Garden
+											</a>
+										</li>
+									</ol>
 								</li>
 							</ol>
 						</li>
@@ -113,7 +136,14 @@
 				</li>
 			</ol>
 		</nav>
-		<nav epub:type="page-list" id="pages" class="pagelist" hidden="hidden">
+		<nav epub:type="landmarks" id="guide" hidden="hidden">
+			<h2>Guide</h2>
+			<ol>
+				<li><a epub:type="toc" href="#toc">Table of Contents</a></li>
+				<li><a epub:type="bodymatter" href="s04.xhtml#pgepubid00498">Begin Reading</a></li>
+			</ol>
+		</nav>
+		<nav epub:type="page-list" id="pages" hidden="hidden">
 			<h2>Pages</h2>
 			<ol>
 				<li id="pt-180">
@@ -394,5 +424,33 @@
 				</li>
 			</ol>
 		</nav>
+		
+		<script type="text/javascript">
+		<![CDATA[
+			var navLists = document.getElementsByTagName('nav');
+			
+			for (var i = 0; i < navLists.length; i++) {
+				// find the toc nav and process
+				if (navLists[i].getAttributeNS('http://www.idpf.org/2007/ops','type') == 'toc') {
+					removeHidden(navLists[i]);
+					break;
+				}
+			}
+			
+			function removeHidden(tocList) {
+				var liNodes = tocList.getElementsByTagName('li');
+				for (var i = 0; i < liNodes.length; i++) {
+					for (var j = 0; j < liNodes[i].childNodes.length; j++) {
+						if (liNodes[i].childNodes[j].nodeName == 'ol') {
+							// remove a hidden attribute
+							liNodes[i].childNodes[j].removeAttribute('hidden');
+							// call the function with the child to keep checking
+							removeHidden(liNodes[i].childNodes[j]);
+						}
+					}
+				}
+			}
+		]]>
+		</script>
 	</body>
 </html>
