@@ -2,12 +2,12 @@
 <package xmlns="http://www.idpf.org/2007/opf" prefix="cc: http://creativecommons.org/ns# rendition: http://www.idpf.org/vocab/rendition/#" version="3.0" unique-identifier="bookid" xml:lang="fr" dir="ltr" id="package">
 	<metadata xmlns:dc="http://purl.org/dc/elements/1.1/">
 <!-- unique identifier -->
-	  <dc:identifier id="bookid">code.google.com.epub-samples.page-blanche_bitmaps-in-spine</dc:identifier>
+	  <dc:identifier id="bookid">code.google.com.epub-samples.page-blanche</dc:identifier>
       <meta refines="#bookid" property="identifier-type" scheme="onix:codelist5">01</meta>
 <!-- language of the book -->
       <dc:language>fr</dc:language>
 <!-- title -->
-	  <dc:title id="title">Page Blanche (bitmaps directly in spine)</dc:title>
+	  <dc:title id="title">Page Blanche</dc:title>
 	  <meta refines="#title" property="title-type">main</meta>
 <!-- creator -->
 	<!-- 1 -->
