@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<package xmlns="http://www.idpf.org/2007/opf" prefix="cc: http://creativecommons.org/ns# rendition: http://www.idpf.org/vocab/rendition/#" version="3.0" unique-identifier="bookid" xml:lang="fr" dir="ltr" id="package">
+<package xmlns="http://www.idpf.org/2007/opf" prefix="cc: http://creativecommons.org/ns# rendition: http://www.idpf.org/vocab/rendition/#" version="3.0" unique-identifier="bookid" xml:lang="fr" id="package">
 	<metadata xmlns:dc="http://purl.org/dc/elements/1.1/">
 <!-- unique identifier -->
 		<dc:identifier id="bookid">code.google.com.epub-samples.regime-anticancer-arabic</dc:identifier>
@@ -8,7 +8,7 @@
 		<dc:language>ar</dc:language>
 <!-- title -->
 		<dc:title id="title">Le Vrai Régime anti-cancer</dc:title>
-		<meta refines="#title" property="alternate-script" xml:lang="ar" dir="rtl">السرطان من  للوقاية الصحيح الغذائي  النظام</meta>
+		<meta refines="#title" property="alternate-script" xml:lang="ar">السرطان من  للوقاية الصحيح الغذائي  النظام</meta>
 <!-- creator -->
 	<!-- 1 -->
 		<dc:creator id="creator1">Pr David Khayat</dc:creator>
