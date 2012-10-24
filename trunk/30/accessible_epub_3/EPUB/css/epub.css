@@ -136,9 +136,9 @@ h4 {
 
 /* Appropriate heading hyphenation suppression for different ereaders */
 h1, h2, h3, h4 { 
+  -epub-hyphens: none;
   -webkit-hyphens: none;
   hyphens: none;
-  adobe-hyphenate: none;
 }
 
 section.chapter > h1.title,
@@ -245,9 +245,9 @@ pre {
   margin: 10px 0 10px 20px;
   font-size: 85%;
   display: block;
+  -epub-hyphens: none;
   -webkit-hyphens: none;
   hyphens: none;
-  adobe-hyphenate: none;
 }
 
 code {
@@ -818,42 +818,42 @@ div.blockquote_sampler_toc {
   font-family: "Free Serif";
   font-style: normal;
   font-weight: normal;
-  src: url(FreeSerif.otf);
+  src: url(../fonts/FreeSerif.otf);
 }
 
 @font-face {
   font-family: "Free Sans Bold";
   font-style: normal;
   font-weight: bold;
-  src: url(FreeSansBold.otf);
+  src: url(../fonts/FreeSansBold.otf);
 }
 
 @font-face {
   font-family: "Ubuntu Mono";
   font-weight: normal;
   font-style: normal;
-  src: url(UbuntuMono-R.ttf);
+  src: url(../fonts/UbuntuMono-R.ttf);
 }
 
 @font-face {
   font-family: "Ubuntu Mono Bold";
   font-style: normal;
   font-weight: bold;
-  src: url(UbuntuMono-B.ttf);
+  src: url(../fonts/UbuntuMono-B.ttf);
 }
 
 @font-face {
   font-family: "Ubuntu Mono BoldItal";
   font-weight: bold;
   font-style: italic;
-  src: url(UbuntuMono-BI.ttf);
+  src: url(../fonts/UbuntuMono-BI.ttf);
 }
 
 @font-face {
   font-family: "Ubuntu Mono Ital";
   font-weight: normal;
   font-style: italic;
-  src: url(UbuntuMono-RI.ttf);
+  src: url(../fonts/UbuntuMono-RI.ttf);
 }
 
 /* keep this body statement last */
