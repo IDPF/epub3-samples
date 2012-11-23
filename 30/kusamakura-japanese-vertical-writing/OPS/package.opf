@@ -70,7 +70,7 @@
           >NPO 支援技術開発機構</meta>
     <meta refines="#朗読者の所属" property="alternate-script" xml:lang="en"
           >Assistive Technology Development Organization</meta>
-    <meta refines="#contrib5" property="role" scheme="marc:relators">nrt</meta> 
+    <meta refines="#朗読者" property="role" scheme="marc:relators">nrt</meta> 
 
     <meta property="dcterms:contributor" id="濱田">濱田 麻邑</meta>
     <meta refines="#濱田" property="alternate-script" xml:lang="en">Mayu Hamada</meta>
