@@ -2,7 +2,7 @@
 <?xml-model href="file:/C:/EPub/epub-revision/build/30/schema/package-30.rnc" type="application/relax-ng-compact-syntax"?>
 <package xmlns="http://www.idpf.org/2007/opf" version="3.0" xml:lang="ja"
          prefix="foaf: http://xmlns.com/foaf/spec/"
-         unique-identifier="aozora-id"> <!--pub-id-->
+         unique-identifier="青空文庫の番号"> <!--pub-id-->
   <metadata xmlns:opf="http://www.idpf.org/2007/opf"
             xmlns:dc="http://purl.org/dc/elements/1.1/"
             xmlns:xsd="http://www.w3.org/2001/XMLSchema"
@@ -17,84 +17,84 @@
           >urn:isbn:978-4-XXXX-YYYY-Z</meta>
     <meta refines="#pub-id" property="scheme" datatype="xsd:string">isbn</meta>
     -->
-    <dc:identifier id="aozora-id"
+    <dc:identifier id="青空文庫の番号"
                    >http://www.aozora.gr.jp/cards/000148/card776.html</dc:identifier>
 
     <!-- title -->
-    <dc:title id="title" xml:lang="ja-JP" dir="rtl">草枕</dc:title>
-    <meta refines="#title" property="title-type" id="title-type">main</meta>
-    <meta refines="#title" property="file-as" xml:lang="ja-Hrkt-JP">くさまくら</meta>
-    <meta refines="#title" property="alternate-script" xml:lang="ja-Hrkt-JP">くさまくら</meta>
-    <meta refines="#title" property="alternate-script" xml:lang="en">Kusamakura</meta>
+    <dc:title id="題名" xml:lang="ja-JP" dir="rtl">草枕</dc:title>
+    <meta refines="#題名" property="title-type" id="title-type">main</meta>
+    <meta refines="#題名" property="file-as" xml:lang="ja-Hrkt-JP">くさまくら</meta>
+    <meta refines="#題名" property="alternate-script" xml:lang="ja-Hrkt-JP">くさまくら</meta>
+    <meta refines="#題名" property="alternate-script" xml:lang="en">Kusamakura</meta>
 
     <!-- language -->
     <dc:language>ja-jp</dc:language>
 
     <!-- author -->
-    <meta property="dcterms:creator" id="auth">夏目 漱石</meta>
-    <meta refines="#auth" property="file-as" xml:lang="ja-Hrkt-JP">なつめ そうせき</meta>
-    <meta refines="#auth" property="alternate-script" xml:lang="ja-Hrkt-JP">なつめ そうせき</meta>
-    <meta refines="#auth" property="alternate-script" xml:lang="en">Natsume, Sōseki</meta>
-    <meta refines="#auth" property="role" scheme="marc:relators">aut</meta>
+    <meta property="dcterms:creator" id="著者">夏目 漱石</meta>
+    <meta refines="#著者" property="file-as" xml:lang="ja-Hrkt-JP">なつめ そうせき</meta>
+    <meta refines="#著者" property="alternate-script" xml:lang="ja-Hrkt-JP">なつめ そうせき</meta>
+    <meta refines="#著者" property="alternate-script" xml:lang="en">Natsume, Sōseki</meta>
+    <meta refines="#著者" property="role" scheme="marc:relators">aut</meta>
 
     <!-- contributors -->
-    <meta property="dcterms:contributor" id="contrib1">柴田 卓治</meta>
-    <meta refines="#contrib1" property="role" scheme="marc:relators" >dtc</meta> 
-    <meta refines="#contrib1" property="dcterms:date" scheme="dcterms:W3CDTF"
+    <meta property="dcterms:contributor" id="入力者">柴田 卓治</meta>
+    <meta refines="#入力者" property="role" scheme="marc:relators" >dtc</meta> 
+    <meta refines="#入力者" property="dcterms:date" scheme="dcterms:W3CDTF"
           >1999-02-17</meta>
 
-    <meta property="dcterms:contributor" id="contrib2">伊藤 時也</meta>
-    <meta refines="#contrib2" property="role" scheme="marc:relators">pfr</meta> 
-    <meta refines="#contrib2" property="dcterms:date" scheme="dcterms:W3CDTF"
+    <meta property="dcterms:contributor" id="校正者">伊藤 時也</meta>
+    <meta refines="#校正者" property="role" scheme="marc:relators">pfr</meta> 
+    <meta refines="#校正者" property="dcterms:date" scheme="dcterms:W3CDTF"
           >2007-05-28</meta>
 
-    <meta property="dcterms:contributor" id="contrib3">総務省</meta>
-    <meta refines="#contrib3" property="alternate-script" xml:lang="en"
+    <meta property="dcterms:contributor" id="総務省">総務省</meta>
+    <meta refines="#総務省" property="alternate-script" xml:lang="en"
           >Ministry of Internal Affairs and Communications</meta>
-    <meta refines="#contrib3" property="role" scheme="marc:relators">sht</meta> 
+    <meta refines="#総務省" property="role" scheme="marc:relators">sht</meta> 
 
-    <meta property="dcterms:contributor" id="contrib4"
+    <meta property="dcterms:contributor" id="EPUB日本語拡張仕様策定プロジェクト"
           >EPUB日本語拡張仕様策定プロジェクト</meta>
-    <meta refines="#contrib4" property="foaf:mbox" scheme="xsd:anyURI"
+    <meta refines="#EPUB日本語拡張仕様策定プロジェクト" property="foaf:mbox" scheme="xsd:anyURI"
           >mailto:epubcafe@googlegroups.com</meta>
-    <meta refines="#contrib4" property="foaf:homepage" scheme="xsd:anyURI"
+    <meta refines="#EPUB日本語拡張仕様策定プロジェクト" property="foaf:homepage" scheme="xsd:anyURI"
           >http://www.epubcafe.jp/</meta>
-    <meta refines="#contrib4" property="alternate-script" xml:lang="en"
+    <meta refines="#EPUB日本語拡張仕様策定プロジェクト" property="alternate-script" xml:lang="en"
           >Japanese EPUB Specification Settlement Project</meta>
-    <meta refines="#contrib4" property="role" id="contrib4-role">mrk</meta> 
-    <meta refines="#contrib4" property="role" scheme="marc:relators">mrk</meta> 
+    <meta refines="#EPUB日本語拡張仕様策定プロジェクト" property="role" id="EPUB日本語拡張仕様策定プロジェクト-role">mrk</meta> 
+    <meta refines="#EPUB日本語拡張仕様策定プロジェクト" property="role" scheme="marc:relators">mrk</meta> 
 
-    <meta property="dcterms:contributor" id="contrib5">持田 怜香</meta>
-    <meta refines="#contrib5" property="alternate-script" xml:lang="en">Reika Mochida</meta>
-    <meta refines="#contrib5" property="foaf:Organization" id="contrib5affilitiation" xml:lang="ja-jp"
+    <meta property="dcterms:contributor" id="朗読者">持田 怜香</meta>
+    <meta refines="#朗読者" property="alternate-script" xml:lang="en">Reika Mochida</meta>
+    <meta refines="#朗読者" property="foaf:Organization" id="朗読者の所属" xml:lang="ja-jp"
           >NPO 支援技術開発機構</meta>
-    <meta refines="#contrib5affilitiation" property="alternate-script" xml:lang="en"
+    <meta refines="#朗読者の所属" property="alternate-script" xml:lang="en"
           >Assistive Technology Development Organization</meta>
     <meta refines="#contrib5" property="role" scheme="marc:relators">nrt</meta> 
 
-    <meta property="dcterms:contributor" id="contrib6">濱田 麻邑</meta>
-    <meta refines="#contrib6" property="alternate-script" xml:lang="en">Mayu Hamada</meta>
-    <meta refines="#contrib6" property="foaf:Organization" id="contrib6affilitiation" xml:lang="ja-jp"
+    <meta property="dcterms:contributor" id="濱田">濱田 麻邑</meta>
+    <meta refines="#濱田" property="alternate-script" xml:lang="en">Mayu Hamada</meta>
+    <meta refines="#濱田" property="foaf:Organization" id="濱田の所属" xml:lang="ja-jp"
               >NPO 支援技術開発機構</meta>
-    <meta refines="#contrib6affilitiation" property="alternate-script" xml:lang="en"
+    <meta refines="#濱田の所属" property="alternate-script" xml:lang="en"
               >Assistive Technology Development Organization</meta>
-    <meta refines="#contrib6" property="role" scheme="marc:relators">drt</meta> 
+    <meta refines="#濱田" property="role" scheme="marc:relators">drt</meta> 
         
-    <meta property="dcterms:contributor" id="contrib7">川幡 太一</meta>
-    <meta refines="#contrib7" property="alternate-script" xml:lang="en">Taichi Kawabata</meta>
-    <meta refines="#contrib7" property="foaf:organization" id="contrib7affilitiation"
+    <meta property="dcterms:contributor" id="川幡">川幡 太一</meta>
+    <meta refines="#川幡" property="alternate-script" xml:lang="en">Taichi Kawabata</meta>
+    <meta refines="#川幡" property="foaf:organization" id="川幡の所属"
               >NTT未来ねっと研究所</meta>
-    <meta refines="#contrib7affilitiation" property="alternate-script" xml:lang="en"
+    <meta refines="#川幡の所属" property="alternate-script" xml:lang="en"
               >Network Innovation Laboratories, NTT</meta>
-    <meta refines="#contrib7" property="role" scheme="marc:relators">mrk</meta> 
+    <meta refines="#川幡" property="role" scheme="marc:relators">mrk</meta> 
              
-        <meta property="dcterms:contributor" id="contrib8">村田 真</meta>
-        <meta refines="#contrib8" property="alternate-script" xml:lang="en">Makoto Murata</meta>
-        <meta refines="#contrib8" property="foaf:organization" id="contrib8affilitiation"
+        <meta property="dcterms:contributor" id="村田">村田 真</meta>
+        <meta refines="#村田" property="alternate-script" xml:lang="en">Makoto Murata</meta>
+        <meta refines="#村田" property="foaf:organization" id="村田の所属"
               >国際大学</meta>
-        <meta refines="#contrib8affilitiation" property="alternate-script" xml:lang="en"
+        <meta refines="#村田の所属" property="alternate-script" xml:lang="en"
               >International University of Japan</meta>
-    <meta refines="#contrib8" property="role" scheme="marc:relators">mrk</meta> 
+    <meta refines="#村田" property="role" scheme="marc:relators">mrk</meta> 
         
     <!-- media-overlays -->
     <meta property="media:duration" refines="#一_overlay">0:33:35.025</meta>
