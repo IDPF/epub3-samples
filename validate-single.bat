@@ -1,2 +1,2 @@
 @echo off
-java -jar lib/epubcheck-201206d1/epubcheck-201206d1.jar %1
+java -jar lib/epubcheck-3.0-RC-2/epubcheck-3.0-RC-2.jar %1
