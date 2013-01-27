@@ -42,20 +42,16 @@ div {font-size: 1em;
 
 p {font-size: 1em;
 	text-align:right;
-	direction: rtl;
-	writing-mode: rl-tb;
 	margin: 8px;}
 
 span {font-size: 1em;
 	text-align:right;
-	direction: rtl;
-	writing-mode: rl-tb;}
+}
 	
 /*Used for book title*/
 h1 { font-size: 230%;
 	font-family: 'Times New Roman', Times, serif, 'sans serif', 'DejaVu Sans';
 	text-align: center;
-	direction: rtl;
 	writing-mode: rl-tb;
 	font-weight: normal;
 }
@@ -63,7 +59,6 @@ h1 { font-size: 230%;
 h2 { font-size: 180%;
 	font-family: 'Times New Roman', Times, serif, 'sans serif', 'DejaVu Sans';
 	text-align: center;
-	direction: rtl;
 	writing-mode: rl-tb;
 	font-weight: normal;
 }
@@ -72,15 +67,12 @@ h3 {	font-family: 'Times New Roman', Times, serif, 'sans serif', 'DejaVu Sans';
 	font-size: 130%;
 	font-weight: normal;
     text-align: center;
-	direction: rtl;
-	writing-mode: rl-tb;
 }
 
 /*Used for larger centered text, like info and copyright*/
 h4 { font-size: 105%;
 	font-family: 'Times New Roman', Times, serif, 'sans serif', 'DejaVu Sans';
 	text-align: center;
-	direction: rtl;
 	writing-mode: rl-tb;
 	font-weight: normal;
 }
@@ -88,8 +80,7 @@ h4 { font-size: 105%;
 h5 { font-size: 100%;
 	font-family: 'Times New Roman', Times, serif, 'sans serif', 'DejaVu Sans';
 	text-align: center;
-	direction: rtl;
-	writing-mode: rl-tb;
+/*	writing-mode: rl-tb; */
 	font-weight: normal;
 }		
 
@@ -101,8 +92,6 @@ h5 { font-size: 100%;
 .regular {
 	font-family: 'Times New Roman', Times, serif, 'sans serif', 'DejaVu Sans';
 	font-size: 100%;
-	writing-mode: rl-tb;
-	direction:rtl;
 }
 
 .regularbold {
