@@ -1,0 +1,849 @@
+@charset "utf-8";
+@page  {
+  margin: 5%;
+}
+/* // -------------------------------------------------------------------------------------------------
+// //.	Distilling
+---------------------------------------------------------------------------------------------------- */
+/* //. - reset
+---------------------------------------------------------------------------------------------------- */
+/*html, body,*/
+div,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+address,
+figure,
+blockquote,
+pre,
+ul,
+ol,
+menu,
+li,
+dl,
+dt,
+dd,
+caption,
+th,
+td,
+form,
+fieldset,
+legend,
+input,
+textarea,
+code {
+  margin: 0;
+  padding: 0;
+  border: none 0;
+  text-align: left;
+}
+body {
+  font-style: normal;
+  font-weight: normal;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 100%;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+address,
+blockquote,
+caption,
+th,
+a,
+q,
+em,
+strong,
+dfn,
+code,
+samp,
+kbd,
+var,
+cite,
+abbr,
+acronym {
+  font-style: inherit;
+  font-weight: inherit;
+}
+
+
+table {
+  table-layout: auto;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+th,
+td {
+  vertical-align: top;
+}
+li {
+  list-style: none outside;
+}
+fieldset,
+abbr,
+acronym,
+img {
+  border: none 0;
+}
+/* //. - HTML5 Elements
+---------------------------------------------------------------------------------------------------- */
+header,
+footer,
+article,
+aside,
+hgroup,
+section,
+figure,
+figcaption,
+nav {
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+time {
+  display: inline;
+}
+/* // -------------------------------------------------------------------------------------------------
+// //.	Styling
+---------------------------------------------------------------------------------------------------- */
+/* //. - Font Family
+---------------------------------------------------------------------------------------------------- */
+body {
+  font-family: "HiraMinProN-W3", "ヒラギノ明朝 ProN W3", "HiraMinPro-W3", "ヒラギノ明朝 Pro W3", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "HiraKakuProN-W3", "ヒラギノ角ゴシック ProN W3", "HiraKakuPro-W3", "ヒラギノ角ゴシック Pro W3", "Meiryo", "ＭＳ Ｐゴシック", "ＭＳ ゴシック", sans-serif;
+}
+/* //. - containers
+---------------------------------------------------------------------------------------------------- */
+.level2 {
+  margin-top: 0;
+  margin-bottom: 3em;
+}
+.level3 {
+  margin-top: 2.75em;
+  margin-bottom: 2.75em;
+}
+.level4 {
+  margin-top: 2.5em;
+  margin-bottom: 2.5em;
+}
+.level5 {
+  margin-top: 2.25em;
+  margin-bottom: 2.25em;
+}
+.level6 {
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+.level7 {
+  margin-top: 1.75em;
+  margin-bottom: 1.75em;
+}
+.level8 {
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+}
+.level9 {
+  margin-top: 1.25em;
+  margin-bottom: 1.25em;
+}
+/* //. - headings
+---------------------------------------------------------------------------------------------------- */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  position: relative;
+}
+/* //..	Lv. 1
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+/* //..	Lv. 2
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+.level2 > h1 {
+  position: relative;
+  margin-bottom: 2.00em;
+  padding-left: 0.8em;
+  padding-top: 3.5em;
+  padding-bottom: .1em;
+  border-left: solid 3px #202020;
+  font-size: 1.25em;
+  font-weight: bold;
+  letter-spacing: .16em;
+}
+/* //..	Lv. 3
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+.level3 > h1,
+body.loft h1,
+body.publ-index h1,
+body.references h1,
+body.xnotes h1 {
+  position: relative;
+  margin-bottom: .75em;
+  padding-left: 1em;
+  padding-top: 0;
+  border-left: solid 3px #a9a9a9;
+  font-size: 1em;
+  font-weight: bold;
+  letter-spacing: .1em;
+}
+.level3 > h1:after,
+body.loft h1:after,
+body.publ-index h1:after,
+body.references h1:after,
+body.xnotes h1:after {
+  /*
+		content: "";
+		display: block;
+		position: absolute;
+		right: 0;
+		bottom: 2px;
+		width: 4em;
+		height: 1px;
+		background: @color_litetext;
+		*/
+}
+/* //..	Lv. 4
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+.level4 > h2,
+.level4 > h1,
+body.loft h2,
+body.publ-index h2,
+body.xnotes h2 {
+  position: relative;
+  margin-bottom: .75em;
+  padding-left: 1em;
+  padding-top: 0;
+  border-left: solid 3px #a9a9a9;
+  font-size: 1em;
+  font-weight: bold;
+  letter-spacing: .1em;
+}
+.level4 > h2:after,
+.level4 > h1:after,
+body.loft h2:after,
+body.publ-index h2:after,
+body.xnotes h2:after {
+  /*
+		content: "";
+		display: block;
+		position: absolute;
+		right: 0;
+		bottom: 2px;
+		width: 4em;
+		height: 1px;
+		background: @color_litetext;
+		*/
+}
+.level4 > h2.person,
+.level4 > h1.person,
+body.loft h2.person,
+body.publ-index h2.person,
+body.xnotes h2.person {
+  margin-left: 0;
+  margin-bottom: 0;
+  padding-top: .5em;
+  padding-left: 0;
+  padding-bottom: 0;
+  border-top: solid 1px #808080;
+  border-left: none 0;
+}
+.level4 > h2.person:before,
+.level4 > h1.person:before,
+body.loft h2.person:before,
+body.publ-index h2.person:before,
+body.xnotes h2.person:before {
+  content: "■ ";
+}
+.level4 > h2.person:after,
+.level4 > h1.person:after,
+body.loft h2.person:after,
+body.publ-index h2.person:after,
+body.xnotes h2.person:after {
+  display: none;
+}
+/* //..	Lv. 5
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+.level5 > h3,
+.level5 > h2,
+body.loft h3,
+body.publ-index h3,
+body.xnotes h3 {
+  position: relative;
+  margin-bottom: .75em;
+  padding-left: 1em;
+  padding-top: 0;
+  border-left: solid 3px #a9a9a9;
+  font-size: 1em;
+  font-weight: bold;
+  letter-spacing: .1em;
+}
+.level5 > h3:after,
+.level5 > h2:after,
+body.loft h3:after,
+body.publ-index h3:after,
+body.xnotes h3:after {
+  /*
+		content: "";
+		display: block;
+		position: absolute;
+		right: 0;
+		bottom: 2px;
+		width: 4em;
+		height: 1px;
+		background: @color_litetext;
+		*/
+
+}
+/* //..	Lv. 6
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+.level6 > h4,
+.level6 > h3 {
+  position: relative;
+  margin-bottom: .75em;
+  padding-left: 1em;
+  padding-top: 0;
+  border-left: solid 3px #a9a9a9;
+  font-size: 1em;
+  font-weight: bold;
+  letter-spacing: .1em;
+}
+.level6 > h4:after,
+.level6 > h3:after {
+  /*
+		content: "";
+		display: block;
+		position: absolute;
+		right: 0;
+		bottom: 2px;
+		width: 4em;
+		height: 1px;
+		background: @color_litetext;
+		*/
+
+}
+/* //..	Lv. 7
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+.level7 > h5,
+.level7 > h4 {
+  position: relative;
+  margin-bottom: .75em;
+  padding-left: 1em;
+  padding-top: 0;
+  border-left: solid 3px #a9a9a9;
+  font-size: 1em;
+  font-weight: bold;
+  letter-spacing: .1em;
+}
+.level7 > h5:after,
+.level7 > h4:after {
+  /*
+		content: "";
+		display: block;
+		position: absolute;
+		right: 0;
+		bottom: 2px;
+		width: 4em;
+		height: 1px;
+		background: @color_litetext;
+		*/
+
+}
+/* //..	Lv. 8
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+.level8 > h6,
+.level8 > h5 {
+  position: relative;
+  margin-bottom: .75em;
+  padding-left: 1em;
+  padding-top: 0;
+  border-left: solid 3px #a9a9a9;
+  font-size: 1em;
+  font-weight: bold;
+  letter-spacing: .1em;
+}
+.level8 > h6:after,
+.level8 > h5:after {
+  /*
+		content: "";
+		display: block;
+		position: absolute;
+		right: 0;
+		bottom: 2px;
+		width: 4em;
+		height: 1px;
+		background: @color_litetext;
+		*/
+
+}
+/* //..	Lv. 9
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+/* ------- */.level9 > h6 {
+  position: relative;
+  margin-bottom: .75em;
+  padding-left: 1em;
+  padding-top: 0;
+  border-left: solid 3px #a9a9a9;
+  font-size: 1em;
+  font-weight: bold;
+  letter-spacing: .1em;
+}
+.level9 > h6:after {
+  /*
+		content: "";
+		display: block;
+		position: absolute;
+		right: 0;
+		bottom: 2px;
+		width: 4em;
+		height: 1px;
+		background: @color_litetext;
+		*/
+
+}
+/* //. - content: block
+---------------------------------------------------------------------------------------------------- */
+/* //..	common
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+/* //..	paragraph
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+p {
+  position: relative;
+  margin-top: .9em;
+  padding-left: 0;
+  text-indent: 0;
+  line-height: 1.8;
+  text-align: justify;
+}
+p.nospace {
+  margin-top: 0;
+}
+/* //..	list
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+ul,
+ol,
+dl {
+  margin: .9em 0;
+}
+ul ul,
+ol ul,
+dl ul,
+ul ol,
+ol ol,
+dl ol,
+ul dl,
+ol dl,
+dl dl {
+  margin: .3em 0 .6em;
+}
+ul ul ul,
+ol ul ul,
+dl ul ul,
+ul ol ul,
+ol ol ul,
+dl ol ul,
+ul dl ul,
+ol dl ul,
+dl dl ul,
+ul ul ol,
+ol ul ol,
+dl ul ol,
+ul ol ol,
+ol ol ol,
+dl ol ol,
+ul dl ol,
+ol dl ol,
+dl dl ol,
+ul ul dl,
+ol ul dl,
+dl ul dl,
+ul ol dl,
+ol ol dl,
+dl ol dl,
+ul dl dl,
+ol dl dl,
+dl dl dl {
+  margin: 0 0 .3em;
+}
+li,
+dt,
+dd {
+  position: relative;
+  text-indent: 0;
+  line-height: 1.5;
+  text-align: justify;
+}
+li {
+  list-style-position: outside;
+  margin-left: 1.5em;
+  margin-bottom: 0.5em;
+  text-align: justify;
+  -ah-margin-start: 1em;
+}
+li:last-child {
+  margin-bottom: 0;
+}
+li li {
+  margin-left: 1.5em;
+  margin-bottom: 0em;
+}
+li::marker {
+  -ah-margin-end: 1em;
+}
+ul > li {
+  list-style-type: disc;
+}
+li ul > li {
+  list-style-type: circle;
+}
+li li ul > li {
+  list-style-type: square;
+}
+ol > li {
+  list-style-type: decimal;
+}
+dt {
+  margin-left: 1.04em;
+  margin-bottom: 0;
+  font-size: .96em;
+  font-weight: bold;
+}
+dd {
+  margin: .25em 1em .5em;
+  padding-left: .75em;
+  border-left: solid 1px #e0e0e0;
+}
+/* //..	quote / pre-formed
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+blockquote,
+blockquote blockquote blockquote,
+pre {
+  position: relative;
+  margin: .75em 0;
+  padding: .75em 1.5em;
+  padding-right: 2.8em;
+  border: solid 1px #e8e8e8;
+  font-size: .96em;
+  color: #606060;
+  background: #f0f0f0;
+}
+blockquote:after,
+blockquote blockquote blockquote:after,
+pre:after {
+  display: block;
+  position: absolute;
+  right: .275em;
+  top: .275em;
+  font-family: monospace;
+  font-size: 2.4em;
+  line-height: 1.2em;
+  color: #dcdcdc;
+}
+blockquote,
+blockquote blockquote blockquote {
+  border-left: solid 0.48em #e4e4e4;
+  border-radius: 0 2px 2px 0;
+}
+blockquote:before,
+blockquote blockquote blockquote:before {
+  content: "“";
+  display: block;
+  position: absolute;
+  left: -0.48em;
+  top: -0.24em;
+  border-bottom: solid 1px #f8f8f8;
+  width: .48em;
+  height: .24em;
+  line-height: 1.2em;
+  background: #e4e4e4;
+  border-radius: .24em .24em 0 0;
+}
+blockquote:after,
+blockquote blockquote blockquote:after {
+  content: "”";
+}
+blockquote blockquote {
+  background: white;
+}
+blockquote blockquote:after {
+  color: #e8e8e8;
+}
+blockquote blockquote blockquote {
+  font-size: 100%;
+}
+pre {
+  font-family: monospace;
+  font-size: .8em;
+  line-height: 1.5;
+  border-radius: 2px;
+  white-space: pre-wrap;
+}
+pre:after {
+  content: "#";
+}
+pre p,
+pre ul,
+pre ol,
+pre dl {
+  margin: 0;
+  padding: 0;
+}
+pre p {
+  text-indent: 0;
+}
+/* //..	extras
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+.gext {
+  /*
+	position: relative;*/
+
+  margin: .9em 0;
+}
+.gext .gext {
+  /*margin: .6em 2em;*/
+
+  margin: .6em 0;
+  /* changed by k16 */
+
+  font-size: .96em;
+}
+.gext .gext .gext {
+  /*margin: .3em 1em;*/
+
+  margin: .3em 0;
+  /* changed by k16 */
+
+}
+.gext .caption {
+  margin: .5em 0;
+  font-weight: bold;
+  font-size: .8em;
+}
+.gext p {
+  font-size: .96em;
+  line-height: 1.5;
+}
+figure,
+.fig {
+  margin: 10px auto;
+}
+figure p,
+.fig p {
+  text-indent: 0;
+}
+.tbl table caption {
+  font-size: .9em;
+  text-align: left;
+  margin: .25em 0;
+}
+.tbl table th,
+.tbl table td {
+  padding: .5em;
+  border: 1px solid #c0c0c0;
+}
+.tbl table thead th,
+.tbl table thead td {
+  font-weight: bold;
+}
+.tbl table tfoot th,
+.tbl table tfoot td {
+  color: #606060;
+  font-weight: bold;
+  background-color: #f8f8f8;
+}
+.tbl table th {
+  text-align: center;
+  font-weight: bold;
+  background-color: #f0f0f0;
+}
+.tbl table td {
+  text-align: left;
+}
+.col,
+.sum,
+.ann {
+  padding: .5em 1em .75em;
+  border-radius: .5em;
+}
+.col {
+  border: solid 4px #d8d8d8;
+  background: #fcfcfc;
+}
+.col h1 {
+  font-size: 1.3em;
+}
+.col h2 {
+  font-size: 1.25em;
+}
+.col h3 {
+  font-size: 1.2em;
+}
+.col h4 {
+  font-size: 1.1em;
+}
+.col h5 {
+  font-size: 1em;
+}
+.col h6 {
+  font-size: .96em;
+}
+.sum,
+.ann {
+  border: solid 1px #e4e4e4;
+}
+.ann {
+  background: #ececec;
+}
+.ann p {
+  font-size: .8em;
+}
+/* //. - content: inline
+---------------------------------------------------------------------------------------------------- */
+/* //..	text
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+strong {
+  font-weight: bold;
+}
+em {
+  font-style: italic;
+}
+u,
+span.notice {
+  text-decoration: none;
+  border-bottom: 1px solid #a0a0a0;
+  padding-bottom: 0.05em;
+}
+span.note {
+  padding: 0;
+  font-size: 85%;
+}
+span.footnote {
+  padding: 0;
+  font-size: 85%;
+}
+.emark {
+  -epub-text-emphasis-style: dot;
+  font-weight: inherit;
+  font-style: inherit;
+}
+.emark2 {
+  -epub-text-emphasis-style: sesame;
+  font-weight: inherit;
+  font-style: inherit;
+}
+.emark3 {
+  -epub-text-emphasis-style: circle;
+  font-weight: inherit;
+  font-style: inherit;
+}
+tt {
+  font-family: monospace;
+  font-size: 100%;
+}
+a {
+  display: inline;
+  text-decoration: underline;
+}
+a:link {
+  color: #4080c0;
+}
+a:visited {
+  color: #264d74;
+}
+a:hover {
+  color: #4080c0;
+  background-color: #d9e6f3;
+}
+a:active {
+  color: #f88000;
+  background-color: #fffcf8;
+}
+/* PDF 出力時にURL を括弧内や注釈として表示する意図を表します。 */
+/* //..	common classes
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+.tbl table .left,
+.left {
+  text-align: left;
+}
+.tbl table .center,
+.center {
+  text-align: center;
+}
+.tbl table .right,
+.right {
+  text-align: right;
+}
+.tbl table .start,
+.start {
+  text-align: start;
+}
+.tbl table .end,
+.end {
+  text-align: end;
+}
+/* //..	alternative
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+img {
+  width: auto;
+  height: auto;
+  max-width: 100%;
+}
+
+hr {
+  display: block;
+  position: relative;
+  margin: .75em 0;
+  margin-left: -0.1em;
+  border: none 0;
+  border-bottom: solid 2px #202020;
+  width: auto;
+  height: 0;
+  background: #f8f8f8;
+}
+hr + hr {
+  margin-top: 2.5em;
+}
+hr.break1 {
+  border-bottom: double 3px #808080;
+}
+hr.break2 {
+  border-bottom: solid 1px #808080;
+}
+hr.break3 {
+  border-bottom: dashed 1px #808080;
+}
+hr.break4 {
+  border-bottom: dotted 1px #808080;
+}
+h1 + hr,
+h2 + hr,
+h3 + hr,
+h4 + hr,
+h5 + hr,
+h6 + hr {
+  display: none;
+}
+hr.page-break {
+  display: block;
+  page-break-after: always;
+}

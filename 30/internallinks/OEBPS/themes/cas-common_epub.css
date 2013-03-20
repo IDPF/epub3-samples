@@ -1,0 +1,37 @@
+@charset "utf-8"; /* -*- coding: utf-8 -*- */
+/* this is cas-common_epub.css */
+
+/* ルビのエミュレーション */
+@import url("sim2ruby.css");
+
+/* メディアに依存しない設定 */
+@import url("cas.css");
+
+/**
+ * 注
+ */
+
+/* 
+
+<span ah_role="note" id="n.TempTest.1" class="note">
+ <span ah_role="note-start" class="note-start">(</span>
+   脚注テキスト
+ <span ah_role="note-end" class="note-end">)</span>
+</span>
+*/
+
+/**
+ * 通常の注は隠す。
+ */
+span.note {
+ display:none;
+}
+
+/**
+ * 脚注は括弧内に表示。
+ */
+
+span.note.footnote {
+ display:inline;
+ font-size: x-small;
+}
