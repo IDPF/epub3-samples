@@ -1,0 +1,86 @@
+@charset "utf-8";
+
+body.copyright {
+	border: solid 2px rgb(192,192,192);
+	font-size: 1.3em;
+	border-radius: 8px;
+}
+
+body.copyright div.title {
+	margin: 2em;
+}
+
+	body.copyright div.title h1.main,
+	body.copyright div.title h2.sub {
+		font-weight: bold;
+	}
+
+	body.copyright div.title h1.main {
+		margin: .25em 0 1.25em;
+		font-size: 1.5em;
+	}
+
+	body.copyright div.title h2.sub {
+		margin: -1em 0 .75em;
+		font-size: 1.2em;
+	}
+
+	body.copyright div.title h3 {
+		margin-bottom: .4em;
+		font-size: .9em;
+		color: rgb(96,96,96);
+	}
+
+body.copyright div.creater {
+	margin: 2em;
+}
+
+	body.copyright div.creater dl {
+		margin-bottom: 1em;
+	}
+	
+		body.copyright div.creater dl dt,
+		body.copyright div.creater dl dd {
+			position: relative;
+			margin: 0;
+			padding: 0;
+			border: none 0;
+			text-indent: 0;
+			line-height: 1.4;
+		}
+	
+		body.copyright div.creater dl dt {
+			margin-bottom: .25em;
+			padding-left: .8em;
+			font-size: .9em;
+			font-weight: bold;
+			color: rgb(128,128,128);
+		}
+		body.copyright div.creater dl dt:before {
+			content: "";
+			display: block;
+			position: absolute;
+			left: 0;
+			top: .125em;
+			width: 4px;
+			height: 1.25em;
+			line-height: 1.2em;
+			background: rgb(216,216,216);
+			border-radius: 2px;
+		}
+
+		body.copyright div.creater dl dd {}
+		body.copyright div.creater dl dd.profile {}
+		body.copyright div.creater dl dd.attribute {} 
+		body.copyright div.copyrightNotice dl dd {}
+
+		body.copyright div.creater dl span.furigana {  
+			font-size: 70%;
+		}   
+
+body.copyright div.publisherCompany {}
+
+	body.copyright div.publisherCompany h3 {}
+
+body.copyright div.copyrightNotice dl dd {}
+
