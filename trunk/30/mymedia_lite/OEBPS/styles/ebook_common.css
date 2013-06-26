@@ -1,0 +1,101 @@
+@charset "UTF-8";
+
+/*------------------------------------------------
+reset
+-------------------------------------------------*/
+
+div, span, h1, h2, h3, h4, h5, h6, p, img, nav, section
+{
+  margin:0;
+  padding:0;
+  border:0;
+  outline:0;
+  font-size:100%;
+  vertical-align:baseline; 
+}
+
+body {
+  font-size:100%; 
+}
+
+
+/*------------------------------------------------
+ common style
+-------------------------------------------------*/
+/* 行揃え */
+div.left {
+  text-align:left;
+}
+div.center {
+  text-align:center;
+}
+div.right {
+  text-align:right;
+}
+p.left {
+  text-align:left;
+}
+p.center {
+  text-align:center;
+}
+p.right {
+  text-align:right;
+}
+.clear {
+  clear:both;
+}
+
+/*縦中横*/
+.tcy {
+  -epub-text-combine:horizontal;
+  -webkit-text-combine:horizontal;
+}
+
+/*傍点*/
+.em_accent {
+  -epub-text-emphasis-style: filled sesame;
+  -webkit-text-emphasis-style: filled sesame;
+}
+.em_dot {
+  -epub-text-emphasis-style: filled double-circle;
+  -webkit-text-emphasis-style: filled double-circle;
+}
+.em_circle {
+  -epub-text-emphasis-style: open dot;
+  -webkit-text-emphasis-style: open dot;
+}
+.em_disc {
+  -epub-text-emphasis-style: filled dot;
+  -webkit-text-emphasis-style: filled dot;
+}
+
+/*色指定 X11 Colors */
+.black {
+  color:#000000;
+}
+.blue {
+  color:#0000ff;
+}
+.brown {
+  color:#a52a2a;
+}
+.gray {
+  color:#808080;
+}
+.green {
+  color:#008000;
+}
+.purple {
+  color:#800080;
+}
+.red {
+  color:#ff0000;
+}
+.white {
+  color:#ffffff;
+}
+.yellow {
+  color:#ffff00;
+}
+
+

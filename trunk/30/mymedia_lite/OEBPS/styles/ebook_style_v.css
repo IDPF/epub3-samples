@@ -1,0 +1,79 @@
+@charset "UTF-8";
+/* -------------------------------------------------------------------------------
+  縦組時のスタイルを記述します。
+  -epub-writing-mode、font-family、インデントの部分が中心です。
+ ------------------------------------------------------------------------------ */
+html {
+  -epub-writing-mode:vertical-rl;
+  -webkit-writing-mode:vertical-rl;
+}
+/* -----------------------------------------------------------------------------
+  [タイプセレクタ]
+  bodyへのwriting-mode指定、基本となるfont-familyを指定
+ ---------------------------------------------------------------------------- */
+/* body */
+body {
+  font-family: "@Hiragino Mincho ProN","@ヒラギノ明朝 Pro W3","@IPAexMincho","@IPAex明朝","@MS Mincho","@ＭＳ 明朝","ヒラギノ明朝 Pro W3","Hiragino Mincho ProN","IPAexMincho","IPAex明朝",serif;
+}
+/* 見出し */
+h1,h2,h3,h4,h5,h6 {
+  /* 縦組時の見出しの書体指定 */
+  font-family: "@HiraKakuProN-W3","@ヒラギノ角ゴ Pro W3","@MS Gothic","@ＭＳ ゴシック","HiraKakuProN-W3","ヒラギノ角ゴ Pro W3",sans-serif;
+}
+/* -----------------------------------------------------------------------------
+  [クラスセレクタ]
+ ---------------------------------------------------------------------------- */
+
+/* 見出し */
+h1.ttl {
+  font-family: "@Hiragino Mincho ProN","@ヒラギノ明朝 Pro W3","@IPAexMincho","@IPAex明朝","@MS Mincho","@ＭＳ 明朝","ヒラギノ明朝 Pro W3","Hiragino Mincho ProN","IPAexMincho","IPAex明朝",serif;
+}
+h2.chapter {
+  font-family: "@HiraKakuProN-W3","@ヒラギノ角ゴ Pro W3","@MS Gothic","@ＭＳ ゴシック","HiraKakuProN-W3","ヒラギノ角ゴ Pro W3",sans-serif;
+  padding-left:1em;
+}
+h2.tocttl {
+  letter-spacing: 1em;
+  padding-top:2em;
+  padding-left:1em;
+}
+h3.subchapter {
+  padding-left:2em;
+  padding-top:0.5em;
+  padding-bottom:0.5em;
+}
+/* 文字装飾など */
+.underline {
+  text-decoration:overline; /* 縦書き時にはoverline、横書き時にはunderline */
+  text-underline-position: under left;
+  -webkit-text-underline-position:under left;
+}
+.level1 {
+  padding-top:0;
+}
+.level2 {
+  padding-top:1em;
+}
+.level3 {
+  padding-top:2em;
+}
+.start_1em {
+  padding-top:1em;  
+}
+.photocap {
+  padding-top:3.5em;
+  font-size:90%;
+}
+.quoteblock {
+  padding-top:2em;
+  font-size:90%;
+  text-indent:1em;
+}
+.quoteblock_noindent {
+  padding-top:2em;
+  font-size:90%;
+}
+.col_start_5em {
+  padding-top:5em;
+}
+
