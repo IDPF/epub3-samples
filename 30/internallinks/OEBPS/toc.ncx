@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ncx version="2005-1" xmlns="http://www.daisy.org/z3986/2005/ncx/">
     <head>
-        <meta content="tag:cas-ub.com,2012-12-05:d9c91354668140" name="dtb:uid"/>
+        <meta content="urn:uuid:e9f75adf-f0a2-4a30-b113-b146871f16e5" name="dtb:uid"/>
         <meta content="0" name="dtb:totalPageCount"/>
         <meta content="0" name="dtb:maxPageNumber"/>
         <meta content="2" name="dtb:depth"/>
