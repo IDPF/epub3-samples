@@ -1,0 +1,181 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja"><head><meta charset="UTF-8"/><meta name="author" content="Japanese Layout Task Force"/><title>日本語組版処理の要件（日本語版）</title><link rel="stylesheet" type="text/css" href="../css/W3C-WG-NOTE.css"/><link rel="stylesheet" type="text/css" href="../css/base.css"/></head><body><h2 id="line-composition">第3章 <span class="heading"><span id="ja-heading2">行の組版処理</span></span></h2><h3 id="line_composition_rules_for_punctuation_marks">3.1 <span class="heading"><span class="index" id="ja-subheading2_1">約物などの組版処理</span></span></h3><h4 id="differences_in_vertical_and_horizontal_composition_in_use_of_punctuation_marks">3.1.1 <span class="heading"><span id="ja-subheading2_1_1">縦組と横組で異なる<span class="index" id="d5e59">約物</span>など</span></span></h4><p><a class="termref" href="terminology.xhtml#term.vertical-writing-mode">縦組</a>と<a class="termref" href="terminology.xhtml#term.horizontal-writing-mode">横組</a>で異なる<a class="termref" href="terminology.xhtml#term.punctuation-marks">約物</a>などを使用する例がある．主な例を次に示す．（なお，以下の文書では，約物を含む文字・記号について，その<a class="termref" href="terminology.xhtml#term.composition">組版</a>上の振る舞いで分類し，文字クラスとしてグループに分けて扱う．用語の後ろの括弧内に“（cl-01）”などと示すものは，その文字クラスの番号である．文字クラスの詳細は<a class="sec_ref" href="about_character_classes.xhtml#about_character_classes">3.9 文字クラスについて</a>で解説する．）</p><ol>
+					<li>
+   
+    <p><span class="index" id="d5e117"><a class="characterClass" href="cl-06.xhtml#cl-06">句点類（cl-06）</a></span>と<span class="index" id="d5e121"><a class="characterClass" href="cl-07.xhtml#cl-07">読点類（cl-07）</a></span></p>
+    
+   
+   <ol>
+    <li>
+    
+     <p>縦組では，<a class="characterClass" href="cl-06.xhtml#cl-06">句点類（cl-06）</a>には，句点<span class="character">[。] (IDEOGRAPHIC FULL STOP)</span>を，<a class="characterClass" href="cl-07.xhtml#cl-07">読点類（cl-07）</a>には読点<span class="character">[、] (IDEOGRAPHIC COMMA)</span>を使用する．</p>
+     
+    
+    </li>
+    <li>
+    
+     <p><span class="index" id="d5e176">横組で使用する<a class="characterClass" href="cl-06.xhtml#cl-06">句点類（cl-06）</a>と<a class="characterClass" href="cl-07.xhtml#cl-07">読点類（cl-07）</a></span>の組合せには，次の3つの方式がある．</p>
+     
+    
+    <ol>
+     <li>
+     
+     <p>コンマ<span class="character">[，] (COMMA)</span>とピリオド<span class="character">[．] (FULL STOP)</span>を使用する（<a class="figure_ref" href="line-composition.xhtml#fig2_1-ja">図 3.1</a>）．</p>
+     
+     
+     
+     <div class="figure" id="fig2_1-ja"><div class="figure-float"><div><img alt="コンマとピリオドを使用した例" width="480" height="172" src="../image/Images-ja/img2_1.png"/><div class="figureCaption">図 3.1 <span class="caption-body">コンマとピリオドを使用した例</span></div></div></div></div>
+     
+     
+     
+     </li>
+     <li>
+     
+     <p>コンマ<span class="character">[，] (COMMA)</span>と句点<span class="character">[。] (IDEOGRAPHIC FULL STOP)</span>を使用する（<a class="figure_ref" href="line-composition.xhtml#fig2_2-ja">図 3.2</a>）．</p>
+     
+     
+     
+     <div class="figure" id="fig2_2-ja"><div class="figure-float"><div><img alt="コンマと句点を使用した例" width="480" height="172" src="../image/Images-ja/img2_2.png"/><div class="figureCaption">図 3.2 <span class="caption-body">コンマと句点を使用した例</span></div></div></div></div>
+     
+     
+     
+     </li>
+     <li>
+     
+     <p>読点<span class="character">[、] (IDEOGRAPHIC COMMA)</span>と句点<span class="character">[。] (IDEOGRAPHIC FULL STOP)</span>を使用する（<a class="figure_ref" href="line-composition.xhtml#fig2_3-ja">図 3.3</a>）．</p>
+     
+     
+     
+     <div class="figure" id="fig2_3-ja"><div class="figure-float"><div><img alt="読点と句点を使用した例" width="480" height="172" src="../image/Images-ja/img2_3.png"/><div class="figureCaption">図 3.3 <span class="caption-body">読点と句点を使用した例</span></div></div></div></div>
+     
+     
+     
+     </li>
+    </ol>
+    <table class="t_note">
+     <tr>
+     <td class="ft" rowspan="1" colspan="1">
+     
+      <p>注1）</p>
+      
+     
+     </td>
+     <td rowspan="1" colspan="1">
+     
+      <p>横組では，欧文が混用される場合も多い．そこで，欧文の句読点であるコンマとピリオドとそろえるとしたのがiの方式である．理工学書でよく利用されている方式である．iiは，iのピリオド<span class="character">[.] (FULL STOP)</span>が和文とのバランスが悪く，小さいということから句点<span class="character">[。] (IDEOGRAPHIC FULL STOP)</span>に変えた方法であり，日本の<span class="index" id="d5e408">公用文</span>で採用されている方式である（かつては公用文でも，コンマ<span class="character">[,] (COMMA)</span>とピリオド<span class="character">[.] (FULL STOP)</span>を使用したことがある）．</p>
+      
+     
+     </td>
+     </tr>
+    </table>
+    
+    </li>
+   </ol>
+   </li>
+					<li>
+   
+    <p><span class="index" id="d5e447">かぎ括弧</span>（始めかぎ括弧<span class="character">[「] (LEFT CORNER BRACKET)</span>及び終わりかぎ括弧<span class="character">[」] (RIGHT CORNER BRACKET)</span>）と<span class="index" id="d5e456">クォーテーションマーク</span>（左ダブルクォーテーションマーク<span class="character">[“] (LEFT DOUBLE QUOTATION MARK)</span>及び右ダブルクォーテーションマーク<span class="character">[”] (RIGHT DOUBLE QUOTATION MARK)</span>並びに左シングルクォーテーションマーク<span class="character">[‘] (LEFT SINGLE QUOTATION MARK)</span>及び右シングルクォーテーションマーク<span class="character">[’] (RIGHT SINGLE QUOTATION MARK)</span>）</p>
+    
+   
+   <ol>
+    <li>
+    
+     <p>縦組では，始めかぎ括弧<span class="character">[「] (LEFT CORNER BRACKET)</span>及び終わりかぎ括弧<span class="character">[」] (RIGHT CORNER BRACKET)</span>を用いる（<a class="figure_ref" href="line-composition.xhtml#fig2_4-ja">図 3.4</a>）．</p>
+     
+    
+    
+     <div id="fig2_4-ja" class="figure"><div class="figure-float"><div><img alt="始めかぎ括弧及び終わりかぎ括弧を使用した例" width="150" height="480" src="../image/Images-ja/img2_4.png"/><div class="figureCaption">図 3.4 <span class="caption-body">始めかぎ括弧及び終わりかぎ括弧を使用した例</span></div></div></div></div>
+     
+    
+    
+    </li>
+    <li>
+    
+     <p>横組では，始めかぎ括弧<span class="character">[「] (LEFT CORNER BRACKET)</span>及び終わりかぎ括弧<span class="character">[」] (RIGHT CORNER BRACKET)</span>に替えて左ダブルクォーテーションマーク<span class="character">[“] (LEFT DOUBLE QUOTATION MARK)</span>及び右ダブルクォーテーションマーク<span class="character">[”] (RIGHT DOUBLE QUOTATION MARK)</span>，又は左シングルクォーテーションマーク<span class="character">[‘] (LEFT SINGLE QUOTATION MARK)</span>及び右シングルクォーテーションマーク<span class="character">[’] (RIGHT SINGLE QUOTATION MARK)</span>を用いる方法がある（<a class="figure_ref" href="line-composition.xhtml#fig2_5-ja">図 3.5</a>）．</p>
+     
+    
+    
+     <div id="fig2_5-ja" class="figure"><div class="figure-float"><div><img alt="左ダブルクォーテーションマーク及び右ダブルクォーテーションマークを使用した例" width="480" height="148" src="../image/Images-ja/img2_5.png"/><div class="figureCaption">図 3.5 <span class="caption-body">左ダブルクォーテーションマーク及び右ダブルクォーテーションマークを使用した例</span></div></div></div></div>
+     
+    
+    
+    <table class="t_note">
+     <tr>
+     <td class="ft" rowspan="1" colspan="1">
+     
+      <p>注1）</p>
+      
+     
+     </td>
+     <td rowspan="1" colspan="1">
+     
+      <p>かぎ括弧（始めかぎ括弧<span class="character">[「] (LEFT CORNER BRACKET)</span>及び終わりかぎ括弧<span class="character">[」] (RIGHT CORNER BRACKET)</span>）を横組で用いると，特に終わりかぎ括弧<span class="character">[」] (RIGHT CORNER BRACKET)</span>の体裁がよくないのが理由である．しかし，最近は，かぎ括弧の使用が増えている．</p>
+      
+     
+     </td>
+     </tr>
+     <tr>
+     <td class="ft" rowspan="1" colspan="1">
+     
+      <p>注2）</p>
+      
+     
+     </td>
+     <td rowspan="1" colspan="1">
+     
+<p>
+ダブルクォーテーションマークに似た括弧類に<span class="index" id="d5e698">ダブルミニュート</span>（始めダブルミニュート<span class="character">[<span class="char-doubleprimemark">〝</span>] (REVERSED DOUBLE PRIME QUOTATION MARK)</span>及び終わりダブルミニュート<span class="character">[<span class="char-doubleprimemark">〟</span>] (LOW DOUBLE PRIME QUOTATION MARK)</span>）がある（<a class="figure_ref" href="line-composition.xhtml#fig2_6-ja">図 3.6</a>）．これは，縦組専用の括弧類であり，横組では使用しない．</p>
+
+     </td>
+     </tr>
+</table>
+     
+      <div id="fig2_6-ja" class="figure"><div class="figure-float"><div><img alt="始めダブルミニュート及び終わりダブルミニュートを使用した例" width="24" height="264" src="../image/Images-ja/img2_6.png"/><div class="figureCaption">図 3.6 <span class="caption-body">始めダブルミニュート及び終わりダブルミニュートを使用した例</span></div></div></div></div>
+      
+     
+     
+<table class="t_note">
+     <tr>
+     <td class="ft" rowspan="1" colspan="1">
+     
+      <p>注3）</p>
+      
+     
+     </td>
+     <td rowspan="1" colspan="1">
+     
+      <p>左ダブルクォーテーションマーク<span class="character">[“] (LEFT DOUBLE QUOTATION MARK)</span>及び右ダブルクォーテーションマーク<span class="character">[”] (RIGHT DOUBLE QUOTATION MARK)</span>は，横組専用の括弧類であり，縦組では使用しない．また，左シングルクォーテーションマーク<span class="character">[‘] (LEFT SINGLE QUOTATION MARK)</span>及び右シングルクォーテーションマーク<span class="character">[’] (RIGHT SINGLE QUOTATION MARK)</span>も横組専用の括弧類であり，縦組では使用しない．ただし，縦組において<a class="characterClass" href="cl-27.xhtml#cl-27">欧文用文字（cl-27）</a>などを時計回りに90度回転させて配置する場合に使用する例がある．</p>
+      
+     
+     </td>
+     </tr>
+    </table>
+    
+    </li>
+   </ol>
+   </li>
+					<li>
+   
+    <p><span class="index" id="d5e832">ブラケット</span>（始め大括弧<span class="character">[［] (LEFT SQUARE BRACKET)</span>及び終わり大括弧<span class="character">[］] (RIGHT SQUARE BRACKET)</span>）と，<span class="index" id="d5e841">きっこう</span>（始めきっこう括弧<span class="character">[〔] (LEFT TORTOISE SHELL BRACKET)</span>及び終わりきっこう括弧<span class="character">[〕] (RIGHT TORTOISE SHELL BRACKET)）</span></p>
+    
+   
+   
+    <p>ブラケット（［　］）を縦組用に変形したものが，きっこう（〔　〕）である．したがって，特別な場合を除き，横組ではブラケットを使用する．</p>
+    
+   
+   </li>
+				</ol><table class="t_note">
+					<tr>
+						<td class="ft" rowspan="1" colspan="1">
+							
+								<p>注1）</p>
+								
+							
+						</td>
+						<td rowspan="1" colspan="1">
+							
+								<p><a class="characterClass" href="cl-06.xhtml#cl-06">句点類（cl-06）</a>及び<a class="characterClass" href="cl-07.xhtml#cl-07">読点類（cl-07）</a>は，縦組用と横組用では，文字の<a class="termref" href="terminology.xhtml#term.character-frame">外枠</a>に対する<a class="termref" href="terminology.xhtml#term.letter-face">字面</a>の配置位置が異なる．<a class="characterClass" href="cl-01.xhtml#cl-01">始め括弧類（cl-01）</a>，<a class="characterClass" href="cl-02.xhtml#cl-02">終わり括弧類（cl-02）</a>及び<a class="characterClass" href="cl-03.xhtml#cl-03">ハイフン類（cl-03）</a>は，縦組用と横組用で字面の向きを変更する．その他，<a class="characterClass" href="cl-11.xhtml#cl-11">小書きの仮名（cl-11）</a>は，前述したように文字の外枠に対する字面の位置が縦組用と横組用では異なる．また，<span class="index" id="d5e967">長音記号</span><span class="character">[ー] (KATAKANA-HIRAGANA PROLONGED SOUND MARK)</span>は，<a class="termref" href="terminology.xhtml#term.character-shape">字形</a>の向きを変更するだけではなく，字形そのものも変更している．横組用の長音記号は，縦組用の長音記号を単純に反時計回りに90度回転したものではない（<a class="figure_ref" href="line-composition.xhtml#fig2_7-ja">図 3.7</a>）．</p>
+								
+							
+						</td>
+					</tr>
+				</table><div class="figure" id="fig2_7-ja"><div class="figure-float"><div><img alt="横組用の長音記号と縦組用の長音記号" width="404" height="140" src="../image/Images-ja/img2_7.png"/><div class="figureCaption">図 3.7 <span class="caption-body">横組用の長音記号と縦組用の長音記号</span></div></div></div></div></body></html>

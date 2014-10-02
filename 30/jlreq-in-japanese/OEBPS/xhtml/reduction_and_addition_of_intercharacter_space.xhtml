@@ -1,0 +1,40 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja"><head><meta charset="UTF-8"/><meta name="author" content="Japanese Layout Task Force"/><title>日本語組版処理の要件（日本語版）</title><link rel="stylesheet" type="text/css" href="../css/W3C-WG-NOTE.css"/><link rel="stylesheet" type="text/css" href="../css/base.css"/></head><body><h4 id="reduction_and_addition_of_intercharacter_space">3.8.2 <span class="heading"><span class="index" id="ja-subheading2_8_2">詰める処理と空ける処理</span></span></h4><p>行の調整処理は，規定されている空き量を確保した箇所又はベタ組の字間で調整する．その方法としては，次がある．</p><ol>
+					<li><p>規定されている空き量を<span class="index" id="d6e2508">詰める処理</span>（<span class="index" id="d6e2511"><a class="termref" href="terminology.xhtml#term.line-adjustment-by-inter-character-space-reduction">追込み処理</a></span>）．追込み処理では，<a class="characterClass" href="cl-07.xhtml#cl-07">読点類（cl-07）</a>又は<a class="characterClass" href="cl-02.xhtml#cl-02">終わり括弧類（cl-02）</a>の後ろの<a class="termref" href="terminology.xhtml#term.half-em-space">二分アキ</a>や，<a class="characterClass" href="cl-01.xhtml#cl-01">始め括弧類（cl-01）</a>の前の二分アキ，<a class="characterClass" href="cl-26.xhtml#cl-26">欧文間隔（cl-26）</a>などの空き量を規定の範囲内で詰める処理を行う．</p>
+					</li>
+					<li><p>字間を<span class="index" id="d6e2558">空ける処理</span>（<span class="index" id="d6e2561"><a class="termref" href="terminology.xhtml#term.line-adjustment-by-inter-character-space-expansion">追出し処理</a></span>）．追出し処理では，<a class="characterClass" href="cl-26.xhtml#cl-26">欧文間隔（cl-26）</a>など規定の範囲内で空けることが許されている箇所や，行の調整処理で字間を空ける処理を避けるとされていない箇所の字間について空ける処理を行う．</p>
+              </li>
+				</ol><p>通常，詰める処理（追込み処理）を優先し，それで処理できない場合は空ける処理（追出し処理）を行う．詰める処理（追込み処理）を優先するのは，ベタ組の箇所はできるだけ空けないという考え方による．</p><table class="t_note">
+					<tr>
+						<td class="ft" rowspan="1" colspan="1">
+							
+								<p>注1）</p>
+								
+							
+						</td>
+						<td rowspan="1" colspan="1">
+							
+								<p><a class="characterClass" href="cl-06.xhtml#cl-06">句点類（cl-06）</a>及び<a class="characterClass" href="cl-07.xhtml#cl-07">読点類（cl-07）</a>の行頭禁則を回避する方法として<span class="index" id="d6e2614"><a class="termref" href="terminology.xhtml#term.line-adjustment-by-hanging-punctuation">ぶら下げ組</a></span>がある．この方法は，JIS X 4051では規定していないが，その“解説”では説明が行われている．</p>
+								
+							
+							
+								<p><a class="termref" href="terminology.xhtml#term.line-adjustment-by-hanging-punctuation">ぶら下げ組</a>は，<a class="characterClass" href="cl-06.xhtml#cl-06">句点類（cl-06）</a>及び<a class="characterClass" href="cl-07.xhtml#cl-07">読点類（cl-07）</a>に限り，<a class="termref" href="terminology.xhtml#term.hanmen">版面</a>に接して，指定の行長よりはみ出して配置する方法である（<a class="figure_ref" href="reduction_and_addition_of_intercharacter_space.xhtml#fig2_54-ja">図 3.127</a>）．ベタ組の字間を空ける調整が避けられるとして，書籍等でも採用されている．しかし，欧文組では原則としてぶら下げ組は採用されていないので，和文と欧文との混植になじまない，また，ぶら下げ組は本来，活字組版において調整の作業を軽減するために採用されていた方法である，との反対意見がある．なお，<a class="figure_ref" href="reduction_and_addition_of_intercharacter_space.xhtml#fig2_54-ja">図 3.127</a>において，1行目末尾及び5行目末尾のように，行末の18字目に配置できる場合は，そのまま配置する．DTPなどでは，このような句読点を3行目のようにぶら下げ組にする処理を行っている例があるが，不必要な処理といえよう．</p>
+								
+							
+						</td>
+					</tr>
+</table><div class="figure" id="fig2_54-ja"><div class="figure-float"><div><img alt="ぶら下げ組の例" width="406" height="444" src="../image/Images-ja/img2_54.png"/><div class="figureCaption">図 3.127 <span class="caption-body">ぶら下げ組の例</span></div></div></div></div><table class="t_note">
+					<tr>
+						<td class="ft" rowspan="1" colspan="1">
+							
+								<p>注2）</p>
+								
+							
+						</td>
+						<td rowspan="1" colspan="1">
+							
+							<p><a class="characterClass" href="cl-26.xhtml#cl-26">欧文間隔（cl-26）</a>の空き量を規定の範囲内で詰める処理又は空ける処理についての次項以下での処理方法は，日本語の書籍の中に欧字が混植される場合を前提にしている．<a class="characterClass" href="cl-26.xhtml#cl-26">欧文間隔（cl-26）</a>の空き量は，一般的にいえば，使用する欧字の書体，文字サイズや行間なども考慮する必要がある．また，詰める処理は行わないで，まず最小の空き量（例えば四分アキ）で処理し，空ける処理だけを行う方法もある．</p>
+							
+							
+						</td>
+					</tr>
+				</table></body></html>

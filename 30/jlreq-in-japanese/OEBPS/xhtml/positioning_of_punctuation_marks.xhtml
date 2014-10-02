@@ -1,0 +1,78 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja"><head><meta charset="UTF-8"/><meta name="author" content="Japanese Layout Task Force"/><title>日本語組版処理の要件（日本語版）</title><link rel="stylesheet" type="text/css" href="../css/W3C-WG-NOTE.css"/><link rel="stylesheet" type="text/css" href="../css/base.css"/></head><body><h4 id="positioning_of_punctuation_marks">3.1.2 <span class="heading"><span id="ja-subheading2_1_2">句読点や，括弧類などの基本的な配置方法</span></span></h4><p>
+<span class="index" id="d5e1090">約物</span>などを行に配置する場合の基本的な配置は，次のようにする．</p><table class="t_note">
+					<tr>
+						<td class="ft" rowspan="1" colspan="1">
+							
+								<p>注1）</p>
+								
+							
+						</td>
+						<td rowspan="1" colspan="1">
+							
+								<p>約物を含め，その他の文字・記号を<a class="termref" href="terminology.xhtml#term.line-head">行頭</a>及び<a class="termref" href="terminology.xhtml#term.line-end">行末</a>に配置する方法，並びに隣接する文字の間隔の原則的な処理方法についての詳細は，<a class="sec_ref" href="about_character_classes.xhtml#about_character_classes">3.9 文字クラスについて</a>で説明する文字クラスに従い，表の形式にして<a class="sec_ref" href="spacing_between_characters.xhtml#spacing_between_characters">附属書B 文字間の空き量</a>に示す．</p>
+								
+							
+						</td>
+					</tr>
+				</table><p><a class="characterClass" href="cl-07.xhtml#cl-07">読点類（cl-07）</a>，<a class="characterClass" href="cl-06.xhtml#cl-06">句点類（cl-06）</a>，<a class="characterClass" href="cl-01.xhtml#cl-01">始め括弧類（cl-01）</a>，<a class="characterClass" href="cl-02.xhtml#cl-02">終わり括弧類（cl-02）</a>及び<a class="characterClass" href="cl-05.xhtml#cl-05">中点類（cl-05）</a>の<span class="index" id="d5e1184"><span class="index" id="d5e1185"><span class="index" id="d5e1186"><span class="index" id="d5e1187"><span class="index" id="d5e1188"><span class="index" id="d5e1189"><a class="termref" href="terminology.xhtml#term.character-advance">字幅</a></span></span></span></span></span></span>は，<a class="termref" href="terminology.xhtml#term.half-width">半角</a>であるが，これらの約物が<a class="characterClass" href="cl-19.xhtml#cl-19">漢字等（cl-19）</a>，<a class="characterClass" href="cl-15.xhtml#cl-15">平仮名（cl-15）</a>又は<a class="characterClass" href="cl-16.xhtml#cl-16">片仮名（cl-16）</a>と連続する場合は，原則として，それぞれの約物の前又は後ろ（<a class="characterClass" href="cl-05.xhtml#cl-05">中点類（cl-05）</a>は，その前及び後ろ）に一定の空き量をとることで，結果として<a class="termref" href="terminology.xhtml#term.full-width">全角</a>というサイズになる（<a class="figure_ref" href="positioning_of_punctuation_marks.xhtml#fig2_8_1-ja">図 3.8</a>）．<a class="characterClass" href="cl-19.xhtml#cl-19">漢字等（cl-19）</a>，<a class="characterClass" href="cl-15.xhtml#cl-15">平仮名（cl-15）</a>，及び<a class="characterClass" href="cl-16.xhtml#cl-16">片仮名（cl-16）</a>の全角というサイズとそろえるとともに，これらの約物の前及び／又は後ろに空き量をとることにより，文章の区切りを示すためである．行中での<a class="characterClass" href="cl-06.xhtml#cl-06">句点類（cl-06）</a>の後ろの空き量を除いて，原則とした空き量は，<a class="termref" href="terminology.xhtml#term.line-adjustment">行の調整処理</a>における詰める場合の対象とし，結果的に0となることもある（行の調整処理については<a class="sec_ref" href="line_adjustment.xhtml#line_adjustment">3.8 行の調整処理</a>を参照）．</p><div class="figure" id="fig2_8_1-ja"><div class="figure-float"><div><img alt="句読点などの字幅と前後の空き量" width="373" height="449" src="../image/Images-ja/img2_8_1.png"/><br/><img alt="句読点などの字幅と前後の空き量" width="449" height="379" src="../image/Images-ja/img2_8_2.png"/><div class="figureCaption">図 3.8 <span class="caption-body">句読点などの字幅と前後の空き量</span></div></div></div></div><ol>
+					<li>
+   
+    <p><span class="index" id="d5e1343"><a class="characterClass" href="cl-07.xhtml#cl-07">読点類（cl-07）</a></span>では，原則として後ろを<a class="termref" href="terminology.xhtml#term.half-em-space">二分アキ</a>にする．</p>
+    
+   
+   </li>
+					<li>
+   
+    <p><span class="index" id="d5e1367"><a class="characterClass" href="cl-06.xhtml#cl-06">句点類（cl-06）</a></span>では，行中では後ろを二分アキにし，行末では後ろを原則として二分アキにする．</p>
+    
+   
+   </li>
+					<li>
+   
+    <p><span class="index" id="d5e1393"><a class="characterClass" href="cl-01.xhtml#cl-01">始め括弧類（cl-01）</a></span>では，原則として前を二分アキにする．</p>
+    
+   
+   </li>
+					<li>
+   
+    <p><span class="index" id="d5e1419"><a class="characterClass" href="cl-02.xhtml#cl-02">終わり括弧類（cl-02）</a></span>では，原則として後ろを二分アキにする．</p>
+    
+   
+   </li>
+					<li>
+   
+    <p><span class="index" id="d5e1445"><a class="characterClass" href="cl-05.xhtml#cl-05">中点類（cl-05）</a></span>では，原則として前及び後ろを<a class="termref" href="terminology.xhtml#term.quarter-em-space">四分アキ</a>にする．</p>
+    
+   
+   </li>
+				</ol><table class="t_note">
+					<tr>
+						<td class="ft" rowspan="1" colspan="1">
+							
+								<p>注1）</p>
+								
+							
+						</td>
+						<td rowspan="1" colspan="1">
+							
+								<p>各<a class="termref2nd" href="terminology.xhtml#term.font">フォント</a>が持っている<span class="index" id="d5e1490"><span class="index" id="d5e1491"><a class="termref2nd" href="terminology.xhtml#term.punctuation-marks">約物</a>がどのような字幅</span></span>を持っているかは問題としない．結果として，ここで説明した配置方法になればよい．例えば，<a class="characterClass" href="cl-01.xhtml#cl-01">始め括弧類（cl-01）</a>及び<a class="characterClass" href="cl-02.xhtml#cl-02">終わり括弧類（cl-02）</a>の字幅を全角として扱う場合，<a class="characterClass" href="cl-02.xhtml#cl-02">終わり括弧類（cl-02）</a>の後ろに<a class="characterClass" href="cl-01.xhtml#cl-01">始め括弧類（cl-01）</a>が連続するときは，その字間にマイナス二分アキを挿入すると考えてもよい（マイナスの<a class="termref" href="terminology.xhtml#term.half-em-space">二分アキ</a>又は<a class="termref" href="terminology.xhtml#term.quarter-em-space">四分アキ</a>を用意している処理系もある）．なお，<a class="termref" href="terminology.xhtml#term.letterpress-printing">活字組版</a>においても，二分アキを調整するために，半角のボディ＋二分アキという方法が一般的であった．そのために原稿に従って活字を集める作業である<a class="termref" href="terminology.xhtml#term.type-picking">文選</a>では句読点や括弧類は拾わず，ページの体裁にする植字の際に約物を拾っていた．その後，モノタイプの利用が進み，全角サイズのボディの約物も利用されるようになり，全角と半角の約物が混用されてきた．</p>
+								
+							
+						</td>
+					</tr>
+				</table><div class="figure" id="fig2_9-ja"><div class="figure-float"><div><img alt="始め小括弧及び終わり小括弧並びに始め山括弧及び終わり山括弧の配置例 （左がベタ組とした例）" width="380" height="384" src="../image/Images-ja/img2_9.png"/><div class="figureCaption">図 3.9 <span class="caption-body">始め小括弧及び終わり小括弧並びに始め山括弧及び終わり山括弧の配置例<span class="sub-caption">（左がベタ組とした例）</span></span></div></div></div></div><table class="t_note">
+					<tr>
+						<td class="ft" rowspan="1" colspan="1">
+							
+								<p>注2）</p>
+								
+							
+						</td>
+						<td rowspan="1" colspan="1">
+							
+								<p><a class="characterClass" href="cl-01.xhtml#cl-01">始め括弧類（cl-01）</a>，<a class="characterClass" href="cl-02.xhtml#cl-02">終わり括弧類（cl-02）</a>のうち，始め<span class="index" id="d5e1627">小括弧</span><span class="character">[（] (LEFT PARENTHESIS)</span>及び終わり小括弧<span class="character">[）] (RIGHT PARENTHESIS)</span>並びに始め<span class="index" id="d5e1635">山括弧</span><span class="character">[〈] (LEFT ANGLE BRACKET)</span>及び終わり山括弧<span class="character">[〉] (LEFT ANGLE BRACKET)</span>は，補足説明等に利用され，他の<a class="characterClass" href="cl-01.xhtml#cl-01">始め括弧類（cl-01）</a>，<a class="characterClass" href="cl-02.xhtml#cl-02">終わり括弧類（cl-02）</a>と扱いがやや異なる．このようなことから，始め小括弧<span class="character">[（] (LEFT PARENTHESIS)</span>及び終わり小括弧<span class="character">[）] (RIGHT PARENTHESIS)</span>並びに始め山括弧<span class="character">[〈] (LEFT ANGLE BRACKET)</span>及び終わり山括弧<span class="character">[〉] (LEFT ANGLE BRACKET)</span>については，その前又は後ろの<a class="termref2nd" href="terminology.xhtml#term.half-em-space">二分アキ</a>を確保しないで，<a class="termref" href="terminology.xhtml#term.solid-setting">ベタ組</a>とする方針で処理する方法もある（<a class="figure_ref" href="positioning_of_punctuation_marks.xhtml#fig2_9-ja">図 3.9</a>）．</p>
+								
+							
+						</td>
+					</tr>
+				</table></body></html>

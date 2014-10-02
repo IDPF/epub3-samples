@@ -1,0 +1,21 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja"><head><meta charset="UTF-8"/><meta name="author" content="Japanese Layout Task Force"/><title>日本語組版処理の要件（日本語版）</title><link rel="stylesheet" type="text/css" href="../css/W3C-WG-NOTE.css"/><link rel="stylesheet" type="text/css" href="../css/base.css"/></head><body><h4 id="jidori_processing">3.7.3 <span class="heading"><span class="index" id="ja-subheading2_7_3">字取り処理</span></span></h4><p>日本人名の名簿を一覧にする場合など，行中の文字列の一部について全長を指定する例がある．このような場合に，行中の指定された文字列を，字間を調整して，<a class="termref" href="terminology.xhtml#term.inline-direction">字詰め方向</a>について指定された長さにする処理が<span class="index" id="d6e1080"><a class="termref" href="terminology.xhtml#term.jidori">字取り</a></span>処理である（<a class="figure_ref" href="jidori_processing.xhtml#fig2_7_4-ja">図 3.117</a>）．人名など字数の異なる文字列を指定した一定の長さでそろえたい場合に利用できる．</p><div class="figure" id="fig2_7_4-ja"><div class="figure-float"><div><img alt="字取り処理の例1" width="254" height="320" src="../image/Images-ja/img2_7_4.png"/><div class="figureCaption">図 3.117 <span class="caption-body">字取り処理の例1</span></div></div></div></div><p><span class="index" id="d6e1115"><a class="termref" href="terminology.xhtml#term.horizontal-writing-mode">横組</a>の<a class="termref" href="terminology.xhtml#term.running-head">柱</a></span>などでは，例えば，章番号などの後ろに続く文字列だけを，字取り処理する例がある．例えば，2字の文字列の字取りは，空き過ぎになるので例外的に柱の文字サイズの6倍とし，3字から6字までの文字列の字取りを柱の文字サイズの7倍とする（<a class="figure_ref" href="jidori_processing.xhtml#fig2_7_5-ja">図 3.118</a>）．この例では，7字以上は，ベタ組とする．</p><div class="figure" id="fig2_7_5-ja"><div class="figure-float"><div><img alt="字取り処理の例2" width="432" height="377" src="../image/Images-ja/img2_7_5.png"/><div class="figureCaption">図 3.118 <span class="caption-body">字取り処理の例2</span></div></div></div></div><p>字取り処理は，次のように行う．</p><ol>
+					<li><p><span class="index" id="d6e1168">字取りの全長の指定</span>は，そこに使用されている文字サイズの整数倍とする．</p>
+					</li>
+					<li><p>指定された文字列について，字間を均等に空け，字詰め方向の先頭から末尾までを，指定された長さにする．ただし，次のような箇所は，<span class="index" id="d6e1179">空ける対象としない</span>．</p>
+					<ol><li>
+               <p>2行に分割してはならない箇所．<a class="characterClass" href="cl-24.xhtml#cl-24">連数字中の文字（cl-24）</a>の字間，<a class="characterClass" href="cl-27.xhtml#cl-27">欧文用文字（cl-27）</a>の字間，同一の<a class="characterClass" href="cl-08.xhtml#cl-08">分離禁止文字（cl-08）</a>の字間など．これらの文字列は一体として扱いたいからである．</p>
+               
+<table class="t_note"><tr><td class="ft" rowspan="1" colspan="1"><p>注1）</p>
+</td><td rowspan="1" colspan="1">
+<p><a class="characterClass" href="cl-01.xhtml#cl-01">始め括弧類（cl-01）</a>の前，<a class="characterClass" href="cl-02.xhtml#cl-02">終わり括弧類（cl-02）</a>の後ろなど行の調整処理で空ける対象箇所としない字間も問題となる．これらの箇所は，議論の分かれるところだが，字取り処理で空ける対象箇所としてよいだろう．ただし，<a class="characterClass" href="cl-01.xhtml#cl-01">始め括弧類（cl-01）</a>の後ろ及び<a class="characterClass" href="cl-02.xhtml#cl-02">終わり括弧類（cl-02）</a>の前は，2行に分割してはならない箇所なので，字取り処理で空ける対象箇所としない．次に，すべての字間を空けた例，ここで説明した方法，<a class="characterClass" href="cl-01.xhtml#cl-01">始め括弧類（cl-01）</a>及び<a class="characterClass" href="cl-02.xhtml#cl-02">終わり括弧類（cl-02）</a>の前後をすべて空けない例を<a class="figure_ref" href="jidori_processing.xhtml#fig2_7_52-ja">図 3.119</a>に示す．</p>
+</td></tr></table>
+				
+					<div class="figure" id="fig2_7_52-ja"><div class="figure-float"><div><img alt="始め括弧類及び終わり括弧類を含んだ文字列の字取り例" width="254" height="223" src="../image/Images-ja/img2_7_52.png"/><div class="figureCaption">図 3.119 <span class="caption-body">始め括弧類及び終わり括弧類を含んだ文字列の字取り例</span></div></div></div></div>
+					
+				
+</li>
+<li><p><a class="characterClass" href="cl-26.xhtml#cl-26">欧文間隔（cl-26）</a>，<a class="characterClass" href="cl-14.xhtml#cl-14">和字間隔（cl-14）</a>など空白を挿入してある箇所は，その空白の前及び後ろの2箇所ではなく，空白の前（又は後ろ）だけとする．空白の前後2箇所で空けると空き過ぎになる．</p>
+</li></ol></li>
+					<li><p>指定された文字列が1字の場合など，<span class="index" id="d6e1327">字間を空ける箇所がないとき</span>は，文字列の後ろを空けておく．</p>
+					</li>
+				</ol></body></html>

@@ -1,0 +1,69 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja"><head><meta charset="UTF-8"/><meta name="author" content="Japanese Layout Task Force"/><title>日本語組版処理の要件（日本語版）</title><link rel="stylesheet" type="text/css" href="../css/W3C-WG-NOTE.css"/><link rel="stylesheet" type="text/css" href="../css/base.css"/></head><body><h4 id="processing_when_one_line_space_before_low_level_heading_is_set">4.1.8 <span class="heading"><span class="index" id="d8e2337">小見出しの前を1行アキにした場合の処理</span></span></h4><p>見出しの前を1行アキに設定した小見出しがページ先頭にきた場合は，1行アキの処理の違いから次のような方法がある．</p><ol>
+					<li>
+                        
+                           <p>見出しの前を1行アキに設定した小見出しがページ先頭にきた場合，常に小見出しの前を1行アキにする．小見出しと1行アキはセットであり，これを一体に扱うという考え方からである．</p>
+                           
+                        
+                        <table class="t_note">
+                           <tr>
+                              <td class="ft" rowspan="1" colspan="1">
+                                 
+                                    <p>注1）</p>
+                                    
+                                 
+                              </td>
+                              <td rowspan="1" colspan="1">
+                                 
+                                    <p>この方針の場合，前のページ末の状態としては，（1）ページ末まで本文が配置されている．（2）1行アキになっている．（3）2行アキになっている，がある．（1）を除き，（2）及び（3）は二重に1行アキを行うことになる（<a class="figure_ref" href="processing_when_one_line_space_before_low_level_heading_is_set.xhtml#fig3_1_31-ja">図 4.34</a>）．</p>
+                                    
+                                 
+                              </td>
+                           </tr>
+                        </table>
+                        
+                        
+                           <div class="figure" id="fig3_1_31-ja"><div class="figure-float"><div><img alt="見出しの前を1行アキに設定した小見出しがページ先頭にきた場合の配置例1" width="424" height="359" src="../image/Images-ja/img3_1_31.png"/><div class="figureCaption">図 4.34 <span class="caption-body">見出しの前を1行アキに設定した小見出しがページ先頭にきた場合の配置例1</span></div></div></div></div>
+                           
+                        
+                        
+                     </li>
+					<li>
+                        
+                           <p>見出しの前を1行アキに設定した小見出しがページ先頭にきた場合，常に小見出しの前を1行アキにしない．ページの先頭では，その前に余白があるので，1行アキにする必要はない，という考え方からである．</p>
+                           
+                        
+                        <table class="t_note">
+                           <tr>
+                              <td class="ft" rowspan="1" colspan="1">
+                                 
+                                    <p>注1）</p>
+                                    
+                                 
+                              </td>
+                              <td rowspan="1" colspan="1">
+                                 
+                                    <p>この方針の場合，前のページ末の状態としては，（1）ページ末まで本文が配置されている．（2）1行アキになっている．（3）2行アキになっている，がある．（1）は1行アキがどちらのページにもなく，1行アキは（2）及び（3）では前のページ末で行われることになる（<a class="figure_ref" href="processing_when_one_line_space_before_low_level_heading_is_set.xhtml#fig3_1_32-ja">図 4.35</a>）．</p>
+                                    
+                                 
+                              </td>
+                           </tr>
+                        </table>
+                        
+                        
+                           <div class="figure" id="fig3_1_32-ja"><div class="figure-float"><div><img alt="見出しの前を1行アキに設定した小見出しがページ先頭にきた場合の配置例2" width="424" height="359" src="../image/Images-ja/img3_1_32.png"/><div class="figureCaption">図 4.35 <span class="caption-body">見出しの前を1行アキに設定した小見出しがページ先頭にきた場合の配置例2</span></div></div></div></div>
+                           
+                        
+                        
+                     </li>
+					<li>
+                        
+                           <p>見出しの前を1行アキに設定した小見出しがページ先頭にきた場合，前のページ末まで本文が配置されているときは，1行アキにする．前のページ末で1行アキ又は2行アキになっている場合は，1行アキにしない．いってみれば，“なりゆき”で処理するという方法である（<a class="figure_ref" href="processing_when_one_line_space_before_low_level_heading_is_set.xhtml#fig3_1_33-ja">図 4.36</a>）．</p>
+                           
+                        
+                        
+                           <div class="figure" id="fig3_1_33-ja"><div class="figure-float"><div><img alt="見出しの前を1行アキに設定した小見出しがページ先頭にきた場合の配置例3" width="424" height="359" src="../image/Images-ja/img3_1_33.png"/><div class="figureCaption">図 4.36 <span class="caption-body">見出しの前を1行アキに設定した小見出しがページ先頭にきた場合の配置例3</span></div></div></div></div>
+                           
+                        
+                        
+                     </li>
+				</ol></body></html>

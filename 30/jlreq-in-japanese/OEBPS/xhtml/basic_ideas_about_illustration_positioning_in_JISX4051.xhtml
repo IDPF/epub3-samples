@@ -1,0 +1,190 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja"><head><meta charset="UTF-8"/><meta name="author" content="Japanese Layout Task Force"/><title>日本語組版処理の要件（日本語版）</title><link rel="stylesheet" type="text/css" href="../css/W3C-WG-NOTE.css"/><link rel="stylesheet" type="text/css" href="../css/base.css"/></head><body><h4 id="basic_ideas_about_illustration_positioning_in_JISX4051">4.3.5 <span class="heading"><span class="index" id="d10e1420">JIS X 4051における図版配置の基本的な考え方</span></span></h4><p>これまでの説明を前提にして，JIS X 4051の図版をページに配置する処理の主な規定内容を紹介する．</p><ol>
+					<li>
+                      
+                        <p>JIS X 4051では，図版配置については“相対位置指定”と“絶対位置指定”の2つの方法を規定している．次に同規格の用語の定義を掲げる．</p>
+                         
+                        
+                        
+                           <p><span class="index" id="d10e1456">相対位置指定</span>：ブロック類の指定が本文段落などの流れとともに出現した行を配置位置基準とし，行送り方向の分割を不可とする，ブロック類の配置位置指定方法．（<span class="index" id="d10e1459">ブロック類</span>：図・写真等のブロック及び表のブロックの総称）</p>
+                           
+                        
+                        
+                           <p><span class="index" id="d10e1470">絶対位置指定</span>：ブロック類の指定が出現した版面又は見開きを単位とする領域からの絶対的な位置を配置位置基準とする，ブロック類の配置位置指定方法．</p>
+                           
+                        
+                        
+                           <p><a class="figure_ref" href="positioning_of_illustrations.xhtml#fig3_1-ja">図 4.79</a>のように天及び小口からの2方向から指定する場合は，絶対位置指定の方法となる．</p>
+                           
+                        
+                      
+                        <p><a class="figure_ref" href="positioning_of_illustrations.xhtml#fig3_2-ja">図 4.80</a>，<a class="figure_ref" href="requirements_for_illustration_positioning_in_horizontal_layout.xhtml#fig3_9-ja">図 4.88</a>又は<a class="figure_ref" href="requirements_for_illustration_positioning_in_horizontal_layout.xhtml#fig3_10-ja">図 4.89</a>のように，字詰め方向は指定の位置，行送り方向は，リンクした本文のテキストの位置により決まるものは，相対位置指定ということになる（もちろん天又は地に配置する場合は絶対位置指定の方法も可能である）．</p>
+                         
+                        
+                        
+                           <p>なお，JIS X 4051では，絶対位置指定の方法では，のど・小口の指定方法の配置を規定している．しかし，相対位置指定では，のど・小口の指定方法の配置を規定していない．相対位置指定であっても，のど・小口の指定方法による配置ができることが望ましい．</p>
+                           
+                        
+                     </li>
+					<li>
+                        
+                           <p>いずれの方法もリンクした本文のテキスト（JIS X 4051の用語では<span class="index" id="d10e1535">本文段落</span>）と配置する図版が同一ページにある場合は，<a class="figure_ref" href="requirements_for_illustration_positioning_in_vertical_mayout.xhtml#fig3_6-ja">図 4.85</a> 又は<a class="figure_ref" href="requirements_for_illustration_positioning_in_horizontal_layout.xhtml#fig3_11-ja">図 4.90</a> のように図版の行送り方向の前又は後ろに1行だけ配置する場合を除き問題はない．対応する本文のテキストの位置又は図版のサイズの関係から，図版が版面又は段の領域からはみ出した場合，また，本文のテキストと図版を配置するページが異なる場合が問題となる．JIS X 4051では，この点につき，以下のように規定している．</p>
+                           
+                        
+                        <ol>
+                           <li>
+                              
+                                 <p>相対位置指定の方法では，本文のテキストにおけるリンクの指定が出現した行の直後に図版を配置することになっている．配置した結果，<span class="index" id="d10e1563">版面や段の領域から図版がはみ出した場合</span>は，<a class="figure_ref" href="basic_ideas_about_illustration_positioning_in_JISX4051.xhtml#fig3_13-ja">図 4.92</a>のように版面又は段の領域内にある部分（<span class="math-i">a</span>）と，領域からはみ出した部分（<span class="math-i">b</span>）の長さを比較する．本文のテキストの説明より先になることはできれば避けたいので，単純に1/2ではなく，比重を変更してある．具体的には，<a class="figure_ref" href="basic_ideas_about_illustration_positioning_in_JISX4051.xhtml#fig3_13-ja">図 4.92</a>のように，<span class="math-i">a</span>と<span class="math-i">b</span>との関係が<span class="math-i">a</span> <span class="math-o">≧</span> <span class="math-n">2</span><span class="math-i">b</span>の場合は，<a class="figure_ref" href="basic_ideas_about_illustration_positioning_in_JISX4051.xhtml#fig3_14-ja">図 4.93</a>のように，図版はそのページ（同一のページ）内に配置し，リンクの指定がある行を含め図版の領域と重なる行は次のページに移動する．</p>
+                                 
+                              
+                              
+                                 <div class="figure" id="fig3_13-ja"><div class="figure-float"><div><img alt="相対位置指定で同一ページに配置する例 （a ≧ 2bの場合の位置調整前）" width="358" height="254" src="../image/Images-ja/img3_13.png"/><div class="figureCaption">図 4.92 <span class="caption-body">相対位置指定で同一ページに配置する例<span class="sub-caption">（<span class="math-i">a</span> <span class="math-o">≧</span> <span class="math-n">2</span><span class="math-i">b</span>の場合の位置調整前）</span></span></div></div></div></div>
+                                 
+                              
+                              
+                              
+                                 <div class="figure" id="fig3_14-ja"><div class="figure-float"><div><img alt="相対位置指定で同一のページに配置する例 （a ≧ 2bの場合の位置調整後）" width="358" height="253" src="../image/Images-ja/img3_14.png"/><div class="figureCaption">図 4.93 <span class="caption-body">相対位置指定で同一のページに配置する例<span class="sub-caption">（<span class="math-i">a</span> <span class="math-o">≧</span> <span class="math-n">2</span><span class="math-i">b</span>の場合の位置調整後）</span></span></div></div></div></div>
+                                 
+                              
+                              
+                              
+                                 <p>また，<a class="figure_ref" href="basic_ideas_about_illustration_positioning_in_JISX4051.xhtml#fig3_15-ja">図 4.94</a>のように<span class="math-i">a</span> <span class="math-o">&lt;</span> <span class="math-n">2</span><span class="math-i">b</span>の場合は，<a class="figure_ref" href="basic_ideas_about_illustration_positioning_in_JISX4051.xhtml#fig3_16-ja">図 4.95</a>のように図版を次のページに移動し，その空いた領域には，次のページから本文のテキストをもってくることになる．</p>
+                                 
+                              
+                              
+                                 <div class="figure" id="fig3_15-ja"><div class="figure-float"><div><img alt="相対位置指定で次のページに配置する例 （a &lt; 2bの場合の位置調整前）" width="357" height="254" src="../image/Images-ja/img3_15.png"/><div class="figureCaption">図 4.94 <span class="caption-body">相対位置指定で次のページに配置する例<span class="sub-caption">（<span class="math-i">a</span> <span class="math-o">&lt;</span> <span class="math-n">2</span><span class="math-i">b</span>の場合の位置調整前）</span></span></div></div></div></div>
+                                 
+                              
+                              
+                              
+                                 <div class="figure" id="fig3_16-ja"><div class="figure-float"><div><img alt="相対位置指定で次のページに配置する例 （a &lt; 2bの場合の位置調整後）" width="357" height="254" src="../image/Images-ja/img3_16.png"/><div class="figureCaption">図 4.95 <span class="caption-body">相対位置指定で次のページに配置する例<span class="sub-caption">（<span class="math-i">a</span> <span class="math-o">&lt;</span> <span class="math-n">2</span><span class="math-i">b</span>の場合の位置調整後）</span></span></div></div></div></div>
+                                 
+                              
+                              
+                              <table class="t_note">
+                                 <tr>
+                                    <td class="ft" rowspan="1" colspan="1">
+                                       
+                                          <p>注1）</p>
+                                          
+                                       
+                                    </td>
+                                    <td rowspan="1" colspan="1">
+                                       
+                                          <p>本文のテキストにおける図版についての説明は必ずしも限定した特定の箇所ではなく，ある範囲の中で解説している例が多い．リンクの指定が後ろになっても，ある程度は許容できるという考え方である．</p>
+                                          
+                                       
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td class="ft" rowspan="1" colspan="1">
+                                       
+                                          <p>注2）</p>
+                                          
+                                       
+                                    </td>
+                                    <td rowspan="1" colspan="1">
+                                       
+                                          <p>同一のページに配置するか，又は次のページに配置するかを決める際の比重を1/3（1：2）とすることが，すべてのケースで正解ということにはならないだろう．したがって，この比率は変更できると考えてよい．しかし，1/3とすることで，かなりのケースには対応できるものと考えることができよう．</p>
+                                          
+                                       
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td class="ft" rowspan="1" colspan="1">
+                                       
+                                          <p>注3）</p>
+                                          
+                                       
+                                    </td>
+                                    <td rowspan="1" colspan="1">
+                                       
+                                          <p>配置する図版を次のページに配置した場合は，空いた部分には当然，次のページから本文のテキストを移動し，また，同一のページに配置するためには，その部分にある本文のテキストを次のページに移動する処理が必要になる．</p>
+                                          
+                                       
+                                    </td>
+                                 </tr>
+                              </table>
+                              
+                           </li>
+                           <li>
+                              
+                                 <p><span class="index" id="d10e1915">絶対位置指定の方法でも，同様の考え方である</span>．しかし，比較する量は相対位置指定の方法とは異なる．</p>
+                                 
+                              
+                              
+                                 <p>絶対位置指定の方法では，まず本文のテキストにおいてリンクの指定が出現した時点における指定の出現位置と版面又は段の領域の最後までの距離を計算する（<a class="figure_ref" href="basic_ideas_about_illustration_positioning_in_JISX4051.xhtml#fig3_17-ja">図 4.96</a>の左側の<span class="math-i">a</span>）．次にそのページの指定位置に図版を配置した結果としてリンクの指定が移動し，その移動したリンクの指定が同一ページの場合は，そのページに図版を配置すればよい．</p>
+                                 
+                              
+                              
+                                 <p>リンクの指定が次のページになった場合は，そのリンクの指定と版面又は段の領域の先頭までの距離を計算する（<a class="figure_ref" href="basic_ideas_about_illustration_positioning_in_JISX4051.xhtml#fig3_17-ja">図 4.96</a>の右側の<span class="math-i">b</span>）．</p>
+                                 
+                              
+                              
+                                 <div class="figure" id="fig3_17-ja"><div class="figure-float"><div><img alt="絶対位置指定における配置例1 （左は図版配置前，右は配置後）（a &lt; 2bの場合）" width="583" height="253" src="../image/Images-ja/img3_17.png"/><div class="figureCaption">図 4.96 <span class="caption-body">絶対位置指定における配置例1<span class="sub-caption">（左は図版配置前，右は配置後）（<span class="math-i">a</span> <span class="math-o">&lt;</span> <span class="math-n">2</span><span class="math-i">b</span>の場合）</span></span></div></div></div></div>
+                                 
+                              
+                              
+                                 <p>そのうえで，<span class="math-i">a</span>と<span class="math-i">b</span>を比較し，<span class="math-i">a</span> <span class="math-o">≧</span> <span class="math-n">2</span><span class="math-i">b</span>の場合は，最初にリンクの指定が出現したページに図版を配置し，<span class="math-i">a</span> <span class="math-o">&lt;</span> <span class="math-n">2</span><span class="math-i">b</span>の場合は，最初にリンクの指定が出現した次のページに図版を配置する．<a class="figure_ref" href="basic_ideas_about_illustration_positioning_in_JISX4051.xhtml#fig3_17-ja">図 4.96</a>の例では<span class="math-i">a</span> <span class="math-o">&lt;</span> <span class="math-n">2</span><span class="math-i">b</span>となるので，図版は左ページ（13ページ）の左側に移動することになる（<a class="figure_ref" href="basic_ideas_about_illustration_positioning_in_JISX4051.xhtml#fig3_18-ja">図 4.97</a>）．</p>
+                                 
+                              
+                              
+                                 <div class="figure" id="fig3_18-ja"><div class="figure-float"><div><img alt="図版の配置例1の最終的な配置位置" width="356" height="253" src="../image/Images-ja/img3_18.png"/><div class="figureCaption">図 4.97 <span class="caption-body">図版の配置例1の最終的な配置位置</span></div></div></div></div>
+                                 
+                              
+                              
+                              
+                                 <p>例えば，<a class="figure_ref" href="basic_ideas_about_illustration_positioning_in_JISX4051.xhtml#fig3_19-ja">図 4.98</a>のように，右ページ（12ページ）のページ末から数えて5行目に最初にリンクの指定が出現し，図版を配置した結果，リンクの指定が左ページ（13ページ）の2行目に移動した場合は<span class="math-i">a</span> <span class="math-o">≧</span> <span class="math-n">2</span><span class="math-i">b</span>となるので，右ページ（12ページ）に図版を配置したままとなる．</p>
+                                 
+                              
+                              
+                                 <div class="figure" id="fig3_19-ja"><div class="figure-float"><div><img alt="絶対位置指定における配置例2 （左は図版配置前，右は配置後）" width="586" height="253" src="../image/Images-ja/img3_19.png"/><div class="figureCaption">図 4.98 <span class="caption-body">絶対位置指定における配置例2<span class="sub-caption">（左は図版配置前，右は配置後）</span></span></div></div></div></div>
+                                 
+                              
+                              
+                           </li>
+                        </ol>
+                     </li>
+					<li>
+                        
+                           <p><span class="index" id="d10e2176">その他の図版配置についての規定</span>をいくつか紹介しておくことにする．</p>
+                           
+                        
+                        <ol>
+                           <li>
+                              
+                                 <p>絶対位置指定の方法では，行送り方向の前後に1行だけテキストを配置するケースは予想できるので避けることができる．これに対して相対位置指定の方法では，結果として行送り方向の前後に1行だけテキストを配置するケースが発生する．これは体裁がよくないので，避けるための処理法をJIS X 4051では規定している．</p>
+                                 
+                              
+                           </li>
+                           <li>
+                              
+                                 <p>段落の間などに様々な要素が入り，行送り方向の版面サイズの領域調整が必要になる．この場合に，基本版面で設定した体裁（文字サイズや行間など）と異なる体裁となる要素について，その要素の前後の空き量を均一にする考え方と，できるだけ基本版面で設定した行の配置位置を維持する考え方とがある．JIS X 4051では，これら2つの方法を規定している（詳細は<a class="sec_ref" href="block_direction_setting_process_of_lines_paragraphs.xhtml#block_direction_setting_process_of_lines_paragraphs">4.5 行・段落などの行送り方向の配置処理</a>で解説する）．</p>
+                                 
+                              
+                           </li>
+                           <li>
+                              
+                                 <p>図版の周囲に必要な空き量を確保し，本文のテキストを回り込みで配置する場合の行長は，そこに使用する文字の整数倍にする必要があり，その規定も行われている（<a class="figure_ref" href="positioning_of_illustrations.xhtml#fig3_1-ja">図 4.79</a>）．</p>
+                                 
+                              
+                           </li>
+                           <li>
+                              
+                                 <p>また，<span class="index" id="d10e2240">回り込みでは，極端に字数が少ない場合</span>は，空けておいた方がよい．回り込みで配置する字数が基本版面で指定する1行の行長の1/4以下又は9字以下の場合は，本文のテキストを配置しないことを規定している．<a class="figure_ref" href="requirements_for_illustration_positioning_in_horizontal_layout.xhtml#fig3_9-ja">図 4.88</a>又は<a class="figure_ref" href="requirements_for_illustration_positioning_in_horizontal_layout.xhtml#fig3_10-ja">図 4.89</a>で，ページの途中に相対位置指定の方法で配置した場合，図版の上と下の空き量はそろえる必要があり，その点も規定している（<a class="figure_ref" href="basic_ideas_about_illustration_positioning_in_JISX4051.xhtml#fig3_20-ja">図 4.99</a>）．</p>
+                                 
+                              
+                              
+                                 <div class="figure" id="fig3_20-ja"><div class="figure-float"><div><img alt="ページの途中に配置した図版と文字との上下の空き量" width="209" height="254" src="../image/Images-ja/img3_20.png"/><div class="figureCaption">図 4.99 <span class="caption-body">ページの途中に配置した図版と文字との上下の空き量</span></div></div></div></div>
+                                 
+                              
+                              
+                           </li>
+                           <li>
+                              
+                                 <p>見開きを単位にした図版の配置については，絶対位置指定による方法を規定している（その方法は，<a class="sec_ref" href="processing_of_tables_allocated_in_a_spread.xhtml#processing_of_tables_allocated_in_a_spread">4.4.5 見開きに配置する表の処理</a>）．</p>
+                                 
+                              
+                           </li>
+                        </ol>
+                     </li>
+				</ol></body></html>

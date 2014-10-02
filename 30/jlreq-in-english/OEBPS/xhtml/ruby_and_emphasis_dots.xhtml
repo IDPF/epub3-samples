@@ -1,0 +1,363 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"><head><meta charset="UTF-8"/><title>Requirements for Japanese Text Layout</title><link rel="stylesheet" type="text/css" href="../css/base.css"/><link rel="stylesheet" type="text/css" href="../css/W3C-WG-NOTE.css"/></head><body><h3 id="ruby_and_emphasis_dots">3.3 <span class="heading"><span id="en-subheading2_3">Ruby and Emphasis Dots</span></span></h3><h4 id="usage_of_ruby">3.3.1 <span class="heading"><span class="index" id="en-subheading2_3_1">Usage of Ruby</span></span></h4><p><a class="termref" href="terminology.xhtml#term.ruby">Ruby</a>
+is a small-sized, supplementary text attached to a character or a group of characters in the main text. A run of ruby text, usually attached to the right of the characters in <a class="termref" href="terminology.xhtml#term.vertical-writing-mode">vertical writing mode</a>
+or immediately above them in <a class="termref" href="terminology.xhtml#term.horizontal-writing-mode">horizontal writing mode</a>, indicates the reading or the meaning of those characters (see <a class="figure_ref" href="ruby_and_emphasis_dots.xhtml#fig2_3_1-en">Fig. 3.49</a>). The characters in the main text that are annotated by ruby are called "<a class="termref" href="terminology.xhtml#term.base-characters">base characters</a>".
+ Mainly <a class="characterClass" href="cl-15.xhtml#cl-15">Hiragana (cl-15)</a>
+characters are often used for ruby to indicate how to read
+<a class="characterClass" href="cl-19.xhtml#cl-19">ideographic characters (cl-19)</a>; this is known as ruby annotation or as "<a class="termref" href="terminology.xhtml#term.furigana">furigana</a>".</p><div class="figure" id="fig2_3_1-en"><div class="figure-float"><div><img alt="Ruby and base characters." width="324" height="401" src="../image/Images-en/img2_3_1.png"/><div class="figureCaption">Fig. 3.49: <span class="caption-body">Ruby and base characters.</span></div></div></div></div><table class="t_note">
+					<tr>
+						<td class="ft" rowspan="1" colspan="1">
+							
+								
+								<p>(note 1)</p>
+							
+						</td>
+						<td rowspan="1" colspan="1">
+							
+								
+								<p>Societal change in the use of kanji  when composing Japanese and changes in the use of ruby implementations in text layout methods
+     have been affecting the usage of ruby itself. Ruby was not very popular while the Touyou Kanji Table  (当用漢字表) (the list of kanji characters for everyday use, issued by the
+     Government on November 16, 1946) was in effect because, in principle, it discouraged the use of furigana in its 'directions     for use' section. The <a class="termref" href="terminology.xhtml#term.jouyou-kanji-table">Jouyou Kanji Table</a> (常用漢字表) (the list of kanji characters in common use, issued by the Government to replace the <a class="termref" href="terminology.xhtml#term.touyou-kanji-table">Touyou Kanji Table</a> on October
+     10, 1981) has changed the scope of the list. (The Touyou Kanji Table defined the list of all kanji characters that can be used for
+     any documents, while the Jouyou Kanji Table was designed to be a 'reference guide' for the use of kanji to compose contemporary
+     Japanese for general use in society.)
+     For example, the preface of the Jouyou Kanji Table states that one may consider the use of 'furigana (annotations to indicate pronunciation)'  when the text appears too
+     difficult to read. This is why the use of ruby has been increasing today. The use of ruby is common in magazines and books,
+     and even newspapers have begun to use ruby these days.</p>
+							
+						</td>
+					</tr>
+					<tr>
+						<td class="ft" rowspan="1" colspan="1">
+							
+								
+								<p>(note 2)</p>
+							
+						</td>
+						<td rowspan="1" colspan="1">
+							
+								
+								<p>
+     The specification of ruby composition was first introduced in the second revision of JIS X 4051, which was further revised
+     in 2004 to add <a class="termref" href="terminology.xhtml#term.jukugo-ruby">jukugo-ruby</a>, <a class="termref" href="terminology.xhtml#term.katatsuki">katatsuki-ruby</a> and the dual ruby composition with which two distinct runs of ruby are attached
+     to the same base characters (4.12 Ruby Composition).</p>
+							
+						</td>
+					</tr>
+				</table><p>There are three methods to treat ruby as follows:</p><ol>
+					<li>
+
+<p>Mono-ruby : ruby letters are set in connection with each base character (see <a class="sec_ref" href="positioning_of_monoruby_with_respect_to_base_characters.xhtml#positioning_of_monoruby_with_respect_to_base_characters">3.3.5 Positioning of Mono-ruby with Respect to Base Characters</a>).</p>
+</li>
+					<li>
+
+<p>Jukugo-ruby : ruby letters are set not only in connection with each base character but also treated as a group as kanji compound word  (see <a class="sec_ref" href="positioning_of_jukugoruby_with_respect_to_base_characters.xhtml#positioning_of_jukugoruby_with_respect_to_base_characters">3.3.7 Positioning of Jukugo-ruby with Respect to Base Characters</a> and <a class="sec_ref" href="positioning_of_jukugoruby.xhtml#positioning_of_jukugoruby">Appendix F Positioning of Jukugo-ruby</a>).</p>
+</li>
+					<li>
+
+<p>Group-ruby : The connection between ruby letters and base characters is treated as group-to-group (see <a class="sec_ref" href="positioning_of_groupruby_with_respect_to_base_characters.xhtml#positioning_of_groupruby_with_respect_to_base_characters">3.3.6 Positioning of Group-ruby with Respect to Base Characters</a>).</p>
+</li>
+				</ol><p>Because of different purposes and different functionalities, there are several complicated methods for ruby as follows:</p><ol>
+					<li>
+   
+    
+    <p>
+    PURPOSE: Ruby annotation with kana (usually <a class="characterClass" href="cl-15.xhtml#cl-15">hiragana (cl-15)</a>) to provide readings of <a class="characterClass" href="cl-19.xhtml#cl-19">ideographic characters (cl-19)</a>.
+    There are two types of ruby for this purpose depending on the type of base character:
+</p>
+   
+   <ol>
+    <li>
+    
+     
+     <p>
+     Add one or more <a class="characterClass" href="cl-15.xhtml#cl-15">hiragana (cl-15)</a>  ruby character to indicate the reading (Japanese onyomi or kunyomi) for each base <a class="characterClass" href="cl-19.xhtml#cl-19">ideographic character (cl-19)</a>     (see <a class="figure_ref" href="ruby_and_emphasis_dots.xhtml#fig2_3_2-en">Fig. 3.50</a>).
+      This method, attaching one or several hiragana or katakana characters for each base ideographic character, is called <a class="termref" href="terminology.xhtml#term.mono-ruby">mono-ruby</a>.</p>
+    
+    
+     
+     <div class="figure" id="fig2_3_2-en"><div class="figure-float"><div><img alt="Example of ruby annotation  per ideographic character." width="192" height="288" src="../image/Images-en/img2_3_2.png"/><div class="figureCaption">Fig. 3.50: <span class="caption-body">Example of ruby annotation  per ideographic character.</span></div></div></div></div>
+    
+    
+    </li>
+    <li>
+    
+     
+     <p>In the Japanese writing system, <a class="termref" href="terminology.xhtml#term.compound-word">kanji compound words</a>
+(jukugo) occasionally appear, usually constructed with a couple of
+
+<a class="characterClass" href="cl-19.xhtml#cl-19">ideographic characters (cl-19)</a>. There are two different methods of attaching ruby letters to base
+
+<a class="characterClass" href="cl-19.xhtml#cl-19">ideographic characters (cl-19)</a>
+for these compound words.</p>
+    
+    <ol>
+    <li>
+     
+     
+				 <p><a class="termref2nd" href="terminology.xhtml#term.mono-ruby">Mono-ruby</a>. Ruby letters are attached to each base <a class="characterClass" href="cl-19.xhtml#cl-19">ideographic character (cl-19)</a>, similarly to the previous section (see <a class="figure_ref" href="ruby_and_emphasis_dots.xhtml#fig2_3_3-en">Fig. 3.51</a>).</p>
+     
+    
+     
+     <div class="figure" id="fig2_3_3-en"><div class="figure-float"><div><img alt="Example of mono-ruby method. Ruby letters are attached to each base ideographic character in a compound word." width="117" height="369" src="../image/Images-en/img2_3_3.png"/><div class="figureCaption">Fig. 3.51: <span class="caption-body">Example of mono-ruby method. Ruby letters are attached to each base ideographic character in a compound word.</span></div></div></div></div>
+    
+    
+    <table class="t_note">
+     <tr>
+     <td class="ft" rowspan="1" colspan="1">
+     
+      
+      <p>(note 1)</p>
+     
+     </td>
+     <td rowspan="1" colspan="1">
+     
+      
+      <p>In <a class="figure_ref" href="ruby_and_emphasis_dots.xhtml#fig2_3_3-en">Fig. 3.51</a>, there is a <a class="termref" href="terminology.xhtml#term.quarter-em-space">quarter em space</a> between the base characters "凝" and "視". So when this line happens to appear in the middle of a paragraph, there needs to be some <a class="termref" href="terminology.xhtml#term.line-adjustment">line adjustment</a> processing.</p>
+     
+     </td>
+     </tr>
+    </table>
+    
+    </li>
+    <li>
+     
+     
+     <p><a class="termref" href="terminology.xhtml#term.jukugo-ruby">Jukugo-ruby</a>. Pronunciation is indicated for each <a class="characterClass" href="cl-19.xhtml#cl-19">ideographic character (cl-19)</a>, but the positioning takes into account the fact that together they make up a <a class="termref2nd" href="terminology.xhtml#term.compound-word">compound word</a> (see <a class="figure_ref" href="ruby_and_emphasis_dots.xhtml#fig2_3_4-en">Fig. 3.52</a>). The intention when using jukugo-ruby is to handle the <a class="characterClass" href="cl-19.xhtml#cl-19">ideographic character (cl-19)</a> phrase as one object.</p>
+     
+    
+     
+     <div class="figure" id="fig2_3_4-en"><div class="figure-float"><div><img alt="Example of jukugo-ruby method. Ruby letters are attached to groups of ideographic characters in compound words." width="242" height="360" src="../image/Images-en/img2_3_4.png"/><div class="figureCaption">Fig. 3.52: <span class="caption-body">Example of jukugo-ruby method. Ruby letters are attached to groups of ideographic characters in compound words.</span></div></div></div></div>
+    
+    
+    <table class="t_note">
+     <tr>
+     <td class="ft" rowspan="1" colspan="1">
+     
+      
+      <p>(note 1)</p>
+     
+     </td>
+     <td rowspan="1" colspan="1">
+     
+      
+      <p>There is no difference between <a class="figure_ref" href="ruby_and_emphasis_dots.xhtml#fig2_3_3-en">Fig. 3.51</a>
+of <a class="termref2nd" href="terminology.xhtml#term.mono-ruby">mono-ruby</a> and <a class="figure_ref" href="ruby_and_emphasis_dots.xhtml#fig2_3_4-en">Fig. 3.52</a>
+of <a class="termref2nd" href="terminology.xhtml#term.jukugo-ruby">jukugo-ruby</a>, when the
+number of ruby letters for each base <a class="characterClass" href="cl-19.xhtml#cl-19">ideographic character (cl-19)</a> is one or two. When the mono-ruby approach is adopted, the inter-character space between base <a class="characterClass" href="cl-19.xhtml#cl-19">ideographic characters (cl-19)</a> can be expanded for line adjustment (in <a class="figure_ref" href="ruby_and_emphasis_dots.xhtml#fig2_3_3-en">Fig. 3.51</a>, the inter-character space between "鬼" and "門", or, "方" and "角" can be expanded). When the jukugo-ruby approach is  adopted, line adjustment cannot be applied to the base <a class="characterClass" href="cl-19.xhtml#cl-19">ideographic characters (cl-19)</a>.</p>
+     
+     </td>
+     </tr>
+     <tr>
+     <td class="ft" rowspan="1" colspan="1">
+     
+      
+      <p>(note 2)</p>
+     
+     </td>
+     <td rowspan="1" colspan="1">
+     
+      
+      <p>The following examples show the relationship between ruby letters and base <a class="characterClass" href="cl-19.xhtml#cl-19">ideographic characters (cl-19)</a>.</p>
+     
+<table class="t_sample">
+<tr><td class="ft">
+
+<p>Example of mono-ruby:</p>
+</td>
+<td>
+
+<p>"凝+(ぎよう)" "視+(し)"</p>
+</td></tr>
+<tr><td class="ft">
+
+<p>Example of jukugo-ruby 1:</p>
+</td>
+<td>
+
+<p>"凝+(ぎよう) 視+(し)"</p>
+</td></tr>
+<tr><td class="ft">
+
+<p>Example of jukugo-ruby 2:</p>
+</td>
+<td>
+
+<p>"(凝視)+(ぎよう/し)"</p>
+</td></tr>
+</table>
+     </td>
+     </tr>
+     <tr>
+     <td class="ft" rowspan="1" colspan="1">
+     
+      
+      <p>(note 3)</p>
+     
+     </td>
+     <td rowspan="1" colspan="1">
+     
+      
+      <p>
+      Books commonly adopt kana-based jukugo-ruby for ideographic <a class="termref2nd" href="terminology.xhtml#term.compound-word">compound words</a>. However, due to technical difficulties for rendering jukugo-ruby in machine-assisted text layout, the adoption of kana-based mono-ruby is increasing. For example, newspapers do not use jukugo-ruby, and study aids generally use mono-ruby because it is considered more important to show the readings of each <a class="characterClass" href="cl-19.xhtml#cl-19">ideographic character (cl-19)</a> for students than to be concerned about the beauty of the layout.</p>
+     
+     </td>
+     </tr>
+     <tr>
+     <td class="ft" rowspan="1" colspan="1">
+     
+      
+      <p>(note 4)</p>
+     
+     </td>
+     <td rowspan="1" colspan="1">
+     
+      
+      <p>
+      Multiple ideographic  <a class="termref2nd" href="terminology.xhtml#term.compound-word">compound words</a> can form one compound phrase. In this case, there are two ways to attach ruby, i.e. attaching ruby
+      to the compound phrase as a whole, or to each word which forms the compound (see <a class="figure_ref" href="ruby_and_emphasis_dots.xhtml#fig2_3_5-en">Fig. 3.53</a>). Similarly, a Japanese personal name consists of a given name and a family name, which together form a compound of a full
+      name, and it is an editorial decision whether to attach two runs of ruby, one each for given name and family name, or to attach the
+      full ruby text to the compound which represents the reading of the full name.
+  </p>
+     
+     </td>
+     </tr>
+</table>
+     
+      
+      <div class="figure" id="fig2_3_5-en"><div class="figure-float"><div><img alt="Examples of ruby attachment for a compound phrase." width="284" height="126" src="../image/Images-en/img2_3_5.png"/><div class="figureCaption">Fig. 3.53: <span class="caption-body">Examples of ruby attachment for a compound phrase.</span></div></div></div></div>
+     
+     
+<table class="t_note">
+     <tr>
+     <td class="ft" rowspan="1" colspan="1">
+     
+      
+      <p>(note 5)</p>
+     
+     </td>
+     <td rowspan="1" colspan="1">
+     
+      
+      <p>
+      In most cases, the reading of a ideographic compound word  is just a concatenation of the readings of each individual <a class="characterClass" href="cl-19.xhtml#cl-19">ideographic character (cl-19)</a>, but some phrases
+      have their own native readings (known as jukuji readings) (see <a class="figure_ref" href="ruby_and_emphasis_dots.xhtml#fig2_3_6-en">Fig. 3.54</a>), which cannot be derived from the readings of each character. Attaching
+      ruby to those phrases, which are usually sequences of two or three <a class="characterClass" href="cl-19.xhtml#cl-19">ideographic characters (cl-19)</a>, is essentially the same as attaching ruby in <a class="characterClass" href="cl-16.xhtml#cl-16">katakana (cl-16)</a> to <a class="characterClass" href="cl-19.xhtml#cl-19">ideographic character (cl-19)</a> and/or <a class="characterClass" href="cl-15.xhtml#cl-15">hiragana (cl-15)</a> base characters  (see <a class="figure_ref" href="ruby_and_emphasis_dots.xhtml#fig2_3_6_2-en">Fig. 3.55</a>).</p>
+     
+     </td>
+     </tr>
+    </table>
+     
+      
+      <div class="figure" id="fig2_3_6-en"><div class="figure-float"><div><img alt="Examples of ruby for jukuji readings." width="227" height="108" src="../image/Images-en/img2_3_6.png"/><div class="figureCaption">Fig. 3.54: <span class="caption-body">Examples of ruby for jukuji readings.</span></div></div></div></div>
+     
+     
+    
+    </li>
+    </ol>
+    </li>
+   </ol>
+   </li>
+					<li>
+   
+    
+    <p>PURPOSE: Ruby annotation that annotates a
+
+<a class="characterClass" href="cl-19.xhtml#cl-19">ideographic character (cl-19)</a> or <a class="characterClass" href="cl-15.xhtml#cl-15">hiragana (cl-15)</a>
+word with
+
+<a class="characterClass" href="cl-16.xhtml#cl-16">katakana (cl-16)</a>
+to provide its meaning, together with it's reading. In terms of ruby layout, attaching ruby text to a single character in
+
+<a class="characterClass" href="cl-19.xhtml#cl-19">ideographic character (cl-19)</a>
+is essentially the same as attaching the reading to a
+
+<a class="characterClass" href="cl-19.xhtml#cl-19">ideographic character (cl-19)</a>
+(e.g. attaching ruby text "バザール", 'Bazaar', in
+
+<a class="characterClass" href="cl-15.xhtml#cl-15">hiragana (cl-15)</a> or <a class="characterClass" href="cl-16.xhtml#cl-16">katakana (cl-16)</a>
+to a
+
+<a class="characterClass" href="cl-19.xhtml#cl-19">ideographic character (cl-19)</a>
+"市" is just like attaching the reading "いち" to that character). When attaching
+<a class="characterClass" href="cl-16.xhtml#cl-16">katakana (cl-16)</a>
+ruby text to a run of base text consisting of two or more characters in
+
+<a class="characterClass" href="cl-19.xhtml#cl-19">ideographic character (cl-19)</a> and/or <a class="characterClass" href="cl-15.xhtml#cl-15">hiragana (cl-15)</a>, the ruby text needs to be positioned as if it corresponds to the annotated text itself, no matter how the ruby characters are distributed across each base character. The most typical example of this is attaching ruby text to a kanji compound word to indicate a corresponding loan word in katakana (see <a class="figure_ref" href="ruby_and_emphasis_dots.xhtml#fig2_3_6_2-en">Fig. 3.55</a>). The use of ruby text of this kind is on the increase in proportion to the growing need for translations and loan words. This type of ruby, namely ruby letters that are attached to two or more base characters as one object (note that ruby characters are not limited to <a class="characterClass" href="cl-16.xhtml#cl-16">katakana (cl-16)</a>. <a class="figure_ref" href="ruby_and_emphasis_dots.xhtml#fig2_3_6-en">Fig. 3.54</a> and <a class="figure_ref" href="ruby_and_emphasis_dots.xhtml#fig2_3_7-en">Fig. 3.56</a>), is called <a class="termref" href="terminology.xhtml#term.group-ruby">group-ruby</a>. Group-ruby and it's base characters are unbreakable, because of their behavior as one object (it is possible to break a line in the middle of the base characters where <a class="termref2nd" href="terminology.xhtml#term.jukugo-ruby">jukugo-ruby</a>
+is in use).</p>
+   
+   
+    
+    <div class="figure" id="fig2_3_6_2-en"><div class="figure-float"><div><img alt="Examples of ruby for compound ideographic character words to indicate corresponding words in katakana." width="317" height="147" src="../image/Images-en/img2_3_6_2.png"/><div class="figureCaption">Fig. 3.55: <span class="caption-body">Examples of ruby for compound ideographic character words to indicate corresponding words in katakana.</span></div></div></div></div>
+   
+   
+   <table class="t_note">
+    <tr>
+    <td class="ft" rowspan="1" colspan="1">
+     
+     
+     <p>(note 1)</p>
+     
+    </td>
+    <td rowspan="1" colspan="1">
+     
+     
+     <p>
+     Having said that, the layout of ruby text to a single <a class="characterClass" href="cl-19.xhtml#cl-19">ideographic character (cl-19)</a> is not entirely the same depending on the use of ruby, and may differ according to
+     whether it is for indicating the reading or the meaning. In fact, the <a class="termref" href="terminology.xhtml#term.katatsuki">katatsuki</a>, one of ruby layout per character which will
+     be described in the later section, does allow the <a class="termref" href="terminology.xhtml#term.nakatsuki">nakatsuki</a> layout for those ruby which indicate  meaning.
+ </p>
+     
+    </td>
+    </tr>
+   </table>
+   
+   </li>
+					<li>
+   
+    
+    <p>
+    PURPOSE: Ruby annotation, usually with <a class="characterClass" href="cl-16.xhtml#cl-16">katakana (cl-16)</a> characters, to indicate the reading or the meaning of a Western word used in
+    base text (see <a class="figure_ref" href="ruby_and_emphasis_dots.xhtml#fig2_3_7-en">Fig. 3.56</a>).
+    There are opposite cases where a synonymous Western word in Latin characters is attached as a ruby annotation to a Japanese
+    word in <a class="characterClass" href="cl-19.xhtml#cl-19">ideographic character (cl-19)</a> or <a class="characterClass" href="cl-15.xhtml#cl-15">hiragana (cl-15)</a>  and so on (see <a class="figure_ref" href="ruby_and_emphasis_dots.xhtml#fig2_3_7-en">Fig. 3.56</a>). These cases are less used than a and b, however they are quite common in study guides, translated books and travel guides.
+</p>
+   
+   
+    
+    <div class="figure" id="fig2_3_7-en"><div class="figure-float"><div><img alt="Examples of Latin characters used either in  base text or ruby text for Western words." width="250" height="185" src="../image/Images-en/img2_3_7.png"/><div class="figureCaption">Fig. 3.56: <span class="caption-body">Examples of Latin characters used either in  base text or ruby text for Western words.</span></div></div></div></div>
+   
+   
+				<table class="t_note">
+					<tr>
+						<td class="ft" rowspan="1" colspan="1">
+							
+								
+								<p>(note 1)</p>
+							
+						</td>
+						<td rowspan="1" colspan="1">
+							
+								
+								<p>
+There is no difference in the positioning of ruby text whether attaching ruby characters in
+<a class="characterClass" href="cl-16.xhtml#cl-16">katakana (cl-16)</a> or <a class="characterClass" href="cl-15.xhtml#cl-15">hiragana (cl-15)</a>
+to a Western word in Latin characters or attaching ruby in Latin to a Japanese word in
+<a class="characterClass" href="cl-19.xhtml#cl-19">ideographic character (cl-19)</a> or <a class="characterClass" href="cl-15.xhtml#cl-15">hiragana (cl-15)</a>. The ruby text in either case should be positioned relative to a run of base text to be annotated as in b). However, there is a difference in cases where the lengths of the base text and the ruby text are different. Details are described in <a class="sec_ref" href="adjustments_of_ruby_with_length_longer_than_that_of_the_base_characters.xhtml#adjustments_of_ruby_with_length_longer_than_that_of_the_base_characters">3.3.8 Adjustments of Ruby with Length Longer than that of the Base Characters</a>. When the length of a ruby text in
+ <a class="characterClass" href="cl-19.xhtml#cl-19">ideographic character (cl-19)</a>, <a class="characterClass" href="cl-15.xhtml#cl-15">hiragana (cl-15)</a> or <a class="characterClass" href="cl-16.xhtml#cl-16">katakana (cl-16)</a>
+is shorter than the corresponding base text, the ruby text is, in general, stretched by adding inter-character spaces between ruby characters, and when the length of a ruby text in
+ <a class="characterClass" href="cl-19.xhtml#cl-19">ideographic character (cl-19)</a>, <a class="characterClass" href="cl-15.xhtml#cl-15">hiragana (cl-15)</a> or <a class="characterClass" href="cl-16.xhtml#cl-16">katakana (cl-16)</a>
+is longer than the corresponding base text, the base text is, in general, stretched by adding inter-character spaces between base characters, so that the ruby and base text look similar in length (see <a class="figure_ref" href="ruby_and_emphasis_dots.xhtml#fig2_3_6_2-en">Fig. 3.55</a>). On the other hand, when the base text or ruby text is Latin word, the word is set with western solid setting, and no inter-character space will be added to any ruby or base text in Latin characters no matter how different the ruby and base text look in length (see <a class="figure_ref" href="ruby_and_emphasis_dots.xhtml#fig2_3_7-en">Fig. 3.56</a>). Details will be explained later.</p>
+							
+						</td>
+					</tr>
+				</table>
+				
+   </li>
+					<li>
+   
+    
+    <p>
+    PURPOSE:  Ruby annotation using <a class="characterClass" href="cl-19.xhtml#cl-19">ideographic character (cl-19)</a> for a base text word in <a class="characterClass" href="cl-15.xhtml#cl-15">hiragana (cl-15)</a>. This is called <a class="termref" href="terminology.xhtml#term.furikanji">furikanji</a>, and is very rarely found.</p>
+   
+   </li>
+				</ol><p> Hereafter, mainly the usage of (a) and (b) will be explained.</p></body></html>

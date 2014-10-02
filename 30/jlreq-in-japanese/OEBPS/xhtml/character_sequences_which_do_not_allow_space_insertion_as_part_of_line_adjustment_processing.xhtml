@@ -1,0 +1,122 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja"><head><meta charset="UTF-8"/><meta name="author" content="Japanese Layout Task Force"/><title>日本語組版処理の要件（日本語版）</title><link rel="stylesheet" type="text/css" href="../css/W3C-WG-NOTE.css"/><link rel="stylesheet" type="text/css" href="../css/base.css"/></head><body><h4 id="character_sequences_which_do_not_allow_space_insertion_as_part_of_line_adjustment_processing">3.1.11 <span class="heading"><span class="index" id="ja-subheading2_1_11">行の調整処理</span>で​字間を​空ける処理に​使用しない箇所</span></h4><p>行の調整処理の際に，字間を空けて処理する場合，次の字間には空き量を入れることは避ける（<span class="index" id="d5e5955"><a class="termref" href="terminology.xhtml#term.inseparable-characters-rule">分離禁止</a></span>ともいう）．これは，それらの文字・記号を一体として扱いたいためである（行の調整処理については，<a class="sec_ref" href="line_adjustment.xhtml#line_adjustment">3.8 行の調整処理</a>を参照）．</p><table class="t_note">
+					<tr>
+						<td class="ft" rowspan="1" colspan="1">
+							
+								<p>注1）</p>
+								
+							
+						</td>
+						<td rowspan="1" colspan="1">
+							
+								<p><span class="index" id="d5e5994">行の調整処理</span>の際に，ベタ組の字間を空けて処理できる主な箇所は，<a class="characterClass" href="cl-15.xhtml#cl-15">平仮名（cl-15）</a>，<a class="characterClass" href="cl-16.xhtml#cl-16">片仮名（cl-16）</a>，<a class="characterClass" href="cl-19.xhtml#cl-19">漢字等（cl-19）</a>相互の字間ということができる．なお，空けて調整する場合は，欧文単語間の空き量なども対象になる．</p>
+								
+							
+						</td>
+					</tr>
+				</table><table class="t_note">
+					<tr>
+						<td class="ft" rowspan="1" colspan="1">
+							
+								<p>注2）</p>
+								
+							
+						</td>
+						<td rowspan="1" colspan="1">
+							
+								<p>行の調整処理の際に字間を空ける処理が可能な箇所の詳細は，<a class="sec_ref" href="about_character_classes.xhtml#about_character_classes">3.9 文字クラスについて</a>で説明する文字クラスに従い，表の形式にして<a class="sec_ref" href="opportunities_for_intercharacter_space_expansion_during_line_adjustment.xhtml#opportunities_for_intercharacter_space_expansion_during_line_adjustment">附属書E 行の調整処理で​空ける処理が​可能な箇所</a>で示す．</p>
+								
+							
+						</td>
+					</tr>
+				</table><ol>
+					<li>
+   
+    <p><a class="sec_ref" href="unbreakable_character_sequences.xhtml#unbreakable_character_sequences">3.1.10 分割禁止</a>で掲げた字間は，すべて行の調整処理で字間を空ける箇所としては避ける．</p>
+    
+   
+   <table class="t_note">
+    <tr>
+    <td class="ft" rowspan="1" colspan="1">
+     
+     <p>注1）</p>
+     
+     
+    </td>
+    <td rowspan="1" colspan="1">
+     
+     <p>規定された調整処理では処理できない場合に限り，欧字の単語の字間を空けることを許容する考え方もある．</p>
+     
+     
+    </td>
+    </tr>
+   </table>
+   
+   </li>
+					<li>
+   
+    <p>上記以外では，次も行の調整処理で字間を空ける箇所としては避ける．</p>
+    
+   
+   <ol>
+    <li>
+    
+     <p><span class="index" id="d5e6139"><a class="characterClass" href="cl-01.xhtml#cl-01">始め括弧類（cl-01）</a></span>及び<span class="index" id="d5e6143"><a class="characterClass" href="cl-02.xhtml#cl-02">終わり括弧類（cl-02）</a></span>の前及び後ろ．</p>
+     
+    
+    <table class="t_note">
+     <tr>
+     <td class="ft" rowspan="1" colspan="1">
+     
+      <p>注1）</p>
+      
+     
+     </td>
+     <td rowspan="1" colspan="1">
+     
+      <p><a class="characterClass" href="cl-01.xhtml#cl-01">始め括弧類（cl-01）</a>の後ろ及び<a class="characterClass" href="cl-02.xhtml#cl-02">終わり括弧類（cl-02）</a>の前は，分割禁止であり，かつ行の調整処理で字間を空ける処理を避ける箇所である．これに対し，始め括弧類の前及び終わり括弧類の後ろは，分割禁止ではないが，行の調整処理で字間を空ける処理を避ける箇所である．<a class="characterClass" href="cl-06.xhtml#cl-06">句点類（cl-06）</a>，<a class="characterClass" href="cl-07.xhtml#cl-07">読点類（cl-07）</a>についても，終わり括弧類と同じように考えることができる．</p>
+      
+     
+     </td>
+     </tr>
+    </table>
+    
+    </li>
+    <li>
+    
+     <p><span class="index" id="d5e6219"><a class="characterClass" href="cl-06.xhtml#cl-06">句点類（cl-06）</a></span>及び<span class="index" id="d5e6223"><a class="characterClass" href="cl-07.xhtml#cl-07">読点類（cl-07）</a></span>の前及び後ろ．</p>
+     
+    
+    </li>
+    <li>
+    
+     <p><span class="index" id="d5e6244"><a class="characterClass" href="cl-05.xhtml#cl-05">中点類（cl-05）</a></span>の前及び後ろ．</p>
+     
+    
+    </li>
+    <li>
+    
+     <p><span class="index" id="d5e6262"><a class="characterClass" href="cl-04.xhtml#cl-04">区切り約物（cl-04）</a></span>の前及び後ろ．</p>
+     
+    
+    </li>
+    <li>
+    
+     <p><span class="index" id="d5e6280"><a class="characterClass" href="cl-03.xhtml#cl-03">ハイフン類（cl-03）</a></span>の前及び後ろ．</p>
+     
+    
+    </li>
+    <li>
+    
+     <p>全角アキなどの<span class="index" id="d5e6300">和字間隔</span>の前及び後ろ．</p>
+     
+    
+    </li>
+    <li>
+    
+     <p><span class="index" id="d5e6314"><a class="termref" href="terminology.xhtml#term.jukugo-ruby">熟語ルビ</a></span>が付いた親文字列の字間</p>
+     
+    
+    </li>
+   </ol>
+   </li>
+				</ol></body></html>

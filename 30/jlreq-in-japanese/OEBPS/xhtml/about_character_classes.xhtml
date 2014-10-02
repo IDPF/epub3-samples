@@ -1,0 +1,14 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja"><head><meta charset="UTF-8"/><meta name="author" content="Japanese Layout Task Force"/><title>日本語組版処理の要件（日本語版）</title><link rel="stylesheet" type="text/css" href="../css/W3C-WG-NOTE.css"/><link rel="stylesheet" type="text/css" href="../css/base.css"/></head><body><h3 id="about_character_classes">3.9 <span class="heading"><span id="ja-subheading2_9">文字クラスについて</span></span></h3><h4 id="differences_in_positioning_of_characters_and_symbols">3.9.1 <span class="heading"><span class="index" id="ja-subheading2_9_1">文字・記号により振る舞い方は異なる</span></span></h4><p>文字や記号を行に配置する場合，次のような点でその振る舞い（配置方法）が異なる．</p><ol>
+					<li><p>文字・記号の字幅は，<a class="termref" href="terminology.xhtml#term.full-width">全角</a>か，<a class="termref" href="terminology.xhtml#term.half-width">半角</a>か，又はそれ以外か．</p>
+					</li>
+					<li><p><a class="termref" href="terminology.xhtml#term.line-head">行頭</a>に配置してよいか，又は禁止するのか．配置してよい場合，どのように配置するか．</p>
+					</li>
+					<li><p><a class="termref" href="terminology.xhtml#term.line-end">行末</a>に配置してよいか，又は禁止するのか．配置してよい場合，どのように配置するか．</p>
+					</li>
+					<li><p>文字・記号が並んだ場合，その字間は<a class="termref" href="terminology.xhtml#term.solid-setting">ベタ組</a>にするか，又は一定の空き量をとるのか．例えば，<a class="characterClass" href="cl-19.xhtml#cl-19">漢字等（cl-19）</a>と<a class="characterClass" href="cl-15.xhtml#cl-15">平仮名（cl-15）</a>が並んだ場合，その字間はベタ組であり，<a class="characterClass" href="cl-15.xhtml#cl-15">平仮名（cl-15）</a>の後ろに<a class="characterClass" href="cl-27.xhtml#cl-27">欧文用文字（cl-27）</a>がきた場合，その字間は四分アキとなる．</p>
+					</li>
+					<li><p>文字が並んだ場合，その字間で2行に分割してよいか．例えば，<a class="characterClass" href="cl-24.xhtml#cl-24">連数字中の文字（cl-24）</a>が並んだ場合，その字間では2行に分割してはならない．</p>
+					</li>
+					<li><p><a class="termref" href="terminology.xhtml#term.line-adjustment">行の調整処理</a>の際に，その並んだ文字の字間を使用してよいか．例えば，字間を詰めてよいか，逆に字間を空けてよいか．なお，調整処理の優先順位と調整量の限界も問題となる．</p>
+					</li>
+				</ol></body></html>

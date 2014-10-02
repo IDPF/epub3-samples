@@ -1,0 +1,192 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"><head><meta charset="UTF-8"/><title>Requirements for Japanese Text Layout</title><link rel="stylesheet" type="text/css" href="../css/base.css"/><link rel="stylesheet" type="text/css" href="../css/W3C-WG-NOTE.css"/></head><body><h4 id="processing_of_headnote_footnote_and_sidenote">4.2.7 <span class="heading">Processing of Headnotes (in Vertical Writing Mode), Footnotes (in Vertical Writing Mode) and Sidenotes (in Horizontal Writing Mode)</span></h4><p>Processing of headnotes in vertical writing mode, footnotes in vertical writing mode and sidenotes in horizontal writing mode is very similar, so these processing methods will be described together in this section. These types of notes will be called <a class="termref" href="terminology.xhtml#term.parallel-note">parallel-note</a>s, hereafter.</p><table class="t_note">
+					<tr>
+						<td class="ft" rowspan="1" colspan="1">
+							
+								
+								<p>(note 1)</p>
+							
+						</td>
+						<td rowspan="1" colspan="1">
+							
+								
+								<p>There is no description about headnotes in vertical writing mode, footnotes in vertical writing mode and sidenotes in horizontal writing mode in JIS X 4051.</p>
+							
+						</td>
+					</tr>
+				</table><p>There are the following relationships between the parallel-note and the main text:</p><ol>
+					<li>
+                        
+                           
+                           <p>Setting the note number as a reference mark: Set a number as a reference mark (<a class="characterClass" href="cl-20.xhtml#cl-20">characters as reference marks (cl-20)</a>  at the corresponding main text position, and set the same number at the very top of the parallel-note.</p>
+                        
+                        <table class="t_note">
+                           <tr>
+                              <td class="ft" rowspan="1" colspan="1">
+                                 
+                                    
+                                    <p>(note 1)</p>
+                                 
+                              </td>
+                              <td rowspan="1" colspan="1">
+                                 
+                                    
+                                    <p>Processing of reference marks (<a class="characterClass" href="cl-20.xhtml#cl-20">characters as reference marks (cl-20)</a> is very similar to the processing of endnotes and footnotes in horizontal writing mode.</p>
+                                 
+                              </td>
+                           </tr>
+                        </table>
+                        
+                     </li>
+					<li>
+                        
+                           
+                           <p>Setting symbols as a reference mark: Set a symbol (ex. <span class="character">ASTERISK "*"</span>) beside the corresponding main text position or change the font style or corresponding main text position to another font style (ex. Japanese Gothic) (<a class="figure_ref" href="processing_of_headnote_footnote_and_sidenote.xhtml#fig3_2_25_2-en">Fig. 4.74</a>, <a class="figure_ref" href="processing_of_headnote_footnote_and_sidenote.xhtml#fig3_2_25_3-en">Fig. 4.75</a>).</p>
+                        
+				
+					
+					<div class="figure" id="fig3_2_25_2-en"><div class="figure-float"><div><img alt="Examples of numbers and a symbol to indicate corresponding reference marks" width="437" height="611" src="../image/Images-en/img3_2_25_2.png"/><div class="figureCaption">Fig. 4.74: <span class="caption-body">Examples of numbers and a symbol to indicate corresponding reference marks</span></div></div></div></div>
+				
+				
+					
+					<div class="figure" id="fig3_2_25_3-en"><div class="figure-float"><div><img alt="Examples of changed font style to indicate corresponding reference marks" width="428" height="603" src="../image/Images-en/img3_2_25_3.png"/><div class="figureCaption">Fig. 4.75: <span class="caption-body">Examples of changed font style to indicate corresponding reference marks</span></div></div></div></div>
+				
+                     </li>
+					<li>
+                        
+                           
+                           <p>Set parallel-notes in the same spread where the corresponding main text positions appear without reference marks. Only the key words are emphasized with a difference of font style (ex. Japanese Gothic).</p>
+                        
+                     </li>
+				</ol><p>There are some  issues specific to setting parallel-notes as follows:</p><ol>
+					<li>
+				
+					
+					<p>The character size of parallel-notes is one or two ranks smaller than the character size of main text in the kihon-hanmen.</p>
+				
+</li>
+					<li>
+				
+					
+					<p>The line length of parallel-notes is an integer based multiple of the character size of notes. It depends on the book size; around fifteen characters to twenty characters in a line is recommended. In some cases around twenty five characters is acceptable.</p>
+				
+</li>
+					<li>
+				
+					
+					<p>The line gap of parallel-notes is basically a half em of the character size of the parallel-notes. When the volume of parallel-notes is high, there are cases of one third em.</p>
+				
+</li>
+					<li>
+				
+					
+					<p>The size of the parallel-note area in the block direction is the same as the size of the main text in the kihon-hanmen.</p>
+				
+				<table class="t_note">
+					<tr>
+						<td class="ft" rowspan="1" colspan="1">
+							
+								
+								<p>(note 1)</p>
+							
+						</td>
+						<td rowspan="1" colspan="1">
+							
+								
+								<p>The size of the main text in the kihon-hanmen in the block direction is calculated with character size, number of lines and line gap. The block direction size of the parallel-note area is the same with regards to the result of the calculation. Accordingly, the block direction size of the parallel-note area might be different from the result of following calculation: (character size of parallel-note) × (number of lines of parallel-note + line gap of note × (number of lines of parallel-note − 1).</p>
+							
+						</td>
+					</tr>
+				</table>
+				
+</li>
+					<li>
+				
+					
+					<p>It is recommended to set the space between parallel-notes and the main text in inline direction at around double the em character size of the main text in the kihon-hanmen. </p>
+				
+</li>
+					<li>
+				
+					
+					<p>Usually, indentation of the second line and after, like end notes,  is not applied to parallel-notes. In the majority of cases, the first line of a parallel-note is set as tentsuki. There are cases where the first line is indented by one a em character size of the parallel-notes, like common paragraphs.</p>
+				
+</li>
+					<li>
+				
+					
+					<p>The inter-letter space between the note number  and the following parallel-note text is around one em of a parallel-note character size. There are cases where the note number and target word are changed to a different font style (ex. Japanese Gothic) and the note number and the  target word are set solid. The inter-letter space between the target word and parallel-note text is one em of the parallel-note text size (see <a class="figure_ref" href="processing_of_headnote_footnote_and_sidenote.xhtml#fig3_2_25-en">Fig. 4.76</a>).</p>
+				
+				
+					
+					<div class="figure" id="fig3_2_25-en"><div class="figure-float"><div><img alt="Examples of headnotes in vertical writing mode" width="328" height="369" src="../image/Images-en/img3_2_25.png"/><div class="figureCaption">Fig. 4.76: <span class="caption-body">Examples of headnotes in vertical writing mode</span></div></div></div></div>
+				
+				
+</li>
+				</ol><p>The setting  of parallel-notes and the main text area is as follows:</p><ol>
+					<li>
+                        
+                           
+                           <p>The position of target text and the position of a parallel-note in block direction are aligned as near as possible.
+                           In vertical writing mode, the right edge of the target word and the right edge of the parallel-note are aligned. In horizontal writing mode, the upper edge of the target word and the upper edge of the parallel-note are aligned (see <a class="figure_ref" href="processing_of_headnote_footnote_and_sidenote.xhtml#fig3_2_26-en">Fig. 4.77</a>).</p>
+                        
+                        
+                           
+                           <div class="figure" id="fig3_2_26-en"><div class="figure-float"><div><img alt="Example one of headnotes in vertical writing mode" width="324" height="456" src="../image/Images-en/img3_2_26.png"/><div class="figureCaption">Fig. 4.77: <span class="caption-body">Example one of headnotes in vertical writing mode</span></div></div></div></div>
+                        
+                        
+                     </li>
+					<li>
+                        
+                           
+                           <p>After these methods are applied, if the parallel-note text overflows, there needs to be some arrangement to handle that within the page. In vertical writing mode, the parallel-note positions are shifted to the right, and in horizontal writing mode, the parallel-note positions are shift above (see <a class="figure_ref" href="processing_of_headnote_footnote_and_sidenote.xhtml#fig3_2_27-en">Fig. 4.78</a>). This arrangement is done until the first parallel-note reaches  the right edge in vertical writing mode or  the top edge in horizontal writing mode. If there is more overflow, the overflowed part of the parallel-notes is set at the top of the next page. In vertical writing mode, arrangements may be applied not within the page but within the spread.</p>
+                        
+                        
+                           
+                           <div class="figure" id="fig3_2_27-en"><div class="figure-float"><div><img alt="Example two of headnote in vertical writing mode" width="331" height="464" src="../image/Images-en/img3_2_27.png"/><div class="figureCaption">Fig. 4.78: <span class="caption-body">Example two of headnote in vertical writing mode</span></div></div></div></div>
+                        
+                        
+                        <table class="t_note">
+                           <tr>
+                              <td class="ft" rowspan="1" colspan="1">
+                                 
+                                    
+                                    <p>(note 1)</p>
+                                 
+                              </td>
+                              <td rowspan="1" colspan="1">
+                                 
+                                    
+                                    <p>When the overflowed part of the parallel-notes is set on the next page, there are cases where a line is inserted between the overflowed part and the parallel-notes in the page.</p>
+                                 
+                              </td>
+                           </tr>
+                        </table>
+                        
+                     </li>
+					<li>
+                        
+                           
+                           <p>When there are multiple parallel-notes  set in the same page or the same spread, the following methods are applied:</p>
+                        
+                        <ol>
+                           <li>
+                              
+                                 
+                                 <p>The line gap between the two different parallel-notes is explicitly specified, or the value for the line gap within the parallel-note itself is applied if there is no explicit instruction. </p>
+                              
+                           </li>
+                           <li>
+                              
+                                 
+                                 <p>The arrangement of positioning is done as follows. First, the parallel-note positions are settled from first parallel-note, and second parallel-note and after is set with the instructed line gap or corresponding position to the target word in the main text. Second, if the parallel-note will overflow, the parallel-notes are set from the bottom of parallel-note area. Third, if the parallel-notes still overflow, parallel-notes are set from the top of the parallel-note area with appropriate line gap, and the overflowed part of the parallel-notes is set at the top of the next page or next spread.</p>
+                              
+                           </li>
+                           <li>
+                              
+                                 
+                                 <p>When the parallel-notes will overflow to the next page or next spread, the instructed line gap is inserted between the overflowed part of the parallel-notes and the original parallel-note part. The realm after the overflowed part is the area for the original parallel-notes. </p>
+                              
+                           </li>
+                        </ol>
+                     </li>
+				</ol></body></html>

@@ -1,0 +1,70 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja"><head><meta charset="UTF-8"/><meta name="author" content="Japanese Layout Task Force"/><title>日本語組版処理の要件（日本語版）</title><link rel="stylesheet" type="text/css" href="../css/W3C-WG-NOTE.css"/><link rel="stylesheet" type="text/css" href="../css/base.css"/></head><body><h4 id="single_line_alignment_processing">3.5.3 <span class="heading"><span class="index" id="ja-subheading2_5_3">そろえの処理</span></span></h4><p>日本語組版でいう“<span class="index" id="d5e14475"><a class="termref" href="terminology.xhtml#term.single-line-alignment-method">そろえ</a></span>”とは，1行の文字列について，指定した位置に文字の配置位置を合わせることである．見出しや詩などの比較的短い行をある一定の長さと位置に調整することである．次のような方法がある（<a class="figure_ref" href="single_line_alignment_processing.xhtml#fig2_5_8-ja">図 3.101</a>）．指定された行長以下の文字列を処理する方法なので，見出しや，複数行からなるが短い文章で構成される“詩”などで，指定の位置にそろえる場合に利用されている．</p><div class="figure" id="fig2_5_8-ja"><div class="figure-float"><div><img alt="そろえの配置例" width="448" height="510" src="../image/Images-ja/img2_5_8.png"/><div class="figureCaption">図 3.101 <span class="caption-body">そろえの配置例</span></div></div></div></div><table class="t_note">
+					<tr>
+						<td class="ft" rowspan="1" colspan="1">
+							
+								<p>注1）</p>
+								
+							
+						</td>
+						<td rowspan="1" colspan="1">
+							
+								<p>そろえの処理については，JIS X 4051では“4.18 そろえ等の処理”に規定されている．</p>
+								
+							
+						</td>
+					</tr>
+				</table><ol>
+					<li>
+   
+    <p><span class="index" id="d5e14554"><a class="termref" href="terminology.xhtml#term.centering">中央そろえ</a></span>：隣接する文字の字間は，原則として<a class="termref" href="terminology.xhtml#term.solid-setting">ベタ組</a>（和文と欧文との字間，<a class="characterClass" href="cl-01.xhtml#cl-01">始め括弧類（cl-01）</a>の前，<a class="characterClass" href="cl-02.xhtml#cl-02">終わり括弧類（cl-02）</a>の後ろなど<a class="sec_ref" href="spacing_between_characters.xhtml#spacing_between_characters">附属書B 文字間の空き量</a>に示した原則とする空き量が必要なときは，その空き量を入れる）とするか，又は明示的に指定された空き量がある場合はその空き量を挿入し，行頭側及び行末側の空き量を均等にし，文字列の中央を，行の中央の位置に合わせて配置する．</p>
+    
+   
+   </li>
+					<li>
+   
+    <p><span class="index" id="d5e14606"><a class="termref" href="terminology.xhtml#term.line-head-alignment">行頭そろえ</a></span>：隣接する文字の字間は，原則としてベタ組（和文と欧文との字間，<a class="characterClass" href="cl-01.xhtml#cl-01">始め括弧類（cl-01）</a>の前，<a class="characterClass" href="cl-02.xhtml#cl-02">終わり括弧類（cl-02）</a>の後ろなど<a class="sec_ref" href="spacing_between_characters.xhtml#spacing_between_characters">附属書B 文字間の空き量</a>に示した原則とする空き量が必要なときは，その空き量を入れる）とするか，又は明示的に指定された空き量がある場合はその空き量を挿入し，文字列の先頭を行頭の位置に合わせ，1行に満たないときは行末側を空けて配置する．</p>
+    
+   
+   </li>
+					<li>
+   
+    <p><span class="index" id="d5e14649"><a class="termref" href="terminology.xhtml#term.line-end-alignment">行末そろえ</a></span>：隣接する文字の字間は，原則としてベタ組（和文と欧文との字間，<a class="characterClass" href="cl-01.xhtml#cl-01">始め括弧類（cl-01）</a>の前，<a class="characterClass" href="cl-02.xhtml#cl-02">終わり括弧類（cl-02）</a>の後ろなど<a class="sec_ref" href="spacing_between_characters.xhtml#spacing_between_characters">附属書B 文字間の空き量</a>に示した原則とする空き量が必要なときは，その空き量を入れる）とするか，又は明示的に指定された空き量がある場合はその空き量を挿入し，文字列の末尾を行末の位置に合わせ，1行に満たないときは行頭側を空けて配置する．</p>
+    
+   
+   </li>
+					<li>
+   
+    <p><span class="index" id="d5e14693"><a class="termref" href="terminology.xhtml#term.even-inter-character-spacing">均等割り</a></span>：隣接する文字の字間は，原則としてベタ組（和文と欧文との字間，<a class="characterClass" href="cl-01.xhtml#cl-01">始め括弧類（cl-01）</a>の前，<a class="characterClass" href="cl-02.xhtml#cl-02">終わり括弧類（cl-02）</a>の後ろなど<a class="sec_ref" href="spacing_between_characters.xhtml#spacing_between_characters">附属書B 文字間の空き量</a>に示した原則とする空き量が必要なときは，その空き量を入れる）とするか，又は明示的に指定された空き量がある場合はその空き量を挿入し，そのうえで，行の調整を行う際に空ける調整が可能な箇所で字間を均等に空けて，文字列の先頭を行頭の位置に，文字列の末尾を行末の位置に合わせる．</p>
+    
+   
+   </li>
+				</ol><table class="t_note">
+					<tr>
+						<td class="ft" rowspan="1" colspan="1">
+							
+								<p>注1）</p>
+								
+							
+						</td>
+						<td rowspan="1" colspan="1">
+							
+								<p>そろえは，見出しや<a class="termref" href="terminology.xhtml#term.table">表</a>の項目の配置方法でいくつかの方法が行われている．例えば，<span class="index" id="d5e14762">横組の見出し</span>は左右のバランスを考慮し<a class="termref2nd" href="terminology.xhtml#term.centering">中央そろえ</a>が多いが，<a class="termref2nd" href="terminology.xhtml#term.line-head-alignment">行頭そろえ</a>にする例もある．</p>
+								
+							
+						</td>
+					</tr>
+					<tr>
+						<td class="ft" rowspan="1" colspan="1">
+							
+								<p>注2）</p>
+								
+							
+						</td>
+						<td rowspan="1" colspan="1">
+							
+								<p><span class="index" id="d5e14807"><a class="termref2nd" href="terminology.xhtml#term.even-inter-character-spacing">均等割り</a></span>は，俳句を別行にして掲げる場合によく利用されている（<a class="figure_ref" href="single_line_alignment_processing.xhtml#fig2_5_9-ja">図 3.102</a>）．</p>
+								
+							
+						</td>
+					</tr>
+				</table><div class="figure" id="fig2_5_9-ja"><div class="figure-float"><div><img alt="均等割りにした俳句の配置例" width="520" height="515" src="../image/Images-ja/img2_5_9.png"/><div class="figureCaption">図 3.102 <span class="caption-body">均等割りにした俳句の配置例</span></div></div></div></div></body></html>

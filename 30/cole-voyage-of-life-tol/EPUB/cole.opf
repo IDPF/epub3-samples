@@ -31,8 +31,8 @@
     <item id="prt" href="images/portrait.jpg" media-type="image/jpeg" properties="cover-image"/>
     <item id="nav" href="xhtml/nav.xhtml" media-type="application/xhtml+xml" properties="nav"/>
     <item id="css" href="css/cole.css" media-type="text/css"/>
-    <item id="scrpt" href="script/togglage.js" media-type="application/javascript"/>
-    <item id="jq" href="script/jquery-1.7.1.min.js" media-type="application/javascript"/>
+    <item id="scrpt" href="script/togglage.js" media-type="text/javascript"/>
+    <item id="jq" href="script/jquery-1.7.1.min.js" media-type="text/javascript"/>
   </manifest>
   <spine>
     <itemref idref="i" properties="rendition:layout-reflowable rendition:spread-auto"/>

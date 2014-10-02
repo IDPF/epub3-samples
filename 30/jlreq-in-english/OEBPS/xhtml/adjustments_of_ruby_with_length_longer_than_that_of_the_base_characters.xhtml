@@ -1,0 +1,266 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"><head><meta charset="UTF-8"/><title>Requirements for Japanese Text Layout</title><link rel="stylesheet" type="text/css" href="../css/base.css"/><link rel="stylesheet" type="text/css" href="../css/W3C-WG-NOTE.css"/></head><body><h4 id="adjustments_of_ruby_with_length_longer_than_that_of_the_base_characters">3.3.8 <span class="heading"><span class="index" id="en-subheading2_3_8">Adjustments of Ruby with Length Longer than that of the Base Characters</span></span></h4><p>
+   When the length of any ruby text is shorter than that of the base characters, the main text can be just set solid because
+   there is no need for any adjustment of the inter-character spacing between base characters  and
+   their adjacent characters in the main text.</p><div class="figure" id="fig2_3_29-en"><div class="figure-float"><div><img alt="Set solid when the length of ruby text is shorter than that of base characters." width="153" height="325" src="../image/Images-en/img2_3_29.png"/><div class="figureCaption">Fig. 3.78: <span class="caption-body">Set solid when the length of ruby text is shorter than that of base characters.</span></div></div></div></div><p>
+   When the length of the ruby text is longer than that of the base characters, the method of composing the main text depends on how
+   much the ruby text hangs over the <a class="characterClass" href="cl-19.xhtml#cl-19">ideographic character (cl-19)</a>, <a class="characterClass" href="cl-15.xhtml#cl-15">hiragana (cl-15)</a> or <a class="termref" href="terminology.xhtml#term.punctuation-marks">punctuation marks</a>, which are  attached to the base
+   characters. The following are the general rules (see <a class="figure_ref" href="adjustments_of_ruby_with_length_longer_than_that_of_the_base_characters.xhtml#fig2_3_30-en">Fig. 3.79</a> and <a class="figure_ref" href="adjustments_of_ruby_with_length_longer_than_that_of_the_base_characters.xhtml#fig2_3_31-en">Fig. 3.80</a>). They were established especially in order to avoid misreading and to maintain the beauty of the layout.
+Noted that the detailed value of spaces between characters for cases of ruby letters hanging over the base characters is described in <a href="spacing_between_characters.xhtml#spacing_between_characters">"Appendix B Spacing between Characters"</a> as Table 1 in accordance with <a class="sec_ref" href="about_character_classes.xhtml#about_character_classes">3.9 About Character Classes</a>.
+</p><div class="figure" id="fig2_3_30-en"><div class="figure-float"><div><img alt="Example 1 of distribution of ruby characters overhanging adjacent characters." width="201" height="684" src="../image/Images-en/img2_3_30.png"/><div class="figureCaption">Fig. 3.79: <span class="caption-body">Example 1 of distribution of ruby characters overhanging adjacent characters.</span></div></div></div></div><div class="figure" id="fig2_3_31-en"><div class="figure-float"><div><img alt="Example 2 of distribution of ruby characters overhanging adjacent characters." width="127" height="684" src="../image/Images-en/img2_3_31.png"/><div class="figureCaption">Fig. 3.80: <span class="caption-body">Example 2 of distribution of ruby characters overhanging adjacent characters.</span></div></div></div></div><ol>
+					<li>
+   
+    
+    <p>
+    Ruby text shall not hang over the <a class="characterClass" href="cl-19.xhtml#cl-19">ideographic characters (cl-19)</a> adjacent to the base characters.
+</p>
+   
+   </li>
+					<li>
+   
+    
+    <p>
+  When the adjacent character is a <a class="characterClass" href="cl-15.xhtml#cl-15">hiragana (cl-15)</a>, <a class="characterClass" href="cl-16.xhtml#cl-16">katakana (cl-16)</a>, <a class="characterClass" href="cl-10.xhtml#cl-10">prolonged sound mark (cl-10)</a> or <a class="characterClass" href="cl-11.xhtml#cl-11">small kana (cl-11)</a>, the ruby text may overhang the character up to the full-width size of the ruby characters.  </p>
+   
+
+				<table class="t_note">
+					<tr>
+						<td class="ft" rowspan="1" colspan="1">
+							
+								
+								<p>(note 1)</p>
+							
+						</td>
+						<td rowspan="1" colspan="1">
+							
+								
+								<p>Because ruby letter may go over the base characters and overhang to adjacent <a class="characterClass" href="cl-15.xhtml#cl-15">hiragana (cl-15)</a> etc. up to the full-width size of a ruby letter, ruby letters from before and from after a base <a class="characterClass" href="cl-15.xhtml#cl-15">hiragana (cl-15)</a> may be consecutive without space like <a class="figure_ref" href="adjustments_of_ruby_with_length_longer_than_that_of_the_base_characters.xhtml#fig2_3_29_2-en">Fig. 3.81</a>. Such cases are not recommended because of the possibility of misreading. It is recommended to insert one em space between former ruby letters and latter ruby letters. There are to ways to carry out this. One is to reduce the maximum size of overhang to the <a class="characterClass" href="cl-15.xhtml#cl-15">hiragana (cl-15)</a> base character of before ruby letter and after ruby letter, and the other is to reduce the maximum size of overhang to the <a class="characterClass" href="cl-15.xhtml#cl-15">hiragana (cl-15)</a> base character of after ruby letter. The latter case is carried over to differently set the limit of overhang from before and from after. Firstly, set the ruby letters from before as usual, i.e. ruby letter may overhang up to the full-width size of a ruby letter. Secondly, ruby letter from after shall be set with one em space before, namely, the ruby letter from after can not go over the base <a class="characterClass" href="cl-15.xhtml#cl-15">hiragana (cl-15)</a> letter in between. Hence, appropriate size space shall be inserted between base characters themselves (see <a class="figure_ref" href="adjustments_of_ruby_with_length_longer_than_that_of_the_base_characters.xhtml#fig2_3_29_3-en">Fig. 3.82</a>).</p>
+							
+						</td>
+					</tr>
+				</table>
+							
+								
+								<div class="figure" id="fig2_3_29_2-en"><div class="figure-float"><div><img alt="An example of not recommended case that two different group of ruby letters are consecutive without space" width="153" height="181" src="../image/Images-en/img2_3_29_2.png"/><div class="figureCaption">Fig. 3.81: <span class="caption-body">An example of not recommended case that two different group of ruby letters are consecutive without space</span></div></div></div></div>
+							
+							
+							
+								
+								<div class="figure" id="fig2_3_29_3-en"><div class="figure-float"><div><img alt="An example of  two different group of ruby letters are consecutive with space" width="153" height="199" src="../image/Images-en/img2_3_29_3.png"/><div class="figureCaption">Fig. 3.82: <span class="caption-body">An example of  two different group of ruby letters are consecutive with space</span></div></div></div></div>
+							
+							
+				
+   </li>
+					<li>
+   
+    
+    <p>
+The ruby letter may go over the base characters and overhang the <a class="termref" href="terminology.xhtml#term.half-em-space">half em spaces</a> which are inserted after <a class="characterClass" href="cl-02.xhtml#cl-02">closing brackets (cl-02)</a>, <a class="characterClass" href="cl-06.xhtml#cl-06">full stops (cl-06)</a>
+or <a class="characterClass" href="cl-07.xhtml#cl-07">commas (cl-07)</a>, set before the target ruby object, up to the  full-width size of a ruby letter. Also, the ruby letter may go over the base characters and hang over the half em spaces which are inserted before <a class="characterClass" href="cl-01.xhtml#cl-01">opening brackets (cl-01)</a>, set after the target ruby object, up to the  full -width size of a ruby letter. Note that when the half em spaces are reduced for line adjustment, the room for ruby letter overhang is also compressed to the reduced space size. (For example, if the space is a quarter em in the base character size, the ruby letter can overhang by a <a class="termref" href="terminology.xhtml#term.half-em">half em</a> in ruby letter size.)</p>
+   
+   </li>
+					<li>
+   
+    
+    <p>
+  When the adjacent character is an <a class="characterClass" href="cl-08.xhtml#cl-08">inseparable character (cl-08)</a>, the ruby text may overhang the character up to the full-width size
+ of a ruby character.
+ </p>
+   
+   </li>
+					<li>
+   
+    
+    <p>
+  When the adjacent character is one of the <a class="characterClass" href="cl-05.xhtml#cl-05">middle dots (cl-05)</a>, the ruby text may overhang the middle dots, in principle, up to the full-width
+size of a ruby character. But if there is any reduction of space size before and after the middle dots as a result of the line
+ adjustment, the amount of the extension shall be up to the amount of space size after the middle dots plus 1/2 a ruby character size when the middle dots are set before the ruby object, or the space size before the middle dots plus 1/2 a ruby character size when the middle dots are set after the ruby object.
+ </p>
+   
+   </li>
+					<li>
+   
+    
+    <p>
+  When the adjacent character is one of the <a class="characterClass" href="cl-02.xhtml#cl-02">closing brackets (cl-02)</a>, the ruby text may go over the base characters up to the full-width size of a ruby character. Note that the overhang must not go beyond the closing bracket itself.
+ </p>
+   
+   </li>
+					<li>
+   
+    
+    <p>
+  When the adjacent character is a <a class="characterClass" href="cl-07.xhtml#cl-07">comma (cl-07)</a> or <a class="characterClass" href="cl-06.xhtml#cl-06">full stop (cl-06)</a>, the ruby text may go over the base characters and overhang the comma or full stop up to the full-width
+ size of a ruby character. Note that the overhang must not go beyond the comma or the period itself.
+ </p>
+   
+   </li>
+					<li>
+   
+    
+    <p>
+Also, when the adjacent character is one of the <a class="characterClass" href="cl-01.xhtml#cl-01">opening brackets (cl-01)</a> before the ruby object, the ruby text may go over the base characters and hang over the opening brackets up to the full-width size of a ruby character. Note that the overhang must not go beyond the opening brackets.</p>
+   
+   </li>
+				</ol><table class="t_note">
+					<tr>
+						<td class="ft" rowspan="1" colspan="1">
+							
+								
+								<p>(note 1)</p>
+							
+						</td>
+						<td rowspan="1" colspan="1">
+							
+								
+								<p>There is an opinion that it is not good style to hang ruby characters over <a class="characterClass" href="cl-01.xhtml#cl-01">opening brackets (cl-01)</a>, especially <span class="character">LEFT CORNER BRACKET "「"</span> and <span class="character">RIGHT CORNER BRACKET "」"</span>. When this opinion holds, there are two possibilities. One is not  allow ruby characters to overhang the <a class="characterClass" href="cl-01.xhtml#cl-01">opening brackets (cl-01)</a>. The other is allow ruby characters to overhang the opening brackets up to 1/2 the size of a ruby character.</p>
+							
+						</td>
+					</tr>
+					<tr>
+						<td class="ft" rowspan="1" colspan="1">
+							
+								
+								<p>(note 2)</p>
+							
+						</td>
+						<td rowspan="1" colspan="1">
+							
+								
+								<p>
+JIS X 4051 classifies katakana characters and kanji characters in same class. Accordingly, in JIS X 4051 it is prohibited for ruby characters to overhang adjacent katakana characters.</p>
+							
+						</td>
+					</tr>
+					<tr>
+						<td class="ft" rowspan="1" colspan="1">
+							
+								
+								<p>(note 3)</p>
+							
+						</td>
+						<td rowspan="1" colspan="1">
+							
+								
+								<p>
+     
+   There is another variation that allows ruby text to overhang any <a class="characterClass" href="cl-19.xhtml#cl-19">ideographic characters (cl-19)</a>, <a class="characterClass" href="cl-15.xhtml#cl-15">hiragana (cl-15)</a> or <a class="characterClass" href="cl-16.xhtml#cl-16">katakana (cl-16)</a> up to the full-width
+ size of a ruby character (see <a class="figure_ref" href="adjustments_of_ruby_with_length_longer_than_that_of_the_base_characters.xhtml#fig2_3_32-en">Fig. 3.83</a>).
+</p>
+							
+						</td>
+					</tr>
+</table><div class="figure" id="fig2_3_32-en"><div class="figure-float"><div><img alt="Example 3 of distribution of ruby characters overhanging adjacent characters." width="136" height="702" src="../image/Images-en/img2_3_32.png"/><div class="figureCaption">Fig. 3.83: <span class="caption-body">Example 3 of distribution of ruby characters overhanging adjacent characters.</span></div></div></div></div><table class="t_note">
+					<tr>
+						<td class="ft" rowspan="1" colspan="1">
+							
+								
+								<p>(note 4)</p>
+							
+						</td>
+						<td rowspan="1" colspan="1">
+							
+								
+								<p>
+     
+ There is a further variation that does not allow  ruby text to overhang any  <a class="characterClass" href="cl-19.xhtml#cl-19">ideographic (cl-19)</a>, <a class="characterClass" href="cl-15.xhtml#cl-15">hiragana (cl-15)</a> or <a class="characterClass" href="cl-16.xhtml#cl-16">katakana (cl-16)</a> characters (see
+ <a class="figure_ref" href="adjustments_of_ruby_with_length_longer_than_that_of_the_base_characters.xhtml#fig2_3_33-en">Fig. 3.84</a>).
+</p>
+							
+						</td>
+					</tr>
+				</table><div class="figure" id="fig2_3_33-en"><div class="figure-float"><div><img alt="Example 4 of distribution of ruby characters overhanging adjacent characters." width="136" height="747" src="../image/Images-en/img2_3_33.png"/><div class="figureCaption">Fig. 3.84: <span class="caption-body">Example 4 of distribution of ruby characters overhanging adjacent characters.</span></div></div></div></div><p>
+   
+   When the line head starts with ruby annotated text where the ruby text length is shorter than that of the base characters,
+   compose the text so that the first base character is aligned with the line head. Similarly, when ruby annotated
+   text ends at the line end and the ruby length is shorter than that of the basic characters, compose the text so that the
+   last basic character is aligned with the line end.
+</p><p>
+   
+   When the line head starts with ruby annotated text where the ruby text length is longer than that of the base characters, compose the text so that the first ruby character
+   which overhangs the base text is aligned with the line head, and vice versa (see <a class="figure_ref" href="adjustments_of_ruby_with_length_longer_than_that_of_the_base_characters.xhtml#fig2_3_34-en">Fig. 3.85</a>). Alternatively, there is a variation by which the text is composed so that the first base character is aligned with the line head,
+   and vice versa (see <a class="figure_ref" href="adjustments_of_ruby_with_length_longer_than_that_of_the_base_characters.xhtml#fig2_3_35-en">Fig. 3.86</a>).
+</p><div class="figure" id="fig2_3_34-en"><div class="figure-float"><div><img alt="Example 1 of positioning of ruby characters at the line head and at the line end." width="245" height="264" src="../image/Images-en/img2_3_34.png"/><div class="figureCaption">Fig. 3.85: <span class="caption-body">Example 1 of positioning of ruby characters at the line head and at the line end.</span></div></div></div></div><div class="figure" id="fig2_3_35-en"><div class="figure-float"><div><img alt="Example 2 of positioning of ruby characters at the line head and at the line end." width="244" height="264" src="../image/Images-en/img2_3_35.png"/><div class="figureCaption">Fig. 3.86: <span class="caption-body">Example 2 of positioning of ruby characters at the line head and at the line end.</span></div></div></div></div><p>
+   
+   When aligning the first base character to the line head and the last base character to the line end, ruby text
+   is not allowed to extend beyond the hanmen or the area of the <a class="termref" href="terminology.xhtml#term.column">column</a>. If it does, the following adjustments should be considered
+   in positioning base characters and ruby characters.
+</p><ol>
+					<li>
+   
+    
+    <p>
+    
+    <a class="termref2nd" href="terminology.xhtml#term.mono-ruby">Mono-ruby</a> at the line head: Make adjustments so that the top of the ruby text is aligned with that of the base
+    characters (see <a class="figure_ref" href="adjustments_of_ruby_with_length_longer_than_that_of_the_base_characters.xhtml#fig2_3_35-en">Fig. 3.86</a>).
+</p>
+   
+   </li>
+					<li>
+   
+    
+    <p>
+    
+    <a class="termref2nd" href="terminology.xhtml#term.mono-ruby">Mono-ruby</a> at the line end: Make adjustments so that the bottom of the ruby text is aligned with that of the last base
+    character (see <a class="figure_ref" href="adjustments_of_ruby_with_length_longer_than_that_of_the_base_characters.xhtml#fig2_3_35-en">Fig. 3.86</a>).
+</p>
+   
+   </li>
+					<li>
+   
+    
+    <p><a class="termref2nd" href="terminology.xhtml#term.group-ruby">Group-ruby</a> at the line head: Make adjustments so that the top of the ruby text is aligned with that of the first base character, and add the same amount of inter-character space between the base characters and between the end of the last base character and the end of the last ruby character after the last base character (the method specified in JIS X 4051) (see <a class="figure_ref" href="adjustments_of_ruby_with_length_longer_than_that_of_the_base_characters.xhtml#fig2_3_36-en">Fig. 3.87</a>).</p>
+   
+   
+    
+    <div class="figure" id="fig2_3_36-en"><div class="figure-float"><div><img alt="Example 3 of positioning of ruby characters at the line head and at the line end." width="244" height="264" src="../image/Images-en/img2_3_36.png"/><div class="figureCaption">Fig. 3.87: <span class="caption-body">Example 3 of positioning of ruby characters at the line head and at the line end.</span></div></div></div></div>
+   
+   
+   </li>
+					<li>
+   
+    
+    <p>Group-ruby at the line end: Make adjustments so that the end of the ruby text is aligned with that of the last base character  and add the same amount of inter-character space between the base characters and the space between the start of the base text and the start of the ruby text (the method specified in JIS X 4051) (see <a class="figure_ref" href="adjustments_of_ruby_with_length_longer_than_that_of_the_base_characters.xhtml#fig2_3_36-en">Fig. 3.87</a>).</p>
+   
+   </li>
+					<li>
+   
+    
+    <p>
+    <a class="termref2nd" href="terminology.xhtml#term.jukugo-ruby">Jukugo-ruby</a> at the line head or at the line end: Make the same adjustments as described in (c) or (d) for the <a class="termref2nd" href="terminology.xhtml#term.group-ruby">group-ruby</a>.
+</p>
+   
+   </li>
+					<li>
+   
+    
+    <p>
+    <a class="termref2nd" href="terminology.xhtml#term.jukugo-ruby">Jukugo-ruby</a> at the line head: Make adjustments so that the top of the ruby text is aligned with that of the first base
+    character. A run of ruby characters for a base character may overhang the adjacent base characters of the same    kanji compound word, up to the full-width size (or one and a half of it) of a ruby character. If the extension should go
+    beyond the limit, just force the ruby text out of the base characters, or make a further adjustment by adding inter-character
+    space between the base characters.</p>
+   
+   </li>
+					<li>
+   
+    
+    <p>
+    <a class="termref2nd" href="terminology.xhtml#term.jukugo-ruby">Jukugo-ruby</a> at the line end: Make adjustments so that the end of the ruby text is aligned with that of the last
+    base character. A run of ruby characters for a base character may overhang the adjacent base characters of
+    the same kanji compound word, up to the full-width size (or one and a half of it) of the ruby characters. If the extension should
+    go  beyond the limit, just force the ruby text out of the base characters, or make a further adjustment by adding
+    inter-character space between the base characters.</p>
+   
+   </li>
+					<li>
+   
+    
+    <p>
+    <a class="termref2nd" href="terminology.xhtml#term.jukugo-ruby">Jukugo-ruby</a> split across two lines: jukugo-ruby can be split across two lines, with one part  at the line end and the other at the line head.
+    In the case of a compound word with two <a class="characterClass" href="cl-19.xhtml#cl-19">ideographic characters (cl-19)</a>, it is as the same as dealing with one <a class="characterClass" href="cl-19.xhtml#cl-19">ideographic character (cl-19)</a> with a <a class="termref2nd" href="terminology.xhtml#term.mono-ruby">mono-ruby</a>
+    text at the line end and the other <a class="characterClass" href="cl-19.xhtml#cl-19">ideographic characters (cl-19)</a> with another mono-ruby text at the next line head. In the case of a phrase
+    with three <a class="characterClass" href="cl-19.xhtml#cl-19">ideographic characters (cl-19)</a>, handle one <a class="characterClass" href="cl-19.xhtml#cl-19">ideographic character (cl-19)</a> with mono-ruby text and the remaining two <a class="characterClass" href="cl-19.xhtml#cl-19">ideographic characters (cl-19)</a> with jukugo-ruby,
+    and vice versa. The layout of one <a class="characterClass" href="cl-19.xhtml#cl-19">ideographic character (cl-19)</a> with mono-ruby text will be composed by method (a) or (b) described above.
+    The layout of two <a class="characterClass" href="cl-19.xhtml#cl-19">ideographic characters (cl-19)</a> with jukugo-ruby text will be composed by method (f) or (g) above.</p>
+   
+   </li>
+				</ol></body></html>

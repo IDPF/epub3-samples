@@ -1,0 +1,801 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja"><head><meta charset="UTF-8"/><meta name="author" content="Japanese Layout Task Force"/><title>日本語組版処理の要件（日本語版）</title><link rel="stylesheet" type="text/css" href="../css/W3C-WG-NOTE.css"/><link rel="stylesheet" type="text/css" href="../css/base.css"/></head><body><h4 id="grouping_of_characters_and_symbols_depending_on_their_positioning">3.9.2 <span class="heading"><span class="index" id="ja-subheading2_9_2">文字・記号を振る舞い方により分ける</span></span></h4><p>組版処理を行う場合，前項で述べたような事項について，性格を同じにする文字・記号ごとにグループに分け，<span class="index" id="d6e3712">文字クラス</span>として管理する方法がある．</p><p>JIS X 4051でも，“6.1.1 文字クラス”に文字クラスが示されている．なお，JIS X 4051では，“ここに挙げた文字以外を，それぞれの文字クラスに追加するか否かは，処理系定義とする”と備考に書かれている．</p><table class="t_note">
+					<tr>
+						<td class="ft" rowspan="1" colspan="1">
+							
+								<p>注1）</p>
+								
+							
+						</td>
+						<td rowspan="1" colspan="1">
+							
+								<p>JIS X 4051では，各文字クラスに含まれる文字・記号を特定する資料として，その附属書に各文字クラスに含まれる文字・記号とJIS X 0213との対応表が“附属書1”として掲げられている．</p>
+								
+							
+						</td>
+					</tr>
+				</table><p>この文書における文字クラスは，JIS X 4051における文字クラス分けを一部修正し，次のようにする．なお，<a class="sec_ref" href="character_classes.xhtml#character_classes">附属書A 文字クラス一覧</a>に，各文字クラスに含まれている文字・記号とISO/IEC 10646（UCS）のAnnex Aで規定されている“基本日本語文字集合”（UCSのコレクション285）及び“拡張非漢字集合”（UCSのコレクション286）に含まれる非漢字との対応を示す．</p><ol class="decimal">
+					<li>
+				
+					<p id="cl-01-ja"><span class="index" id="d6e3783">始め括弧類</span>（cl-01）</p>
+					
+				
+<table class="t_sample">
+<tr><td class="ft">
+<p>例）</p>
+
+</td>
+<td>
+<p class="asis">‘“（〔［｛〈《「『【</p>
+
+</td>
+<td>
+<p>など</p>
+
+</td></tr>
+</table>
+</li>
+					<li>
+				
+					<p id="cl-02-ja"><span class="index" id="d6e3831">終わり括弧類</span>（cl-02）</p>
+					
+				
+<table class="t_sample">
+<tr><td class="ft">
+<p>例）</p>
+
+</td>
+<td>
+<p class="asis">’”）〕］｝〉》」』】</p>
+
+</td>
+<td>
+<p>など</p>
+
+</td></tr>
+</table>
+				<table class="t_note">
+					<tr>
+						<td class="ft" rowspan="1" colspan="1">
+							
+								<p>注1）</p>
+								
+							
+						</td>
+						<td rowspan="1" colspan="1">
+							
+								<p>JIS X 4051では，<span class="index" id="d6e3895">読点</span><span class="character">[、] (IDEOGRAPHIC COMMA)</span>及びコンマ<span class="character">[,] (COMMA)</span>については終わり括弧類と同様な配置法となるので，文字クラスとしては終わり括弧類に含めている．しかし，この文書では，読点及びコンマは<a class="characterClass" href="cl-07.xhtml#cl-07">読点類（cl-07）</a>として文字クラスを独立させ，解説する．</p>
+								
+							
+						</td>
+					</tr>
+				</table>
+</li>
+					<li>
+				
+					<p id="cl-03-ja"><span class="index" id="d6e3940">ハイフン類</span>（cl-03）</p>
+					
+				
+<table class="t_sample">
+<tr><td class="ft">
+<p>例）</p>
+
+</td>
+<td>
+<p class="asis">‐〜</p>
+
+</td>
+<td>
+<p>など</p>
+
+</td></tr>
+</table>
+</li>
+					<li>
+				
+					<p id="cl-04-ja"><span class="index" id="d6e3988">区切り約物</span>（cl-04）</p>
+					
+				
+<table class="t_sample">
+<tr><td class="ft">
+<p>例）</p>
+
+</td>
+<td>
+<p class="asis">？！</p>
+
+</td>
+<td>
+<p>など</p>
+
+</td></tr>
+</table>
+</li>
+					<li>
+				
+					<p id="cl-05-ja"><span class="index" id="d6e4036">中点類</span>（cl-05）</p>
+					
+				
+<table class="t_sample">
+<tr><td class="ft">
+<p>例）</p>
+
+</td>
+<td>
+<p class="asis">・：；</p>
+
+</td>
+</tr>
+</table>
+</li>
+					<li>
+				
+					<p id="cl-06-ja"><span class="index" id="d6e4077">句点類</span>（cl-06）</p>
+					
+				
+<table class="t_sample">
+<tr><td class="ft">
+<p>例）</p>
+
+</td>
+<td>
+<p class="asis">。．</p>
+
+</td>
+</tr>
+</table>
+</li>
+					<li>
+				
+					<p id="cl-07-ja"><span class="index" id="d6e4117">読点類</span>（cl-07）</p>
+					
+				
+<table class="t_sample">
+<tr><td class="ft">
+<p>例）</p>
+
+</td>
+<td>
+<p class="asis">、，</p>
+
+</td>
+</tr>
+</table>
+</li>
+					<li>
+				
+					<p id="cl-08-ja"><span class="index" id="d6e4157">分離禁止文字</span>（cl-08）</p>
+					
+				
+<table class="t_sample">
+<tr><td class="ft">
+<p>例）</p>
+
+</td>
+<td>
+<p class="asis">—…‥</p>
+
+</td>
+<td>
+<p>など</p>
+
+</td></tr>
+</table>
+</li>
+					<li>
+				
+					<p id="cl-09-ja"><span class="index" id="d6e4205">繰返し記号</span>（cl-09）</p>
+					
+				
+<table class="t_sample">
+<tr><td class="ft">
+<p>例）</p>
+
+</td>
+<td>
+<p class="asis">ヽヾゝゞ々</p>
+
+</td>
+<td>
+<p>など</p>
+
+</td></tr>
+</table>
+				<table class="t_note">
+					<tr>
+						<td class="ft" rowspan="1" colspan="1">
+							
+								<p>注1）</p>
+								
+							
+						</td>
+						<td rowspan="1" colspan="1">
+							
+								<p>繰返し記号<span class="character">[々] (IDEOGRAPHIC ITERATION MARK)</span>などは，JIS X 4051では，<span class="index" id="d6e4272">行頭禁則和字</span>に含まれているが，この文書では，独立した文字クラスとした．</p>
+								
+							
+						</td>
+					</tr>
+					<tr>
+						<td class="ft" rowspan="1" colspan="1">
+							
+								<p>注2）</p>
+								
+							
+						</td>
+						<td rowspan="1" colspan="1">
+							
+								<p>繰返し記号<span class="character">[々] (IDEOGRAPHIC ITERATION MARK)</span>を行頭禁則の対象としない方法がある．この場合は，<a class="characterClass" href="cl-19.xhtml#cl-19">漢字等（cl-19）</a>の文字クラスとする．</p>
+								
+							
+						</td>
+					</tr>
+				</table>
+</li>
+					<li>
+				
+					<p id="cl-10-ja"><span class="index" id="d6e4343">長音記号</span>（cl-10）</p>
+					
+				
+<table class="t_sample">
+<tr><td class="ft">
+<p>例）</p>
+
+</td>
+<td>
+<p class="asis">ー</p>
+
+</td>
+</tr>
+</table>
+				<table class="t_note">
+					<tr>
+						<td class="ft" rowspan="1" colspan="1">
+							
+								<p>注1）</p>
+								
+							
+						</td>
+						<td rowspan="1" colspan="1">
+							
+								<p>長音記号<span class="character">[ー] (KATAKANA-HIRAGANA PROLONGED SOUND MARK)</span>は，JIS X 4051では，行頭禁則和字に含まれているが，この文書では，独立した文字クラスとした．</p>
+								
+							
+						</td>
+					</tr>
+					<tr>
+						<td class="ft" rowspan="1" colspan="1">
+							
+								<p>注2）</p>
+								
+							
+						</td>
+						<td rowspan="1" colspan="1">
+							
+								<p>JIS X 4051では，処理系定義として，長音記号<span class="character">[ー] (KATAKANA-HIRAGANA PROLONGED SOUND MARK)</span>を行頭禁則和字から除くことは認められている．</p>
+								
+							
+						</td>
+					</tr>
+					<tr>
+						<td class="ft" rowspan="1" colspan="1">
+							
+								<p>注3）</p>
+								
+							
+						</td>
+						<td rowspan="1" colspan="1">
+							
+								<p>長音記号<span class="character">[ー] (KATAKANA-HIRAGANA PROLONGED SOUND MARK)</span>を行頭禁則の対象としない場合は，長音記号は，<a class="characterClass" href="cl-16.xhtml#cl-16">片仮名（cl-16）</a>の文字クラスとする．</p>
+								
+							
+						</td>
+					</tr>
+				</table>
+</li>
+					<li>
+				
+					<p id="cl-11-ja"><span class="index" id="d6e4501">小書きの仮名</span>（cl-11）</p>
+					
+				
+<table class="t_sample">
+<tr><td class="ft">
+<p>例）</p>
+
+</td>
+<td>
+<p class="asis">ぁぃぅぇぉァィゥェォっゃゅょッャュョ</p>
+
+</td>
+<td>
+<p>など</p>
+
+</td></tr>
+</table>
+				<table class="t_note">
+					<tr>
+						<td class="ft" rowspan="1" colspan="1">
+							
+								<p>注1）</p>
+								
+							
+						</td>
+						<td rowspan="1" colspan="1">
+							
+								<p>小書きの片仮名ツ<span class="character">[ッ] (KATAKANA LETTER SMALL TU)</span>などは，JIS X 4051では，行頭禁則和字に含まれているが，この文書では，独立した文字クラスとした．したがって，JIS X 4051でいう“行頭禁則和字”は，<a class="characterClass" href="cl-09.xhtml#cl-09">繰返し記号（cl-09）</a>，<a class="characterClass" href="cl-10.xhtml#cl-10">長音記号（cl-10）</a>及び<a class="characterClass" href="cl-11.xhtml#cl-11">小書きの仮名（cl-11）</a>の3つに分解されたことになる．</p>
+								
+							
+						</td>
+					</tr>
+					<tr>
+						<td class="ft" rowspan="1" colspan="1">
+							
+								<p>注2）</p>
+								
+							
+						</td>
+						<td rowspan="1" colspan="1">
+							
+								<p>JIS X 4051では，処理系定義として，<a class="termref" href="terminology.xhtml#term.small-kana">小書きの仮名</a>（ぁぃぅァィゥなど）を行頭禁則和字から除くことは認められている．</p>
+								
+							
+						</td>
+					</tr>
+					<tr>
+						<td class="ft" rowspan="1" colspan="1">
+							
+								<p>注3）</p>
+								
+							
+						</td>
+						<td rowspan="1" colspan="1">
+							
+								<p>小書きの仮名を行頭禁則の対象としない場合は，そこに含まれる小書きの平仮名は<a class="characterClass" href="cl-15.xhtml#cl-15">平仮名（cl-15）</a>の文字クラス，小書きの片仮名は<a class="characterClass" href="cl-16.xhtml#cl-16">片仮名（cl-16）</a>の文字クラスとする．</p>
+								
+							
+						</td>
+					</tr>
+				</table>
+</li>
+					<li>
+				
+					<p id="cl-12-ja"><span class="index" id="d6e4685">前置省略記号</span>（cl-12）</p>
+					
+				
+<table class="t_sample">
+<tr><td class="ft">
+<p>例）</p>
+
+</td>
+<td>
+<p class="asis">￥＄￡＃</p>
+
+</td>
+<td>
+<p>など</p>
+
+</td></tr>
+</table>
+</li>
+					<li>
+				
+					<p id="cl-13-ja"><span class="index" id="d6e4733">後置省略記号</span>（cl-13）</p>
+					
+				
+<table class="t_sample">
+<tr><td class="ft">
+<p>例）</p>
+
+</td>
+<td>
+<p class="asis">°′″℃￠％‰</p>
+
+</td>
+<td>
+<p>など</p>
+
+</td></tr>
+</table>
+</li>
+					<li>
+				
+					<p id="cl-14-ja"><span class="index" id="d6e4781">和字間隔</span>（cl-14）</p>
+					
+				
+<table class="t_sample">
+<tr><td class="ft">
+<p>例）</p>
+
+</td>
+<td>
+<p>U+3000（IDEOGRAPHIC SPACE）</p>
+
+</td>
+</tr>
+</table>
+</li>
+					<li>
+				
+					<p id="cl-15-ja"><span class="index" id="d6e4821">平仮名</span>（cl-15）</p>
+					
+				
+<table class="t_sample">
+<tr><td class="ft">
+<p>例）</p>
+
+</td>
+<td>
+<p class="asis">あいうえおかがきぎ</p>
+
+</td>
+<td>
+<p>など</p>
+
+</td></tr>
+</table>
+				<table class="t_note">
+					<tr>
+						<td class="ft" rowspan="1" colspan="1">
+							
+								<p>注1）</p>
+								
+							
+						</td>
+						<td rowspan="1" colspan="1">
+							
+								<p>JIS X 4051で，漢字など（1.～12.以外の和字）と平仮名が別のクラスになっているのは，<a class="termref" href="terminology.xhtml#term.ruby">ルビ</a>の親文字からのはみ出しがあった場合，そのはみ出しを掛けてよいかどうかで差があるからである．</p>
+								
+							
+						</td>
+					</tr>
+				</table>
+</li>
+					<li>
+				
+					<p id="cl-16-ja"><span class="index" id="d6e4906">片仮名</span>（cl-16）</p>
+					
+				
+<table class="t_sample">
+<tr><td class="ft">
+<p>例）</p>
+
+</td>
+<td>
+<p class="asis">アイウエオカガキギ</p>
+
+</td>
+<td>
+<p>など</p>
+
+</td></tr>
+</table>
+				<table class="t_note">
+					<tr>
+						<td class="ft" rowspan="1" colspan="1">
+							
+								<p>注1）</p>
+								
+							
+						</td>
+						<td rowspan="1" colspan="1">
+							
+								<p><span class="index" id="d6e4969">片仮名</span>は，JIS X 4051では，漢字などと同じ文字クラス（1.～12.以外の和字）に含まれている．しかし，この文書では，ルビのはみ出しがあった場合，平仮名と同様に掛かってよいとしたことから独立した文字クラスとした．</p>
+								
+							
+						</td>
+					</tr>
+				</table>
+</li>
+					<li>
+				
+					<p id="cl-17-ja"><span class="index" id="d6e4990">等号類</span>（cl-17）</p>
+					
+				
+<table class="t_sample">
+<tr><td class="ft">
+<p>例）</p>
+
+</td>
+<td>
+<p class="asis">＝≠＜＞≦≧⊆⊇∪∩</p>
+
+</td>
+<td>
+<p>など</p>
+
+</td></tr>
+</table>
+				<table class="t_note">
+					<tr>
+						<td class="ft" rowspan="1" colspan="1">
+							
+								<p>注1）</p>
+								
+							
+						</td>
+						<td rowspan="1" colspan="1">
+							
+								<p>数式などに使う<span class="index" id="d6e5054">演算記号</span>（＋－÷×等）や等号類（＝≠＜＞≦≧⊆⊇∪∩等）は，JIS X 4051では漢字などと同じ文字クラス（1.～12.以外の和字）又は欧文用文字に含まれている．しかし，欧字やアラビア数字と連続した場合の扱いは，漢字とは異なるので，次項の演算記号とともに新たな文字クラスを作成した．</p>
+								
+							
+						</td>
+					</tr>
+					<tr>
+						<td class="ft" rowspan="1" colspan="1">
+							
+								<p>注2）</p>
+								
+							
+						</td>
+						<td rowspan="1" colspan="1">
+							
+								<p>“∪∩∧∨⊕⊗”は，これまでの組版上の慣習的処理から等号類に含めている．</p>
+								
+							
+						</td>
+					</tr>
+				</table>
+</li>
+					<li>
+				
+					<p id="cl-18-ja"><span class="index" id="d6e5113">演算記号</span>（cl-18）</p>
+					
+				
+<table class="t_sample">
+<tr><td class="ft">
+<p>例）</p>
+
+</td>
+<td>
+<p class="asis">＋－÷×</p>
+
+</td>
+<td>
+<p>など</p>
+
+</td></tr>
+</table>
+</li>
+					<li>
+				
+					<p id="cl-19-ja"><span class="index" id="d6e5161">漢字等</span>（cl-19）</p>
+					
+				
+<table class="t_sample">
+<tr><td class="ft">
+<p>例）</p>
+
+</td>
+<td>
+<p class="asis">亜唖娃阿哀愛挨〃仝〆♂♀</p>
+
+</td>
+<td>
+<p>など</p>
+
+</td></tr>
+</table>
+				<table class="t_note">
+					<tr>
+						<td class="ft" rowspan="1" colspan="1">
+							
+								<p>注1）</p>
+								
+							
+						</td>
+						<td rowspan="1" colspan="1">
+							
+								<p>JIS X 4051の文字クラス名は，“1.～12.以外の和字”である．</p>
+								
+							
+						</td>
+					</tr>
+				</table>
+</li>
+					<li>
+				
+					<p id="cl-20-ja"><span class="index" id="d6e5243">合印中の文字</span>（cl-20）</p>
+					
+				
+				
+					<p><a class="termref" href="terminology.xhtml#term.note">注</a>の参照のために該当する項目の直後の行中に配置した<a class="termref" href="terminology.xhtml#term.reference-marks">合印</a>中の文字である（<a class="sec_ref" href="note_numbers.xhtml#note_numbers">4.2.2 注の番号</a>）．</p>
+					
+				
+</li>
+					<li>
+				
+					<p id="cl-21-ja"><span class="index" id="d6e5283">親文字群中の文字（添え字付き）</span>（cl-21）</p>
+					
+				
+				<table class="t_note">
+					<tr>
+						<td class="ft" rowspan="1" colspan="1">
+							
+								<p>注1）</p>
+								
+							
+						</td>
+						<td rowspan="1" colspan="1">
+							
+								<p>JIS X 4051の名称は，“添え字付き親文字群中の文字”である．親文字群とは，親文字及びそれに付随するルビ，<a class="termref" href="terminology.xhtml#term.ornament-characters">添え字</a>又は<a class="termref" href="terminology.xhtml#term.emphasis-dots">圏点</a>を含めた文字群のことである．</p>
+								
+							
+						</td>
+					</tr>
+				</table>
+</li>
+					<li>
+				
+					<p id="cl-22-ja"><span class="index" id="d6e5340">親文字群中の文字（熟語ルビ以外のルビ付き）</span>（cl-22）</p>
+					
+				
+
+				<table class="t_note">
+					<tr>
+						<td class="ft" rowspan="1" colspan="1">
+							
+								<p>注1）</p>
+								
+							
+						</td>
+						<td rowspan="1" colspan="1">
+							
+								<p>JIS X 4051の名称は，“熟語ルビ以外のルビ付き親文字群中の文字”である．</p>
+								
+							
+						</td>
+					</tr>
+				</table>
+</li>
+					<li>
+				
+					<p id="cl-23-ja"><span class="index" id="d6e5387">親文字群中の文字（熟語ルビ付き）</span>（cl-23）</p>
+					
+				
+				<table class="t_note">
+					<tr>
+						<td class="ft" rowspan="1" colspan="1">
+							
+								<p>注1）</p>
+								
+							
+						</td>
+						<td rowspan="1" colspan="1">
+							
+								<p>JIS X 4051の名称は，“熟語ルビ付き親文字群中の文字”である．</p>
+								
+							
+						</td>
+					</tr>
+				</table>
+</li>
+					<li>
+				
+					<p id="cl-24-ja"><span class="index" id="d6e5433">連数字中の文字</span>（cl-24）</p>
+					
+				
+				
+					<p>連数字として扱われる連続した数字（アラビア数字）及び小数点のピリオド，並びに位取りのコンマ及び空白のことである．</p>
+					
+				
+</li>
+					<li>
+				
+					<p id="cl-25-ja"><span class="index" id="d6e5456">単位記号中の文字</span>（cl-25）</p>
+					
+				
+				
+					<p>ここでいう単位記号は，国際単位系（SI）として使用されているラテン文字又はギリシャ文字を組み合わせて単位を示すものである．</p>
+					
+				
+				<table class="t_note">
+					<tr>
+						<td class="ft" rowspan="1" colspan="1">
+							
+								<p>注1）</p>
+								
+							
+						</td>
+						<td rowspan="1" colspan="1">
+							
+								<p>全角の文字の外枠にラテン文字やアラビア数字などを組み合わせた<span class="index" id="d6e5495">単位記号</span>がある（<span class="index" id="d6e5498">全角単位字</span>）．このような単位記号は，ここでいう単位記号中の文字には含めない．なお，全角単位字は，主に縦組で使用するもので，横組で使用するのは，体裁がよくないので避けた方がよい（<a class="figure_ref" href="grouping_of_characters_and_symbols_depending_on_their_positioning.xhtml#fig2_9_1z-ja">図 3.128</a>）．</p>
+								
+							
+						</td>
+					</tr>
+				</table>
+				
+					<div class="figure" id="fig2_9_1z-ja"><div class="figure-float"><div><img alt="全角単位字（上側）と欧文用文字（下側）を用いた単位記号の例" width="645" height="112" src="../image/Images-ja/img2_9_1.png"/><div class="figureCaption">図 3.128 <span class="caption-body">全角単位字（上側）と欧文用文字（下側）を用いた単位記号の例</span></div></div></div></div>
+					
+				
+</li>
+					<li>
+				
+					<p id="cl-26-ja"><span class="index" id="d6e5536">欧文間隔</span>（cl-26）</p>
+					
+				
+</li>
+					<li>
+				
+					<p id="cl-27-ja"><span class="index" id="d6e5550">欧文用文字</span>（cl-27）</p>
+					
+				
+				<table class="t_note">
+					<tr>
+						<td class="ft" rowspan="1" colspan="1">
+							
+								<p>注1）</p>
+								
+							
+						</td>
+						<td rowspan="1" colspan="1">
+							
+								<p><a class="characterClass" href="cl-27.xhtml#cl-27">欧文用文字（cl-27）</a>には，欧文として使用する<span class="index" id="d6e5582">括弧類</span>などの欧文の約物を含む．なお，これらは和文でも欧文でも使用している種類がある．しかし，それらの字幅や<a class="termref" href="terminology.xhtml#term.character-shape">字形</a>は異なることが多い．例えば，始め小括弧（始め丸括弧）<span class="character">[（] (LEFT PARENTHESIS)</span>及び終わり小括弧（終わり丸括弧）<span class="character">[）] (RIGHT PARENTHESIS)</span>は，和文用と欧文用とでは，字幅が異なるだけではなく（和文用は文字の<a class="termref" href="terminology.xhtml#term.character-frame">外枠</a>の行送り方向の中央，欧文用は<a class="termref" href="terminology.xhtml#term.base-line">並び線</a>・<a class="termref" href="terminology.xhtml#term.descender-line">ディセンダライン</a>が基準），円弧の深さ（フォントにもよるが，一般に和文用は円弧が深く，欧文用は浅い），<a class="termref2nd" href="terminology.xhtml#term.character-shape">字形</a>（フォントにもよるが，和文用は線の太さの変化が小さく，欧文用は変化が大きい）といった違いがある．これらにつき，どの部分に和文用，どの部分に欧文用を使用するかは指定による．和文中は和文用を，欧文中は欧文用を使用するのが原則であるが，判断に迷う例もある．例えば，“エディター（editor）は……”のように和文中に英語の綴りを括弧内に示す例は多い．この始め小括弧（始め丸括弧）<span class="character">[(] (LEFT PARENTHESIS)</span>及び終わり小括弧（終わり丸括弧）<span class="character">[)] (RIGHT PARENTHESIS)</span>は，和文か欧文かということである．この場合の始め小括弧（始め丸括弧）<span class="character">[(] (LEFT PARENTHESIS)</span>及び終わり小括弧（終わり丸括弧）<span class="character">[)] (RIGHT PARENTHESIS)</span>は和文としてよいであろう．</p>
+								
+							
+						</td>
+					</tr>
+				</table>
+</li>
+					<li>
+				
+					<p id="cl-28-ja"><span class="index" id="d6e5656">割注始め括弧類</span>（cl-28）</p>
+					
+				
+<table class="t_sample">
+<tr><td class="ft">
+<p>例）</p>
+
+</td>
+<td>
+<p class="asis">（〔［</p>
+
+</td>
+<td>
+<p>など</p>
+
+</td></tr>
+</table>
+</li>
+					<li>
+				
+					<p id="cl-29-ja"><span class="index" id="d6e5704">割注終わり括弧類</span>（cl-29）</p>
+					
+				
+<table class="t_sample">
+<tr><td class="ft">
+<p>例）</p>
+
+</td>
+<td>
+<p class="asis">）〕］</p>
+
+</td>
+<td>
+<p>など</p>
+
+</td></tr>
+</table>
+				<table class="t_note">
+					<tr>
+						<td class="ft" rowspan="1" colspan="1">
+							
+								<p>注1）</p>
+								
+							
+						</td>
+						<td rowspan="1" colspan="1">
+							
+								<p><a class="characterClass" href="cl-28.xhtml#cl-28">割注始め括弧類（cl-28）</a>又は<a class="characterClass" href="cl-29.xhtml#cl-29">割注終わり括弧類（cl-29）</a>は，<a class="termref" href="terminology.xhtml#term.warichu">割注</a>を囲むために用いる括弧類及び空き量のことである．一般に使用する括弧類と<a class="termref" href="terminology.xhtml#term.composition">組版</a>処理が異なるので，別の文字クラスにしている．</p>
+								
+							
+						</td>
+					</tr>
+				</table>
+</li>
+					<li>
+				
+					<p id="cl-30-ja"><span class="index" id="d6e5807">縦中横中の文字</span>（cl-30）</p>
+					
+				
+</li>
+				</ol></body></html>

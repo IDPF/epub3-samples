@@ -1,0 +1,62 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja"><head><meta charset="UTF-8"/><meta name="author" content="Japanese Layout Task Force"/><title>日本語組版処理の要件（日本語版）</title><link rel="stylesheet" type="text/css" href="../css/W3C-WG-NOTE.css"/><link rel="stylesheet" type="text/css" href="../css/base.css"/></head><body><h3 id="line_adjustment">3.8 <span class="heading"><span id="ja-subheading2_8">行の調整処理</span></span></h3><h4 id="necessity_for_line_adjustment">3.8.1 <span class="heading"><span class="index" id="ja-subheading2_8_1">行の調整処理の必要性</span></span></h4><p><a class="termref" href="terminology.xhtml#term.line-breaking-rules">禁則処理</a>その他の要因により<span class="index" id="d6e2119">行長に過不足が出る場合</span>は，<a class="termref" href="terminology.xhtml#term.line-adjustment">行の調整処理</a>を行う．段落内では，分割禁止とされていない箇所で文字列を分割し，それぞれの行を構成していく．この際，段落末尾の1行の行長に満たない行以外の行は，指定された行長にし，段落末尾の1行の行長に満たない行以外の行頭及び行末の位置を所定の位置に配置する必要がある．<span class="index" id="d6e2125">段落末尾の1行の行長に満たない行</span>は，隣接する文字の字間に<a class="sec_ref" href="spacing_between_characters.xhtml#spacing_between_characters">附属書B 文字間の空き量</a>に示した原則とする空き量を挿入するか，又は指定された空き量がある場合はその空き量を挿入する以外は，原則としてベタ組にして文字列の先頭を行頭にそろえて配置し，文字列の末尾は行末にそろえる必要はない．</p><table class="t_note">
+					<tr>
+						<td class="ft" rowspan="1" colspan="1">
+							
+								<p>注1）</p>
+								
+							
+						</td>
+						<td rowspan="1" colspan="1">
+							
+								<p>欧文組版においてみられるragged right (flush left)，ragged left (flash right)，ragged centerとよばれる方法は，日本語組版，特に書籍の本文においては，一般に行われていない．書籍の本文における段落の処理は，欧文組版でいう“justification”が原則である．なお，欧文組版の場合のjustificationは，主に単語間の空き量（語間）を増減して1行の行長をそろえるのに対し，日本語組版では，<a class="characterClass" href="cl-26.xhtml#cl-26">欧文間隔（cl-26）</a>だけでなく，以下に述べるように多くの箇所を調整に利用している．</p>
+								
+							
+						</td>
+					</tr>
+					<tr>
+						<td class="ft" rowspan="1" colspan="1">
+							
+								<p>注2）</p>
+								
+							
+						</td>
+						<td rowspan="1" colspan="1">
+							
+								<p>段落の最終行は，1行の行長以下であれば，特に調整の必要はない．ただし，最終行が行長よりわずかに長く，後述する<a class="characterClass" href="cl-01.xhtml#cl-01">始め括弧類（cl-01）</a>，<a class="characterClass" href="cl-02.xhtml#cl-02">終わり括弧類（cl-02）</a>などの前後の空き量を詰めて行長にそろえる処理が可能な場合は，行長の調整処理が行われることになる．</p>
+								
+							
+						</td>
+					</tr>
+					<tr>
+						<td class="ft" rowspan="1" colspan="1">
+							
+								<p>注3）</p>
+								
+							
+						</td>
+						<td rowspan="1" colspan="1">
+							
+								<p>段落を処理対象とした行の調整処理とは処理対象が異なるが，指定された行長以下の1行の文字列の位置を指定した位置に合わせる方法については，<a class="sec_ref" href="single_line_alignment_processing.xhtml#single_line_alignment_processing">3.5.3 そろえの処理</a>で解説する．</p>
+								
+							
+						</td>
+					</tr>
+				</table><p><span class="index" id="d6e2272">行の調整処理が必要となる要因</span>は様々であるが，主なものに次のような例がある．</p><ol>
+					<li><p><a class="characterClass" href="cl-24.xhtml#cl-24">連数字中の文字（cl-24）</a>，<a class="characterClass" href="cl-27.xhtml#cl-27">欧文用文字（cl-27）</a>など字幅が全角でない文字・記号を混用する（<a class="figure_ref" href="line_adjustment.xhtml#fig2_51-ja">図 3.124</a>）．</p>
+              <div class="figure" id="fig2_51-ja"><div class="figure-float"><div><img alt="連数字中の文字，欧文用文字を使用した例" width="241" height="76" src="../image/Images-ja/img2_51.png"/><div class="figureCaption">図 3.124 <span class="caption-body">連数字中の文字，欧文用文字を使用した例</span></div></div></div></div>
+              </li>
+					<li><p><a class="termref" href="terminology.xhtml#term.punctuation-marks">約物</a>が連続する．例えば，<a class="characterClass" href="cl-02.xhtml#cl-02">終わり括弧類（cl-02）</a>と<a class="characterClass" href="cl-06.xhtml#cl-06">句点類（cl-06）</a>が連続した場合は，<a class="characterClass" href="cl-02.xhtml#cl-02">終わり括弧類（cl-02）</a>，<a class="characterClass" href="cl-06.xhtml#cl-06">句点類（cl-06）</a>及び空き量の合計は1.5倍となる（<a class="figure_ref" href="line_adjustment.xhtml#fig2_52-ja">図 3.125</a>）．ただし，<a class="characterClass" href="cl-02.xhtml#cl-02">終わり括弧類（cl-02）</a>，<a class="characterClass" href="cl-06.xhtml#cl-06">句点類（cl-06）</a>，さらに<a class="characterClass" href="cl-01.xhtml#cl-01">始め括弧類（cl-01）</a>が連続した場合は，これら約物の字幅と空き量の合計は2倍となるので，過不足はでない（<a class="figure_ref" href="line_adjustment.xhtml#fig2_52-ja">図 3.125</a>）．</p>
+					
+<div class="figure" id="fig2_52-ja"><div class="figure-float"><div><img alt="約物が連続した例" width="215" height="241" src="../image/Images-ja/img2_52.png"/><div class="figureCaption">図 3.125 <span class="caption-body">約物が連続した例</span></div></div></div></div>
+</li>
+					<li><p>文字サイズの異なる文字を混用する（<a class="figure_ref" href="line_adjustment.xhtml#fig2_53-ja">図 3.126</a>）．</p>
+					
+					<div class="figure" id="fig2_53-ja"><div class="figure-float"><div><img alt="括弧内の文字サイズを1段階小さくした例" width="75" height="271" src="../image/Images-ja/img2_53.png"/><div class="figureCaption">図 3.126 <span class="caption-body">括弧内の文字サイズを1段階小さくした例</span></div></div></div></div>
+					<table class="t_note"><tr><td class="ft" rowspan="1" colspan="1">
+					<p>注1）</p>
+					</td><td rowspan="1" colspan="1">
+					<p>参照ページの表示，用語の説明などにおいて括弧を付けて補足説明する場合，<a class="termref" href="terminology.xhtml#term.kihon-hanmen">基本版面</a>の文字サイズよりは1段階小さい文字サイズにする例がある．</p>
+					</td></tr></table></li>
+					<li><p><a class="termref" href="terminology.xhtml#term.line-start-prohibition-rule">行頭禁則</a>，<a class="termref" href="terminology.xhtml#term.line-end-prohibition-rule">行末禁則</a>又は<a class="termref" href="terminology.xhtml#term.unbreakable-characters-rule">分割禁止</a>を回避する（<a class="figure_ref" href="examples_of_line_adjustment.xhtml#fig2_33-ja">図 3.33</a>）．</p>
+					</li>
+				</ol></body></html>

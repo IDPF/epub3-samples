@@ -1,0 +1,24 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"><head><meta charset="UTF-8"/><title>Requirements for Japanese Text Layout</title><link rel="stylesheet" type="text/css" href="../css/base.css"/><link rel="stylesheet" type="text/css" href="../css/W3C-WG-NOTE.css"/></head><body><h4 id="the_method_of_setting_the_target_text">3.6.3 <span class="heading"><span class="index" id="en-subheading2_6_3">The Method of Setting the Target Text</span></span></h4><p>Set the text from the <a class="termref" href="terminology.xhtml#term.line-head">line head</a> to the position before the tab sign in the first tab position, set the text from the
+      first tab sign to the next tab sign in the second tab position, and so on. The behavior of <a class="characterClass" href="cl-01.xhtml#cl-01">opening brackets (cl-01)</a> and <a class="characterClass" href="cl-02.xhtml#cl-02">closing brackets (cl-02)</a>, etc. is
+ same as for the <a class="termref" href="terminology.xhtml#term.main-text">main text</a>.</p><p>Following are some examples. The behavior of text before and after the tab positions are very difficult to anticipate, so it is necessary to design using trial and error.</p><ol>
+					<li>
+              <p>If the target string is the first series of the line, the characters should be set in the first tab position from the start
+               of the line, and so on, one after another (see <a class="figure_ref" href="the_method_of_setting_the_target_text.xhtml#fig2_6_7-en">Fig. 3.110</a>).
+             </p>
+              <div class="figure" id="fig2_6_7-en"><div class="figure-float"><div><img alt="Example of tab setting 1." width="488" height="119" src="../image/Images-en/img2_6_7.png"/><div class="figureCaption">Fig. 3.110: <span class="caption-body">Example of tab setting 1.</span></div></div></div></div></li>
+					<li>
+              <p>If the target string of text is too long to be set before the next tab position and overflows, the next string of text is aligned
+               to the tag position after the end of the preceding string (see <a class="figure_ref" href="the_method_of_setting_the_target_text.xhtml#fig2_6_8-en">Fig. 3.111</a>).
+             </p>
+              <div class="figure" id="fig2_6_8-en"><div class="figure-float"><div><img alt="Example of tab setting 2." width="496" height="288" src="../image/Images-en/img2_6_8.png"/><div class="figureCaption">Fig. 3.111: <span class="caption-body">Example of tab setting 2.</span></div></div></div></div></li>
+					<li>
+              <p> If the beginning of the string overlaps with the end of the preceding string as the result of the tab setting indication,
+               the following string is set just after the preceding string (see <a class="figure_ref" href="the_method_of_setting_the_target_text.xhtml#fig2_6_9-en">Fig. 3.112</a>).
+             </p>
+              <div class="figure" id="fig2_6_9-en"><div class="figure-float"><div><img alt="Example of tab setting 3." width="566" height="283" src="../image/Images-en/img2_6_9.png"/><div class="figureCaption">Fig. 3.112: <span class="caption-body">Example of tab setting 3.</span></div></div></div></div></li>
+					<li>
+              <p>If there is no tab position corresponding to the target string, the string should be set from the tab position of the next
+               line, and so forth (see <a class="figure_ref" href="the_method_of_setting_the_target_text.xhtml#fig2_6_10-en">Fig. 3.113</a>).
+             </p>
+              <div class="figure" id="fig2_6_10-en"><div class="figure-float"><div><img alt="Example for tab setting 4." width="619" height="297" src="../image/Images-en/img2_6_10.png"/><div class="figureCaption">Fig. 3.113: <span class="caption-body">Example for tab setting 4.</span></div></div></div></div></li>
+				</ol></body></html>

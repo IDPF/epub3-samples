@@ -1,0 +1,106 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"><head><meta charset="UTF-8"/><title>Requirements for Japanese Text Layout</title><link rel="stylesheet" type="text/css" href="../css/base.css"/><link rel="stylesheet" type="text/css" href="../css/W3C-WG-NOTE.css"/></head><body><h3 id="notes_a3">C.2 <span class="heading"><span id="en-app3_2">Notes</span></span></h3><ol class="decimal">
+<li>
+		
+			
+			<p>If <span class="character">IDEOGRAPHIC ITERATION MARK "々"</span> is  allowed to appear at the <a class="termref" href="terminology.xhtml#term.line-head">line head</a>  or that of <a class="termref" href="terminology.xhtml#term.warichu">inline cutting note</a>, the character shall be treated as a member of the <a class="characterClass" href="cl-19.xhtml#cl-19">ideographic character (cl-19)</a> class. (For how it behaves in combination with other character classes, see the cells for <a class="characterClass" href="cl-19.xhtml#cl-19">ideographic characters (cl-19)</a>.)</p>
+		
+</li>
+<li>
+		
+			
+			<p>If a <a class="characterClass" href="cl-10.xhtml#cl-10">prolonged sound mark (cl-10)</a> is  allowed to appear at the head of a line or that of inline cutting note, the character shall be treated as a member of the <a class="characterClass" href="cl-16.xhtml#cl-16">katakana (cl-16)</a> class. (For how it behaves in combination with other character classes, see the cells for <a class="characterClass" href="cl-16.xhtml#cl-16">katakana (cl-16)</a>.)</p>
+		
+</li>
+<li>
+		
+			
+			<p>If <a class="characterClass" href="cl-11.xhtml#cl-11">small kana (cl-11)</a> are  allowed to appear at the head of a line or that of inline cutting note, the character shall be treated as a member of the <a class="characterClass" href="cl-15.xhtml#cl-15">hiragana (cl-15)</a> or <a class="characterClass" href="cl-16.xhtml#cl-16">katakana (cl-16)</a> classes accordingly, depending on the script type of the character. (For how it behaves in combination with other character classes, see the cells for <a class="characterClass" href="cl-15.xhtml#cl-15">hiragana (cl-15)</a> or <a class="characterClass" href="cl-16.xhtml#cl-16">katakana (cl-16)</a>.)</p>
+		
+</li>
+<li>
+		
+			
+			<p>For the default one em space after <a class="characterClass" href="cl-04.xhtml#cl-04">dividing punctuation marks (cl-04)</a> at the end of a sentence, <a class="characterClass" href="cl-14.xhtml#cl-14">full-width ideographic space (cl-14)</a> can be used. See <a class="sec_ref" href="positioning_of_dividing_punctuation_marks.xhtml#positioning_of_dividing_punctuation_marks">3.1.6 Positioning of Dividing Punctuation Marks (Question Mark and Exclamation Mark) and Hyphens</a> for more detail on how to deal with this case.</p>
+		
+</li>
+<li>
+		
+			
+			<p>There is no line break opportunity between following couple of consecutive <a class="characterClass" href="cl-08.xhtml#cl-08">inseparable characters (cl-08)</a> as follows:</p>
+		
+		<ul>
+		<li>
+			
+			<p><span class="character">EM DASH "―"</span>, <span class="character">EM DASH "―"</span></p>
+		</li>
+		<li>
+			
+			<p><span class="character">HORIZONTAL ELLIPSIS "…"</span>, <span class="character">HORIZONTAL ELLIPSIS "…"</span></p>
+		</li>
+		<li>
+			
+			<p><span class="character">TWO DOT LEADER "‥"</span>, <span class="character">TWO DOT LEADER "‥"</span></p>
+		</li>
+		<li>
+			
+			<p><span class="character">VERTICAL KANA REPEAT MARK UPPER HALF "〳"</span>, <span class="character">VERTICAL KANA REPEAT MARK LOWER HALF "〵"</span></p>
+		</li>
+		<li>
+			
+			<p><span class="character">VERTICAL KANA REPEAT WITH VOICED SOUND MARK UPPER HALF "〴"</span>, <span class="character">VERTICAL KANA REPEAT MARK LOWER HALF "〵"</span></p>
+		</li>
+		</ul>
+		
+			
+			<p>When the combination of preceding <a class="characterClass" href="cl-08.xhtml#cl-08">inseparable characters (cl-08)</a> and the trailing <a class="characterClass" href="cl-08.xhtml#cl-08">inseparable characters (cl-08)</a> is different each other, the two characters are separable. For example, when two <span class="character">EM DASH "―"</span> appears consecutively, these two characters are inseparable, and consecutive <span class="character">EM DASH "―"</span> and <span class="character">HORIZONTAL ELLIPSIS "…"</span> are separable.</p>
+		
+</li>
+<li>
+		
+			
+			<p>There is no line break opportunity between two consecutive characters belonging to the same <a class="characterClass" href="cl-21.xhtml#cl-21">ornamented character complex (cl-21)</a>. If two consecutive characters belong to different <a class="characterClass" href="cl-21.xhtml#cl-21">ornamented character complexes (cl-21)</a>, a line break opportunity exists between them.</p>
+		
+</li>
+<li>
+		
+			
+			<p>There is no line break opportunity between two consecutive characters belonging to the same <a class="characterClass" href="cl-22.xhtml#cl-22">simple-ruby character complex (cl-22)</a>. If two consecutive characters belong to different <a class="characterClass" href="cl-22.xhtml#cl-22">simple-ruby character complexes (cl-22)</a>, a line break opportunity exists between them.</p>
+		
+</li>
+<li>
+		
+			
+			<p>A line break opportunity exists between two consecutive base characters belonging to different <a class="characterClass" href="cl-23.xhtml#cl-23">jukugo-ruby character complexes (cl-23)</a>. There is also a line break opportunity between two consecutive base characters belonging to the same <a class="characterClass" href="cl-23.xhtml#cl-23">jukugo-ruby character complex (cl-23)</a> and between two runs of ruby text accompanying  the corresponding base characters. However, a base character and the accompanying ruby text shall be indivisible, hence there is no line break opportunity between any two consecutive ruby characters in a run of ruby text accompanying  a base character.</p>
+		
+</li>
+<li>
+		
+			
+			<p>There is no line break opportunity between preceding <a class="characterClass" href="cl-24.xhtml#cl-24">grouped numerals (cl-24)</a> and  trailing <a class="characterClass" href="cl-13.xhtml#cl-13">postfixed abbreviations (cl-13)</a>. The alternative approach is to allow a line to break before trailing <span class="character">PERCENT SIGN "%"</span>, in which case <span class="character">PERCENT SIGN "%"</span> shall be treated as a member of the <a class="characterClass" href="cl-19.xhtml#cl-19">ideographic character (cl-19)</a> class.</p>
+		
+</li>
+<li>
+		
+			
+			<p>There are two approaches: one is to allow a line to break between preceding <a class="characterClass" href="cl-24.xhtml#cl-24">grouped numerals (cl-24)</a> and trailing <a class="characterClass" href="cl-27.xhtml#cl-27">Western characters (cl-27)</a>, and the other is not to.</p>
+		
+</li>
+<li>
+		
+			
+			<p>A line break opportunity generally exists between preceding <a class="characterClass" href="cl-27.xhtml#cl-27">Western characters (cl-27)</a> and trailing <a class="characterClass" href="cl-13.xhtml#cl-13">postfixed abbreviations (cl-13)</a>, unless the preceding <a class="characterClass" href="cl-27.xhtml#cl-27">Western character (cl-27)</a> is used as a symbol of a quantity or a European numeral, in which case a line break is not allowed between them.</p>
+		
+</li>
+<li>
+		
+			
+			<p>There is no line break opportunity between two consecutive <a class="characterClass" href="cl-27.xhtml#cl-27">Western characters (cl-27)</a>. In order to break a line in the middle of a Western word, it needs to be divided into two syllables first. Then a line can be broken between the two by adding <span class="character">HYPHEN "-"</span> at the line end.</p>
+		
+</li>
+<li>
+		
+			
+			<p>There is no line break opportunity between two consecutive characters belonging to the same set of <a class="characterClass" href="cl-30.xhtml#cl-30">characters in tate-chu-yoko (cl-30)</a>. If two consecutive characters belong to different sets of <a class="characterClass" href="cl-30.xhtml#cl-30">characters in tate-chu-yoko (cl-30)</a>, there a line break opportunity exists between them.</p>
+		
+</li>
+</ol></body></html>

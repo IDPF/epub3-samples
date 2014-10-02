@@ -1,0 +1,78 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"><head><meta charset="UTF-8"/><title>Requirements for Japanese Text Layout</title><link rel="stylesheet" type="text/css" href="../css/base.css"/><link rel="stylesheet" type="text/css" href="../css/W3C-WG-NOTE.css"/></head><body><h3 id="line_adjustment">3.8 <span class="heading"><span id="en-subheading2_8">Line Adjustment</span></span></h3><h4 id="necessity_for_line_adjustment">3.8.1 <span class="heading"><span class="index" id="en-subheading2_8_1">Necessity for Line Adjustment</span></span></h4><p><a class="termref" href="terminology.xhtml#term.line-adjustment">Line adjustment</a> processing is applied where inter-character adjustments are needed to bring the line end into the correct alignment, e.g. because of <a class="termref" href="terminology.xhtml#term.line-breaking-rules">line wrap</a> or other reasons. Within a paragraph, lines are created by separating character sequences at places where line breaking is not prohibited. Except for the end
+of the last line of a paragraph, it is necessary to set the head
+and end
+of each line at predicable,
+aligned positions. For the last line of the paragraph, it is still necessary to set the head at the aligned position, however the line end  need not aligned to the other alignment position. To achieve this, only inter-character spacing indicated in the table of <a class="sec_ref" href="spacing_between_characters.xhtml#spacing_between_characters">Appendix B Spacing between Characters</a>, or explicitly chosen  space sizes, are inserted, and other inter-character spaces are set solid.
+</p><table class="t_note">
+					<tr>
+						<td class="ft" rowspan="1" colspan="1">
+							
+								
+								<p>(note 1)</p>
+							
+						</td>
+						<td rowspan="1" colspan="1">
+							
+								
+								<p>In Japanese composition, there is no concept corresponding to the Western "ragged right (flush left)", "ragged left (flush right)", or "ragged center". In Japanese composition, especially common book composition, usually only "justification" is applied. Note that, in Western composition, "justification" is usually applied for only word space sizes. In Japanese composition, it is applied for not only <a class="characterClass" href="cl-26.xhtml#cl-26">Western word space (cl-26)</a>
+but also in several other places as explained in following text.</p>
+							
+						</td>
+					</tr>
+					<tr>
+						<td class="ft" rowspan="1" colspan="1">
+							
+								
+								<p>(note 2)</p>
+							
+						</td>
+						<td rowspan="1" colspan="1">
+							
+								
+								<p>Usually, the last line of a paragraph needs no adjustment. However, when the last line of a paragraph is a little bit longer than the line length, inter-character space
+reduction is applied for <a class="characterClass" href="cl-01.xhtml#cl-01">opening brackets (cl-01)</a>, <a class="characterClass" href="cl-02.xhtml#cl-02">closing brackets (cl-02)</a>
+and at other places, if possible.</p>
+							
+						</td>
+					</tr>
+					<tr>
+						<td class="ft" rowspan="1" colspan="1">
+							
+								
+								<p>(note 3)</p>
+							
+						</td>
+						<td rowspan="1" colspan="1">
+							
+								
+								<p>There is another adjustment processing, besides line adjustment, called "single line alignment". Single line alignment is applied to align a run of the text that is shorter than a given line length to designated positions. Details are explained in <a class="sec_ref" href="single_line_alignment_processing.xhtml#single_line_alignment_processing">3.5.3 Single Line Alignment Processing</a>.</p>
+							
+						</td>
+					</tr>
+				</table><p>There are various reasons for line adjustment processing. Examples of the most important ones will be given below.</p><ol>
+					<li>
+              <p>Mixed use of characters and symbols (e.g. <a class="characterClass" href="cl-24.xhtml#cl-24">grouped numerals (cl-24)</a> or <a class="characterClass" href="cl-27.xhtml#cl-27">Western characters (cl-27)</a>) where not all characters are full-width
+               (see <a class="figure_ref" href="line_adjustment.xhtml#fig2_51-en">Fig. 3.124</a>).
+             </p>
+              <div class="figure" id="fig2_51-en"><div class="figure-float"><div><img alt="Example of grouped numerals and Western characters." width="241" height="76" src="../image/Images-en/img2_51.png"/><div class="figureCaption">Fig. 3.124: <span class="caption-body">Example of grouped numerals and Western characters.</span></div></div></div></div></li>
+					<li>
+					<p>Sequences of <a class="termref" href="terminology.xhtml#term.punctuation-marks">punctuation marks</a>. For example, a sequence of a <a class="characterClass" href="cl-02.xhtml#cl-02">closing bracket (cl-02)</a>
+and a <a class="characterClass" href="cl-06.xhtml#cl-06">full stop (cl-06)</a>
+takes one and a half em spaces together (see <a class="figure_ref" href="line_adjustment.xhtml#fig2_52-en">Fig. 3.125</a>). However, if an <a class="characterClass" href="cl-01.xhtml#cl-01">opening bracket (cl-01)</a>
+follows immediately after the full stop, these punctuation marks will need two em size spaces together. Hence, no adjustment is needed to correctly align the line end (see <a class="figure_ref" href="line_adjustment.xhtml#fig2_52-en">Fig. 3.125</a>).</p>
+
+<div class="figure" id="fig2_52-en"><div class="figure-float"><div><img alt="Examples of sequences of punctuation marks." width="218" height="241" src="../image/Images-en/img2_52.png"/><div class="figureCaption">Fig. 3.125: <span class="caption-body">Examples of sequences of punctuation marks.</span></div></div></div></div></li>
+					<li>
+					<p>Mixtures of characters with different sizes (see <a class="figure_ref" href="line_adjustment.xhtml#fig2_53-en">Fig. 3.126</a>).</p>
+					
+					<div class="figure" id="fig2_53-en"><div class="figure-float"><div><img alt="Example of characters within brackets which are made a level smaller than the normal character size." width="75" height="271" src="../image/Images-en/img2_53.png"/><div class="figureCaption">Fig. 3.126: <span class="caption-body">Example of characters within brackets which are made a level smaller than the normal character size.</span></div></div></div></div><table class="t_note"><tr><td class="ft" rowspan="1" colspan="1">
+					
+					<p>(note 1)</p></td><td rowspan="1" colspan="1">
+					
+					<p>In cases where  additional information like page references, explanations of terminology, etc. appear within brackets, sometimes the character
+                    size is a level smaller than the character size established by the <a class="termref" href="terminology.xhtml#term.kihon-hanmen">kihon-hanmen</a>.
+                 </p></td></tr></table></li>
+					<li>
+					<p>Cases where <a class="termref" href="terminology.xhtml#term.line-start-prohibition-rule">line head wrapping</a>, <a class="termref" href="terminology.xhtml#term.line-end-prohibition-rule">line end wrapping</a> or <a class="termref" href="terminology.xhtml#term.unbreakable-characters-rule">unbreakable character sequences</a> should not be broken (see <a class="figure_ref" href="examples_of_line_adjustment.xhtml#fig2_33-en">Fig. 3.33</a>).
+             </p></li>
+				</ol></body></html>

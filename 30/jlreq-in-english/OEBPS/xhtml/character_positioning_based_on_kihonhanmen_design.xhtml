@@ -1,0 +1,81 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"><head><meta charset="UTF-8"/><title>Requirements for Japanese Text Layout</title><link rel="stylesheet" type="text/css" href="../css/base.css"/><link rel="stylesheet" type="text/css" href="../css/W3C-WG-NOTE.css"/></head><body><h4 id="character_positioning_based_on_kihonhanmen_design">2.5.3 <span class="heading"><span class="index" id="en-subheading1_5_3">Character Positioning based on Kihon-hanmen Design</span></span></h4><p>In principle, the characters in each line follow the <a class="termref" href="terminology.xhtml#term.solid-setting">solid setting</a> positions of characters established for the kihon-hanmen. However, as already shown in some of the previous figures, there are examples where this is not the case. Such cases are rather common, and here we will show some prototypical examples (details will be given in <a class="sec_ref" href="line-composition.xhtml#line-composition">3 Line Composition</a>).</p><table class="t_note">
+					<tr>
+						<td class="ft" rowspan="1" colspan="1">
+							
+								
+								<p>(note 1)</p>
+							
+						</td>
+						<td rowspan="1" colspan="1">
+							
+								
+								<p>Where character sizes differ from the solid set sizes established for the kihon-hanmen, line lengths may not be identical with the <a class="termref" href="terminology.xhtml#term.line-length">line length</a> of the kihon-hanmen; it is necessary to align the ends of the lines, with the exception of the last line in a paragraph. The processing method for this is explained in <a class="sec_ref" href="line_adjustment.xhtml#line_adjustment">3.8 Line Adjustment</a>.</p>
+							
+						</td>
+					</tr>
+				</table><ol>
+					<li>
+ 
+ 
+ <p>When 9pt is the character size used to establish the kihon-hanmen, characters smaller than 9pt may be inserted in part of a line (see <a class="figure_ref" href="line_positioning_based_on_the_kihonhanmen_design.xhtml#fig_ad1_9-en">Fig. 2.40</a>). In such cases, the parts set at 9pt and any parts set at a smaller, say, 8pt size both use solid setting, with <a class="termref" href="terminology.xhtml#term.character-frame">character frames</a>
+ at the respective sizes for each part.</p>
+ 
+ </li>
+					<li>
+ 
+ 
+ <p>In cases where proportional Latin letters are rotated 90 degrees clockwise (see <a class="figure_ref" href="major_differences_between_vertical_writing_mode_and_horizontal_writing_mode.xhtml#fig1_20-en">Fig. 2.25</a>), the proportional letters are placed according to their <a class="termref" href="terminology.xhtml#term.proportional">proportional</a> widths. Hence, they do not fit to the character positions established for the kihon-hanmen (see <a class="figure_ref" href="character_positioning_based_on_kihonhanmen_design.xhtml#fig_ad1_13-en">Fig. 2.44</a>). Japanese letters following the Latin letters consequently slip away from the default positions as well.</p>
+ 
+ 
+ 
+ <div class="figure" id="fig_ad1_13-en"><div class="figure-float"><div><img alt="Positioning of a mixture of Western and Japanese letters in a line." width="373" height="439" src="../image/Images-en/img_ad1_13.png"/><div class="figureCaption">Fig. 2.44: <span class="caption-body">Positioning of a mixture of Western and Japanese letters in a line.</span></div></div></div></div>
+ 
+ 
+ </li>
+					<li>
+ 
+ 
+ <p>There are several methods for positioning <a class="characterClass" href="cl-01.xhtml#cl-01">opening brackets (cl-01)</a>
+at the
+beginning of a line
+(details are explained in <a class="sec_ref" href="positioning_of_opening_brackets_at_line_head.xhtml#positioning_of_opening_brackets_at_line_head">3.1.5 Positioning of Opening Brackets at Line Head</a>). Because an opening bracket is not a full-width character, in  cases where the indentation of the first line of a paragraph is a
+<a class="termref" href="terminology.xhtml#term.one-em-space">one em space</a>, or if the <a class="termref" href="terminology.xhtml#term.tentsuki">tentsuki</a>
+position is used for the bracket (that is, there is no space at the line head), the character following the bracket will be in a position which does not fit to the character positions established for the kihon-hanmen (see <a class="figure_ref" href="character_positioning_based_on_kihonhanmen_design.xhtml#fig_ad1_14-en">Fig. 2.45</a>). However, the adaptations made during the alignment of line ends will ensure that the character at the end of a line is at a position that fits with the kihon-hanmen.</p>
+ 
+ 
+ 
+ <div class="figure" id="fig_ad1_14-en"><div class="figure-float"><div><img alt="Example of positioning of characters off the kihon-hanmen position due to opening brackets at the line head." width="524" height="442" src="../image/Images-en/img_ad1_14.png"/><div class="figureCaption">Fig. 2.45: <span class="caption-body">Example of positioning of characters off the kihon-hanmen position due to opening brackets at the line head.</span></div></div></div></div>
+ 
+ 
+ </li>
+					<li>
+ 
+ 
+ <p><a class="sec_ref" href="line-composition.xhtml#line-composition">3 Line Composition</a> explains that <a class="characterClass" href="cl-06.xhtml#cl-06">full stops (cl-06)</a>, <a class="characterClass" href="cl-07.xhtml#cl-07">commas (cl-07)</a>, <a class="characterClass" href="cl-01.xhtml#cl-01">opening brackets (cl-01)</a> and <a class="characterClass" href="cl-02.xhtml#cl-02">closing brackets (cl-02)</a>  are <a class="termref" href="terminology.xhtml#term.half-width">half-width</a>. If these <a class="termref" href="terminology.xhtml#term.punctuation-marks">punctuation marks</a> and brackets are adjacent to <a class="characterClass" href="cl-19.xhtml#cl-19">ideographic (cl-19)</a>, <a class="characterClass" href="cl-16.xhtml#cl-16">katakana (cl-16)</a> or <a class="characterClass" href="cl-15.xhtml#cl-15">hiragana (cl-15)</a> characters, in principle there should be a <a class="termref" href="terminology.xhtml#term.half-em-space">half em space</a> before or after the punctuation mark or brackets, so that
+ these occupy in effect a full-width size. However, if they are adjacent to other punctuation marks or brackets,
+ the half em space is not used. This is done to improve the visual appearance.  In such cases, the character positions are different than the positions established when defining the kihon-hanmen
+ (see <a class="figure_ref" href="character_positioning_based_on_kihonhanmen_design.xhtml#fig_ad1_15-en">Fig. 2.46</a>).</p>
+ 
+ 
+ 
+ <div class="figure" id="fig_ad1_15-en"><div class="figure-float"><div><img alt="Example of lines with consecutive punctuation marks." width="532" height="459" src="../image/Images-en/img_ad1_15.png"/><div class="figureCaption">Fig. 2.46: <span class="caption-body">Example of lines with consecutive punctuation marks.</span></div></div></div></div>
+ 
+ 
+ </li>
+					<li>
+ 
+ 
+ <p><a class="sec_ref" href="line-composition.xhtml#line-composition">3 Line Composition</a>
+explains the principle that <a class="characterClass" href="cl-02.xhtml#cl-02">closing brackets (cl-02)</a>, <a class="characterClass" href="cl-06.xhtml#cl-06">full stops (cl-06)</a> and <a class="characterClass" href="cl-07.xhtml#cl-07">commas (cl-07)</a>
+<a class="termref" href="terminology.xhtml#term.line-start-prohibition-rule">should not be placed at the line head</a>. If
+	by simple sequential placement these characters would
+appear at the line head or at the line end, some kind of adjustment becomes necessary. A similar adjustment is required for characters that should not be placed at the end of a line, such as <a class="characterClass" href="cl-01.xhtml#cl-01">opening brackets (cl-01)</a>. As a result of such adjustment, it may happen that
+other characters are placed at positions which are different from those established for the kihon-hanmen.</p>
+ 
+ 
+ 
+ <div class="figure" id="fig_ad1_16-en"><div class="figure-float"><div><img alt="Example of line adjustment to avoid those characters which shall not start and end a line." width="661" height="462" src="../image/Images-en/img_ad1_16.png"/><div class="figureCaption">Fig. 2.47: <span class="caption-body">Example of line adjustment to avoid those characters which shall not start and end a line.</span></div></div></div></div>
+ 
+ 
+ </li>
+				</ol></body></html>
