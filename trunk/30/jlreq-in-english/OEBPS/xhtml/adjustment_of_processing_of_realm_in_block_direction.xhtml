@@ -1,0 +1,215 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"><head><meta charset="UTF-8"/><title>Requirements for Japanese Text Layout</title><link rel="stylesheet" type="text/css" href="../css/base.css"/><link rel="stylesheet" type="text/css" href="../css/W3C-WG-NOTE.css"/></head><body><h4 id="adjustment_of_processing_of_realm_in_block_direction">4.5.3 <span class="heading"><span class="index" id="d12e1027">Adjustment of Processing of Realm in Block Direction</span></span></h4><p>Except for the last line before the page break or new recto, the very last line set at the bottom of a page or a column is set to be aligned to the border of the kihon-hanmen or the column area. However, sometimes exceptions arise as follows:</p><ol>
+					<li>
+
+<p>Paragraphs and other objects set using a different character size or line gap from the kihon-hanmen. If there is no adjustment, the bottom of the last line will not be aligned to the bottom of the kihon-hanmen or column area in the block direction. Examples are block headings and end notes  inserted after a paragraph.</p>
+</li>
+					<li>
+
+<p>When setting objects which are prohibited at the bottom of a kihon-hanmen or the bottom of a column, such as block headings,  some blanks may appear on the previous page or in the previous column.</p>
+</li>
+				</ol><p>In these cases, there are two ways to solve the issue. Hereafter, procedure (a) will be called "adjustment processing in block direction".</p><ol>
+					<li>
+
+<p>Set  the bottom of the line aligned to the bottom of the kihon-hanmen or the bottom of the column  in the block direction, and move blanks to appropriate positions within the kihon-hanmen or the column.</p>
+</li>
+					<li>
+
+<p>Let the blanks appearing at the bottom of the hanmen or the column in block direction remain as they are.</p>
+</li>
+				</ol><p>There are some issues related to the adjustment procedure in the block direction as follows:</p><p>First,  make best efforts to reduce such cases.
+				  Some examples of how not to let objects affect the alignment to the kihon-hanmen lines of following objects are:</p><ol>
+					<li>
+					
+						
+						<p>Block heading:  the  area of the block heading is specified by an integral number of lines (see <a class="sec_ref" href="processing_of_gyoudori.xhtml#processing_of_gyoudori">4.1.6 Processing of Gyou-dori</a>).</p>
+					
+                        <table class="t_note">
+                           <tr>
+                              <td class="ft" rowspan="1" colspan="1">
+                                 
+                                    
+                                    <p>(note 1)</p>
+                                 
+                              </td>
+                              <td rowspan="1" colspan="1">
+                                 
+                                    
+                                    <p>Some mathematical formulas  where the block direction width is wider than the hanmen or column character size, like fractional formulas,  can be set in two ways. One is to specify the space of the area with a number of lines and when the area has some aligned space  in the block direction  the adjustment is done within the hanmen or within the column.</p>
+                                 
+                              </td>
+                           </tr>
+                        </table>
+                        
+                     </li>
+					<li>
+					
+							
+							<p>Block direction space between paragraphs: to specify the size of a space with a number of lines (see <a class="sec_ref" href="processing_of_spaces_between_paragraphs.xhtml#processing_of_spaces_between_paragraphs">4.5.2 Processing of Spaces between Paragraphs</a>). </p>
+					
+                     </li>
+					<li>
+                        
+                           
+                           <p>Other cases  such as Haiku with larger characters,  where the space of the block is specified with a number of lines.</p>
+                        
+                        <table class="t_note">
+                           <tr>
+                              <td class="ft" rowspan="1" colspan="1">
+                                 
+                                    
+                                    <p>(note 1)</p>
+                                 
+                              </td>
+                              <td rowspan="1" colspan="1">
+                                 
+                                    
+                                    <p>When haiku and other short texts are quoted in a block area  the inter-letter-space is sometimes set as a half em or fourth em,  or  by setting the length of the line and setting the text using the even inter-letter spacing method (see <a class="figure_ref" href="single_line_alignment_processing.xhtml#fig2_5_9-en">Fig. 3.102</a>).</p>
+                                 
+                              </td>
+                           </tr>
+                        </table>
+                        
+                     </li>
+				</ol><p>When there is a following object  and the properties of the object are different from the properties of the kihon-hanmen,  set the object to align with the bottom  edge of hanmen or column  and adjust the space between the object and the text before. Examples are as follows:</p><ol>
+					<li>
+                        
+                           
+                           <p>Footnotes in horizontal writing mode (see <a class="sec_ref" href="processing_of_footnotes_in_horizontal_writing_mode.xhtml#processing_of_footnotes_in_horizontal_writing_mode">4.2.5 Processing of Footnotes in Horizontal Writing Mode</a>).</p>
+                        
+                     </li>
+					<li>
+                        
+                           
+                           <p>Sidenotes in vertical writing mode (see <a class="sec_ref" href="processing_of_sidenote_in_vertical_writing_mode.xhtml#processing_of_sidenote_in_vertical_writing_mode">4.2.6 Processing of Sidenotes in Vertical Writing Mode</a>).</p>
+                        
+                     </li>
+				</ol><p>When there is following text and objects  and there is a blank as the result of setting text and objects with specified spaces, adjustment is done with the block direction space among text lines and objects. Examples are as follows:</p><ol>
+					<li>
+                        
+                           
+                           <p>Cases where an illustration or a table is inserted with "relative positioning and no turn around mode" in terms of JIS X 4051 (see <a class="sec_ref" href="basic_ideas_about_illustration_positioning_in_JISX4051.xhtml#basic_ideas_about_illustration_positioning_in_JISX4051">4.3.5 Basic Ideas about Illustration Positioning in JIS X 4051</a>). Process should be implemented as follows:</p>
+                        
+<ol>
+<li>
+
+<p>When only one illustration or table with "relative positioning and no turn around mode" is allocated at the top or the bottom of the hanmen or the column,  the adjustment of the hanmen or the column is done between the illustration or the table  and the main text (see <a class="figure_ref" href="adjustment_of_processing_of_realm_in_block_direction.xhtml#fig3_6_1-en">Fig. 4.128</a>). </p>
+
+                        <table class="t_note">
+                           <tr>
+                              <td class="ft" rowspan="1" colspan="1">
+                                 
+                                    
+                                    <p>(note 1)</p>
+                                 
+                              </td>
+                              <td rowspan="1" colspan="1">
+                                 
+                                    
+                                    <p>When only one illustration or table with absolute position indication without turn around is set at the very top or the very bottom of the hanmen or the column in block direction, the process is implemented as for case 1.</p>
+                                 
+                              </td>
+                           </tr>
+                        </table>
+                                 
+                                    
+                                    <div class="figure" id="fig3_6_1-en"><div class="figure-float"><div><img alt="Example one of adjustment of allocation of a illustration with&#34;relative positioning mode&#34; (at the top of a hanmen)" width="230" height="323" src="../image/Images-en/img3_6_1.png"/><div class="figureCaption">Fig. 4.128: <span class="caption-body">Example one of adjustment of allocation of a illustration with"relative positioning mode" (at the top of a hanmen)</span></div></div></div></div>
+                                 
+                                 
+</li>
+<li>
+
+<p>When only one illustration or table with "relative positioning and no turn around mode" is allocated in the middle of a hanmen or a column  the adjustment of the hanmen or the column is done evenly in the space before and after the illustration or table (see <a class="figure_ref" href="adjustment_of_processing_of_realm_in_block_direction.xhtml#fig3_6_2-en">Fig. 4.129</a>).  </p>
+
+                                 
+                                    
+                                    <div class="figure" id="fig3_6_2-en"><div class="figure-float"><div><img alt="Example two of adjustment of allocation of a illustration with &#34;relative positioning mode&#34; (at the middle of a hanmen)" width="229" height="323" src="../image/Images-en/img3_6_2.png"/><div class="figureCaption">Fig. 4.129: <span class="caption-body">Example two of adjustment of allocation of a illustration with "relative positioning mode" (at the middle of a hanmen)</span></div></div></div></div>
+                                 
+                                 
+</li>
+<li>
+
+<p>When two or more illustrations or tables are inserted, a fractional blank is distributed to multiple spaces between main text and illustrations or tables (see <a class="figure_ref" href="line_positioning_based_on_the_kihonhanmen_design.xhtml#fig_ad1_10-en">Fig. 2.41</a>).</p>
+
+                        <table class="t_note">
+                           <tr>
+                              <td class="ft" rowspan="1" colspan="1">
+                                 
+                                    
+                                    <p>(note 1)</p>
+                                 
+                              </td>
+                              <td rowspan="1" colspan="1">
+                                 
+                                    
+                                    <p>When two or more illustrations are inserted, if the adjustment is done at more than one position, the line position of main text might be moved from the kihon-hanmen. To avoid that, one approach is to set lines after the illustration with alignment to the kihon-hanmen line position (see <a class="figure_ref" href="line_positioning_based_on_the_kihonhanmen_design.xhtml#fig_ad1_11-en">Fig. 2.42</a>). In processing like <a class="figure_ref" href="line_positioning_based_on_the_kihonhanmen_design.xhtml#fig_ad1_10-en">Fig. 2.41</a>, the size of the space before and after illustrations are very similar, however, in cases like <a class="figure_ref" href="line_positioning_based_on_the_kihonhanmen_design.xhtml#fig_ad1_11-en">Fig. 2.42</a>, the size of the space before and after one illustration are same, but, the sizes of spaces before and after different illustrations might be different from each other.
+                                    </p>
+                                 
+                              </td>
+                           </tr>
+                           <tr>
+                              <td class="ft" rowspan="1" colspan="1">
+                                 
+                                    
+                                    <p>(note 2)</p>
+                                 
+                              </td>
+                              <td rowspan="1" colspan="1">
+                                 
+                                    
+                                    <p>When the illustrations or tables with absolute position indication without turn around are set at the very top and the very bottom of the hanmen or column area, the issue mentioned in (note 1) will also arise. There are also two approaches. One is to make spaces before and after illustrations or tables equal, and the other is to force the line position so that it is aligned to the line position of the kihon-hanmen.</p>
+                                 
+                              </td>
+                           </tr>
+                        </table>
+                        
+
+
+</li>
+</ol>
+
+
+
+                     </li>
+					<li>
+                        
+                           
+                           <p>Cases where an endnote is inserted (see <a class="sec_ref" href="processing_of_endnotes_in_vertical_writing_mode_or_horizontal_writing_mode.xhtml#processing_of_endnotes_in_vertical_writing_mode_or_horizontal_writing_mode">4.2.4 Processing of Endnotes in Vertical Writing Mode or Horizontal Writing Mode</a>). In these cases, basically the adjustment is done between the endnote and the main text just after the endnote. However, when endnotes are only set at the very end of the hanmen or the column, the adjustment is done between the endnote and the main text before the endnote.</p>
+                        
+                     </li>
+					<li>
+                        
+                           
+                           <p>Cases where an inserted quotation block has a smaller character size and narrower line gap than the kihon-hanmen. In these cases, the adjustment processing in block direction is basically the same as for endnotes inserted between paragraphs (see <a class="figure_ref" href="adjustment_of_processing_of_realm_in_block_direction.xhtml#fig3_6_3-en">Fig. 4.130</a>, <a class="figure_ref" href="adjustment_of_processing_of_realm_in_block_direction.xhtml#fig3_6_3_2-en">Fig. 4.131</a>).
+                           </p>
+                        
+                                 
+                                    
+                                    <div class="figure" id="fig3_6_3-en"><div class="figure-float"><div><img alt="First example of a case quoted text block has smaller character size than kihon-hanmen" width="370" height="523" src="../image/Images-en/img3_6_3.png"/><div class="figureCaption">Fig. 4.130: <span class="caption-body">First example of a case quoted text block has smaller character size than kihon-hanmen</span></div></div></div></div>
+                                 
+                                 
+                                 
+                                    
+                                    <div class="figure" id="fig3_6_3_2-en"><div class="figure-float"><div><img alt="Second example of a case quoted text block has smaller character size than kihon-hanmen" width="370" height="523" src="../image/Images-en/img3_6_3_2.png"/><div class="figureCaption">Fig. 4.131: <span class="caption-body">Second example of a case quoted text block has smaller character size than kihon-hanmen</span></div></div></div></div>
+                                 
+                                 
+                     </li>
+				</ol><p>When there is no place for the adjustment even if it is necessary, the blank at the very bottom of the hanmen or the column area in block direction is left as it is. One  example is the blank after  endnotes occupying  one full page.</p><p>There are cases that there is not enough blank to set the following object and there happen to remain blank at the bottom of the realm of the hanmen or the column. The examples to let the rest blanck as is are as follows:</p><ol>
+					<li>
+                        
+                           
+                           <p>Cases where the heading is set at the bottom of the hanmen or column  and the heading is moved to the next page or next column (see <a class="sec_ref" href="processing_of_gyoudori_heading_set_in_the_bottom_of_the_page.xhtml#processing_of_gyoudori_heading_set_in_the_bottom_of_the_page">4.1.7 Processing of Gyou-dori Heading Set at the bottom of the Page</a>).</p>
+                        
+                     </li>
+					<li>
+                        
+                           
+                           <p>Cases where the size of the space before or after the paragraph is specified  and the paragraph is set at the top or bottom of a hanmen or a column  (see <a class="sec_ref" href="processing_of_spaces_between_paragraphs.xhtml#processing_of_spaces_between_paragraphs">4.5.2 Processing of Spaces between Paragraphs</a>). </p>
+                        
+                     </li>
+					<li>
+                      
+                           
+                             <p>Cases where there are no dividable positions in the first part of a dividable table  and  the table is set at the top of the next page or the next column  and there remains some blank space at the bottom of the previous hanmen or the previous column. Also cases where a dividable table is divided and there remains some blank space at the bottom of the previous hanmen or the previous column.</p>
+                      
+                     </li>
+				</ol></body></html>

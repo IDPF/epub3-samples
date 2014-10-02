@@ -1,0 +1,164 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"><head><meta charset="UTF-8"/><title>Requirements for Japanese Text Layout</title><link rel="stylesheet" type="text/css" href="../css/base.css"/><link rel="stylesheet" type="text/css" href="../css/W3C-WG-NOTE.css"/></head><body><h4 id="processing_of_gyoudori">4.1.6 <span class="heading"><span class="index" id="d8e1539">Processing of Gyou-dori</span></span></h4><p>"Gyou-dori" is the process  of specifying the footprint of headings in the block direction by using the line positions provided by the kihon-hanmen as a basis and by deciding how many times they need to be used. The length of the footprint in the block direction is calculated as follows: (line width in the block direction) × (line number) + (line gap) * (line number − 1). However, when the heading footprint happens to appear in middle of the page or the column, the footprint has adjacent line gaps before and after, and when the heading footprint happens to appear at the top of the page or the column, the footprint has an adjacent line gap after. </p><p>The following procedures are some of the ways "betsugyou" headings are processed based on the "gyou-dori" method: </p><ol>
+					<li>
+                        
+                           
+                           <p>Set the heading text at the center of the space specified with multiple lines of the kihon-hanmen. For example, when the heading is set at the center of a three line space, it is called  "center of three lines space". Following are some  examples (see <a class="figure_ref" href="processing_of_gyoudori.xhtml#fig3_1_15-en">Fig. 4.16</a> et al). In these figures, gray rectangles indicate the main text, and dotted rectangles in the heading area indicate the space specified with kihon-hanmen text lines. Also, running headings and page numbers are indicated with gray rectangles.
+                           </p>
+                        
+
+                        <table class="t_note">
+                           <tr>
+                              <td class="ft" rowspan="1" colspan="1">
+                                 
+                                    
+                                    <p>(note 1)</p>
+                                 
+                              </td>
+                              <td rowspan="1" colspan="1">
+                                 
+                                    
+                                    <p>The character size of a sub-title is usually two thirds of the main heading character size. The line gap is usually half the heading character size, narrower than the line gaps of main text lines. In the line head alignment case, the sub heading is indented, and in the centering case, the sub heading is also centered. The main heading and the sub heading should not be separated across two pages or two columns. It is expected that the main heading and the sub heading are treated as one object. </p>
+                                 
+                              </td>
+                           </tr>
+                        </table>
+                        
+
+                        <table class="t_note">
+                           <tr>
+                              <td class="ft" rowspan="1" colspan="1">
+                                 
+                                    
+                                    <p>(note 2)</p>
+                                 
+                              </td>
+                              <td rowspan="1" colspan="1">
+                                 
+                                    
+                                    <p>When heading text happens to be broken across lines, the break point should be decided with consideration given to the balance of the line head indent and the content itself. It is not aesthetically good that the bottom of  the indented heading reach near the bottom of the kihon-hanmen. For example, proper nouns should not be broken, particles should not set at the top of the line. The line gap should be narrowed to be seen as one object. For example, line gap between  headings that are broken across lines is one third em or a half em of the heading character size. The second line of a heading that breaks across a line is set with inline indent. The  heading lines are treated as one object, and are not separately set across two pages or two columns.</p>
+                                 
+                              </td>
+                           </tr>
+                        </table>
+                        
+                     </li>
+					<li>
+                        
+                           
+                           <p>Set the heading text at the center of the footprint specified with a multiple number of lines of the kihon-hanmen, and add space size  before and/or after also specified using numbers of lines of the kihon-hanmen. For example, when adding  space corresponding to the size of one line of the kihon-hanmen, it is called a one line blank space. Following are some  examples (see <a class="figure_ref" href="processing_of_gyoudori.xhtml#fig3_1_20-en">Fig. 4.21</a> et al).
+                           </p>
+                        
+                     </li>
+					<li>
+                        
+                           
+                           <p>Set the heading text in the space specified with multiple number of lines from the kihon-hanmen, with specific specifications regarding size. In this case, the size of  the heading block in the block direction is the total of the previous space, the character size and the after space, and the size should be the same as the space occupied by multiple lines of the kihon-hanmen. Following are some  examples (see <a class="figure_ref" href="processing_of_gyoudori.xhtml#fig3_1_23-en">Fig. 4.24</a> et al).
+                           </p>
+                        
+                     </li>
+					<li>
+                        
+                           
+                           <p>Set one line heading at the place decided by the kihon-hanmen design and set one blank line before the heading line. Blank lines may be more than one line, but such cases are very rare. This style is commonly used for small-headings. Following are some  examples (see <a class="figure_ref" href="processing_of_gyoudori.xhtml#fig3_1_25-en">Fig. 4.26</a> et al).
+                           </p>
+                        
+                     </li>
+					<li>
+                        
+                           
+                           <p>When headings are on multiple levels, set "gyou-dori" headings with different line spaces per heading level. There are two cases. One is the single  heading case, the other is adjacent multiple headings. In these cases, spaces in the block direction should look the same in both the single heading case and in the case of adjacent different level headings. To implement this design, in some cases, same level headings have different spaces depending on whether the heading is single or whether headings are adjacent. There are some examples in <a class="figure_ref" href="processing_of_gyoudori.xhtml#fig3_1_28-en">Fig. 4.29</a>.
+                           </p>
+                        
+                     </li>
+					<li>
+                        
+                           
+                           <p>The heading is set in a block of multiple lines, which is specified by using the line positions provided by the kihon-hanmen as a basis, but is not set in the center of the block but rather specified by specification of line numbers and spaces before and after. See an example in <a class="figure_ref" href="processing_of_gyoudori.xhtml#fig3_1_28_2-en">Fig. 4.30</a> et al.
+                           </p>
+                        
+                        
+                           
+                           <div class="figure" id="fig3_1_15-en"><div class="figure-float"><div><img alt="Example one of a heading set in the center of indicated multiple lines (the heading is set around the center of the page)." width="361" height="538" src="../image/Images-en/img3_1_15.png"/><div class="figureCaption">Fig. 4.16: <span class="caption-body">Example one of a heading set in the center of indicated multiple lines (the heading is set around the center of the page).</span></div></div></div></div>
+                        
+                        
+                        
+                           
+                           <div class="figure" id="fig3_1_18-en"><div class="figure-float"><div><img alt="Example two of a heading set in the center of indicated lines (The heading is set in the top of the page)." width="540" height="553" src="../image/Images-en/img3_1_18.png"/><div class="figureCaption">Fig. 4.17: <span class="caption-body">Example two of a heading set in the center of indicated lines (The heading is set in the top of the page).</span></div></div></div></div>
+                        
+                        
+                        
+                           
+                           <div class="figure" id="fig3_1_19-en"><div class="figure-float"><div><img alt="Example three of a heading set in the center of indicated multiple lines (the heading, which is permitted to be set in one column of the hanmen, is set at the bottom of an even page)." width="391" height="529" src="../image/Images-en/img3_1_19.png"/><div class="figureCaption">Fig. 4.18: <span class="caption-body">Example three of a heading set in the center of indicated multiple lines (the heading, which is permitted to be set in one column of the hanmen, is set at the bottom of an even page).</span></div></div></div></div>
+                        
+                        
+                        
+                           
+                           <div class="figure" id="fig3_1_16-en"><div class="figure-float"><div><img alt="Example four of a heading set in the center of indicated multiple lines (a heading with sub-title is set around the center of the page)." width="408" height="530" src="../image/Images-en/img3_1_16.png"/><div class="figureCaption">Fig. 4.19: <span class="caption-body">Example four of a heading set in the center of indicated multiple lines (a heading with sub-title is set around the center of the page).</span></div></div></div></div>
+                        
+                        
+
+                        
+                           
+                           <div class="figure" id="fig3_1_17-en"><div class="figure-float"><div><img alt="Example five of a heading set in the center of indicated multiple lines (the heading has two lines and set in around the center of the page)." width="433" height="530" src="../image/Images-en/img3_1_17.png"/><div class="figureCaption">Fig. 4.20: <span class="caption-body">Example five of a heading set in the center of indicated multiple lines (the heading has two lines and set in around the center of the page).</span></div></div></div></div>
+                        
+                        
+                        
+                           
+                           <div class="figure" id="fig3_1_20-en"><div class="figure-float"><div><img alt="Example one of a heading set in the center of indicated multiple lines with a blank line before (the heading is set around the center of the page)." width="361" height="576" src="../image/Images-en/img3_1_20.png"/><div class="figureCaption">Fig. 4.21: <span class="caption-body">Example one of a heading set in the center of indicated multiple lines with a blank line before (the heading is set around the center of the page).</span></div></div></div></div>
+                        
+                        
+                        
+                           
+                           <div class="figure" id="fig3_1_21-en"><div class="figure-float"><div><img alt="Example two of a heading set in the center of indicated multiple lines with a blank line before (the heading is set in the top of the page)." width="461" height="602" src="../image/Images-en/img3_1_21.png"/><div class="figureCaption">Fig. 4.22: <span class="caption-body">Example two of a heading set in the center of indicated multiple lines with a blank line before (the heading is set in the top of the page).</span></div></div></div></div>
+                        
+                        
+                        
+                           
+                           <div class="figure" id="fig3_1_22-en"><div class="figure-float"><div><img alt="Example  of a heading set in the center of indicated multiple lines with one blank line after (the heading is set in the top of the page)." width="494" height="602" src="../image/Images-en/img3_1_22.png"/><div class="figureCaption">Fig. 4.23: <span class="caption-body">Example  of a heading set in the center of indicated multiple lines with one blank line after (the heading is set in the top of the page).</span></div></div></div></div>
+                        
+                        
+                        
+                           
+                           <div class="figure" id="fig3_1_23-en"><div class="figure-float"><div><img alt="Example one of a heading set in the specified position relative to multiple lines (the heading is set in around the center of the page)." width="361" height="680" src="../image/Images-en/img3_1_23.png"/><div class="figureCaption">Fig. 4.24: <span class="caption-body">Example one of a heading set in the specified position relative to multiple lines (the heading is set in around the center of the page).</span></div></div></div></div>
+                        
+                        
+                      
+                        
+                         <div class="figure" id="fig3_1_24-en"><div class="figure-float"><div><img alt="Example two of a heading set the specified position relative to multiple lines (the heading is set in the top of the page)." width="424" height="680" src="../image/Images-en/img3_1_24.png"/><div class="figureCaption">Fig. 4.25: <span class="caption-body">Example two of a heading set the specified position relative to multiple lines (the heading is set in the top of the page).</span></div></div></div></div>
+                        
+                        
+                        
+                           
+                           <div class="figure" id="fig3_1_25-en"><div class="figure-float"><div><img alt="Example one of a heading with one blank line before (the heading is set in around the center of the page)." width="369" height="522" src="../image/Images-en/img3_1_25.png"/><div class="figureCaption">Fig. 4.26: <span class="caption-body">Example one of a heading with one blank line before (the heading is set in around the center of the page).</span></div></div></div></div>
+                        
+                        
+                        
+                           
+                           <div class="figure" id="fig3_1_26-en"><div class="figure-float"><div><img alt="Example two of a heading set with one blank line before (the heading is set in the top of the page)." width="369" height="522" src="../image/Images-en/img3_1_26.png"/><div class="figureCaption">Fig. 4.27: <span class="caption-body">Example two of a heading set with one blank line before (the heading is set in the top of the page).</span></div></div></div></div>
+                        
+                        
+                        
+                           
+                           <div class="figure" id="fig3_1_27-en"><div class="figure-float"><div><img alt="Example three of a heading set with one blank line before (the heading is set in the bottom of even page (This case is limited to vertical writing mode and one column style))." width="369" height="522" src="../image/Images-en/img3_1_27.png"/><div class="figureCaption">Fig. 4.28: <span class="caption-body">Example three of a heading set with one blank line before (the heading is set in the bottom of even page (This case is limited to vertical writing mode and one column style)).</span></div></div></div></div>
+                        
+                        
+                        
+                           
+                           <div class="figure" id="fig3_1_28-en"><div class="figure-float"><div><img alt="Examples of top level,  medium level and low level heading in gyou-dori style." width="395" height="712" src="../image/Images-en/img3_1_28.png"/><div class="figureCaption">Fig. 4.29: <span class="caption-body">Examples of top level,  medium level and low level heading in gyou-dori style.</span></div></div></div></div>
+                        
+                        
+                        
+                           
+                           <div class="figure" id="fig3_1_28_2-en"><div class="figure-float"><div><img alt="Example one of a heading set with specification of line numbers in kihon-hanmen and blank lines before and after (the heading is set in around the center of the page)." width="409" height="583" src="../image/Images-en/img3_1_28_2.png"/><div class="figureCaption">Fig. 4.30: <span class="caption-body">Example one of a heading set with specification of line numbers in kihon-hanmen and blank lines before and after (the heading is set in around the center of the page).</span></div></div></div></div>
+                        
+                        
+
+                        
+                           
+                           <div class="figure" id="fig3_1_28_3-en"><div class="figure-float"><div><img alt="Example one of instruction of line numbers in block direction for headings and blank lines before and after (The heading is set in the top of the page)." width="407" height="678" src="../image/Images-en/img3_1_28_3.png"/><div class="figureCaption">Fig. 4.31: <span class="caption-body">Example one of instruction of line numbers in block direction for headings and blank lines before and after (The heading is set in the top of the page).</span></div></div></div></div>
+                        
+                        
+
+
+                     </li>
+				</ol></body></html>

@@ -1,0 +1,19 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja"><head><meta charset="UTF-8"/><meta name="author" content="Japanese Layout Task Force"/><title>日本語組版処理の要件（日本語版）</title><link rel="stylesheet" type="text/css" href="../css/W3C-WG-NOTE.css"/><link rel="stylesheet" type="text/css" href="../css/base.css"/></head><body><h4 id="procedures_for_intercharacter_space_expansion">3.8.4 <span class="heading"><span class="index" id="ja-subheading2_8_4">空ける処理の優先順位</span></span></h4><p>空ける処理（追出し処理）を行う場合も詰める処理（追込み処理）と同様，優先順位と空ける限界を決めて行う．<span class="index" id="d6e3335">JIS X 4051</span>では，次の順序で処理するように規定している．</p><ol>
+					<li><p><span class="index" id="d6e3348"><a class="characterClass" href="cl-26.xhtml#cl-26">欧文間隔（cl-26）</a></span>を，最大で二分アキまで文字サイズ比で均等に空ける．</p>
+					</li>
+					<li><p><a class="characterClass" href="cl-15.xhtml#cl-15">平仮名（cl-15）</a>，<a class="characterClass" href="cl-16.xhtml#cl-16">片仮名（cl-16）</a>，<a class="characterClass" href="cl-19.xhtml#cl-19">漢字等（cl-19）</a>などと，<span class="index" id="d6e3370"><a class="characterClass" href="cl-24.xhtml#cl-24">連数字中の文字（cl-24）</a></span>，<span class="index" id="d6e3374"><a class="characterClass" href="cl-27.xhtml#cl-27">欧文用文字（cl-27）</a></span>又は<span class="index" id="d6e3378"><a class="characterClass" href="cl-25.xhtml#cl-25">単位記号中の文字（cl-25）</a></span>との字間の四分アキを，最大で二分アキまで（又は<a class="termref" href="terminology.xhtml#term.one-third-em-space">三分アキ</a>まで）文字サイズ比で均等に空ける．</p>
+					<table class="t_note"><tr><td class="ft" rowspan="1" colspan="1"><p>注1）</p>
+               </td><td rowspan="1" colspan="1">
+               <p>詰める処理と同様に，<a class="characterClass" href="cl-19.xhtml#cl-19">漢字等（cl-19）</a>などと，<a class="characterClass" href="cl-27.xhtml#cl-27">欧文用文字（cl-27）</a>，<a class="characterClass" href="cl-24.xhtml#cl-24">連数字中の文字（cl-24）</a>又は<a class="characterClass" href="cl-25.xhtml#cl-25">単位記号中の文字（cl-25）</a>との字間の四分アキは，固定した空き量として，空ける調整でも使用しないで処理している例がある．</p>
+               </td></tr></table></li>
+					<li><p>a及びb以外の行の調整処理で字間を空ける処理を避けるとされていない箇所（空ける処理が可能な箇所）の字間を，最大で四分アキまで文字サイズ比で均等に空ける．</p>
+              </li>
+					<li><p>a，b，cで調整できない場合は，a，b，cに加え，分割禁止とされていない文字間を均等に空ける．</p>
+					<table class="t_note"><tr><td class="ft" rowspan="1" colspan="1"><p>注1）</p>
+              </td><td rowspan="1" colspan="1">
+              <p>JIS X 4051ではdの処理に加えて，<a class="characterClass" href="cl-27.xhtml#cl-27">欧文用文字（cl-27）</a>の字間を含め，均等に空けるかどうかは，処理系定義とする，となっている．</p>
+              </td></tr><tr><td class="ft" rowspan="1" colspan="1"><p>注2）</p>
+                  </td><td rowspan="1" colspan="1">
+                  <p>行の調整処理の際に空ける処理（追い出し処理）が可能な箇所の詳細は，<a class="sec_ref" href="about_character_classes.xhtml#about_character_classes">3.9 文字クラスについて</a>で説明する文字クラスに従い，表の形式にして<a class="sec_ref" href="opportunities_for_intercharacter_space_expansion_during_line_adjustment.xhtml#opportunities_for_intercharacter_space_expansion_during_line_adjustment">附属書E 行の調整処理で​空ける処理が​可能な箇所</a>で示す．</p>
+                  </td></tr></table></li>
+				</ol></body></html>

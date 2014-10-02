@@ -1,0 +1,71 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"><head><meta charset="UTF-8"/><title>Requirements for Japanese Text Layout</title><link rel="stylesheet" type="text/css" href="../css/base.css"/><link rel="stylesheet" type="text/css" href="../css/W3C-WG-NOTE.css"/></head><body><h4 id="processing_of_spaces_between_paragraphs">4.5.2 <span class="heading"><span class="index" id="d12e599">Processing of Spaces between Paragraphs</span></span></h4><p>The space between paragraphs is usually same as line gap specified for the paragraphs.</p><table class="t_note">
+					<tr>
+						<td class="ft" rowspan="1" colspan="1">
+							
+								
+								<p>(note 1)</p>
+							
+						</td>
+						<td rowspan="1" colspan="1">
+							
+								
+								<p>JIS X 4051 determines that "the space between paragraphs  where different character sizes are specified  shall be the line gap specified for kihon-hanmen".</p>
+							
+						</td>
+					</tr>
+				</table><p>Sometimes the space between paragraphs is specified. JIS X 4051 determines the space before the paragraph as "space before paragraph"  and the space after the paragraph as "space after paragraph". When the "space before paragraph" or the "space after paragraph" is specified,  the space will be kept between paragraphs. Thus "space before paragraph" or "space after paragraph" in the JIS X 4051 context is usually specified with absolute space sizes (see <a class="figure_ref" href="processing_of_spaces_between_paragraphs.xhtml#fig3_5_5-en">Fig. 4.121</a>)  or a number of lines (see <a class="figure_ref" href="processing_of_spaces_between_paragraphs.xhtml#fig3_5_5_2-en">Fig. 4.122</a>).
+ </p><div class="figure" id="fig3_5_5-en"><div class="figure-float"><div><img alt="Example one where the &#34;space before paragraph&#34; or the &#34;space after paragraph&#34; is specified" width="370" height="523" src="../image/Images-en/img3_5_5.png"/><div class="figureCaption">Fig. 4.121: <span class="caption-body">Example one where the "space before paragraph" or the "space after paragraph" is specified</span></div></div></div></div><div class="figure" id="fig3_5_5_2-en"><div class="figure-float"><div><img alt="Example one where the &#34;space before paragraph&#34; or the &#34;space after paragraph&#34; is specified (quotations are inserted)" width="380" height="533" src="../image/Images-en/img3_5_5_2.png"/><div class="figureCaption">Fig. 4.122: <span class="caption-body">Example one where the "space before paragraph" or the "space after paragraph" is specified (quotations are inserted)</span></div></div></div></div><table class="t_note">
+					<tr>
+						<td class="ft" rowspan="1" colspan="1">
+							
+								
+								<p>(note 1)</p>
+							
+						</td>
+						<td rowspan="1" colspan="1">
+						  
+							
+							  <p>JIS X 4051 describes "space before paragraph" and "space after paragraph" at the top or the bottom of the hanmen or column as follows (see <a class="figure_ref" href="processing_of_spaces_between_paragraphs.xhtml#fig3_5_8-en">Fig. 4.125</a>  <a class="figure_ref" href="processing_of_spaces_between_paragraphs.xhtml#fig3_5_9-en">Fig. 4.126</a> and <a class="figure_ref" href="processing_of_spaces_between_paragraphs.xhtml#fig3_5_10-en">Fig. 4.127</a> about the space specified with number of lines): </p>
+							
+							<ol>
+								<li>
+                                 
+                                    
+                                    <p>When the space is specified with "space before paragraph", the last line of the paragraph is at the bottom of the hanmen or column,  or there is not enough room to fill the specified space,  the top of the next page or column will be used to fill the "space before paragraph" followed by the next paragraph (see <a class="figure_ref" href="processing_of_spaces_between_paragraphs.xhtml#fig3_5_6-en">Fig. 4.123</a>). Note that the remaining unexpected blank on the previous page or column is left as is.</p>
+                                 
+                                 
+                                    
+                                    <div class="figure" id="fig3_5_6-en"><div class="figure-float"><div><img alt="An example of &#34;space before paragraph&#34; in the top of the hanmen (an example of a NAKA-TOBIRA)" width="369" height="523" src="../image/Images-en/img3_5_6.png"/><div class="figureCaption">Fig. 4.123: <span class="caption-body">An example of "space before paragraph" in the top of the hanmen (an example of a NAKA-TOBIRA)</span></div></div></div></div>
+                                 
+                                 
+                              </li>
+								<li>
+                                 
+                                    
+                                    <p>When the last line of the paragraph with "space after paragraph" is at the bottom of the hanmen or column  or  there is not enough blank space to contain the specified space after the paragraph,  the next paragraph  starts from the top of the next hanmen or the next column. Note that the space after the previous paragraph is left as is (see <a class="figure_ref" href="processing_of_spaces_between_paragraphs.xhtml#fig3_5_7-en">Fig. 4.124</a>).</p>
+                                 
+                                 
+                                    
+                                    <div class="figure" id="fig3_5_7-en"><div class="figure-float"><div><img alt="An example of &#34;space after paragraph&#34; at the bottom of hanmen or column (an example of NAKA-TOBIRA)" width="369" height="523" src="../image/Images-en/img3_5_7.png"/><div class="figureCaption">Fig. 4.124: <span class="caption-body">An example of "space after paragraph" at the bottom of hanmen or column (an example of NAKA-TOBIRA)</span></div></div></div></div>
+                                 
+                                 
+                              </li>
+							</ol>
+						</td>
+					</tr>
+</table><table class="t_note">
+					<tr>
+						<td class="ft" rowspan="1" colspan="1">
+							
+								
+								<p>(note 2)</p>
+							
+						</td>
+						<td rowspan="1" colspan="1">
+							
+								
+								<p>JIS X 4051 determines that when the previous paragraph is accompanied with "space after paragraph" and the next paragraph is accompanied with "space before paragraph"  the size of the space  between these two paragraphs is sum of the "space after paragraph" and the "space before paragraph".  </p>
+							
+						</td>
+					</tr>
+				</table><p>When the "space before paragraph" or the "space after paragraph" is specified with a number of lines,  the space is calculated with the basic character size and line gap of the paragraph. The space accompanying the header is calculated with the character size and the line gap of the kihon-hanmen. When the spaces among paragraphs are specified as a size of one line space,  the results are as follows:					</p><div class="figure" id="fig3_5_8-en"><div class="figure-float"><div><img alt="Example one of the space size between paragraphs with number of lines (at the middle of the hanmen)" width="376" height="450" src="../image/Images-en/img3_5_8.png"/><div class="figureCaption">Fig. 4.125: <span class="caption-body">Example one of the space size between paragraphs with number of lines (at the middle of the hanmen)</span></div></div></div></div><div class="figure" id="fig3_5_9-en"><div class="figure-float"><div><img alt="Example two of the space sibe between paragraphs with number of lines (at the top of the hanmen)" width="383" height="451" src="../image/Images-en/img3_5_9.png"/><div class="figureCaption">Fig. 4.126: <span class="caption-body">Example two of the space sibe between paragraphs with number of lines (at the top of the hanmen)</span></div></div></div></div><div class="figure" id="fig3_5_10-en"><div class="figure-float"><div><img alt="Example two of the space size between paragraphs with number of lines (at the bottom of the hanmen)" width="367" height="450" src="../image/Images-en/img3_5_10.png"/><div class="figureCaption">Fig. 4.127: <span class="caption-body">Example two of the space size between paragraphs with number of lines (at the bottom of the hanmen)</span></div></div></div></div></body></html>

@@ -1,0 +1,25 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja"><head><meta charset="UTF-8"/><meta name="author" content="Japanese Layout Task Force"/><title>日本語組版処理の要件（日本語版）</title><link rel="stylesheet" type="text/css" href="../css/W3C-WG-NOTE.css"/><link rel="stylesheet" type="text/css" href="../css/base.css"/></head><body><h4 id="examples_of_line_adjustment">3.1.12 <span class="heading"><span class="index" id="ja-subheading2_1_12">行の調整処理例</span></span></h4><p>行の調整処理の処理方法については，<a class="sec_ref" href="line_adjustment.xhtml#line_adjustment">3.8 行の調整処理</a>で解説するが，行の調整処理が必要になる要因の1つに約物の組版処理が関係することから，ここでは<span class="index" id="d5e6354">行の調整処理が必要となる主な2つの例</span>とその調整例について解説する（<a class="figure_ref" href="examples_of_line_adjustment.xhtml#fig2_33-ja">図 3.33</a>）．</p><ol>
+					<li>
+   
+    <p>日本語組版では，1行の行長に満たない段落の最終行を除き，行長をそろえるのが原則である．行長は，前述したように文字サイズの整数倍に設定するので，全角の文字を並べていく限りでは，行長はそろうことになる（<a class="figure_ref" href="examples_of_line_adjustment.xhtml#fig2_33-ja">図 3.33</a>の①）．</p>
+    
+   
+   </li>
+					<li>
+   
+    <p><a class="figure_ref" href="examples_of_line_adjustment.xhtml#fig2_33-ja">図 3.33</a>の②では，読点<span class="character">[、] (IDEOGRAPHIC COMMA)</span>と始めかぎ括弧<span class="character">[「] (LEFT CORNER BRACKET)</span>が連続し，この2つの約物全体の字幅及び空き量の合計は1.5倍となり，行長で二分の過不足が発生する．そこで，<a class="figure_ref" href="examples_of_line_adjustment.xhtml#fig2_33-ja">図 3.33</a>の③のように始めかぎ括弧<span class="character">[「] (LEFT CORNER BRACKET)</span>の前の<a class="termref2nd" href="terminology.xhtml#term.half-em-space">二分アキ</a>及び終わりかぎ括弧<span class="character">[」] (RIGHT CORNER BRACKET)</span>の後ろの二分アキを<a class="termref2nd" href="terminology.xhtml#term.quarter-em-space">四分アキ</a>に詰める処理（<span class="index" id="d5e6423"><a class="termref" href="terminology.xhtml#term.line-adjustment-by-inter-character-space-reduction">追込み処理</a></span>という）が可能なので，ここで二分の過不足の調整を行い，行長をそろえる．</p>
+    
+   
+   </li>
+					<li>
+   
+    <p><a class="figure_ref" href="examples_of_line_adjustment.xhtml#fig2_33-ja">図 3.33</a>の④では，15字目に<a class="characterClass" href="cl-01.xhtml#cl-01">始め括弧類（cl-01）</a>がくるので，この配置を回避する調整が必要になる．その行で全角の分を詰める処理が可能であれば，その処理を行い，2行目の“前”の文字を1行目の15字目に配置し，問題を回避できる．しかし，この例では全角の分を詰める処理が不可能なので，<a class="figure_ref" href="examples_of_line_adjustment.xhtml#fig2_33-ja">図 3.33</a>の⑤のように始め括弧類を2行目に移動し，1行目の字間を空ける調整が可能な箇所で空ける処理（<span class="index" id="d5e6472"><a class="termref" href="terminology.xhtml#term.line-adjustment-by-inter-character-space-expansion">追出し処理</a></span>という）を行い，1行目の行長をそろえる処理を行う．</p>
+    
+   
+   
+    <div class="figure" id="fig2_33-ja"><div class="figure-float"><div><img alt="行の調整を行った例" width="514" height="352" src="../image/Images-ja/img2_33.png"/><div class="figureCaption">図 3.33 <span class="caption-body">行の調整を行った例</span></div></div></div></div>
+    
+   
+   
+   </li>
+				</ol></body></html>

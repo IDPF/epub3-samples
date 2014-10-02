@@ -1,0 +1,117 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"><head><meta charset="UTF-8"/><title>Requirements for Japanese Text Layout</title><link rel="stylesheet" type="text/css" href="../css/base.css"/><link rel="stylesheet" type="text/css" href="../css/W3C-WG-NOTE.css"/></head><body><h3 id="paragraph_adjustment_rules">3.5 <span class="heading"><span id="en-subheading2_5">Paragraph Adjustment Rules</span></span></h3><h4 id="line_head_indent_at_the_beginning_of_paragraphs">3.5.1 <span class="heading"><span class="index" id="en-subheading2_5_1">Line Head Indent at the Beginning of Paragraphs</span></span></h4><p>A <a class="termref" href="terminology.xhtml#term.paragraph">paragraph</a>, a section of a document which consists of one or more sentences to indicate a distinct idea, usually begins on
+   a <a class="termref" href="terminology.xhtml#term.paragraph-break">new line</a>. For the related <a class="termref" href="terminology.xhtml#term.line-head-indent">line head indent</a> at the beginning of paragraphs (in JIS 4051, this is called the "paragraph line head
+   indent") the following methods are available. The amount of space used for the indentation is, in principle,  <a class="termref" href="terminology.xhtml#term.one-em-space">one em space</a> using the <a class="termref" href="terminology.xhtml#term.character-size">character size</a> in the paragraph.</p><table class="t_note">
+					<tr>
+						<td class="ft" rowspan="1" colspan="1">
+							
+								
+								<p>(note 1)</p>
+							
+						</td>
+						<td rowspan="1" colspan="1">
+							
+								
+								<p>The definition of line head indent at the beginning of paragraphs is provided in JIS X 4051, sec. 4.17 "paragraph appearance
+     processing". Note that "paragraph appearance processing" includes "line head indent", "line end indent" and "indent" in general.</p>
+							
+						</td>
+					</tr>
+					<tr>
+						<td class="ft" rowspan="1" colspan="1">
+							
+								
+								<p>(note 2)</p>
+							
+						</td>
+						<td rowspan="1" colspan="1">
+							
+								
+								<p>The layout processing for <a class="characterClass" href="cl-01.xhtml#cl-01">opening brackets (cl-01)</a>  in the case of full-width line head indent at the beginning of paragraphs,
+ is described in this document, <a class="sec_ref" href="positioning_of_opening_brackets_at_line_head.xhtml#positioning_of_opening_brackets_at_line_head">3.1.5 Positioning of Opening Brackets at Line Head</a>.
+ </p>
+							
+						</td>
+					</tr>
+				</table><ol>
+					<li>
+   
+    
+    <p>Line head indent at the beginning of paragraphs is applied to all paragraphs. Nearly all books and magazines make use of
+    this method (see <a class="figure_ref" href="paragraph_adjustment_rules.xhtml#fig2_5_1-en">Fig. 3.94</a>).
+</p>
+   
+   
+    
+    <div class="figure" id="fig2_5_1-en"><div class="figure-float"><div><img alt="Example of line head indent at the beginning of paragraphs." width="546" height="477" src="../image/Images-en/img2_5_1.png"/><div class="figureCaption">Fig. 3.94: <span class="caption-body">Example of line head indent at the beginning of paragraphs.</span></div></div></div></div>
+   
+   
+   <table class="t_note">
+    <tr>
+    <td class="ft" rowspan="1" colspan="1">
+     
+     
+     <p>(note 1)</p>
+     
+    </td>
+    <td rowspan="1" colspan="1">
+     
+     
+     <p>In the case of written conversational text followed by, for example, "she said", if the conversational part is bounded by <span class="character">LEFT CORNER BRACKET "「"</span> and <span class="character">RIGHT CORNER BRACKET "」"</span> and the "she said" text appears after a line-break, the conversational text and the "she said" text are considered to be one continuous phrase. Hence, there is no line head indent at
+   the beginning of the "she said" phrase, after the conversation part, i.e. so-called tentsuki (see <a class="figure_ref" href="paragraph_adjustment_rules.xhtml#fig2_5_2-en">Fig. 3.95</a>). When you have a (mathematical) formula on a separate line in <a class="termref" href="terminology.xhtml#term.horizontal-writing-mode">horizontal writing mode</a>, and a following line containing text such as "will be" there is also no line head indent at the beginning of the paragraph. On the other hand, there is also an approach in novels etc., where the first line indent is applied to paragraphs (see <a class="figure_ref" href="paragraph_adjustment_rules.xhtml#fig2_5_3-en">Fig. 3.96</a>).</p>
+     
+    </td>
+    </tr>
+   </table>
+   
+   
+    
+    <div class="figure" id="fig2_5_2-en"><div class="figure-float"><div><img alt="Layout example 1 of a line immediately following a written conversation." width="172" height="345" src="../image/Images-en/img2_5_2.png"/><div class="figureCaption">Fig. 3.95: <span class="caption-body">Layout example 1 of a line immediately following a written conversation.</span></div></div></div></div>
+   
+   
+   
+    
+    <div class="figure" id="fig2_5_3-en"><div class="figure-float"><div><img alt="Layout example 2 of a line immediately following a written conversation." width="180" height="339" src="../image/Images-en/img2_5_3.png"/><div class="figureCaption">Fig. 3.96: <span class="caption-body">Layout example 2 of a line immediately following a written conversation.</span></div></div></div></div>
+   
+   
+   </li>
+					<li>
+   
+    
+    <p>Line head indent at the beginning of paragraphs is not applied for any paragraph at all, and the tentsuki position is used
+    (see <a class="figure_ref" href="paragraph_adjustment_rules.xhtml#fig2_5_4-en">Fig. 3.97</a>). There are examples of this method being used in certain books and magazines for the sake of styling, but this is rather hard
+    to read.
+</p>
+   
+   
+    
+    <div class="figure" id="fig2_5_4-en"><div class="figure-float"><div><img alt="Example of no line head indent at the beginning of paragraphs." width="530" height="494" src="../image/Images-en/img2_5_4.png"/><div class="figureCaption">Fig. 3.97: <span class="caption-body">Example of no line head indent at the beginning of paragraphs.</span></div></div></div></div>
+   
+   
+   </li>
+					<li>
+   
+    
+    <p>In principle, <a class="termref" href="terminology.xhtml#term.line-head-indent">line head indent</a> is applied at the beginning of a paragraph.  However, a paragraph immediately following a tentsuki-set <a class="termref" href="terminology.xhtml#term.heading">heading</a> is also  set <a class="termref" href="terminology.xhtml#term.tentsuki">tentsuki</a>, so that the beginning of the heading and the paragraph are  aligned (see <a class="figure_ref" href="paragraph_adjustment_rules.xhtml#fig2_5_5-en">Fig. 3.98</a>).  In some books and magazines this method is applied to text in  horizontal writing mode.</p>
+   
+   
+    
+    <div class="figure" id="fig2_5_5-en"><div class="figure-float"><div><img alt="Example of no line head indent at the beginning of paragraphs immediately following headings." width="575" height="495" src="../image/Images-en/img2_5_5.png"/><div class="figureCaption">Fig. 3.98: <span class="caption-body">Example of no line head indent at the beginning of paragraphs immediately following headings.</span></div></div></div></div>
+   
+   
+   </li>
+				</ol><p>On the other hand, for example with <a class="termref" href="terminology.xhtml#term.itemization">itemization</a>, there is also the method that indents the second and following lines of  the paragraph (see <a class="figure_ref" href="paragraph_adjustment_rules.xhtml#fig2_5_6-en">Fig. 3.99</a>). This is the so-called "questions and answer" (Q&amp;A) form. It has the effect that numbers (if used) stand out.</p><div class="figure" id="fig2_5_6-en"><div class="figure-float"><div><img alt="Layout example for itemization." width="620" height="497" src="../image/Images-en/img2_5_6.png"/><div class="figureCaption">Fig. 3.99: <span class="caption-body">Layout example for itemization.</span></div></div></div></div><table class="t_note">
+					<tr>
+						<td class="ft" rowspan="1" colspan="1">
+							
+								
+								<p>(note1)</p>
+							
+						</td>
+						<td rowspan="1" colspan="1">
+							
+								
+								<p>The definition of itemization is provided in JIS X 4051, sec. 8.4 "itemization processing".</p>
+							
+						</td>
+					</tr>
+				</table></body></html>

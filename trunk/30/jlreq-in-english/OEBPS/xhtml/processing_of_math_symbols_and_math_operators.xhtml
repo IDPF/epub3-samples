@@ -1,0 +1,85 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"><head><meta charset="UTF-8"/><title>Requirements for Japanese Text Layout</title><link rel="stylesheet" type="text/css" href="../css/base.css"/><link rel="stylesheet" type="text/css" href="../css/W3C-WG-NOTE.css"/></head><body><h4 id="processing_of_math_symbols_and_math_operators">3.7.4 <span class="heading"><span class="index" id="en-subheading2_7_4">Processing of Math Symbols and Math Operators</span></span></h4><p>Math symbols and math operators, such as <span class="character">EQUALS SIGN "="</span>, <span class="character">APPROXIMATELY EQUAL TO OR THE IMAGE OF "≒"</span>, <span class="character">PLUS SIGN "+"</span> and <span class="character">MINUS SIGN "−"</span> are commonly used not only for scientific and technical documents but also for ordinary books. In the Japanese composition system, there are two different groups of math symbols, which are each treated differently. So in this document math symbols are classified into two different classes; <a class="characterClass" href="cl-17.xhtml#cl-17">math symbols (cl-17)</a> and <a class="characterClass" href="cl-18.xhtml#cl-18">math operators (cl-18)</a>.</p><table class="t_note">
+					<tr>
+						<td class="ft" rowspan="1" colspan="1">
+							
+								
+								<p>(note 1)</p>
+							
+						</td>
+						<td rowspan="1" colspan="1">
+							
+								
+								<p>The members of the <a class="characterClass" href="cl-17.xhtml#cl-17">math symbols (cl-17)</a> and <a class="characterClass" href="cl-18.xhtml#cl-18">math operators (cl-18)</a> classes are described in <a class="sec_ref" href="about_character_classes.xhtml#about_character_classes">3.9 About Character Classes</a>. Also, the handling of inter-character spaces between these math symbols and adjacent characters is described in <a class="sec_ref" href="character_classes.xhtml#character_classes">Appendix A Character Classes</a> as a complete table, in accordance with the concept of character class, described in  <a class="sec_ref" href="about_character_classes.xhtml#about_character_classes">3.9 About Character Classes</a>.</p>
+							
+						</td>
+					</tr>
+					<tr>
+						<td class="ft" rowspan="1" colspan="1">
+							
+								
+								<p>(note 2)</p>
+							
+						</td>
+						<td rowspan="1" colspan="1">
+							
+								
+								<p>Because the math symbols, such as <span class="character">SQUARE ROOT "√"</span>, <span class="character">INTEGRAL "∫"</span> and <span class="character">GREEK CAPITAL LETTER SIGMA "Σ"</span>, are not frequently used in common books, the handling of these math symbols is considered to be out of scope for this document. Also, mathematical and scientific notations like numerical formulae are out of scope for this document.</p>
+							
+						</td>
+					</tr>
+				</table><p>Composition rules for <a class="characterClass" href="cl-17.xhtml#cl-17">math symbols (cl-17)</a> and <a class="characterClass" href="cl-18.xhtml#cl-18">math operators (cl-18)</a> are as follows:</p><ol>
+					<li>
+					<p>The width of <a class="characterClass" href="cl-17.xhtml#cl-17">math symbols (cl-17)</a> and <a class="characterClass" href="cl-18.xhtml#cl-18">math operators (cl-18)</a> is full-width, i.e. one em (see <a class="figure_ref" href="processing_of_math_symbols_and_math_operators.xhtml#fig2_7_6-en">Fig. 3.120</a>).</p></li>
+					<li>
+					<p>The inter-character space between <a class="characterClass" href="cl-17.xhtml#cl-17">math symbols (cl-17)</a>
+or <a class="characterClass" href="cl-18.xhtml#cl-18">math operators (cl-18)</a>
+and before and after adjacent characters, such as <a class="characterClass" href="cl-24.xhtml#cl-24">grouped numerals (cl-24)</a>, <a class="characterClass" href="cl-27.xhtml#cl-27">Western characters (cl-27)</a>, and <a class="characterClass" href="cl-21.xhtml#cl-21">ornamented character complex (cl-21)</a>
+in one line is set solid (see <a class="figure_ref" href="processing_of_math_symbols_and_math_operators.xhtml#fig2_7_6-en">Fig. 3.120</a>). However, when the top and/or the bottom of the mathematical formula is <a class="characterClass" href="cl-24.xhtml#cl-24">grouped numerals (cl-24)</a>
+or <a class="characterClass" href="cl-27.xhtml#cl-27">Western characters (cl-27)</a>, the space between <a class="characterClass" href="cl-19.xhtml#cl-19">ideographic characters (cl-19)</a>, <a class="characterClass" href="cl-15.xhtml#cl-15">hiragana (cl-15)</a>
+and <a class="characterClass" href="cl-16.xhtml#cl-16">katakana (cl-16)</a>
+is <a class="termref" href="terminology.xhtml#term.quarter-em-space">quarter em space</a>.</p>
+
+<div class="figure" id="fig2_7_6-en"><div class="figure-float"><div><img alt="Example of math symbols and math operators set within an ordinary line." width="532" height="193" src="../image/Images-en/img2_7_6.png"/><div class="figureCaption">Fig. 3.120: <span class="caption-body">Example of math symbols and math operators set within an ordinary line.</span></div></div></div></div><table class="t_note"><tr><td class="ft" rowspan="1" colspan="1">
+
+<p>(note 1)</p></td><td rowspan="1" colspan="1">
+
+<p>The inter-character space between <a class="characterClass" href="cl-19.xhtml#cl-19">ideographic characters (cl-19)</a>, <a class="characterClass" href="cl-15.xhtml#cl-15">hiragana (cl-15)</a>
+or <a class="characterClass" href="cl-16.xhtml#cl-16">katakana (cl-16)</a>
+and <a class="characterClass" href="cl-17.xhtml#cl-17">math symbols (cl-17)</a>
+or <a class="characterClass" href="cl-18.xhtml#cl-18">math operators (cl-18)</a>
+is solid. However, it is better to insert a quarter em space between <a class="characterClass" href="cl-19.xhtml#cl-19">ideographic characters (cl-19)</a>,<a class="characterClass" href="cl-15.xhtml#cl-15">hiragana (cl-15)</a>
+or <a class="characterClass" href="cl-16.xhtml#cl-16">katakana (cl-16)</a>
+and adjacent <a class="characterClass" href="cl-18.xhtml#cl-18">math operators (cl-18)</a> when the <a class="characterClass" href="cl-18.xhtml#cl-18">math operators (cl-18)</a>
+are followed by <a class="characterClass" href="cl-24.xhtml#cl-24">grouped numerals (cl-24)</a>
+or <a class="characterClass" href="cl-27.xhtml#cl-27">Western characters (cl-27)</a>
+which represent some mathematical value (see <a class="figure_ref" href="processing_of_math_symbols_and_math_operators.xhtml#fig2_7_62-en">Fig. 3.121</a>).</p></td></tr></table>
+					
+						
+						<div class="figure" id="fig2_7_62-en"><div class="figure-float"><div><img alt="Example of math symbols and math operators set within an ordinary line." width="469" height="446" src="../image/Images-en/img2_7_62.png"/><div class="figureCaption">Fig. 3.121: <span class="caption-body">Example of math symbols and math operators set within an ordinary line.</span></div></div></div></div>
+					
+</li>
+					<li>
+					<p>When math formulae or chemical formulae are set in one independent line, the inter-character space between <a class="characterClass" href="cl-17.xhtml#cl-17">math symbols (cl-17)</a> and adjacent <a class="characterClass" href="cl-24.xhtml#cl-24">grouped numerals (cl-24)</a>, <a class="characterClass" href="cl-27.xhtml#cl-27">Western characters (cl-27)</a> and <a class="characterClass" href="cl-21.xhtml#cl-21">ornamented character complex (cl-21)</a> is quarter em. Also, when math formulae or chemical formulae are set in an individual line, the inter-character space between <a class="characterClass" href="cl-18.xhtml#cl-18">math operators (cl-18)</a> and adjacent <a class="characterClass" href="cl-24.xhtml#cl-24">grouped numerals (cl-24)</a>, <a class="characterClass" href="cl-27.xhtml#cl-27">Western characters (cl-27)</a> or <a class="characterClass" href="cl-21.xhtml#cl-21">ornamented character complex (cl-21)</a> is set solid.</p>
+					
+					<div class="figure" id="fig2_7_7-en"><div class="figure-float"><div><img alt="Example of math symbols and math operators in one independent line." width="540" height="382" src="../image/Images-en/img2_7_7.png"/><div class="figureCaption">Fig. 3.122: <span class="caption-body">Example of math symbols and math operators in one independent line.</span></div></div></div></div><table class="t_note"><tr><td class="ft" rowspan="1" colspan="1">
+					
+					<p>(note 1)</p></td><td rowspan="1" colspan="1">
+					
+					<p>In most case when a math formula or chemical formula is set in one independent line, the position of the formula is the center of the line in horizontal writing mode, and has is indented by some indicated number of characters from the head of line in vertical writing mode.</p></td></tr><tr><td class="ft" rowspan="1" colspan="1">
+					
+					<p>(note 2)</p></td><td rowspan="1" colspan="1">
+					
+					<p>In the formula in one independent line, there is another method to set the inter-character space between <a class="characterClass" href="cl-24.xhtml#cl-24">grouped numerals (cl-24)</a> or <a class="characterClass" href="cl-27.xhtml#cl-27">Western characters (cl-27)</a> and <a class="characterClass" href="cl-17.xhtml#cl-17">math symbols (cl-17)</a>, solid or half em. When the inter-character space before and after the <a class="characterClass" href="cl-17.xhtml#cl-17">math symbols (cl-17)</a> is set to a quarter em or a half em, there is another method to set the inter-character space, between <a class="characterClass" href="cl-18.xhtml#cl-18">math operators (cl-18)</a> and <a class="characterClass" href="cl-24.xhtml#cl-24">grouped numerals (cl-24)</a> or <a class="characterClass" href="cl-27.xhtml#cl-27">Western characters (cl-27)</a>, that is, a quarter em.</p></td></tr></table>
+					
+					<div class="figure" id="fig2_7_8-en"><div class="figure-float"><div><img alt="Another example of setting math symbols  and math operators in one independent formula line." width="540" height="383" src="../image/Images-en/img2_7_8.png"/><div class="figureCaption">Fig. 3.123: <span class="caption-body">Another example of setting math symbols  and math operators in one independent formula line.</span></div></div></div></div></li>
+					<li>
+					<p>A line can be broken between <a class="characterClass" href="cl-17.xhtml#cl-17">math symbols (cl-17)</a> or <a class="characterClass" href="cl-18.xhtml#cl-18">math operators (cl-18)</a> and adjacent <a class="characterClass" href="cl-24.xhtml#cl-24">grouped numerals (cl-24)</a>, <a class="characterClass" href="cl-27.xhtml#cl-27">Western characters (cl-27)</a> or <a class="characterClass" href="cl-21.xhtml#cl-21">ornamented character complex (cl-21)</a>.</p><table class="t_note"><tr><td class="ft" rowspan="1" colspan="1">
+					
+					<p>(note 1)</p></td><td rowspan="1" colspan="1">
+					
+					<p>In an independent formula line, when there are more than one place where the line can be broken the first priority is before the <a class="characterClass" href="cl-17.xhtml#cl-17">math symbols (cl-17)</a>, and the next is before the <a class="characterClass" href="cl-18.xhtml#cl-18">math operators (cl-18)</a>.</p></td></tr><tr><td class="ft" rowspan="1" colspan="1">
+					
+					<p>(note 2)</p></td><td rowspan="1" colspan="1">
+					
+					<p>The inter-character space before and after <span class="character">KATAKANA MIDDLE DOT "・"</span>, before <a class="characterClass" href="cl-01.xhtml#cl-01">opening brackets (cl-01)</a> and after <a class="characterClass" href="cl-02.xhtml#cl-02">closing brackets (cl-02)</a> in an independent formula line is set solid, except for the case to set space between these characters and adjacent <a class="characterClass" href="cl-17.xhtml#cl-17">math symbols (cl-17)</a> or <a class="characterClass" href="cl-18.xhtml#cl-18">math operators (cl-18)</a>.</p></td></tr></table></li>
+				</ol></body></html>

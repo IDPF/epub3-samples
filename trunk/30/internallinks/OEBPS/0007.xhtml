@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xml:lang="ja" xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta charset="UTF-8" />
+
+        <meta content="note1" name="CAS-UB-Publication-Class" />
+        <meta content="CAS-UB Backend System Installed on 2012-12-25" name="Generator-Signature" />
+        <title>EPUBのベストプラクティス カバー画像の登録方法</title>
+        <link href="themes/cas-common_epub.css" rel="stylesheet" type="text/css" />
+        <link href="themes/normal-serif/common.css" rel="stylesheet" type="text/css" />
+        <link href="themes/normal-serif/generic.css" rel="stylesheet" type="text/css" />
+        <link href="styles/style.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body class="wrapper chapter level2" id="e.0007.EPUBのベストプラクティス_E3_80_80カバー画像の登録方法">
+        <h1>4 EPUBのベストプラクティス カバー画像の登録方法</h1>
+        <p>多くのEPUBリーダーでは登録されている書籍のアイコンとしてカバー画像を表示します。このカバー画像の登録方法を調べてみました。</p>
+        <div class="wrapper level3" id="h.0007.EPUB2"><h1>4–1 EPUB2</h1>
+            <p>EPUB2ではカバー画像であることをEPUBリーダに伝えるために、metadateのmeta要素に次のように指定します。</p>
+            <p>【EPUB2の例】</p>
+            <p>metadata</p>
+            <pre>
+&lt;meta **name=&quot;cover&quot;** content=&quot;cover-id&quot; /&gt;
+</pre>
+            <p>なお、manifestには、次のようにカバー画像に使用する画像ファイルが登録されていることが前提です。（metaのcontentの値とitemのidの値は一致していること。文字列は可変。）</p>
+            <p>manifest</p>
+            <pre>
+&lt;item id=&quot;cover-id&quot; href=&quot;cover.jpeg&quot; media-type=&quot;image/jpeg&quot; /&gt;
+</pre>
+        </div>
+        <div class="wrapper level3" id="h.0007.EPUB3"><h1>4–2 EPUB3</h1>
+            <p>EPUB3では、上の形式のメタデータは廃止されました。ただし、EPUB2のリーダ用との互換性のためにこれを残しておくことができます。そして、EPUB3リーダはmetaの方を無視しなければなりません<a
+                    class="note-d" href="xnotes.xhtml#n.0007.1.r" id="n.0007.1"
+                    title="3.4.8 The meta Element (OPF2) [OBSOLETE"><sup>[1]</sup></a><span
+                    class="note"><span class="note-start">(</span><a
+                        href="http://idpf.org/epub/30/spec/epub30-publications.xhtml#sec-opf-meta-elem"
+                        >3.4.8 The meta Element (OPF2) [OBSOLETE</a><span class="note-end"
+                    >)</span></span>。</p>
+            <p>EPUB3の仕様では、manifestのitem要素のproperties属性に「cover-image」という値を指定することでカバー画像であることを示します。EPUB3の方がシンプルになったわけです。</p>
+            <p>EPUB3では、例えば、cover.jpgというファイルがカバー画像であることを示すには次のように指定します。（idの値は可変）。</p>
+            <p>【EPUB3の例】</p>
+            <pre>
+&lt;item** properties=&quot;cover-image&quot;** id=&quot;ci&quot; href=&quot;cover.jpg&quot; media-type=&quot;image/jpeg&quot; /&gt;
+</pre>
+            <p>koboやiBooks3などの新しいEPUB3のリーダは、manifestのitem要素の属性を見ています。</p>
+        </div>
+        <div class="wrapper level3" id="h.0007.Kindle"><h1>4–3 Kindle</h1>
+            <p>Kindleは、カバー画像をmetaとitem要素の両方に指定することになっています。</p>
+            <p>カバー画像を、仮に、id=&quot;cover-id&quot;、ファイル名=&quot;cover_image.jpg&quot;
+                    とするとき、Kindleは次のように登録します<a class="note-d" href="xnotes.xhtml#n.0007.2.r"
+                    id="n.0007.2" title="Amazon Kindle Publishing Guidelines"
+                    ><sup>[2]</sup></a><span class="note"><span class="note-start">(</span>Amazon
+                    Kindle Publishing Guidelines<span class="note-end">)</span></span>。</p>
+            <p>【Kindleの例】</p>
+            <p>metadata</p>
+            <pre>
+&lt;meta **name=&quot;cover&quot;** content=&quot;cover-id&quot; /&gt;
+</pre>
+            <p>manifest</p>
+            <pre>
+&lt;item id=&quot;cover-id&quot; href=&quot;cover.jpg&quot; media-type=&quot;image/jpeg&quot; **properties=&quot;cover-image&quot;**/&gt;
+</pre>
+        </div>
+        <div class="wrapper level3" id="h.0007.まとめ"><h1>4–4 まとめ</h1>
+            <p>ややこしい話ですが、EPUB3にEPUB2形式のmetaがあっても特に害はないようなので、両方登録しておくEPUB2/EPUB3/Kindle
+                KF8で共通になりますので都合が良いでしょう。</p>
+            <p>なお、EPUBの場合、印刷製本した書籍と異なり、①EPUBリーダの書架または書籍一覧に表示されるアイコンとしてのカバー画像、②リーダで表示するときの先頭ページ、③iBooksのように見開き表示したときに初めて表示される画像ページなどの役割が明確になっていません。このあたりについては別途まとめてみたいと考えています。</p>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,117 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"><head><meta charset="UTF-8"/><title>Requirements for Japanese Text Layout</title><link rel="stylesheet" type="text/css" href="../css/base.css"/><link rel="stylesheet" type="text/css" href="../css/W3C-WG-NOTE.css"/></head><body><h3 id="specifying_the_kihonhanmen">2.4 <span class="heading"><span id="en-subheading1_4">Specifying the Kihon-hanmen</span></span></h3><h4 id="procedure_for_defining_the_kihonhanmen">2.4.1 <span class="heading"><span class="index" id="en-subheading1_4_1">Procedure for Defining the Kihon-hanmen</span></span></h4><p>In Japanese composition, first the size of the kihon-hanmen is defined, using the square <a class="termref" href="terminology.xhtml#term.character-frame">character frames</a> of characters in <a class="termref" href="terminology.xhtml#term.solid-setting">solid setting</a>. Taking this as a base, the position of the <a class="termref" href="terminology.xhtml#term.kihon-hanmen">kihon-hanmen</a> with regards to the <a class="termref" href="terminology.xhtml#term.trim-size">trim size</a>
+is then specified. The following are procedures for determining the size and position of the kihon-hanmen (see <a class="figure_ref" href="specifying_the_kihonhanmen.xhtml#fig1_26_1-en">Fig. 2.31</a>).</p><ol>
+					<li>
+ 
+ 
+ <p>Specifying the dimensions of the kihon-hanmen.</p>
+ 
+ <ol>
+ <li>
+ 
+ 
+ <p>For a document with a single column per page, specify the <a class="termref" href="terminology.xhtml#term.character-size">character size</a>, the <a class="termref" href="terminology.xhtml#term.line-length">line length</a> (the <a class="termref" href="terminology.xhtml#term.number-of-characters-per-line">number of characters per line</a>), the number of lines per page,
+ and the <a class="termref" href="terminology.xhtml#term.line-gap">line gap</a>.
+</p>
+ 
+ </li>
+ <li>
+ 
+ 
+ <p>For a document with multiple columns per page, specify the character size, the line length (the number of characters per line), the number of lines per
+ column, the line-gap, and the number of columns and the <a class="termref" href="terminology.xhtml#term.column-gap">column gap</a>.</p>
+ 
+ 
+ 
+ <div class="figure" id="fig1_26_1-en"><div class="figure-float"><div><img alt="Procedures to determine the size and position of the kihon-hanmen, step 1." width="269" height="419" src="../image/Images-en/img1_26_1.png"/><div class="figureCaption">Fig. 2.31: <span class="caption-body">Procedures to determine the size and position of the kihon-hanmen, step 1.</span></div></div></div></div>
+ 
+ 
+ </li>
+ </ol>
+ </li>
+					<li>
+ 
+ 
+ <p>Determining the position of the kihon-hanmen relative to the trim size.</p>
+ 
+ 
+ 
+ <p>There are various alternative methods for specifying the position of the kihon-hanmen relative to the trim size:</p>
+ 
+ <ol>
+ <li>
+ 
+ 
+ <p>
+Position vertically
+by centering the kihon-hanmen. Position horizontally by centering the kihon-hanmen.</p>
+ 
+ </li>
+ <li>
+ 
+ 
+ <p>Position
+vertically
+by specifying the space size at the <a class="termref" href="terminology.xhtml#term.head">head</a> (for horizontal writing mode) or the space at the <a class="termref" href="terminology.xhtml#term.foot">foot</a> (for vertical writing mode). Position horizontally by centering the kihon-hanmen.</p>
+ 
+ </li>
+ <li>
+ 
+ 
+ <p>
+Position vertically
+by centering the kihon-hanmen. Position horizontally by specifying the space size of the <a class="termref" href="terminology.xhtml#term.gutter">gutter</a>.</p>
+ 
+ </li>
+ <li>
+ 
+ 
+ <p>
+Position vertically
+by specifying the space at the 
+head (for horizontal writing mode) or the space at the 
+foot (for vertical writing mode). Position horizontally by specifying the space size of the gutter.</p>
+ 
+ </li>
+ </ol>
+ 
+ 
+ <div class="figure" id="fig1_26_2-en"><div class="figure-float"><div><img alt="Procedures to determine the size and position of the kihon-hanmen, step 2." width="726" height="550" src="../image/Images-en/img1_26_2.png"/><div class="figureCaption">Fig. 2.32: <span class="caption-body">Procedures to determine the size and position of the kihon-hanmen, step 2.</span></div></div></div></div>
+ 
+ 
+ <table class="t_note">
+ <tr>
+ <td class="ft" rowspan="1" colspan="1">
+ 
+ 
+ <p>(note 1)</p>
+ 
+ </td>
+ <td rowspan="1" colspan="1">
+ 
+ 
+ <p>In most cases the kihon-hanmen is set at the horizontal and vertical center of the <a class="termref" href="terminology.xhtml#term.trim-size">trim size</a>, which should be the default positioning,
+ but depending on the dimensions of the kihon-hanmen there may be cases where the default needs to be changed; for example, by
+ moving the kihon-hanmen up, down, to the left or to the right of the default position.</p>
+ 
+ </td>
+ </tr>
+ <tr>
+ <td class="ft" rowspan="1" colspan="1">
+ 
+ 
+ <p>(note 2)</p>
+ 
+ </td>
+ <td rowspan="1" colspan="1">
+ 
+ 
+ <p>It is technically possible to determine the dimensions of the kihon-hanmen by specifying the <a class="termref" href="terminology.xhtml#term.trim-size">trim size</a> and margins of all sides,
+ but this method is not common in the tradition of Japanese composition. If this is the only way an implementation allows, the
+ margins of each side need to be determined beforehand in relation to the dimensions of the kihon-hanmen and its position in the trim size.</p>
+ 
+ </td>
+ </tr>
+ </table>
+ 
+ </li>
+				</ol></body></html>

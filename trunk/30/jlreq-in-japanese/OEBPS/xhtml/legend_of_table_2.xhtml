@@ -1,0 +1,105 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja"><head><meta charset="UTF-8"/><meta name="author" content="Japanese Layout Task Force"/><title>日本語組版処理の要件（日本語版）</title><link rel="stylesheet" type="text/css" href="../css/W3C-WG-NOTE.css"/><link rel="stylesheet" type="text/css" href="../css/base.css"/></head><body><h3 id="legend_of_table_2">B.1 <span class="heading"><span id="ja-app2_1">表1の見方</span></span></h3><ol class="decimal">
+<li>
+		
+			<p>“before”（表の左端）と示した欄に，前に配置する文字クラスを示し，“after”（表の上端）と示した欄に，後ろに配置する文字クラスを示す．それぞれが交差する小間（こま）に空き量を示す．</p>
+			
+		
+</li>
+<li>
+		
+			<p>“line head”の欄（横方向の行）には，それぞれの文字クラスを<a class="termref" href="terminology.xhtml#term.line-head">行頭</a>に配置する場合の前の空き量を示し，“line end”（縦方向の列）の欄には，それぞれの文字クラスを<a class="termref" href="terminology.xhtml#term.line-end">行末</a>に配置する場合の後ろの空き量を示す．</p>
+			
+		
+</li>
+<li>
+		
+			<p>表のそれぞれの小間に，文字間の空き量などを，次の記号で示す．</p>
+			
+		
+		<ol>
+		<li>
+			
+				<p>無印：文字間（行頭の場合は，その文字の前，行末の場合は，その文字の後ろ）を<a class="termref" href="terminology.xhtml#term.solid-setting">ベタ組</a>にする．</p>
+				
+			
+		</li>
+		<li>
+			
+				<p>×印：行頭禁則，行末禁則，その他により，このような配置を禁止する．</p>
+				
+			
+		</li>
+		<li>
+			
+				<p>1/2 be：文字間を二分アキにする．ただし，二分は，前に配置する文字サイズの二分とする．</p>
+				
+			
+		</li>
+		<li>
+			
+				<p>1/2 af：文字間を二分アキにする．ただし，二分は，後ろに配置する文字サイズの二分とする．</p>
+				
+			
+				<table class="t_note">  <tr>  <td class="ft" rowspan="1" colspan="1">
+				
+				<p>
+				注）</p>
+				
+				
+				</td>  <td rowspan="1" colspan="1">
+				
+				<p>
+				ここで，<span class="index" id="d14e236">二分の基準</span>を前（be）又は後ろ（af）とするのは，<a class="figure_ref" href="legend_of_table_2.xhtml#fig_a1-1-ja">図 B.1</a>のように行中に異なる文字サイズの文字を配置する場合があり，この際の基準を示すためである．以下の“be”又は“af”と示すのも同様である．</p>
+				
+				
+				</td>  </tr>  </table>
+				
+				<div class="figure" id="fig_a1-1-ja"><div class="figure-float"><div><img alt="二分アキの場合の二分の基準" width="410" height="267" src="../image/Images-ja/img_a1_1.png"/><div class="figureCaption">図 B.1 <span class="caption-body">二分アキの場合の二分の基準</span></div></div></div></div>
+				
+				
+		</li>
+		<li>
+			
+				<p>1/2 be hang：“1/2 be”（文字間を二分アキ）とする．この二分アキには，ルビ文字を最大でルビ文字の文字サイズまで掛けて配置してよい．ただし，この二分アキが行の調整処理で詰められている場合，ルビ文字を掛けてよいのは，その詰められた（調整された）空き量までとし，ルビ文字を文字間の空き量以上にはみ出して，掛けてはならない．</p>
+				
+			
+		</li>
+		<li>
+			
+				<p>1/2 af hang：“1/2 af”（文字間を二分アキ）とする．この二分アキには，ルビ文字を最大でルビ文字の文字サイズまで掛けて配置してよい．ただし，この二分アキが行の調整処理で詰められている場合，ルビ文字を掛けてよいのは，その詰められた（調整された）空き量までとし，ルビ文字を文字間の空き量以上にはみ出して，掛けてはならない．</p>
+				
+			
+		</li>
+		<li>
+			
+				<p>1/4 be：文字間を四分アキにする．ただし，四分は，前に配置する文字サイズの四分とする．</p>
+				
+			
+		</li>
+		<li>
+			
+				<p>1/4 af：文字間を四分アキにする．ただし，四分は，後ろに配置する文字サイズの四分とする．</p>
+				
+			
+		</li>
+		<li>
+			
+				<p>1/4 be hang：“1/4 be”（文字間を四分アキ）とする．この四分アキには，ルビ文字を最大でルビ文字の文字サイズの二分まで掛けて配置してよい．ただし，この四分アキが行の調整処理で詰められている場合，ルビ文字を掛けてよいのは，その詰められた（調整された）空き量までとし，ルビ文字を文字間の空き量以上にはみ出して，掛けてはならない．</p>
+				
+			
+		</li>
+		<li>
+			
+				<p>1/4 af hang：“1/4 af”（文字間を四分アキ）とする．この四分アキには，ルビ文字を最大でルビ文字の文字サイズの二分まで掛けて配置してよい．ただし，この四分アキが行の調整処理で詰められている場合，ルビ文字を掛けてよいのは，その詰められた（調整された）空き量までとし，ルビ文字を文字間の空き量以上にはみ出して，掛けてはならない．</p>
+				
+			
+		</li>
+		<li>
+			
+				<p>ruby hang：ベタ組において，ルビ文字を最大でルビ文字の文字サイズまで掛けて配置してよい（<a class="sec_ref" href="notes_a2.xhtml#notes_a2">B.2 注記</a>の7も参照）．</p>
+				
+			
+		</li>
+		</ol>
+</li>
+</ol></body></html>

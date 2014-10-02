@@ -12,13 +12,13 @@
         <meta content="idcoverpng" name="cover"/>
     </metadata>
     <manifest>
-        <item href="nav.html" id="nav" media-type="application/xhtml+xml" properties="nav"/>
+        <item href="nav.xhtml" id="nav" media-type="application/xhtml+xml" properties="nav"/>
         <item href="toc.ncx" id="ncx" media-type="application/x-dtbncx+xml"/>
-        <item href="publ.html" id="idpubl" media-type="application/xhtml+xml"/>
-        <item href="0001.html" id="id0001" media-type="application/xhtml+xml"/>
-        <item href="0005.html" id="id0005" media-type="application/xhtml+xml"/>
-        <item href="0006.html" id="id0006" media-type="application/xhtml+xml"/>
-        <item href="0007.html" id="id0007" media-type="application/xhtml+xml"/>
+        <item href="publ.xhtml" id="idpubl" media-type="application/xhtml+xml"/>
+        <item href="0001.xhtml" id="id0001" media-type="application/xhtml+xml"/>
+        <item href="0005.xhtml" id="id0005" media-type="application/xhtml+xml"/>
+        <item href="0006.xhtml" id="id0006" media-type="application/xhtml+xml"/>
+        <item href="0007.xhtml" id="id0007" media-type="application/xhtml+xml"/>
         <item href="images/1125paperwhite3.jpg" id="idimages1125paperwhite3jpg"
             media-type="image/jpeg"/>
         <item href="images/1125Paperwhite1.jpg" id="idimages1125Paperwhite1jpg"
@@ -60,9 +60,9 @@
             media-type="text/css"/>
         <item href="styles/style.css" id="idstylesstylecss" media-type="text/css"/>
         <item href="cover.png" id="idcoverpng" media-type="image/png" properties="cover-image"/>
-        <item href="xnotes.html" id="idxnotes" media-type="application/xhtml+xml"/>
-        <item href="loft.html" id="idloft" media-type="application/xhtml+xml"/>
-        <item href="cover.html" id="idcover" media-type="application/xhtml+xml"/>
+        <item href="xnotes.xhtml" id="idxnotes" media-type="application/xhtml+xml"/>
+        <item href="loft.xhtml" id="idloft" media-type="application/xhtml+xml"/>
+        <item href="cover.xhtml" id="idcover" media-type="application/xhtml+xml"/>
     </manifest>
     <spine toc="ncx">
         <itemref idref="idcover"/>

@@ -1,0 +1,127 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"><head><meta charset="UTF-8"/><title>Requirements for Japanese Text Layout</title><link rel="stylesheet" type="text/css" href="../css/base.css"/><link rel="stylesheet" type="text/css" href="../css/W3C-WG-NOTE.css"/></head><body><h4 id="character_sequences_which_do_not_allow_space_insertion_as_part_of_line_adjustment_processing">3.1.11 <span class="heading"><span class="index" id="en-subheading2_1_11">Character Sequences which Do Not Allow Space Insertion as Part of Line Adjustment Processing</span></span></h4><p>For line adjustment processing, space must not be added between the following characters.
+(This  is called the <a class="termref" href="terminology.xhtml#term.inseparable-characters-rule">inseparable characters rule</a>.)
+The reason is that these characters or symbols should appear as one unit (for more about line adjustment, see <a class="sec_ref" href="line_adjustment.xhtml#line_adjustment">3.8 Line Adjustment</a>).</p><table class="t_note">
+					<tr>
+						<td class="ft" rowspan="1" colspan="1">
+							
+								
+								<p>(note 1)</p>
+							
+						</td>
+						<td rowspan="1" colspan="1">
+							
+								
+								<p>The main places where solid setting may be dropped for line adjustment processing are the spaces among <a class="characterClass" href="cl-15.xhtml#cl-15">hiragana (cl-15)</a>, <a class="characterClass" href="cl-16.xhtml#cl-16">katakana (cl-16)</a>, and <a class="characterClass" href="cl-19.xhtml#cl-19">ideographic characters (cl-19)</a>. Furthermore, things such as the amount of space
+ between words in Western text are also a target for space adaptation. </p>
+							
+						</td>
+					</tr>
+				</table><table class="t_note">
+					<tr>
+						<td class="ft" rowspan="1" colspan="1">
+							
+								
+								<p>(note 2)</p>
+							
+						</td>
+						<td rowspan="1" colspan="1">
+							
+								
+								<p>Combinations of character classes which allow spaces to be inserted for line alignment, are described as a complete table in <a class="sec_ref" href="opportunities_for_intercharacter_space_expansion_during_line_adjustment.xhtml#opportunities_for_intercharacter_space_expansion_during_line_adjustment">Appendix E Opportunities for  Inter-character Space Expansion during Line Adjustment</a>, following <a class="sec_ref" href="about_character_classes.xhtml#about_character_classes">3.9 About Character Classes</a>.</p>
+							
+						</td>
+					</tr>
+				</table><ol>
+					<li>
+   
+    
+    <p>There must be no space between any characters described in <a class="sec_ref" href="unbreakable_character_sequences.xhtml#unbreakable_character_sequences">3.1.10 Unbreakable Character Sequences</a>.
+</p>
+   
+   <table class="t_note">
+    <tr>
+    <td class="ft" rowspan="1" colspan="1">
+     
+     
+     <p>(note 1)</p>
+     
+    </td>
+    <td rowspan="1" colspan="1">
+     
+     
+     <p>Some people think that it is only permissible to increase space between letters in Western words for cases where there is no possibility of regular line adjustment processing.</p>
+     
+    </td>
+    </tr>
+   </table>
+   
+   </li>
+					<li>
+   
+    
+    <p>In addition to the cases mentioned above, the inseparable character rule has to be applied to the following cases.</p>
+   
+   <ol>
+    <li>
+    
+     
+     <p>Before or after <a class="characterClass" href="cl-01.xhtml#cl-01">opening brackets (cl-01)</a> or <a class="characterClass" href="cl-02.xhtml#cl-02">closing brackets (cl-02)</a>.</p>
+    
+    <table class="t_note">
+     <tr>
+     <td class="ft" rowspan="1" colspan="1">
+     
+      
+      <p>(note 1)</p>
+     
+     </td>
+     <td rowspan="1" colspan="1">
+     
+      
+      <p>After <a class="characterClass" href="cl-01.xhtml#cl-01">opening brackets (cl-01)</a> or before <a class="characterClass" href="cl-02.xhtml#cl-02">closing brackets (cl-02)</a> the inseparable characters rule is always applied. In contrast, before opening brackets or after
+ closing brackets the rule is not applied. <a class="characterClass" href="cl-06.xhtml#cl-06">Full stops (cl-06)</a> and <a class="characterClass" href="cl-07.xhtml#cl-07">commas (cl-07)</a> are handled the same as closing brackets.</p>
+     
+     </td>
+     </tr>
+    </table>
+    
+    </li>
+    <li>
+    
+     
+     <p>Before or after <a class="characterClass" href="cl-06.xhtml#cl-06">full stops (cl-06)</a> or <a class="characterClass" href="cl-07.xhtml#cl-07">commas (cl-07)</a>.</p>
+    
+    </li>
+    <li>
+    
+     
+     <p>Before or after <a class="characterClass" href="cl-05.xhtml#cl-05">middle dots (cl-05)</a>.</p>
+    
+    </li>
+    <li>
+    
+     
+     <p>Before or after <a class="characterClass" href="cl-04.xhtml#cl-04">dividing punctuation marks (cl-04)</a>.</p>
+    
+    </li>
+    <li>
+    
+     
+     <p>Before or after <a class="characterClass" href="cl-03.xhtml#cl-03">hyphens (cl-03)</a>.</p>
+    
+    </li>
+    <li>
+    
+     
+     <p>Before or after one em, etc. spaces between Japanese characters.</p>
+    
+    </li>
+    <li>
+    
+     
+     <p>Among base characters with <a class="termref" href="terminology.xhtml#term.jukugo-ruby">jukugo-ruby</a>.</p>
+    
+    </li>
+   </ol>
+   </li>
+				</ol></body></html>

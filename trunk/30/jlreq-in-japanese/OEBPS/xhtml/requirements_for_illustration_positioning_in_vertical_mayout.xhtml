@@ -1,0 +1,164 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja"><head><meta charset="UTF-8"/><meta name="author" content="Japanese Layout Task Force"/><title>日本語組版処理の要件（日本語版）</title><link rel="stylesheet" type="text/css" href="../css/W3C-WG-NOTE.css"/><link rel="stylesheet" type="text/css" href="../css/base.css"/></head><body><h4 id="requirements_for_illustration_positioning_in_vertical_mayout">4.3.3 <span class="heading"><span class="index" id="d10e566">縦組における図版配置の条件</span></span></h4><p><a class="figure_ref" href="positioning_of_illustrations.xhtml#fig3_1-ja">図 4.79</a>の縦組の場合において，図版を配置する際に必要となる条件としては，次がある．</p><ol>
+					<li>
+                        
+                           <p>書籍では見開きを基準に設計し，“天・小口寄り”などといった指定を行うので，見開きを基準とした指定ができなければならない．具体的には，“小口寄り”又は“<a class="termref" href="terminology.xhtml#term.gutter">のど</a>寄り”という指定に対応しなければならない．</p>
+                           
+                        
+                     </li>
+					<li>
+                        
+                           <p>縦組では，図版の上端を版面の天側に，かつ図版の左端又は右端を版面の小口側に接して配置する例が多いので，版面（又は仕上りサイズ）から指定した位置に図版を配置できなければならない．なお，版面いっぱいに配置する場合でも，図版の内容によっては，版面から1mm程度内側に配置した方が体裁がよいケースもある．</p>
+                           
+                        
+                        <table class="t_note">
+                           <tr>
+                              <td class="ft" rowspan="1" colspan="1">
+                                 
+                                    <p>注1）</p>
+                                    
+                                 
+                              </td>
+                              <td rowspan="1" colspan="1">
+                                 
+                                    <p>版面から1mm程度内側に配置するのは，見た目で版面の文字面と図版をそろえるためである．</p>
+                                    
+                                 
+                              </td>
+                           </tr>
+                        </table>
+                        
+                     </li>
+					<li>
+                        
+                           <p>通常は，bで述べたように版面からの指定位置でよいが，<span class="index" id="d10e663"><a class="termref" href="terminology.xhtml#term.bleed">裁切り</a></span>にする場合などでは，仕上りサイズをはみ出して図版を配置できる必要がある（実例は<a class="figure_ref" href="page_wise_arrangement_of_kihonhanmen_elements.xhtml#fig_ad1_8-ja">図 2.39</a>）．なお，こうした場合などでは，仕上りサイズの角を原点としての位置指定ができれば，直感的な指定が可能になる．（<a class="figure_ref" href="requirements_for_illustration_positioning_in_vertical_mayout.xhtml#fig3_4-ja">図 4.82</a>）</p>
+                           
+                        
+                        
+                           <div class="figure" id="fig3_4-ja"><div class="figure-float"><div><img alt="裁切りの配置の位置指定の原点例" width="465" height="282" src="../image/Images-ja/img3_4.png"/><div class="figureCaption">図 4.82 <span class="caption-body">裁切りの配置の位置指定の原点例</span></div></div></div></div>
+                           
+                        
+                        
+                     </li>
+					<li>
+                        
+                           <p>図版を配置した周囲に本文のテキストを配置する場合は，通常，最小の空き量及び最大の空き量を指定する．<span class="index" id="d10e715">最小の空き量</span>は，一般に本文に使用する文字サイズ（<a class="termref" href="terminology.xhtml#term.kihon-hanmen">基本版面</a>で設定した文字サイズ）又は本文の行間（基本版面で設定した行間）である．また，周囲に配置する際の<a class="termref" href="terminology.xhtml#term.line-length">行長</a>は，使用する文字サイズの整数倍にする必要がある．</p>
+                           
+                        
+                        <table class="t_note">
+                           <tr>
+                              <td class="ft" rowspan="1" colspan="1">
+                                 
+                                    <p>注1）</p>
+                                    
+                                 
+                              </td>
+                              <td rowspan="1" colspan="1">
+                                 
+                                    <p>基本版面で設定した文字サイズ9ポイント，行間8ポイントの場合の最小の空き量及び最大の空き量の例を示す（<a class="figure_ref" href="requirements_for_illustration_positioning_in_vertical_mayout.xhtml#fig3_4a-ja">図 4.83</a>）．</p>
+                                    
+                                 
+                                 <table class="t_sample">
+                                    <tr>
+                                       <td class="ft">
+                                          
+                                             <p><a class="termref" href="terminology.xhtml#term.inline-direction">字詰め方向</a>の空き量</p>
+                                             
+                                          
+                                       </td>
+                                       <td class="ft">
+                                          
+                                             <p>9ポイント≦図版と周囲の文字の空き量＜18ポイント</p>
+                                             
+                                          
+                                       </td>
+                                    </tr>
+                                    <tr>
+                                       <td class="ft">
+                                          
+                                             <p><a class="termref" href="terminology.xhtml#term.block-direction">行送り方向</a>の空き量</p>
+                                             
+                                          
+                                       </td>
+                                       <td class="ft">
+                                          
+                                             <p>9ポイント≦図版と周囲の文字の空き量＜26ポイント</p>
+                                             
+                                          
+                                       </td>
+                                    </tr>
+                                    <tr>
+                                       
+                                       
+                                       <td class="ft">
+                                          
+                                          <p style="text-align:center;">又は，<a class="termref" href="terminology.xhtml#term.block-direction">行送り方向</a>の空き量</p>
+                                             
+                                          
+                                       </td>
+                                       <td class="ft">
+                                          
+                                             <p>8ポイント≦図版と周囲の文字の空き量＜25ポイント</p>
+                                             
+                                          
+                                       </td>
+                                    </tr>
+                                 </table>
+                              </td>
+                           </tr>
+</table>
+                        
+                           <div class="figure" id="fig3_4a-ja"><div class="figure-float"><div><img alt="図版の周囲の空き量の例" width="548" height="224" src="../image/Images-ja/img3_4a.png"/><div class="figureCaption">図 4.83 <span class="caption-body">図版の周囲の空き量の例</span></div></div></div></div>
+                           
+                        
+<table class="t_note">
+                           <tr>
+                              <td class="ft" rowspan="1" colspan="1">
+                                 
+                                    <p>注2）</p>
+                                    
+                                 
+                              </td>
+                              <td rowspan="1" colspan="1">
+                                 
+                                    <p>図版とその周囲の本文のテキストとの<span class="index" id="d10e912">空き量は，できれば統一した方がよい</span>．例えば，基本版面で設定した文字サイズの1.5倍で統一する．この場合，配置する際の行長は，使用する文字サイズの整数倍にする必要があるので，図版サイズによっては不統一が発生する．しかし，図版サイズは，設計段階では多少の調整が可能である．そこで，字数又は行数について，それぞれの場合における図版サイズの一覧を作成しておき，その一覧の中から当てはまる数値を図版の設計段階で採用すれば，図版周囲の空き量を統一できる．</p>
+                                    
+                                 
+                              </td>
+                           </tr>
+                        </table>
+                        
+                     </li>
+					<li>
+                        
+                           <p>本文のテキストを図版の周囲に配置する場合で，その<span class="index" id="d10e932">配置領域の字詰め方向の長さが極端に短い場合</span>（例えば基本版面で指定する1行の行長の1/4又は9字以下の場合）は，本文のテキストは配置しないで，空けておいた方がよい（<a class="figure_ref" href="requirements_for_illustration_positioning_in_vertical_mayout.xhtml#fig3_5-ja">図 4.84</a>）．また，<a class="figure_ref" href="requirements_for_illustration_positioning_in_vertical_mayout.xhtml#fig3_6-ja">図 4.85</a>の左側の例のように，行送り方向の図版の前後には，本文のテキストを<span class="index" id="d10e941">1行だけ配置する</span>ことは体裁がよくないので避ける（<a class="figure_ref" href="requirements_for_illustration_positioning_in_vertical_mayout.xhtml#fig3_6-ja">図 4.85</a>の例では右側のようにするとよい）．</p>
+                           
+                        
+                        
+                           <div class="figure" id="fig3_5-ja"><div class="figure-float"><div><img alt="縦組で配置領域の字詰め方向の長さが極端に短い場合" width="410" height="254" src="../image/Images-ja/img3_5.png"/><div class="figureCaption">図 4.84 <span class="caption-body">縦組で配置領域の字詰め方向の長さが極端に短い場合</span></div></div></div></div>
+                           
+                        
+                        
+                        
+                           <div class="figure" id="fig3_6-ja"><div class="figure-float"><div><img alt="縦組で行送り方向の図版の後ろに1行だけ配置した例 （左側を右側の配置に変更する）" width="410" height="254" src="../image/Images-ja/img3_6.png"/><div class="figureCaption">図 4.85 <span class="caption-body">縦組で行送り方向の図版の後ろに1行だけ配置した例<span class="sub-caption">（左側を右側の配置に変更する）</span></span></div></div></div></div>
+                           
+                        
+                        
+                        <table class="t_note">
+                           <tr>
+                              <td class="ft" rowspan="1" colspan="1">
+                                 
+                                    <p>注1）</p>
+                                    
+                                 
+                              </td>
+                              <td rowspan="1" colspan="1">
+                                 
+                                    <p>字詰め方向の図版の周囲に文字を配置することは，<span class="index" id="d10e1028"><a class="termref" href="terminology.xhtml#term.mawarikomi">回り込み</a></span>という．</p>
+                                    
+                                 
+                              </td>
+                           </tr>
+                        </table>
+                        
+                     </li>
+				</ol></body></html>

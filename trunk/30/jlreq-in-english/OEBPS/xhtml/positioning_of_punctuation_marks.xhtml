@@ -1,0 +1,92 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"><head><meta charset="UTF-8"/><title>Requirements for Japanese Text Layout</title><link rel="stylesheet" type="text/css" href="../css/base.css"/><link rel="stylesheet" type="text/css" href="../css/W3C-WG-NOTE.css"/></head><body><h4 id="positioning_of_punctuation_marks">3.1.2 <span class="heading"><span id="en-subheading2_1_2">Positioning of Punctuation Marks (Commas, Periods and Brackets)</span></span></h4><p>
+The positioning of punctuation marks (commas, periods and brackets) in a line proceeds as follows.</p><table class="t_note">
+					<tr>
+						<td class="ft" rowspan="1" colspan="1">
+							
+								
+								<p>(note 1)</p>
+							
+						</td>
+						<td rowspan="1" colspan="1">
+							
+								
+								<p>Basic processing of characters and symbols, including punctuation marks, which are subject to considerations of <a class="termref" href="terminology.xhtml#term.line-head">line head</a> wrapping, <a class="termref" href="terminology.xhtml#term.line-end">line end</a> wrapping and inter-character space adjustment, will be described in detail in <a class="sec_ref" href="about_character_classes.xhtml#about_character_classes">3.9 About Character Classes</a>.
+All combinations of character class are provided as a complete table in <a class="sec_ref" href="spacing_between_characters.xhtml#spacing_between_characters">Appendix B Spacing between Characters</a>.</p>
+							
+						</td>
+					</tr>
+				</table><p>
+The <a class="termref" href="terminology.xhtml#term.character-advance">character advance</a> of <a class="characterClass" href="cl-07.xhtml#cl-07">commas (cl-07)</a>, <a class="characterClass" href="cl-06.xhtml#cl-06">full stops (cl-06)</a>, <a class="characterClass" href="cl-01.xhtml#cl-01">opening brackets (cl-01)</a>, <a class="characterClass" href="cl-02.xhtml#cl-02">closing brackets (cl-02)</a> and
+<a class="characterClass" href="cl-05.xhtml#cl-05">middle dots (cl-05)</a>
+is <a class="termref" href="terminology.xhtml#term.half-width">half-width</a> (half em). But when those punctuation marks are placed side-by-side with <a class="characterClass" href="cl-19.xhtml#cl-19">ideographic (cl-19)</a>, <a class="characterClass" href="cl-15.xhtml#cl-15">hiragana (cl-15)</a>, or <a class="characterClass" href="cl-16.xhtml#cl-16">katakana (cl-16)</a> characters, in principle, a given amount of space will be inserted before or after the symbols, which makes them appear as if they were intrinsically <a class="termref" href="terminology.xhtml#term.full-width">full-width</a> (one em) (see <a class="figure_ref" href="positioning_of_punctuation_marks.xhtml#fig2_8_1-en">Fig. 3.8</a>). Space is inserted before and after <a class="characterClass" href="cl-05.xhtml#cl-05">middle dots (cl-05)</a>. This principle makes the symbols consistent with <a class="characterClass" href="cl-19.xhtml#cl-19">ideographic (cl-19)</a>, <a class="characterClass" href="cl-15.xhtml#cl-15">hiragana (cl-15)</a> and <a class="characterClass" href="cl-16.xhtml#cl-16">katakana (cl-16)</a> characters in character width, and at the same time the space for punctuation helps to make the organization of text clearer. The space size added before or after punctuation marks is subject, in principle, to <a class="termref" href="terminology.xhtml#term.line-adjustment">line adjustment</a> and may eventually be removed, except for that added after <a class="characterClass" href="cl-06.xhtml#cl-06">full stops (cl-06)</a>. (Details of line adjustment are discussed in <a class="sec_ref" href="line_adjustment.xhtml#line_adjustment">3.8 Line Adjustment</a>).</p><div class="figure" id="fig2_8_1-en"><div class="figure-float"><div><img alt="Character widths of commas, periods, and the space size appended before and/or after the symbols." width="399" height="456" src="../image/Images-en/img2_8_1.png"/><br/><img alt="Character widths of commas, periods, and the space size appended before and/or after the symbols." width="462" height="397" src="../image/Images-en/img2_8_2.png"/><div class="figureCaption">Fig. 3.8: <span class="caption-body">Character widths of commas, periods, and the space size appended before and/or after the symbols.</span></div></div></div></div><ol>
+					<li>
+   
+    
+    <p>
+After <a class="characterClass" href="cl-07.xhtml#cl-07">commas (cl-07)</a>, a <a class="termref" href="terminology.xhtml#term.half-em-space">half em space</a> is added, in principle.</p>
+   
+   </li>
+					<li>
+   
+    
+    <p>After <a class="characterClass" href="cl-06.xhtml#cl-06">full stops (cl-06)</a>, in the middle of a line, a half em space is added. At the end of a line, a half em space is added, in principle.</p>
+   
+   </li>
+					<li>
+   
+    
+    <p>
+Before <a class="characterClass" href="cl-01.xhtml#cl-01">opening brackets (cl-01)</a>, a half em space is added, in principle.</p>
+   
+   </li>
+					<li>
+   
+    
+    <p>
+After <a class="characterClass" href="cl-02.xhtml#cl-02">closing brackets (cl-02)</a>, a half em space is added, in principle.</p>
+   
+   </li>
+					<li>
+   
+    
+    <p>
+Before and after <a class="characterClass" href="cl-05.xhtml#cl-05">middle dots (cl-05)</a>, a <a class="termref" href="terminology.xhtml#term.quarter-em-space">quarter em space</a> is added, in principle.</p>
+   
+   </li>
+				</ol><table class="t_note">
+					<tr>
+						<td class="ft" rowspan="1" colspan="1">
+							
+								
+								<p>(note 1)</p>
+							
+						</td>
+						<td rowspan="1" colspan="1">
+							
+								
+								<p>In <a class="termref2nd" href="terminology.xhtml#term.font">font</a> implementations, <a class="termref2nd" href="terminology.xhtml#term.punctuation-marks">punctuation marks</a> can be given a different character width, but it is expected that the font is capable of following the line composition rules explained here to produce the final result. For example, when <a class="characterClass" href="cl-01.xhtml#cl-01">opening brackets (cl-01)</a>
+and <a class="characterClass" href="cl-02.xhtml#cl-02">closing brackets (cl-02)</a> are implemented with full-width size, it is possible  that a minus half em space is inserted between adjacent <a class="characterClass" href="cl-02.xhtml#cl-02">closing brackets (cl-02)</a> and <a class="characterClass" href="cl-01.xhtml#cl-01">opening brackets (cl-01)</a>
+(Some implementations prepare minus <a class="termref" href="terminology.xhtml#term.half-em-space">half em spaces</a> and <a class="termref" href="terminology.xhtml#term.quarter-em-space">quarter em spaces</a>).  In <a class="termref" href="terminology.xhtml#term.letterpress-printing">letterpress printing</a>, it was also common practice to combine punctuation marks with a half-width body and half em spaces in order to make it easier to remove the space later for adjustment. Because of that, the types were picked up except for the punctuation marks at the <a class="termref" href="terminology.xhtml#term.type-picking">type-picking</a> phase, following the manuscript, and the punctuation marks were picked only when they were necessary in composing a page. Later, with the increasing adoption of Monotype machines, punctuation marks with a full-width body became popular and both full-width and half-width punctuation marks have been used, mixed together, since then.</p>
+							
+						</td>
+					</tr>
+				</table><div class="figure" id="fig2_9-en"><div class="figure-float"><div><img alt="Positioning of parentheses and brackets. (The left-hand side shows an example of setting them solid.)" width="380" height="384" src="../image/Images-en/img2_9.png"/><div class="figureCaption">Fig. 3.9: <span class="caption-body">Positioning of parentheses and brackets. (The left-hand side shows an example of setting them solid.)</span></div></div></div></div><table class="t_note">
+					<tr>
+						<td class="ft" rowspan="1" colspan="1">
+							
+								
+								<p>(note 2)</p>
+							
+						</td>
+						<td rowspan="1" colspan="1">
+							
+								
+								<p>
+Among <a class="characterClass" href="cl-01.xhtml#cl-01">opening brackets (cl-01)</a>
+and <a class="characterClass" href="cl-02.xhtml#cl-02">closing brackets (cl-02)</a>, <span class="character">LEFT PARENTHESIS "("</span>, <span class="character">RIGHT PARENTHESIS ")"</span>, <span class="character">LEFT ANGLE BRACKET "〈"</span> and <span class="character">RIGHT ANGLE BRACKET "〉"</span>
+are used to indicate supplementary explanations, and in that case their usage differs slightly from other <a class="characterClass" href="cl-01.xhtml#cl-01">opening brackets (cl-01)</a>
+and <a class="characterClass" href="cl-02.xhtml#cl-02">closing brackets (cl-02)</a>. To reflect the difference, there is an alternative convention  to not append a <a class="termref2nd" href="terminology.xhtml#term.half-em-space">half em space</a> before or after the parentheses and angle brackets, and instead just set them <a class="termref" href="terminology.xhtml#term.solid-setting">solid</a> (see <a class="figure_ref" href="positioning_of_punctuation_marks.xhtml#fig2_9-en">Fig. 3.9</a>).</p>
+							
+						</td>
+					</tr>
+				</table></body></html>

@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xml:lang="ja" xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta charset="UTF-8" />
+        
+        <meta content="note1" name="CAS-UB-Publication-Class" />
+        <meta content="CAS-UB Backend System Installed on 2012-12-25" name="Generator-Signature" />
+        <title>EPUBのベストプラクティス EPUB2用の目次NCXの出力はまだ必要か？</title>
+        <link href="themes/cas-common_epub.css" rel="stylesheet" type="text/css" />
+        <link href="themes/normal-serif/common.css" rel="stylesheet" type="text/css" />
+        <link href="themes/normal-serif/generic.css" rel="stylesheet" type="text/css" />
+        <link href="styles/style.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body class="wrapper chapter level2"
+        id="e.0006.EPUBのベストプラクティス_E3_80_80EPUB2用の目次NCXの出力はまだ必要か_EF_BC_9F">
+        <h1>3 EPUBのベストプラクティス EPUB2用の目次NCXの出力はまだ必要か？</h1>
+        
+        <div class="wrapper level3" id="h.0006.EPUB2">
+            <h1>3–1 EPUB2</h1>
+            <p>EPUB2では、目次にNCXという形式のファイルを使っていました。NCXはDAISY Consortiumによって標準化されたANSI/NISO Z39.86-2005,
+                Specifications for the Digital Talking Bookという仕様の一部です<a class="note-d" href="xnotes.xhtml#n.0006.1.r"
+                    id="n.0006.1"
+                    title="Open Packaging Format (OPF) 2.0.1 v1.0.1 Recommended Specification September 4, 2010"
+                    ><sup>[1]</sup></a><span class="note"><span class="note-start">(</span><a
+                        href="http://idpf.org/epub/20/spec/OPF_2.0.1_draft.htm">Open Packaging Format (OPF) 2.0.1 v1.0.1
+                        Recommended Specification September 4, 2010</a><span class="note-end">)</span></span>。</p>
+        </div>
+        <div class="wrapper level3" id="h.0006.EPUB3"><h1>3–2 EPUB3</h1>
+            <p>EPUB3では、NAV形式のXHTMLファイルを目次に使うことになっており、NCX形式の目次をEPUB2のリーダのために含めておいても良いことになっています<a class="note-d"
+                href="xnotes.xhtml#n.0006.2.r" id="n.0006.2"
+                title="EPUB Content Documents 3.0 Recommended Specification 11 October 2011 EPUB Navigation Documents"
+                ><sup>[2]</sup></a><span class="note"><span class="note-start">(</span>EPUB Content Documents 3.0
+                    Recommended Specification 11 October 2011 <a
+                        href="http://idpf.org/epub/30/spec/epub30-contentdocs.xhtml#sec-xhtml-nav">EPUB Navigation
+                        Documents</a><span class="note-end">)</span></span>。</p>
+            <p>したがって、EPUB3リーダ専用のEPUBであればNCXを含む必要はありません。そこで、最近アップデートされたEPUB3リーダを対象として、NCXとNAV形式の両方の目次をもつEPUB3とNAV形式の目次のみ（NCXを含んでいない）もつEPUB3を作って、目次が表示されるかどうかについて比較してみました。</p>
+            <p>結果は<a href="0006.xhtml#t.0006.NCXとNAVの両方を含むEPUBと_E3_80_81NAVしか含まないEPUBの目次はどうなるか_EF_BC_9F">表3･1
+                NCXとNAVの両方を含むEPUBと、NAVしか含まないEPUBの目次はどうなるか？</a>に示すとおりです。</p>
+            <p>(1) iBooks3.0、Kobo、ReadiumはNAVの目次を表示します。NCXの目次は必要としません。</p>
+            <p>(2) Adobe Digital Editions 2.0は、NCXの目次がないと目次が表示されないようです。</p>
+            <p>(3) なお、KindleのKF8形式については、「Kindle Publishing Guide」ではNCXが必須とされており、HTML形式の目次も必要とされています。実際の結果は後述の<a
+                href="0006.xhtml#h.0006.Kindle_20Paperwhiteでの確認結果">項目</a>をご覧ください。</p>
+            <p>ということで、まだNCXを全廃というわけにはいかないようです。</p>
+            <div class="gext tbl" id="t.0006.NCXとNAVの両方を含むEPUBと_E3_80_81NAVしか含まないEPUBの目次はどうなるか_EF_BC_9F"><div
+                class="__embededsection__"><table>
+                    <thead>
+                        <tr>
+                            
+                            <th></th>
+                            
+                            <th>NCXとNAV</th>
+                            
+                            <th>NAVのみ</th>
+                            
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            
+                            <td>Readium 0.5 </td>
+                            
+                            <td>表示する</td>
+                            
+                            <td>表示する</td>
+                            
+                        </tr>
+                        
+                        <tr>
+                            
+                            <td>Adobe Digital Editions 2.0 </td>
+                            
+                            <td>表示する</td>
+                            
+                            <td>表示しない</td>
+                            
+                        </tr>
+                        
+                        <tr>
+                            
+                            <td>iBooks 3.0 </td>
+                            
+                            <td>表示する</td>
+                            
+                            <td>表示する</td>
+                            
+                        </tr>
+                        
+                        <tr>
+                            
+                            <td>Kobo 2.1.4 </td>
+                            
+                            <td>表示する</td>
+                            
+                            <td>表示する</td>
+                            
+                        </tr>
+                        
+                        <tr>
+                            
+                            <td>Kindle 2.71 </td>
+                            
+                            <td>NCXは必須と説明されている</td>
+                            <td>XHTMLの目次が必要とされている</td>
+                            
+                            
+                        </tr>
+                        
+                    </tbody>
+                    
+                </table></div><div class="caption">表3･1 NCXとNAVの両方を含むEPUBと、NAVしか含まないEPUBの目次はどうなるか？</div>
+            </div>
+            <p>表示する：目次が表示されるという意味。</p>
+            <p>表示しない：目次が表示されないという意味。</p>
+        </div>
+        <div class="wrapper level3" id="h.0006.Kindle_20Paperwhiteでの確認結果"><h1>3–3 Kindle
+            Paperwhiteでの確認結果</h1>
+            <p>(1)
+                NAVのみでNCXが存在しないEPUB3をKindleGen(2.7)でmobiに変換すると、「移動」メニュー「表紙」と「最後のページ」の間にグレー（無効）の「目次」が表示されます。NAVの内容は無視されているようです。</p>
+            <p>(2) NAVとNCXと両方が存在するEPUB3をKindleGen(2.7)でmobiに変換すると、「移動」メニューの「表紙」と「最後のページ」の間に目次項目が表示されます。</p>
+            <p>(3) (1)、(2)からKindle Paperwhiteは、NCXの内容を「移動」の目次項目として表示していることがわかります。</p>
+            <p>(4) HTMLの目次<a class="note-d" href="xnotes.xhtml#n.0006.3.r" id="n.0006.3"
+                title="CAS-UBのKindle生成メニューでは、EPUB3のNAV.xhtmlにスタイルシートを設定して、HTML形式の目次として作成し、先頭ページに登録します。"
+                ><sup>[3]</sup></a><span class="note"><span class="note-start"
+                    >(</span>CAS-UBのKindle生成メニューでは、EPUB3のNAV.xhtmlにスタイルシートを設定して、HTML形式の目次として作成し、先頭ページに登録します。<span
+                        class="note-end"
+                        >)</span></span>は、「表紙」の次の単独ページに表示されます。さらにHTMLの目次ページをガイドに登録すると「移動」の目次としても使われます。（ガイドの内容が「移動」の目次に表示されるのであれば、HTML形式の目次を用意した場合、NCXの目次は不要なのかもしれません。）</p>
+            <div class="gext fig" id="f.0006.HTML目次"><p><img alt="1125paperwhite3.jpg"
+                src="images/1125paperwhite3.jpg" /></p>
+                <div class="caption">図3･1 HTML目次</div>
+            </div>
+            <div class="gext fig" id="f.0006.移動メニュー_E3_80_80_EF_BC_88頁の上部にポップアップ_EF_BC_89"><p><img
+                alt="1125Paperwhite1.jpg" src="images/1125Paperwhite1.jpg" /></p>
+                <div class="caption">図3･2 移動メニュー （頁の上部にポップアップ）</div>
+            </div>
+            <div class="gext fig" id="f.0006._E3_80_8C移動_E3_80_8Dメニューの内容"><p><img alt="1125paperwhite2.jpg"
+                src="images/1125paperwhite2.jpg" /></p>
+                <div class="caption">図3･3 「移動」メニューの内容</div>
+            </div>
+        </div>
+    </body>
+</html>

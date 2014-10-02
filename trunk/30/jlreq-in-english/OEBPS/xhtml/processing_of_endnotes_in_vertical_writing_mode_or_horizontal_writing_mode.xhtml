@@ -1,0 +1,129 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"><head><meta charset="UTF-8"/><title>Requirements for Japanese Text Layout</title><link rel="stylesheet" type="text/css" href="../css/base.css"/><link rel="stylesheet" type="text/css" href="../css/W3C-WG-NOTE.css"/></head><body><h4 id="processing_of_endnotes_in_vertical_writing_mode_or_horizontal_writing_mode">4.2.4 <span class="heading"><span class="index" id="d9e1597">Processing of Endnotes</span> in Vertical Writing Mode or Horizontal Writing Mode</span></h4><p>The following figure is a common example of endnotes set at the end of paragraphs in vertical writing mode (see <a class="figure_ref" href="processing_of_endnotes_in_vertical_writing_mode_or_horizontal_writing_mode.xhtml#fig3_2_16-en">Fig. 4.65</a>).</p><div class="figure" id="fig3_2_16-en"><div class="figure-float"><div><img alt="An example of endnotes set  at the end of paragraphs in vertical writing mode" width="371" height="525" src="../image/Images-en/img3_2_16.png"/><div class="figureCaption">Fig. 4.65: <span class="caption-body">An example of endnotes set  at the end of paragraphs in vertical writing mode</span></div></div></div></div><p>Specific issues related to setting endnotes in vertical writing mode or horizontal writing mode include the following:</p><ol>
+					<li>
+                        
+                           
+                           <p>The character size of endnotes should be one or two levels smaller than the character size of the base text in the kihon-hanmen.</p>
+                        
+                        <table class="t_note">
+                           <tr>
+                              <td class="ft" rowspan="1" colspan="1">
+                                 
+                                    
+                                    <p>(note 1)</p>
+                                 
+                              </td>
+                              <td rowspan="1" colspan="1">
+                                 
+                                    
+                                    <p>For example, when the character size of the base text is nine points, the character size of endnotes in B6 size or four by six size is seven points, and in A5 size is eight points or seven points.</p>
+                                 
+                              </td>
+                           </tr>
+                        </table>
+                        
+                     </li>
+					<li>
+                        
+                           
+                           <p>The indent  length should be around two characters sizes of the base text in the kihon-hanmen. The line length of endnotes should be an integer-based number of times the endnote character size. The bottom of the endnote line should be set aligned with the bottom edge of the kihon-hanmen or column area. Accordingly, the indent length of endnotes needs to be adjusted and the length may sometimes differ by an integer-based number of units based on the base character size of the kihon-hanmen.</p>
+                        
+                        <table class="t_note">
+                           <tr>
+                              <td class="ft" rowspan="1" colspan="1">
+                                 
+                                    
+                                    <p>(note 1)</p>
+                                 
+                              </td>
+                              <td rowspan="1" colspan="1">
+                                 
+                                    
+                                    <p>For example, supposing the character size of the base text in the kihon-hanmen is nine points and one line contains forty three characters, the character size of the endnote is seven points, the indent length is calculated as follows:</p>
+                                 
+							<table class="t_sample">
+								<tr><td class="ft">
+                                 
+                                    
+                                    <p>line length of base text</p>
+                                 
+								</td><td class="ft">
+                                 
+
+<p><span class="expr">387 point = 9 point × 43 characters</span></p>
+                                 
+								</td></tr>
+								<tr><td class="ft">
+                                 
+                                    
+                                    <p>convert to 7 point based line length</p>
+                                 
+								</td><td class="ft">
+                                 
+
+<p><span class="expr">387 point = 7 point × 55 characters + 2 point</span></p>
+                                 
+								</td></tr>
+							</table>
+                                 
+                                    
+                                    <p>Suppose the line length of the endnote is 7 points by 53 characters, the length of indent is 16 points with following calculation:</p>
+                                 
+							<table class="t_sample">
+								<tr><td class="ft">
+                                 
+
+<p><span class="expr">16 point = 387 point − 7 point × 53 characters</span></p>
+                                 
+								</td></tr>
+							</table>
+                                 
+                                    
+                                    <p>Suppose line length of the endnote is 7 points by 52 characters, indent length is 23 points with following calculation:</p>
+                                 
+							<table class="t_sample">
+								<tr><td class="ft">
+                                 
+
+<p><span class="expr">23 point = 387 point − 7 point × 52 characters</span></p>
+                                 
+								</td></tr>
+							</table>
+                                 
+                                    
+                                    <p>Accordingly, in this case, the indent length of the endnote is 16 points or 23 points.</p>
+                                 
+                              </td>
+                           </tr>
+                        </table>
+                        
+                     </li>
+					<li>
+                        
+                           
+                           <p>The inter-letter space after the head endnote number is usually the size of a full-width  character  of the endnote.</p>
+                        
+                     </li>
+					<li>
+                        
+                           
+                           <p>When the endnote is two lines or more, the second line and after are indented one or two full-width character sizes longer than the first line.</p>
+                        
+                     </li>
+					<li>
+                        
+                           
+                           <p>Line gaps of endnotes are narrower than the line gap of the kihon-hanmen because of the smaller character size of endnotes.</p>
+                        
+                     </li>
+					<li>
+                        
+                           
+                           <p>When  new chapters are begun after a page break or new recto, endnotes are set just before the page or page break or new recto, and the space after the endnote may be left as is. Only the line gap between the base text and the endnote should be specified. However, when the endnotes are set between paragraphs, the line gap before and after the endnote becomes an issue. Basically, the minimum size of line gaps between the endnote and the base text, before and after, is the line gap decided for the kihon-hanmen, and usually, the line at the end of the hanmen or a column is aligned with the bottom of the hanmen or the column. In these cases, the fraction of line gap is basically adjusted by the increase of the line gap after the endnote, but when the endnote comes to the end of the hanmen or the column, the line gap before the endnote is increased (<a class="figure_ref" href="processing_of_endnotes_in_vertical_writing_mode_or_horizontal_writing_mode.xhtml#fig3_2_17-en">Fig. 4.66</a>).</p>
+                        
+                        
+                           
+                           <div class="figure" id="fig3_2_17-en"><div class="figure-float"><div><img alt="An example of the handling of line gaps before and after  endnotes" width="471" height="338" src="../image/Images-en/img3_2_17.png"/><div class="figureCaption">Fig. 4.66: <span class="caption-body">An example of the handling of line gaps before and after  endnotes</span></div></div></div></div>
+                        
+                        
+                     </li>
+				</ol></body></html>

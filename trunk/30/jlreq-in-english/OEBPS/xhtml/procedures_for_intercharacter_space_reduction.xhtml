@@ -1,0 +1,105 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"><head><meta charset="UTF-8"/><title>Requirements for Japanese Text Layout</title><link rel="stylesheet" type="text/css" href="../css/base.css"/><link rel="stylesheet" type="text/css" href="../css/W3C-WG-NOTE.css"/></head><body><h4 id="procedures_for_intercharacter_space_reduction">3.8.3 <span class="heading"><span class="index" id="en-subheading2_8_3">Procedures for Inter-Character Space Reduction</span></span></h4><p>For line adjustment by inter-character space reduction decisions must first be made about
+ the preferred order in which reduction processing options
+	are applied, and the maximum amount of space reduction needed. Inter-character space reduction is processed with following priorities.</p><table class="t_note">
+					<tr>
+						<td class="ft" rowspan="1" colspan="1">
+							
+								
+								<p>(note 1)</p>
+							
+						</td>
+						<td rowspan="1" colspan="1">
+							
+								
+								<p>JIS X 4051 provides also definitions for the adaptation of <a class="termref" href="terminology.xhtml#term.warichu">inline cutting note</a>, but for the purpose of this section, these are rather
+                 complex and hence left out.
+              </p>
+							
+						</td>
+					</tr>
+					<tr>
+						<td class="ft" rowspan="1" colspan="1">
+							
+								
+								<p>(note 2)</p>
+							
+						</td>
+						<td rowspan="1" colspan="1">
+							
+								
+								<p>The details of inter-character spaces and where reduction processing may be applied are described in the table of <a class="sec_ref" href="opportunities_for_intercharacter_space_reduction_during_line_adjustment.xhtml#opportunities_for_intercharacter_space_reduction_during_line_adjustment">Appendix D Opportunities for Inter-character Space Reduction during Line Adjustment</a>, following <a class="sec_ref" href="about_character_classes.xhtml#about_character_classes">3.9 About Character Classes</a>.</p>
+							
+						</td>
+					</tr>
+				</table><ol>
+					<li>
+					<p><a class="characterClass" href="cl-26.xhtml#cl-26">Western word space (cl-26)</a>, which is usually one third em,
+is reduced by equal amounts, to leave a minimum of a <a class="termref" href="terminology.xhtml#term.quarter-em-space">quarter em space</a> between words. The same space reduction is applied to all spaces on the target line at the same time.</p></li>
+					<li>
+					<p>The half em space after  <a class="characterClass" href="cl-02.xhtml#cl-02">closing brackets (cl-02)</a>,<a class="characterClass" href="cl-07.xhtml#cl-07">commas (cl-07)</a>
+and <a class="characterClass" href="cl-06.xhtml#cl-06">full stops (cl-06)</a>
+at the end of a line, is deleted and set solid.</p></li>
+					<li>
+					<p>The quarter em spaces both before and after the <a class="characterClass" href="cl-05.xhtml#cl-05">middle dots (cl-05)</a> are deleted and set solid.</p></li>
+					<li>
+					<p>The quarter em space before or after <a class="characterClass" href="cl-05.xhtml#cl-05">middle dots (cl-05)</a>, in the middle of a line, is reduced equally with proportional character size as far as solid setting.</p></li>
+					<li>
+					<p>The half em spaces before <a class="characterClass" href="cl-01.xhtml#cl-01">opening brackets (cl-01)</a> or after <a class="characterClass" href="cl-02.xhtml#cl-02">closing brackets (cl-02)</a>
+or <a class="characterClass" href="cl-07.xhtml#cl-07">commas (cl-07)</a>,
+in the middle of a line, are reduced equally with proportional character size, as far as solid setting.</p><table class="t_note"><tr><td class="ft" rowspan="1" colspan="1">
+
+<p>(note 1)</p></td><td rowspan="1" colspan="1">
+
+<p>With the exception of the line end position, the half space after <a class="characterClass" href="cl-06.xhtml#cl-06">full stops (cl-06)</a> should not adapted, since it plays an important role as a sentence separator.
+        </p></td></tr><tr><td class="ft" rowspan="1" colspan="1">
+         
+         <p>(note 2)</p></td><td rowspan="1" colspan="1">
+         
+         <p><a class="characterClass" href="cl-07.xhtml#cl-07">Commas (cl-07)</a>
+fulfill different roles to <a class="characterClass" href="cl-01.xhtml#cl-01">opening brackets (cl-01)</a>
+and <a class="characterClass" href="cl-02.xhtml#cl-02">closing brackets (cl-02)</a>. Hence, there are examples where it is preferred to reduce the half em space before or after brackets, rather than to reduce the half em space after commas.</p></td></tr><tr><td class="ft" rowspan="1" colspan="1">
+
+<p>(note 3)</p></td><td rowspan="1" colspan="1">
+
+<p>The reduction of the half em space before <a class="characterClass" href="cl-01.xhtml#cl-01">opening brackets (cl-01)</a>
+or after <a class="characterClass" href="cl-02.xhtml#cl-02">closing brackets (cl-02)</a>
+and <a class="characterClass" href="cl-07.xhtml#cl-07">commas (cl-07)</a>
+up to solid setting is regarded as too much reduction. Hence, there are examples where the maximum amount of space reduction is up to quarter em space.</p></td></tr></table></li>
+					<li>
+					<p>The quarter em space between Japanese text (<a class="characterClass" href="cl-15.xhtml#cl-15">hiragana (cl-15)</a>, <a class="characterClass" href="cl-16.xhtml#cl-16">katakana (cl-16)</a> and <a class="characterClass" href="cl-19.xhtml#cl-19">ideographic characters (cl-19)</a>) and Latin script text (<a class="characterClass" href="cl-24.xhtml#cl-24">grouped numerals (cl-24)</a>, <a class="characterClass" href="cl-27.xhtml#cl-27">Western characters (cl-27)</a> and <a class="characterClass" href="cl-25.xhtml#cl-25">unit symbols (cl-25)</a>), is reduced equally
+              with proportional character size, as far as one eighth em space.</p><table class="t_note"><tr><td class="ft" rowspan="1" colspan="1">
+              <p>(note 1)</p></td><td rowspan="1" colspan="1">
+              
+              <p>There are also examples where the quarter em space between Japanese text (<a class="characterClass" href="cl-15.xhtml#cl-15">hiragana (cl-15)</a>, <a class="characterClass" href="cl-16.xhtml#cl-16">katakana (cl-16)</a> and <a class="characterClass" href="cl-19.xhtml#cl-19">ideographic characters (cl-19)</a>) and Latin script text (<a class="characterClass" href="cl-27.xhtml#cl-27">Western characters (cl-27)</a>, <a class="characterClass" href="cl-24.xhtml#cl-24">grouped numerals (cl-24)</a> or <a class="characterClass" href="cl-25.xhtml#cl-25">unit symbols (cl-25)</a>) is regarded as fixed size space, and space adaptation is not applied.
+                 </p></td></tr></table></li>
+				</ol><p>In JIS X 4051, the space after <a class="characterClass" href="cl-02.xhtml#cl-02">closing brackets (cl-02)</a>, <a class="characterClass" href="cl-07.xhtml#cl-07">commas (cl-07)</a> and <a class="characterClass" href="cl-05.xhtml#cl-05">middle dots (cl-05)</a> at the end of a line are set solid, and the space after <a class="characterClass" href="cl-07.xhtml#cl-07">commas (cl-07)</a> at the end of a line is set to a half em. Accordingly, JIS X 4051 defines the priority of processing as follows:</p><table class="t_note">
+					<tr>
+						<td class="ft" rowspan="1" colspan="1">
+							
+								
+								<p>(note 1)</p>
+							
+						</td>
+						<td rowspan="1" colspan="1">
+							
+								
+								<p>The details of the inter-character spaces, where the inter-space reduction processing can be applied, which is defined in JIS X 4051, is described in detail in the Table 5 of <a class="sec_ref" href="opportunities_for_intercharacter_space_reduction_during_line_adjustment.xhtml#opportunities_for_intercharacter_space_reduction_during_line_adjustment">Appendix D Opportunities for Inter-character Space Reduction during Line Adjustment</a>
+in accordance with the character class concept in <a class="sec_ref" href="about_character_classes.xhtml#about_character_classes">3.9 About Character Classes</a>.</p>
+							
+						</td>
+					</tr>
+				</table><ol>
+					<li>
+					<p><a class="characterClass" href="cl-26.xhtml#cl-26">Western word space (cl-26)</a>, which is usually one third em, is reduced by equal amounts, to leave a minimum of a quarter em space between words.</p></li>
+					<li>
+					<p>The quarter em space before and after <a class="characterClass" href="cl-05.xhtml#cl-05">middle dots (cl-05)</a>
+is reduced equally with proportional character size as far as solid setting.</p></li>
+					<li>
+					<p>The half em spaces before <a class="characterClass" href="cl-01.xhtml#cl-01">opening brackets (cl-01)</a>
+and after <a class="characterClass" href="cl-02.xhtml#cl-02">closing brackets (cl-02)</a>
+or <a class="characterClass" href="cl-07.xhtml#cl-07">commas (cl-07)</a>, are reduced equally with proportional character size as far as solid setting.</p></li>
+					<li>
+					<p>The quarter em spaces between Japanese text (<a class="characterClass" href="cl-15.xhtml#cl-15">hiragana (cl-15)</a>, <a class="characterClass" href="cl-16.xhtml#cl-16">katakana (cl-16)</a>
+and <a class="characterClass" href="cl-19.xhtml#cl-19">ideographic characters (cl-19)</a>) and Latin script text (<a class="characterClass" href="cl-24.xhtml#cl-24">grouped numerals (cl-24)</a>, <a class="characterClass" href="cl-27.xhtml#cl-27">Western characters (cl-27)</a>
+and <a class="characterClass" href="cl-25.xhtml#cl-25">unit symbols (cl-25)</a>) are reduced equally with proportional character size, as far as a 1/8th em space.</p></li>
+				</ol></body></html>

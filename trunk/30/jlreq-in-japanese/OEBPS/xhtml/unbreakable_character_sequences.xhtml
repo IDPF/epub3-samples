@@ -1,0 +1,358 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja"><head><meta charset="UTF-8"/><meta name="author" content="Japanese Layout Task Force"/><title>日本語組版処理の要件（日本語版）</title><link rel="stylesheet" type="text/css" href="../css/W3C-WG-NOTE.css"/><link rel="stylesheet" type="text/css" href="../css/base.css"/></head><body><h4 id="unbreakable_character_sequences">3.1.10 <span class="heading"><span class="index" id="ja-subheading2_1_10">分割禁止</span></span></h4><p>次のような文字・記号が連続する場合は，その字間で2行に<a class="termref" href="terminology.xhtml#term.break">分割</a>しない（<a class="termref" href="terminology.xhtml#term.unbreakable-characters-rule">分割禁止</a>）．これは，それらの文字・記号を一体として扱いたいためである．</p><table class="t_note">
+					<tr>
+						<td class="ft" rowspan="1" colspan="1">
+							
+								<p>注1）</p>
+								
+							
+						</td>
+						<td rowspan="1" colspan="1">
+							
+								<p><a class="termref2nd" href="terminology.xhtml#term.line-start-prohibition-rule">行頭禁則</a>又は<a class="termref2nd" href="terminology.xhtml#term.line-end-prohibition-rule">行末禁則</a>も，前の文字・記号と<a class="termref" href="terminology.xhtml#term.characters-not-starting-line">行頭禁則文字</a>との字間で2行に分割しない（分割禁止），<a class="termref" href="terminology.xhtml#term.characters-not-ending-line">行末禁則文字</a>と次にくる文字・記号との字間で2行に分割しない（分割禁止），と考えることができる．</p>
+								
+							
+						</td>
+					</tr>
+					<tr>
+						<td class="ft" rowspan="1" colspan="1">
+							
+								<p>注2）</p>
+								
+							
+						</td>
+						<td rowspan="1" colspan="1">
+							
+								<p>2行に分割してはいけない箇所及び2行に分割してよい箇所の詳細は，<a class="sec_ref" href="about_character_classes.xhtml#about_character_classes">3.9 文字クラスについて</a>で説明する文字クラスに従い，表の形式にして<a class="sec_ref" href="possibilities_for_linebreaking_between_characters.xhtml#possibilities_for_linebreaking_between_characters">附属書C 文字間での分割の可否</a>で示す．</p>
+								
+							
+						</td>
+					</tr>
+				</table><ol>
+					<li>
+   
+    <p>連続する<span class="index" id="d5e4657">全角ダッシュ</span><span class="character">[—] (EM DASH)</span>と全角ダッシュ<span class="character">[—] (EM DASH)</span>との間（具体的には2倍ダッシュ[――]）（<a class="figure_ref" href="unbreakable_character_sequences.xhtml#fig2_24-ja">図 3.24</a>）．なお，処理系によっては，<span class="character">[―] (HORIZONTAL BAR)</span>にも，同様の振る舞いを実装しているものもある．</p>
+    
+   
+   
+    <div class="figure" id="fig2_24-ja"><div class="figure-float"><div><img alt="全角ダッシュと全角ダッシュとの間は分割禁止" width="504" height="352" src="../image/Images-ja/img2_24.png"/><div class="figureCaption">図 3.24 <span class="caption-body">全角ダッシュと全角ダッシュとの間は分割禁止</span></div></div></div></div>
+    
+   
+   
+   <table class="t_note">
+						<tr>
+							<td class="ft" rowspan="1" colspan="1">
+								
+									<p>注1）</p>
+									
+								
+							</td>
+							<td rowspan="1" colspan="1">
+								
+									<p>
+<span class="index" id="d5e4735">全角ダッシュ</span><span class="character">[—] (EM DASH)</span>の前後にくる他の文字との字間はベタ組にする．ただし，全角ダッシュ<span class="character">[—] (EM DASH)</span>の前後に次の文字が配置される場合は，空き量を確保する．後述する<span class="index" id="d5e4745">三点リーダ</span><span class="character">[…] (HORIZONTAL ELLIPSIS)</span>，<span class="index" id="d5e4751">二点リーダ</span><span class="character">[‥] (TWO DOT LEADER)</span>，<a class="characterClass" href="cl-12.xhtml#cl-12">前置省略記号（cl-12）</a>又は<a class="characterClass" href="cl-13.xhtml#cl-13">後置省略記号（cl-13）</a>と，その前後に位置した文字との字間も，全角ダッシュ<span class="character">[—] (EM DASH)</span>の場合と同様である．</p>
+									
+								
+								<ol>
+									<li>
+     
+     <p>全角ダッシュ<span class="character">[—] (EM DASH)</span>の前に<a class="characterClass" href="cl-02.xhtml#cl-02">終わり括弧類（cl-02）</a>又は<a class="characterClass" href="cl-07.xhtml#cl-07">読点類（cl-07）</a>がくる場合は，それらの字間は原則として<a class="termref2nd" href="terminology.xhtml#term.half-em-space">二分アキ</a>とする．また，行中で全角ダッシュ<span class="character">[—] (EM DASH)</span>の前に<a class="characterClass" href="cl-06.xhtml#cl-06">句点類（cl-06）</a>がくる場合は，その字間は二分アキとする．ただし，<a class="characterClass" href="cl-06.xhtml#cl-06">句点類（cl-06）</a>が行末に位置した場合は，<a class="characterClass" href="cl-06.xhtml#cl-06">句点類（cl-06）</a>の後ろを原則として二分アキにする．</p>
+     
+     
+    </li>
+    <li>
+     
+     <p>全角ダッシュ<span class="character">[—] (EM DASH)</span>の後ろに<a class="characterClass" href="cl-01.xhtml#cl-01">始め括弧類（cl-01）</a>がくる場合は，その字間は原則として<a class="termref2nd" href="terminology.xhtml#term.half-em-space">二分アキ</a>とする．</p>
+     
+     
+    </li>
+    <li>
+     
+     <p>全角ダッシュ<span class="character">[—] (EM DASH)</span>の前又は後ろに<a class="characterClass" href="cl-05.xhtml#cl-05">中点類（cl-05）</a>がくる場合は，その字間は原則として<a class="termref2nd" href="terminology.xhtml#term.quarter-em-space">四分アキ</a>とする．</p>
+     
+     
+    </li>
+								</ol>
+							</td>
+						</tr>
+    <tr>
+    <td class="ft" rowspan="1" colspan="1">
+     
+     <p>注2）</p>
+     
+     
+    </td>
+    <td rowspan="1" colspan="1">
+     
+     <p>2倍ダッシュは，それを一体にして扱うということから分割禁止としていた．また，活字組版において2倍ダッシュは，2倍角のボディで作成されており，分割できないということから，その禁止の度合いが高かった．しかし，どうしても止むを得ないという場合は，全角ダッシュにして，2行に分割することも許容されていた．</p>
+     
+     
+    </td>
+    </tr>
+   </table>
+   
+   </li>
+					<li>
+   
+    <p>連続する<span class="index" id="d5e4956">三点リーダ</span><span class="character">[…] (HORIZONTAL ELLIPSIS)</span>又は<span class="index" id="d5e4961">二点リーダ</span><span class="character">[‥] (TWO DOT LEADER)</span>の字間（具体的には<span class="index" id="d5e4966">2倍三点リーダ</span>[……]又は<span class="index" id="d5e4969">2倍二点リーダ</span>[‥‥]）．</p>
+    
+   
+   
+    <div class="figure" id="fig2_25-ja"><div class="figure-float"><div><img alt="三点リーダと三点リーダとの間は分割禁止" width="324" height="417" src="../image/Images-ja/img2_25.png"/><div class="figureCaption">図 3.25 <span class="caption-body">三点リーダと三点リーダとの間は分割禁止</span></div></div></div></div>
+    
+   
+   
+   <table class="t_note">
+    <tr>
+    <td class="ft" rowspan="1" colspan="1">
+     
+     <p>注1）</p>
+     
+     
+    </td>
+    <td rowspan="1" colspan="1">
+     
+     <p><a class="termref2nd" href="terminology.xhtml#term.letterpress-printing">活字組版</a>において2倍三点リーダなどは，全角の三点リーダを並べていたので，その禁止の度合いは，2倍ダッシュより幾分かは低かった．</p>
+     
+     
+    </td>
+    </tr>
+   </table>
+   
+   </li>
+					<li>
+   
+    <p>連続する<span class="index" id="d5e5055"><a class="termref" href="terminology.xhtml#term.european-numerals">アラビア数字</a></span>の字間（<a class="figure_ref" href="unbreakable_character_sequences.xhtml#fig2_26-ja">図 3.26</a>，<a class="figure_ref" href="unbreakable_character_sequences.xhtml#fig2_27-ja">図 3.27</a>，<a class="figure_ref" href="unbreakable_character_sequences.xhtml#fig2_28-ja">図 3.28</a>）．アラビア数字は，位置で桁を示すことによる．</p>
+    
+   
+   <table class="t_note">
+    <tr>
+    <td class="ft" rowspan="1" colspan="1">
+     
+     <p>注1）</p>
+     
+     
+    </td>
+    <td rowspan="1" colspan="1">
+     
+     <p>連続する<span class="index" id="d5e5107">漢数字</span>の字間では分割可である（位取りを示す読点，概数を示す読点，小数点を示す中点<span class="character">[・] (KATAKANA MIDDLE DOT)</span>の前では分割不可であるが，それらの後ろでは分割は可である）．漢数字は，“二百三十五”のように単位語を入れて表記するのが本来的な使い方であり，その位置で位を示す必要がないからである．これに対し，アラビア数字は，その数字の位置で位を示す必要があるので，原則として分割は不可である．なお，縦組でアラビア数字を正常な向きで1字1字並べた場合は，アラビア数字の漢数字的な使い方ということで，このアラビア数字の字間でも分割可である．</p>
+     
+     
+    </td>
+    </tr>
+    <tr>
+    <td class="ft" rowspan="1" colspan="1">
+     
+     <p>注2）</p>
+     
+     
+    </td>
+    <td rowspan="1" colspan="1">
+     
+     <p>アラビア数字の表記では，小数点にピリオド<span class="character">[.] (FULL STOP)</span>，位取りにコンマ<span class="character">[,] (COMMA)</span>又は空白を使用する．これらの前及び後ろも含めて分割禁止である（<a class="figure_ref" href="unbreakable_character_sequences.xhtml#fig2_28-ja">図 3.28</a>，<a class="figure_ref" href="unbreakable_character_sequences.xhtml#fig2_28-ja">図 3.28</a>の“4”の前の空白は，位取りを示す空白である）．</p>
+     
+     
+    </td>
+    </tr>
+   </table>
+   
+   </li>
+					<li>
+   
+    <p><span class="index" id="d5e5191"><a class="characterClass" href="cl-12.xhtml#cl-12">前置省略記号（cl-12）</a></span>（円記号<span class="character">[¥] (YEN SIGN)</span>，ドル記号<span class="character">[$] (DOLLAR SIGN)</span>など）とその後ろにくるアラビア数字・漢数字との間（<a class="figure_ref" href="unbreakable_character_sequences.xhtml#fig2_26-ja">図 3.26</a>）．それらの文字列を一体として扱いたいためである．</p>
+    
+   
+   
+    <div class="figure" id="fig2_26-ja"><div class="figure-float"><div><img alt="前置省略記号とアラビア数字の間は分割禁止" width="171" height="75" src="../image/Images-ja/img2_26.png"/><div class="figureCaption">図 3.26 <span class="caption-body">前置省略記号とアラビア数字の間は分割禁止</span></div></div></div></div>
+    
+   
+   
+   </li>
+					<li>
+   
+    <p><span class="index" id="d5e5251"><a class="characterClass" href="cl-13.xhtml#cl-13">後置省略記号（cl-13）</a></span>（パーセント<span class="character">[%] (PERCENT SIGN)</span>，パーミル<span class="character">[‰] (PER MILLE SIGN)</span>など）とその前にくる<a class="termref2nd" href="terminology.xhtml#term.european-numerals">アラビア数字</a>・<a class="termref2nd" href="terminology.xhtml#term.ideographic-numerals">漢数字</a>との間（<a class="figure_ref" href="unbreakable_character_sequences.xhtml#fig2_27-ja">図 3.27</a>）．それらの文字列を一体として扱いたいためである．</p>
+    
+   
+   
+    <div class="figure" id="fig2_27-ja"><div class="figure-float"><div><img alt="アラビア数字と後置省略記号の間は分割禁止" width="153" height="75" src="../image/Images-ja/img2_27.png"/><div class="figureCaption">図 3.27 <span class="caption-body">アラビア数字と後置省略記号の間は分割禁止</span></div></div></div></div>
+    
+   
+   
+   <table class="t_note">
+    <tr>
+    <td class="ft" rowspan="1" colspan="1">
+     
+     <p>注1）</p>
+     
+     
+    </td>
+    <td rowspan="1" colspan="1">
+     
+     <p><span class="index" id="d5e5336">パーセント</span><span class="character">[%] (PERCENT SIGN)</span>については，その前にくるアラビア数字・漢数字との間で分割を認める考え方もある．パーセント<span class="character">[%] (PERCENT SIGN)</span>が記号として独立性が高いということからであろう．なお，“50パーセント”とした場合は，“0”と“パ”の間では，分割可である．</p>
+     
+     
+    </td>
+    </tr>
+   </table>
+   
+   </li>
+					<li>
+   
+    <p><span class="index" id="d5e5367"><a class="characterClass" href="cl-27.xhtml#cl-27">欧文用文字（cl-27）</a></span>の単語の<a class="termref" href="terminology.xhtml#term.hyphenation">ハイフネーション</a>可能な箇所以外の字間及び単位記号（km, kg, mmなど）の字間（<a class="figure_ref" href="unbreakable_character_sequences.xhtml#fig2_28-ja">図 3.28</a>）．</p>
+    
+   
+   
+    <div class="figure" id="fig2_28-ja"><div class="figure-float"><div><img alt="欧字の単位記号（単位記号中の文字）の字間は分割禁止" width="264" height="75" src="../image/Images-ja/img2_28.png"/><div class="figureCaption">図 3.28 <span class="caption-body">欧字の単位記号（単位記号中の文字）の字間は分割禁止</span></div></div></div></div>
+    
+   
+   
+   <table class="t_note">
+    <tr>
+    <td class="ft" rowspan="1" colspan="1">
+     
+     <p>注1）</p>
+     
+     
+    </td>
+    <td rowspan="1" colspan="1">
+     
+     <p><a class="characterClass" href="cl-27.xhtml#cl-27">欧文用文字（cl-27）</a>の単語は，音節（シラブル）に従い，行末にハイフン<span class="character">[‐] (HYPHEN)</span>を付けることで，分割が可能になる．</p>
+     
+     
+    </td>
+    </tr>
+    <tr>
+    <td class="ft" rowspan="1" colspan="1">
+     
+     <p>注2）</p>
+     
+     
+    </td>
+    <td rowspan="1" colspan="1">
+     
+     <p>この文書では，プロポーショナルな欧字を用いたkm，kgなどの<span class="index" id="d5e5474">単位記号の文字クラス</span>は，<a class="characterClass" href="cl-25.xhtml#cl-25">単位記号中の文字（cl-25）</a>として扱う．</p>
+     
+     
+    </td>
+    </tr>
+    <tr>
+    <td class="ft" rowspan="1" colspan="1">
+     
+     <p>注3）</p>
+     
+     
+    </td>
+    <td rowspan="1" colspan="1">
+     
+     <p><a class="figure_ref" href="unbreakable_character_sequences.xhtml#fig2_28-ja">図 3.28</a>の“4”と“k”の字間が<a class="termref2nd" href="terminology.xhtml#term.quarter-em-space">四分アキ</a>となっているのは，<a class="characterClass" href="cl-25.xhtml#cl-25">単位記号中の文字（cl-25）</a>とその前に配置するアラビア数字又は量を示す<a class="characterClass" href="cl-27.xhtml#cl-27">欧文用文字（cl-27）</a>との字間を四分アキとすることが慣習になっていることによる．“4”と“k”との字間で2行に分割する場合は，“4”と“k”の字間の四分アキは行頭及び行末にはとらない．なお，<a class="figure_ref" href="unbreakable_character_sequences.xhtml#fig2_28-ja">図 3.28</a>の“3”と“4”の間の空き量については，cの注2）を参照．</p>
+     
+     
+    </td>
+    </tr>
+   </table>
+   
+   </li>
+					<li>
+   
+    <p><span class="index" id="d5e5557"><a class="termref" href="terminology.xhtml#term.mono-ruby">モノルビ</a></span>で配置したルビ文字列の字間（<a class="figure_ref" href="unbreakable_character_sequences.xhtml#fig2_29-ja">図 3.29</a>）．一体として扱うためである．なお，モノルビが付いた<a class="termref" href="terminology.xhtml#term.base-characters">親文字</a>とモノルビが付いた親文字との字間は，分割可能である．</p>
+    
+   
+   </li>
+					<li>
+   
+    <p><span class="index" id="d5e5587"><a class="termref" href="terminology.xhtml#term.group-ruby">グループルビ</a></span>で配置した親文字列及びルビ文字列の字間（<a class="figure_ref" href="unbreakable_character_sequences.xhtml#fig2_29-ja">図 3.29</a>）．一体として扱うためである．</p>
+    
+   
+   
+    <div class="figure" id="fig2_29-ja"><div class="figure-float"><div><img alt="ルビ文字列の分割禁止の例" width="262" height="261" src="../image/Images-ja/img2_29.png"/><div class="figureCaption">図 3.29 <span class="caption-body">ルビ文字列の分割禁止の例</span></div></div></div></div>
+    
+   
+   
+   <table class="t_note">
+    <tr>
+    <td class="ft" rowspan="1" colspan="1">
+     
+     <p>注1）</p>
+     
+     
+    </td>
+    <td rowspan="1" colspan="1">
+     
+     <p>複数の親文字で構成される<span class="index" id="d5e5644"><a class="termref" href="terminology.xhtml#term.jukugo-ruby">熟語ルビ</a></span>は，親文字の1字ごとに対応したルビ文字とのグループの間では，分割してよい（<a class="figure_ref" href="unbreakable_character_sequences.xhtml#fig2_30-ja">図 3.30</a>）．ただし，親文字の1字ごとに対応したルビ文字（<a class="figure_ref" href="unbreakable_character_sequences.xhtml#fig2_30-ja">図 3.30</a>を例にすると“哺”とルビ文字の“ほ”，“乳”とルビ文字の“にゆう”，“類”とルビ文字の“るい”）は，それぞれの親文字と対応したルビ文字とを一体として扱い，それぞれのルビ文字列の字間は分割してはならない．</p>
+     
+     
+    </td>
+    </tr>
+   </table>
+     
+     <div class="figure" id="fig2_30-ja"><div class="figure-float"><div><img alt="熟語ルビを分割した例" width="498" height="258" src="../image/Images-ja/img2_30.png"/><div class="figureCaption">図 3.30 <span class="caption-body">熟語ルビを分割した例</span></div></div></div></div>
+     
+     
+     
+   
+   </li>
+					<li>
+   
+    <p>親文字とその前又は後ろに付く<span class="index" id="d5e5701"><a class="termref" href="terminology.xhtml#term.ornament-characters">添え字</a></span>との字間．添え字が付く親文字の文字列，及び添え字の文字列の字間（<a class="figure_ref" href="unbreakable_character_sequences.xhtml#fig2_31-ja">図 3.31</a>）．それらの文字列を一体として扱いたいためである．</p>
+    
+   
+   
+    <div class="figure" id="fig2_31-ja"><div class="figure-float"><div><img alt="添え字及び親文字の字間は分割禁止" width="134" height="77" src="../image/Images-ja/img2_31.png"/><div class="figureCaption">図 3.31 <span class="caption-body">添え字及び親文字の字間は分割禁止</span></div></div></div></div>
+    
+   
+   
+   </li>
+					<li>
+   
+    <p><a class="termref" href="terminology.xhtml#term.note">注</a>と本文との対応を付けるために<span class="index" id="d5e5749"><a class="termref" href="terminology.xhtml#term.reference-marks">合印</a></span>が付くことが多い．この合印の前及び合印の文字列の字間（<a class="figure_ref" href="unbreakable_character_sequences.xhtml#fig2_32-ja">図 3.32</a>）．これは体裁上の問題による．</p>
+    
+   
+   
+    <div class="figure" id="fig2_32-ja"><div class="figure-float"><div><img alt="注の合印の前では分割禁止" width="421" height="438" src="../image/Images-ja/img2_32.png"/><div class="figureCaption">図 3.32 <span class="caption-body">注の合印の前では分割禁止</span></div></div></div></div>
+    
+   
+   
+   <table class="t_note">
+    <tr>
+    <td class="ft" rowspan="1" colspan="1">
+     
+     <p>注1）</p>
+     
+     
+    </td>
+    <td rowspan="1" colspan="1">
+     
+     <p>この文書では，<a class="termref2nd" href="terminology.xhtml#term.reference-marks">合印</a>の文字列の文字クラスは，<a class="characterClass" href="cl-20.xhtml#cl-20">合印中の文字（cl-20）</a>として扱う．</p>
+     
+     
+    </td>
+    </tr>
+    <tr>
+    <td class="ft" rowspan="1" colspan="1">
+     
+     <p>注2）</p>
+     
+     
+    </td>
+    <td rowspan="1" colspan="1">
+     
+     <p><a class="termref2nd" href="terminology.xhtml#term.reference-marks">合印</a>の後ろには<a class="characterClass" href="cl-06.xhtml#cl-06">句点類（cl-06）</a>がくる場合は多い．この場合は，合印と句点類の間でも，句点類は行頭禁止であるから分割禁止となる（<a class="figure_ref" href="unbreakable_character_sequences.xhtml#fig2_32-ja">図 3.32</a>）．</p>
+     
+     
+    </td>
+    </tr>
+   </table>
+   
+   </li>
+					<li>
+   
+    <p><a class="termref" href="terminology.xhtml#term.warichu">割注</a>行を囲む<span class="index" id="d5e5888"><a class="characterClass" href="cl-28.xhtml#cl-28">割注始め括弧類（cl-28）</a></span>の後ろ，割注行を囲む<span class="index" id="d5e5892"><a class="characterClass" href="cl-29.xhtml#cl-29">割注終わり括弧類（cl-29）</a></span>の前．</p>
+    
+   
+   </li>
+					<li>
+   
+    <p>同一の<span class="index" id="d5e5918"><a class="termref" href="terminology.xhtml#term.furiwake">振分け</a></span>．同一の振分けは，一体として扱う．</p>
+    
+   
+   </li>
+				</ol></body></html>

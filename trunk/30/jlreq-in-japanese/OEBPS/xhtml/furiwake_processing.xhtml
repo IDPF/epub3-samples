@@ -1,0 +1,16 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja"><head><meta charset="UTF-8"/><meta name="author" content="Japanese Layout Task Force"/><title>日本語組版処理の要件（日本語版）</title><link rel="stylesheet" type="text/css" href="../css/W3C-WG-NOTE.css"/><link rel="stylesheet" type="text/css" href="../css/base.css"/></head><body><h4 id="furiwake_processing">3.7.2 <span class="heading"><span class="index" id="ja-subheading2_7_2">振分け処理</span></span></h4><p><span class="index" id="d6e872"><a class="termref" href="terminology.xhtml#term.furiwake">振分け</a></span>とは，1行の途中に複数の言葉や文を配置する処理である．複数の選択肢を示す場合などに利用されている（<a class="figure_ref" href="furiwake_processing.xhtml#fig2_7_2-ja">図 3.115</a>）．学習参考書，マニュアル，解説書などで使用している例がある．振分けを行う場合，複数の行を括弧類でくくることも多い．</p><div class="figure" id="fig2_7_2-ja"><div class="figure-float"><div><img alt="振分けの例" width="128" height="438" src="../image/Images-ja/img2_7_2.png"/><div class="figureCaption">図 3.115 <span class="caption-body">振分けの例</span></div></div></div></div><p>振分け処理は，一般に次のように行っている（<a class="figure_ref" href="furiwake_processing.xhtml#fig2_7_3-ja">図 3.116</a>）．以下では，振分けするそれぞれの文字列を<span class="index" id="d6e916">振分け行</span>とよぶ．</p><ol>
+					<li><p>振分けに使用する文字は，その段落で使用している文字サイズとするが，やや小さい文字サイズにしたり，<a class="termref" href="terminology.xhtml#term.typeface">書体</a>を変える場合もある．</p>
+					</li>
+					<li><p>同一の振分け処理の中のすべての振分け行の先頭は，そろえる．</p>
+					</li>
+					<li><p>振分けの行長は，同一の振分け処理の中で最も長い振分け行の行長を振分け行長とする．ただし，振分けの行長を指定し，長い同一の振分け行を折り返して複数の行にすることもある．この場合の2行目以下の行頭は指定による．同一の振分け行とする文字列中に改行の指定がある場合は，その指定箇所で振分け行を分割する．この場合の行頭は，振分け行の1行目の位置とそろえる．また，同一の振分け行を複数の行に分割した場合の行間は0とする．</p>
+					</li>
+					<li><p>異なる振分け行の行送り方向の行間は，指定による．</p>
+					</li>
+					<li><p>同一振分け処理に含まれる行送り方向の幅（の合計）の中心と，<a class="termref" href="terminology.xhtml#term.main-text">本文</a>の行の中心とをそろえて配置する．</p>
+					</li>
+					<li><p>振分けの前後を括弧類で囲む場合，括弧類の行送り方向の幅は，振分け行の行送り方向の幅（の合計）とそろえる．</p>
+					</li>
+					<li><p>同一の振分けは，一体として扱い，本文の複数の行にわたって配置してはならない．</p>
+					</li>
+				</ol><div class="figure" id="fig2_7_3-ja"><div class="figure-float"><div><img alt="振分けの配置方法" width="151" height="465" src="../image/Images-ja/img2_7_3.png"/><div class="figureCaption">図 3.116 <span class="caption-body">振分けの配置方法</span></div></div></div></div><p>振分けを含む段落の行間は，指定による．そこに配置される振分けの内容を考慮して指定する必要がある．</p><p><span class="index" id="d6e1044">振分け</span>は割注と異なり，一般に行送り方向のサイズが大きくなる．そこで，版面又は<a class="termref" href="terminology.xhtml#term.column">段</a>の領域の外側へのはみ出しは認められていない．版面又は段の領域の範囲内に配置する．</p></body></html>

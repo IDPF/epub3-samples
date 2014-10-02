@@ -1,0 +1,34 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"><head><meta charset="UTF-8"/><title>Requirements for Japanese Text Layout</title><link rel="stylesheet" type="text/css" href="../css/base.css"/><link rel="stylesheet" type="text/css" href="../css/W3C-WG-NOTE.css"/></head><body><h4 id="examples_of_line_adjustment">3.1.12 <span class="heading"><span class="index" id="en-subheading2_1_12">Examples of Line Adjustment</span></span></h4><p>Methods of line adjustment processing are discussed in <a class="sec_ref" href="line_adjustment.xhtml#line_adjustment">3.8 Line Adjustment</a>. However, since layout processing
+   of punctuation marks is one reason for the need for line adjustment processing, we will here introduce two main examples of cases where
+   line adjustment processing is necessary, and show adjustment examples (see  <a class="figure_ref" href="examples_of_line_adjustment.xhtml#fig2_33-en">Fig. 3.33</a>).</p><ol>
+					<li>
+   
+    
+    <p>The principal approach in Japanese composition is that with the exception of the last line of a paragraph, the length of all lines
+    is the same, so all lines are aligned. As explained before, the line length is set to be n-times the character size established for the kihon-hanmen. Hence, as long as only full-width
+    characters are used, all lines have the same length (see ① at <a class="figure_ref" href="examples_of_line_adjustment.xhtml#fig2_33-en">Fig. 3.33</a>).</p>
+   
+   </li>
+					<li>
+   
+    
+    <p>In <a class="figure_ref" href="examples_of_line_adjustment.xhtml#fig2_33-en">Fig. 3.33</a>
+at ②, there is an <span class="character">IDEOGRAPHIC COMMA "、"</span>
+followed by a <span class="character">LEFT CORNER BRACKET "「"</span>, and  the total space taken by the two characters is one and a half em. That means that the line overshoots or runs short of the edge of the kihon-hanmen by a half em. To restore a uniform line length, line adjustment is applied as shown at ③ in <a class="figure_ref" href="examples_of_line_adjustment.xhtml#fig2_33-en">Fig. 3.33</a>. The <a class="termref2nd" href="terminology.xhtml#term.half-em-space">half em space</a> overshoot or shortage is recovered by <a class="termref" href="terminology.xhtml#term.line-adjustment-by-inter-character-space-reduction">reducing inter-character space</a> to a quarter em before the <span class="character">LEFT CORNER BRACKET "「"</span> and after the <span class="character">RIGHT CORNER BRACKET "」"</span>.</p>
+   
+   </li>
+					<li>
+   
+    
+    <p>At ④ in <a class="figure_ref" href="examples_of_line_adjustment.xhtml#fig2_33-en">Fig. 3.33</a>, the 15th character is an <a class="characterClass" href="cl-01.xhtml#cl-01">opening bracket (cl-01)</a>. This should not appear  at the line end. Ideally, a full
+ width space reduction would be applied, and the character "前" on the second line would be moved onto the first line in the
+ 15th position. In that way, the problem could be avoided. However, in this example a full-width space reduction is not possible,
+ so line adjustment processing is applied as shown at ⑤ in <a class="figure_ref" href="examples_of_line_adjustment.xhtml#fig2_33-en">Fig. 3.33</a>. The <a class="characterClass" href="cl-01.xhtml#cl-01">opening bracket (cl-01)</a> is moved to the second line, and <a class="termref" href="terminology.xhtml#term.line-adjustment-by-inter-character-space-expansion">line adjustment by inter-character space expansion</a> is applied. That means that space is inserted in the first line at places where it is allowed.</p>
+   
+   
+    
+    <div class="figure" id="fig2_33-en"><div class="figure-float"><div><img alt="Examples of line adjustment." width="540" height="352" src="../image/Images-en/img2_33.png"/><div class="figureCaption">Fig. 3.33: <span class="caption-body">Examples of line adjustment.</span></div></div></div></div>
+   
+   
+   </li>
+				</ol></body></html>

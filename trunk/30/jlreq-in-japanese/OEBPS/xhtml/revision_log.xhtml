@@ -1,0 +1,115 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja"><head><meta charset="UTF-8"/><meta name="author" content="Japanese Layout Task Force"/><title>日本語組版処理の要件（日本語版）</title><link rel="stylesheet" type="text/css" href="../css/W3C-WG-NOTE.css"/><link rel="stylesheet" type="text/css" href="../css/base.css"/></head><body><h2 id="revision_log">附属書I <span class="heading"><span id="ja-revlog">変更記録</span></span></h2><p>この資料は，『日本語組版処理の要件』の第2版であり，W3C技術ノートとして公開されている．<a href="http://www.w3.org/TR/2009/NOTE-jlreq-20090604/ja/">第1版</a>は，W3C技術ノートとして2009年6月に公開された．第1版から第2版への主な変更は，以下の通りである．
+				</p><ul>
+                          <li>
+                              <p><a class="sec_ref" href="hanmen-design.xhtml#hanmen-design">第4章 見出し・注・図版・表・段落の配置処理</a>を追加</p>
+                              
+                          </li><li>
+                            
+                              <p>文書全体で，“均等そろえ”を“均等割り”に変更</p>
+                              
+                          </li><li>
+                            
+                              <p>文書全体で，図番号の採番方法を章単位に変更</p>
+                              
+                          </li><li>
+                            
+                              <p><a class="sec_ref" href="elements_of_kihonhanmen.xhtml#elements_of_kihonhanmen">2.2.4 基本版面の設計要素</a>に注4を追加</p>
+                              
+                          </li><li>
+                            
+                              <p><a class="sec_ref" href="considerations_in_designing_the_kihonhanmen.xhtml#considerations_in_designing_the_kihonhanmen">2.4.2 基本版面の設計の注意点</a>のポイント計算例の左辺と右辺を入れ替え</p>
+                              
+                          </li><li>
+                            
+                              <p><a class="sec_ref" href="positioning_of_opening_brackets_at_line_head.xhtml#positioning_of_opening_brackets_at_line_head">3.1.5 行頭の​始め括弧類の​配置方法</a>の注1内の“（ただし，オプションで(1)又は(3)の方法も選択できる）．”を“（ただし，オプションで②の方法も選択できる）．”に変更</p>
+                              
+                          </li><li>
+                            
+                              <p><a class="sec_ref" href="characters_not_starting_a_line.xhtml#characters_not_starting_a_line">3.1.7 行頭禁則</a>の注4に追記</p>
+                              
+                          </li><li>
+                            
+                              <p><a class="sec_ref" href="mixed_text_composition_in_horizontal_writing_mode.xhtml#mixed_text_composition_in_horizontal_writing_mode">3.2.2 横組の和欧文混植に用いる文字</a>に注4を追加</p>
+                              
+                          </li><li>
+                            
+                              <p><a class="sec_ref" href="mixed_text_composition_in_vertical_writing_mode.xhtml#mixed_text_composition_in_vertical_writing_mode">3.2.3 縦組の和欧文混植に用いる文字</a>の項目aに“プロポーショナルな文字を用い，全角のスペースに正常な向きにして配置する方法もある．”という記述を追加</p>
+                              
+                          </li><li>
+                            
+                              <p><a class="sec_ref" href="ruby_and_emphasis_dots.xhtml#usage_of_ruby">3.3.1 ルビの使用</a>に“モノルビ”，“熟語ルビ”，“グループルビ”の解説を追加</p>
+                              
+                          </li><li>
+                              
+                                <p><a class="sec_ref" href="adjustments_of_ruby_with_length_longer_than_that_of_the_base_characters.xhtml#adjustments_of_ruby_with_length_longer_than_that_of_the_base_characters">3.3.8 ルビが親文字よりはみ出した場合の処理</a>の項目bに注1を追加</p>
+                                
+                          </li><li>
+                              
+                                <p><a class="sec_ref" href="reduction_and_addition_of_intercharacter_space.xhtml#reduction_and_addition_of_intercharacter_space">3.8.2 詰める処理と空ける処理</a>に注2を追加</p>
+                                
+                          </li><li>
+                              
+                                <p><a class="sec_ref" href="procedures_for_intercharacter_space_expansion.xhtml#procedures_for_intercharacter_space_expansion">3.8.4 空ける処理の優先順位</a>の注2の“表の形式にして附属書 B 文字間の空き量で示す．”を“表の形式にして附属書E 行の調整処理で空ける処理が可能な箇所で示す．”に変更</p>
+                                
+                          </li><li>
+                              
+                                <p><a class="sec_ref" href="grouping_of_characters_and_symbols_depending_on_their_positioning.xhtml#grouping_of_characters_and_symbols_depending_on_their_positioning">3.9.2 文字・記号を振る舞い方により分ける</a>の17に注2を追加</p>
+                                
+                          </li><li>
+                              
+                                <p>附属書に附属する表番号を次のように変更：表2→表1，表3→表2，表4→表3，表5→表4，表6→表5，表7→表6</p>
+                                
+                          </li><li>
+                            
+                                <p>文字クラスを<a class="characterClass" href="cl-19.xhtml#cl-19">漢字等（cl-19）</a>から<a class="characterClass" href="cl-13.xhtml#cl-13">後置省略記号（cl-13）</a>に変更：全角アール<span class="character">[㌃] (SQUARE AARU)</span>，全角カロリー<span class="character">[㌍] (SQUARE KARORII)</span>，全角キロ<span class="character">[㌔] (SQUARE KIRO)</span>，全角グラム<span class="character">[㌘] (SQUARE GURAMU)</span>，全角センチ<span class="character">[㌢] (SQUARE SENTI)</span>，全角セント<span class="character">[㌣] (SQUARE SENTO)</span>，全角ドル<span class="character">[㌦] (SQUARE DORU)</span>，全角トン<span class="character">[㌧] (SQUARE TON)</span>，全角パーセント<span class="character">[㌫] (SQUARE PAASENTO)</span>，全角ヘクタール<span class="character">[㌶] (SQUARE HEKUTAARU)</span>，全角ページ<span class="character">[㌻] (SQUARE PEEZI)</span>，全角ミリ<span class="character">[㍉] (SQUARE MIRI)</span>，全角ミリバール<span class="character">[㍊] (SQUARE MIRIBAARU)</span>，全角メートル<span class="character">[㍍] (SQUARE MEETORU)</span>，全角リットル<span class="character">[㍑] (SQUARE RITTORU)</span>，全角ワット<span class="character">[㍗] (SQUARE WATTO)</span>，全角MG <span class="character">[㎎] (SQUARE MG)</span>，全角KG <span class="character">[㎏] (SQUARE KG)</span>，全角MM <span class="character">[㎜] (SQUARE MM)</span>，全角CM <span class="character">[㎝] (SQUARE CM)</span>，全角KM <span class="character">[㎞] (SQUARE KM)</span>，全角M2 <span class="character">[㎡] (SQUARE M SQUARED)</span>，全角CC <span class="character">[㏄] (SQUARE CC)</span></p>
+                                
+                          </li><li>
+                            
+                                <p>文字クラスを<a class="characterClass" href="cl-18.xhtml#cl-18">演算記号（cl-18）</a>から<a class="characterClass" href="cl-17.xhtml#cl-17">等号類（cl-17）</a>に変更：直和<span class="character">[⊕] (CIRCLED PLUS)</span>，テンソル積<span class="character">[⊗] (CIRCLED TIMES)</span></p>
+                                
+                          </li><li>
+                            
+                                <p>文字クラスを<a class="characterClass" href="cl-18.xhtml#cl-18">演算記号（cl-18）</a>から<a class="characterClass" href="cl-19.xhtml#cl-19">漢字等（cl-19）</a>に変更：丸付きマイナス<span class="character">[⊖] (CIRCLED MINUS)</span></p>
+                                
+                          </li><li>
+                              
+                                <p><a class="characterClass" href="cl-19.xhtml#cl-19">漢字等（cl-19）</a>から次の項目を削除：全角NO <span class="character">[№] (NUMERO SIGN)</span></p>
+                                
+                          </li><li>
+                            
+                                <p><a class="sec_ref" href="notes_a2.xhtml#notes_a2">B.2 注記</a>の項目2に“JIS X 4051ではベタ組としている”を追加</p>
+                                
+                          </li><li>
+                              
+                                <p><a class="sec_ref" href="notes_a2.xhtml#notes_a2">B.2 注記</a>の項目4に“（JIS X 4051ではベタ組としている，3.1.9 行末に配置する終わり括弧類，句点類，読点類及び中点類の配置方法参照）”を追加</p>
+                                
+                          </li><li>
+                              
+                                <p><a class="sec_ref" href="notes_a2.xhtml#notes_a2">B.2 注記</a>の項目6に“JIS X 4051では句点類（cl-06）の後ろは二分アキ，読点類（cl-07）の後ろはベタ組としている”を追加</p>
+                                
+                          </li><li>
+                              
+                                <p><a class="sec_ref" href="notes_a3.xhtml#notes_a3">C.2 注記</a>の項目5に分割不可の組み合わせの詳細を追加</p>
+                                
+                          </li><li>
+                              
+                                <p><a class="sec_ref" href="notes_a4.xhtml#notes_a4">D.2 注記</a>の項目3に“（表4では後ろに配置する中点類（cl-05）の文字サイズの四分アキ）”を追加</p>
+                                
+                          </li><li>
+                              
+                                <p><a class="sec_ref" href="legend_of_table_7.xhtml#legend_of_table_7">E.1 表6の見方</a>の項目2.b.iに“第4段階の処理を行う場合は，第1段階から第3段階までで処理した空き量に追加して，優先順位の第1段階から第4段階までの箇所を均等に空ける．”を追加</p>
+                                
+                          </li><li>
+                              
+                                <p><a class="sec_ref" href="notes_a5.xhtml#notes_a5">E.2 注記</a>の項目10の“（優先順位は第4段階）”を“（優先順位は第3段階）”に変更</p>
+                                
+                          </li><li>
+                              
+                                <p><a class="sec_ref" href="terminology.xhtml#terminology">附属書G 用語集</a>に次の項目を追加：ウェイト，裏罫，大見出し，表罫，改段，かべ，行取り，こま，こま内容，こま余白，小見出し，段抜き，段抜きの見出し，中細罫，同行見出し頭注，中見出し，年表，年譜，副題，太字，並列注，別行見出し，傍注，窓見出し，回り込み，明朝体，ラベル名</p>
+                                
+                          </li><li>
+                              
+                                <p><a class="sec_ref" href="terminology.xhtml#terminology">附属書G 用語集</a>から次の項目を削除：均等そろえ</p>
+                                
+                            </li>
+                          </ul></body></html>

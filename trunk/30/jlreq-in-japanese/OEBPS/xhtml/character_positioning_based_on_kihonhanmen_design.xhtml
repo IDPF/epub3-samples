@@ -1,0 +1,68 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja"><head><meta charset="UTF-8"/><meta name="author" content="Japanese Layout Task Force"/><title>日本語組版処理の要件（日本語版）</title><link rel="stylesheet" type="text/css" href="../css/W3C-WG-NOTE.css"/><link rel="stylesheet" type="text/css" href="../css/base.css"/></head><body><h4 id="character_positioning_based_on_kihonhanmen_design">2.5.3 <span class="heading"><span class="index" id="ja-subheading1_5_3">基本版面で設定した文字位置の適用</span></span></h4><p>各行に配置する文字の位置は，基本版面で設定した<a class="termref" href="terminology.xhtml#term.solid-setting">ベタ組</a>とした<span class="index" id="d3e7239">文字の配置位置</span>に従うのが原則である．しかし，前掲したいくつかの図でも基本版面で設定した文字の位置に従っていない例がある．こうした事例は多いが，以下では，典型的な例をいくつか示す（詳細は<a class="sec_ref" href="line-composition.xhtml#line-composition">第3章 行の組版処理</a>で解説する）．</p><table class="t_note">
+					<tr>
+						<td class="ft" rowspan="1" colspan="1">
+							
+								<p>注1）</p>
+								
+							
+						</td>
+						<td rowspan="1" colspan="1">
+							
+								<p>
+基本版面で設定した文字サイズのベタ組にしない箇所がある場合，その行の<a class="termref" href="terminology.xhtml#term.line-head">行頭</a>から行末までの長さが，基本版面として設定した<a class="termref" href="terminology.xhtml#term.line-length">行長</a>にならないケースも発生する．しかし，1行の行長に満たない段落の最終行を除き，それ以外の行の行頭から行末までの長さは，基本版面として設定した行長にそろえるのが原則である．そこで，行長をそろえる処理が必要になる．この処理方法については，<a class="sec_ref" href="line_adjustment.xhtml#line_adjustment">3.8 行の調整処理</a>で解説する．</p>
+								
+							
+						</td>
+					</tr>
+				</table><ol>
+					<li>
+ 
+ <p>行中の一部として基本版面で設定した9ポより<span class="index" id="d3e7319">小さな文字</span>が挿入される<a class="figure_ref" href="line_positioning_based_on_the_kihonhanmen_design.xhtml#fig_ad1_9-ja">図 2.40</a>の場合である．この場合は，原則として，基本版面で設定した9ポの部分は9ポの文字の<a class="termref" href="terminology.xhtml#term.character-frame">外枠</a>に従いベタ組にするとともに，小さくした8ポの部分は，小さくした8ポの文字の外枠に従いベタ組にする．</p>
+ 
+ 
+ </li>
+					<li>
+ 
+ <p>行中に<span class="index" id="d3e7354"><a class="termref" href="terminology.xhtml#term.proportional">プロポーショナル</a>の欧字</span>を<a class="figure_ref" href="major_differences_between_vertical_writing_mode_and_horizontal_writing_mode.xhtml#fig1_20-ja">図 2.25</a>のように，文字を時計回りに90度回転して配置する場合は，プロポーショナルの欧字は，その<a class="termref" href="terminology.xhtml#term.character-advance">字幅</a>に応じて配置するので，基本版面で設定した文字位置とはそろわなくなる（<a class="figure_ref" href="character_positioning_based_on_kihonhanmen_design.xhtml#fig_ad1_13-ja">図 2.44</a>）．欧字の後ろに連続する和文の配置位置もずれてくる．</p>
+ 
+ 
+ 
+ <div class="figure" id="fig_ad1_13-ja"><div class="figure-float"><div><img alt="行中に欧字を配置した例" width="190" height="426" src="../image/Images-ja/img_ad1_13.png"/><div class="figureCaption">図 2.44 <span class="caption-body">行中に欧字を配置した例</span></div></div></div></div>
+ 
+ 
+ 
+ </li>
+					<li>
+ 
+ <p><a class="termref" href="terminology.xhtml#term.paragraph-break">改行</a>した行の先頭（改行行頭）や段落の2行目以下の<span class="index" id="d3e7412">行頭（折返し行頭）に配置する<a class="characterClass" href="cl-01.xhtml#cl-01">始め括弧類（cl-01）</a></span>の配置方法は，いくつかある（詳細は<a class="sec_ref" href="positioning_of_opening_brackets_at_line_head.xhtml#positioning_of_opening_brackets_at_line_head">3.1.5 行頭の​始め括弧類の​配置方法</a>で解説する）．改行行頭の字下げを<a class="termref" href="terminology.xhtml#term.one-em-space">全角アキ</a>とする場合，又は折返し行頭に空き量をとらない配置法である<a class="termref" href="terminology.xhtml#term.tentsuki">天付き</a>とする場合は，<a class="figure_ref" href="character_positioning_based_on_kihonhanmen_design.xhtml#fig_ad1_14-ja">図 2.45</a>のように2字目以下の文字は，基本版面で設定した文字位置とはそろわなくなる．しかし，行長をそろえる調整処理を行っているので，行末の文字は，基本版面で設定した文字位置にそろっている．</p>
+ 
+ 
+ 
+ <div class="figure" id="fig_ad1_14-ja"><div class="figure-float"><div><img alt="行頭の始め括弧類の配置方法により文字位置がずれた例" width="348" height="416" src="../image/Images-ja/img_ad1_14.png"/><div class="figureCaption">図 2.45 <span class="caption-body">行頭の始め括弧類の配置方法により文字位置がずれた例</span></div></div></div></div>
+ 
+ 
+ 
+ </li>
+					<li>
+ 
+ <p><a class="sec_ref" href="line-composition.xhtml#line-composition">第3章 行の組版処理</a>で解説するように<a class="characterClass" href="cl-06.xhtml#cl-06">句点類（cl-06）</a>，<a class="characterClass" href="cl-07.xhtml#cl-07">読点類（cl-07）</a>，<a class="characterClass" href="cl-01.xhtml#cl-01">始め括弧類（cl-01）</a>及び<a class="characterClass" href="cl-02.xhtml#cl-02">終わり括弧類（cl-02）</a>の字幅は<a class="termref" href="terminology.xhtml#term.half-width">半角</a>であるが，これらの<a class="termref" href="terminology.xhtml#term.punctuation-marks">約物</a>が<a class="characterClass" href="cl-19.xhtml#cl-19">漢字等（cl-19）</a>，<a class="characterClass" href="cl-16.xhtml#cl-16">片仮名（cl-16）</a>又は<a class="characterClass" href="cl-15.xhtml#cl-15">平仮名（cl-15）</a>と<span class="index" id="d3e7522">連続する場合</span>は，原則として，それぞれの約物の前又は後ろに<a class="termref" href="terminology.xhtml#term.half-em-space">二分アキ</a>をとることで，結果として全角というサイズにする．しかし，<a class="characterClass" href="cl-06.xhtml#cl-06">句点類（cl-06）</a>，<a class="characterClass" href="cl-07.xhtml#cl-07">読点類（cl-07）</a>，<a class="characterClass" href="cl-01.xhtml#cl-01">始め括弧類（cl-01）</a>及び／又は<a class="characterClass" href="cl-02.xhtml#cl-02">終わり括弧類（cl-02）</a>が連続する場合は，二分アキをとらない箇所があり，このケースでは基本版面で設定した文字位置にそろわないことになる（<a class="figure_ref" href="character_positioning_based_on_kihonhanmen_design.xhtml#fig_ad1_15-ja">図 2.46</a>）．これは，見た目の体裁をよくするためである．</p>
+ 
+ 
+ 
+ <div class="figure" id="fig_ad1_15-ja"><div class="figure-float"><div><img alt="句点類と始め括弧類が連続，及び終わり括弧類が連続する例" width="322" height="429" src="../image/Images-ja/img_ad1_15.png"/><div class="figureCaption">図 2.46 <span class="caption-body">句点類と始め括弧類が連続，及び終わり括弧類が連続する例</span></div></div></div></div>
+ 
+ 
+ 
+ </li>
+					<li>
+ 
+ <p><a class="sec_ref" href="line-composition.xhtml#line-composition">第3章 行の組版処理</a>で解説するように<a class="characterClass" href="cl-02.xhtml#cl-02">終わり括弧類（cl-02）</a>，<a class="characterClass" href="cl-06.xhtml#cl-06">句点類（cl-06）</a>及び<a class="characterClass" href="cl-07.xhtml#cl-07">読点類（cl-07）</a>を行頭に配置してはならないという規則（<span class="index" id="d3e7629"><a class="termref" href="terminology.xhtml#term.line-start-prohibition-rule">行頭禁則</a></span>という），並びに<a class="characterClass" href="cl-01.xhtml#cl-01">始め括弧類（cl-01）</a>を行末に配置してはならないという規則（<span class="index" id="d3e7637"><a class="termref" href="terminology.xhtml#term.line-end-prohibition-rule">行末禁則</a></span>）がある．これらが行頭又は行末にくる場合は，なんらかの調整が必要になる．その調整処理のために基本版面で設定した文字位置にそろわない場合が出てくる．</p>
+ 
+ 
+ 
+ <div class="figure" id="fig_ad1_16-ja"><div class="figure-float"><div><img alt="行頭禁則又は行末禁則を避ける調整をした例" width="508" height="452" src="../image/Images-ja/img_ad1_16.png"/><div class="figureCaption">図 2.47 <span class="caption-body">行頭禁則又は行末禁則を避ける調整をした例</span></div></div></div></div>
+ 
+ 
+ 
+ </li>
+				</ol></body></html>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xml:lang="ja" xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta charset="UTF-8" />
+
+        <meta content="note1" name="CAS-UB-Publication-Class" />
+        <meta content="CAS-UB Backend System Installed on 2012-12-25" name="Generator-Signature" />
+        <title>EPUBのベストプラクティス linear 属性の設定方法</title>
+        <link href="themes/cas-common_epub.css" rel="stylesheet" type="text/css" />
+        <link href="themes/normal-serif/common.css" rel="stylesheet" type="text/css" />
+        <link href="themes/normal-serif/generic.css" rel="stylesheet" type="text/css" />
+        <link href="styles/style.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body class="wrapper chapter level2" id="e.0005.EPUBのベストプラクティス_E3_80_80linear_20属性の設定方法">
+        <h1>2 EPUBのベストプラクティス linear 属性の設定方法</h1>
+        <div class="wrapper level3" id="h.0005.EPUB2"><h1>2–1 EPUB2</h1>
+            <p>EPUB2に、先頭ページに表紙（カバー）画像を登録して、spine要素のitemrefにlinear=&quot;no&quot;を設定せよ、というのベストプラクティスがありました<a
+                    class="note-d" href="xnotes.xhtml#n.0005.1.r" id="n.0005.1"
+                    title="Best practices in ePub cover images"><sup>[1]</sup></a><span class="note"
+                        ><span class="note-start">(</span><a
+                        href="http://blog.threepress.org/2009/11/20/best-practices-in-epub-cover-images/"
+                        >Best practices in ePub cover images</a><span class="note-end"
+                    >)</span></span>。</p>
+            <p>次のような内容です。</p>
+            <p>(1) 表紙のHTMLファイルを作り、manifestに次のように設定：</p>
+            <pre>
+&lt;item id=&quot;cover&quot;  href=&quot;cover.xhtml&quot; media-type=&quot;application/xhtml+xml&quot;/&gt;
+</pre>
+            <p>(2) spineに次のように設定：</p>
+            <pre>
+&lt;itemref idref=&quot;cover&quot; linear=&quot;no&quot;/&gt;
+</pre>
+            <p>これはEPUB3でも採用できるでしょうか？</p>
+            <p>１年半程前（2011年春）、表紙をどうしようかと思案して、EPUBリーダの挙動を調べました。</p>
+            <p>しかし、iBooks2ではlinear=&quot;no&quot;を指定したページを表示するが、Adobe Digital
+                Editionsの旧バージョン（確か1.5）では、linear=&quot;no&quot;を指定したページを表示しない、という挙動の相違があったため設定を見送っていました。</p>
+        </div>
+        <div class="wrapper level3" id="h.0005.EPUB3"><h1>2–2 EPUB3</h1>
+            <p>最近、EPUBリーダが新しくなりましたので、何か変わったかと思い、もう一度調べてみました。次のようなコードのEPUBで試してみました。</p>
+            <p>manifest：</p>
+            <pre>
+&lt;item href=&quot;Text/opening.xhtml&quot; id=&quot;idopening&quot; media-type=&quot;application/xhtml+xml&quot; /&gt;
+</pre>
+            <p>spine：</p>
+            <pre>
+&lt;itemref idref=&quot;idopening&quot; linear=&quot;no&quot; /&gt;　
+</pre>
+            <p>さらに linear=&quot;yes&quot;
+                とした版も用意しました。2種類のEPUB3を作成して、linear=&quot;no&quot;とlinear=&quot;yes&quot;でEPUBリーダの表示を比較した表を作成しました。やはり、EPUBリーダによって挙動がまちまちです。</p>
+            <div class="gext tbl" id="t.0005.linear_3D_22no_22とlinear_3D_22yes_22でEPUBリーダの表示を比較"><table>
+                    <tr>
+                        <th> </th>
+                        <th>linear=&quot;no&quot;</th>
+                        <th>linear=&quot;yes&quot;</th>
+                    </tr>
+                    <tr>
+                        <td>Readium 0.5 </td>
+                        <td>表示しない</td>
+                        <td>表示する</td>
+                    </tr>
+                    <tr>
+                        <td>Adobe Digital Editions 2.0 </td>
+                        <td>表示する</td>
+                        <td>表示する</td>
+                    </tr>
+                    <tr>
+                        <td>iBooks 3.0</td>
+                        <td>表示しない</td>
+                        <td>表示する</td>
+                    </tr>
+                    <tr>
+                        <td>Kobo 2.1.4 </td>
+                        <td>表示する</td>
+                        <td>表示する</td>
+                    </tr>
+                    <tr>
+                        <td>Kindle 2.71 </td>
+                        <td>表示しない</td>
+                        <td>表示する</td>
+                    </tr>
+                </table>
+                <div class="caption">表2･1
+                    linear=&quot;no&quot;とlinear=&quot;yes&quot;でEPUBリーダの表示を比較</div>
+            </div>
+            <p>先日、電流協のEPUB研究会で、このことを報告しましたところ、参加者の方から次のようなコメントをいただきました。</p>
+            <p>・linear=&quot;no&quot;
+                は本文のページとして表示しない内容に対して使うもの。注釈のようなもの。順番にめくっていっても表示されない。ページとして扱わないものに設定するのだろう。</p>
+            <p>ところでEPUB3仕様におけるitemref要素のlinear属性についての説明は次の2箇所にしかありません。</p>
+            <blockquote>
+                <p>3.4.13 itemref要素より抜粋</p>
+                <p>linear属性は参照された項目が主要素なのか付随要素なのかを示す。これによりRSは本体コンテンツの表示を補足コンテンツと区別するために使っても良い。後者は、例えばポップアップ・ウインドウにしたり、音声レンダリングで省略したりされるかもしれない。</p>
+                <p>3.14.12 spine要素より抜粋</p>
+                <p>RSは、spine中の先頭にある主項目（linear=&quot;yes&quot;)を出版物の主たる閲読順序の始まりとする。そして、spineの中の主項目を順番に可視化する。</p>
+            </blockquote>
+            <p>説明もサンプルも少ないので、これでは解釈統一のしようがないように思えますね。困ったものです。</p>
+            <p>ある方から、EPUB2.0では、guide機能があって、guideに登録することでlinear=&quot;no&quot;を指定したページにもジャンプできたが、EPUB3.0でguideが廃止されてしまったためlinear=&quot;no&quot;を指定したページを表示する方法がリンクぐらいしかなくなっているという指摘がありました。</p>
+        </div>
+    </body>
+</html>

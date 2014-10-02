@@ -1,0 +1,85 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja"><head><meta charset="UTF-8"/><meta name="author" content="Japanese Layout Task Force"/><title>日本語組版処理の要件（日本語版）</title><link rel="stylesheet" type="text/css" href="../css/W3C-WG-NOTE.css"/><link rel="stylesheet" type="text/css" href="../css/base.css"/></head><body><h4 id="handling_of_western_text_in_japanese_text_using_proportional_western_fonts">3.2.6 <span class="heading"><span class="index" id="ja-subheading2_2_6"><span class="index" id="d5e7923"><span class="index" id="d5e7924">プロポーショナルな​欧字を用いた​和欧文混植処理</span></span></span></span></h4><p>縦組で文字を時計回りに90度回転して配置する欧字・欧文・アラビア数字又は横組で混植する欧字・欧文・アラビア数字の配置方法は，次のようにする．</p><ol>
+					<li>
+   
+    <p>欧文の単語の文字列は，<a class="termref" href="terminology.xhtml#term.hyphenation">ハイフネーション</a>可能な箇所以外で2行に<a class="termref" href="terminology.xhtml#term.break">分割</a>してはならない．</p>
+    
+   
+   </li>
+					<li>
+   
+    <p><a class="termref" href="terminology.xhtml#term.line-adjustment-by-inter-character-space-reduction">追込み処理</a>で字間を詰める場合，その処理対象として<span class="index" id="d5e7981"><span class="index" id="d5e7982"><a class="characterClass" href="cl-26.xhtml#cl-26">欧文間隔（cl-26）</a></span></span>を優先的に使用し，<a class="termref" href="terminology.xhtml#term.line-adjustment-by-inter-character-space-expansion">追出し処理</a>で字間を空ける場合も，その処理対象として<span class="index" id="d5e7989"><span class="index" id="d5e7990">欧文間隔</span></span>を優先的に使用する．</p>
+    
+   
+   </li>
+					<li>
+   
+    <p>追出し処理の際には，欧文及びアラビア数字の字間は，字間を空ける調整箇所としない．</p>
+    
+   
+   </li>
+					<li>
+   
+    <p>欧字・アラビア数字の前後に配置される<a class="characterClass" href="cl-15.xhtml#cl-15">平仮名（cl-15）</a>，<a class="characterClass" href="cl-16.xhtml#cl-16">片仮名（cl-16）</a>又は<a class="characterClass" href="cl-19.xhtml#cl-19">漢字等（cl-19）</a>との字間は，<a class="termref" href="terminology.xhtml#term.quarter-em-space">四分アキ</a>とする（<a class="figure_ref" href="handling_of_western_text_in_japanese_text_using_proportional_western_fonts.xhtml#fig2_2_10-ja">図 3.46</a>）．（この四分アキを行の調整処理に使用する場合の詳細については<a class="sec_ref" href="reduction_and_addition_of_intercharacter_space.xhtml#reduction_and_addition_of_intercharacter_space">3.8.2 詰める処理と空ける処理</a>及び<a class="sec_ref" href="procedures_for_intercharacter_space_expansion.xhtml#procedures_for_intercharacter_space_expansion">3.8.4 空ける処理の優先順位</a>を参照．）</p>
+    
+   
+				
+					<div class="figure" id="fig2_2_10-ja"><div class="figure-float"><div><img alt="平仮名，片仮名又は漢字等と欧字・アラビア数字の字間を四分アキとした例" width="303" height="384" src="../image/Images-ja/img2_2_10.png"/><div class="figureCaption">図 3.46 <span class="caption-body">平仮名，片仮名又は漢字等と欧字・アラビア数字の字間を四分アキとした例</span></div></div></div></div>
+					
+				
+				
+	
+
+<p>ただし，次の箇所では，<span class="index" id="d5e8104"><a class="termref2nd" href="terminology.xhtml#term.quarter-em-space">四分アキ</a></span>としない（<a class="figure_ref" href="handling_of_western_text_in_japanese_text_using_proportional_western_fonts.xhtml#fig2_2_12-ja">図 3.47</a>）．</p>
+
+
+				<ol>
+					<li>
+   
+    <p>行頭においては，欧字・アラビア数字の前は空けない．行末においては，欧字・アラビア数字の後ろは空けない．</p>
+    
+   
+   </li>
+					<li>
+   
+    <p><a class="characterClass" href="cl-07.xhtml#cl-07">読点類（cl-07）</a>若しくは<a class="characterClass" href="cl-02.xhtml#cl-02">終わり括弧類（cl-02）</a>の後ろ，又は<a class="characterClass" href="cl-01.xhtml#cl-01">始め括弧類（cl-01）</a>の前を原則として<a class="termref2nd" href="terminology.xhtml#term.half-em-space">二分アキ</a>とする．また，行中の<a class="characterClass" href="cl-06.xhtml#cl-06">句点類（cl-06）</a>の後ろは二分アキとし，<a class="characterClass" href="cl-06.xhtml#cl-06">句点類（cl-06）</a>が行末に位置した場合は，<a class="characterClass" href="cl-06.xhtml#cl-06">句点類（cl-06）</a>の後ろを原則として二分アキにする．</p>
+    
+   
+   </li>
+					<li>
+   
+    <p><a class="characterClass" href="cl-06.xhtml#cl-06">句点類（cl-06）</a>，<a class="characterClass" href="cl-07.xhtml#cl-07">読点類（cl-07）</a>若しくは<a class="characterClass" href="cl-02.xhtml#cl-02">終わり括弧類（cl-02）</a>の前，又は<a class="characterClass" href="cl-01.xhtml#cl-01">始め括弧類（cl-01）</a>の後ろに欧字・アラビア数字がくる場合は，その字間はベタ組とする．</p>
+    
+   
+   </li>
+</ol>
+</li>
+				</ol><div class="figure" id="fig2_2_12-ja"><div class="figure-float"><div><img alt="欧字・アラビア数字の前後を四分アキとしない箇所" width="470" height="332" src="../image/Images-ja/img2_2_12.png"/><div class="figureCaption">図 3.47 <span class="caption-body">欧字・アラビア数字の前後を四分アキとしない箇所</span></div></div></div></div><table class="t_note">
+					<tr>
+						<td class="ft" rowspan="1" colspan="1">
+							
+								<p>注1）</p>
+								
+							
+						</td>
+						<td rowspan="1" colspan="1">
+							
+								<p>この文書では，プロポーショナルな<span class="index" id="d5e8272">欧字</span>・<span class="index" id="d5e8275">アラビア数字の文字クラス</span>は，<a class="characterClass" href="cl-27.xhtml#cl-27">欧文用文字（cl-27）</a>として扱う．また，和文との混植用に設計された半角の<span class="index" id="d5e8281">アラビア数字</span>がある．このアラビア数字の文字クラスは，この文書では<a class="characterClass" href="cl-24.xhtml#cl-24">連数字中の文字（cl-24）</a>として扱う．</p>
+								
+							
+						</td>
+					</tr>
+					<tr>
+						<td class="ft" rowspan="1" colspan="1">
+							
+								<p>注2）</p>
+								
+							
+						</td>
+						<td rowspan="1" colspan="1">
+							
+								<p>欧字・アラビア数字の前後に配置される<a class="characterClass" href="cl-15.xhtml#cl-15">平仮名（cl-15）</a>，<a class="characterClass" href="cl-16.xhtml#cl-16">片仮名（cl-16）</a>又は<a class="characterClass" href="cl-19.xhtml#cl-19">漢字等（cl-19）</a>との字間を<a class="termref2nd" href="terminology.xhtml#term.quarter-em-space">四分アキ</a>にするのは，プロポーショナルな欧字・アラビア数字と和文では，文字設計の考え方に相違があり，欧字・アラビア数字と和文との字間をベタ組にすると（<a class="figure_ref" href="handling_of_western_text_in_japanese_text_using_proportional_western_fonts.xhtml#fig2_2_11-ja">図 3.48</a>），字間が詰まり過ぎになるからである．</p>
+								
+							
+						</td>
+					</tr>
+				</table><div class="figure" id="fig2_2_11-ja"><div class="figure-float"><div><img alt="平仮名，片仮名又は漢字等と欧字・アラビア数字との字間をベタ組とした例 （このような配置法にはしない）" width="302" height="388" src="../image/Images-ja/img2_2_11.png"/><div class="figureCaption">図 3.48 <span class="caption-body">平仮名，片仮名又は漢字等と欧字・アラビア数字との字間をベタ組とした例<span class="sub-caption">（このような配置法にはしない）</span></span></div></div></div></div></body></html>

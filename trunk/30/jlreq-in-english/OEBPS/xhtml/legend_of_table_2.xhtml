@@ -1,0 +1,105 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"><head><meta charset="UTF-8"/><title>Requirements for Japanese Text Layout</title><link rel="stylesheet" type="text/css" href="../css/base.css"/><link rel="stylesheet" type="text/css" href="../css/W3C-WG-NOTE.css"/></head><body><h3 id="legend_of_table_2">B.1 <span class="heading"><span id="en-app2_1">Legend of Table 1</span></span></h3><ol class="decimal">
+<li>
+		
+			
+			<p>The  left-most column, labeled  "before", lists preceding character classes, and the top row, labeled "after", lists trailing character classes. Each cell indicates the amount of space between two characters of the corresponding character classes at the intersection of a given row and column.</p>
+		
+</li>
+<li>
+		
+			
+			<p>The last row, labeled "<a class="termref" href="terminology.xhtml#term.line-head">line head</a>", lists amounts of space inserted between the line head and a character of the corresponding character class in each column. Likewise, the last column, labeled "<a class="termref" href="terminology.xhtml#term.line-end">line end</a>", lists amounts of space inserted between a character of the corresponding character class in each row and the line end.</p>
+		
+</li>
+<li>
+		
+			
+			<p>The following notations in cells are used to indicate the amount of space or other related information.</p>
+		
+		<ol>
+		<li>
+			
+				
+				<p>blank: <a class="termref" href="terminology.xhtml#term.solid-setting">Set solid</a> between two adjacent characters (it can be that the preceding character is actually the line head or the trailing character is actually the line end).</p>
+			
+		</li>
+		<li>
+			
+				
+				<p>× mark: The combination is not allowed due to line breaking rules or other restrictions.</p>
+			
+		</li>
+		<li>
+			
+				
+				<p>1/2 be: Insert a half em space, where the em here indicates the size of the preceding character.</p>
+			
+		</li>
+		<li>
+			
+				
+				<p>1/2 af: Insert a half em space, where the em here indicates the size of the trailing character.</p>
+			
+				<table class="t_note">  <tr>  <td class="ft" rowspan="1" colspan="1">
+				
+				
+				<p>
+				(note)</p>
+				
+				</td>  <td rowspan="1" colspan="1">
+				
+				
+				<p>
+				The reason for the distinction between the two half em spaces ("be" stands for "before" and "af" stands for "after") is necessary  because there are cases where a line is composed with different sizes of characters, as shown in <a class="figure_ref" href="legend_of_table_2.xhtml#fig_a1-1-en">Fig. B.1</a> where it is necessary to disambiguate which em size we are referring to. Likewise, other instances of the notation "be" or "af" in this appendix are for the same disambiguation.</p>
+				
+				</td>  </tr>  </table>
+				
+				
+				<div class="figure" id="fig_a1-1-en"><div class="figure-float"><div><img alt="Referent for em in half em space." width="410" height="316" src="../image/Images-en/img_a1_1.png"/><div class="figureCaption">Fig. B.1: <span class="caption-body">Referent for em in half em space.</span></div></div></div></div>
+				
+		</li>
+		<li>
+			
+				
+				<p>1/2 be hang: Identical to "1/2 be" in the amount of space. Ruby text can be extended up to the size of the ruby character over this "1/2 be hang" space as long as it is not reduced due to line adjustments. When it is reduced, ruby text can be extended up to the size of the reduced space and shall not be extended over the other character.</p>
+			
+		</li>
+		<li>
+			
+				
+				<p>1/2 af hang: Identical to "1/2 af" in the amount of space. Ruby text can be extended up to the size of the ruby character over this "1/2 af hang" space as long as it is not reduced due to line adjustments. When it is reduced, ruby text can be extended up to the size of the reduced space and shall not be extended over the other character.</p>
+			
+		</li>
+		<li>
+			
+				
+				<p>1/4 be: Insert a quarter em space, where the em here indicates the size of the preceding character.</p>
+			
+		</li>
+		<li>
+			
+				
+				<p>1/4 af: Insert a quarter em space, where the em here indicates the size of the trailing character.</p>
+			
+		</li>
+		<li>
+			
+				
+				<p>1/4 be hang: Identical to "1/4 be" in the amount of space. Ruby text can be extended up to half the size of the ruby character over this "1/4 be hang" space as long as it is not reduced due to line adjustments. When it is reduced, ruby text can be extended up to the size of the reduced space and shall not be extended over the other character.</p>
+			
+		</li>
+		<li>
+			
+				
+				<p>1/4 af hang: Identical to "1/4 af" in the amount of space. Ruby text can be extended up to half the size of the ruby character over this "1/4 af hang" space as long as it is not reduced due to line adjustments. When it is reduced, ruby text can be extended up to the size of the reduced space and shall not be extended over the other character.</p>
+			
+		</li>
+		<li>
+			
+				
+				<p>ruby hang: Set solid. Ruby text can be extended up to the size of the ruby character over the other character (see also 7 of <a class="sec_ref" href="notes_a2.xhtml#notes_a2">B.2 Notes</a>).</p>
+			
+		</li>
+		</ol>
+</li>
+</ol></body></html>
