@@ -4,7 +4,7 @@ This repository contains the source for a variety of EPUB 3.0 sample documents. 
 
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
-**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+**Table of Contents**
 
 - [Samples List](#samples-list)
 - [Feature Matrix](#feature-matrix)
