@@ -2,6 +2,9 @@
 
 This repository contains the source for a variety of EPUB 3.0 sample documents. The collection is intended to showcase features of the EPUB 3 standard, and to provide testing materials for Reading System developers.
 
+* auto-gen TOC:
+{:toc}
+
 ## Samples List
 
 <p>The EPUB 3 samples are also available for individual download from <a
