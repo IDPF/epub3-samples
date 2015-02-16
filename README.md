@@ -2,8 +2,42 @@
 
 This repository contains the source for a variety of EPUB 3.0 sample documents. The collection is intended to showcase features of the EPUB 3 standard, and to provide testing materials for Reading System developers.
 
-* auto-gen TOC:
-{:toc}
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [Samples List](#samples-list)
+- [Feature Matrix](#feature-matrix)
+ - [Package](#package)
+ - [Content Documents](#content-documents)
+   - [XHTML](#xhtml)
+   - [SVG](#svg)
+   - [Scripted Content Documents](#scripted-content-documents)
+ - [Navigation Document](#navigation-document)
+ - [Global Language Support](#global-language-support)
+   - [Languages/Scripts/Unicode](#languagesscriptsunicode)
+   - [Content Documents](#content-documents-1)
+   - [CSS](#css)
+ - [Styling and Layout](#styling-and-layout)
+   - [Alternate Stylesheets](#alternate-stylesheets)
+   - [Fonts](#fonts)
+   - [Media Queries](#media-queries)
+   - [CSS Multi-column layout](#css-multi-column-layout)
+   - [CSS Namespaces](#css-namespaces)
+ - [Media Overlays](#media-overlays)
+ - [TTS](#tts)
+ - [Linking](#linking)
+ - [Extensions](#extensions)
+   - [Fixed Layout](#fixed-layout)
+   - [Dictionaries and Glossaries](#dictionaries-and-glossaries)
+ - [Indexes](#indexes)
+   - [OCF Multiple Renditions](#ocf-multiple-renditions)
+- [Want to contribute?](#want-to-contribute)
+ - [Reporting Issues](#reporting-issues)
+ - [Contributing new samples](#contributing-new-samples)
+ - [Contributing variations / improvements to existing samples](#contributing-variations--improvements-to-existing-samples)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
 ## Samples List
 
@@ -667,8 +701,6 @@ href="https://drive.google.com/uc?export=download&amp;id=0B9g8D2Y-6aPLLU02clgyb1
 </table>
 
 Packaged versions of the samples are also available for direct download from Google Drive[https://drive.google.com/open?id=0B9g8D2Y-6aPLflIyZE50Um50cG5BNkZSQ2NqcVhtUlZJSGRoVWhla3ktZ2JQdDJjdFNyZlk].
-
-## Feature Matrix
 
 <h2>Feature Matrix</h2>
 <h3 id="Package">Package</h3>
