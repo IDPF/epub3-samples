@@ -2,8 +2,8 @@
 
 This repository contains the source for a variety of EPUB 3.0 sample documents. The collection is intended to showcase features of the EPUB 3 standard, and to provide testing materials for Reading System developers.
 
-<!-- START doctoc generated TOC please keep comment here to allow auto update -->
-<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+<!-- START doctoc generated TOC please keep comment here to allow auto update  -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE  -->
 **Table of Contents**
 
 - [Samples List](#samples-list)
