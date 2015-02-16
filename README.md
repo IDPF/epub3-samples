@@ -4,48 +4,6 @@ This repository contains the source for a variety of EPUB 3.0 sample documents. 
 
 ## Samples List
 
-<style scoped="">
-table{
-width:850px;
-margin-bottom:3.5em;
-}
-td,
-th{
-vertical-align:top;
-}
-.invisible{
-position:absolute !important;
-height:1px;
-width:1px;
-overflow:hidden;
-clip:rect(1px 1px 1px 1px);
-clip:rect(1px, 1px, 1px, 1px);
-}
-.s1{
-width:200px;
-}
-.s2{
-width:400px;
-}
-.s3{
-width:100px;
-}
-.s4{
-width:75px;
-}
-.s5{
-width:75px;
-}
-.m1{
-width:200px;
-}
-.m2{
-width:250px;
-}
-.m3{
-width:400px;
-}</style>
-
 <p>The EPUB 3 samples are also available for individual download from <a
 href="https://drive.google.com/open?id=0B9g8D2Y-6aPLflIyZE50Um50cG5BNkZSQ2NqcVhtUlZJSGRoVWhla3ktZ2JQdDJjdFNyZlk"
 >Google Drive</a>.</p>
