@@ -125,6 +125,30 @@ href="https://drive.google.com/uc?export=download&amp;id=0B9g8D2Y-6aPLR2VjY1JtOV
 </td>
 </tr>
 <tr>
+<th id="figure-gallery">Figure Gallery</th>
+<td> A <a href="http://idpf.org/epub/30/spec/epub30-publications.html#sec-bindings-elem"
+>bindings</a>-based "object rotator". This particular sample represents an image gallery 
+with caption fields. (The data model is based on
+the <a href="http://www.w3.org/TR/html5/grouping-content.html#the-figure-element"
+>HTML5 figure element</a>, and is thus intended to be used with any type of
+content that can be represented using <code>&lt;figure&gt;</code>.) <p>Implementations
+that do not support <a
+href="http://idpf.org/epub/30/spec/epub30-publications.html#sec-bindings-elem"
+>bindings</a> will fallback to display all figures simultaneously.</p>
+</td>
+<td>2015-02-16</td>
+<td>
+<a
+href="https://drive.google.com/uc?export=download&amp;id=0B9g8D2Y-6aPLQjhyU0VvLUJFTDA"
+>EPUB 3.0</a>
+</td>
+<td>
+<a
+href="https://github.com/IDPF/epub3-samples/tree/master/30/figure-gallery-bindings/EPUB"
+>Browse</a>
+</td>
+</tr>
+<tr>
 <th id="georgia">Georgia</th>
 <td> This sample entry from the Encyclopedia Britannica includes a PLS lexicon file and
 embedded SSML pronunciations showing how the two technologies can be used together to
@@ -653,30 +677,6 @@ href="https://drive.google.com/uc?export=download&amp;id=0B9g8D2Y-6aPLSG5FamctMX
 </td>
 </tr>
 <tr>
-<th id="widget-figures">Widget Figure Gallery</th>
-<td> A <a href="http://idpf.org/epub/30/spec/epub30-publications.html#sec-bindings-elem"
->bindings</a>-based "object rotator" widget. This particular sample uses the
-widget to represent an image gallery with caption fields. (The data model is based on
-the <a href="http://www.w3.org/TR/html5/grouping-content.html#the-figure-element"
->HTML5 figure element</a>, and is thus intended to be used with any type of
-content that can be represented using <code>&lt;figure&gt;</code>.) <p>Implementations
-that do not support <a
-href="http://idpf.org/epub/30/spec/epub30-publications.html#sec-bindings-elem"
->bindings</a> will fallback to display all figures simultaneously.</p>
-</td>
-<td>2015-02-16</td>
-<td>
-<a
-href="https://drive.google.com/uc?export=download&amp;id=0B9g8D2Y-6aPLQjhyU0VvLUJFTDA"
->EPUB 3.0</a>
-</td>
-<td>
-<a
-href="https://github.com/IDPF/epub3-samples/tree/master/30/widget-figure-gallery/EPUB"
->Browse</a>
-</td>
-</tr>
-<tr>
 <th id="widget-quiz">Widget Quiz</th>
 <td> A <a href="http://idpf.org/epub/30/spec/epub30-publications.html#sec-bindings-elem"
 >bindings</a>-based "quiz" widget. This particular sample uses the widget to
@@ -727,7 +727,7 @@ Specification</a>, <a href="#kusamakura">Kusamakura</a></td>
 <tr>
 <th> Bindings </th>
 <td>&#160;</td>
-<td><a href="#widget-figures">Widget Figure Gallery</a>, <a href="#widget-quiz">Widget
+<td><a href="#figure-gallery">Figure Gallery</a>, <a href="#widget-quiz">Widget
 Quiz</a></td>
 </tr>
 <tr>
@@ -875,7 +875,7 @@ href="#haruko-jpeg">Haruko (with JPEGs in spine)</a>, <a href="#mymedia-lite"
 <tr>
 <th> Container-constrained </th>
 <td>&#160;</td>
-<td><a href="#widget-figures">Widget Figure Gallery</a>, <a href="#widget-quiz">Widget
+<td><a href="#figure-gallery">Figure Gallery</a>, <a href="#widget-quiz">Widget
 Quiz</a></td>
 </tr>
 <tr>
