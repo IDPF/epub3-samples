@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <package xmlns="http://www.idpf.org/2007/opf" version="3.0" unique-identifier="uid" xml:lang="en-US" prefix="cc: http://creativecommons.org/ns#">
     <metadata xmlns:dc="http://purl.org/dc/elements/1.1/">
-        <dc:identifier id="uid">code.google.com.epub-samples.widget-figure-gallery</dc:identifier>
-        <dc:title>EPUB Widgets: Figure Gallery</dc:title>
+        <dc:identifier id="uid">code.google.com.epub-samples.figure-gallery</dc:identifier>
+        <dc:title>EPUB Figure Gallery</dc:title>
         <dc:creator>E.L. Starr</dc:creator>
         <dc:language>en-US</dc:language>
         <dc:date>2012-01-17</dc:date>
@@ -39,15 +39,15 @@
 			media-type="image/jpeg" 
 			properties="cover-image" />
         <item id="nav" 
-			href="nav.xhtml" 
+			href="content/nav.xhtml" 
 			properties="nav" 
 			media-type="application/xhtml+xml" />
         <item id="epub-css"
-            href="epub.css"
+            href="css/epub.css"
             media-type="text/css"/>
             
         <item id="t1" 
-    		href="text.xhtml" 
+        	href="content/text.xhtml" 
     		media-type="application/xhtml+xml" />
         
         <!-- ncx included for 2.0 reading system compatibility: -->
@@ -57,7 +57,7 @@
 		
 		<!-- figure gallery data -->
 		<item id="moon-phases-xml"
-			href="moon-phases.xml"
+			href="content/moon-phases.xml"
 			media-type="application/x-epub-figure-gallery"/>
             
         
@@ -111,22 +111,22 @@
 			href="images/moon-images/8.waning-crescent-thumb.jpg"
 			media-type="image/jpeg"/>
 		
-		<!-- figure gallery widget files -->
+		<!-- figure gallery files -->
 		<item id="figure-gallery-impl" 
-			href="figure-gallery-widget/figure-gallery-impl.xhtml" 
+			href="content/figure-gallery/figure-gallery-impl.xhtml" 
 		    media-type="application/xhtml+xml" 
 		    properties="scripted"/>
 		<item id="figure-gallery-js"
-			href="figure-gallery-widget/figure-gallery.js"
+			href="content/figure-gallery/figure-gallery.js"
 			media-type="text/javascript"/>
 		<item id="figure-gallery-css"
-			href="figure-gallery-widget/figure-gallery.css"
+			href="content/figure-gallery/figure-gallery.css"
 			media-type="text/css"/>
 		<item id="figure-gallery-jquery"
-			href="figure-gallery-widget/jquery-1.7.1.min.js"
+			href="content/figure-gallery/jquery-1.7.1.min.js"
 			media-type="text/javascript"/>
 		<item id="figure-gallery-reset-css"
-			href="figure-gallery-widget/reset.css"
+			href="content/figure-gallery/reset.css"
 			media-type="text/css"/>
             
     </manifest>

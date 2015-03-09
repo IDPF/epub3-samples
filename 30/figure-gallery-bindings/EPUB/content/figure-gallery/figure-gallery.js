@@ -1,5 +1,5 @@
 /*
-* EPUB Figure Gallery Widget
+* EPUB Figure Gallery
 * 
 * Author: marisa.demeglio@gmail.com
 * Date created: 2012-02-02
@@ -22,13 +22,13 @@ FigureGallery = {
 	// show this if there's an error
 	ERROR: "<p class='error'>Error initializing figure gallery</p>",
 	
-	// call this function to start the widget and pass in the path to your xml data
+	// call this function to start and pass in the path to your xml data
 	init: function(dataUri) {
 		var doc = loadXml(dataUri);
 		this.initFromXmlDoc(doc);
 	},
 	
-	// if your data is already in an xml document, call this function to start the widget
+	// if your data is already in an xml document, call this function to start
 	initFromXmlDoc: function(xmldoc) {
 		if (xmldoc == null) {
 			this.showError();
