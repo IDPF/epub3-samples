@@ -136,7 +136,7 @@ that do not support <a
 href="http://idpf.org/epub/30/spec/epub30-publications.html#sec-bindings-elem"
 >bindings</a> will fallback to display all figures simultaneously.</p>
 </td>
-<td>2015-02-16</td>
+<td>2015-03-08</td>
 <td>
 <a
 href="https://drive.google.com/uc?export=download&amp;id=0B9g8D2Y-6aPLUXFTcXpNMTF2b2s"
@@ -405,7 +405,7 @@ not support <a
 href="http://idpf.org/epub/30/spec/epub30-publications.html#sec-bindings-elem"
 >bindings</a> will fallback to display all questions and possible answers as a
 static list. </td>
-<td>2015-02-16</td>
+<td>2015-03-09</td>
 <td>
 <a
 href="https://drive.google.com/uc?export=download&amp;id=0B9g8D2Y-6aPLYXlBSGR6bV9fX00"
