@@ -12,7 +12,7 @@
             <navLabel>
                 <text>The Solar System</text>
             </navLabel>
-            <content src="text.xhtml"/>
+            <content src="content/text.xhtml"/>
         </navPoint>
     </navMap>
 </ncx>

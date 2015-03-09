@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <package xmlns="http://www.idpf.org/2007/opf" version="3.0" unique-identifier="uid" xml:lang="en-US" prefix="cc: http://creativecommons.org/ns#">
     <metadata xmlns:dc="http://purl.org/dc/elements/1.1/">
-        <dc:identifier id="uid">code.google.com.epub-samples.widget-quiz</dc:identifier>
-        <dc:title>EPUB Widgets: Quiz</dc:title>
+        <dc:identifier id="uid">code.google.com.epub-samples.basic-quiz</dc:identifier>
+        <dc:title>Basic Quiz</dc:title>
         <dc:creator>E.L. Starr</dc:creator>
         <dc:language>en-US</dc:language>
         <dc:date>2012-01-17</dc:date>
@@ -30,15 +30,15 @@
 			media-type="image/jpeg" 
 			properties="cover-image" />
         <item id="nav" 
-			href="nav.xhtml" 
+        	href="content/nav.xhtml" 
 			properties="nav" 
 			media-type="application/xhtml+xml" />
         <item id="epub-css"
-            href="epub.css"
+            href="css/epub.css"
             media-type="text/css"/>
             
         <item id="t1" 
-    		href="text.xhtml" 
+        	href="content/text.xhtml" 
     		media-type="application/xhtml+xml" />
             
         <!-- ncx included for 2.0 reading system compatibility: -->
@@ -48,22 +48,22 @@
 		
 		<!-- quiz widget data -->
         <item id="solar-system-xml"
-            href="solar-system.xml"
+        	href="content/solar-system.xml"
             media-type="application/x-epub-quiz"/>
 		
 		<!-- quiz widget files -->
 		<item id="quiz-impl" 
-			href="quiz-widget/quiz-impl.xhtml" 
+			href="content/quiz/quiz-impl.xhtml" 
 		    media-type="application/xhtml+xml" 
 		    properties="scripted"/>
 		<item id="quiz-js"
-			href="quiz-widget/quiz.js"
+			href="content/quiz/quiz.js"
 			media-type="text/javascript"/>
 		<item id="quiz-css"
-			href="quiz-widget/quiz.css"
+			href="content/quiz/quiz.css"
 			media-type="text/css"/>
 		<item id="quiz-jquery"
-			href="quiz-widget/jquery-1.7.1.min.js"
+			href="content/quiz/jquery-1.7.1.min.js"
 			media-type="text/javascript"/>
     </manifest>
 	
