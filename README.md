@@ -139,7 +139,7 @@ href="http://idpf.org/epub/30/spec/epub30-publications.html#sec-bindings-elem"
 <td>2015-02-16</td>
 <td>
 <a
-href="https://drive.google.com/uc?export=download&amp;id=0B9g8D2Y-6aPLQjhyU0VvLUJFTDA"
+href="https://drive.google.com/uc?export=download&amp;id=0B9g8D2Y-6aPLUXFTcXpNMTF2b2s"
 >EPUB 3.0</a>
 </td>
 <td>
@@ -391,6 +391,28 @@ href="https://drive.google.com/uc?export=download&amp;id=0B9g8D2Y-6aPLeTZfNlNlRD
 <td>
 <a
 href="https://github.com/IDPF/epub3-samples/tree/master/30/page-blanche-bitmaps-in-spine/EPUB"
+>Browse</a>
+</td>
+</tr>
+<tr>
+<th id="quiz">Quiz</th>
+<td> A <a href="http://idpf.org/epub/30/spec/epub30-publications.html#sec-bindings-elem"
+>bindings</a>-based "quiz". This particular sample represents a multiple-choice quiz 
+with a self-checking feature. Allows for
+three types of quizzes: all questions at once, one question at a time, and one
+question at a time with immediate feedback ("flashcard" mode). Implementations that do
+not support <a
+href="http://idpf.org/epub/30/spec/epub30-publications.html#sec-bindings-elem"
+>bindings</a> will fallback to display all questions and possible answers as a
+static list. </td>
+<td>2015-02-16</td>
+<td>
+<a
+href="https://drive.google.com/uc?export=download&amp;id=0B9g8D2Y-6aPLYXlBSGR6bV9fX00"
+>EPUB 3.0</a>
+</td>
+<td>
+<a href="https://github.com/IDPF/epub3-samples/tree/master/30/quiz-bindings/EPUB"
 >Browse</a>
 </td>
 </tr>
@@ -659,7 +681,7 @@ href="https://drive.google.com/uc?export=download&amp;id=0B9g8D2Y-6aPLS0R6dl84eT
 >EPUB 3.0</a>
 </td>
 <td>
-<a href="https://github.com/IDPF/epub3-samples/tree/master/30/trees/EPUB">Browse</a>
+<a href="https://github.com/IDPF/epub3-samples/tree/master/30/trees/EPUB">B\rowse</a>
 </td>
 </tr>
 <tr>
@@ -674,28 +696,6 @@ href="https://drive.google.com/uc?export=download&amp;id=0B9g8D2Y-6aPLSG5FamctMX
 </td>
 <td>
 <a href="https://github.com/IDPF/epub3-samples/tree/master/30/mymedia_lite">Browse</a>
-</td>
-</tr>
-<tr>
-<th id="widget-quiz">Widget Quiz</th>
-<td> A <a href="http://idpf.org/epub/30/spec/epub30-publications.html#sec-bindings-elem"
->bindings</a>-based "quiz" widget. This particular sample uses the widget to
-represent a multiple-choice quiz with a self-checking feature. The widget allows for
-three types of quizzes: all questions at once, one question at a time, and one
-question at a time with immediate feedback ("flashcard" mode). Implementations that do
-not support <a
-href="http://idpf.org/epub/30/spec/epub30-publications.html#sec-bindings-elem"
->bindings</a> will fallback to display all questions and possible answers as a
-static list. </td>
-<td>2015-02-16</td>
-<td>
-<a
-href="https://drive.google.com/uc?export=download&amp;id=0B9g8D2Y-6aPLLU02clgyb1J2LXM"
->EPUB 3.0</a>
-</td>
-<td>
-<a href="https://github.com/IDPF/epub3-samples/tree/master/30/widget-quiz/EPUB"
->Browse</a>
 </td>
 </tr>
 </table>
@@ -727,8 +727,7 @@ Specification</a>, <a href="#kusamakura">Kusamakura</a></td>
 <tr>
 <th> Bindings </th>
 <td>&#160;</td>
-<td><a href="#figure-gallery">Figure Gallery</a>, <a href="#widget-quiz">Widget
-Quiz</a></td>
+<td><a href="#figure-gallery">Figure Gallery</a>, <a href="#quiz">Quiz</a></td>
 </tr>
 <tr>
 <th> DCMES </th>
@@ -875,8 +874,7 @@ href="#haruko-jpeg">Haruko (with JPEGs in spine)</a>, <a href="#mymedia-lite"
 <tr>
 <th> Container-constrained </th>
 <td>&#160;</td>
-<td><a href="#figure-gallery">Figure Gallery</a>, <a href="#widget-quiz">Widget
-Quiz</a></td>
+<td><a href="#figure-gallery">Figure Gallery</a>, <a href="#quiz">Quiz</a></td>
 </tr>
 <tr>
 <th> Spine-level </th>
