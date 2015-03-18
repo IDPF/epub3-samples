@@ -302,7 +302,7 @@ substantive amounts of <a href="http://www.w3.org/TR/MathML3/MathML">MathML</a>.
 <td>2015-02-16</td>
 <td>
 <a
-href="https://drive.google.com/uc?export=download&amp;id=0B9g8D2Y-6aPLbDhfMUVKYk8yVWc"
+href="https://drive.google.com/uc?export=download&amp;id=0B9g8D2Y-6aPLb3VXeUs2dU02RXc"
 >EPUB 3.0</a>
 </td>
 <td>
@@ -1299,9 +1299,9 @@ overlays)</a></td>
 <table style="width:100%;">
 <tbody>
 <tr>
-<th style="width:25%;"> Feature </th>
-<th style="width:40%;"> Details </th>
-<th style="width:35%;"> Samples </th>
+<th class="m1"> Feature </th>
+<th class="m2"> Details </th>
+<th class="m3"> Samples </th>
 </tr>
 </tbody>
 </table>
