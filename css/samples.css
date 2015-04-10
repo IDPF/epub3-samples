@@ -1,0 +1,53 @@
+body {
+	margin: 1em;
+	width: 45em;
+	min-width: 20em;
+}
+
+h1#site-name {
+   margin-bottom: 0em;
+}
+
+.breadcrumb {
+   margin-bottom: 1.5em;
+}
+
+table{
+	width:850px;
+	margin-bottom:3.5em;
+}
+td,
+th{
+	vertical-align:top;
+}
+.invisible{
+	position:absolute !important;
+	height:1px;
+	width:1px;
+	overflow:hidden;
+	clip:rect(1px, 1px, 1px, 1px);
+}
+.s1{
+	width:200px;
+}
+.s2{
+	width:400px;
+}
+.s3{
+	width:100px;
+}
+.s4{
+	width:75px;
+}
+.s5{
+	width:75px;
+}
+.m1{
+	width:200px;
+}
+.m2{
+	width:250px;
+}
+.m3{
+	width:400px;
+}
