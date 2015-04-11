@@ -1,0 +1,228 @@
+@charset "utf-8";
+
+.opening {}
+
+.opening div#mainBlock {}
+
+.opening div#centeringBlock {
+	/*margin: 0 auto;*/
+	/*width: 90%;*/
+	vertical-align: middle;
+}
+
+.opening div.title {
+	position: relative;
+/*	overflow: hidden;	deleted by k16 */
+	padding: 2em 2em 1em 2em;
+	border: double 3px rgb(192,192,192);
+	border-radius: 4px;
+	box-shadow: 0 1px 2px rgb(192,192,192);/*
+	border: groove 3px rgb(232,232,232); border-left-width: 0; border-right-width: 0;*/
+}/*
+.opening div.title:before,
+.opening div.title:after {
+	content: "";
+	position: absolute;
+	left: 0;
+	width: 100%;
+	height: 6px;
+	background: rgb(96,96,96);
+	box-shadow: 1px 1px 0 rgb(192,192,192);
+}
+.opening div.title:before {
+	top: 0;
+	border-radius: 4px 4px 0 0;
+}
+.opening div.title:after {
+	bottom: 0;
+	border-radius: 0 0 4px 4px;
+}*/
+
+	.opening div.title h1.main,
+	.opening div.title h2.sub {
+		font-weight: bold;
+		letter-spacing: -.05em;
+	}
+	.opening div.title h1.main,
+	.opening div.title h2.sub,
+	.opening div.title h3 {
+		text-align: center;
+		line-height: 1.2em;
+	}
+	.opening div.title h1.main {
+		margin-bottom: .25em;
+		font-size: 2.5em;
+		color: rgb(64,64,64);
+		text-shadow: 1px 1px 0 rgb(192,192,192);
+	}
+	.opening div.title h2.sub {
+		margin: 0 .15em .75em .15em;
+		font-size: 1.5em;
+		color: white;
+		text-shadow: 1px 0 rgb(144,144,144), 0 1px rgb(144,144,144), -1px 0 rgb(144,144,144), 0 -1px rgb(144,144,144);
+	}
+	.opening div.title h3 {/*
+		clear: none;
+		float: none;*/
+		margin-bottom: .4em;
+		font-size: .75em;
+		color: rgb(128,128,128);
+		text-shadow: -1px -1px 0px rgb(232,232,232), 1px 1px 0px white;
+	}
+
+.opening div.creater {
+	margin-top: 2em;
+	padding-left: 0;
+}
+
+	.opening div.creater dl {
+		overflow: hidden;
+		margin-top: 1.5em;
+	}
+	.opening div.creater div.authorEditors dl {
+	}
+
+		.opening div.creater dl dt,
+		.opening div.creater dl dd {
+			position: relative;
+			margin: 0;
+			padding: 0;
+			border: none;
+			text-indent: 0;
+			line-height: 1.5;
+		}
+		.opening div.creater div.authorEditors dl dt,
+		.opening div.creater div.authorEditors dl dd {
+			font-size: .8em;
+		}
+
+		.opening div.creater dl dt {
+			clear: left;
+			float: left;
+			padding-right: .5em;
+			font-size: 1em;
+			font-weight: normal;
+			color: rgb(176,176,176);
+		}
+		.opening div.creater dl dt:after {}
+		.opening div.creater div.authorEditors dl dt {}
+
+		.opening div.creater dl dd {
+			position: relative;
+			top: -.2em;
+			font-size: 1.5em;
+			font-weight: bold;
+			color: rgb(96,96,96);
+			text-shadow: -1px -1px 0px rgb(232,232,232), 1px 1px 0px white;
+		}
+		.opening div.creater div.authorEditors dl dd {
+			top: 0;
+			font-weight: normal;
+			color: rgb(128,128,128);
+			text-shadow: -1px -1px 0px rgb(232,232,232), 1px 1px 0px rgb(248,248,248);
+		}
+		.opening div.creater dl dd.profile {}
+		.opening div.creater dl dd.attribute {}
+		.opening div.copyrightNotice dl dd {}
+
+.opening div.publisherCompany {
+	float: right;
+	margin-top: 4em;
+	vertical-align: bottom;
+	text-align: right;
+}
+
+	.opening div.publisherCompany img {}
+
+	.opening div.publisherCompany h3.publisherCompany {
+		margin-top: .25em;
+		text-align: right;
+		font-weight: normal;
+		font-size: .64em;
+		color: rgb(96,96,96);
+		text-shadow: -1px -1px 0px rgb(232,232,232), 1px 1px 0px rgb(248,248,248);
+	}
+	
+/* print media 
+**************************************/
+
+@media print {
+
+body.opening {
+font-size: 24pt;
+padding-top: 20%;
+padding-bottom: 10%;
+padding-right: 1%;
+padding-left: 1%;
+}
+
+div#mainBlock {
+}
+
+/* title block */
+
+	.opening div.title h2.sub {
+		margin: 0 .15em .75em .15em;
+		font-size: 1.5em;
+		color: gray;
+	}
+div.title {
+}
+
+h1.main {
+
+}
+
+h2.sub {
+
+}
+
+h3 {
+font-size: 160%;
+}
+
+h3.revisionNumber {
+display:none;
+}
+
+
+/* creator block
+********************************************/
+div.creater {
+
+}
+
+
+dl {
+
+}  
+
+dl dt {
+	font-size: 90%;
+}  
+dl dd {  
+	font-size: 120%;
+	font-weight: bold;
+	margin-bottom: 0.2em;
+}  
+
+
+div.summary {
+font-family:serif;
+}
+
+div.keyword {
+display:none;
+}
+
+/* 
+********************************************/
+div.publisherCompany {
+}
+
+div.publisherCompany h3 {
+font-size: 130%;
+}
+
+
+}

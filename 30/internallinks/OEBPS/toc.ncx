@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ncx version="2005-1" xmlns="http://www.daisy.org/z3986/2005/ncx/">
+    <head>
+        <meta content="urn:uuid:e9f75adf-f0a2-4a30-b113-b146871f16e5" name="dtb:uid"/>
+        <meta content="0" name="dtb:totalPageCount"/>
+        <meta content="0" name="dtb:maxPageNumber"/>
+        <meta content="2" name="dtb:depth"/>
+    </head>
+    <docTitle>
+        <text>IDに漢字などを使用したサンプル</text>
+    </docTitle>
+    <docAuthor>
+        <text/>
+    </docAuthor>
+    <navMap>
+        <navPoint class="h1" id="id0001" playOrder="1">
+            <navLabel>
+                <text>EPUBリーダの数式サポート―iBooks3.0のMathML表示がかなり進化</text>
+            </navLabel>
+            <content src="0001.xhtml"/>
+            <navPoint class="h2" id="id0001_h.0001.iBooks3_2e0による表示例" playOrder="2">
+                <navLabel>
+                    <text>iBooks3.0による表示例</text>
+                </navLabel>
+                <content src="0001.xhtml#h.0001.iBooks3_2e0による表示例"/>
+            </navPoint>
+            <navPoint class="h2" id="id0001_h.0001.ReadiumによるMathMLの表示" playOrder="3">
+                <navLabel>
+                    <text>ReadiumによるMathMLの表示</text>
+                </navLabel>
+                <content src="0001.xhtml#h.0001.ReadiumによるMathMLの表示"/>
+            </navPoint>
+            <navPoint class="h2" id="id0001_h.0001.総合的にみて" playOrder="4">
+                <navLabel>
+                    <text>総合的にみて</text>
+                </navLabel>
+                <content src="0001.xhtml#h.0001.総合的にみて"/>
+            </navPoint>
+        </navPoint>
+        <navPoint class="h1" id="id0005" playOrder="5">
+            <navLabel>
+                <text>EPUBのベストプラクティス linear 属性の設定方法</text>
+            </navLabel>
+            <content src="0005.xhtml"/>
+            <navPoint class="h2" id="id0005_h.0005.EPUB2" playOrder="6">
+                <navLabel>
+                    <text>EPUB2</text>
+                </navLabel>
+                <content src="0005.xhtml#h.0005.EPUB2"/>
+            </navPoint>
+            <navPoint class="h2" id="id0005_h.0005.EPUB3" playOrder="7">
+                <navLabel>
+                    <text>EPUB3</text>
+                </navLabel>
+                <content src="0005.xhtml#h.0005.EPUB3"/>
+            </navPoint>
+        </navPoint>
+        <navPoint class="h1" id="id0006" playOrder="8">
+            <navLabel>
+                <text>EPUBのベストプラクティス EPUB2用の目次NCXの出力はまだ必要か？</text>
+            </navLabel>
+            <content src="0006.xhtml"/>
+            <navPoint class="h2" id="id0006_h.0006.EPUB2" playOrder="9">
+                <navLabel>
+                    <text>EPUB2</text>
+                </navLabel>
+                <content src="0006.xhtml#h.0006.EPUB2"/>
+            </navPoint>
+            <navPoint class="h2" id="id0006_h.0006.EPUB3" playOrder="10">
+                <navLabel>
+                    <text>EPUB3</text>
+                </navLabel>
+                <content src="0006.xhtml#h.0006.EPUB3"/>
+            </navPoint>
+            <navPoint class="h2" id="id0006_h.0006.Kindle_20Paperwhiteでの確認結果" playOrder="11">
+                <navLabel>
+                    <text>Kindle Paperwhiteでの確認結果</text>
+                </navLabel>
+                <content src="0006.xhtml#h.0006.Kindle_20Paperwhiteでの確認結果"/>
+            </navPoint>
+        </navPoint>
+        <navPoint class="h1" id="id0007" playOrder="12">
+            <navLabel>
+                <text>EPUBのベストプラクティス カバー画像の登録方法</text>
+            </navLabel>
+            <content src="0007.xhtml"/>
+            <navPoint class="h2" id="id0007_h.0007.EPUB2" playOrder="13">
+                <navLabel>
+                    <text>EPUB2</text>
+                </navLabel>
+                <content src="0007.xhtml#h.0007.EPUB2"/>
+            </navPoint>
+            <navPoint class="h2" id="id0007_h.0007.EPUB3" playOrder="14">
+                <navLabel>
+                    <text>EPUB3</text>
+                </navLabel>
+                <content src="0007.xhtml#h.0007.EPUB3"/>
+            </navPoint>
+            <navPoint class="h2" id="id0007_h.0007.Kindle" playOrder="15">
+                <navLabel>
+                    <text>Kindle</text>
+                </navLabel>
+                <content src="0007.xhtml#h.0007.Kindle"/>
+            </navPoint>
+            <navPoint class="h2" id="id0007_h.0007.まとめ" playOrder="16">
+                <navLabel>
+                    <text>まとめ</text>
+                </navLabel>
+                <content src="0007.xhtml#h.0007.まとめ"/>
+            </navPoint>
+        </navPoint>
+        <navPoint class="h1" id="idxnotes" playOrder="17">
+            <navLabel>
+                <text>注釈一覧</text>
+            </navLabel>
+            <content src="xnotes.xhtml"/>
+        </navPoint>
+        <navPoint class="h1" id="idloft" playOrder="18">
+            <navLabel>
+                <text>図表一覧</text>
+            </navLabel>
+            <content src="loft.xhtml"/>
+        </navPoint>
+    </navMap>
+</ncx>

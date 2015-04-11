@@ -1,0 +1,383 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"><head><meta charset="UTF-8"/><title>Requirements for Japanese Text Layout</title><link rel="stylesheet" type="text/css" href="../css/base.css"/><link rel="stylesheet" type="text/css" href="../css/W3C-WG-NOTE.css"/></head><body><h4 id="unbreakable_character_sequences">3.1.10 <span class="heading"><span class="index" id="en-subheading2_1_10">Unbreakable Character Sequences</span></span></h4><p>If the following characters and symbols appear in sequence there will be <a class="termref" href="terminology.xhtml#term.unbreakable-characters-rule">no line break</a> between them. The reason is that these characters and symbols are to be handled as one unit.
+</p><table class="t_note">
+					<tr>
+						<td class="ft" rowspan="1" colspan="1">
+							
+								
+								<p>(note 1)</p>
+							
+						</td>
+						<td rowspan="1" colspan="1">
+							
+								
+								<p>Both <a class="termref2nd" href="terminology.xhtml#term.line-start-prohibition-rule">line head wrap</a> and <a class="termref2nd" href="terminology.xhtml#term.line-end-prohibition-rule">line end wrap</a> mean that there will be no line break between characters or symbols. For line head wrap
+     there is no break between the <a class="termref" href="terminology.xhtml#term.characters-not-starting-line">line head wrap character</a> and the character or symbol before. For line end wrap, there is no break between the <a class="termref" href="terminology.xhtml#term.characters-not-ending-line">line end wrap character</a> and the following character or symbol.
+</p>
+							
+						</td>
+					</tr>
+					<tr>
+						<td class="ft" rowspan="1" colspan="1">
+							
+								
+								<p>(note 2)</p>
+							
+						</td>
+						<td rowspan="1" colspan="1">
+							
+								
+								<p>The details of unbreakable character sequences are described in <a class="sec_ref" href="possibilities_for_linebreaking_between_characters.xhtml#possibilities_for_linebreaking_between_characters">Appendix C Possibilities for  Line-breaking between Characters</a>
+as a complete table,   in accordance with the description of character classes in <a class="sec_ref" href="about_character_classes.xhtml#about_character_classes">3.9 About Character Classes</a>.</p>
+							
+						</td>
+					</tr>
+				</table><ol>
+					<li>
+   
+    
+    <p>Between a sequence of <span class="character">EM DASH "—"</span> characters (to be more specific, for a double dash, see <a class="figure_ref" href="unbreakable_character_sequences.xhtml#fig2_24-en">Fig. 3.24</a>). Note that some systems implement <span class="character">HORIZONTAL BAR "―"</span> with very similar behavior to <span class="character">EM DASH "—"</span>.</p>
+   
+   
+    
+    <div class="figure" id="fig2_24-en"><div class="figure-float"><div><img alt="Sequence of EM DASH characters is unbreakable." width="504" height="311" src="../image/Images-en/img2_24.png"/><div class="figureCaption">Fig. 3.24: <span class="caption-body">Sequence of EM DASH characters is unbreakable.</span></div></div></div></div>
+   
+   
+   <table class="t_note">
+						<tr>
+							<td class="ft" rowspan="1" colspan="1">
+								
+									
+									<p>(note 1)</p>
+								
+							</td>
+							<td rowspan="1" colspan="1">
+								
+									
+									<p>Other characters and punctuation marks before and after <span class="character">EM DASH "—"</span> are set solid. However, in the following cases some space should be set between <span class="character">EM DASH "—"</span> and other characters. As mentioned in the next note, <span class="character">HORIZONTAL ELLIPSIS "…"</span>, <span class="character">TWO DOT LEADER "‥"</span>, <a class="characterClass" href="cl-12.xhtml#cl-12">prefixed abbreviations (cl-12)</a> and <a class="characterClass" href="cl-13.xhtml#cl-13">postfixed abbreviations (cl-13)</a> behave similarly to <span class="character">EM DASH "—"</span>.</p>
+								
+								<ol>
+									<li>
+     
+     
+     <p>Where <a class="characterClass" href="cl-02.xhtml#cl-02">closing brackets (cl-02)</a> or <a class="characterClass" href="cl-07.xhtml#cl-07">commas (cl-07)</a> are followed by <span class="character">EM DASH "—"</span>, a <a class="termref2nd" href="terminology.xhtml#term.half-em-space">half em space</a> is inserted between them, in principle. Also, in the middle of lines, where <a class="characterClass" href="cl-06.xhtml#cl-06">full stops (cl-06)</a> are followed by <span class="character">EM DASH "—"</span>, a half em space is inserted between them. However, when <a class="characterClass" href="cl-06.xhtml#cl-06">full stops (cl-06)</a> are placed at the end of a line a half em space is added after the <a class="characterClass" href="cl-06.xhtml#cl-06">full stops (cl-06)</a>.</p>
+     
+    </li>
+    <li>
+     
+     
+     <p>Where <span class="character">EM DASH "—"</span> is followed by <a class="characterClass" href="cl-01.xhtml#cl-01">opening brackets (cl-01)</a>, a <a class="termref2nd" href="terminology.xhtml#term.half-em-space">half em space</a> is inserted between them, in principle.</p>
+     
+    </li>
+    <li>
+     
+     
+     <p>Where <span class="character">EM DASH "—"</span> and <a class="characterClass" href="cl-05.xhtml#cl-05">middle dots (cl-05)</a> are set side by side, a <a class="termref2nd" href="terminology.xhtml#term.quarter-em-space">quarter em space</a> is inserted between them, in principle.</p>
+     
+    </li>
+								</ol>
+							</td>
+						</tr>
+    <tr>
+    <td class="ft" rowspan="1" colspan="1">
+     
+     
+     <p>(note 2)</p>
+     
+    </td>
+    <td rowspan="1" colspan="1">
+     
+     
+     <p>A double dash is handled as one unit, hence a line break between them is forbidden. In letterpress printing, breaking of the double
+     dash was forbidden very strongly by the fact that the double dash was created as a double full body (so it was actually not possible
+     to break it). Nevertheless, if it was not possible to avoid a break, two EM DASH characters were used instead the double dash. That made it
+     possible to have a line break between them. </p>
+     
+    </td>
+    </tr>
+   </table>
+   
+   </li>
+					<li>
+   
+    
+    <p>Between sequences of <span class="character">HORIZONTAL ELLIPSIS "…"</span>
+or <span class="character">TWO DOT LEADER "‥"</span>
+(to be more specific, double HORIZONTAL ELLIPSIS "……" or double TWO DOT LEADER "‥‥").</p>
+   
+   
+    
+    <div class="figure" id="fig2_25-en"><div class="figure-float"><div><img alt="Unbreakable sequence of HORIZONTAL ELLIPSIS." width="324" height="401" src="../image/Images-en/img2_25.png"/><div class="figureCaption">Fig. 3.25: <span class="caption-body">Unbreakable sequence of HORIZONTAL ELLIPSIS.</span></div></div></div></div>
+   
+   
+   <table class="t_note">
+    <tr>
+    <td class="ft" rowspan="1" colspan="1">
+     
+     
+     <p>(note 1)</p>
+     
+    </td>
+    <td rowspan="1" colspan="1">
+     
+     
+     <p>In the <a class="termref2nd" href="terminology.xhtml#term.letterpress-printing">letterpress printing</a> era, double HORIZONTAL ELLIPSIS etc. was created as a sequence of HORIZONTAL ELLIPSIS. Hence, compared
+     to double dash, the line break between them was not so strongly forbidden.
+ </p>
+     
+    </td>
+    </tr>
+   </table>
+   
+   </li>
+					<li>
+   
+    
+    <p>Between <a class="termref" href="terminology.xhtml#term.european-numerals">European numerals</a> (see <a class="figure_ref" href="unbreakable_character_sequences.xhtml#fig2_26-en">Fig. 3.26</a>, <a class="figure_ref" href="unbreakable_character_sequences.xhtml#fig2_27-en">Fig. 3.27</a>, and <a class="figure_ref" href="unbreakable_character_sequences.xhtml#fig2_28-en">Fig. 3.28</a>.). European numerals indicate ranks via the position of a numeral.</p>
+   
+   <table class="t_note">
+    <tr>
+    <td class="ft" rowspan="1" colspan="1">
+     
+     
+     <p>(note 1)</p>
+     
+    </td>
+    <td rowspan="1" colspan="1">
+     
+     
+     <p>It is possible to have a line break between ideographic numerals. Also it is possible to have a line break after <span class="character">IDEOGRAPHIC COMMA "、"</span>
+used as a decimal separator or an indicator for approximate number, and <span class="character">KATAKANA MIDDLE DOT "・"</span>
+as a decimal point. However, the position between ideographic numerals and <span class="character">IDEOGRAPHIC COMMA "、"</span>
+used as a decimal separator or an indicator for approximate number, and <span class="character">KATAKANA MIDDLE DOT "・"</span>
+used as a decimal point is unbreakable. The reason is that the natural usage of ideographic numerals is to write them like "二百三十五", that is with inserted rank indicators (Explanation: "二" means "two", "百" means "hundred". "二百" means "two hundred". "三" means "three", "十" means "ten". "三十" means "thirty"."五" means "five". The complete sequence "二百三十五" means "Two hundred and thirty five".). Hence, it is not necessary to express rank via position. In contrast, line breaks are forbidden for European numerals, since it is necessary to express the rank via the position. Furthermore, if in vertical writing mode European numerals are placed in an upright position like ordinary Japanese characters, they are used like the ideographic numerals, and it is possible to have a line break between them.</p>
+     
+    </td>
+    </tr>
+    <tr>
+    <td class="ft" rowspan="1" colspan="1">
+     
+     
+     <p>(note 2)</p>
+     
+    </td>
+    <td rowspan="1" colspan="1">
+     
+     
+     <p>When writing European numerals, <span class="character">FULL STOP "."</span> is used as a decimal point, <span class="character">COMMA ","</span> or space is used as a rank indicator. Line breaks cannot occur before and after these characters (see <a class="figure_ref" href="unbreakable_character_sequences.xhtml#fig2_28-en">Fig. 3.28</a>: the space before "4" expresses a rank). </p>
+     
+    </td>
+    </tr>
+   </table>
+   
+   </li>
+					<li>
+   
+    
+    <p>Between <a class="characterClass" href="cl-12.xhtml#cl-12">prefixed abbreviations (cl-12)</a>
+(<span class="character">YEN SIGN "¥"</span>，<span class="character">DOLLAR SIGN "$"</span>，<span class="character">CENT SIGN "¢"</span> etc.) and the following arabic or ideographic numeral (see <a class="figure_ref" href="unbreakable_character_sequences.xhtml#fig2_26-en">Fig. 3.26</a>). The reason is that such character sequences are to be handled as one unit.</p>
+   
+   
+    
+    <div class="figure" id="fig2_26-en"><div class="figure-float"><div><img alt="Unbreakable sequences between prefixed abbreviations and the following European numeral." width="171" height="74" src="../image/Images-en/img2_26.png"/><div class="figureCaption">Fig. 3.26: <span class="caption-body">Unbreakable sequences between prefixed abbreviations and the following European numeral.</span></div></div></div></div>
+   
+   
+   </li>
+					<li>
+   
+    
+    <p>Between <a class="characterClass" href="cl-13.xhtml#cl-13">postfixed abbreviations (cl-13)</a>
+(<span class="character">PERCENT SIGN "%"</span>, <span class="character">PER MILLE SIGN "‰"</span>
+etc.) and the preceding <a class="termref2nd" href="terminology.xhtml#term.european-numerals">European numeral</a>
+or <a class="termref2nd" href="terminology.xhtml#term.ideographic-numerals">ideographic numeral</a>
+(see <a class="figure_ref" href="unbreakable_character_sequences.xhtml#fig2_27-en">Fig. 3.27</a>). The reason is that such character sequences are to be handled as one unit.</p>
+   
+   
+    
+    <div class="figure" id="fig2_27-en"><div class="figure-float"><div><img alt="Unbreakable sequences between postfixed abbreviations and the preceding European numeral." width="153" height="73" src="../image/Images-en/img2_27.png"/><div class="figureCaption">Fig. 3.27: <span class="caption-body">Unbreakable sequences between postfixed abbreviations and the preceding European numeral.</span></div></div></div></div>
+   
+   
+   <table class="t_note">
+    <tr>
+    <td class="ft" rowspan="1" colspan="1">
+     
+     
+     <p>(note 1)</p>
+     
+    </td>
+    <td rowspan="1" colspan="1">
+     
+     
+     <p>Some people think that it is appropriate to have a line break between the <span class="character">PERCENT SIGN "%"</span> and the preceding arabic or ideographic numeral. The reason seems to be that <span class="character">PERCENT SIGN "%"</span> has a high level of independence. Furthermore it is possible to have a line break between "0" and "パ" in cases like "50パーセント" (meaning "50 percent", where "percent" is written in katakana).</p>
+     
+    </td>
+    </tr>
+   </table>
+   
+   </li>
+					<li>
+   
+    
+    <p>Inter-letter space among <a class="characterClass" href="cl-27.xhtml#cl-27">Western characters (cl-27)</a> in a word (or, sequence of letters, which it is not possible to <a class="termref" href="terminology.xhtml#term.hyphenation">hyphenate</a>),  or unit indicators (km, kg, mm etc.) in Latin letters (see <a class="figure_ref" href="unbreakable_character_sequences.xhtml#fig2_28-en">Fig. 3.28</a>).
+</p>
+   
+   
+    
+    <div class="figure" id="fig2_28-en"><div class="figure-float"><div><img alt="It is not possible to break a line between letters in unit symbols using Latin letters." width="264" height="72" src="../image/Images-en/img2_28.png"/><div class="figureCaption">Fig. 3.28: <span class="caption-body">It is not possible to break a line between letters in unit symbols using Latin letters.</span></div></div></div></div>
+   
+   
+   <table class="t_note">
+    <tr>
+    <td class="ft" rowspan="1" colspan="1">
+     
+     
+     <p>(note 1)</p>
+     
+    </td>
+    <td rowspan="1" colspan="1">
+     
+     
+     <p>When using <span class="character">HYPHEN "‐"</span> at the end of a line, it becomes possible to have a line break within <a class="characterClass" href="cl-27.xhtml#cl-27">Western characters (cl-27)</a>.</p>
+     
+    </td>
+    </tr>
+    <tr>
+    <td class="ft" rowspan="1" colspan="1">
+     
+     
+     <p>(note 2)</p>
+     
+    </td>
+    <td rowspan="1" colspan="1">
+     
+     
+     <p>In this document, description of units with proportional Western characters, such as km and kg, are treated as <a class="characterClass" href="cl-25.xhtml#cl-25">unit symbols (cl-25)</a>.</p>
+     
+    </td>
+    </tr>
+    <tr>
+    <td class="ft" rowspan="1" colspan="1">
+     
+     
+     <p>(note 3)</p>
+     
+    </td>
+    <td rowspan="1" colspan="1">
+     
+     
+     <p>In <a class="figure_ref" href="unbreakable_character_sequences.xhtml#fig2_28-en">Fig. 3.28</a>, there is a <a class="termref2nd" href="terminology.xhtml#term.quarter-em-space">quarter em space</a> between "4" and "k", because of the convention to insert a quarter em between <a class="characterClass" href="cl-25.xhtml#cl-25">unit symbols (cl-25)</a> and following European numerals or <a class="characterClass" href="cl-27.xhtml#cl-27">Western characters (cl-27)</a>. It is permitted to break a line between "4" and "k". In this case, there is no quarter em space in either the head or the end of the line. Note that the space size between "3" and "4" in  <a class="figure_ref" href="unbreakable_character_sequences.xhtml#fig2_28-en">Fig. 3.28</a> is explained in c of (note 2).</p>
+     
+    </td>
+    </tr>
+   </table>
+   
+   </li>
+					<li>
+   
+    
+    <p>Inter-letter space
+among ruby letters, when composed as <a class="termref" href="terminology.xhtml#term.mono-ruby">mono-ruby</a>. Note that it is possible to break a line between <a class="termref" href="terminology.xhtml#term.base-characters">base characters</a> with mono-ruby (see <a class="figure_ref" href="unbreakable_character_sequences.xhtml#fig2_29-en">Fig. 3.29</a>).</p>
+   
+   </li>
+					<li>
+   
+    
+    <p>Inter-letter space
+among ruby letters or base characters, composed as <a class="termref" href="terminology.xhtml#term.group-ruby">group-ruby</a>
+ (see <a class="figure_ref" href="unbreakable_character_sequences.xhtml#fig2_29-en">Fig. 3.29</a>).</p>
+   
+   
+    
+    <div class="figure" id="fig2_29-en"><div class="figure-float"><div><img alt="Example of unbreakable sequences of ruby." width="262" height="257" src="../image/Images-en/img2_29.png"/><div class="figureCaption">Fig. 3.29: <span class="caption-body">Example of unbreakable sequences of ruby.</span></div></div></div></div>
+   
+   
+   <table class="t_note">
+    <tr>
+    <td class="ft" rowspan="1" colspan="1">
+     
+     
+     <p>(note 1)</p>
+     
+    </td>
+    <td rowspan="1" colspan="1">
+     
+     
+     <p>With  <a class="termref2nd" href="terminology.xhtml#term.ruby">ruby</a> used for compound words (<a class="termref" href="terminology.xhtml#term.jukugo-ruby">jukugo-ruby</a>), a group of ruby characters is attached to each base character. It is possible to have a line break between such groups
+     of ruby letters and base characters (see <a class="figure_ref" href="unbreakable_character_sequences.xhtml#fig2_30-en">Fig. 3.30</a>), however,  a line break should not occur between ruby characters related to a given base character.</p>
+     
+    </td>
+    </tr>
+   </table>
+     
+     
+     <div class="figure" id="fig2_30-en"><div class="figure-float"><div><img alt="Example of a line break for jukugo-ruby." width="501" height="258" src="../image/Images-en/img2_30.png"/><div class="figureCaption">Fig. 3.30: <span class="caption-body">Example of a line break for jukugo-ruby.</span></div></div></div></div>
+     
+     
+   
+   </li>
+					<li>
+   
+    
+    <p>Between a subscript or superscript and an adjacent base character (preceding  or following) (see <a class="figure_ref" href="unbreakable_character_sequences.xhtml#fig2_31-en">Fig. 3.31</a>), or between base characters with <a class="termref" href="terminology.xhtml#term.ornament-characters">ornament characters</a>, or between ornament characters themselves.  The reason is that these character sequences are to be handled as one object.</p>
+   
+   
+    
+    <div class="figure" id="fig2_31-en"><div class="figure-float"><div><img alt="Unbreakable sequences between a character and its related subscripts." width="127" height="65" src="../image/Images-en/img2_31.png"/><div class="figureCaption">Fig. 3.31: <span class="caption-body">Unbreakable sequences between a character and its related subscripts.</span></div></div></div></div>
+   
+   
+   </li>
+					<li>
+   
+    
+    <p>In order to create a correspondence between <a class="termref" href="terminology.xhtml#term.note">notes</a> and the related main text,  <a class="termref" href="terminology.xhtml#term.reference-marks">reference marks</a> (aijirushi) are often added. Line breaks are not allowed before the reference mark or between letters of the reference mark itself (see <a class="figure_ref" href="unbreakable_character_sequences.xhtml#fig2_32-en">Fig. 3.32</a>). The application of the no-line-break rule here is a matter of style.</p>
+   
+   
+    
+    <div class="figure" id="fig2_32-en"><div class="figure-float"><div><img alt="Unbreakable sequences before an aijirushi (reference marks, European numerals or ideographic numerals)." width="421" height="433" src="../image/Images-en/img2_32.png"/><div class="figureCaption">Fig. 3.32: <span class="caption-body">Unbreakable sequences before an aijirushi (reference marks, European numerals or ideographic numerals).</span></div></div></div></div>
+   
+   
+   <table class="t_note">
+    <tr>
+    <td class="ft" rowspan="1" colspan="1">
+     
+     
+     <p>(note 1)</p>
+     
+    </td>
+    <td rowspan="1" colspan="1">
+     
+     
+     <p>In this document, characters in <a class="termref2nd" href="terminology.xhtml#term.reference-marks">reference marks</a> are treated as <a class="characterClass" href="cl-20.xhtml#cl-20">characters as reference marks (cl-20)</a>.</p>
+     
+    </td>
+    </tr>
+    <tr>
+    <td class="ft" rowspan="1" colspan="1">
+     
+     
+     <p>(note 2)</p>
+     
+    </td>
+    <td rowspan="1" colspan="1">
+     
+     
+     <p>Often there are <a class="characterClass" href="cl-06.xhtml#cl-06">full stops (cl-06)</a> after <a class="termref2nd" href="terminology.xhtml#term.reference-marks">reference marks</a>. In these cases, line breaks are not allowed between the reference marks and the
+   full stops. The reason is that full stops should not be set at the head of lines (see <a class="figure_ref" href="unbreakable_character_sequences.xhtml#fig2_32-en">Fig. 3.32</a>).</p>
+     
+    </td>
+    </tr>
+   </table>
+   
+   </li>
+					<li>
+   
+    
+    <p>After <a class="characterClass" href="cl-28.xhtml#cl-28">warichu opening brackets (cl-28)</a>, which open <a class="termref" href="terminology.xhtml#term.warichu">warichu</a>, or before <a class="characterClass" href="cl-29.xhtml#cl-29">warichu closing brackets (cl-29)</a>, which close warichu.</p>
+   
+   </li>
+					<li>
+   
+    
+    <p>A unit of <a class="termref" href="terminology.xhtml#term.furiwake">furiwake</a>. A unit of furiwake is handled as one object.</p>
+   
+   </li>
+				</ol></body></html>

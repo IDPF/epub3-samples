@@ -1,0 +1,190 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja"><head><meta charset="UTF-8"/><meta name="author" content="Japanese Layout Task Force"/><title>日本語組版処理の要件（日本語版）</title><link rel="stylesheet" type="text/css" href="../css/W3C-WG-NOTE.css"/><link rel="stylesheet" type="text/css" href="../css/base.css"/></head><body><h4 id="adjustments_of_ruby_with_length_longer_than_that_of_the_base_characters">3.3.8 <span class="heading"><span class="index" id="ja-subheading2_3_8">ルビが親文字よりはみ出した場合の処理</span></span></h4><p>ルビ文字の文字列が親文字の文字列より短い場合は，親文字の前後に配置する他の<a class="characterClass" href="cl-19.xhtml#cl-19">漢字等（cl-19）</a>や<a class="characterClass" href="cl-15.xhtml#cl-15">平仮名（cl-15）</a>とルビの付く親文字との字間をベタ組にして配置すればよい（<a class="figure_ref" href="adjustments_of_ruby_with_length_longer_than_that_of_the_base_characters.xhtml#fig2_3_29-ja">図 3.78</a>）．</p><div class="figure" id="fig2_3_29-ja"><div class="figure-float"><div><img alt="ルビ文字の文字列が親文字の文字列より短い場合は前後の文字との間はベタ組" width="153" height="325" src="../image/Images-ja/img2_3_29.png"/><div class="figureCaption">図 3.78 <span class="caption-body">ルビ文字の文字列が親文字の文字列より短い場合は前後の文字との間はベタ組</span></div></div></div></div><p>ルビ文字の文字列が親文字の文字列より長い場合は，親文字の前後に配置する他の<a class="characterClass" href="cl-19.xhtml#cl-19">漢字等（cl-19）</a>，<a class="characterClass" href="cl-15.xhtml#cl-15">平仮名（cl-15）</a>や<a class="termref" href="terminology.xhtml#term.punctuation-marks">約物</a>などにどこまで親文字よりはみ出したルビ文字が掛かってよいかが問題となる．一般に次のように処理している（<a class="figure_ref" href="adjustments_of_ruby_with_length_longer_than_that_of_the_base_characters.xhtml#fig2_3_30-ja">図 3.79</a>，<a class="figure_ref" href="adjustments_of_ruby_with_length_longer_than_that_of_the_base_characters.xhtml#fig2_3_31-ja">図 3.80</a>）．これはもっぱら誤読を避けること，及び体裁を考慮しての処理である．なお，ルビ文字の文字列が親文字の文字列よりはみ出した場合についての詳細は，<a class="sec_ref" href="about_character_classes.xhtml#about_character_classes">3.9 文字クラスについて</a>で説明する文字クラスに従い，表の形式にして<a href="spacing_between_characters.xhtml#spacing_between_characters">附属書 B 文字間の空き量</a>で示す．</p><div class="figure" id="fig2_3_30-ja"><div class="figure-float"><div><img alt="ルビ文字のはみ出しがある場合の配置例1" width="201" height="684" src="../image/Images-ja/img2_3_30.png"/><div class="figureCaption">図 3.79 <span class="caption-body">ルビ文字のはみ出しがある場合の配置例1</span></div></div></div></div><div class="figure" id="fig2_3_31-ja"><div class="figure-float"><div><img alt="ルビ文字のはみ出しがある場合の配置例2" width="127" height="684" src="../image/Images-ja/img2_3_31.png"/><div class="figureCaption">図 3.80 <span class="caption-body">ルビ文字のはみ出しがある場合の配置例2</span></div></div></div></div><ol>
+					<li>
+   
+    <p>前又は後ろにくる<span class="index" id="d5e11858"><a class="characterClass" href="cl-19.xhtml#cl-19">漢字等（cl-19）</a></span>に<span class="index" id="d5e11862">ルビ文字を掛けてはならない</span>．</p>
+    
+   
+   </li>
+					<li>
+   
+    <p>前又は後ろにくる<span class="index" id="d5e11880"><a class="characterClass" href="cl-15.xhtml#cl-15">平仮名（cl-15）</a></span>，<span class="index" id="d5e11884"><a class="characterClass" href="cl-16.xhtml#cl-16">片仮名（cl-16）</a></span>，<span class="index" id="d5e11888"><a class="characterClass" href="cl-10.xhtml#cl-10">長音記号（cl-10）</a></span>又は<span class="index" id="d5e11892"><a class="characterClass" href="cl-11.xhtml#cl-11">小書きの仮名（cl-11）</a></span>に最大でルビ文字サイズの全角まで<span class="index" id="d5e11896">ルビ文字を掛けてもよい</span>．</p>
+    
+   
+
+				<table class="t_note">
+					<tr>
+						<td class="ft" rowspan="1" colspan="1">
+							
+								<p>注1）</p>
+								
+							
+						</td>
+						<td rowspan="1" colspan="1">
+							
+								<p><a class="characterClass" href="cl-15.xhtml#cl-15">平仮名（cl-15）</a>などに最大でルビ文字サイズの全角までルビ文字を掛けてよいということから，<a class="figure_ref" href="adjustments_of_ruby_with_length_longer_than_that_of_the_base_characters.xhtml#fig2_3_29_2-ja">図 3.81</a>のように1文字の<a class="characterClass" href="cl-15.xhtml#cl-15">平仮名（cl-15）</a>の前後に配置される<span class="index" id="d5e11946">ルビ文字のはみ出しがつながってしまう場合</span>もある．これは誤読される恐れもあり，望ましくない．前のルビ文字列と後ろの文字列との間をルビ文字サイズの全角くらい空けるのが望ましい．この配置処理としては，中間に入る1文字の<a class="characterClass" href="cl-15.xhtml#cl-15">平仮名（cl-15）</a>に掛かってよい限界について，前及び後ろのルビ文字列の両方を少なくする方法と，後ろに配置するルビ文字列の掛かる限界を少なくする方法とが考えられる．後者の場合，<a class="characterClass" href="cl-15.xhtml#cl-15">平仮名（cl-15）</a>などにルビ文字列が掛かってよい限界を，前から掛かるのか，後ろから掛かるのかで変えることで解決する．後ろに配置する<a class="characterClass" href="cl-15.xhtml#cl-15">平仮名（cl-15）</a>などに，はみ出したルビ文字列を前から掛ける場合は，ルビ文字サイズの全角までルビ文字列は掛かってよい．しかし，前に配置する<a class="characterClass" href="cl-15.xhtml#cl-15">平仮名（cl-15）</a>などについて，はみ出したルビ文字列を後ろから掛ける場合は，その<a class="characterClass" href="cl-15.xhtml#cl-15">平仮名（cl-15）</a>などに別のルビ文字列が前から掛かっているとき，前から掛かっている別のルビ文字列の掛かっている量を差し引いた値までとする．<a class="figure_ref" href="adjustments_of_ruby_with_length_longer_than_that_of_the_base_characters.xhtml#fig2_3_29_2-ja">図 3.81</a>の例でいえば，前から掛かるルビの“き”は，“の”に掛かってもよいが，後ろに配置するルビの“お”は，すでに“き”がルビ文字サイズの全角まで掛かっているので，“の”には掛けてはいけないことになり，<a class="figure_ref" href="adjustments_of_ruby_with_length_longer_than_that_of_the_base_characters.xhtml#fig2_3_29_3-ja">図 3.82</a>のようになる．</p>
+								
+							
+						</td>
+					</tr>
+				</table>
+							
+								<div class="figure" id="fig2_3_29_2-ja"><div class="figure-float"><div><img alt="ルビ文字のはみ出しがつながってしまう望ましくない例" width="153" height="181" src="../image/Images-ja/img2_3_29_2.png"/><div class="figureCaption">図 3.81 <span class="caption-body">ルビ文字のはみ出しがつながってしまう望ましくない例</span></div></div></div></div>
+								
+							
+							
+							
+								<div class="figure" id="fig2_3_29_3-ja"><div class="figure-float"><div><img alt="ルビ文字のはみ出しがつながらないようにした例" width="153" height="199" src="../image/Images-ja/img2_3_29_3.png"/><div class="figureCaption">図 3.82 <span class="caption-body">ルビ文字のはみ出しがつながらないようにした例</span></div></div></div></div>
+								
+							
+							
+				
+   </li>
+					<li>
+   
+    <p>前にくる<span class="index" id="d5e12054"><a class="characterClass" href="cl-02.xhtml#cl-02">終わり括弧類（cl-02）</a></span>，<span class="index" id="d5e12058"><a class="characterClass" href="cl-06.xhtml#cl-06">句点類（cl-06）</a></span>若しくは<span class="index" id="d5e12062"><a class="characterClass" href="cl-07.xhtml#cl-07">読点類（cl-07）</a></span>の後ろにある<a class="termref" href="terminology.xhtml#term.half-em-space">二分アキ</a>，又は後ろにくる<span class="index" id="d5e12069"><a class="characterClass" href="cl-01.xhtml#cl-01">始め括弧類（cl-01）</a></span>の前にある二分アキには，最大でルビ文字サイズで全角までルビ文字を掛けてもよい．ただし，行の調整処理で二分アキが詰められている場合は，調整で詰められた空き量までとする（例えば，四分アキとなっていれば，最大でルビ文字サイズの<a class="termref" href="terminology.xhtml#term.half-em">二分</a>までルビ文字を掛けてもよい）．</p>
+    
+   
+   </li>
+					<li>
+   
+    <p><span class="index" id="d5e12109"><a class="characterClass" href="cl-08.xhtml#cl-08">分離禁止文字（cl-08）</a></span>にも，最大でルビ文字サイズの全角までルビ文字を掛けてもよい．</p>
+    
+   
+   </li>
+					<li>
+   
+    <p><span class="index" id="d5e12127"><a class="characterClass" href="cl-05.xhtml#cl-05">中点類（cl-05）</a></span>にも最大でルビ文字サイズの全角までルビ文字を掛けてもよい．ただし，中点類の前後の四分アキが行の調整処理で詰められている場合は，前にくる中点類の場合は中点類の後ろの空き量＋ルビ文字サイズの二分まで，後ろにくる中点類の場合は中点類の前の空き量＋ルビ文字サイズの二分までである．</p>
+    
+   
+   </li>
+					<li>
+   
+    <p>後ろにくる<span class="index" id="d5e12151"><a class="characterClass" href="cl-02.xhtml#cl-02">終わり括弧類（cl-02）</a></span>には，最大でルビ文字サイズの全角までルビ文字を掛けてもよい．この場合，終わり括弧類の後ろの空き量に掛けてはならない．</p>
+    
+   
+   </li>
+					<li>
+   
+    <p>後ろにくる<span class="index" id="d5e12174"><a class="characterClass" href="cl-06.xhtml#cl-06">句点類（cl-06）</a></span>又は<span class="index" id="d5e12178"><a class="characterClass" href="cl-07.xhtml#cl-07">読点類（cl-07）</a></span>には，最大でルビ文字サイズの全角までルビ文字を掛けてもよい．この場合，句点類又は読点類の後ろの空き量に掛けてはならない．</p>
+    
+   
+   </li>
+					<li>
+   
+    <p>前にくる<span class="index" id="d5e12202"><a class="characterClass" href="cl-01.xhtml#cl-01">始め括弧類（cl-01）</a></span>にも，最大でルビ文字サイズの全角までルビ文字を掛けてもよい．この場合，始め括弧類の前の空き量に掛けてはならない．</p>
+    
+   
+   </li>
+				</ol><table class="t_note">
+					<tr>
+						<td class="ft" rowspan="1" colspan="1">
+							
+								<p>注1）</p>
+								
+							
+						</td>
+						<td rowspan="1" colspan="1">
+							
+								<p>前にくる<a class="characterClass" href="cl-01.xhtml#cl-01">始め括弧類（cl-01）</a>，特に始めかぎ括弧<span class="character">[「] (LEFT CORNER BRACKET)</span>にルビ文字を掛けることは体裁がよくないので，避けた方がよいという考え方もある．この考え方では，<a class="characterClass" href="cl-01.xhtml#cl-01">始め括弧類（cl-01）</a>にルビ文字を掛けない処理とするか，又は最大でルビ文字サイズの二分までルビ文字を掛ける処理方法とする．</p>
+								
+							
+						</td>
+					</tr>
+					<tr>
+						<td class="ft" rowspan="1" colspan="1">
+							
+								<p>注2）</p>
+								
+							
+						</td>
+						<td rowspan="1" colspan="1">
+							
+								<p>JIS X 4051では，片仮名は漢字と同じ文字クラスに含まれている．したがって，片仮名についてはルビ文字を掛けることは禁止されている．</p>
+								
+							
+						</td>
+					</tr>
+					<tr>
+						<td class="ft" rowspan="1" colspan="1">
+							
+								<p>注3）</p>
+								
+							
+						</td>
+						<td rowspan="1" colspan="1">
+							
+								<p>ルビが付いた親文字群の前又は後ろの文字が，<a class="characterClass" href="cl-19.xhtml#cl-19">漢字等（cl-19）</a>，<a class="characterClass" href="cl-15.xhtml#cl-15">平仮名（cl-15）</a>又は<a class="characterClass" href="cl-16.xhtml#cl-16">片仮名（cl-16）</a>のいずれでも，最大でルビ文字サイズの二分まで<a class="termref2nd" href="terminology.xhtml#term.ruby">ルビ</a>文字を掛けてもよい，とする処理法もある（<a class="figure_ref" href="adjustments_of_ruby_with_length_longer_than_that_of_the_base_characters.xhtml#fig2_3_32-ja">図 3.83</a>）．</p>
+								
+							
+						</td>
+					</tr>
+</table><div class="figure" id="fig2_3_32-ja"><div class="figure-float"><div><img alt="ルビ文字のはみ出しがある場合の配置例3" width="136" height="702" src="../image/Images-ja/img2_3_32.png"/><div class="figureCaption">図 3.83 <span class="caption-body">ルビ文字のはみ出しがある場合の配置例3</span></div></div></div></div><table class="t_note">
+					<tr>
+						<td class="ft" rowspan="1" colspan="1">
+							
+								<p>注4）</p>
+								
+							
+						</td>
+						<td rowspan="1" colspan="1">
+							
+								<p><a class="characterClass" href="cl-19.xhtml#cl-19">漢字等（cl-19）</a>，<a class="characterClass" href="cl-15.xhtml#cl-15">平仮名（cl-15）</a>及び<a class="characterClass" href="cl-16.xhtml#cl-16">片仮名（cl-16）</a>のすべてにルビを掛けない，とする処理法もある（<a class="figure_ref" href="adjustments_of_ruby_with_length_longer_than_that_of_the_base_characters.xhtml#fig2_3_33-ja">図 3.84</a>）．</p>
+								
+							
+						</td>
+					</tr>
+				</table><div class="figure" id="fig2_3_33-ja"><div class="figure-float"><div><img alt="ルビ文字のはみ出しがある場合の配置例4" width="136" height="747" src="../image/Images-ja/img2_3_33.png"/><div class="figureCaption">図 3.84 <span class="caption-body">ルビ文字のはみ出しがある場合の配置例4</span></div></div></div></div><p><span class="index" id="d5e12456"><span class="index" id="d5e12457"><span class="index" id="d5e12458">行頭又は行末にルビが付いた親文字を配置する場合</span></span></span>，ルビ文字の文字列が親文字の文字列より短いときは，親文字の先頭又は末尾を行頭又は行末にそろえて配置すればよい．</p><p>行頭又は行末にルビが付いた親文字を配置する場合，ルビ文字の文字列が親文字の文字列より長いときは，親文字よりはみ出したルビ文字の文字列の先頭又は末尾を行頭又は行末にそろえて配置する（<a class="figure_ref" href="adjustments_of_ruby_with_length_longer_than_that_of_the_base_characters.xhtml#fig2_3_34-ja">図 3.85</a>）．また，親文字の先頭又は末尾を行頭又は行末にそろえて配置する方法もある（<a class="figure_ref" href="adjustments_of_ruby_with_length_longer_than_that_of_the_base_characters.xhtml#fig2_3_35-ja">図 3.86</a>）．</p><div class="figure" id="fig2_3_34-ja"><div class="figure-float"><div><img alt="ルビ文字の行頭・行末の配置例1" width="209" height="264" src="../image/Images-ja/img2_3_34.png"/><div class="figureCaption">図 3.85 <span class="caption-body">ルビ文字の行頭・行末の配置例1</span></div></div></div></div><div class="figure" id="fig2_3_35-ja"><div class="figure-float"><div><img alt="ルビ文字の行頭・行末の配置例2" width="209" height="264" src="../image/Images-ja/img2_3_35.png"/><div class="figureCaption">図 3.86 <span class="caption-body">ルビ文字の行頭・行末の配置例2</span></div></div></div></div><p>親文字の先頭又は末尾を行頭又は行末にそろえて配置する方法では，行頭又は行末では，ルビ文字が版面又は<a class="termref" href="terminology.xhtml#term.column">段</a>の領域よりはみ出すことは認められていないので，親文字とルビ文字の配置方法を変更する必要がある．次のようにする．</p><ol>
+					<li>
+   
+    <p><span class="index" id="d5e12557"><a class="termref2nd" href="terminology.xhtml#term.mono-ruby">モノルビ</a>の行頭</span>：ルビ文字の文字列の先頭と親文字の文字列の先頭をそろえる形に変更する（<a class="figure_ref" href="adjustments_of_ruby_with_length_longer_than_that_of_the_base_characters.xhtml#fig2_3_35-ja">図 3.86</a>）．</p>
+    
+   
+   </li>
+					<li>
+   
+    <p><span class="index" id="d5e12584"><a class="termref2nd" href="terminology.xhtml#term.mono-ruby">モノルビ</a>の行末</span>：ルビ文字の文字列の末尾と親文字の文字列の末尾をそろえる形に変更する（<a class="figure_ref" href="adjustments_of_ruby_with_length_longer_than_that_of_the_base_characters.xhtml#fig2_3_35-ja">図 3.86</a>）．</p>
+    
+   
+   </li>
+					<li>
+   
+    <p><span class="index" id="d5e12611"><a class="termref2nd" href="terminology.xhtml#term.group-ruby">グループルビ</a>の<a class="termref2nd" href="terminology.xhtml#term.line-head">行頭</a></span>：<a class="termref2nd" href="terminology.xhtml#term.ruby">ルビ</a>文字の文字列の先頭と<a class="termref2nd" href="terminology.xhtml#term.base-characters">親文字</a>の文字列の先頭をそろえ，親文の文字列の字間の空き量と，親文字の文字列の末尾からルビ文字の文字列の末尾までの空き量とを1対1の比率に変更する（JIS X 4051で規定している方法，<a class="figure_ref" href="adjustments_of_ruby_with_length_longer_than_that_of_the_base_characters.xhtml#fig2_3_36-ja">図 3.87</a>）．</p>
+    
+   
+   
+    <div class="figure" id="fig2_3_36-ja"><div class="figure-float"><div><img alt="ルビ文字の行頭・行末の配置例3" width="209" height="264" src="../image/Images-ja/img2_3_36.png"/><div class="figureCaption">図 3.87 <span class="caption-body">ルビ文字の行頭・行末の配置例3</span></div></div></div></div>
+    
+   
+   
+   </li>
+					<li>
+   
+    <p><span class="index" id="d5e12670"><a class="termref2nd" href="terminology.xhtml#term.group-ruby">グループルビ</a>の<a class="termref2nd" href="terminology.xhtml#term.line-end">行末</a></span>：<a class="termref2nd" href="terminology.xhtml#term.ruby">ルビ</a>文字の文字列の末尾と<a class="termref2nd" href="terminology.xhtml#term.base-characters">親文字</a>の文字列の末尾をそろえ，親文字の文字列の字間の空き量と，親文字の文字列の先頭からルビ文字の文字列の先頭までの空き量とを1対1の比率に変更する（JIS X 4051で規定している方法，<a class="figure_ref" href="adjustments_of_ruby_with_length_longer_than_that_of_the_base_characters.xhtml#fig2_3_36-ja">図 3.87</a>）．</p>
+    
+   
+   </li>
+					<li>
+   
+    <p><a class="termref2nd" href="terminology.xhtml#term.group-ruby">グループルビ</a>と同様に処理した<span class="index" id="d5e12707"><a class="termref2nd" href="terminology.xhtml#term.jukugo-ruby">熟語ルビ</a>が行頭又は行末</span>にきた場合：c又はdと同じ処理になる．</p>
+    
+   
+   </li>
+					<li>
+   
+    <p>熟語の構成などを考慮して配置する<a class="termref2nd" href="terminology.xhtml#term.jukugo-ruby">熟語ルビ</a>が行頭にきた場合：ルビ文字の文字列の先頭と親文字の文字列の先頭を行頭にそろえて配置する．この場合，熟語を構成するそれぞれの<a class="characterClass" href="cl-19.xhtml#cl-19">漢字等（cl-19）</a>に付くルビ文字が熟語内の他の<a class="characterClass" href="cl-19.xhtml#cl-19">漢字等（cl-19）</a>に最大でルビ文字サイズで全角（又は1.5倍）まで掛かってよい．それ以上掛かる場合は，親文字の文字列からルビ文字の文字列をはみ出させるか，親文字の字間を空ける．</p>
+    
+   
+   </li>
+					<li>
+   
+    <p>熟語の構成などを考慮して配置する<a class="termref2nd" href="terminology.xhtml#term.jukugo-ruby">熟語ルビ</a>が行末にきた場合：ルビ文字の文字列の末尾と親文字の文字列の末尾を行末にそろえて配置する．この場合，熟語を構成するそれぞれの<a class="characterClass" href="cl-19.xhtml#cl-19">漢字等（cl-19）</a>に付くルビ文字が熟語内の他の<a class="characterClass" href="cl-19.xhtml#cl-19">漢字等（cl-19）</a>に最大でルビ文字サイズで全角（又は1.5倍）まで掛かってよい．それ以上掛かる場合は，親文字の文字列からルビ文字の文字列をはみ出させるか，親文字の字間を空ける．</p>
+    
+   
+   </li>
+					<li>
+   
+    <p><a class="termref2nd" href="terminology.xhtml#term.jukugo-ruby">熟語ルビ</a>を親文字単位で2行に分割した場合：熟語ルビは，2行に分割され，行末及び行頭に分かれることがある．<a class="characterClass" href="cl-19.xhtml#cl-19">漢字等（cl-19）</a>が2字の熟語の場合は，行末に<a class="characterClass" href="cl-19.xhtml#cl-19">漢字等（cl-19）</a>が1字の<a class="termref2nd" href="terminology.xhtml#term.mono-ruby">モノルビ</a>，次の行頭に<a class="characterClass" href="cl-19.xhtml#cl-19">漢字等（cl-19）</a>が1字のモノルビという形になる．<a class="characterClass" href="cl-19.xhtml#cl-19">漢字等（cl-19）</a>が3字の場合は，<a class="characterClass" href="cl-19.xhtml#cl-19">漢字等（cl-19）</a>が1字のモノルビと<a class="characterClass" href="cl-19.xhtml#cl-19">漢字等（cl-19）</a>が2字の熟語ルビ又は<a class="characterClass" href="cl-19.xhtml#cl-19">漢字等（cl-19）</a>が2字の熟語ルビと<a class="characterClass" href="cl-19.xhtml#cl-19">漢字等（cl-19）</a>が1字のモノルビとなる．<a class="characterClass" href="cl-19.xhtml#cl-19">漢字等（cl-19）</a>が1字のモノルビの形になった場合は，a項又はb項で処理することになる．<a class="characterClass" href="cl-19.xhtml#cl-19">漢字等（cl-19）</a>が2字以上の熟語ルビとなった場合は，e項，f項又はg項で処理することになる．</p>
+    
+   
+   </li>
+				</ol></body></html>

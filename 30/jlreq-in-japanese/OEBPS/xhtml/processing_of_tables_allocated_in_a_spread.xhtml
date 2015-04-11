@@ -1,0 +1,44 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja"><head><meta charset="UTF-8"/><meta name="author" content="Japanese Layout Task Force"/><title>日本語組版処理の要件（日本語版）</title><link rel="stylesheet" type="text/css" href="../css/W3C-WG-NOTE.css"/><link rel="stylesheet" type="text/css" href="../css/base.css"/></head><body><h4 id="processing_of_tables_allocated_in_a_spread">4.4.5 <span class="heading"><span class="index" id="d11e1486">見開きに配置する表の処理</span></span></h4><p><a class="sec_ref" href="kinds_of_tables_from_alocation_to_page_position.xhtml#kinds_of_tables_from_alocation_to_page_position">4.4.4 ページへの配置からみた表の種類</a>のbに記述した見開きに配置する場合，配置の指示があった行（リンクの指定）と同じ見開きに表（又は図版）が配置できればよい．しかし，異なる場合も多い．この場合の処理方法も<a class="sec_ref" href="basic_ideas_about_illustration_positioning_in_JISX4051.xhtml#basic_ideas_about_illustration_positioning_in_JISX4051">4.3.5 JIS X 4051における図版配置の基本的な考え方</a>で解説したように（ただし，版面でなく，見開きの領域を単位に），リンクの指定が出現した時点における指定の出現位置と見開きの領域の最後までの距離を計算し（<a class="figure_ref" href="processing_of_tables_allocated_in_a_spread.xhtml#fig3_4_12-ja">図 4.111</a>），さらに，表（又は図版）をリンクの指定が出現した見開きに仮に配置した結果，次の見開きにはみ出した配置の指示があった行（リンクの指定）までの距離を計算し（<a class="figure_ref" href="processing_of_tables_allocated_in_a_spread.xhtml#fig3_4_12_2-ja">図 4.112</a>），両者の大きさを比べ，どの見開きに配置するかを決定する（<a class="figure_ref" href="processing_of_tables_allocated_in_a_spread.xhtml#fig3_4_12_3-ja">図 4.113</a>）．</p><div class="figure" id="fig3_4_12-ja"><div class="figure-float"><div><img alt="見開きの領域を単位として配置する場合の距離の計算1 （配置前）" width="460" height="387" src="../image/Images-ja/img3_4_12.png"/><div class="figureCaption">図 4.111 <span class="caption-body">見開きの領域を単位として配置する場合の距離の計算1<span class="sub-caption">（配置前）</span></span></div></div></div></div><div class="figure" id="fig3_4_12_2-ja"><div class="figure-float"><div><img alt="見開きの領域を単位として配置する場合の距離の計算2 （仮配置後）" width="458" height="754" src="../image/Images-ja/img3_4_12_2.png"/><div class="figureCaption">図 4.112 <span class="caption-body">見開きの領域を単位として配置する場合の距離の計算2<span class="sub-caption">（仮配置後）</span></span></div></div></div></div><div class="figure" id="fig3_4_12_3-ja"><div class="figure-float"><div><img alt="見開きの領域を単位として配置する場合の距離の計算3 （最終配置後）" width="458" height="719" src="../image/Images-ja/img3_4_12_3.png"/><div class="figureCaption">図 4.113 <span class="caption-body">見開きの領域を単位として配置する場合の距離の計算3<span class="sub-caption">（最終配置後）</span></span></div></div></div></div><p>次にどの位置で表を分割するかが問題となる．図版の分割の場合は，ある意味どこでもよいわけなので，指定によるか，版面内に入る範囲ということになる．これに対し表の場合は，分割位置に制限があり，また罫線の扱いも決める必要がある．次のような事項を考慮し，<span class="index" id="d11e1605">分割位置</span>を決める．</p><ol>
+					<li>
+                        
+                           <p>列又は行を単位に分割する．ただし，ヘッダー列の後ろと，それに続くヘッダー列でない列の間，ヘッダー行の後ろと，それに続くヘッダー行でない行の間では分割しない．キャプションの直後でも分割しない．</p>
+                           
+                        
+                     </li>
+					<li>
+                        
+                           <p>分割する位置に<span class="index" id="d11e1633">罫線</span>がある（可視とする罫線がある）場合の処理は，一般に次のようにしている．</p>
+                           
+                        
+                        <ol>
+                           <li>
+                              
+                                 <p>表の全体における<a class="termref" href="terminology.xhtml#term.inline-direction">字詰め方向</a>の外枠の罫線を可視とする場合，列の間の表の先頭部分を含む側の分割位置の罫線は不可視とし，表の末尾を含む側の分割位置の罫線は可視とする（<a class="figure_ref" href="processing_of_tables_allocated_in_a_spread.xhtml#fig3_4_13-ja">図 4.114</a>）．</p>
+                                 
+                              
+                              
+                                 <div class="figure" id="fig3_4_13-ja"><div class="figure-float"><div><img alt="見開きに配置する表の罫線の処理例1" width="460" height="353" src="../image/Images-ja/img3_4_13.png"/><div class="figureCaption">図 4.114 <span class="caption-body">見開きに配置する表の罫線の処理例1</span></div></div></div></div>
+                                 
+                              
+                              
+                           </li>
+                           <li>
+                              
+                                 <p>表の全体における字詰め方向の外枠の罫線を不可視とする場合は，列の間の表の先頭部分を含む側の分割位置の罫線は可視とし，表の末尾を含む側の分割位置の罫線は不可視とする（<a class="figure_ref" href="processing_of_tables_allocated_in_a_spread.xhtml#fig3_4_14-ja">図 4.115</a>）．</p>
+                                 
+                              
+                              
+                                 <div class="figure" id="fig3_4_14-ja"><div class="figure-float"><div><img alt="見開きに配置する表の罫線の処理例2" width="459" height="352" src="../image/Images-ja/img3_4_14.png"/><div class="figureCaption">図 4.115 <span class="caption-body">見開きに配置する表の罫線の処理例2</span></div></div></div></div>
+                                 
+                              
+                              
+                           </li>
+                           <li>
+                              
+                                 <p>表の行を単位とする分割の場合は，表の先頭部分を含む側の分割位置の罫線は不可視とし，表の末尾を含む側の分割位置の罫線は可視とする．</p>
+                                 
+                              
+                           </li>
+                        </ol>
+                     </li>
+				</ol></body></html>

@@ -1,0 +1,47 @@
+@charset "utf-8";
+/* SVG */
+svg { 
+	width:100%;
+	height:100%;
+	position:absolute;
+	top:0px;
+	left:0px;
+	margin:0px;
+	padding:0px;
+}
+
+/* Navigation */
+a {
+	color: black !important;
+}
+
+#guide {
+	display: none;
+}
+
+
+/* Fonts */
+@font-face {
+	font-family:AGaramondPro-Regular-0908;
+	font-style:normal;
+	font-weight:normal;
+	src:url(../Font/agaramondpro-regular.otf);
+}
+@font-face {
+	font-family:AGaramondPro-Bold-0656;
+	font-style:normal;
+	font-weight:normal;
+	src:url(../Font/agaramondpro-bold.otf);
+}
+@font-face {
+	font-family:AGaramondPro-Italic-0855;
+	font-style:normal;
+	font-weight:normal;
+	src:url(../Font/agaramondpro-italic.otf);
+}
+@font-face {
+	font-family:Garamond-0662;
+	font-style:normal;
+	font-weight:normal;
+	src:url(../Font/agaramondpro-regular.otf);
+}

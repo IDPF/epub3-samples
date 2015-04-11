@@ -1,0 +1,283 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja"><head><meta charset="UTF-8"/><meta name="author" content="Japanese Layout Task Force"/><title>日本語組版処理の要件（日本語版）</title><link rel="stylesheet" type="text/css" href="../css/W3C-WG-NOTE.css"/><link rel="stylesheet" type="text/css" href="../css/base.css"/></head><body><h3 id="ruby_and_emphasis_dots">3.3 <span class="heading"><span id="ja-subheading2_3">ルビと圏点処理</span></span></h3><h4 id="usage_of_ruby">3.3.1 <span class="heading"><span class="index" id="ja-subheading2_3_1">ルビの使用</span></span></h4><p><span class="index" id="d5e8423"><a class="termref" href="terminology.xhtml#term.ruby">ルビ</a></span>とは，文字のそば（<a class="termref" href="terminology.xhtml#term.vertical-writing-mode">縦組</a>では一般に右側，<a class="termref" href="terminology.xhtml#term.horizontal-writing-mode">横組</a>では一般に上側）に付けて文字の読み方，意味などを示す小さな文字のことである（<a class="figure_ref" href="ruby_and_emphasis_dots.xhtml#fig2_3_1-ja">図 3.49</a>）．ルビを付ける場合，その対象となる文字のことを<span class="index" id="d5e8436"><a class="termref" href="terminology.xhtml#term.base-characters">親文字</a></span>という．ルビとしては，<a class="characterClass" href="cl-19.xhtml#cl-19">漢字等（cl-19）</a>の読みを示す<a class="characterClass" href="cl-15.xhtml#cl-15">平仮名（cl-15）</a>などを付けることが多く，“<span class="index" id="d5e8450"><a class="termref" href="terminology.xhtml#term.furigana">振り仮名</a></span>”ともよばれている．</p><div class="figure" id="fig2_3_1-ja"><div class="figure-float"><div><img alt="ルビと親文字" width="324" height="401" src="../image/Images-ja/img2_3_1.png"/><div class="figureCaption">図 3.49 <span class="caption-body">ルビと親文字</span></div></div></div></div><table class="t_note">
+					<tr>
+						<td class="ft" rowspan="1" colspan="1">
+							
+								<p>注1）</p>
+								
+							
+						</td>
+						<td rowspan="1" colspan="1">
+							
+								<p>ルビの使用は，漢字表記の考え方や<a class="termref" href="terminology.xhtml#term.composition">組版</a>におけるルビ処理方法などに影響され，変化している．特に，日本における漢字表記の基準とされてきた“<span class="index" id="d5e8531"><span class="index" id="d5e8532"><a class="termref" href="terminology.xhtml#term.touyou-kanji-table">当用漢字表</a></span></span>”（1946年11月16日，内閣訓令・告示）の“使用上の注意”において，“ふりがなは，原則として使わない”とあったことから，以前はルビの使用は少なかった．しかし，“当用漢字表”を改正した“<span class="index" id="d5e8536"><span class="index" id="d5e8537"><a class="termref" href="terminology.xhtml#term.jouyou-kanji-table">常用漢字表</a></span></span>”（1981年10月1日，内閣訓令・告示）では，表そのものの考え方が変化した（“当用漢字表”は一般社会で使用する漢字の範囲を示したもの，“常用漢字表”は一般の社会生活において現代の国語を書き表す場合の漢字使用の目安を示したもの）．例えば，“常用漢字表”の“答申前文”には，“読みにくいと思われるような場合は，必要に応じて振り仮名を用いるような配慮をするのも一つの方法であろう”とある．こうしたことから，今日ではルビの使用が増えている．従来から雑誌や書籍におけるルビ使用は，一般的なことであったが，最近では新聞でもルビを使用するようになっている．</p>
+								
+							
+						</td>
+					</tr>
+					<tr>
+						<td class="ft" rowspan="1" colspan="1">
+							
+								<p>注2）</p>
+								
+							
+						</td>
+						<td rowspan="1" colspan="1">
+							
+								<p><span class="index" id="d5e8573">ルビの組版処理</span>は，JIS X 4051においては第2次規格で規定が追加され，さらに2004年の改正で，<a class="termref" href="terminology.xhtml#term.jukugo-ruby">熟語ルビ</a>，<a class="termref" href="terminology.xhtml#term.katatsuki">肩付きルビ</a>，親文字の両側に付けるルビ処理の規定が追加されている（“4.12 ルビ処理”）．</p>
+								
+							
+						</td>
+					</tr>
+				</table><p>ルビの組版処理の方法としては，次の3つがある．</p><ol>
+					<li>
+<p><span class="index" id="d5e8614">モノルビ</span>：親文字の1字ごとに対応してルビを付けて配置する（<a class="sec_ref" href="positioning_of_monoruby_with_respect_to_base_characters.xhtml#positioning_of_monoruby_with_respect_to_base_characters">3.3.5 モノルビの親文字に対する配置位置</a>）．</p>
+
+</li>
+					<li>
+<p><span class="index" id="d5e8632">熟語ルビ</span>：個々の親文字の読みとともに熟語としてのまとまりを重視して配置する（<a class="sec_ref" href="positioning_of_jukugoruby_with_respect_to_base_characters.xhtml#positioning_of_jukugoruby_with_respect_to_base_characters">3.3.7 熟語ルビの親文字に対する配置位置</a>及び<a class="sec_ref" href="positioning_of_jukugoruby.xhtml#positioning_of_jukugoruby">附属書F 熟語ルビの配置方法</a>）．</p>
+
+</li>
+					<li>
+<p><span class="index" id="d5e8656">グループルビ</span>：複数の親文字で構成される語全体に掛かるように配置する（処理方法は<a class="sec_ref" href="positioning_of_groupruby_with_respect_to_base_characters.xhtml#positioning_of_groupruby_with_respect_to_base_characters">3.3.6 グループルビの親文字に対する配置位置</a>）．</p>
+
+</li>
+				</ol><p>このような複数の処理方法が必要になるのは，以下で説明するように<span class="index" id="d5e8676">ルビ</span>を付ける目的，ルビの役割の違いがあることによる．</p><ol>
+					<li>
+   
+    <p><a class="characterClass" href="cl-19.xhtml#cl-19">漢字等（cl-19）</a>の読み方を示す主に<a class="characterClass" href="cl-15.xhtml#cl-15">平仮名（cl-15）</a>のルビを付ける．これには，次の2つがある．</p>
+    
+   
+   <ol>
+    <li>
+    
+     <p>1文字の親文字（<a class="characterClass" href="cl-19.xhtml#cl-19">漢字等（cl-19）</a>）の音読み又は訓読みの読み方を示す1文字の<a class="characterClass" href="cl-15.xhtml#cl-15">平仮名（cl-15）</a>又は複数の<a class="characterClass" href="cl-15.xhtml#cl-15">平仮名（cl-15）</a>のルビを付ける（<a class="figure_ref" href="ruby_and_emphasis_dots.xhtml#fig2_3_2-ja">図 3.50</a>）．このように親文字列の1文字ごとに対応させたルビの処理方法を<a class="termref" href="terminology.xhtml#term.mono-ruby">モノルビ</a>という．</p>
+     
+    
+    
+     <div class="figure" id="fig2_3_2-ja"><div class="figure-float"><div><img alt="漢字等の1字の読みを示すルビの例" width="169" height="288" src="../image/Images-ja/img2_3_2.png"/><div class="figureCaption">図 3.50 <span class="caption-body">漢字等の1字の読みを示すルビの例</span></div></div></div></div>
+     
+    
+    
+    </li>
+    <li>
+    
+     <p>日本語表記では，複数の<a class="characterClass" href="cl-19.xhtml#cl-19">漢字等（cl-19）</a>で構成された<a class="termref" href="terminology.xhtml#term.compound-word">熟語</a>をよく使う．この熟語を構成する個々の<a class="characterClass" href="cl-19.xhtml#cl-19">漢字等（cl-19）</a>について，音読み又は訓読みの読み方を示す<a class="characterClass" href="cl-15.xhtml#cl-15">平仮名（cl-15）</a>のルビを付ける（このようなルビの使用例は多い）．このような<span class="index" id="d5e8806"><span class="index" id="d5e8807">熟語に付けるルビ</span></span>について，親文字とルビ文字との対応には，2つの方法がある．</p>
+     
+    
+    <ol>
+    <li>
+     
+     <p>前項と同様に，個々の<a class="characterClass" href="cl-19.xhtml#cl-19">漢字等（cl-19）</a>（親文字）の1文字ごとにそのルビを対応させる方法．つまり，<a class="termref2nd" href="terminology.xhtml#term.mono-ruby">モノルビ</a>としてルビを処理する方法である（<a class="figure_ref" href="ruby_and_emphasis_dots.xhtml#fig2_3_3-ja">図 3.51</a>）．</p>
+				 
+     
+    
+     <div class="figure" id="fig2_3_3-ja"><div class="figure-float"><div><img alt="熟語に付くルビをモノルビで処理した例" width="101" height="369" src="../image/Images-ja/img2_3_3.png"/><div class="figureCaption">図 3.51 <span class="caption-body">熟語に付くルビをモノルビで処理した例</span></div></div></div></div>
+     
+    
+    
+    <table class="t_note">
+     <tr>
+     <td class="ft" rowspan="1" colspan="1">
+     
+      <p>注1）</p>
+      
+     
+     </td>
+     <td rowspan="1" colspan="1">
+     
+      <p><a class="figure_ref" href="ruby_and_emphasis_dots.xhtml#fig2_3_3-ja">図 3.51</a>において，親文字の“凝”と“視”の<a class="termref" href="terminology.xhtml#term.inter-character-space">字間</a>が<a class="termref" href="terminology.xhtml#term.quarter-em-space">四分アキ</a>になっている．したがって，この行が段落の途中の行であった場合は，なんらかの<a class="termref" href="terminology.xhtml#term.line-adjustment">行の調整処理</a>が必要になる．</p>
+      
+     
+     </td>
+     </tr>
+    </table>
+    
+    </li>
+    <li>
+     
+     <p>個々の<a class="characterClass" href="cl-19.xhtml#cl-19">漢字等（cl-19）</a>の読み方を示すと同時に，熟語単位での配置も考慮して配置する方法（<a class="figure_ref" href="ruby_and_emphasis_dots.xhtml#fig2_3_4-ja">図 3.52</a>）．この方法は<span class="index" id="d5e8948"><a class="termref" href="terminology.xhtml#term.jukugo-ruby">熟語ルビ</a></span>とよばれている．熟語ルビは，熟語を構成する<a class="characterClass" href="cl-19.xhtml#cl-19">漢字等（cl-19）</a>の1文字1文字の読み方を示すとともに，熟語としてのまとまりを持っているので，ルビもまとまりとして読める必要がある．熟語ルビは，熟語としてのまとまりを重視した配置方法といえる．</p>
+     
+     
+    
+     <div class="figure" id="fig2_3_4-ja"><div class="figure-float"><div><img alt="熟語に付くルビを熟語ルビで処理した例" width="250" height="360" src="../image/Images-ja/img2_3_4.png"/><div class="figureCaption">図 3.52 <span class="caption-body">熟語に付くルビを熟語ルビで処理した例</span></div></div></div></div>
+     
+    
+    
+    <table class="t_note">
+     <tr>
+     <td class="ft" rowspan="1" colspan="1">
+     
+      <p>注1）</p>
+      
+     
+     </td>
+     <td rowspan="1" colspan="1">
+     
+      <p><a class="termref2nd" href="terminology.xhtml#term.mono-ruby">モノルビ</a>で処理した<a class="figure_ref" href="ruby_and_emphasis_dots.xhtml#fig2_3_3-ja">図 3.51</a>と<a class="termref2nd" href="terminology.xhtml#term.jukugo-ruby">熟語ルビ</a>で処理した<a class="figure_ref" href="ruby_and_emphasis_dots.xhtml#fig2_3_4-ja">図 3.52</a>では，熟語を構成する個々の<a class="characterClass" href="cl-19.xhtml#cl-19">漢字等（cl-19）</a>に付くルビ文字がすべて2字以下の場合は，その配置位置の関係は同じになる．しかし，モノルビでルビを付けた場合には，ルビ付きの親文字間を行の調整処理で字間を空ける処理の対象としている（<a class="figure_ref" href="ruby_and_emphasis_dots.xhtml#fig2_3_3-ja">図 3.51</a>でいえば，“鬼”と“門”の字間，“方”と“角”との字間）．これに対し，熟語ルビでルビを付けた場合には，ルビ付きの親文字間を行の調整処理で字間を空ける処理の対象としない，という違いがある．</p>
+      
+     
+     </td>
+     </tr>
+     <tr>
+     <td class="ft" rowspan="1" colspan="1">
+     
+      <p>注2）</p>
+      
+     
+     </td>
+     <td rowspan="1" colspan="1">
+     
+      <p><span class="index" id="d5e9095">熟語に付けるルビとの対応関係の指示方法</span>について，“凝視”を例に概念として示せば，次のようになろう．</p>
+      
+     
+<table class="t_sample">
+<tr><td class="ft">
+<p>モノルビの例）</p>
+
+</td>
+<td>
+<p>“凝＋（ぎよう）”“視＋（し）”</p>
+
+</td></tr>
+<tr><td class="ft">
+<p>熟語ルビの例1）</p>
+
+</td>
+<td>
+<p>“凝＋（ぎよう）視＋（し）”</p>
+
+</td></tr>
+<tr><td class="ft">
+<p>熟語ルビの例2）</p>
+
+</td>
+<td>
+<p>“（凝視）＋（ぎよう／し）”</p>
+
+</td></tr>
+</table>
+     </td>
+     </tr>
+     <tr>
+     <td class="ft" rowspan="1" colspan="1">
+     
+      <p>注3）</p>
+      
+     
+     </td>
+     <td rowspan="1" colspan="1">
+     
+      <p><a class="termref2nd" href="terminology.xhtml#term.compound-word">熟語</a>に付けるルビでは，書籍の場合は，熟語としてのまとまりを重視する配置方法が一般的である．ただし，コンピュータ組版の機械的な処理では，熟語としてのまとまりを重視する配置方法はむずかしく，そのような配置方法としない例も増えている．新聞などでも，熟語としてのまとまりを重視する配置方法にはしていない．なお，学習参考書などでは，個々の<a class="characterClass" href="cl-19.xhtml#cl-19">漢字等（cl-19）</a>の読み方を示すことが重要と考え，従来から個々の<a class="characterClass" href="cl-19.xhtml#cl-19">漢字等（cl-19）</a>の読み方を示すことを重視した配置方法としている．</p>
+      
+     
+     </td>
+     </tr>
+     <tr>
+     <td class="ft" rowspan="1" colspan="1">
+     
+      <p>注4）</p>
+      
+     
+     </td>
+     <td rowspan="1" colspan="1">
+     
+      <p><a class="termref2nd" href="terminology.xhtml#term.compound-word">熟語</a>としてのまとまりを重視する場合，<span class="index" id="d5e9243"><span class="index" id="d5e9244">複合語</span></span>のときは，その複合語全体を熟語1語として考えてルビを対応させる方法と，複合語を構成する熟語単位にルビを対応させる方法がある（<a class="figure_ref" href="ruby_and_emphasis_dots.xhtml#fig2_3_5-ja">図 3.53</a>）．<span class="index" id="d5e9250"><span class="index" id="d5e9251">氏名</span></span>の場合も姓名を一体としてルビを対応させる方法と，性と名を別の単位としてルビを対応させる方法がある．いずれにするかは編集方針による．</p>
+      
+     
+     </td>
+     </tr>
+</table>
+     
+      <div class="figure" id="fig2_3_5-ja"><div class="figure-float"><div><img alt="複合語に付けるルビの例" width="277" height="126" src="../image/Images-ja/img2_3_5.png"/><div class="figureCaption">図 3.53 <span class="caption-body">複合語に付けるルビの例</span></div></div></div></div>
+      
+     
+     
+<table class="t_note">
+     <tr>
+     <td class="ft" rowspan="1" colspan="1">
+     
+      <p>注5）</p>
+      
+     
+     </td>
+     <td rowspan="1" colspan="1">
+     
+      <p>熟語は，<a class="characterClass" href="cl-19.xhtml#cl-19">漢字等（cl-19）</a>の1文字ごとに音読み又は訓読みするケースが多いが，中には熟語をまとめて訓読みする場合がある（<span class="index" id="d5e9317"><span class="index" id="d5e9318">熟字訓</span></span>という）（<a class="figure_ref" href="ruby_and_emphasis_dots.xhtml#fig2_3_6-ja">図 3.54</a>）．この場合は，親文字である2文字又は3文字の<a class="characterClass" href="cl-19.xhtml#cl-19">漢字等（cl-19）</a>の文字列にルビをまとめて付ければよいので，<a class="characterClass" href="cl-19.xhtml#cl-19">漢字等（cl-19）</a>や<a class="characterClass" href="cl-15.xhtml#cl-15">平仮名（cl-15）</a>などの親文字に<a class="characterClass" href="cl-16.xhtml#cl-16">片仮名（cl-16）</a>で構成された言葉をルビとして付ける場合（<a class="figure_ref" href="ruby_and_emphasis_dots.xhtml#fig2_3_6_2-ja">図 3.55</a>）と同じである．</p>
+      
+     
+     </td>
+     </tr>
+    </table>
+     
+      <div class="figure" id="fig2_3_6-ja"><div class="figure-float"><div><img alt="熟字訓のルビの例" width="227" height="108" src="../image/Images-ja/img2_3_6.png"/><div class="figureCaption">図 3.54 <span class="caption-body">熟字訓のルビの例</span></div></div></div></div>
+      
+     
+     
+    
+    </li>
+    </ol>
+    </li>
+   </ol>
+   </li>
+					<li>
+   
+    <p><a class="characterClass" href="cl-19.xhtml#cl-19">漢字等（cl-19）</a>や<a class="characterClass" href="cl-15.xhtml#cl-15">平仮名（cl-15）</a>などの<span class="index" id="d5e9422"><span class="index" id="d5e9423">言葉（語）</span></span>に，ルビとして別な言葉を<a class="characterClass" href="cl-16.xhtml#cl-16">片仮名（cl-16）</a>で示す（読み方を示すのではなく，意味を示すルビを付けるということでもある）．<a class="characterClass" href="cl-19.xhtml#cl-19">漢字等（cl-19）</a>の1字の言葉に別の言葉を対応させる場合（例えば，“市”に“バザール”というルビを付ける）は，<a class="characterClass" href="cl-19.xhtml#cl-19">漢字等（cl-19）</a>の1字の読み方を示した場合（例えば，“市”に“いち”というルビを付ける）と同じように考えればよいが，2文字以上の<a class="characterClass" href="cl-19.xhtml#cl-19">漢字等（cl-19）</a>や<a class="characterClass" href="cl-15.xhtml#cl-15">平仮名（cl-15）</a>などの親文字列に<a class="characterClass" href="cl-16.xhtml#cl-16">片仮名（cl-16）</a>のルビを付ける場合は，個々の親文字とルビとの対応は問題とならず，親文字列全体に対してルビ文字列を対応させる必要がある．このケースで最も多い例は，親文字である<a class="characterClass" href="cl-19.xhtml#cl-19">漢字等（cl-19）</a>の熟語に対し，それとほぼ同じ意味の外来語である<a class="characterClass" href="cl-16.xhtml#cl-16">片仮名（cl-16）</a>で構成された言葉をルビとして示す場合である（<a class="figure_ref" href="ruby_and_emphasis_dots.xhtml#fig2_3_6_2-ja">図 3.55</a>）．翻訳が増大し，また片仮名語が増えていることから，このようなルビの使用例は多くなっている．このように2文字以上の親文字列全体にまとめて付けるルビ（ルビ文字列は<a class="characterClass" href="cl-16.xhtml#cl-16">片仮名（cl-16）</a>に限らない．<a class="figure_ref" href="ruby_and_emphasis_dots.xhtml#fig2_3_6-ja">図 3.54</a>及び<a class="figure_ref" href="ruby_and_emphasis_dots.xhtml#fig2_3_7-ja">図 3.56</a>）は，<span class="index" id="d5e9473"><a class="termref" href="terminology.xhtml#term.group-ruby">グループルビ</a></span>とよばれている．グループルビは，一体として扱い，2行に分割できない（<a class="termref2nd" href="terminology.xhtml#term.jukugo-ruby">熟語ルビ</a>は，親文字列の<a class="characterClass" href="cl-19.xhtml#cl-19">漢字等（cl-19）</a>の字間で2行に分割できる）．</p>
+    
+   
+   
+    <div id="fig2_3_6_2-ja" class="figure"><div class="figure-float"><div><img alt="漢字等の熟語に片仮名を付けたルビの例" width="317" height="147" src="../image/Images-ja/img2_3_6_2.png"/><div class="figureCaption">図 3.55 <span class="caption-body">漢字等の熟語に片仮名を付けたルビの例</span></div></div></div></div>
+    
+   
+   
+   <table class="t_note">
+    <tr>
+    <td class="ft" rowspan="1" colspan="1">
+     
+     <p>注1）</p>
+     
+     
+    </td>
+    <td rowspan="1" colspan="1">
+     
+     <p><a class="characterClass" href="cl-19.xhtml#cl-19">漢字等（cl-19）</a>の1字に対し，読み方を示すルビを付ける場合と，意味を示すルビを付ける場合の組版処理がまったく同じというわけではない．後述する<a class="termref" href="terminology.xhtml#term.katatsuki">肩付き</a>という方式を選んだ場合でも，意味を示すルビは<a class="termref" href="terminology.xhtml#term.nakatsuki">中付き</a>にするという考え方もある．</p>
+     
+     
+    </td>
+    </tr>
+   </table>
+   
+   </li>
+					<li>
+   
+    <p>親文字である<span class="index" id="d5e9635"><span class="index" id="d5e9636">欧文の単語</span></span>の読み方又は意味を示す言葉（一般に<a class="characterClass" href="cl-16.xhtml#cl-16">片仮名（cl-16）</a>）をルビとして付ける（<a class="figure_ref" href="ruby_and_emphasis_dots.xhtml#fig2_3_7-ja">図 3.56</a>）．逆に親文字である<a class="characterClass" href="cl-19.xhtml#cl-19">漢字等（cl-19）</a>や<a class="characterClass" href="cl-15.xhtml#cl-15">平仮名（cl-15）</a>などの言葉に，それと同じ意味を示す欧文の単語をルビとして付ける（<a class="figure_ref" href="ruby_and_emphasis_dots.xhtml#fig2_3_7-ja">図 3.56</a>）．この例は，aやbに比べると使用例は少ないが，学習参考書，翻訳書，旅行案内などではよく利用されている．</p>
+    
+   
+   
+    <div class="figure" id="fig2_3_7-ja"><div class="figure-float"><div><img alt="親文字又はルビが欧文の単語の例" width="250" height="185" src="../image/Images-ja/img2_3_7.png"/><div class="figureCaption">図 3.56 <span class="caption-body">親文字又はルビが欧文の単語の例</span></div></div></div></div>
+    
+   
+   
+				<table class="t_note">
+					<tr>
+						<td class="ft" rowspan="1" colspan="1">
+							
+								<p>注1）</p>
+								
+							
+						</td>
+						<td rowspan="1" colspan="1">
+							
+								<p>親文字としての複数の欧字の文字列に<a class="characterClass" href="cl-16.xhtml#cl-16">片仮名（cl-16）</a>若しくは<a class="characterClass" href="cl-15.xhtml#cl-15">平仮名（cl-15）</a>のルビを付ける又は複数の<a class="characterClass" href="cl-19.xhtml#cl-19">漢字等（cl-19）</a>や<a class="characterClass" href="cl-15.xhtml#cl-15">平仮名（cl-15）</a>の親文字列に欧字のルビを付ける処理は，bと同様に親文字列全体にまとめてルビを対応させるという点では同じである．しかし，親文字とルビの文字列の長さが同じでないときは，詳細は<a class="sec_ref" href="adjustments_of_ruby_with_length_longer_than_that_of_the_base_characters.xhtml#adjustments_of_ruby_with_length_longer_than_that_of_the_base_characters">3.3.8 ルビが親文字よりはみ出した場合の処理</a>で解説するが，親文字及びルビが<a class="characterClass" href="cl-19.xhtml#cl-19">漢字等（cl-19）</a>，<a class="characterClass" href="cl-15.xhtml#cl-15">平仮名（cl-15）</a>又は<a class="characterClass" href="cl-16.xhtml#cl-16">片仮名（cl-16）</a>の場合は，その字間を空けて長さのバランスをとる処理を一般に行う（<a class="figure_ref" href="ruby_and_emphasis_dots.xhtml#fig2_3_6_2-ja">図 3.55</a>）．これに対し，親文字又はルビが欧文の単語の場合は，親文字とルビの文字列の長さが不ぞろいであっても，親文字列の欧字又はルビ文字列の欧字は，それぞれの文字の固有の字幅に応じて配置し字間は空けない，という違いがある（<a class="figure_ref" href="ruby_and_emphasis_dots.xhtml#fig2_3_7-ja">図 3.56</a>）．</p>
+								
+							
+						</td>
+					</tr>
+				</table>
+				
+   </li>
+					<li>
+   
+    <p>親文字である<a class="characterClass" href="cl-15.xhtml#cl-15">平仮名（cl-15）</a>などにルビとして<a class="characterClass" href="cl-19.xhtml#cl-19">漢字等（cl-19）</a>を付ける（<span class="index" id="d5e9829"><a class="termref" href="terminology.xhtml#term.furikanji">振り漢字</a></span>という）．この使用例は非常に少ない．</p>
+    
+   
+   </li>
+				</ol><p> 以下では，主にa，bのルビの組版処理について解説する．</p></body></html>

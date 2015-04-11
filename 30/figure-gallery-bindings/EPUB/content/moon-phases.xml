@@ -1,0 +1,70 @@
+<figureGalleryData>
+	<figures>
+		<figure id='fig1'>
+			<img src='../images/moon-images/1.new-moon.jpg'/>
+			<figcaption>
+				<h2>New Moon</h2>
+				<p>By the modern definition, New Moon occurs when the Moon and Sun are at the same geocentric ecliptic longitude. The part of the Moon facing us is completely in shadow then. Pictured here is the traditional New Moon, the earliest visible waxing crescent, which signals the start of a new month in many lunar and lunisolar calendars.</p>
+			</figcaption>
+		</figure>			
+		<figure id='fig2'>
+			<img src='../images/moon-images/2.waxing-crescent.jpg' />
+			<figcaption>
+				<h2>Waxing Crescent</h2>
+				<p>Visible toward the southwest in early evening.</p>
+			</figcaption>
+		</figure>
+		<figure id='fig3'>
+			<img src='../images/moon-images/3.first-quarter.jpg' />
+			<figcaption>
+				<h2>First Quarter</h2>
+				<p>Visible high in the southern sky in early evening.</p>
+			</figcaption>
+		</figure>
+		<figure id='fig4'>
+			<img src='../images/moon-images/4.waxing-gibbous.jpg' />
+			<figcaption>
+				<h2>Waxing Gibbous</h2>
+				<p>Visible to the southeast in early evening, up for most of the night.</p>
+			</figcaption>
+		</figure>
+		<figure id='fig5'>
+			<img src='../images/moon-images/5.full-moon.jpg' />
+			<figcaption>
+				<h2>Full Moon</h2>
+				<p>Rises at sunset, high in the sky around midnight. Visible all night.</p>
+			</figcaption>
+		</figure>
+		<figure id='fig6'>
+			<img src='../images/moon-images/6.waning-gibbous.jpg' />
+			<figcaption>
+				<h2>Waning Gibbous</h2>
+				<p>Rises after sunset, high in the sky after midnight, visible to the southwest after sunrise.</p>
+			</figcaption>
+		</figure>
+		<figure id='fig7'>
+			<img src='../images/moon-images/7.third-quarter.jpg' />
+			<figcaption>
+				<h2>Third Quarter</h2>
+				<p>Rises around midnight, visible to the south after sunrise.</p>
+			</figcaption>
+		</figure>
+		<figure id='fig8'>
+			<img src='../images/moon-images/8.waning-crescent.jpg' />
+			<figcaption>
+				<h2>Waning Crescent</h2>
+				<p>Low to the east before sunrise.</p>
+			</figcaption>
+		</figure>
+	</figures>
+	<thumbnails>
+		<thumbnail src='../images/moon-images/1.new-moon-thumb.jpg' ref='fig1' title='New Moon'/>
+		<thumbnail src='../images/moon-images/2.waxing-crescent-thumb.jpg' ref='fig2' title='Waxing Crescent'/>
+		<thumbnail src='../images/moon-images/3.first-quarter-thumb.jpg' ref='fig3' title='First Quarter'/>
+		<thumbnail src='../images/moon-images/4.waxing-gibbous-thumb.jpg' ref='fig4' title='Waxing Gibbous'/>
+		<thumbnail src='../images/moon-images/5.full-moon-thumb.jpg' ref='fig5' title='Full Moon'/>
+		<thumbnail src='../images/moon-images/6.waning-gibbous-thumb.jpg' ref='fig6' title='Waning Gibbous'/>
+		<thumbnail src='../images/moon-images/7.third-quarter-thumb.jpg' ref='fig7' title='Third Quarter'/>
+		<thumbnail src='../images/moon-images/8.waning-crescent-thumb.jpg' ref='fig8' title='Waning Crescent'/>
+	</thumbnails>
+</figureGalleryData>

@@ -1,0 +1,30 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"><head><meta charset="UTF-8"/><title>Requirements for Japanese Text Layout</title><link rel="stylesheet" type="text/css" href="../css/base.css"/><link rel="stylesheet" type="text/css" href="../css/W3C-WG-NOTE.css"/></head><body><h4 id="procedures_for_intercharacter_space_expansion">3.8.4 <span class="heading"><span class="index" id="en-subheading2_8_4">Procedures for Inter-Character Space Expansion</span></span></h4><p>As with line adjustment by inter-character space reduction, for line adjustment by inter-character space expansion at first
+            the order of processing and the maximum amount of space to be added are defined. In JIS X 4051, the following processing order
+            is defined.
+          </p><ol>
+					<li>
+					<p><a class="characterClass" href="cl-26.xhtml#cl-26">Western word space (cl-26)</a>, which is usually one third em, is added equally with proportional character size up to a maximum of a half em size for each space.</p></li>
+					<li>
+					<p>The quarter em space between Japanese text (<a class="characterClass" href="cl-15.xhtml#cl-15">hiragana (cl-15)</a>, <a class="characterClass" href="cl-16.xhtml#cl-16">katakana (cl-16)</a> and <a class="characterClass" href="cl-19.xhtml#cl-19">ideographic characters (cl-19)</a>) and Latin script text (<a class="characterClass" href="cl-24.xhtml#cl-24">grouped numerals (cl-24)</a>, <a class="characterClass" href="cl-27.xhtml#cl-27">Western characters (cl-27)</a> and <a class="characterClass" href="cl-25.xhtml#cl-25">unit symbols (cl-25)</a>) is increased equally
+               with proportional character size, up to half em space (or <a class="termref" href="terminology.xhtml#term.one-third-em-space">one third em space</a>).</p><table class="t_note"><tr><td class="ft" rowspan="1" colspan="1">
+               <p>(note 1)</p></td><td rowspan="1" colspan="1">
+               
+               <p>Like with inter-character space reduction, there are also examples there the quarter em space between Japanese text (<a class="characterClass" href="cl-15.xhtml#cl-15">hiragana (cl-15)</a>, <a class="characterClass" href="cl-16.xhtml#cl-16">katakana (cl-16)</a> and <a class="characterClass" href="cl-19.xhtml#cl-19">ideographic characters (cl-19)</a>) and Latin
+                    script text (<a class="characterClass" href="cl-27.xhtml#cl-27">Western characters (cl-27)</a>, <a class="characterClass" href="cl-24.xhtml#cl-24">grouped numerals (cl-24)</a> and <a class="characterClass" href="cl-25.xhtml#cl-25">unit symbols (cl-25)</a>) is regarded as a fixed space size, and space
+                    adaptation is not applied.
+                 </p></td></tr></table></li>
+					<li>
+              <p>For places which do not fall under (a) or (b) and which do not have
+the inseparable character rule (bunrikinshi), space is added equally with proportional character size up to a quarter em space.</p></li>
+					<li>
+					<p>In addition to the adaptation in the manner of (a), (b) and (c), in cases where such processing is not possible, space is added
+               equally with proportional character size, with the exception of places which require the inseparable character rule (bunrikinshi).
+             </p><table class="t_note"><tr><td class="ft" rowspan="1" colspan="1">
+              <p>(note 1)</p></td><td rowspan="1" colspan="1">
+              
+              <p>JIS X 4051 provides a definition in addition to (d). This says that it depends on each layout processing system whether inter-character space should be added equally. This includes the space between <a class="characterClass" href="cl-27.xhtml#cl-27">Western characters (cl-27)</a>.
+                 </p></td></tr><tr><td class="ft" rowspan="1" colspan="1">
+                  <p>(note 2)</p></td><td rowspan="1" colspan="1">
+                  
+                  <p>The detail of the places where space expansion is possible for line adjustment is described in <a class="sec_ref" href="opportunities_for_intercharacter_space_expansion_during_line_adjustment.xhtml#opportunities_for_intercharacter_space_expansion_during_line_adjustment">Appendix E Opportunities for  Inter-character Space Expansion during Line Adjustment</a> as a complete table, in accordance with the concept of character class in <a class="sec_ref" href="about_character_classes.xhtml#about_character_classes">3.9 About Character Classes</a>.</p></td></tr></table></li>
+				</ol></body></html>

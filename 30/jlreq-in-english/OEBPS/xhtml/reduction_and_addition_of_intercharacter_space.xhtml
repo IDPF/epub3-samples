@@ -1,0 +1,51 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"><head><meta charset="UTF-8"/><title>Requirements for Japanese Text Layout</title><link rel="stylesheet" type="text/css" href="../css/base.css"/><link rel="stylesheet" type="text/css" href="../css/W3C-WG-NOTE.css"/></head><body><h4 id="reduction_and_addition_of_intercharacter_space">3.8.2 <span class="heading"><span class="index" id="en-subheading2_8_2">Reduction and Addition of Inter-Character Space</span></span></h4><p>Line adjustment processing targets places with a predefined space size  or solid setting. Methods for line adjustment are as follows.</p><ol>
+					<li>
+					<p><a class="termref" href="terminology.xhtml#term.line-adjustment-by-inter-character-space-reduction">Line adjustment by inter-character space reduction</a>. This means that a <a class="termref" href="terminology.xhtml#term.half-em-space">half em space</a> is reduced after <a class="characterClass" href="cl-07.xhtml#cl-07">commas (cl-07)</a> or <a class="characterClass" href="cl-02.xhtml#cl-02">closing brackets (cl-02)</a>, or before <a class="characterClass" href="cl-01.xhtml#cl-01">opening brackets (cl-01)</a>, and <a class="characterClass" href="cl-26.xhtml#cl-26">Western word space (cl-26)</a> is reduced
+within a defined limit.</p></li>
+					<li>
+              <p><a class="termref" href="terminology.xhtml#term.line-adjustment-by-inter-character-space-expansion">Line adjustment by inter-character space expansion</a>. Line adjustment by inter-character space expansion means expanding inter-character space for line adjustment, where inter-character space is allowed to be extended up to a defined limit, such as for <a class="characterClass" href="cl-26.xhtml#cl-26">Western word space (cl-26)</a> or other places where it is not prohibited to extend inter-character space.</p></li>
+				</ol><p>Normally line adjustment by inter-character space reduction is preferred. Only when there are no spaces that can be reduced is line adjustment by inter-character
+            space expansion applied. The reason for the preference of line adjustment by inter-character space reduction comes from
+            the thinking that characters in solid setting should not have more inter character space, if at all possible.</p><table class="t_note">
+					<tr>
+						<td class="ft" rowspan="1" colspan="1">
+							
+								
+								<p>(note 1)</p>
+							
+						</td>
+						<td rowspan="1" colspan="1">
+							
+								
+								<p><a class="termref" href="terminology.xhtml#term.line-adjustment-by-hanging-punctuation">Line adjustment by hanging punctuation</a> is a method of avoiding line head wrap of <a class="characterClass" href="cl-06.xhtml#cl-06">full stops (cl-06)</a> and <a class="characterClass" href="cl-07.xhtml#cl-07">commas (cl-07)</a>. This method is not formally defined in JIS X 4051, however JIS
+ X 4051 does provide explanatory material about it.
+</p>
+							
+							
+								
+								<p><a class="termref" href="terminology.xhtml#term.line-adjustment-by-hanging-punctuation">Line adjustment by hanging punctuation</a> is a method which is only applied to <a class="characterClass" href="cl-06.xhtml#cl-06">full stops (cl-06)</a> and <a class="characterClass" href="cl-07.xhtml#cl-07">commas (cl-07)</a>. These touch the <a class="termref" href="terminology.xhtml#term.hanmen">hanmen</a> and
+ are set in  a place outside the defined line length (see <a class="figure_ref" href="reduction_and_addition_of_intercharacter_space.xhtml#fig2_54-en">Fig. 3.127</a>). This is also applied, for example, in books, in order to avoid the addition of inter character space and maintain  solid setting. However,
+                 line adjustment by hanging punctuation is not an appropriate method for dealing with a mixture of Japanese and Latin script text, since the latter principally does not apply line adjustment by hanging punctuation. In addition, there is another argument against
+                 line adjustment by hanging punctuation. Originally it was a method used in letterpress printing, to make the task of line
+                 adjustment easier. Furthermore, as shown at the end of line 1 and 5 of <a class="figure_ref" href="reduction_and_addition_of_intercharacter_space.xhtml#fig2_54-en">Fig. 3.127</a>, if possible the <a class="characterClass" href="cl-06.xhtml#cl-06">full stops (cl-06)</a> or <a class="characterClass" href="cl-07.xhtml#cl-07">commas (cl-07)</a> are placed at the line end (the 18th position). In DTP there are examples of hanging punctuation
+ like in line 3, but this may be regarded as unnecessary processing.
+</p>
+							
+						</td>
+					</tr>
+</table><div class="figure" id="fig2_54-en"><div class="figure-float"><div><img alt="Examples of line adjustment by hanging punctuation." width="407" height="455" src="../image/Images-en/img2_54.png"/><div class="figureCaption">Fig. 3.127: <span class="caption-body">Examples of line adjustment by hanging punctuation.</span></div></div></div></div><table class="t_note">
+					<tr>
+						<td class="ft" rowspan="1" colspan="1">
+							
+								
+								<p>(note 2)</p>
+							
+						</td>
+						<td rowspan="1" colspan="1">
+							
+							
+							<p>The processing mentioned here that the value of Western word spaces are reduced or added between indicated range is only applicable for the cases that Western texts are inserted into the Japanese texts in common Japanese books. In general, the value of <a class="characterClass" href="cl-26.xhtml#cl-26">Western word space (cl-26)</a> shall be decided with the consideration of the kind of typeface, font size and the value of line gap. In Western typography, there is a method to decide only the minimum word space value (ex. a fourth em) and add appropriate space values, not using space reduction.</p>
+							
+						</td>
+					</tr>
+				</table></body></html>

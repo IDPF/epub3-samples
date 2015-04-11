@@ -1,0 +1,806 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"><head><meta charset="UTF-8"/><title>Requirements for Japanese Text Layout</title><link rel="stylesheet" type="text/css" href="../css/base.css"/><link rel="stylesheet" type="text/css" href="../css/W3C-WG-NOTE.css"/></head><body><h4 id="grouping_of_characters_and_symbols_depending_on_their_positioning">3.9.2 <span class="heading"><span class="index" id="en-subheading2_9_2">Grouping of Characters and Symbols depending on their Positioning</span></span></h4><p>During layout processing, the issues mentioned in the previous section are addressed by grouping characters and symbols according
+            to their characteristics, and handling them as character classes.
+          </p><p>JIS X 4051 also provides similar  character classes but that are slightly different from this document. Furthermore JIS X 4051 states that it is implementation-defined how to handle characters that are not explicitly mentioned, e.g. whether they should belong to either class or not.
+          </p><table class="t_note">
+					<tr>
+						<td class="ft" rowspan="1" colspan="1">
+							
+								
+								<p>(note 1)</p>
+							
+						</td>
+						<td rowspan="1" colspan="1">
+							
+								
+								<p>In JIS X 4051 Annex 1, the member  characters and symbols of each character class are specified as a mapping table to JIS X 0213 character names.</p>
+							
+						</td>
+					</tr>
+				</table><p>A few character classes of this document are modified from JIS X 4051. In <a class="sec_ref" href="character_classes.xhtml#character_classes">Appendix A Character Classes</a>, there is a whole mapping table to ISO/IEC 10646 Annex A collection 285 (BASIC JAPANESE) and collection 286 (JAPANESE NON IDEOGRAPHIC EXTENSION). All character classes of this document are as follows:</p><ol class="decimal">
+					<li>
+				
+					
+					<p id="cl-01-en">Opening brackets (cl-01)</p>
+				
+<table class="t_sample">
+<tr><td class="ft">
+
+<p>Example:</p>
+</td>
+<td>
+
+<p class="asis">‘“（〔［｛〈《「『【</p>
+</td>
+<td>
+
+<p>etc.</p>
+</td></tr>
+</table>
+</li>
+					<li>
+				
+					
+					<p id="cl-02-en">Closing brackets (cl-02)</p>
+				
+<table class="t_sample">
+<tr><td class="ft">
+
+<p>Example:</p>
+</td>
+<td>
+
+<p class="asis">’”）〕］｝〉》」』】</p>
+</td>
+<td>
+
+<p>etc.</p>
+</td></tr>
+</table>
+				<table class="t_note">
+					<tr>
+						<td class="ft" rowspan="1" colspan="1">
+							
+								
+								<p>(note 1)</p>
+							
+						</td>
+						<td rowspan="1" colspan="1">
+							
+								
+								<p>In JIS X 4051, <span class="character">IDEOGRAPHIC COMMA "、"</span> and <span class="character">COMMA ","</span> are classified as <a class="characterClass" href="cl-02.xhtml#cl-02">closing brackets (cl-02)</a>, because they have similar positioning methods. However, in this document, the handling of <span class="character">IDEOGRAPHIC COMMA "、"</span> and <span class="character">COMMA ","</span>
+               are described as an independent class, named <a class="characterClass" href="cl-07.xhtml#cl-07">commas (cl-07)</a>.</p>
+							
+						</td>
+					</tr>
+				</table>
+</li>
+					<li>
+				
+					
+					<p id="cl-03-en">Hyphens (cl-03)</p>
+				
+<table class="t_sample">
+<tr><td class="ft">
+
+<p>Example:</p>
+</td>
+<td>
+
+<p class="asis">‐〜</p>
+</td>
+<td>
+
+<p>etc.</p>
+</td></tr>
+</table>
+</li>
+					<li>
+				
+					
+					<p id="cl-04-en">Dividing punctuation marks (cl-04)</p>
+				
+<table class="t_sample">
+<tr><td class="ft">
+
+<p>Example:</p>
+</td>
+<td>
+
+<p class="asis">？！</p>
+</td>
+<td>
+
+<p>etc.</p>
+</td></tr>
+</table>
+</li>
+					<li>
+				
+					
+					<p id="cl-05-en">Middle dots (cl-05)</p>
+				
+<table class="t_sample">
+<tr><td class="ft">
+
+<p>Example:</p>
+</td>
+<td>
+
+<p class="asis">・：；</p>
+</td>
+</tr>
+</table>
+</li>
+					<li>
+				
+					
+					<p id="cl-06-en">Full stops (cl-06)</p>
+				
+<table class="t_sample">
+<tr><td class="ft">
+
+<p>Example:</p>
+</td>
+<td>
+
+<p class="asis">。．</p>
+</td>
+</tr>
+</table>
+</li>
+					<li>
+				
+					
+					<p id="cl-07-en">Commas (cl-07)</p>
+				
+<table class="t_sample">
+<tr><td class="ft">
+
+<p>Example:</p>
+</td>
+<td>
+
+<p class="asis">、，</p>
+</td>
+</tr>
+</table>
+</li>
+					<li>
+				
+					
+					<p id="cl-08-en">Inseparable characters (cl-08)</p>
+				
+<table class="t_sample">
+<tr><td class="ft">
+
+<p>Example:</p>
+</td>
+<td>
+
+<p class="asis">—…‥</p>
+</td>
+<td>
+
+<p>etc.</p>
+</td></tr>
+</table>
+</li>
+					<li>
+				
+					
+					<p id="cl-09-en">Iteration marks (cl-09)</p>
+				
+<table class="t_sample">
+<tr><td class="ft">
+
+<p>Example:</p>
+</td>
+<td>
+
+<p class="asis">ヽヾゝゞ々</p>
+</td>
+<td>
+
+<p>etc.</p>
+</td></tr>
+</table>
+				<table class="t_note">
+					<tr>
+						<td class="ft" rowspan="1" colspan="1">
+							
+								
+								<p>(note 1)</p>
+							
+						</td>
+						<td rowspan="1" colspan="1">
+							
+								
+								<p>In JIS X 4051, iteration marks such as <span class="character">IDEOGRAPHIC ITERATION MARK "々"</span> are classified as "no line break allowed before" characters. In this document, <span class="character">IDEOGRAPHIC ITERATION MARK "々"</span> etc. are classified as <a class="characterClass" href="cl-09.xhtml#cl-09">iteration marks (cl-09)</a>.</p>
+							
+						</td>
+					</tr>
+					<tr>
+						<td class="ft" rowspan="1" colspan="1">
+							
+								
+								<p>(note 2)</p>
+							
+						</td>
+						<td rowspan="1" colspan="1">
+							
+								
+								<p>There is another method where it is permitted to  break a line before <span class="character">IDEOGRAPHIC ITERATION MARK "々"</span>. In this case, <span class="character">IDEOGRAPHIC ITERATION MARK "々"</span> is regarded as a member of <a class="characterClass" href="cl-19.xhtml#cl-19">ideographic characters (cl-19)</a>.</p>
+							
+						</td>
+					</tr>
+				</table>
+</li>
+					<li>
+				
+					
+					<p id="cl-10-en">Prolonged sound marks (cl-10)</p>
+				
+<table class="t_sample">
+<tr><td class="ft">
+
+<p>Example:</p>
+</td>
+<td>
+
+<p class="asis">ー</p>
+</td>
+</tr>
+</table>
+				<table class="t_note">
+					<tr>
+						<td class="ft" rowspan="1" colspan="1">
+							
+								
+								<p>(note 1)</p>
+							
+						</td>
+						<td rowspan="1" colspan="1">
+							
+								
+								<p>In JIS X 4051, <span class="character">KATAKANA-HIRAGANA PROLONGED SOUND MARK "ー"</span> is a member of "Japanese characters with no line break allowed before". In this document <span class="character">KATAKANA-HIRAGANA PROLONGED SOUND MARK "ー"</span> is the only  member of <a class="characterClass" href="cl-10.xhtml#cl-10">prolonged sound mark (cl-10)</a>.</p>
+							
+						</td>
+					</tr>
+					<tr>
+						<td class="ft" rowspan="1" colspan="1">
+							
+								
+								<p>(note 2)</p>
+							
+						</td>
+						<td rowspan="1" colspan="1">
+							
+								
+								<p>In JIS X 4051, it is permitted to exclude <span class="character">KATAKANA-HIRAGANA PROLONGED SOUND MARK "ー"</span> from the "Japanese characters with no line break allowed before" character class.</p>
+							
+						</td>
+					</tr>
+					<tr>
+						<td class="ft" rowspan="1" colspan="1">
+							
+								
+								<p>(note 3)</p>
+							
+						</td>
+						<td rowspan="1" colspan="1">
+							
+								
+								<p>When it is permitted to break a line before <span class="character">KATAKANA-HIRAGANA PROLONGED SOUND MARK "ー"</span>, <span class="character">KATAKANA-HIRAGANA PROLONGED SOUND MARK "ー"</span> is regarded as a member of the <a class="characterClass" href="cl-16.xhtml#cl-16">katakana (cl-16)</a> class.</p>
+							
+						</td>
+					</tr>
+				</table>
+</li>
+					<li>
+				
+					
+					<p id="cl-11-en">Small kana (cl-11)</p>
+				
+<table class="t_sample">
+<tr><td class="ft">
+
+<p>Example:</p>
+</td>
+<td>
+
+<p class="asis">ぁぃぅぇぉァィゥェォっゃゅょッャュョ</p>
+</td>
+<td>
+
+<p>etc.</p>
+</td></tr>
+</table>
+				<table class="t_note">
+					<tr>
+						<td class="ft" rowspan="1" colspan="1">
+							
+								
+								<p>(note 1)</p>
+							
+						</td>
+						<td rowspan="1" colspan="1">
+							
+								
+								<p>In JIS X 4051, small katakana letters, such as <span class="character">KATAKANA LETTER SMALL TU "ッ"</span>, are regarded as members of "Japanese characters with no line break allowed before" character class. In this document, small katakana letters are classified in <a class="characterClass" href="cl-11.xhtml#cl-11">small kana (cl-11)</a>. Accordingly, the "Japanese characters with no line break allowed before" character class in JIS X 4051 is divided to three separate classes; <a class="characterClass" href="cl-09.xhtml#cl-09">iteration marks (cl-09)</a>, <a class="characterClass" href="cl-10.xhtml#cl-10">prolonged sound mark (cl-10)</a> and <a class="characterClass" href="cl-11.xhtml#cl-11">small kana (cl-11)</a>.</p>
+							
+						</td>
+					</tr>
+					<tr>
+						<td class="ft" rowspan="1" colspan="1">
+							
+								
+								<p>(note 2)</p>
+							
+						</td>
+						<td rowspan="1" colspan="1">
+							
+								
+								<p>In JIS X 4051, it is permitted to exclude <a class="termref" href="terminology.xhtml#term.small-kana">small kana</a> letters (ぁぃぅァィゥ etc.) from the "Japanese characters with no line break allowed before" character class as an implementation definable option.</p>
+							
+						</td>
+					</tr>
+					<tr>
+						<td class="ft" rowspan="1" colspan="1">
+							
+								
+								<p>(note 3)</p>
+							
+						</td>
+						<td rowspan="1" colspan="1">
+							
+								
+								<p>When it is permitted to break a line before small hiragana (ぁぃぅ etc.) are regarded as members of the <a class="characterClass" href="cl-15.xhtml#cl-15">hiragana (cl-15)</a> class, and small katakana (ァィゥ etc.) are regarded as members of the <a class="characterClass" href="cl-16.xhtml#cl-16">katakana (cl-16)</a> class.</p>
+							
+						</td>
+					</tr>
+				</table>
+</li>
+					<li>
+				
+					
+					<p id="cl-12-en">Prefixed abbreviations (cl-12)</p>
+				
+<table class="t_sample">
+<tr><td class="ft">
+
+<p>Example:</p>
+</td>
+<td>
+
+<p class="asis">￥＄￡＃</p>
+</td>
+<td>
+
+<p>etc.</p>
+</td></tr>
+</table>
+</li>
+					<li>
+				
+					
+					<p id="cl-13-en">Postfixed abbreviations (cl-13)</p>
+				
+<table class="t_sample">
+<tr><td class="ft">
+
+<p>Example:</p>
+</td>
+<td>
+
+<p class="asis">°′″℃￠％‰</p>
+</td>
+<td>
+
+<p>etc.</p>
+</td></tr>
+</table>
+</li>
+					<li>
+				
+					
+					<p id="cl-14-en">Full-width ideographic space (cl-14)</p>
+				
+<table class="t_sample">
+<tr><td class="ft">
+
+<p>Example:</p>
+</td>
+<td>
+
+<p>U+3000 IDEOGRAPHIC SPACE</p>
+</td>
+</tr>
+</table>
+</li>
+					<li>
+				
+					
+					<p id="cl-15-en">Hiragana (cl-15)</p>
+				
+<table class="t_sample">
+<tr><td class="ft">
+
+<p>Example:</p>
+</td>
+<td>
+
+<p class="asis">あいうえおかがきぎ</p>
+</td>
+<td>
+
+<p>etc.</p>
+</td></tr>
+</table>
+				<table class="t_note">
+					<tr>
+						<td class="ft" rowspan="1" colspan="1">
+							
+								
+								<p>(note 1)</p>
+							
+						</td>
+						<td rowspan="1" colspan="1">
+							
+								
+								<p>The reason kanji etc. (Japanese characters except 1. to 12.) and hiragana are regarded different classes in JIS X 4051, is the difference in the case of <a class="termref" href="terminology.xhtml#term.ruby">ruby</a>, and specifically the handling in terms of characters jutting out of the base and overhanging adjacent characters.</p>
+							
+						</td>
+					</tr>
+				</table>
+</li>
+					<li>
+				
+					
+					<p id="cl-16-en">Katakana (cl-16)</p>
+				
+<table class="t_sample">
+<tr><td class="ft">
+
+<p>Example:</p>
+</td>
+<td>
+
+<p class="asis">アイウエオカガキギ</p>
+</td>
+<td>
+
+<p>etc.</p>
+</td></tr>
+</table>
+				<table class="t_note">
+					<tr>
+						<td class="ft" rowspan="1" colspan="1">
+							
+								
+								<p>(note 1)</p>
+							
+						</td>
+						<td rowspan="1" colspan="1">
+							
+								
+								<p>In JIS X 4051, katakana and kanji are included in the same class (Japanese characters except for 1. to 12.). However, in this document,  when ruby characters jut out of the base characters and overhang adjacent hiragana or katakana, the handling is same. That is the reason that in this document, <a class="characterClass" href="cl-16.xhtml#cl-16">katakana (cl-16)</a> is an independent character class.</p>
+							
+						</td>
+					</tr>
+				</table>
+</li>
+					<li>
+				
+					
+					<p id="cl-17-en">Math symbols (cl-17)</p>
+				
+<table class="t_sample">
+<tr><td class="ft">
+
+<p>Example:</p>
+</td>
+<td>
+
+<p class="asis">＝≠＜＞≦≧⊆⊇∪∩</p>
+</td>
+<td>
+
+<p>etc.</p>
+</td></tr>
+</table>
+				<table class="t_note">
+					<tr>
+						<td class="ft" rowspan="1" colspan="1">
+							
+								
+								<p>(note 1)</p>
+							
+						</td>
+						<td rowspan="1" colspan="1">
+							
+								
+								<p>In JIS X 4051, math symbols (＋－÷×etc.) and math operators (＝≠＜＞≦≧⊆⊇∪∩etc.) are included in the "Japanese characters excluded from 1. to 12." class or Western character class. However, handling of math symbols and math operators adjacent to Western character or Arabic numerals is different from kanji. So, in this document, new <a class="characterClass" href="cl-18.xhtml#cl-18">math operators (cl-18)</a> and <a class="characterClass" href="cl-17.xhtml#cl-17">math symbols (cl-17)</a> classes are defined.</p>
+							
+						</td>
+					</tr>
+					<tr>
+						<td class="ft" rowspan="1" colspan="1">
+							
+								
+								<p>(note 2)</p>
+							
+						</td>
+						<td rowspan="1" colspan="1">
+							
+								
+								<p>From mathematical view point, "∪∩∧∨⊕⊗" are included in <a class="characterClass" href="cl-18.xhtml#cl-18">math operators (cl-18)</a>, however, in this document, these symbols are included in <a class="characterClass" href="cl-17.xhtml#cl-17">math symbols (cl-17)</a> because these symbols are traditionally considered to behave in the same way as other Math symbols.</p>
+							
+						</td>
+					</tr>
+				</table>
+</li>
+					<li>
+				
+					
+					<p id="cl-18-en">Math operators (cl-18)</p>
+				
+<table class="t_sample">
+<tr><td class="ft">
+
+<p>Example:</p>
+</td>
+<td>
+
+<p class="asis">＋－÷×</p>
+</td>
+<td>
+
+<p>etc.</p>
+</td></tr>
+</table>
+</li>
+					<li>
+				
+					
+					<p id="cl-19-en">Ideographic characters (cl-19)</p>
+				
+<table class="t_sample">
+<tr><td class="ft">
+
+<p>Example:</p>
+</td>
+<td>
+
+<p class="asis">亜唖娃阿哀愛挨〃仝〆♂♀</p>
+</td>
+<td>
+
+<p>etc.</p>
+</td></tr>
+</table>
+				<table class="t_note">
+					<tr>
+						<td class="ft" rowspan="1" colspan="1">
+							
+								
+								<p>(note 1)</p>
+							
+						</td>
+						<td rowspan="1" colspan="1">
+							
+								
+								<p>In JIS X 4051, corresponding character class for <a class="characterClass" href="cl-19.xhtml#cl-19">ideographic characters (cl-19)</a> is "Japanese characters excluded from 1. to 12.".</p>
+							
+						</td>
+					</tr>
+				</table>
+</li>
+					<li>
+				
+					
+					<p id="cl-20-en">Characters as reference marks (cl-20)</p>
+				
+				
+					
+					<p>Characters which are inside verification seal (those are characters inside a verification seal that appear in the line just after the item applicable for <a class="termref" href="terminology.xhtml#term.reference-marks">reference marks</a> of <a class="termref" href="terminology.xhtml#term.note">notes</a>). See <a class="sec_ref" href="note_numbers.xhtml#note_numbers">4.2.2 Note Numbers</a>.</p>
+				
+</li>
+					<li>
+				
+					
+					<p id="cl-21-en">Ornamented character complexes (cl-21)</p>
+				
+				<table class="t_note">
+					<tr>
+						<td class="ft" rowspan="1" colspan="1">
+							
+								
+								<p>(note 1)</p>
+							
+						</td>
+						<td rowspan="1" colspan="1">
+							
+								
+								<p>The name of this class in JIS X 4051 is "Characters included in ornamented base characters complex". The meaning of "base characters complex" is characters in a complex including ruby, <a class="termref" href="terminology.xhtml#term.ornament-characters">ornament characters</a> and <a class="termref" href="terminology.xhtml#term.emphasis-dots">emphasis dots</a>.</p>
+							
+						</td>
+					</tr>
+				</table>
+</li>
+					<li>
+				
+					
+					<p id="cl-22-en">Simple-ruby character complexes (cl-22)</p>
+				
+
+				<table class="t_note">
+					<tr>
+						<td class="ft" rowspan="1" colspan="1">
+							
+								
+								<p>(note 1)</p>
+							
+						</td>
+						<td rowspan="1" colspan="1">
+							
+								
+								<p>The name of this class in JIS X 4051 is "Characters included in base characters complex with ruby (excluding jukugo-ruby)".</p>
+							
+						</td>
+					</tr>
+				</table>
+</li>
+					<li>
+				
+					
+					<p id="cl-23-en">Jukugo-ruby character complexes (cl-23)</p>
+				
+				<table class="t_note">
+					<tr>
+						<td class="ft" rowspan="1" colspan="1">
+							
+								
+								<p>(note 1)</p>
+							
+						</td>
+						<td rowspan="1" colspan="1">
+							
+								
+								<p>The name of this class in JIS X 4051 is "Characters included in base characters complex with jukugo-ruby".</p>
+							
+						</td>
+					</tr>
+				</table>
+</li>
+					<li>
+				
+					
+					<p id="cl-24-en">Grouped numerals (cl-24)</p>
+				
+				
+					
+					<p>Sequences of European numerals which are not full-width and are handled as Japanese text, the decimal point or the comma and space used as grade indicator in number.</p>
+				
+</li>
+					<li>
+				
+					
+					<p id="cl-25-en">Unit symbols (cl-25)</p>
+				
+				
+					
+					<p>Units described here include combinations of Latin script and Greek script characters used for international units (SI).</p>
+				
+				<table class="t_note">
+					<tr>
+						<td class="ft" rowspan="1" colspan="1">
+							
+								
+								<p>(note 1)</p>
+							
+						</td>
+						<td rowspan="1" colspan="1">
+							
+								
+								<p>There are units created with combinations of Latin and Greek script characters with a full-width character frame (full-width units). Such units are not part of the characters for units described here. Furthermore, full-width characters for units are mainly used in vertical writing mode. Their usage in horizontal writing mode is regarded as bad style and should be avoided (see <a class="figure_ref" href="grouping_of_characters_and_symbols_depending_on_their_positioning.xhtml#fig2_9_1z-en">Fig. 3.128</a>).</p>
+							
+						</td>
+					</tr>
+				</table>
+				
+					
+					<div class="figure" id="fig2_9_1z-en"><div class="figure-float"><div><img alt="Example of a unit which encompasses a full-width unit character (upper part) and characters for Latin script text (lower part)." width="645" height="112" src="../image/Images-en/img2_9_1.png"/><div class="figureCaption">Fig. 3.128: <span class="caption-body">Example of a unit which encompasses a full-width unit character (upper part) and characters for Latin script text (lower part).</span></div></div></div></div>
+				
+</li>
+					<li>
+				
+					
+					<p id="cl-26-en">Western word space (cl-26)</p>
+				
+</li>
+					<li>
+				
+					
+					<p id="cl-27-en">Western characters (cl-27)</p>
+				
+				<table class="t_note">
+					<tr>
+						<td class="ft" rowspan="1" colspan="1">
+							
+								
+								<p>(note 1)</p>
+							
+						</td>
+						<td rowspan="1" colspan="1">
+							
+								
+								<p><a class="characterClass" href="cl-27.xhtml#cl-27">Western characters (cl-27)</a> include punctuation marks, such as commas, used in Western context. Among these punctuation marks, several marks are used both in a Japanese context and Western context. However, these marks have different <a class="termref" href="terminology.xhtml#term.character-shape">character shapes</a> depending on whether they are used in a Japanese context or Western context. For example, <span class="character">LEFT PARENTHESIS "("</span> and <span class="character">RIGHT PARENTHESIS ")"</span> has not only different width (Japanese, half em, Western, proportional) but are also different in line position (Japanese, center of the <a class="termref" href="terminology.xhtml#term.character-frame">character frame</a> in the inline direction, Western, <a class="termref" href="terminology.xhtml#term.base-line">base line</a> and <a class="termref" href="terminology.xhtml#term.descender-line">descender line</a> dependent) and design (Japanese, slightly bent and  constant line thickness, Western, strongly curved and  dynamic line thickness). The usage of these two differently designed commas should be explicit. Usually, in a Japanese context Japanese design is used, and in Western context Western design is used. However, there are some ambiguous cases, such as "エディター（editor）は……". In this case, English spelling is indicated using parentheses in a Japanese line of text. In this particular case, Japanese design is better.</p>
+							
+						</td>
+					</tr>
+				</table>
+</li>
+					<li>
+				
+					
+					<p id="cl-28-en">Warichu opening brackets (cl-28)</p>
+				
+<table class="t_sample">
+<tr><td class="ft">
+
+<p>Example:</p>
+</td>
+<td>
+
+<p class="asis">（〔［</p>
+</td>
+<td>
+
+<p>etc.</p>
+</td></tr>
+</table>
+</li>
+					<li>
+				
+					
+					<p id="cl-29-en">Warichu closing brackets (cl-29)</p>
+				
+<table class="t_sample">
+<tr><td class="ft">
+
+<p>Example:</p>
+</td>
+<td>
+
+<p class="asis">）〕］</p>
+</td>
+<td>
+
+<p>etc.</p>
+</td></tr>
+</table>
+				<table class="t_note">
+					<tr>
+						<td class="ft" rowspan="1" colspan="1">
+							
+								
+								<p>(note 1)</p>
+							
+						</td>
+						<td rowspan="1" colspan="1">
+							
+								
+								<p><a class="characterClass" href="cl-28.xhtml#cl-28">warichu opening brackets (cl-28)</a>
+and <a class="characterClass" href="cl-29.xhtml#cl-29">warichu closing brackets (cl-29)</a> are used for surrounding <a class="termref" href="terminology.xhtml#term.warichu">inline cutting notes</a> and the space. They are in a separate class since they differ from normal brackets with regard to their processing.</p>
+							
+						</td>
+					</tr>
+				</table>
+</li>
+					<li>
+				
+					
+					<p id="cl-30-en">Characters in tate-chu-yoko (cl-30)</p>
+				
+</li>
+				</ol></body></html>

@@ -1,0 +1,60 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"><head><meta charset="UTF-8"/><title>Requirements for Japanese Text Layout</title><link rel="stylesheet" type="text/css" href="../css/base.css"/><link rel="stylesheet" type="text/css" href="../css/W3C-WG-NOTE.css"/></head><body><h4 id="positioning_of_jukugoruby_with_respect_to_base_characters">3.3.7 <span class="heading"><span id="en-subheading2_3_7">Positioning of Jukugo-ruby with Respect to Base Characters</span></span></h4><p>
+   If the number of ruby characters are two or less for each <a class="characterClass" href="cl-19.xhtml#cl-19">ideographic characters (cl-19)</a> which participates in a kanji compound word (or jukugo), then for each run of ruby text associated with each base character, compose ruby characters as described in <a class="sec_ref" href="positioning_of_monoruby_with_respect_to_base_characters.xhtml#positioning_of_monoruby_with_respect_to_base_characters">3.3.5 Positioning of Mono-ruby with Respect to Base Characters</a> (see <a class="figure_ref" href="positioning_of_jukugoruby_with_respect_to_base_characters.xhtml#fig2_3_24-en">Fig. 3.73</a>).
+</p><div class="figure" id="fig2_3_24-en"><div class="figure-float"><div><img alt="Example 1 of distribution of jukugo-ruby." width="243" height="308" src="../image/Images-en/img2_3_24.png"/><div class="figureCaption">Fig. 3.73: <span class="caption-body">Example 1 of distribution of jukugo-ruby.</span></div></div></div></div><p>If there is any <a class="characterClass" href="cl-19.xhtml#cl-19">ideographic character (cl-19)</a> in a given kanji compound word
+which needs three or more ruby characters, the <a class="termref2nd" href="terminology.xhtml#term.jukugo-ruby">jukugo-ruby</a> layout cannot be used. In this case, attach the ruby text
+to the kanji compound word as a whole. The available methods include the layout as specified in JIS X 4051, which is similar to the <a class="termref2nd" href="terminology.xhtml#term.group-ruby">group-ruby</a> method described in <a class="sec_ref" href="positioning_of_groupruby_with_respect_to_base_characters.xhtml#positioning_of_groupruby_with_respect_to_base_characters">3.3.6 Positioning of Group-ruby with Respect to Base Characters</a>
+(see <a class="figure_ref" href="positioning_of_jukugoruby_with_respect_to_base_characters.xhtml#fig2_3_25-en">Fig. 3.74</a>), and layout decided by the phonetic structure of the kanji compound word
+and the type of script of the adjacent characters (see <a class="figure_ref" href="positioning_of_jukugoruby_with_respect_to_base_characters.xhtml#fig2_3_26-en">Fig. 3.75</a>). The latter method can be used unless a run of ruby text for the base character hangs over another base character more than a full character width (or one and a half times the full-width) of a ruby character.
+(The detail of this method is described in <a class="sec_ref" href="positioning_of_jukugoruby.xhtml#positioning_of_jukugoruby">Appendix F Positioning of Jukugo-ruby</a>.)</p><div class="figure" id="fig2_3_25-en"><div class="figure-float"><div><img alt="Example 2 distribution of jukugo-ruby." width="357" height="341" src="../image/Images-en/img2_3_25.png"/><div class="figureCaption">Fig. 3.74: <span class="caption-body">Example 2 distribution of jukugo-ruby.</span></div></div></div></div><div class="figure" id="fig2_3_26-en"><div class="figure-float"><div><img alt="Example 3 distribution of jukugo-ruby." width="357" height="323" src="../image/Images-en/img2_3_26.png"/><div class="figureCaption">Fig. 3.75: <span class="caption-body">Example 3 distribution of jukugo-ruby.</span></div></div></div></div><table class="t_note">
+					<tr>
+						<td class="ft" rowspan="1" colspan="1">
+							
+								
+								<p>(note 1)</p>
+							
+						</td>
+						<td rowspan="1" colspan="1">
+							
+								
+								<p>
+     There are often cases where the <a class="termref2nd" href="terminology.xhtml#term.jukugo-ruby">jukugo-ruby</a> consists of one ruby character followed by three ruby characters, and vice versa, for
+     a kanji compound word of two base characters. If the <a class="termref2nd" href="terminology.xhtml#term.mono-ruby">mono-ruby</a> layout were chosen for these cases, it would look like as shown
+     in <a class="figure_ref" href="positioning_of_jukugoruby_with_respect_to_base_characters.xhtml#fig2_3_27-en">Fig. 3.76</a>, which wouldn't be very beautiful.
+</p>
+							
+						</td>
+					</tr>
+				</table><div class="figure" id="fig2_3_27-en"><div class="figure-float"><div><img alt="Example of distribution as mono-ruby for jukugo." width="131" height="332" src="../image/Images-en/img2_3_27.png"/><div class="figureCaption">Fig. 3.76: <span class="caption-body">Example of distribution as mono-ruby for jukugo.</span></div></div></div></div><p>
+   <a class="termref2nd" href="terminology.xhtml#term.jukugo-ruby">Jukugo-ruby</a> can be split into two lines at the boundary of each unit of ruby text attached to one <a class="characterClass" href="cl-19.xhtml#cl-19">ideographic character (cl-19)</a>. When a kanji compound word consists of two characters, each unit will be processed using the <a class="termref2nd" href="terminology.xhtml#term.mono-ruby">mono-ruby</a> method. When dividing a compound word that  consists of three <a class="characterClass" href="cl-19.xhtml#cl-19">ideographic characters (cl-19)</a>, use the mono-ruby method for the first <a class="characterClass" href="cl-19.xhtml#cl-19">ideographic character (cl-19)</a> and use the jukugo-ruby method for the remaining
+   two <a class="characterClass" href="cl-19.xhtml#cl-19">ideographic characters (cl-19)</a>, and vice versa. In order to maintain the correspondence of each <a class="characterClass" href="cl-19.xhtml#cl-19">ideographic character (cl-19)</a> to its ruby annotation, the layout
+   of the ruby may be different after the division (see <a class="figure_ref" href="positioning_of_jukugoruby_with_respect_to_base_characters.xhtml#fig2_3_28-en">Fig. 3.77</a>).
+   Note that jukugo-ruby and its base characters  cannot be the subject of inter-character space expansion for line adjustment.</p><div class="figure" id="fig2_3_28-en"><div class="figure-float"><div><img alt="Examples of distribution of jukugo-ruby split across two lines." width="336" height="275" src="../image/Images-en/img2_3_28.png"/><div class="figureCaption">Fig. 3.77: <span class="caption-body">Examples of distribution of jukugo-ruby split across two lines.</span></div></div></div></div><table class="t_note">
+					<tr>
+						<td class="ft" rowspan="1" colspan="1">
+							
+								
+								<p>(note 1)</p>
+							
+						</td>
+						<td rowspan="1" colspan="1">
+							
+								
+								<p>The composition of <a class="termref2nd" href="terminology.xhtml#term.jukugo-ruby">jukugo-ruby</a> changes in accordance with  the construction of the jukugo, the position at the head, middle  or bottom of the line, and adjacent characters before or after. The detail of this issue is too complicated to discuss here, so it is discussed in <a class="sec_ref" href="positioning_of_jukugoruby.xhtml#positioning_of_jukugoruby">Appendix F Positioning of Jukugo-ruby</a>.</p>
+							
+						</td>
+					</tr>
+					<tr>
+						<td class="ft" rowspan="1" colspan="1">
+							
+								
+								<p>(note 2)</p>
+							
+						</td>
+						<td rowspan="1" colspan="1">
+							
+								
+								<p>The complexes of base characters with ruby characters are classified as <a class="characterClass" href="cl-22.xhtml#cl-22">simple-ruby character complex (cl-22)</a> and <a class="characterClass" href="cl-23.xhtml#cl-23">jukugo-ruby character complex (cl-23)</a>. The handling and positioning of these complexes with adjacent characters is discussed in <a class="sec_ref" href="spacing_between_characters.xhtml#spacing_between_characters">Appendix B Spacing between Characters</a>   as a complete table in accordance with  <a class="sec_ref" href="about_character_classes.xhtml#about_character_classes">3.9 About Character Classes</a>.</p>
+							
+						</td>
+					</tr>
+				</table></body></html>

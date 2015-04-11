@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package xmlns="http://www.idpf.org/2007/opf" version="3.0" xml:lang="en" unique-identifier="uid" prefix="rendition: http://www.idpf.org/vocab/rendition/# cc: http://creativecommons.org/ns#">
+  <metadata xmlns:dc="http://purl.org/dc/elements/1.1/">
+    <dc:title id="title">Thomas Cole - The Voyage of Life</dc:title>
+    <dc:description>Mixed reflowable/fixed with an expermental textual overlay (click or tap on paintings to activate)</dc:description>
+    <dc:creator>Jesse Dylan</dc:creator>
+    <dc:identifier id="uid">code.google.com.epub-samples.cole-voyage-of-life-tol</dc:identifier>
+    <dc:language>en-US</dc:language>
+    <meta property="dcterms:modified">2012-04-02T12:47:00Z</meta>
+    <dc:rights>This work is licensed under a Creative Commons Attribution-ShareAlike 3.0 Unported License.</dc:rights>               
+    <link rel="cc:license" href="http://creativecommons.org/licenses/by-sa/3.0/"/>
+    <link rel="cc:attributionURL" href="http://en.wikipedia.org/wiki/The_Voyage_of_Life"/>
+    <meta property="rendition:layout">pre-paginated</meta>
+    <meta property="rendition:orientation">landscape</meta>
+    <meta property="rendition:spread">none</meta>        
+  </metadata>
+  <manifest>
+    <item id="i" href="xhtml/0-intro.xhtml" media-type="application/xhtml+xml"/>
+    <item id="p1" href="xhtml/1-childhood.xhtml" media-type="application/xhtml+xml" properties="scripted"/>
+    <item id="p2" href="xhtml/2-youth.xhtml" media-type="application/xhtml+xml" properties="scripted"/>
+    <item id="p3" href="xhtml/3-manhood.xhtml" media-type="application/xhtml+xml" properties="scripted"/>
+    <item id="p4" href="xhtml/4-oldage.xhtml" media-type="application/xhtml+xml" properties="scripted"/>
+    <item id="j1_320" href="images/1-childhood-320.jpg" media-type="image/jpeg"/>
+    <item id="j1_1024" href="images/1-childhood-1024.jpg" media-type="image/jpeg"/>
+    <item id="j2_320" href="images/2-youth-320.jpg" media-type="image/jpeg"/>
+    <item id="j2_1024" href="images/2-youth-1024.jpg" media-type="image/jpeg"/>
+    <item id="j3_320" href="images/3-manhood-320.jpg" media-type="image/jpeg"/>
+    <item id="j3_1024" href="images/3-manhood-1024.jpg" media-type="image/jpeg"/>
+    <item id="j4_320" href="images/4-oldage-320.jpg" media-type="image/jpeg"/>
+    <item id="j4_1024" href="images/4-oldage-1024.jpg" media-type="image/jpeg"/>
+    <item id="prt" href="images/portrait.jpg" media-type="image/jpeg" properties="cover-image"/>
+    <item id="nav" href="xhtml/nav.xhtml" media-type="application/xhtml+xml" properties="nav"/>
+    <item id="css" href="css/cole.css" media-type="text/css"/>
+    <item id="scrpt" href="script/togglage.js" media-type="text/javascript"/>
+    <item id="jq" href="script/jquery-1.7.1.min.js" media-type="text/javascript"/>
+  </manifest>
+  <spine>
+    <itemref idref="i" properties="rendition:layout-reflowable rendition:spread-auto"/>
+    <itemref idref="p1"/>
+    <itemref idref="p2"/>
+    <itemref idref="p3"/>
+    <itemref idref="p4"/>        
+  </spine>
+</package>

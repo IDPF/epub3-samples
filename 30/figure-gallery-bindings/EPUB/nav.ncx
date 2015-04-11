@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ncx xmlns:ncx="http://www.daisy.org/z3986/2005/ncx/" xmlns="http://www.daisy.org/z3986/2005/ncx/"
+    version="2005-1" xml:lang="en">
+    <head>
+        <meta name="dtb:uid" content="code.google.com.epub-samples.figure-gallery"/>
+    </head>
+    <docTitle>
+        <text>EPUB Figure Gallery</text>
+    </docTitle>
+    <navMap>
+        <navPoint id="ch1" playOrder="1">
+            <navLabel>
+                <text>Phases of the Moon</text>
+            </navLabel>
+            <content src="content/text.xhtml"/>
+        </navPoint>
+    </navMap>
+</ncx>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package unique-identifier="BookId" version="3.0" xmlns="http://www.idpf.org/2007/opf">
+    <metadata xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/"
+        xmlns:opf="http://www.idpf.org/2007/opf">
+        <dc:title>IDに漢字などを使用したサンプル</dc:title>
+        <dc:identifier id="BookId">urn:uuid:e9f75adf-f0a2-4a30-b113-b146871f16e5</dc:identifier>
+        <dc:language>ja</dc:language>
+        <dc:date>2012-12-06</dc:date>
+        <meta property="dcterms:modified">2012-12-06T16:53:43Z</meta>
+        <meta content="2013-01-16T18:20:30+0900" name="Generated-Datetime"/>
+        <meta content="CAS-UB Backend System Installed on 2012-12-25" name="Generator-Signature"/>
+        <meta content="idcoverpng" name="cover"/>
+    </metadata>
+    <manifest>
+        <item href="nav.xhtml" id="nav" media-type="application/xhtml+xml" properties="nav"/>
+        <item href="toc.ncx" id="ncx" media-type="application/x-dtbncx+xml"/>
+        <item href="publ.xhtml" id="idpubl" media-type="application/xhtml+xml"/>
+        <item href="0001.xhtml" id="id0001" media-type="application/xhtml+xml"/>
+        <item href="0005.xhtml" id="id0005" media-type="application/xhtml+xml"/>
+        <item href="0006.xhtml" id="id0006" media-type="application/xhtml+xml"/>
+        <item href="0007.xhtml" id="id0007" media-type="application/xhtml+xml"/>
+        <item href="images/1125paperwhite3.jpg" id="idimages1125paperwhite3jpg"
+            media-type="image/jpeg"/>
+        <item href="images/1125Paperwhite1.jpg" id="idimages1125Paperwhite1jpg"
+            media-type="image/jpeg"/>
+        <item href="images/publisherLogo.jpg" id="idimagespublisherLogojpg" media-type="image/jpeg"/>
+        <item href="images/1125paperwhite2.jpg" id="idimages1125paperwhite2jpg"
+            media-type="image/jpeg"/>
+        <item href="images/readiumMath1.png" id="idimagesreadiumMath1png" media-type="image/png"/>
+        <item href="images/iBooksMath1.png" id="idimagesiBooksMath1png" media-type="image/png"/>
+        <item href="images/readiumMath2.jpg" id="idimagesreadiumMath2jpg" media-type="image/jpeg"/>
+        <item href="images/iBooksMath2.png" id="idimagesiBooksMath2png" media-type="image/png"/>
+        <item href="images/koboStore.png" id="idimageskoboStorepng" media-type="image/png"/>
+        <item href="themes/cas.css" id="idthemescascss" media-type="text/css"/>
+        <item href="themes/cas-common_epub.css" id="idthemescas-common_epubcss"
+            media-type="text/css"/>
+        <item href="themes/cas-common_kindle.css" id="idthemescas-common_kindlecss"
+            media-type="text/css"/>
+        <item href="themes/sim2ruby.css" id="idthemessim2rubycss" media-type="text/css"/>
+        <item href="themes/cas-common.css" id="idthemescas-commoncss" media-type="text/css"/>
+        <item href="themes/normal-serif/copyright.css" id="idthemesnormal-serif__copyrightcss"
+            media-type="text/css"/>
+        <item href="themes/normal-serif/publ-index.css" id="idthemesnormal-serif__publ-indexcss"
+            media-type="text/css"/>
+        <item href="themes/normal-serif/cover.css" id="idthemesnormal-serif__covercss"
+            media-type="text/css"/>
+        <item href="themes/normal-serif/xnotes.css" id="idthemesnormal-serif__xnotescss"
+            media-type="text/css"/>
+        <item href="themes/normal-serif/toc.css" id="idthemesnormal-serif__toccss"
+            media-type="text/css"/>
+        <item href="themes/normal-serif/loft.css" id="idthemesnormal-serif__loftcss"
+            media-type="text/css"/>
+        <item href="themes/normal-serif/opening.css" id="idthemesnormal-serif__openingcss"
+            media-type="text/css"/>
+        <item href="themes/normal-serif/generic.css" id="idthemesnormal-serif__genericcss"
+            media-type="text/css"/>
+        <item href="themes/normal-serif/references.css" id="idthemesnormal-serif__referencescss"
+            media-type="text/css"/>
+        <item href="themes/normal-serif/common.css" id="idthemesnormal-serif__commoncss"
+            media-type="text/css"/>
+        <item href="styles/style.css" id="idstylesstylecss" media-type="text/css"/>
+        <item href="cover.png" id="idcoverpng" media-type="image/png" properties="cover-image"/>
+        <item href="xnotes.xhtml" id="idxnotes" media-type="application/xhtml+xml"/>
+        <item href="loft.xhtml" id="idloft" media-type="application/xhtml+xml"/>
+        <item href="cover.xhtml" id="idcover" media-type="application/xhtml+xml"/>
+    </manifest>
+    <spine toc="ncx">
+        <itemref idref="idcover"/>
+        <itemref idref="id0001"/>
+        <itemref idref="id0005"/>
+        <itemref idref="id0006"/>
+        <itemref idref="id0007"/>
+        <itemref idref="idxnotes"/>
+        <itemref idref="idloft"/>
+    </spine>
+</package>

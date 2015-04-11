@@ -1,0 +1,373 @@
+@charset "UTF-8";/* -*- coding: utf-8 -*- */
+/* this is sim2ruby.css */
+
+/* FROM : http://roheisen.net/dl/sim2ruby.css 
+ * オリジナルからのコメントアウトには、## でマークしている。
+ * もともとあったコメントは、/#*, *#/ とエスケープしている。
+ *
+ * 次のように置換：
+ * ruby --> span.ruby
+ * rb   --> span.rb
+ * rt   --> span.rt
+ * rp   --> span.rp
+ * 
+ */
+
+/*	1行目は動作上必要なので消さないで下さい	*/
+
+/*----------------------------------------------------------------------------
+
+	■名称：
+	<ruby><rb>sim2ruby.css</rb><rp> | </rp><rt>シム・トゥ・ルビー・シーエスエス</rt></ruby>
+	sim2ruby.css = a cascading style sheet to simulate simple ruby.
+	
+	
+	
+	■機能概要：
+	IE以外のブラウザでもルビタグ（振り仮名表示機能）を同じように機能させるCSSです。
+	"simulate simple ruby"の名前の通り、rtcやrbcなどの複雑ルビには未対応です。
+	
+	
+	
+	■著作概要：
+	作者 : <ruby><rb>MMZK</rb><rp> | </rp><rt>みみずく</rt></ruby>
+	所属 : <ruby><rb>銑鉄計画</rb><rp> | </rp><rt>ローアイゼン・プロイェクト</rt></ruby>
+	拠点 : <a href="http://roheisen.net/" onclick="window.open(this.href); return false;"><ruby><rb>銑鉄網</rb><rp> | </rp><rt>ローアイゼン・ネッツ</rt></ruby></a>
+	版 : 皇紀2669年04月13日版 ver.1.0.4
+	
+	
+	
+	■使用条件：
+	個人・法人・営利・非営利問わずご自由にお使いください。
+	大したものでもないので、邪魔ならここの枠を丸ごと消してしまっても結構です。
+	ただし、虚偽の著作主張だけはご勘弁願います。
+	
+	
+	
+	■詳細：
+	
+	●使用方法：
+	大抵のブラウザでルビ（振り仮名）を表示できるようにするCSSです。
+	(X)HTMLソース上では普通にrubyタグを記述するだけなので、
+	既にrubyタグを使用しているページにこのCSSを読み込ませるだけで、
+	IE以外のブラウザでもほぼ同様に表示させることが可能になります。
+	
+	画像要素置換や背景画像などは使用していないため、
+	CSSファイルはどこの階層に置いても大丈夫です。
+	
+	タグの書式は以下のようになります。
+	<ruby><rb>書式</rb><rp> | </rp><rt>しょしき</rt></ruby>
+	<ruby><rb>書式</rb><rp> ( </rp><rt>しょしき</rt><rp> ) </rp></ruby>
+	CSS OFF時の文書構造維持のため、rpタグの使用を推奨しています。
+	
+	
+	●対応ブラウザ
+	以下のブラウザで表示確認を行っています。
+	
+	・Internet Explorer 6		- Windows
+	・Internet Explorer 7		- Windows
+	・Internet Explorer 8		- Windows
+	・Firefox 2.0				- Windows
+	・Firefox 3.0				- Windows
+	・Safari 3.2				- Windows
+	・Google Chrome 1.0			- Windows
+	・Opera 9.6					- Windows
+	・Opera 9.30				- Wii
+	
+	また、直接検証できてはいませんが、以下の環境でも問題なく表示できる模様です。
+	
+	・Firefox 2.0.0.14			- macintosh
+	・Safari 1.3.5				- macintosh
+	
+	
+	●表示誤差
+	出来る限り表示誤差を吸収していますが、それでもいくらか表示位置に
+	誤差があることが確認されています。
+	・Safari 3.1で下に1pxほどずれます。
+	・Firefox 2で上に2pxほどずれます。Firefox 3ではほぼ正常な位置に収まります。
+	・Firefox 3 betaでXHTMLルビサポート拡張機能が入っていると、
+	　かえって正常に表示できない場合があります。Firefox 3正式版に更新すると
+	　この症状は治ります。
+	・Firefox 2 + XHTMLルビサポートの場合、拡大機能は機能しなくなりますが、
+	　表示位置はむしろ正しくなります。表示は若干時間がかかります。
+	・Firefox 2で振り仮名範囲表示時に仮名自体が枠外になりますが、
+	　意味は通じるので特に対策はしていません。
+	・Firefox 2(ルビサポートなし)で左(右)寄せテーブルセル内に使用すると、
+	　ルビと本文がテーブルセルの一種とみなされて強制的に左(右)寄せにされてしまう
+	　症状が発生します。この症状はFirefox2のレンダリング不具合と推測され、
+	　CSSで個別指定してもまず直りません。Firefox 3ではこの症状は起こりません。
+	　
+	●ユーザビリティ向上オプション
+	文字が小さいと判読が難しいWiiブラウザなどの環境のために、
+	マウスオーバーで振り仮名を拡大表示する機能があります。
+	通常のブラウザでも、文字サイズ設定が小さい場合にはONにしておくと
+	親切かもしれません。
+	また、拡大時に点線で振り仮名の範囲を表示するようにしています。
+	
+	
+	●対応Doctypeと文法違反警告など
+	推奨はXHTML1.1です。
+	ruby関連タグは一応XHTML1.1の仕様に入っているはずですが、
+	Dreamweaverなどでバリデートの際に文法違反でしつこく警告されます。
+	それを許容する前提でご利用ください。
+	
+	また、HTML4.01の場合、厳密に言うと文法的には正しくありませんが、
+	実際のブラウザ上では正常に表示できます。
+	
+	ただし、HTMLでもXHTMLでも後方互換モードになるDoctype
+	（<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">など）
+	では、IEが古いレンダリングモードになるため、振り仮名拡大機能に対応できません。
+	▽Doctype参考 : http://w3g.jp/others/data/doctype_switching
+	
+	
+	●メイリオフォント使用時の表示崩れ
+	サイトのCSSで基本フォントにメイリオを使用するように指定していると、
+	ブラウザによってルビつきテキスト部分が上方向に0.2em〜0.8em程度ずれて
+	表示されることがあります。
+	sim2ruby側でこのずれを補正しようとすると、今度はメイリオがインストール
+	されていないユーザ環境でＭＳ Ｐゴシックなどの代理表示になった場合に逆に
+	下方向にずれてしまうため、現在のところメイリオフォントを使用してなおかつ
+	ルビ表示を全環境でそろえる方法はありません。
+	
+	
+	●IE6への特殊対応
+	Doctypeが後方互換でなくても、IE6ではIE7.jsなどのjavascriptで
+	機能拡張しない限りは振り仮名拡大に対応できません。
+	また、IE7.jsを併用したとしても、副作用でIE6で表示完了までの時間がかなり
+	長くなるので、これだけのために安易に使用しない方が良いかもしれません。
+	▽参考：dean.edwards氏のIE7.js : http://code.google.com/p/ie7-js/
+	
+	IE7.jsを使用すると、機能補完によりIE6が本来読まなかったIE7用のCSShack指定を
+	読むようになるので、IE6用の上書き指定をIE7用指定よりあとに記述しています。
+	
+	更に、IE6にIE7.jsを適用してfixed配置を行うという非常に限定的な場合ではありますが、
+	マウスオーバー時の振り仮名拡大でfixed配置したものが行方不明になることがあります。
+	
+	現象の詳細としては、拡大によりスクロール操作を行わずにページ長さが変更されることで、
+	fixedブロックが画面上ではなくページ上の指定座標に飛ばされます。
+	そのため、以下のような症状が確認できます。
+	
+	・スクロール位置がページトップの場合、ページ内座標=画面座標であるため、
+	　不具合現象が確認されません。
+	・文字サイズ変更によりページの長さが変わらなければ、不具合現象は確認されません。
+	・スクロール操作を行うことでまた元の位置に戻ってきますが、
+	　ユーザーから見て不審な挙動であることには変わりがありません。
+	
+	対策として、IE6のみ拡大機能をOFFにするための記述を最後に記しています。
+	
+	
+	
+	■免責
+	当CSSファイルについては出来うる限りの動作確認を行っておりますが、
+	使用により何らかの損害が発生したとしても、制作者は補償を行いません。
+	また、質問や不具合報告に応答することはありますが、基本的にサポートは行っておりません。
+	
+	
+	
+	■更新履歴：
+	
+	●2669.04.13	ver.変更なし
+	・IE8正式版での動作確認が取れたため、対応ブラウザのRC表記を外しました。
+	・Doctype参考ページのURLが移動していたため変更しました。
+	
+	●2669.02.25	ver.1.0.4
+	・IE8 RCで拡大時の表示が修正されていたので、IE8 beta用の設定をコメントアウトしました。
+	
+	●2668.12.13	ver.1.0.3
+	・IE8 beta 2で拡大時の表示がひどいので、IE8 beta 2だけ拡大機能をOFFにしました。
+	
+	●2668.10.04	ver.変更なし
+	・メイリオフォント使用時に表示崩れが発生することが判明したので追記しました。
+	
+	●2668.09.10	ver.変更なし
+	・Google Chrome(β版)で動作確認した結果、特に表示上の問題は見つかりませんでした。
+	
+	●2668.06.28	ver.1.0.2
+	・説明にFirefox 2での表示不具合、Firefox 3正式版での症状改善、Opera 9.5対応
+	　についての記述を追加しました。
+	・hn要素でのルビサイズ縮小の初期設定をオフにしました。
+	
+	●2668.05.14	ver.1.0.1
+	・マウスオーバー拡大時のルビ適用範囲表示に対応しました。
+	・Wiiの表示ずれ補正記述を追加しました。
+	・CSSの文字コード宣言が無いと追加読み込み使用で正常に動作しない場合があると
+	　判明したため、このファイルの最初に文字コード宣言を追加しました。
+	
+	●2668.05.10	ver.1.0.0
+	・銑鉄網（暫定版）を作ってたら副産物でなんかできたので、まとめてみました。
+
+----------------------------------------------------------------------------*/
+
+
+
+
+/*	主にWii用の指定	*/
+
+/*##
+@media tv {
+	/#*	ルビの縦ずれを補正
+		rbやrtのfont-size、line-heightによらず0.5em
+	*#/
+	html body ruby {
+		padding-bottom: 0.5em;
+	}
+}
+##*/
+
+
+
+/* ruby（ルビ文字組み全体のインライン領域）
+------------------------------------------- */
+/* Firefox、Safari、Opera用指定 */
+span.ruby {
+	display			: inline-table;
+	text-align		: center;
+	text-indent		: 0px;
+	white-space		: nowrap;
+	border			: none;
+	margin			: 0px;
+	padding			: 0px;
+	line-height		: 1;
+	height			: 1em;
+	vertical-align	: text-bottom;
+	border			: none;
+}
+
+/* IE8 beta 2用指定 (現在無効) */
+/*
+html:first-child  span.ruby {
+	white-space		: normal;
+}
+*/
+/* IE7用指定 */
+*:first-child+html span.ruby {
+	white-space		: normal;
+}
+/* IE6用指定 */
+* html body span.ruby {
+	white-space		: normal;
+	display			: inline-table;
+	vertical-align	: baseline;
+}
+
+
+/* rb（本文）
+------------------------------------------- */
+/* Firefox、Safari、Opera用指定 */
+span.rb {
+	display			: table-row-group;
+	line-height		: 1;
+	text-align		: center;
+	border			: none;
+	margin			: 0px;
+	padding			: 0px;
+	white-space		: nowrap;
+}
+/* IE8 beta 2用指定 (現在無効) */
+/*
+html:first-child  span.rb {
+	white-space		: normal;
+}
+*/
+/* IE7用指定 */
+*:first-child+html span.rb {
+	white-space		: normal;
+}
+/* IE6用指定 */
+* html body span.ruby span.rb {
+	display			: table-row-group;
+	vertical-align	: bottom;
+	white-space		: normal;
+}
+
+
+/* rt（フリガナ）
+------------------------------------------- */
+/* Firefox、Safari、Opera用指定 */
+span.rt {
+	display			: table-header-group;
+	font-size		: 0.625em;	/*	振り仮名のメインテキストに対する相対サイズ	*/
+	line-height		: 1.1;
+	text-align		: center;
+	white-space		: nowrap;
+	border			: none;
+	margin			: 0px;
+	padding			: 0px;
+}
+/* IE8 beta 2用指定 (現在無効) */
+/*
+html:first-child  span.rt {
+	white-space		: normal;
+}
+*/
+/* IE7用指定 */
+*:first-child+html span.rt {
+	white-space		: normal;
+}
+/* IE6用指定 */
+* html body span.ruby span.rt {
+	white-space		: normal;
+	line-height		: 1em;
+	display			: table-header-group;
+	position		: static;
+	top				: 0em;
+}
+
+
+/* rp（CSS OFF状態での区切り文字、通常不可視）
+------------------------------------------- */
+/* 全ブラウザ共通指定 */
+span.rp {
+	display			: none;
+}
+
+
+/* hn要素での振り仮名サイズ調整（必要な場合、適当に調整してください）
+------------------------------------------- */
+/*
+h1 span.rt	{	font-size: 0.39em;	}
+h2 span.rt	{	font-size: 0.42em;	}
+h3 span.rt	{	font-size: 0.45em;	}
+h4 span.rt	{	font-size: 0.48em;	}
+h5 span.rt	{	font-size: 0.52em;	}
+h6 span.rt	{	font-size: 0.57em;	}
+*/
+
+/*##
+
+/#* マウスオーバーで拡大、振り仮名適用範囲表示
+------------------------------------------- *#/
+span.ruby:hover							{	border: 1px dashed #CCC;	}
+/#* IE8 beta 2用指定 (現在無効) *#/
+/#*
+html:first-child span.ruby:hover {
+	border: none;
+}
+*#/
+span.ruby:hover span.rt						{	font-size: 1em;			}
+/#* IE8 beta 2用指定 (現在無効) *#/
+/#*
+html:first-child span.ruby:hover span.rt {
+	font-size: 0.625em;
+}
+*#/
+
+/#*	IE6でIE7.jsを使用していて、なおかつfixed配置ブロックがある場合、
+振り仮名拡大時にfixedブロックが行方不明になるためIE6でのみ機能無効化	*#/
+/#*
+*:first-child+html span.ruby:hover span.rt	{	font-size: 1em!important;	font-size: 0.625em;	}
+*:first-child+html h1 span.ruby:hover span.rt	{	font-size: 1em!important;	font-size: 0.39em;	}
+*:first-child+html h2 span.ruby:hover span.rt	{	font-size: 1em!important;	font-size: 0.42em;	}
+*:first-child+html h3 span.ruby:hover span.rt	{	font-size: 1em!important;	font-size: 0.45em;	}
+*:first-child+html h4 span.ruby:hover span.rt	{	font-size: 1em!important;	font-size: 0.48em;	}
+*:first-child+html h5 span.ruby:hover span.rt	{	font-size: 1em!important;	font-size: 0.52em;	}
+*:first-child+html h6 span.ruby:hover span.rt	{	font-size: 1em!important;	font-size: 0.57em;	}
+*:first-child+html span.ruby:hover		{
+	border: 1px dashed #CCCCCC !important;
+	border: none;
+	background-color: transparent !important;
+	background-color: #CCCCCC;
+}
+*#/
+
+##*/

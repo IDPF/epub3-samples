@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ncx xmlns:ncx="http://www.daisy.org/z3986/2005/ncx/" xmlns="http://www.daisy.org/z3986/2005/ncx/"
+    version="2005-1" xml:lang="en">
+    <head>
+        <meta name="dtb:uid" content="code.google.com.epub-samples.georgia-pls-ssml"/>
+    </head>
+    <docTitle>
+        <text>GEORGIA</text>
+    </docTitle>
+    <navMap>
+        <!-- 2.01 NCX: playOrder is optional -->
+        <navPoint id="s00">
+            <navLabel>
+                <text>GEORGIA</text>
+            </navLabel>
+            <content src="georgia.xhtml#d10e42"/>
+        </navPoint>
+        <navPoint id="s01">
+            <navLabel>
+                <text>Climate and Soils</text>
+            </navLabel>
+            <content src="georgia.xhtml#d10e85"/>
+        </navPoint>
+        <navPoint id="s02">
+            <navLabel>
+                <text>Minerals</text>
+            </navLabel>
+            <content src="georgia.xhtml#d10e102"/>
+        </navPoint>
+        <navPoint id="s03">
+            <navLabel>
+                <text>Agriculture</text>
+            </navLabel>
+            <content src="georgia.xhtml#d10e118"/>
+        </navPoint>
+        <navPoint id="s04">
+            <navLabel>
+                <text>Manufactures</text>
+            </navLabel>
+            <content src="georgia.xhtml#d10e150"/>
+        </navPoint>
+        <navPoint id="s05">
+            <navLabel>
+                <text>Population</text>
+            </navLabel>
+            <content src="georgia.xhtml#d10e187"/>
+        </navPoint>
+        <navPoint id="s06">
+            <navLabel>
+                <text>Government</text>
+            </navLabel>
+            <content src="georgia.xhtml#d10e209"/>
+        </navPoint>
+        <navPoint id="s07">
+            <navLabel>
+                <text>Education</text>
+            </navLabel>
+            <content src="georgia.xhtml#d10e271"/>
+        </navPoint>
+        <navPoint id="s08">
+            <navLabel>
+                <text>Finance</text>
+            </navLabel>
+            <content src="georgia.xhtml#d10e288"/>
+        </navPoint>
+        <navPoint id="s09">
+            <navLabel>
+                <text>History</text>
+            </navLabel>
+            <content src="georgia.xhtml#d10e304"/>
+        </navPoint>
+    </navMap>
+    <pageList>
+        <navLabel>
+            <text>Pages</text>
+        </navLabel>
+        <pageTarget type="normal" id="page752" value="752" playOrder="1">
+            <navLabel>
+                <text>752</text>
+            </navLabel>
+            <content src="georgia.xhtml#page752"/>
+        </pageTarget>
+        <pageTarget type="normal" id="page753" value="753" playOrder="2">
+            <navLabel>
+                <text>753</text>
+            </navLabel>
+            <content src="georgia.xhtml#page753"/>
+        </pageTarget>
+        <pageTarget type="normal" id="page754" value="754" playOrder="3">
+            <navLabel>
+                <text>754</text>
+            </navLabel>
+            <content src="georgia.xhtml#page754"/>
+        </pageTarget>
+        <pageTarget type="normal" id="page755" value="755" playOrder="4">
+            <navLabel>
+                <text>755</text>
+            </navLabel>
+            <content src="georgia.xhtml#page755"/>
+        </pageTarget>
+        <pageTarget type="normal" id="page756" value="756" playOrder="5">
+            <navLabel>
+                <text>756</text>
+            </navLabel>
+            <content src="georgia.xhtml#page756"/>
+        </pageTarget>
+        <pageTarget type="normal" id="page757" value="757" playOrder="6">
+            <navLabel>
+                <text>757</text>
+            </navLabel>
+            <content src="georgia.xhtml#page757"/>
+        </pageTarget>
+        <pageTarget type="normal" id="page758" value="758" playOrder="7">
+            <navLabel>
+                <text>758</text>
+            </navLabel>
+            <content src="georgia.xhtml#page758"/>
+        </pageTarget>
+    </pageList>
+</ncx>

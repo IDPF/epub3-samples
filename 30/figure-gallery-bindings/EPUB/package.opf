@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package xmlns="http://www.idpf.org/2007/opf" version="3.0" unique-identifier="uid" xml:lang="en-US" prefix="cc: http://creativecommons.org/ns#">
+    <metadata xmlns:dc="http://purl.org/dc/elements/1.1/">
+        <dc:identifier id="uid">code.google.com.epub-samples.figure-gallery</dc:identifier>
+        <dc:title>EPUB Figure Gallery</dc:title>
+        <dc:creator>E.L. Starr</dc:creator>
+        <dc:language>en-US</dc:language>
+        <dc:date>2012-01-17</dc:date>
+        <meta property="dcterms:modified">2012-04-05T21:03:00Z</meta>
+        
+		<!-- rights expressions for the work as a whole -->
+        <dc:rights>This work is shared with the public using the Attribution-ShareAlike 3.0 Unported (CC BY-SA 3.0) license.</dc:rights>        
+        <link rel="cc:license" href="http://creativecommons.org/licenses/by-sa/3.0/"/>
+        <meta property="cc:attributionURL">http://code.google.com/p/epub-samples/</meta>
+        
+		<!-- image attribution -->       
+        <link rel="cc:attributionURL" refines="#cover" href="http://www.flickr.com/photos/smithsonian/2941526052" />  
+		<link rel="cc:attributionURL" refines="#fig1" href="http://www.flickr.com/photos/gsfc/5837033098" />  
+		<link rel="cc:attributionURL" refines="#fig2" href="http://www.flickr.com/photos/gsfc/5836481331" />  
+		<link rel="cc:attributionURL" refines="#fig3" href="http://www.flickr.com/photos/gsfc/5837030890" />  
+		<link rel="cc:attributionURL" refines="#fig4" href="http://www.flickr.com/photos/gsfc/5837031188" />  
+		<link rel="cc:attributionURL" refines="#fig5" href="http://www.flickr.com/photos/gsfc/5836482263" />  
+		<link rel="cc:attributionURL" refines="#fig6" href="http://www.flickr.com/photos/gsfc/5837032132" />  
+		<link rel="cc:attributionURL" refines="#fig7" href="http://www.flickr.com/photos/gsfc/5837032522" />  
+		<link rel="cc:attributionURL" refines="#fig8" href="http://www.flickr.com/photos/gsfc/5837032862" /> 
+		
+		<!-- text attribution -->
+		<link rel="cc:attributionURL" refines="text.xhtml#moon-text" href="http://en.wikipedia.org/wiki/Lunar_phase" />
+		<link rel="cc:attributionURL" refines="text.xhtml#moon-figures" href="http://www.flickr.com/photos/gsfc/sets/72157626962784062/"/>
+		<link rel="cc:attributionURL" refines="#moon-phases-xml" href="http://www.flickr.com/photos/gsfc/sets/72157626962784062/"/>
+		<link rel="cc:attributionURL" refines="text.xhtml#moon-figures" href="http://www.flickr.com/photos/gsfc/sets/72157626962784062/"/>
+		
+        <!-- cover meta element included for 2.0 reading system compatibility: -->
+        <meta name="cover" content="cover"/>
+    </metadata> 
+    <manifest>
+        <item id="cover" 
+			href="images/cover.jpg" 
+			media-type="image/jpeg" 
+			properties="cover-image" />
+        <item id="nav" 
+			href="content/nav.xhtml" 
+			properties="nav" 
+			media-type="application/xhtml+xml" />
+        <item id="epub-css"
+            href="css/epub.css"
+            media-type="text/css"/>
+            
+        <item id="t1" 
+        	href="content/text.xhtml" 
+    		media-type="application/xhtml+xml" />
+        
+        <!-- ncx included for 2.0 reading system compatibility: -->
+        <item id="ncx" 
+			href="nav.ncx" 
+			media-type="application/x-dtbncx+xml" />
+		
+		<!-- figure gallery data -->
+		<item id="moon-phases-xml"
+			href="content/moon-phases.xml"
+			media-type="application/x-epub-figure-gallery"/>
+            
+        
+		<!-- figure gallery images -->
+		<item id="fig1"
+			href="images/moon-images/1.new-moon.jpg"
+			media-type="image/jpeg"/>
+		<item id="fig2"
+			href="images/moon-images/2.waxing-crescent.jpg"
+			media-type="image/jpeg"/>
+		<item id="fig3"
+			href="images/moon-images/3.first-quarter.jpg"
+			media-type="image/jpeg"/>
+		<item id="fig4"
+			href="images/moon-images/4.waxing-gibbous.jpg"
+			media-type="image/jpeg"/>
+		<item id="fig5"
+			href="images/moon-images/5.full-moon.jpg"
+			media-type="image/jpeg"/>
+		<item id="fig6"
+			href="images/moon-images/6.waning-gibbous.jpg"
+			media-type="image/jpeg"/>
+		<item id="fig7"
+			href="images/moon-images/7.third-quarter.jpg"
+			media-type="image/jpeg"/>
+		<item id="fig8"
+			href="images/moon-images/8.waning-crescent.jpg"
+			media-type="image/jpeg"/>
+		<item id="fig1thumb"
+			href="images/moon-images/1.new-moon-thumb.jpg"
+			media-type="image/jpeg"/>
+		<item id="fig2thumb"
+			href="images/moon-images/2.waxing-crescent-thumb.jpg"
+			media-type="image/jpeg"/>
+		<item id="fig3thumb"
+			href="images/moon-images/3.first-quarter-thumb.jpg"
+			media-type="image/jpeg"/>
+		<item id="fig4thumb"
+			href="images/moon-images/4.waxing-gibbous-thumb.jpg"
+			media-type="image/jpeg"/>
+		<item id="fig5thumb"
+			href="images/moon-images/5.full-moon-thumb.jpg"
+			media-type="image/jpeg"/>
+		<item id="fig6thumb"
+			href="images/moon-images/6.waning-gibbous-thumb.jpg"
+			media-type="image/jpeg"/>
+		<item id="fig7thumb"
+			href="images/moon-images/7.third-quarter-thumb.jpg"
+			media-type="image/jpeg"/>
+		<item id="fig8thumb"
+			href="images/moon-images/8.waning-crescent-thumb.jpg"
+			media-type="image/jpeg"/>
+		
+		<!-- figure gallery files -->
+		<item id="figure-gallery-impl" 
+			href="content/figure-gallery/figure-gallery-impl.xhtml" 
+		    media-type="application/xhtml+xml" 
+		    properties="scripted"/>
+		<item id="figure-gallery-js"
+			href="content/figure-gallery/figure-gallery.js"
+			media-type="text/javascript"/>
+		<item id="figure-gallery-css"
+			href="content/figure-gallery/figure-gallery.css"
+			media-type="text/css"/>
+		<item id="figure-gallery-jquery"
+			href="content/figure-gallery/jquery-1.7.1.min.js"
+			media-type="text/javascript"/>
+		<item id="figure-gallery-reset-css"
+			href="content/figure-gallery/reset.css"
+			media-type="text/css"/>
+            
+    </manifest>
+	
+	<spine toc="ncx">
+		<itemref idref="t1" />      
+    </spine>    
+	
+	<bindings>
+		<mediaType handler="figure-gallery-impl" 
+			media-type="application/x-epub-figure-gallery"/>
+	</bindings>
+</package>

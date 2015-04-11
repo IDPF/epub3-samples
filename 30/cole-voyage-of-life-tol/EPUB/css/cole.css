@@ -1,0 +1,139 @@
+@charset "UTF-8";
+@namespace "http://www.w3.org/1999/xhtml";
+@namespace epub "http://www.idpf.org/2007/ops";
+
+body {
+    font-family:Georgia,Times,Serif;
+    /* text-align: justify; */
+    letter-spacing: 0.08em;
+    
+}
+
+h1, h2 {
+    letter-spacing: 0.16em;
+}
+
+nav#toc ol {
+    list-style-type:none;
+}
+
+body.reflow { /* first spine item only*/
+    margin: 2em 4em 2em 4em;
+    background-color: rgb(255,255,230);
+}
+
+figure {
+    position : absolute;
+    background-color: rgb(60,60,60);  
+    color: rgb(240,240,240);
+}
+
+img#portrait {
+    float:right; 
+    margin:0.2em 0em 0.9em 2em;
+}
+
+figure.unscripted {
+    opacity: 0.9;    
+    margin: 1em 3em 1em 3em;
+    padding: 1em 2em 1em 2em;
+    max-width : 850px;
+}
+
+figure.unscripted > img.detail {   
+    display: none;     
+}
+
+body.fixed, img.full {     
+    width:1024px;
+    margin: 0;
+    padding: 0;
+    top: 0px;
+    left: 0px;
+}
+
+#b1.fixed {
+    height:697px;
+}
+
+#b2.fixed {
+    height:696px;
+}
+
+#b3.fixed {
+    height:673px;
+}
+
+#b4.fixed {
+    height:698px;
+}
+
+img.full {
+    opacity: 1.0; 
+    position : absolute;
+}
+
+figure > img.detail {            
+    margin:0;
+    float : left;        
+}
+
+figcaption {
+    margin:0 0 0 0;
+    padding:0;
+}
+
+figcaption > p {
+    margin:0;
+    padding:0;
+}
+
+figure.scripted > img.detail {   
+    display: block;    
+    margin-right:30px;    
+}
+
+figure.scripted { 
+    opacity: 1.0; 
+    border: 1px solid rgb(100,100,100); 
+    border-radius: 0px;    
+    padding: 40px 40px 40px 40px;
+    position : absolute;     
+    top: 85px;
+    left: 16px;
+    width:834px;
+    line-height : 23px;
+    font-size: 18px;
+    /* letter-spacing:0.1em; */
+}
+
+#f1.scripted {     
+    height:277px;       
+}
+#f1.scripted > img.detail {
+    margin-bottom:500px; 
+}
+
+
+#f2.scripted {       
+    height:390px;    
+} 
+#f2.scripted > img.detail {
+    margin-bottom:20px; 
+}
+
+#f3.scripted {   
+    top: 60px;
+    height:420px;     
+}
+#f3.scripted > img.detail {
+    margin-bottom:20px; 
+}
+
+#f4.scripted {   
+    top: 70px;
+    height:400px;     
+}
+#f4.scripted > img.detail {
+    margin-bottom:180px; 
+}

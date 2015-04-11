@@ -1,0 +1,83 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"><head><meta charset="UTF-8"/><title>Requirements for Japanese Text Layout</title><link rel="stylesheet" type="text/css" href="../css/base.css"/><link rel="stylesheet" type="text/css" href="../css/W3C-WG-NOTE.css"/></head><body><h3 id="legend_of_table_7">E.1 <span class="heading"><span id="en-app5_1">Legend of Table 6</span></span></h3><ol class="decimal">
+<li>
+		
+			
+			<p>The  left-most column, labeled "before", lists preceding character classes, and the top row, labeled "after", lists trailing character classes. Each cell indicates the type of opportunities for inter-character space expansion between two adjacent characters of the corresponding character classes at a given row and column. Note that there are no cells involving "line head" or "line end" because there is no opportunity for inter-character space expansion before any character at the line head or after any character at the line end.</p>
+		
+</li>
+<li>
+		
+			
+			<p>The type of opportunity for space expansion is indicated in each cell in the table using the following notation.</p>
+		
+		<ol>
+			<li>
+			
+				
+				<p>Cells with a white background: No opportunity for space expansion.</p>
+			
+			<ol>
+				<li>
+				
+					
+					<p>Blank: Inter-character space expansion is not allowed because there is no line break opportunity between the given combination of characters.</p>
+				
+				</li>
+				<li>
+				
+					
+					<p>× mark: The combination is not allowed due to line breaking rules or other restrictions.</p>
+				
+				</li>
+			</ol>
+			</li>
+			<li>
+			
+				
+				<p>Cells with a colored or gray background: An opportunity exists for inter-character space expansion.</p>
+			
+			<ol>
+				<li>
+				
+					
+					<p>Priority order in space expansion: The second highest and subsequent priorities of inter-character space expansion are indicated by the given background colors of the cells. The cells with the colors in the left are higher in priority than ones in the right. Space expansion shall be processed in this order.
+When the 4th step is needed, add same space value to the spaces of 1st, 2nd, 3rd and 4th steps.</p>
+				
+				<div class="Taiyaku nobook">
+					
+					<div class="figure" id="fig_a7-1-en"><div class="figure-float"><div><img alt="Priority order in space expansion." width="277" height="11" src="../image/Images-en/img_a7_1.png"/><div class="figureCaption">Fig. E.1: <span class="caption-body">Priority order in space expansion.</span></div></div></div></div>
+				</div>
+				</li>
+				<li>
+				
+					
+					<p>Amount of space expandable: The amount of space to be expanded is indicated using the following notation.</p>
+				
+				<ol>
+					<li>
+					
+						
+						<p>1/4–1/2: A quarter em space by default, which is expandable equally, with respect to the corresponding character size, to take up to a maximum of a half em space. However if Table 5
+of <a class="sec_ref" href="opportunities_for_intercharacter_space_reduction_during_line_adjustment.xhtml#opportunities_for_intercharacter_space_reduction_during_line_adjustment">Appendix D Opportunities for Inter-character Space Reduction during Line Adjustment</a>
+ is adopted as the method of inter-character space reduction for line adjustment, this quarter em space shall not be expanded.</p>
+					
+					</li>
+					<li>
+					
+						
+						<p>1/4: No inter-character space by default, which is expandable equally, with respect to the corresponding character size, to take up to a maximum of a quarter em space.</p>
+					
+					</li>
+					<li>
+					
+						
+						<p>blank: Expandable equally with respect to the corresponding character size, only after no other expandable inter-character space is left.</p>
+					
+					</li>
+				</ol>
+				</li>
+			</ol>
+			</li>
+		</ol>
+</li>
+</ol></body></html>

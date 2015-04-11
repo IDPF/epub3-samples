@@ -1,0 +1,126 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja"><head><meta charset="UTF-8"/><meta name="author" content="Japanese Layout Task Force"/><title>日本語組版処理の要件（日本語版）</title><link rel="stylesheet" type="text/css" href="../css/W3C-WG-NOTE.css"/><link rel="stylesheet" type="text/css" href="../css/base.css"/></head><body><h3 id="block_direction_setting_process_of_lines_paragraphs">4.5 <span class="heading">行・段落などの行送り方向の配置処理</span></h3><h4 id="line_gap_arrangement_with_ruby_and_other_objects">4.5.1 <span class="heading"><span class="index" id="d12e61">ルビなどが付いた場合の<span class="index" id="d12e63">行間の処理</span></span></span></h4><p>各ページや段に行を配置していく場合，基本版面で設定した行位置にできるだけ配置するのが原則である．</p><p>また，1段組の版面，<a class="termref" href="terminology.xhtml#term.multi-column-format">段組</a>の段にあって，改ページ等の直前ページなど以外では，その版面又は段の末尾に配置する行は，原則として版面又は段の末尾に接して配置する必要がある．</p><p>そこで，次のような例では，<span class="index" id="d12e99">行間に配置する</span>．</p><ol>
+					<li>
+                        
+                           <p><a class="termref" href="terminology.xhtml#term.ruby">ルビ</a></p>
+                           
+                        
+                     </li>
+					<li>
+                        
+                           <p><a class="termref" href="terminology.xhtml#term.emphasis-dots">圏点</a></p>
+                           
+                        
+                     </li>
+					<li>
+                        
+                           <p><a class="termref" href="terminology.xhtml#term.underline">下線</a>及び<a class="termref" href="terminology.xhtml#term.bousen">傍線</a></p>
+                           
+                        
+                     </li>
+					<li>
+                        
+                           <p>行間に配置する<a class="termref" href="terminology.xhtml#term.reference-marks">合印</a></p>
+                           
+                        
+                     </li>
+				</ol><p>次のような例では，文字の大きさなどにより<span class="index" id="d12e179">行間にはみ出して配置する場合</span>がある．</p><ol>
+					<li>
+                        
+                           <p><a class="termref" href="terminology.xhtml#term.tate-chu-yoko">縦中横</a>処理を行った文字列</p>
+                           
+                        
+                     </li>
+					<li>
+                        
+                           <p><a class="termref" href="terminology.xhtml#term.ornament-characters">添え字</a></p>
+                           
+                        
+                     </li>
+					<li>
+                        
+                           <p><a class="termref" href="terminology.xhtml#term.warichu">割注</a></p>
+                           
+                        
+                     </li>
+					<li>
+                        
+                           <p>行送り方向の配置位置を文字単位で変更した文字列</p>
+                           
+                        
+                     </li>
+					<li>
+                        
+                           <p>段落で指定された文字サイズより大きいサイズの文字列（<a class="figure_ref" href="block_direction_setting_process_of_lines_paragraphs.xhtml#fig3_5_1-ja">図 4.117</a>）</p>
+                           
+                        
+                      
+                        <div class="figure" id="fig3_5_1-ja"><div class="figure-float"><div><img alt="段落で指定された文字サイズより大きいサイズの文字列の配置例" width="275" height="335" src="../image/Images-ja/img3_5_1.png"/><div class="figureCaption">図 4.117 <span class="caption-body">段落で指定された文字サイズより大きいサイズの文字列の配置例</span></div></div></div></div>
+                         
+                        
+                        
+                     </li>
+				</ol><p>逆に，次のように<span class="index" id="d12e290">段落で指定された文字サイズより小さいサイズの文字列が挿入される場合</span>は，基本版面で設定した行位置を維持するために，見た目の行間が広くなる（<a class="figure_ref" href="block_direction_setting_process_of_lines_paragraphs.xhtml#fig3_5_2-ja">図 4.118</a>）．</p><div class="figure" id="fig3_5_2-ja"><div class="figure-float"><div><img alt="段落で指定された文字サイズより小さいサイズの文字列の配置例" width="271" height="348" src="../image/Images-ja/img3_5_2.png"/><div class="figureCaption">図 4.118 <span class="caption-body">段落で指定された文字サイズより小さいサイズの文字列の配置例</span></div></div></div></div><p>なお，行間に配置する次のa～cを版面又は段の領域の先頭行に配置する場合は，先頭行に接する<span class="index" id="d12e330">版面又は段の領域の外側に配置する</span>（<a class="figure_ref" href="block_direction_setting_process_of_lines_paragraphs.xhtml#fig3_5_3-ja">図 4.119</a>）．</p><ol>
+					<li>
+<p>縦組における親文字の右側に付けるルビ，圏点及び傍線</p>
+
+</li>
+					<li>
+<p>横組における親文字の上側に付けるルビ及び圏点</p>
+
+</li>
+					<li>
+<p>縦組及び横組みにおける行間に配置する合印</p>
+
+</li>
+				</ol><div class="figure" id="fig3_5_3-ja"><div class="figure-float"><div><img alt="版面の外側に配置する例" width="212" height="344" src="../image/Images-ja/img3_5_3.png"/><div class="figureCaption">図 4.119 <span class="caption-body">版面の外側に配置する例</span></div></div></div></div><p>さらに，行間にはみ出して配置する次のa～eを版面又は段の領域の先頭行に配置する場合は，はみ出した部分を先頭行に接する<span class="index" id="d12e402">版面又は段の領域の外側に配置する</span>．</p><ol>
+					<li>
+<p>縦中横処理を行った文字列</p>
+
+</li>
+					<li>
+<p>添え字</p>
+
+</li>
+					<li>
+<p>割注</p>
+
+</li>
+					<li>
+<p>行送り方向の配置位置を文字単位で変更した文字列</p>
+
+</li>
+					<li>
+<p>段落で指定された文字サイズより大きいサイズの文字列</p>
+
+</li>
+				</ol><p>また，行間に配置する次のa及びbを版面又は段の領域の末尾行に配置する場合は，末尾行に接する版面又は段の領域の外側に配置する．</p><ol>
+					<li>
+<p>縦組における親文字の左側に付けるルビ及び傍線</p>
+
+</li>
+					<li>
+<p>横組における親文字の下側に付ける下線</p>
+
+</li>
+				</ol><p>さらに，行間にはみ出して配置する次のa～eを版面又は段領域の末尾行に配置する場合は，はみ出した部分を末尾行に接する版面又は段の領域の外側に配置する（<a class="figure_ref" href="block_direction_setting_process_of_lines_paragraphs.xhtml#fig3_5_4-ja">図 4.120</a>）．</p><ol>
+					<li>
+<p>縦中横処理を行った文字列</p>
+
+</li>
+					<li>
+<p>添え字</p>
+
+</li>
+					<li>
+<p>割注</p>
+
+</li>
+					<li>
+<p>行送り方向の配置位置を文字単位で変更した文字列</p>
+
+</li>
+					<li>
+<p>段落で指定された文字サイズより大きいサイズの文字列</p>
+
+</li>
+				</ol><div class="figure" id="fig3_5_4-ja"><div class="figure-float"><div><img alt="版面の外側にはみ出して配置する例" width="193" height="344" src="../image/Images-ja/img3_5_4.png"/><div class="figureCaption">図 4.120 <span class="caption-body">版面の外側にはみ出して配置する例</span></div></div></div></div></body></html>

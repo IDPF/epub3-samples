@@ -1,0 +1,108 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"><head><meta charset="UTF-8"/><title>Requirements for Japanese Text Layout</title><link rel="stylesheet" type="text/css" href="../css/base.css"/><link rel="stylesheet" type="text/css" href="../css/W3C-WG-NOTE.css"/></head><body><h3 id="legend_of_tables_4_5_6">D.1 <span class="heading"><span id="en-app4_1">Legend of Tables 3, 4 and 5</span></span></h3><ol class="decimal">
+<li>
+		
+			
+			<p>The  left-most column, labeled "before", lists preceding character classes, and the top row, labeled "after", lists trailing character classes. Each cell indicates the type of opportunities of inter-character space reduction between two adjacent characters of the corresponding character classes at a given row and column. </p>
+		
+</li>
+<li>
+		
+			
+			<p>The cells in the row "line head" or the column "line end" should read if there exists opportunity for space reduction at line head or line end respectively. Tables 3, 4 and 5 all prohibit space reduction at line head. While Table 4 prohibits space reduction at line end too, Tables 3 and 5 allow it for several character classes at line end.</p>
+		
+</li>
+<li>
+		
+			
+			<p>The type of opportunity for space reduction is indicated in each cell in the tables using the following notation.</p>
+		
+		<ol>
+		<li>
+			
+				
+				<p>Cells with a white background: No opportunity for space reduction because the two characters are set solid and there is no adjustable space between them, or because it is prohibited by rule to reduce the inter-character space for the given combination.</p>
+			
+			<ol><li>
+				
+					
+					<p>Blank: No opportunity for space reduction because the given combination of characters is set solid (or there is no space before or after the given character at line head or at line end respectively).</p>
+				
+			</li>
+			<li>
+				
+					
+					<p>× mark:The combination is not allowed due to line breaking rules or other restrictions.</p>
+				
+			</li>
+			<li>
+				
+					
+					<p>1/2: The amount of inter-character space shall be a half em, and this space shall not be reduced (no opportunity of inter-character space reduction).</p>
+				
+			</li>
+			<li>
+				
+					
+					<p>1/4: The amount of inter-character space shall be a quarter em, and this space shall not be reduced (no opportunity of inter-character space reduction).</p>
+				
+			</li>
+			</ol>
+		</li>
+		<li>
+			
+				
+				<p>Cells with a colored or gray background: An opportunity for inter-character space reduction exists.</p>
+			
+			<ol><li>
+				
+					
+					<p>Priority order in space reduction: The second highest and subsequent priorities of inter-character space reduction are indicated by the given background colors of the cells. The cells with the colors in the left are higher in priority than ones in the right. Space reduction shall be processed in this order.</p>
+				
+				<div class="Taiyaku nobook">
+					
+					<div class="figure" id="fig_a5-1-en"><div class="figure-float"><div><img alt="Priority order in space reduction." width="278" height="28" src="../image/Images-en/img_a5_1.png"/><div class="figureCaption">Fig. D.1: <span class="caption-body">Priority order in space reduction.</span></div></div></div></div>
+				</div>
+			</li>
+			<li>
+				
+					
+					<p>Amount of space reducible: the amount of space to be reduced is indicated using the following notation.</p>
+				
+				<ol>
+					<li>
+					
+						
+						<p>1/2–0: A half em space by default, which is reducible equally, with respect to the corresponding character size, with no minimum space required (set solid).</p>
+					
+					</li>
+					<li>
+					
+						
+						<p>1/2–1/4: A half em space by default, which is reducible equally, with respect to the corresponding character size, to leave a minimum of a quarter em space.</p>
+					
+					</li>
+					<li>
+					
+						
+						<p>1/2=0: A half em space by default, which can be removed to set solid (it is not allowed to leave any intermediate size of space between zero to a half em, such as a quarter em space).</p>
+					
+					</li>
+					<li>
+					
+						
+						<p>1/4–0: A quarter em space by default, which is reducible equally, with respect to the corresponding character size, with no minimum space required (set solid).</p>
+					
+					</li>
+					<li>
+					
+						
+						<p>1/4–1/8: A quarter em space by default, which is reducible equally, with respect to the corresponding character size, to leave a minimum of a one eighth em space.</p>
+					
+					</li>
+				</ol>
+			</li>
+			</ol>
+		</li>
+		</ol>
+</li>
+</ol><p>Note that JIS X 4051 specifies  to not leave any space after the <a class="characterClass" href="cl-02.xhtml#cl-02">closing brackets (cl-02)</a> or <a class="characterClass" href="cl-07.xhtml#cl-07">commas (cl-07)</a> at the line end. Therefore, Table 4 also indicates that there is no opportunity for space reduction after <a class="characterClass" href="cl-02.xhtml#cl-02">closing brackets (cl-02)</a> and <a class="characterClass" href="cl-07.xhtml#cl-07">commas (cl-07)</a> at the line end. Likewise, because <a class="characterClass" href="cl-05.xhtml#cl-05">middle dots (cl-05)</a> at the line end are supposed to have no space, Table 4 indicates there is no opportunity for space reduction for <a class="characterClass" href="cl-05.xhtml#cl-05">middle dots (cl-05)</a> at the line end. On the other hand, while JIS X 4051 specifies to pad with a half em space after <a class="characterClass" href="cl-06.xhtml#cl-06">full stops (cl-06)</a> at the line end, which is not allowed to reduce this space for line adjustment, Table 3 and 5 allow the removal of the default half em space after <a class="characterClass" href="cl-02.xhtml#cl-02">closing brackets (cl-02)</a>, <a class="characterClass" href="cl-06.xhtml#cl-06">full stops (cl-06)</a> and <a class="characterClass" href="cl-07.xhtml#cl-07">commas (cl-07)</a> at the line end for line adjustment. Table 3 further allows the removal of the default quarter em space padding before and after <a class="characterClass" href="cl-05.xhtml#cl-05">middle dots (cl-05)</a> at the line end for line adjustment, while Table 5 does not.</p></body></html>

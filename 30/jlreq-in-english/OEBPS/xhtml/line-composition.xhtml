@@ -1,0 +1,217 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"><head><meta charset="UTF-8"/><title>Requirements for Japanese Text Layout</title><link rel="stylesheet" type="text/css" href="../css/base.css"/><link rel="stylesheet" type="text/css" href="../css/W3C-WG-NOTE.css"/></head><body><h2 id="line-composition">3 <span class="heading"><span id="en-heading2">Line Composition</span></span></h2><h3 id="line_composition_rules_for_punctuation_marks">3.1 <span class="heading"><span class="index" id="en-subheading2_1">Line Composition Rules for Punctuation Marks</span></span></h3><h4 id="differences_in_vertical_and_horizontal_composition_in_use_of_punctuation_marks">3.1.1 <span class="heading"><span id="en-subheading2_1_1">Differences in Vertical and Horizontal Composition in Use of Punctuation Marks</span></span></h4><p>There are some <a class="termref" href="terminology.xhtml#term.punctuation-marks">punctuation marks</a> that are used uniquely in either <a class="termref" href="terminology.xhtml#term.vertical-writing-mode">vertical writing mode</a>
+or <a class="termref" href="terminology.xhtml#term.horizontal-writing-mode">horizontal writing mode</a>. In this document, characters and symbols are treated as members of a character class, classified by their behavior for <a class="termref" href="terminology.xhtml#term.composition">composition</a>. Each class name is followed by class id, such as <a class="characterClass" href="cl-01.xhtml#cl-01">opening brackets (cl-01)</a>. Details are explained in <a class="sec_ref" href="about_character_classes.xhtml#about_character_classes">3.9 About Character Classes</a>. The following are some typical examples:</p><ol>
+					<li>
+   
+    
+    <p><a class="characterClass" href="cl-06.xhtml#cl-06">Full stops (cl-06)</a> and <a class="characterClass" href="cl-07.xhtml#cl-07">commas (cl-07)</a></p>
+   
+   <ol>
+    <li>
+    
+     
+     <p>In vertical writing mode, <span class="character">IDEOGRAPHIC FULL STOP "。"</span> and <span class="character">IDEOGRAPHIC COMMA "、"</span> are used for <a class="characterClass" href="cl-06.xhtml#cl-06">full stops (cl-06)</a> and <a class="characterClass" href="cl-07.xhtml#cl-07">commas (cl-07)</a>.
+ </p>
+    
+    </li>
+    <li>
+    
+     
+     <p>In horizontal writing mode, there are three conventions in choice of symbols for <a class="characterClass" href="cl-06.xhtml#cl-06">full stops (cl-06)</a> and <a class="characterClass" href="cl-07.xhtml#cl-07">commas (cl-07)</a>:</p>
+    
+    <ol>
+     <li>
+     
+     
+     <p>Using <span class="character">COMMA "，"</span> and <span class="character">FULL STOP "．"</span> (see <a class="figure_ref" href="line-composition.xhtml#fig2_1-en">Fig. 3.1</a>).</p>
+     
+     
+     
+     <div class="figure" id="fig2_1-en"><div class="figure-float"><div><img alt="Example text using COMMA and FULL STOP." width="480" height="172" src="../image/Images-en/img2_1.png"/><div class="figureCaption">Fig. 3.1: <span class="caption-body">Example text using COMMA and FULL STOP.</span></div></div></div></div>
+     
+     
+     </li>
+     <li>
+     
+     
+     <p>Using <span class="character">COMMA "，"</span> and <span class="character">IDEOGRAPHIC FULL STOP "。"</span>
+(see <a class="figure_ref" href="line-composition.xhtml#fig2_2-en">Fig. 3.2</a>).</p>
+     
+     
+     
+     <div id="fig2_2-en" class="figure"><div class="figure-float"><div><img alt="Example text using COMMA and IDEOGRAPHIC FULL STOP." width="480" height="172" src="../image/Images-en/img2_2.png"/><div class="figureCaption">Fig. 3.2: <span class="caption-body">Example text using COMMA and IDEOGRAPHIC FULL STOP.</span></div></div></div></div>
+     
+     
+     </li>
+     <li>
+     
+     
+     <p>Using <span class="character">IDEOGRAPHIC COMMA "、"</span>
+and <span class="character">IDEOGRAPHIC FULL STOP "。"</span>
+(see <a class="figure_ref" href="line-composition.xhtml#fig2_3-en">Fig. 3.3</a>).</p>
+     
+     
+     
+     <div class="figure" id="fig2_3-en"><div class="figure-float"><div><img alt="Example text using IDEOGRAPHIC COMMA and IDEOGRAPHIC FULL STOP." width="480" height="172" src="../image/Images-en/img2_3.png"/><div class="figureCaption">Fig. 3.3: <span class="caption-body">Example text using IDEOGRAPHIC COMMA and IDEOGRAPHIC FULL STOP.</span></div></div></div></div>
+     
+     
+     </li>
+    </ol>
+    <table class="t_note">
+     <tr>
+     <td class="ft" rowspan="1" colspan="1">
+     
+      
+      <p>(note 1)</p>
+     
+     </td>
+     <td rowspan="1" colspan="1">
+     
+      
+      <p>
+In horizontal writing mode, there are many cases of composition that mixes Japanese and Western text. The convention shown in (i) is a way to apply the same
+comma and full stop
+to both Western and Japanese texts for consistency, and is common in books on science and technology. The convention shown in (ii) was invented because in (i) <span class="character">FULL STOP "."</span>
+appears too small for Japanese texts and using <span class="character">IDEOGRAPHIC FULL STOP "。"</span>
+for period looks better. This convention has been adopted for Japanese official publications. (In the past, <span class="character">COMMA ","</span>
+and <span class="character">FULL STOP "."</span>
+were used for some official publications.)</p>
+     
+     </td>
+     </tr>
+    </table>
+    
+    </li>
+   </ol>
+   </li>
+					<li>
+   
+    
+    <p><span class="character">LEFT CORNER BRACKET "「"</span>, <span class="character">RIGHT CORNER BRACKET "」"</span>, <span class="character">LEFT DOUBLE QUOTATION MARK "“"</span> and <span class="character">RIGHT DOUBLE QUOTATION MARK "”"</span></p>
+   
+   <ol>
+    <li>
+    
+     
+     <p>In vertical writing mode, <span class="character">LEFT CORNER BRACKET "「"</span>
+and <span class="character">RIGHT CORNER BRACKET "」"</span>
+are used for quotations (see <a class="figure_ref" href="line-composition.xhtml#fig2_4-en">Fig. 3.4</a>).</p>
+    
+    
+     
+     <div class="figure" id="fig2_4-en"><div class="figure-float"><div><img alt="Examples of quoted text using LEFT CORNER BRACKET and RIGHT CORNER BRACKET." width="150" height="480" src="../image/Images-en/img2_4.png"/><div class="figureCaption">Fig. 3.4: <span class="caption-body">Examples of quoted text using LEFT CORNER BRACKET and RIGHT CORNER BRACKET.</span></div></div></div></div>
+    
+    
+    </li>
+    <li>
+    
+     
+     <p>
+In horizontal writing mode, pairs of <span class="character">LEFT DOUBLE QUOTATION MARK "“"</span>
+and <span class="character">RIGHT DOUBLE QUOTATION MARK "”"</span>
+or pairs of <span class="character">LEFT SINGLE QUOTATION MARK "‘"</span>
+and <span class="character">RIGHT SINGLE QUOTATION MARK "’"</span>
+may be used in place of <span class="character">LEFT CORNER BRACKET "「"</span>
+and <span class="character">RIGHT CORNER BRACKET "」"</span> (see <a class="figure_ref" href="line-composition.xhtml#fig2_5-en">Fig. 3.5</a>).</p>
+    
+    
+     
+     <div class="figure" id="fig2_5-en"><div class="figure-float"><div><img alt="Examples of quoted text using LEFT DOUBLE QUOTATION MARK and RIGHT DOUBLE QUOTATION MARK." width="480" height="148" src="../image/Images-en/img2_5.png"/><div class="figureCaption">Fig. 3.5: <span class="caption-body">Examples of quoted text using LEFT DOUBLE QUOTATION MARK and RIGHT DOUBLE QUOTATION MARK.</span></div></div></div></div>
+    
+    
+    <table class="t_note">
+     <tr>
+     <td class="ft" rowspan="1" colspan="1">
+     
+      
+      <p>(note 1)</p>
+     
+     </td>
+     <td rowspan="1" colspan="1">
+     
+      
+      <p>
+ This is because <span class="character">LEFT CORNER BRACKET "「"</span> and (especially) <span class="character">RIGHT CORNER BRACKET "」"</span> may not look good in horizontal writing mode, but adoption of corner brackets for horizontal writing mode seems to be increasing.</p>
+     
+     </td>
+     </tr>
+     <tr>
+     <td class="ft" rowspan="1" colspan="1">
+     
+      
+      <p>(note 2)</p>
+     
+     </td>
+     <td rowspan="1" colspan="1">
+     
+
+<p>
+Though
+<span class="character">REVERSED DOUBLE PRIME QUOTATION MARK "〝"</span> and
+<span class="character">LOW DOUBLE PRIME QUOTATION MARK "〟"</span>
+are similar to double quotation marks in appearance (see <a class="figure_ref" href="line-composition.xhtml#fig2_6-en">Fig. 3.6</a>) they are exclusively used for vertical writing mode and are not to be used in horizontal writing mode.
+</p>
+     </td>
+     </tr>
+</table>
+     
+      
+      <div class="figure" id="fig2_6-en"><div class="figure-float"><div><img alt="Examples of quoted text using REVERSED DOUBLE PRIME QUOTATION MARK and LOW DOUBLE PRIME QUOTATION MARK." width="24" height="264" src="../image/Images-en/img2_6.png"/><div class="figureCaption">Fig. 3.6: <span class="caption-body">Examples of quoted text using REVERSED DOUBLE PRIME QUOTATION MARK and LOW DOUBLE PRIME QUOTATION MARK.</span></div></div></div></div>
+     
+     
+<table class="t_note">
+     <tr>
+     <td class="ft" rowspan="1" colspan="1">
+     
+      
+      <p>(note 3)</p>
+     
+     </td>
+     <td rowspan="1" colspan="1">
+     
+      
+      <p><span class="character">LEFT DOUBLE QUOTATION MARK "“"</span>
+and <span class="character">RIGHT DOUBLE QUOTATION MARK "”"</span> are exclusively for horizontal writing mode and not to be used in vertical writing mode. Also, <span class="character">LEFT SINGLE QUOTATION MARK "‘"</span> and <span class="character">RIGHT SINGLE QUOTATION MARK "’"</span> are exclusively for horizontal writing mode and not to be used in vertical writing mode. However, in vertical writing mode, when <a class="characterClass" href="cl-27.xhtml#cl-27">Western characters (cl-27)</a> are composed rotated 90 degrees  clockwise, these quotation marks are sometimes used.</p>
+     
+     </td>
+     </tr>
+    </table>
+    
+    </li>
+   </ol>
+   </li>
+					<li>
+   
+    
+    <p><span class="character">LEFT SQUARE BRACKET "［"</span>, <span class="character">RIGHT SQUARE BRACKET "］"</span>, <span class="character">LEFT TORTOISE SHELL BRACKET "〔"</span> and <span class="character">RIGHT TORTOISE SHELL BRACKET "〕"</span></p>
+   
+   
+    
+    <p>
+   <span class="character">LEFT TORTOISE SHELL BRACKET "〔"</span> and <span class="character">RIGHT TORTOISE SHELL BRACKET "〕"</span> are vertical variants of <span class="character">LEFT SQUARE BRACKET "［"</span> and <span class="character">RIGHT SQUARE BRACKET "］"</span>, which are used in horizontal writing mode. Square brackets should be used in horizontal writing mode except for special
+ cases.
+ </p>
+   
+   </li>
+				</ol><table class="t_note">
+					<tr>
+						<td class="ft" rowspan="1" colspan="1">
+							
+								
+								<p>(note 1)</p>
+							
+						</td>
+						<td rowspan="1" colspan="1">
+							
+								
+								<p>
+The position of the <a class="termref" href="terminology.xhtml#term.letter-face">letter face</a> of <a class="characterClass" href="cl-07.xhtml#cl-07">commas (cl-07)</a>
+and <a class="characterClass" href="cl-06.xhtml#cl-06">full stops (cl-06)</a>
+within the <a class="termref" href="terminology.xhtml#term.character-frame">character frame</a> differs in vertical and horizontal writing modes. The same letter face can be used for <a class="characterClass" href="cl-01.xhtml#cl-01">opening brackets (cl-01)</a>, <a class="characterClass" href="cl-02.xhtml#cl-02">closing brackets (cl-02)</a>
+and <a class="characterClass" href="cl-03.xhtml#cl-03">hyphens (cl-03)</a>
+in both vertical and horizontal writing mode by rotating clockwise 90 degrees to the inline direction. The position of the <a class="termref" href="terminology.xhtml#term.letter-face">letter face</a> of <a class="characterClass" href="cl-11.xhtml#cl-11">small kana (cl-11)</a>
+symbols within the character frame is different in vertical and horizontal writing modes. For <span class="character">KATAKANA-HIRAGANA PROLONGED SOUND MARK "ー"</span>, the difference between vertical and horizontal writing modes is not only in the orientation of the <a class="termref" href="terminology.xhtml#term.character-shape">letter form</a> to the inline direction, but also the shape of the symbol
+(see <a class="figure_ref" href="line-composition.xhtml#fig2_7-en">Fig. 3.7</a>).</p>
+							
+						</td>
+					</tr>
+				</table><div class="figure" id="fig2_7-en"><div class="figure-float"><div><img alt="KATAKANA-HIRAGANA PROLONGED SOUND MARK for vertical and horizontal writing modes." width="439" height="160" src="../image/Images-en/img2_7.png"/><div class="figureCaption">Fig. 3.7: <span class="caption-body">KATAKANA-HIRAGANA PROLONGED SOUND MARK for vertical and horizontal writing modes.</span></div></div></div></div></body></html>

@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='utf-8'?>
+<ncx xmlns="http://www.daisy.org/z3986/2005/ncx/" version="2005-1">
+  <head>
+    <meta content="urn:uuid:12C1DF3E-DF35-4FCF-918B-643FF15A7870" name="dtb:uid"/>
+    <meta content="-1" name="dtb:totalPageCount"/>
+    <meta content="-1" name="dtb:maxPageNumber"/>
+  </head>
+  <docTitle>
+    <text>Abroad</text>
+  </docTitle>
+  <docAuthor>
+    <text>Crane, Thomas</text>
+  </docAuthor>
+  <navMap>
+    <navPoint playOrder="1" id="nav1">
+      <navLabel>
+        <text>Page</text>
+      </navLabel>
+      <content src="childrens-book-page.xhtml"/>
+    </navPoint>
+  </navMap>
+</ncx>

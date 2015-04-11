@@ -1,0 +1,44 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"><head><meta charset="UTF-8"/><title>Requirements for Japanese Text Layout</title><link rel="stylesheet" type="text/css" href="../css/base.css"/><link rel="stylesheet" type="text/css" href="../css/W3C-WG-NOTE.css"/></head><body><h4 id="processing_of_tables_allocated_in_a_spread">4.4.5 <span class="heading"><span class="index" id="d11e1490">Processing of Tables Allocated in a Spread</span></span></h4><p>When a table is  allocated in a spread, it is desirable to allocate within the spread. However, sometimes it is impossible to allocate in the same spread where the table is linked to. In such cases, the spread where the table is allocated is decided as follows (see <a class="sec_ref" href="basic_ideas_about_illustration_positioning_in_JISX4051.xhtml#basic_ideas_about_illustration_positioning_in_JISX4051">4.3.5 Basic Ideas about Illustration Positioning in JIS X 4051</a>): Firstly, calculate the distance between the anchor position of the base text and the last position of the spread (see <a class="figure_ref" href="processing_of_tables_allocated_in_a_spread.xhtml#fig3_4_12-en">Fig. 4.111</a>). Secondly, calculate the distance between the original position of the anchor and the position of the anchor when the table is allocated at the spread where the anchor was originally positioned, and consequently the position of the anchor is overflowed to the next spread (see <a class="figure_ref" href="processing_of_tables_allocated_in_a_spread.xhtml#fig3_4_12_2-en">Fig. 4.112</a>). Finally, compare these two distances, and decide whether to  allocate the table to the original spread or next spread (see <a class="figure_ref" href="processing_of_tables_allocated_in_a_spread.xhtml#fig3_4_12_3-en">Fig. 4.113</a>).</p><div class="figure" id="fig3_4_12-en"><div class="figure-float"><div><img alt="First step of the calculation of the distance of the allocation method to a spread." width="460" height="387" src="../image/Images-en/img3_4_12.png"/><div class="figureCaption">Fig. 4.111: <span class="caption-body">First step of the calculation of the distance of the allocation method to a spread.</span></div></div></div></div><div class="figure" id="fig3_4_12_2-en"><div class="figure-float"><div><img alt="Second step of the calculation of the distance of the allocation method to a spread." width="458" height="749" src="../image/Images-en/img3_4_12_2.png"/><div class="figureCaption">Fig. 4.112: <span class="caption-body">Second step of the calculation of the distance of the allocation method to a spread.</span></div></div></div></div><div class="figure" id="fig3_4_12_3-en"><div class="figure-float"><div><img alt="Last step of the calculation of the distance of the allocation method to a spread." width="458" height="719" src="../image/Images-en/img3_4_12_3.png"/><div class="figureCaption">Fig. 4.113: <span class="caption-body">Last step of the calculation of the distance of the allocation method to a spread.</span></div></div></div></div><p>  The next problem is where to divide a table. In some senses, illustrations can be divided wherever specified or at the kihon-hanmen border. On the other hand, there are some limitations and issues to consider when dividing tables as follows: </p><ol>
+					<li>
+                        
+                           
+                           <p>Tables are divided at the border of rows or columns, with condition that the border between the header and adjoining cells shall not be divided, also it is prohibited to divide just after captions.</p>
+                        
+                     </li>
+					<li>
+                        
+                           
+                           <p>When there is a visible KEISEN at the expected dividing position, the common approach is as follows: </p>
+                        
+                        <ol>
+                           <li>
+                              
+                                 
+                                 <p>When the outer frame KEISENs of inline direction are visible, the top side KEISEN at the dividing position shall be invisible and the bottom side KEISEN at the dividing position shall be visible (see <a class="figure_ref" href="processing_of_tables_allocated_in_a_spread.xhtml#fig3_4_13-en">Fig. 4.114</a>).</p>
+                              
+                              
+                                 
+                                 <div class="figure" id="fig3_4_13-en"><div class="figure-float"><div><img alt="Example one of KEISEN of a table set in a spread" width="456" height="371" src="../image/Images-en/img3_4_13.png"/><div class="figureCaption">Fig. 4.114: <span class="caption-body">Example one of KEISEN of a table set in a spread</span></div></div></div></div>
+                              
+                              
+                           </li>
+                           <li>
+                              
+                                 
+                                 <p>When the outer frame KEISENs of inline direction are invisible, the top side KEISEN at the dividing position shall be visible and the bottom side KEISEN at the dividing position shall be invisible (see <a class="figure_ref" href="processing_of_tables_allocated_in_a_spread.xhtml#fig3_4_14-en">Fig. 4.115</a>).</p>
+                              
+                              
+                                 
+                                 <div class="figure" id="fig3_4_14-en"><div class="figure-float"><div><img alt="Example two of KEISEN of a table set in a spread" width="456" height="376" src="../image/Images-en/img3_4_14.png"/><div class="figureCaption">Fig. 4.115: <span class="caption-body">Example two of KEISEN of a table set in a spread</span></div></div></div></div>
+                              
+                              
+                           </li>
+                           <li>
+                              
+                                 
+                                 <p>When the tables are divided by column units, the KEISEN at the dividing position of the top part shall be invisible, and the bottom part KEISEN shall be visible.</p>
+                              
+                           </li>
+                        </ol>
+                     </li>
+				</ol></body></html>

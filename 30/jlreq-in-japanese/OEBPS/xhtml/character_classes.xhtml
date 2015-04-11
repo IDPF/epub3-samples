@@ -1,0 +1,16 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja"><head><meta charset="UTF-8"/><meta name="author" content="Japanese Layout Task Force"/><title>日本語組版処理の要件（日本語版）</title><link rel="stylesheet" type="text/css" href="../css/W3C-WG-NOTE.css"/><link rel="stylesheet" type="text/css" href="../css/base.css"/></head><body><div xmlns:xhtm="http://www.w3.org/1999/xhtml" id="appendices"/><h2 id="character_classes">附属書A <span class="heading"><span class="index" id="character-classes-ja">文字クラス一覧</span></span></h2><p><a class="sec_ref" href="grouping_of_characters_and_symbols_depending_on_their_positioning.xhtml#grouping_of_characters_and_symbols_depending_on_their_positioning">3.9.2 文字・記号を振る舞い方により分ける</a>で解説した文字クラスに従い，ISO/IEC 10646のサブセット（コレクション285“基本日本文字集合”及びコレクション286“拡張非漢字集合”）に含まれる非漢字の文字を分類して，以下に示す．</p><table class="t_note">
+            <tr>
+               <td class="ft" rowspan="1" colspan="1">
+                  
+                     <p>注1）</p>
+                     
+                  
+               </td>
+               <td rowspan="1" colspan="1">
+                  
+                     <p><a class="termref" href="terminology.xhtml#term.punctuation-marks">約物</a>は国際文字符号化集合ISO/IEC 10646では基本的に特定の用字系に依存しない汎用的な記号として扱っているため，和文専用に符号化された例えば“和文用始め小括弧”というような記号は符号化されていない．しかしながら，実際の<a class="termref" href="terminology.xhtml#term.composition">組版</a>においては，用字系によって，字幅，字形デザイン，及び<a class="termref" href="terminology.xhtml#term.base-line">並び線</a>の位置について違いがあるので，同じひとそろいの約物は，通常欧文と和文の双方に適用することはできない．この問題に対処するため，多くの実際の処理系では，その他の文字コード規格との往復保全の互換性を維持する目的で規格として別にコード化されている互換用の文字コードを使用している．例えば，この文書では“U+0028（LEFT PARENTHESIS，始め小括弧）”を<a class="characterClass" href="cl-01.xhtml#cl-01">始め括弧類（cl-01）</a>の一つに分類しているが，多くの和文組版ソフトウェアでは，和文に適用する場合は対応する互換用の文字コードである“U+FF08（FULLWIDTH LEFT PARENTHESIS）”を使用している．なお，“通用名称”は，JIS X 0213の“日本語通用名称（参考）”である．</p>
+                     
+                  
+               </td>
+            </tr>
+         </table></body></html>

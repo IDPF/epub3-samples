@@ -1,0 +1,82 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja"><head><meta charset="UTF-8"/><meta name="author" content="Japanese Layout Task Force"/><title>日本語組版処理の要件（日本語版）</title><link rel="stylesheet" type="text/css" href="../css/W3C-WG-NOTE.css"/><link rel="stylesheet" type="text/css" href="../css/base.css"/></head><body><h4 id="procedures_for_intercharacter_space_reduction">3.8.3 <span class="heading"><span class="index" id="ja-subheading2_8_3">詰める処理の優先順位</span></span></h4><p>詰める処理（追込み処理）を行う場合は，通常，優先順位と詰める限界を決めて行う．詰める処理は，次の順序で行う．</p><table class="t_note">
+					<tr>
+						<td class="ft" rowspan="1" colspan="1">
+							
+								<p>注1）</p>
+								
+							
+						</td>
+						<td rowspan="1" colspan="1">
+							
+								<p>JIS X 4051では<a class="termref" href="terminology.xhtml#term.warichu">割注</a>の調整方法も規定しているが，ここでは説明がやや複雑になるので除いた．</p>
+								
+							
+						</td>
+					</tr>
+					<tr>
+						<td class="ft" rowspan="1" colspan="1">
+							
+								<p>注2）</p>
+								
+							
+						</td>
+						<td rowspan="1" colspan="1">
+							
+								<p>行の調整処理の際に詰める処理（追込み処理）が可能な箇所の詳細は，<a class="sec_ref" href="about_character_classes.xhtml#about_character_classes">3.9 文字クラスについて</a>で説明する文字クラスに従い，<a class="sec_ref" href="opportunities_for_intercharacter_space_reduction_during_line_adjustment.xhtml#opportunities_for_intercharacter_space_reduction_during_line_adjustment">附属書D 行の調整処理で​詰める処理が​可能な箇所</a>の表4で示す．</p>
+								
+							
+						</td>
+					</tr>
+				</table><ol>
+					<li><p><span class="index" id="d6e2845"><a class="characterClass" href="cl-26.xhtml#cl-26">欧文間隔（cl-26）</a></span>を，最小で<a class="termref" href="terminology.xhtml#term.quarter-em-space">四分アキ</a>まで文字サイズ比で均等に詰める．</p>
+					</li>
+					<li><p><span class="index" id="d6e2864">行末に配置する<a class="characterClass" href="cl-02.xhtml#cl-02">終わり括弧類（cl-02）</a></span>，<a class="characterClass" href="cl-07.xhtml#cl-07">読点類（cl-07）</a>及び<a class="characterClass" href="cl-06.xhtml#cl-06">句点類（cl-06）</a>の後ろの二分アキをベタ組にする．</p>
+					</li>
+					<li><p>行末に配置する<a class="characterClass" href="cl-05.xhtml#cl-05">中点類（cl-05）</a>の前及び後ろの四分アキを一緒にベタ組にする．</p>
+					</li>
+					<li><p>行中の<span class="index" id="d6e2906"><a class="characterClass" href="cl-05.xhtml#cl-05">中点類（cl-05）</a></span>の前後の四分アキを，最小でベタ組まで文字サイズ比で均等に詰める．</p>
+					</li>
+					<li><p>行中の<span class="index" id="d6e2921"><a class="characterClass" href="cl-01.xhtml#cl-01">始め括弧類（cl-01）</a></span>の前側，並びに<span class="index" id="d6e2925"><a class="characterClass" href="cl-02.xhtml#cl-02">終わり括弧類（cl-02）</a></span>及び<span class="index" id="d6e2929"><a class="characterClass" href="cl-07.xhtml#cl-07">読点類（cl-07）</a></span>の後ろ側の二分アキを，最小でベタ組まで文字サイズ比で均等に詰める．</p>
+					<table class="t_note"><tr><td class="ft" rowspan="1" colspan="1">
+<p>注1）</p>
+</td><td rowspan="1" colspan="1">
+<p><span class="index" id="d6e2959"><a class="characterClass" href="cl-06.xhtml#cl-06">句点類（cl-06）</a></span>の後ろの二分アキは，文の区切りとしての役割が大きいので，行末に配置する場合を除いて，調整には使用しない．</p>
+</td></tr><tr><td class="ft" rowspan="1" colspan="1">
+         <p>注2）</p>
+         </td><td rowspan="1" colspan="1">
+         <p><a class="characterClass" href="cl-07.xhtml#cl-07">読点類（cl-07）</a>と，<a class="characterClass" href="cl-01.xhtml#cl-01">始め括弧類（cl-01）</a>・<a class="characterClass" href="cl-02.xhtml#cl-02">終わり括弧類（cl-02）</a>では，その役割が異なることから，始め括弧類の前，終わり括弧類の後ろの二分アキを詰める調整を，読点類の後ろの二分アキを詰める調整より優先して処理している例もある．</p>
+         </td></tr><tr><td class="ft" rowspan="1" colspan="1">
+<p>注3）</p>
+</td><td rowspan="1" colspan="1">
+<p><a class="characterClass" href="cl-01.xhtml#cl-01">始め括弧類（cl-01）</a>の前の二分アキ，<a class="characterClass" href="cl-02.xhtml#cl-02">終わり括弧類（cl-02）</a>の後ろ及び<a class="characterClass" href="cl-07.xhtml#cl-07">読点類（cl-07）</a>の後ろの二分アキを，ベタ組まで詰めるのは詰め過ぎであるという考えから，詰める限界を最小で四分アキまでとして処理している例もある．</p>
+</td></tr></table></li>
+					<li><p><a class="characterClass" href="cl-15.xhtml#cl-15">平仮名（cl-15）</a>，<a class="characterClass" href="cl-16.xhtml#cl-16">片仮名（cl-16）</a>，<a class="characterClass" href="cl-19.xhtml#cl-19">漢字等（cl-19）</a>などと，<a class="characterClass" href="cl-24.xhtml#cl-24">連数字中の文字（cl-24）</a>，<span class="index" id="d6e3054"><a class="characterClass" href="cl-27.xhtml#cl-27">欧文用文字（cl-27）</a></span>又は<span class="index" id="d6e3058"><a class="characterClass" href="cl-25.xhtml#cl-25">単位記号中の文字（cl-25）</a></span>との字間の四分アキを，最小で八分（全角の8分の1）アキまで文字サイズ比で均等に詰める．</p>
+					<table class="t_note"><tr><td class="ft" rowspan="1" colspan="1"><p>注1）</p>
+              </td><td rowspan="1" colspan="1">
+              <p><a class="characterClass" href="cl-19.xhtml#cl-19">漢字等（cl-19）</a>などと，<a class="characterClass" href="cl-27.xhtml#cl-27">欧文用文字（cl-27）</a>，<a class="characterClass" href="cl-24.xhtml#cl-24">連数字中の文字（cl-24）</a>又は<a class="characterClass" href="cl-25.xhtml#cl-25">単位記号中の文字（cl-25）</a>との四分アキは，固定した空き量として，調整には使用しない例もある．</p>
+              </td></tr></table></li>
+				</ol><p>なお，<span class="index" id="d6e3140">JIS X 4051</span>では，行末に配置する<a class="characterClass" href="cl-02.xhtml#cl-02">終わり括弧類（cl-02）</a>，<a class="characterClass" href="cl-07.xhtml#cl-07">読点類（cl-07）</a>及び<a class="characterClass" href="cl-05.xhtml#cl-05">中点類（cl-05）</a>の後ろをベタ組とし，行末に配置する<a class="characterClass" href="cl-06.xhtml#cl-06">句点類（cl-06）</a>の後ろは二分アキとすることから，次の順序で処理するように規定している．</p><table class="t_note">
+					<tr>
+						<td class="ft" rowspan="1" colspan="1">
+							
+								<p>注1）</p>
+								
+							
+						</td>
+						<td rowspan="1" colspan="1">
+							
+								<p>JIS X 4051で規定している行の調整処理の際に詰める処理（追込み処理）が可能な箇所の詳細は，<a class="sec_ref" href="about_character_classes.xhtml#about_character_classes">3.9 文字クラスについて</a>で説明する文字クラスに従い，表の形式にして<a class="sec_ref" href="opportunities_for_intercharacter_space_reduction_during_line_adjustment.xhtml#opportunities_for_intercharacter_space_reduction_during_line_adjustment">附属書D 行の調整処理で​詰める処理が​可能な箇所</a>の表5で示す．</p>
+								
+							
+						</td>
+					</tr>
+				</table><ol>
+					<li><p><a class="characterClass" href="cl-26.xhtml#cl-26">欧文間隔（cl-26）</a>を，最小で四分アキまで文字サイズ比で均等に詰める．</p>
+					</li>
+					<li><p><a class="characterClass" href="cl-05.xhtml#cl-05">中点類（cl-05）</a>の前後の空き量を，最小でベタ組まで文字サイズ比で均等に詰める．</p>
+					</li>
+					<li><p><a class="characterClass" href="cl-01.xhtml#cl-01">始め括弧類（cl-01）</a>の前側，並びに<a class="characterClass" href="cl-02.xhtml#cl-02">終わり括弧類（cl-02）</a>及び<a class="characterClass" href="cl-07.xhtml#cl-07">読点類（cl-07）</a>の後ろ側の二分アキを，最小でベタ組まで文字サイズ比で均等に詰める．</p>
+					</li>
+					<li><p><a class="characterClass" href="cl-15.xhtml#cl-15">平仮名（cl-15）</a>，<a class="characterClass" href="cl-16.xhtml#cl-16">片仮名（cl-16）</a>，<a class="characterClass" href="cl-19.xhtml#cl-19">漢字等（cl-19）</a>などと，<a class="characterClass" href="cl-24.xhtml#cl-24">連数字中の文字（cl-24）</a>，<a class="characterClass" href="cl-27.xhtml#cl-27">欧文用文字（cl-27）</a>又は<a class="characterClass" href="cl-25.xhtml#cl-25">単位記号中の文字（cl-25）</a>との字間の四分アキを，最小で八分アキまで文字サイズ比で均等に詰める．</p>
+					</li>
+				</ol></body></html>

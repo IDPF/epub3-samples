@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="../Style/style.css" type="text/css"?>
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg"    xmlns:svg="http://www.w3.org/2000/svg" width="736px" height="1162px" viewBox="0 0 368 581" version="1.1" preserveAspectRatio="xMidYMid meet">
+	<title>Sous le Vent, page 10</title>
+	<desc>Cartographie de l'Asie du Sud-Est</desc>
+	<clipPath id="clip1">
+		<path d="M 0.0585938 0 L 368.503906 0 L 368.503906 581.101563 L 0.0585938 581.101563 Z M 0.0585938 0"/>
+	</clipPath>
+	<g id="surface1">
+		<g clip-path="url(#clip1)" clip-rule="nonzero">
+			<g transform="matrix(0.400382,0,0,0.400181,-1.152,-1.27)">
+				<image width="924px" height="1458px" xlink:href="../Image/img3.jpg"/>
+			</g>
+		</g>
+	</g>
+</svg>

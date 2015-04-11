@@ -1,0 +1,151 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"><head><meta charset="UTF-8"/><title>Requirements for Japanese Text Layout</title><link rel="stylesheet" type="text/css" href="../css/base.css"/><link rel="stylesheet" type="text/css" href="../css/W3C-WG-NOTE.css"/></head><body><h4 id="positioning_of_monoruby_with_respect_to_base_characters">3.3.5 <span class="heading"><span class="index" id="en-subheading2_3_5">Positioning of Mono-ruby with Respect to Base Characters</span></span></h4><p>
+   When <a class="termref2nd" href="terminology.xhtml#term.mono-ruby">mono-ruby</a> characters are Japanese, they are <a class="termref" href="terminology.xhtml#term.solid-setting">set solid</a>. If mono-ruby characters have their own character widths such as
+   Western characters or <a class="termref" href="terminology.xhtml#term.european-numerals">European numerals</a>, they are set according to their own widths and then the ruby text is placed so that its center
+   matches that of its base character. There are more variations depending on the combination of the base character
+   and ruby text and accordingly various composition rules have been invented, which will be explained with examples.
+</p><p>
+   When attaching two <a class="characterClass" href="cl-15.xhtml#cl-15">hiragana (cl-15)</a> ruby characters to a single base character, the lengths of the ruby text and the base text are the same and they are positioned as shown
+   in <a class="figure_ref" href="positioning_of_monoruby_with_respect_to_base_characters.xhtml#fig2_3_13-en">Fig. 3.62</a>.
+</p><div class="figure" id="fig2_3_13-en"><div class="figure-float"><div><img alt="An example of composition with two ruby characters." width="195" height="147" src="../image/Images-en/img2_3_13.png"/><div class="figureCaption">Fig. 3.62: <span class="caption-body">An example of composition with two ruby characters.</span></div></div></div></div><p>
+   When attaching a single <a class="characterClass" href="cl-15.xhtml#cl-15">hiragana (cl-15)</a> ruby character to a single base character, there are two ways of positioning the ruby character.
+</p><ol>
+					<li>
+   
+    
+    <p>
+    In <a class="termref2nd" href="terminology.xhtml#term.vertical-writing-mode">vertical writing mode</a>, attach a ruby character so that its vertical center matches that of the base character (see <a class="figure_ref" href="positioning_of_monoruby_with_respect_to_base_characters.xhtml#fig2_3_14-en">Fig. 3.63</a>).
+    In <a class="termref2nd" href="terminology.xhtml#term.horizontal-writing-mode">horizontal writing mode</a>, attach a ruby character so that its horizontal center matches that of the base character (see
+    <a class="figure_ref" href="positioning_of_monoruby_with_respect_to_base_characters.xhtml#fig2_3_14-en">Fig. 3.63</a>).
+    This positioning of a ruby character is called '<a class="termref" href="terminology.xhtml#term.nakatsuki">nakatsuki</a>' (center-alignment).
+</p>
+   
+				
+					
+					<div class="figure" id="fig2_3_14-en"><div class="figure-float"><div><img alt="Examples of nakatsuki and katatsuki alignment." width="453" height="454" src="../image/Images-en/img2_3_14.png"/><div class="figureCaption">Fig. 3.63: <span class="caption-body">Examples of nakatsuki and katatsuki alignment.</span></div></div></div></div>
+				
+				
+   </li>
+					<li>
+   
+    
+    <p>
+    In vertical writing mode, attach a ruby character so that the top of its virtual body is aligned with the top of that of the base
+    character (see <a class="figure_ref" href="positioning_of_monoruby_with_respect_to_base_characters.xhtml#fig2_3_14-en">Fig. 3.63</a>). This positioning of a ruby character is called 'katatsuki' (top-alignment).
+    For horizontal writing mode, '<a class="termref2nd" href="terminology.xhtml#term.katatsuki">katatsuki</a>' should not be adopted. If a ruby character is attached so that the left-edge of its virtual
+    body is aligned with the left-edge of that of the base character, it would result in the loss of the center of balance, which
+    doesn't look good (see <a class="figure_ref" href="positioning_of_monoruby_with_respect_to_base_characters.xhtml#fig2_3_15-en">Fig. 3.64</a>).
+</p>
+   
+				
+					
+					<div class="figure" id="fig2_3_15-en"><div class="figure-float"><div><img alt="Example of katatsuki alignment in horizontal layout (this is intentionally wrong and should not be applied)." width="370" height="139" src="../image/Images-en/img2_3_15.png"/><div class="figureCaption">Fig. 3.64: <span class="caption-body">Example of katatsuki alignment in horizontal layout (this is intentionally wrong and should not be applied).</span></div></div></div></div>
+				
+				
+   </li>
+				</ol><table class="t_note">
+					<tr>
+						<td class="ft" rowspan="1" colspan="1">
+							
+								
+								<p>(note 1)</p>
+							
+						</td>
+						<td rowspan="1" colspan="1">
+							
+								
+								<p>
+     Katatsuki alignment was commonly used in the <a class="termref2nd" href="terminology.xhtml#term.letterpress-printing">letterpress printing</a> era, but today the adoption of nakatsuki alignment is increasing
+     even in vertical writing mode. However, there is still an opinion favoring katatsuki alignment, because it is familiar and
+     readable.
+</p>
+							
+						</td>
+					</tr>
+				</table><p>
+   When attaching three or more <a class="characterClass" href="cl-15.xhtml#cl-15">hiragana (cl-15)</a> ruby characters to a single base character, the ruby characters are set solid. In this
+   case, where the length of a ruby text is longer than that of its base character, positioning of the ruby text depends
+   on which alignment has been adopted for a single ruby character. There is another issue: how to maintain the spatial balance
+   of the ruby characters hanging over those characters which are not related base characters. The adjustment of inter-character
+   spacing for those characters which come before and after the base character will be explained in <a class="sec_ref" href="adjustments_of_ruby_with_length_longer_than_that_of_the_base_characters.xhtml#adjustments_of_ruby_with_length_longer_than_that_of_the_base_characters">3.3.8 Adjustments of Ruby with Length Longer than that of the Base Characters</a>.
+</p><ol>
+					<li>
+   
+    
+    <p>
+    When nakatsuki alignment is adopted for a single ruby character, position a ruby text so that its vertical center is aligned
+    with that of its base character in vertical writing mode (see <a class="figure_ref" href="positioning_of_monoruby_with_respect_to_base_characters.xhtml#fig2_3_16-en">Fig. 3.65</a>). In horizontal writing mode, position a ruby text so that its horizontal center is aligned with that of its base character
+    (see <a class="figure_ref" href="positioning_of_monoruby_with_respect_to_base_characters.xhtml#fig2_3_16-en">Fig. 3.65</a>).
+</p>
+   
+   
+    
+    <div class="figure" id="fig2_3_16-en"><div class="figure-float"><div><img alt="Example 1 of positioning of ruby text with three or more  characters." width="223" height="342" src="../image/Images-en/img2_3_16.png"/><div class="figureCaption">Fig. 3.65: <span class="caption-body">Example 1 of positioning of ruby text with three or more  characters.</span></div></div></div></div>
+   
+   
+   </li>
+					<li>
+   
+    
+    <p>
+    When katatsuki alignment is adopted for a single ruby character, there are two methods, as follows.
+</p>
+   
+   <ol>
+    <li>
+    
+     
+     <p>
+     Position the ruby text so that its vertical center is aligned with that of its base character (see <a class="figure_ref" href="positioning_of_monoruby_with_respect_to_base_characters.xhtml#fig2_3_16-en">Fig. 3.65</a>).</p>
+    
+    </li>
+    <li>
+    
+     
+     <p>
+     Depending on the type of script of the adjacent characters to the base character, and the number of ruby characters, a decision
+     is made about whether  ruby hangover is allowed on the character before its base character, or on the character after, or
+     on both adjacent characters. At break-even situation, the hangover is usually on the character after its base character (see <a class="figure_ref" href="positioning_of_monoruby_with_respect_to_base_characters.xhtml#fig2_3_17-en">Fig. 3.66</a>).
+ </p>
+    
+    </li>
+   </ol>
+   </li>
+				</ol><div class="figure" id="fig2_3_17-en"><div class="figure-float"><div><img alt="Example 2 of positioning of ruby text with three or more characters (vertical writing mode)." width="437" height="293" src="../image/Images-en/img2_3_17.png"/><div class="figureCaption">Fig. 3.66: <span class="caption-body">Example 2 of positioning of ruby text with three or more characters (vertical writing mode).</span></div></div></div></div><table class="t_note">
+					<tr>
+						<td class="ft" rowspan="1" colspan="1">
+							
+								
+								<p>(note 1)</p>
+							
+						</td>
+						<td rowspan="1" colspan="1">
+							
+								
+								<p>
+     The terms katatsuki and nakatsuki were originally used for ruby alignment only when a single ruby character is attached
+     to a single base character. However there are cases where the meaning is stretched so that the terms can be used when
+     three or more ruby characters are involved. We use the terms katatsuki and nakatsuki with their original meaning throughout
+     this document.
+</p>
+							
+						</td>
+					</tr>
+					<tr>
+						<td class="ft" rowspan="1" colspan="1">
+							
+								
+								<p>(note 2)</p>
+							
+						</td>
+						<td rowspan="1" colspan="1">
+							
+								
+								<p>
+     The preference for the choice of hanging the ruby over the character after its base character is due to the preference
+     to avoid adjustment of inter-character spacing between base characters and their adjacent characters, which was common
+     in letterpress printing.
+</p>
+							
+						</td>
+					</tr>
+				</table><p>For <a class="termref2nd" href="terminology.xhtml#term.mono-ruby">mono-ruby</a>, base characters and   attached  ruby characters are handled as one object, and internal line-breaks are prohibited.</p></body></html>

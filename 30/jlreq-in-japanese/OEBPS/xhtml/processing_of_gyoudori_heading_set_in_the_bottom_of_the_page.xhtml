@@ -1,0 +1,47 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja"><head><meta charset="UTF-8"/><meta name="author" content="Japanese Layout Task Force"/><title>日本語組版処理の要件（日本語版）</title><link rel="stylesheet" type="text/css" href="../css/W3C-WG-NOTE.css"/><link rel="stylesheet" type="text/css" href="../css/base.css"/></head><body><h4 id="processing_of_gyoudori_heading_set_in_the_bottom_of_the_page">4.1.7 <span class="heading"><span class="index" id="d8e2170">行取り処理した<span class="index" id="d8e2172">見出しがページ末にきた場合の処理</span></span></span></h4><p>行取り処理した見出しがページ末（又はページ先頭）にきた場合の処理については，体裁を考慮して次のように処理する．</p><ol>
+					<li>
+                        
+                           <p>前項のd以外の場合，ページ末に指定された行数が確保できないときは，その行取りの設定がされた見出し全体を次ページの冒頭に配置する．前のページ末は，空けたままにしておく（dの場合は<a class="sec_ref" href="processing_when_one_line_space_before_low_level_heading_is_set.xhtml#processing_when_one_line_space_before_low_level_heading_is_set">4.1.8 小見出しの前を1行アキにした場合の処理</a>）．</p>
+                           
+                        
+                     </li>
+					<li>
+                        
+                           <p>ページ末に指定された行数は確保できるが，見出しの後ろに本文の行が1行も配置できない場合，縦組の奇数ページ，横組の奇数ページ及び横組の偶数ページのときは，その行取りの設定がされた見出し全体を次ページの冒頭に配置する（<a class="figure_ref" href="processing_of_gyoudori_heading_set_in_the_bottom_of_the_page.xhtml#fig3_1_29-ja">図 4.32</a>）．前のページ末は，空けたままにしておく．<span class="index" id="d8e2220">縦組の偶数ページの場合</span>は，ページ末に見出しを配置する．</p>
+                           
+                        
+                        
+                           <div class="figure" id="fig3_1_29-ja"><div class="figure-float"><div><img alt="縦組の奇数ページ末の見出しを次ページに配置した例" width="425" height="427" src="../image/Images-ja/img3_1_29.png"/><div class="figureCaption">図 4.32 <span class="caption-body">縦組の奇数ページ末の見出しを次ページに配置した例</span></div></div></div></div>
+                           
+                        
+                        
+                        <table class="t_note">
+                           <tr>
+                              <td class="ft" rowspan="1" colspan="1">
+                                 
+                                    <p>注1）</p>
+                                    
+                                 
+                              </td>
+                              <td rowspan="1" colspan="1">
+                                 
+                                    <p>縦組の偶数ページの場合，ページ末に見出しを配置しても見開きとなり，次の奇数ページが連続するからである（<a class="figure_ref" href="processing_of_gyoudori_heading_set_in_the_bottom_of_the_page.xhtml#fig3_1_30-ja">図 4.33</a>）．ただし，奇数ページと同様に，次ページに配置する方法もある．</p>
+                                    
+                                 
+                              </td>
+                           </tr>
+                        </table>
+                                 
+                                    <div class="figure" id="fig3_1_30-ja"><div class="figure-float"><div><img alt="縦組の偶数ページ末に見出しを配置した例" width="608" height="501" src="../image/Images-ja/img3_1_30.png"/><div class="figureCaption">図 4.33 <span class="caption-body">縦組の偶数ページ末に見出しを配置した例</span></div></div></div></div>
+                                    
+                                 
+                                 
+                        
+                     </li>
+					<li>
+                        
+                           <p><span class="index" id="d8e2317">行取り処理した見出しが段の領域の末尾にきた場合</span>は，体裁がよくないので，次の段の先頭に配置する．前段の末尾は空けておくのは体裁がよくないので，なんらかの処理を行い，空けないようにするのが望ましいが，やむを得ない場合は空けておく．</p>
+                           
+                        
+                     </li>
+				</ol></body></html>

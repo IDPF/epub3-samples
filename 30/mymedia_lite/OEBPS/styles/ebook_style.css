@@ -1,0 +1,119 @@
+@charset "UTF-8";
+@page {
+  margin:8%;
+}
+html {
+  -webkit-text-underline-position:under left;
+}
+img.pagefit {
+  display:block;
+  margin: auto;
+  width: auto;
+  height: auto;
+  max-width:100%;
+  max-height:100%;
+}
+img.block {
+  display:block;
+  width:auto;
+  height:auto;
+  max-width:100%;
+  max-height:100%;
+}
+img.inline {
+  display:inline;
+  width:auto;
+  height:auto;
+  max-width:100%;
+  max-height:100%;
+}
+.upright {
+  -epub-text-orientation:upright;
+  -webkit-text-orientation:upright;
+}
+.sideways {
+  -webkit-text-orientation: sideways;
+  -epub-text-orientation: rotate-right;
+  -epub-text-orientation: sideways;
+}
+.upright-1 {
+  -epub-text-conbine:horizontal;
+  -webkit-text-conbine:horizontal;
+}
+/* -----------------------------------------------------------------------------
+  [タイプセレクタ]
+  全体の基本となるスタイル
+  ここで書かれたものはクラスセレクタで上書きされます。
+ ---------------------------------------------------------------------------- */
+/* body */
+body {
+  line-height: 1.75; /* 行送り */
+  text-align: justify;
+}
+/* 見出し */
+h1,h2,h3,h4,h5,h6 {
+  font-weight: normal;
+}
+/* リンク */
+a {
+  text-decoration: none; /* リンクに下線をつけたく無い場合の設定 */
+}
+a:link {
+  color:#00008b;
+}
+a:visited {
+  color:#00008b;
+}
+/* -----------------------------------------------------------------------------
+  [クラスセレクタ]
+ ---------------------------------------------------------------------------- */
+body.coverpage {
+  text-align:center;
+  margin:0;
+}
+body.tocpage {
+  text-align: left;
+}
+/* 見出し */
+h1.ttl {
+  font-size: 120%;
+  font-weight: bold;
+}
+h1.imgttl {
+  margin:auto;
+  padding:auto;
+}
+h2.chapter {
+  font-size:140%;
+}
+h2.tocttl {
+  font-size: 120%;
+  font-weight: bold;
+}
+h2.toc {
+  font-size: 110%;
+  font-weight: bold;
+}
+h3.subchapter {
+  font-size: 110%;
+  font-weight: bold;
+}
+/* 行頭インデント*/
+p.normal {
+  text-indent: 1em;
+}
+
+/* 文字装飾など */
+.kakko {
+  font-size:80%;
+}
+.bold {
+  font-weight: bold;
+}
+.large {
+  font-size:110%;
+}
+.small {
+  font-size:90%;
+}
+

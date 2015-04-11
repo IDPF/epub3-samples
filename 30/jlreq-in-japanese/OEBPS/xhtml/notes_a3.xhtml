@@ -1,0 +1,106 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja"><head><meta charset="UTF-8"/><meta name="author" content="Japanese Layout Task Force"/><title>日本語組版処理の要件（日本語版）</title><link rel="stylesheet" type="text/css" href="../css/W3C-WG-NOTE.css"/><link rel="stylesheet" type="text/css" href="../css/base.css"/></head><body><h3 id="notes_a3">C.2 <span class="heading"><span id="ja-app3_2">注記</span></span></h3><ol class="decimal">
+<li>
+		
+			<p>繰返し記号<span class="character">[々] (IDEOGRAPHIC ITERATION MARK)</span>を<a class="termref" href="terminology.xhtml#term.line-head">行頭</a>又は<a class="termref" href="terminology.xhtml#term.warichu">割注</a>行頭に配置することを許容する場合，繰返し記号<span class="character">[々] (IDEOGRAPHIC ITERATION MARK)</span>は<a class="characterClass" href="cl-19.xhtml#cl-19">漢字等（cl-19）</a>の文字クラスに含める（その扱いは<a class="characterClass" href="cl-19.xhtml#cl-19">漢字等（cl-19）</a>の欄を参照）．</p>
+			
+		
+</li>
+<li>
+		
+			<p><a class="characterClass" href="cl-10.xhtml#cl-10">長音記号（cl-10）</a>を行頭又は割注行頭に配置することを許容する場合，それは<a class="characterClass" href="cl-16.xhtml#cl-16">片仮名（cl-16）</a>の文字クラスに含める（その扱いは<a class="characterClass" href="cl-16.xhtml#cl-16">片仮名（cl-16）</a>の欄を参照）．</p>
+			
+		
+</li>
+<li>
+		
+			<p><a class="characterClass" href="cl-11.xhtml#cl-11">小書きの仮名（cl-11）</a>を行頭又は割注行頭に配置することを許容する場合，小書きの平仮名は<a class="characterClass" href="cl-15.xhtml#cl-15">平仮名（cl-15）</a>の文字クラスに含め，小書きの片仮名は<a class="characterClass" href="cl-16.xhtml#cl-16">片仮名（cl-16）</a>の文字クラスに含める（その扱いは<a class="characterClass" href="cl-15.xhtml#cl-15">平仮名（cl-15）</a>又は<a class="characterClass" href="cl-16.xhtml#cl-16">片仮名（cl-16）</a>の欄を参照）．</p>
+			
+		
+</li>
+<li>
+		
+			<p>文末に配置する<a class="characterClass" href="cl-04.xhtml#cl-04">区切り約物（cl-04）</a>の後ろは，全角アキとする．その場合，<a class="characterClass" href="cl-04.xhtml#cl-04">区切り約物（cl-04）</a>の後ろに<a class="characterClass" href="cl-14.xhtml#cl-14">和字間隔（cl-14）</a>を配置して処理する方法がある．この場合の問題点は，<a class="sec_ref" href="positioning_of_dividing_punctuation_marks.xhtml#positioning_of_dividing_punctuation_marks">3.1.6 区切り約物及びハイフン類の配置方法</a>参照．</p>
+			
+		
+</li>
+<li>
+		
+			<p>後ろに配置する<a class="characterClass" href="cl-08.xhtml#cl-08">分離禁止文字（cl-08）</a>の文字及び前に配置する<a class="characterClass" href="cl-08.xhtml#cl-08">分離禁止文字（cl-08）</a>が次に示す組合せで連続した場合は，分割不可とする．</p>
+			
+		
+		<ul>
+		<li>
+			<p>前にダッシュ（全角）<span class="character">[—] (EM DASH)</span>と，後ろにダッシュ（全角）<span class="character">[—] (EM DASH)</span></p>
+			
+		</li>
+		<li>
+			<p>前に三点リーダ<span class="character">[…] (HORIZONTAL ELLIPSIS)</span>と，後ろに三点リーダ<span class="character">[…] (HORIZONTAL ELLIPSIS)</span></p>
+			
+		</li>
+		<li>
+			<p>前に二点リーダ<span class="character">[‥] (TWO DOT LEADER)</span>と，後ろに二点リーダ<span class="character">[‥] (TWO DOT LEADER)</span></p>
+			
+		</li>
+		<li>
+			<p>前にくの字点上<span class="character">[〳] (VERTICAL KANA REPEAT MARK UPPER HALF)</span>と，後ろにくの字点下<span class="character">[〵] (VERTICAL KANA REPEAT MARK LOWER HALF)</span></p>
+			
+		</li>
+		<li>
+			<p>前にくの字点上（濁点）<span class="character">[〴] (VERTICAL KANA REPEAT WITH VOICED SOUND MARK UPPER HALF)</span>と，後ろにくの字点下<span class="character">[〵] (VERTICAL KANA REPEAT MARK LOWER HALF)</span></p>
+			
+		</li>
+		</ul>
+		
+			<p>後ろに配置する<a class="characterClass" href="cl-08.xhtml#cl-08">分離禁止文字（cl-08）</a>の文字及び前に配置する<a class="characterClass" href="cl-08.xhtml#cl-08">分離禁止文字（cl-08）</a>が上記とは異なる組合せの場合は，分割可とする．例えば，ダッシュ（全角）<span class="character">[―] (EM DASH)</span>の後ろにダッシュ（全角）<span class="character">[―] (EM DASH)</span>が連続する場合，その字間では分割不可である．ダッシュ（全角）<span class="character">[―] (EM DASH)</span>の後ろに三点リーダ<span class="character">[…] (HORIZONTAL ELLIPSIS)</span>が連続する場合，その字間では分割可である．</p>
+			
+		
+</li>
+<li>
+		
+			<p>後ろに配置する<a class="characterClass" href="cl-21.xhtml#cl-21">親文字群中の文字（添え字付き）（cl-21）</a>の文字が，前に配置する“<a class="characterClass" href="cl-21.xhtml#cl-21">親文字群中の文字（添え字付き）（cl-21）</a>と同一の親文字群の文字の場合は，分割不可とする．後ろに配置する<a class="characterClass" href="cl-21.xhtml#cl-21">親文字群中の文字（添え字付き）（cl-21）</a>の文字が，前に配置する<a class="characterClass" href="cl-21.xhtml#cl-21">親文字群中の文字（添え字付き）（cl-21）</a>とは別の親文字群の文字の場合は，分割可とする．</p>
+			
+		
+</li>
+<li>
+		
+			<p>後ろに配置する<a class="characterClass" href="cl-22.xhtml#cl-22">親文字群中の文字（熟語ルビ以外のルビ付き）（cl-22）</a>の文字が，前に配置する<a class="characterClass" href="cl-22.xhtml#cl-22">親文字群中の文字（熟語ルビ以外のルビ付き）（cl-22）</a>と同一の親文字群の文字の場合は，分割不可とする．後ろに配置する<a class="characterClass" href="cl-22.xhtml#cl-22">親文字群中の文字（熟語ルビ以外のルビ付き）（cl-22）</a>の文字が，前に配置する<a class="characterClass" href="cl-22.xhtml#cl-22">親文字群中の文字（熟語ルビ以外のルビ付き）（cl-22）</a>とは別の親文字群の文字の場合は，分割可とする．</p>
+			
+		
+</li>
+<li>
+		
+			<p>後ろに配置する<a class="characterClass" href="cl-23.xhtml#cl-23">親文字群中の文字（熟語ルビ付き）（cl-23）</a>の文字が，前に配置する<a class="characterClass" href="cl-23.xhtml#cl-23">親文字群中の文字（熟語ルビ付き）（cl-23）</a>とは別の親文字群の文字の場合，その親文字群間では分割可とする．また，同じ<a class="characterClass" href="cl-23.xhtml#cl-23">親文字群中の文字（熟語ルビ付き）（cl-23）</a>であっても，1字の親文字とその親文字に対応するルビ文字のグループと，別の親文字とその親文字に対応するルビ文字のグループの間でも分割可とする．ただし，1字の親文字とその親文字に対応するルビ文字のグループについては一体として扱い，いずれの間でも分割不可とする．</p>
+			
+		
+</li>
+<li>
+		
+			<p>前に配置する<a class="characterClass" href="cl-24.xhtml#cl-24">連数字中の文字（cl-24）</a>と後ろに配置する<a class="characterClass" href="cl-13.xhtml#cl-13">後置省略記号（cl-13）</a>の字間では，分割不可である．ただし，<span class="index" id="d15e592">パーセント記号</span><span class="character">[％] (PERCENT SIGN)</span>については，前に配置する<a class="characterClass" href="cl-24.xhtml#cl-24">連数字中の文字（cl-24）</a>との字間で分割を許容する方法もある．この場合，パーセント記号<span class="character">[％] (PERCENT SIGN)</span>は，<a class="characterClass" href="cl-19.xhtml#cl-19">漢字等（cl-19）</a>の文字クラスに含める．</p>
+			
+		
+</li>
+<li>
+		
+			<p>前に配置する<a class="characterClass" href="cl-24.xhtml#cl-24">連数字中の文字（cl-24）</a>と後ろに配置する<a class="characterClass" href="cl-27.xhtml#cl-27">欧文用文字（cl-27）</a>との字間では，分割可とする方法と，分割不可とする方法とがある．</p>
+			
+		
+</li>
+<li>
+		
+			<p>前に配置する<a class="characterClass" href="cl-27.xhtml#cl-27">欧文用文字（cl-27）</a>の後ろに<a class="characterClass" href="cl-13.xhtml#cl-13">後置省略記号（cl-13）</a>を配置する場合は，一般に分割可である．しかし，前に配置する<a class="characterClass" href="cl-27.xhtml#cl-27">欧文用文字（cl-27）</a>が量を示す記号（量記号）又はアラビア数字の場合は分割不可とする．</p>
+			
+		
+</li>
+<li>
+		
+			<p>前に配置する<a class="characterClass" href="cl-27.xhtml#cl-27">欧文用文字（cl-27）</a>と後ろに配置する<a class="characterClass" href="cl-27.xhtml#cl-27">欧文用文字（cl-27）</a>との字間では，分割不可である．ただし，<a class="characterClass" href="cl-27.xhtml#cl-27">欧文用文字（cl-27）</a>で構成する単語を音節に従い分割し，行末にハイフン<span class="character">[-] (HYPHEN)</span>を付けることで，分割が可能になる．</p>
+			
+		
+</li>
+<li>
+		
+			<p>後ろに配置する“<a class="characterClass" href="cl-30.xhtml#cl-30">縦中横中の文字（cl-30）</a>の文字が，前に配置する<a class="characterClass" href="cl-30.xhtml#cl-30">縦中横中の文字（cl-30）</a>と同一の縦中横のグループに属する場合は，分割不可とする．後ろに配置する<a class="characterClass" href="cl-30.xhtml#cl-30">縦中横中の文字（cl-30）</a>の文字が，前に配置する<a class="characterClass" href="cl-30.xhtml#cl-30">縦中横中の文字（cl-30）</a>とは別のグループに属する縦中横の場合は，分割可とする．</p>
+			
+		
+</li>
+</ol></body></html>

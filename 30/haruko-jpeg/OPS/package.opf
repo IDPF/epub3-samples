@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package xmlns="http://www.idpf.org/2007/opf" version="3.0" xml:lang="ja"
+      prefix="rendition: http://www.idpf.org/vocab/rendition/#"
+      unique-identifier="ootuya-id">
+      <metadata xmlns:opf="http://www.idpf.org/2007/opf" xmlns:dc="http://purl.org/dc/elements/1.1/"
+            xmlns:dcterms="http://purl.org/dc/terms/">
+            
+            <dc:identifier id="ootuya-id">urn:uuid:ACA8C671-6C1F-1014-8433-7416564D7508</dc:identifier>
+            <dc:title>ハルコさんの彼氏</dc:title>
+            <dc:language>ja-jp</dc:language>
+            <meta property="dcterms:modified">2012-05-23T21:13:00Z</meta>
+            <meta property="rendition:layout">pre-paginated</meta>
+            <meta property="rendition:orientation">portrait</meta>
+            <meta property="rendition:spread">landscape</meta>
+      </metadata>
+      <manifest>
+            <item id="default-style" href="css/default.css" media-type="text/css"/>
+            
+            <item id="j01" href="images/01.jpg" fallback="fallback" media-type="image/jpeg"/>
+            <item id="j02" href="images/02.jpg" fallback="fallback" media-type="image/jpeg"/>
+            <item id="j03" href="images/03.jpg" fallback="fallback" media-type="image/jpeg"/>
+            <item id="j04" href="images/04.jpg" fallback="fallback" media-type="image/jpeg"/>
+            <item id="j05" href="images/05.jpg" fallback="fallback" media-type="image/jpeg"/>
+            <item id="j06" href="images/06.jpg" fallback="fallback" media-type="image/jpeg"/>
+            <item id="j07" href="images/07.jpg" fallback="fallback" media-type="image/jpeg"/>
+            <item id="j08" href="images/08.jpg" fallback="fallback" media-type="image/jpeg"/>
+            <item id="j09" href="images/09.jpg" fallback="fallback" media-type="image/jpeg"/>
+            <item id="j10" href="images/10.jpg" fallback="fallback" media-type="image/jpeg"/>
+            <item id="j11" href="images/11.jpg" fallback="fallback" media-type="image/jpeg"/>
+            <item id="j12" href="images/12.jpg" fallback="fallback" media-type="image/jpeg"/>
+            <item id="AboutThisDocument" href="images/AboutThisDocument.png" fallback="fallback" media-type="image/png"/>
+            
+            <item id="fallback" href="xhtml/fallback.xhtml"
+                  media-type="application/xhtml+xml"/>
+            <item id="toc" properties="nav" href="xhtml/toc.xhtml"
+                  media-type="application/xhtml+xml"/>
+            <item id="ncxtoc" href="xhtml/toc.ncx" media-type="application/x-dtbncx+xml"/>
+      </manifest>
+      <spine toc="ncxtoc" page-progression-direction="rtl">
+            <itemref idref="j01" properties="page-spread-left" />
+            <itemref idref="j02" properties="page-spread-right" />
+            <itemref idref="j03" properties="page-spread-left" />
+            <itemref idref="j04" properties="page-spread-right" />
+            <itemref idref="j05" properties="page-spread-left" />
+            <itemref idref="j06" properties="page-spread-right" />
+            <itemref idref="j07" properties="page-spread-left" />
+            <itemref idref="j08" properties="page-spread-right" />
+            <itemref idref="j09" properties="page-spread-left" />
+            <itemref idref="j10" properties="page-spread-right" />
+            <itemref idref="j11" properties="page-spread-left" />
+            <itemref idref="j12" properties="page-spread-right" />
+            <itemref idref="AboutThisDocument"  />
+      </spine>
+</package>

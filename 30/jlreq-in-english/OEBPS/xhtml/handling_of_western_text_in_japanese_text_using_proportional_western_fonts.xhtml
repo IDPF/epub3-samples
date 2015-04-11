@@ -1,0 +1,90 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"><head><meta charset="UTF-8"/><title>Requirements for Japanese Text Layout</title><link rel="stylesheet" type="text/css" href="../css/base.css"/><link rel="stylesheet" type="text/css" href="../css/W3C-WG-NOTE.css"/></head><body><h4 id="handling_of_western_text_in_japanese_text_using_proportional_western_fonts">3.2.6 <span class="heading"><span class="index" id="en-subheading2_2_6">Handling of Western Text in Japanese Text using Proportional Western Fonts</span></span></h4><p>Composition rules for Western characters, Western text and European numerals, set rotated 90 degrees clockwise in <a class="termref2nd" href="terminology.xhtml#term.vertical-writing-mode">vertical writing mode</a>, and <a class="termref2nd" href="terminology.xhtml#term.horizontal-writing-mode">horizontal writing mode</a>, are as follows:</p><ol>
+					<li>
+   
+    
+    <p>A sequence of Western characters in a Western word should not <a class="termref" href="terminology.xhtml#term.break">be broken</a> across a line-break, except  where <a class="termref" href="terminology.xhtml#term.hyphenation">hyphenation</a> is allowed.</p>
+   
+   </li>
+					<li>
+   
+    
+    <p>When line adjustment is done with <a class="termref" href="terminology.xhtml#term.line-adjustment-by-inter-character-space-reduction">line adjustment by inter-character space reduction</a>, <a class="characterClass" href="cl-26.xhtml#cl-26">Western word space (cl-26)</a> is used as first priority. Also, when line adjustment is done with <a class="termref" href="terminology.xhtml#term.line-adjustment-by-inter-character-space-expansion">line adjustment by inter-character space expansion</a>, Western word spaces are used as first priority.</p>
+   
+   </li>
+					<li>
+   
+    
+    <p>When line adjustment by inter-character space addition is used, inter-character spaces within Western words and European numerals are not used for expansion.</p>
+   
+   </li>
+					<li>
+   
+    
+    <p><a class="termref2nd" href="terminology.xhtml#term.inter-character-space">Inter-character space</a>, between <a class="characterClass" href="cl-15.xhtml#cl-15">hiragana (cl-15)</a>, <a class="characterClass" href="cl-16.xhtml#cl-16">katakana (cl-16)</a> or <a class="characterClass" href="cl-19.xhtml#cl-19">ideographic characters (cl-19)</a> and Western characters or European numerals, is a <a class="termref" href="terminology.xhtml#term.quarter-em-space">quarter em space</a> (see <a class="figure_ref" href="handling_of_western_text_in_japanese_text_using_proportional_western_fonts.xhtml#fig2_2_10-en">Fig. 3.46</a>). The issue as to whether the quarter em space can be used for line end adjustment or not is discussed in <a class="sec_ref" href="reduction_and_addition_of_intercharacter_space.xhtml#reduction_and_addition_of_intercharacter_space">3.8.2 Reduction and Addition of Inter-Character Space</a> and <a class="sec_ref" href="procedures_for_intercharacter_space_expansion.xhtml#procedures_for_intercharacter_space_expansion">3.8.4 Procedures for Inter-Character Space Expansion</a>.</p>
+   
+				
+					
+					<div class="figure" id="fig2_2_10-en"><div class="figure-float"><div><img alt="Example of a quarter em inter-character space between hiragana, katakana and ideographic characters, and Latin characters." width="300" height="384" src="../image/Images-en/img2_2_10.png"/><div class="figureCaption">Fig. 3.46: <span class="caption-body">Example of a quarter em inter-character space between hiragana, katakana and ideographic characters, and Latin characters.</span></div></div></div></div>
+				
+				
+	
+
+
+<p>In the following cases, a <a class="termref2nd" href="terminology.xhtml#term.quarter-em-space">quarter em space</a> is not inserted (see <a class="figure_ref" href="handling_of_western_text_in_japanese_text_using_proportional_western_fonts.xhtml#fig2_2_12-en">Fig. 3.47</a>).</p>
+
+				<ol>
+					<li>
+   
+    
+    <p>At the start of a line, there is no space before Latin characters or European numerals. At the end of the line,
+    there is no space after Latin characters or European numerals.</p>
+   
+   </li>
+					<li>
+   
+    
+    <p>In the case where Latin characters and European
+numerals follow a <a class="characterClass" href="cl-07.xhtml#cl-07">comma (cl-07)</a>
+or <a class="characterClass" href="cl-02.xhtml#cl-02">closing bracket (cl-02)</a>, or are followed by <a class="characterClass" href="cl-01.xhtml#cl-01">opening brackets (cl-01)</a>, in principle, a <a class="termref2nd" href="terminology.xhtml#term.half-em-space">half em space</a> is inserted. In the case where Latin characters and European numerals follow a <a class="characterClass" href="cl-06.xhtml#cl-06">full stop (cl-06)</a> in the middle of a line, a half em space is inserted. When the <a class="characterClass" href="cl-06.xhtml#cl-06">full stop (cl-06)</a> is set at the end of a line, in principle, a half em space is inserted after the <a class="characterClass" href="cl-06.xhtml#cl-06">full stop (cl-06)</a>.</p>
+   
+   </li>
+					<li>
+   
+    
+    <p>In the case where Latin characters and European numerals are set before a <a class="characterClass" href="cl-06.xhtml#cl-06">full stop (cl-06)</a>, <a class="characterClass" href="cl-07.xhtml#cl-07">comma (cl-07)</a> or <a class="characterClass" href="cl-02.xhtml#cl-02">closing bracket (cl-02)</a>, or after an <a class="characterClass" href="cl-01.xhtml#cl-01">opening bracket (cl-01)</a>, the inter-character space is set solid.</p>
+   
+   </li>
+</ol>
+</li>
+				</ol><div class="figure" id="fig2_2_12-en"><div class="figure-float"><div><img alt="Example of no inter-character space before and after Latin characters and European numerals." width="493" height="337" src="../image/Images-en/img2_2_12.png"/><div class="figureCaption">Fig. 3.47: <span class="caption-body">Example of no inter-character space before and after Latin characters and European numerals.</span></div></div></div></div><table class="t_note">
+					<tr>
+						<td class="ft" rowspan="1" colspan="1">
+							
+								
+								<p>(note 1)</p>
+							
+						</td>
+						<td rowspan="1" colspan="1">
+							
+								
+								<p>In this document, proportional Western characters and European numerals are treated as members of the <a class="characterClass" href="cl-27.xhtml#cl-27">Western characters (cl-27)</a> class. Note that half- and fixed-width European numerals, when mixed  with Japanese text, are treated as members of the <a class="characterClass" href="cl-24.xhtml#cl-24">grouped numerals (cl-24)</a> class.</p>
+							
+						</td>
+					</tr>
+					<tr>
+						<td class="ft" rowspan="1" colspan="1">
+							
+								
+								<p>(note 2)</p>
+							
+						</td>
+						<td rowspan="1" colspan="1">
+							
+								
+								<p>The reason a <a class="termref2nd" href="terminology.xhtml#term.quarter-em-space">quarter em space</a> is needed between Western characters or European numerals and <a class="characterClass" href="cl-15.xhtml#cl-15">hiragana (cl-15)</a>, <a class="characterClass" href="cl-16.xhtml#cl-16">katakana (cl-16)</a> or <a class="characterClass" href="cl-19.xhtml#cl-19">ideographic characters (cl-19)</a>, is that the design concept of Latin fonts and Japanese fonts are different from each other, so it looks too tight without the spaces (<a class="figure_ref" href="handling_of_western_text_in_japanese_text_using_proportional_western_fonts.xhtml#fig2_2_11-en">Fig. 3.48</a>).
+</p>
+							
+						</td>
+					</tr>
+				</table><div class="figure" id="fig2_2_11-en"><div class="figure-float"><div><img alt="Example of solid setting between, katakana and ideographic characters and Latin characters and European numerals. (This method is&#xA;     not recommended)." width="302" height="388" src="../image/Images-en/img2_2_11.png"/><div class="figureCaption">Fig. 3.48: <span class="caption-body">Example of solid setting between, katakana and ideographic characters and Latin characters and European numerals. (This method is
+     not recommended).</span></div></div></div></div></body></html>

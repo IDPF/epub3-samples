@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package xmlns="http://www.idpf.org/2007/opf" version="3.0" unique-identifier="uid" xml:lang="en-US" prefix="cc: http://creativecommons.org/ns#">
+    <metadata xmlns:dc="http://purl.org/dc/elements/1.1/">
+        <dc:identifier id="uid">code.google.com.epub-samples.basic-quiz</dc:identifier>
+        <dc:title>Basic Quiz</dc:title>
+        <dc:creator>E.L. Starr</dc:creator>
+        <dc:language>en-US</dc:language>
+        <dc:date>2012-01-17</dc:date>
+        <meta property="dcterms:modified">2012-04-05T21:03:00Z</meta>
+        
+		<!-- rights expressions for the work as a whole -->
+        <dc:rights>This work is shared with the public using the Attribution-ShareAlike 3.0 Unported (CC BY-SA 3.0) license.</dc:rights>        
+        <link rel="cc:license" href="http://creativecommons.org/licenses/by-sa/3.0/"/>
+        <meta property="cc:attributionURL">http://code.google.com/p/epub-samples/</meta>
+        
+		<!-- image attribution -->       
+        <link rel="cc:attributionURL" refines="#cover" href="http://www.flickr.com/photos/smithsonian/2941526052" />  
+		
+		<!-- text attribution -->
+		<link rel="cc:attributionURL" refines="text.xhtml#solar-system-text" href="http://en.wikibooks.org/wiki/Wikijunior_Solar_System/Solar_System"/>
+        <link rel="cc:attributionURL" refines="text.xhtml#solar-system-quiz" href="http://www.think-bank.com/quiz/science/KS37L/index.html"/>
+        <link rel="cc:attributionURL" refines="#solar-system-xml" href="http://www.think-bank.com/quiz/science/KS37L/index.html"/>
+        
+        <!-- cover meta element included for 2.0 reading system compatibility: -->
+        <meta name="cover" content="cover"/>
+    </metadata> 
+    <manifest>
+        <item id="cover" 
+			href="images/cover.jpg" 
+			media-type="image/jpeg" 
+			properties="cover-image" />
+        <item id="nav" 
+        	href="content/nav.xhtml" 
+			properties="nav" 
+			media-type="application/xhtml+xml" />
+        <item id="epub-css"
+            href="css/epub.css"
+            media-type="text/css"/>
+            
+        <item id="t1" 
+        	href="content/text.xhtml" 
+    		media-type="application/xhtml+xml" />
+            
+        <!-- ncx included for 2.0 reading system compatibility: -->
+        <item id="ncx" 
+			href="nav.ncx" 
+			media-type="application/x-dtbncx+xml" />
+		
+		<!-- quiz widget data -->
+        <item id="solar-system-xml"
+        	href="content/solar-system.xml"
+            media-type="application/x-epub-quiz"/>
+		
+		<!-- quiz widget files -->
+		<item id="quiz-impl" 
+			href="content/quiz/quiz-impl.xhtml" 
+		    media-type="application/xhtml+xml" 
+		    properties="scripted"/>
+		<item id="quiz-js"
+			href="content/quiz/quiz.js"
+			media-type="text/javascript"/>
+		<item id="quiz-css"
+			href="content/quiz/quiz.css"
+			media-type="text/css"/>
+		<item id="quiz-jquery"
+			href="content/quiz/jquery-1.7.1.min.js"
+			media-type="text/javascript"/>
+    </manifest>
+	
+	<spine toc="ncx">
+		<itemref idref="t1" />  
+    </spine>    
+	
+	<bindings>
+        <mediaType handler="quiz-impl"
+            media-type="application/x-epub-quiz"/>
+	</bindings>
+</package>

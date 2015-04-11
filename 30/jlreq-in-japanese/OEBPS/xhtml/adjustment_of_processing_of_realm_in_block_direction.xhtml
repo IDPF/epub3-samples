@@ -1,0 +1,212 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja"><head><meta charset="UTF-8"/><meta name="author" content="Japanese Layout Task Force"/><title>日本語組版処理の要件（日本語版）</title><link rel="stylesheet" type="text/css" href="../css/W3C-WG-NOTE.css"/><link rel="stylesheet" type="text/css" href="../css/base.css"/></head><body><h4 id="adjustment_of_processing_of_realm_in_block_direction">4.5.3 <span class="heading"><span class="index" id="d12e1023">行送り方向の領域の調整処理</span></span></h4><p>行などを配置していく場合，改ページ等の直前のページを除いて，版面の末尾又は段の領域の末尾に配置する行などは，版面の末尾又は段の領域の末尾にそろえて配置するのが原則である．しかし，次のような場合には，<span class="index" id="d12e1037">行などが末尾にそろわなくなる</span>．</p><ol>
+					<li>
+<p>基本版面で設定した文字サイズや行間とは異なったサイズの段落などを配置する．その結果，特に調整しない場合は，版面又は段の領域に配置する最終行が，版面の末尾又は段の領域の末尾にそろわない．別行見出しや段落の間に挿入される後注などが，その例である．</p>
+
+</li>
+					<li>
+<p>版面又は段の末尾への配置が禁止されている要素（例えば別行見出し）がきたために，それを次のページ又は次の段に配置し，その結果，版面又は段の末尾に空白の領域が発生する．</p>
+
+</li>
+				</ol><p>この場合，次のいずれにするか判断し，処理する必要がある．なお，ここでは，次のaの調整処理を“行送り方向の領域の調整処理”とよぶことにする．</p><ol>
+					<li>
+<p>版面又は段の領域に配置する最終行を版面又は段の末尾にそろえるため，発生した空白分を版面又は段の領域内の適当な箇所に追加して調整処理を行う．</p>
+
+</li>
+					<li>
+<p>版面又は段の末尾に発生する空白の領域は，そのままとしておく．</p>
+
+</li>
+				</ol><p>以下では，行送り方向の領域の調整処理に関連した事項をまとめておく．</p><p>まず，できるだけ<span class="index" id="d12e1116">行送り方向の領域の調整処理が必要にならないようにする</span>ことである．行への配置位置は，ずれることもあるが，後ろに配置されるものに影響を与えないようにする例としては，次がある．</p><ol>
+					<li>
+					
+						<p>別行見出し：別行見出しの行送り方向の配置領域を整数の行数で設定する（<a class="sec_ref" href="processing_of_gyoudori.xhtml#processing_of_gyoudori">4.1.6 行取りの処理例</a>）．</p>
+						
+					
+                        <table class="t_note">
+                           <tr>
+                              <td class="ft" rowspan="1" colspan="1">
+                                 
+                                    <p>注1）</p>
+                                    
+                                 
+                              </td>
+                              <td rowspan="1" colspan="1">
+                                 
+                                    <p>行送り方向の幅が，その段落の文字サイズより大きくなる別行にする<span class="index" id="d12e1165">数式</span>（例えば，やぐら組とする分数）では，見出しと同様に，行取りで指定する方法と，数式の行送り方向の前後の最低の行間（一般にその段落での行間）を設定し，行送り方向の予期せぬ半端が出た場合は，その版面又は段の中で調整を行う方法がある．なお，<span class="index" id="d12e1168">やぐら組とする分数</span>とは，水平の分数罫の上下に分母と分子を配置する方法である．</p>
+                                    
+                                 
+                              </td>
+                           </tr>
+                        </table>
+                        
+                     </li>
+					<li>
+					
+							<p>段落間の空き量：空き量を整数の行数で設定する（<a class="sec_ref" href="processing_of_spaces_between_paragraphs.xhtml#processing_of_spaces_between_paragraphs">4.5.2 段落間処理</a>）．</p>
+							
+					
+                     </li>
+					<li>
+                        
+                           <p>その他，鑑賞するための俳句などを大きな文字サイズで掲げる場合などでも，行送り方向の配置領域を整数の行数で設定する．</p>
+                           
+                        
+                        <table class="t_note">
+                           <tr>
+                              <td class="ft" rowspan="1" colspan="1">
+                                 
+                                    <p>注1）</p>
+                                    
+                                 
+                              </td>
+                              <td rowspan="1" colspan="1">
+                                 
+                                    <p>俳句などを別行で引用する場合，本文に比べ字数の少ない俳句のバランスがとれない場合もある．そこで，字間を二分アキ若しくは四分アキにする，又は行長を一定に定め，字間を均等割りとする方法も行われている（<a class="figure_ref" href="single_line_alignment_processing.xhtml#fig2_5_9-ja">図 3.102</a>）．</p>
+                                    
+                                 
+                              </td>
+                           </tr>
+                        </table>
+                        
+                     </li>
+				</ol><p>後ろに連続する部分があるが，横組の脚注などのように基本版面で設定した内容と異なる要素を版面又は段の末尾に必ず接して配置し，<span class="index" id="d12e1259">行送り方向の領域の調整処理の調整は，その末尾に配置したものと本文との間で行う例</span>としては，次がある．</p><ol>
+					<li>
+                        
+                           <p>横組の脚注（<a class="sec_ref" href="processing_of_footnotes_in_horizontal_writing_mode.xhtml#processing_of_footnotes_in_horizontal_writing_mode">4.2.5 横組の脚注処理</a>）．</p>
+                           
+                        
+                     </li>
+					<li>
+                        
+                           <p>縦組の傍注（<a class="sec_ref" href="processing_of_sidenote_in_vertical_writing_mode.xhtml#processing_of_sidenote_in_vertical_writing_mode">4.2.6 縦組の傍注処理</a>）．</p>
+                           
+                        
+                     </li>
+				</ol><p>後ろに連続する部分があり，かつ，所定の空き量で配置していった結果，版面又は段の領域の末尾に空白が発生した場合で，<span class="index" id="d12e1313">行送り方向の領域の調整処理を版面又は段の途中で行う例</span>としては，次がある．</p><ol>
+					<li>
+                        
+                           <p>JIS X 4051でいうところの相対位置指定により配置した<span class="index" id="d12e1329">図版又は表が回り込みがなしで挿入された場合</span>（<a class="sec_ref" href="basic_ideas_about_illustration_positioning_in_JISX4051.xhtml#basic_ideas_about_illustration_positioning_in_JISX4051">4.3.5 JIS X 4051における図版配置の基本的な考え方</a>）．この場合は，次のように調整する．</p>
+                           
+                        
+<ol>
+<li>
+<p>回り込みがない相対位置指定により配置した図版又は表が，版面又は段の先頭又は末尾に1点だけ配置される場合は，図版又は表と本文との間で領域の調整を行う（<a class="figure_ref" href="adjustment_of_processing_of_realm_in_block_direction.xhtml#fig3_6_1-ja">図 4.128</a>）．</p>
+
+
+                        <table class="t_note">
+                           <tr>
+                              <td class="ft" rowspan="1" colspan="1">
+                                 
+                                    <p>注1）</p>
+                                    
+                                 
+                              </td>
+                              <td rowspan="1" colspan="1">
+                                 
+                                    <p>絶対位置指定により配置した図版又は表（回り込みはなし）が，版面又は段の先頭又は末尾に1点だけ配置される場合も1と同様である．</p>
+                                    
+                                 
+                              </td>
+                           </tr>
+                        </table>
+                                 
+                                    <div class="figure" id="fig3_6_1-ja"><div class="figure-float"><div><img alt="相対位置指定により配置した図版の領域の調整例1 （版面の先頭）" width="230" height="323" src="../image/Images-ja/img3_6_1.png"/><div class="figureCaption">図 4.128 <span class="caption-body">相対位置指定により配置した図版の領域の調整例1<span class="sub-caption">（版面の先頭）</span></span></div></div></div></div>
+                                    
+                                 
+                                 
+</li>
+<li>
+<p>回り込みがない相対位置指定により配置した図版又は表が，版面又は段の中ほどに1点だけ配置される場合は，本文と図版又は表の前及び後ろで領域の調整を均等に行う（<a class="figure_ref" href="adjustment_of_processing_of_realm_in_block_direction.xhtml#fig3_6_2-ja">図 4.129</a>）．</p>
+
+
+                                 
+                                    <div class="figure" id="fig3_6_2-ja"><div class="figure-float"><div><img alt="相対位置指定により配置した図版の領域の調整例2 （版面の中ほど）" width="229" height="323" src="../image/Images-ja/img3_6_2.png"/><div class="figureCaption">図 4.129 <span class="caption-body">相対位置指定により配置した図版の領域の調整例2<span class="sub-caption">（版面の中ほど）</span></span></div></div></div></div>
+                                    
+                                 
+                                 
+</li>
+<li>
+<p>図版が2点以上挿入された場合は，本文と図版又は表の前及び後ろの複数の箇所で調整を均等に行う（<a class="figure_ref" href="line_positioning_based_on_the_kihonhanmen_design.xhtml#fig_ad1_10-ja">図 2.41</a>）．</p>
+
+
+                        <table class="t_note">
+                           <tr>
+                              <td class="ft" rowspan="1" colspan="1">
+                                 
+                                    <p>注1）</p>
+                                    
+                                 
+                              </td>
+                              <td rowspan="1" colspan="1">
+                                 
+                                    <p>図版が2点以上挿入された場合，複数の箇所で調整を均等に行うと，本文の行の位置が基本版面で設定した行の位置とずれるケースも出てくる．そこで，図版の後ろに本文を配置する場合に，基本版面で設定した行の位置を基準に配置する方法もある（<a class="figure_ref" href="line_positioning_based_on_the_kihonhanmen_design.xhtml#fig_ad1_11-ja">図 2.42</a>）．<a class="figure_ref" href="line_positioning_based_on_the_kihonhanmen_design.xhtml#fig_ad1_10-ja">図 2.41</a>の処理方法は，図版の前後の空き量が均一になるが，<a class="figure_ref" href="line_positioning_based_on_the_kihonhanmen_design.xhtml#fig_ad1_11-ja">図 2.42</a>の方法では，1つの図版の前及び後ろの空き量は均一にするが，異なる図版では異なるケースも出てくる．</p>
+                                    
+                                 
+                              </td>
+                           </tr>
+                           <tr>
+                              <td class="ft" rowspan="1" colspan="1">
+                                 
+                                    <p>注2）</p>
+                                    
+                                 
+                              </td>
+                              <td rowspan="1" colspan="1">
+                                 
+                                    <p>絶対位置指定により配置した図版又は表（回り込みはなし）が，版面又は段の先頭及び末尾に各1点配置する場合も注1で述べた問題が出てくる．図版の前後の空き量を均一にする方法と，基本版面で設定した行の位置を基準に配置する方法とがある．</p>
+                                    
+                                 
+                              </td>
+                           </tr>
+                        </table>
+                        
+
+
+</li>
+</ol>
+
+
+
+                     </li>
+					<li>
+                        
+                           <p><span class="index" id="d12e1569">後注を挿入する場合</span>（<a class="sec_ref" href="processing_of_endnotes_in_vertical_writing_mode_or_horizontal_writing_mode.xhtml#processing_of_endnotes_in_vertical_writing_mode_or_horizontal_writing_mode">4.2.4 縦組又は横組の後注処理</a>）．この場合は，原則として後注とその後ろにくる本文の間で行送り方向の領域の調整処理を行う．ただし，版面又は段の末尾にだけ後注を配置する場合は，後注とその前にくる本文の間で行送り方向の領域の調整処理を行う．</p>
+                           
+                        
+                     </li>
+					<li>
+                        
+                           <p><span class="index" id="d12e1590">別行にした引用文などの文字サイズを基本版面で設定した文字サイズより小さく，行間も狭めた場合</span>．この場合の字下げ及び行間の処理並びに行送り方向の領域の調整処理の方法は，段落の間に挿入する後注の処理と基本は同じである（<a class="figure_ref" href="adjustment_of_processing_of_realm_in_block_direction.xhtml#fig3_6_3-ja">図 4.130</a>，<a class="figure_ref" href="adjustment_of_processing_of_realm_in_block_direction.xhtml#fig3_6_3_2-ja">図 4.131</a>）．</p>
+                           
+                        
+                                 
+                                    <div class="figure" id="fig3_6_3-ja"><div class="figure-float"><div><img alt="別行にした引用文の文字サイズを小さくした場合の配置例1" width="370" height="523" src="../image/Images-ja/img3_6_3.png"/><div class="figureCaption">図 4.130 <span class="caption-body">別行にした引用文の文字サイズを小さくした場合の配置例1</span></div></div></div></div>
+                                    
+                                 
+                                 
+                                 
+                                    <div class="figure" id="fig3_6_3_2-ja"><div class="figure-float"><div><img alt="別行にした引用文の文字サイズを小さくした場合の配置例2" width="370" height="523" src="../image/Images-ja/img3_6_3_2.png"/><div class="figureCaption">図 4.131 <span class="caption-body">別行にした引用文の文字サイズを小さくした場合の配置例2</span></div></div></div></div>
+                                    
+                                 
+                                 
+                     </li>
+				</ol><p>なお，行送り方向の領域の調整処理が必要であるが，<span class="index" id="d12e1659">調整を行う箇所がない場合</span>は，版面又は段の末尾を空けておく．例えば，後注の分量が多くなり，それだけで1ページを構成する場合などである．</p><p>後ろに連続する部分があるが，版面又は段の領域の<span class="index" id="d12e1671">末尾に空白が発生しても，そのまま空けておく例</span>としては，次がある．</p><ol>
+					<li>
+                        
+                           <p>見出しが，版面や段の末尾に配置されるために，次のページ又は段に見出しを移動する場合（<a class="sec_ref" href="processing_of_gyoudori_heading_set_in_the_bottom_of_the_page.xhtml#processing_of_gyoudori_heading_set_in_the_bottom_of_the_page">4.1.7 行取り処理した見出しがページ末にきた場合の処理</a>）</p>
+                           
+                        
+                     </li>
+					<li>
+                        
+                           <p>段落の間の空き量が指定されている場合において，その段落などを版面や段の先頭又は末尾に配置する場合（<a class="sec_ref" href="processing_of_spaces_between_paragraphs.xhtml#processing_of_spaces_between_paragraphs">4.5.2 段落間処理</a>）</p>
+                           
+                        
+                     </li>
+					<li>
+                      
+                           <p>分割を可とする表の先頭部分の分割可能部分がなく，次の版面又は段の先頭に配置した場合の前の版面又は段の末尾．分割を可とする表を途中で分割した場合の，前の版面又は段の末尾．</p>
+                             
+                      
+                     </li>
+				</ol></body></html>

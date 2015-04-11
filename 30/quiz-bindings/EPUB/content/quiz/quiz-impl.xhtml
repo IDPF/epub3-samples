@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+	<head>
+        <link type="text/css" href="quiz.css" rel="stylesheet"></link>
+		<script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+		<script type="text/javascript" src="quiz.js"></script>
+      
+		<script><![CDATA[
+			$(document).ready(function() {
+				// we're using this rather than the getParameter function below because of a Chromium bug:
+				//http://code.google.com/p/chromium/issues/detail?id=113597
+				var datasource = document.URL.match(/[&\?]src=([^&]*)/);
+				var quiz = Object.create(Quiz);
+				if(datasource && datasource.length > 1) {
+					quiz.init(datasource[1]);
+                }
+			});
+			function getParameterByName(name) {
+ 		   		name = String(name).replace(/[.*+?|()[\]{}\\]/g, '\\$&');
+ 			    var match = RegExp('[?&]' + name + '=([^&]*)').exec(window.location.search);
+			    return match ?
+			        decodeURIComponent(match[1].replace(/\+/g, ' '))
+			        : null;
+			}
+            ]]>
+		</script>
+	</head>
+	<body>
+		<div id="quiz-impl-target"></div>
+	</body>
+</html>

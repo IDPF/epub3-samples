@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package xmlns="http://www.idpf.org/2007/opf" unique-identifier="pub-id" version="3.0" xml:lang="ja">
+    <metadata xmlns:dc="http://purl.org/dc/elements/1.1/">
+        <dc:title id="title">ガリ版の話</dc:title>
+        <meta refines="#title" property="file-as">ガリバンノハナシ</meta>
+        <meta refines="#title" property="alternate-script" xml:lang="ja-kana-jp">ガリバンノハナシ</meta>
+        <dc:creator id="creator1">津野海太郎</dc:creator>
+        <meta refines="#creator1" property="role" scheme="marc:relators" id="role1">aut</meta>
+        <meta refines="#creator1" property="file-as">ツノカイタロウ</meta>
+        <meta refines="#creator1" property="alternate-script" xml:lang="ja-kana-jp">ツノカイタロウ</meta>
+        <meta refines="#creator1" property="display-seq">1</meta>
+        <dc:publisher>株式会社ボイジャー</dc:publisher>
+        <dc:language>ja</dc:language>
+        <dc:identifier id="pub-id">urn:uuid:8B3EBB46-DA57-11E2-AB84-32F5FD9156E7</dc:identifier>
+        <dc:date>2013-06-21T09:47:11Z</dc:date>
+        <meta property="dcterms:modified">2013-06-21T09:47:11Z</meta>
+        <meta name="cover" content="my-cover-image" />
+    </metadata>
+    <manifest>
+        <item id="TOC" href="toc.xhtml" properties="nav" media-type="application/xhtml+xml" />
+        <item id="XHTML0000" href="text/book_0000.xhtml" media-type="application/xhtml+xml" />
+        <item id="XHTML0001" href="text/book_0001.xhtml" media-type="application/xhtml+xml" />
+        <item id="XHTML0002" href="text/book_0002.xhtml" media-type="application/xhtml+xml" />
+        <item id="XHTML0003" href="text/book_0003.xhtml" media-type="application/xhtml+xml" />
+        <item id="XHTML0004" href="text/book_0004.xhtml" media-type="application/xhtml+xml" />
+        <item id="XHTML0005" href="text/book_0005.xhtml" media-type="application/xhtml+xml" />
+        <item id="XHTML0006" href="text/book_0006.xhtml" media-type="application/xhtml+xml" />
+        <item id="my-cover-image" href="images/cover.jpg" properties="cover-image"  media-type="image/jpeg" />
+        <item id="IMG0001" href="images/gari01.jpg" media-type="image/jpeg" />
+        <item id="IMG0002" href="images/yashima.jpg" media-type="image/jpeg" />
+        <item id="IMG0003" href="images/akahata.jpg" media-type="image/jpeg" />
+        <item id="IMG0004" href="images/gari02.jpg" media-type="image/jpeg" />
+        <item id="IMG0005" href="images/gari03.jpg" media-type="image/jpeg" />
+        <item id="IMG0006" href="images/tsuno.png" media-type="image/png" />
+        <item id="CSS1" href="styles/ebook_common.css" media-type="text/css" />
+        <item id="CSS2" href="styles/ebook_style.css" media-type="text/css" />
+        <item id="CSS3" href="styles/ebook_style_v.css" media-type="text/css" />
+        <item id="CSS4" href="styles/ebook_style_h.css" media-type="text/css" />
+    </manifest>
+    <spine page-progression-direction="rtl">
+        <itemref idref="XHTML0000" />
+        <itemref idref="XHTML0001" />
+        <itemref idref="XHTML0002" />
+        <itemref idref="XHTML0003" />
+        <itemref idref="XHTML0004" />
+        <itemref idref="XHTML0005" />
+        <itemref idref="XHTML0006" />
+    </spine>
+</package>

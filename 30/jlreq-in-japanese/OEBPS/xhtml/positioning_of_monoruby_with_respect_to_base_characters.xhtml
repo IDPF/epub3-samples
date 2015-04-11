@@ -1,0 +1,100 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja"><head><meta charset="UTF-8"/><meta name="author" content="Japanese Layout Task Force"/><title>日本語組版処理の要件（日本語版）</title><link rel="stylesheet" type="text/css" href="../css/W3C-WG-NOTE.css"/><link rel="stylesheet" type="text/css" href="../css/base.css"/></head><body><h4 id="positioning_of_monoruby_with_respect_to_base_characters">3.3.5 <span class="heading"><span class="index" id="ja-subheading2_3_5">モノルビの親文字に対する配置位置</span></span></h4><p><a class="termref2nd" href="terminology.xhtml#term.mono-ruby">モノルビ</a>の場合，モノルビのルビ文字列は<a class="termref" href="terminology.xhtml#term.solid-setting">ベタ組</a>とし，ルビ文字列が欧字や<a class="termref" href="terminology.xhtml#term.european-numerals">アラビア数字</a>など固有の字幅を持つ文字の場合には，それぞれの文字の固有の字幅に応じて配置する．そのうえで，親文字列とルビ文字列の中央をそろえて配置することが原則である．しかし，親文字とルビの組合せに種々の例があり，様々な工夫もされているので，例を挙げながら解説する．</p><p>親文字1文字に<a class="characterClass" href="cl-15.xhtml#cl-15">平仮名（cl-15）</a>のルビ文字が2字付く場合は，親文字の長さとルビ文字の文字列の長さはそろい，<a class="figure_ref" href="positioning_of_monoruby_with_respect_to_base_characters.xhtml#fig2_3_13-ja">図 3.62</a>のようになる．</p><div class="figure" id="fig2_3_13-ja"><div class="figure-float"><div><img alt="ルビ文字が2字の場合の配置例" width="195" height="108" src="../image/Images-ja/img2_3_13.png"/><div class="figureCaption">図 3.62 <span class="caption-body">ルビ文字が2字の場合の配置例</span></div></div></div></div><p>親文字1文字に付く<a class="characterClass" href="cl-15.xhtml#cl-15">平仮名（cl-15）</a>のルビ文字が1字の場合は，次の2つの方法がある．</p><ol>
+					<li>
+   
+    <p>縦組においては親文字の天地中央とルビ文字の天地中央をそろえて配置する（<a class="figure_ref" href="positioning_of_monoruby_with_respect_to_base_characters.xhtml#fig2_3_14-ja">図 3.63</a>）．横組においては親文字の左右中央とルビ文字の左右中央をそろえて配置する（<a class="figure_ref" href="positioning_of_monoruby_with_respect_to_base_characters.xhtml#fig2_3_14-ja">図 3.63</a>）．この配置方法は，<span class="index" id="d5e10550"><a class="termref" href="terminology.xhtml#term.nakatsuki">中付き</a>（中付きルビ）</span>とよばれている．</p>
+    
+   
+				
+					<div class="figure" id="fig2_3_14-ja"><div class="figure-float"><div><img alt="中付きと肩付きの例" width="453" height="361" src="../image/Images-ja/img2_3_14.png"/><div class="figureCaption">図 3.63 <span class="caption-body">中付きと肩付きの例</span></div></div></div></div>
+					
+				
+				
+   </li>
+					<li>
+   
+    <p>縦組においては親文字の上端とルビ文字の上端をそろえて配置する（<a class="figure_ref" href="positioning_of_monoruby_with_respect_to_base_characters.xhtml#fig2_3_14-ja">図 3.63</a>）．この配置方法は，<span class="index" id="d5e10606"><a class="termref" href="terminology.xhtml#term.katatsuki">肩付き</a>（肩付きルビ）</span>とよばれている．なお，横組では，肩付きの配置方法にはしない．横組において親文字の左端とルビ文字の左端をそろえて配置すると，左右のバランスが壊れ，体裁がよくないからである（<a class="figure_ref" href="positioning_of_monoruby_with_respect_to_base_characters.xhtml#fig2_3_15-ja">図 3.64</a>）．</p>
+    
+   
+				
+					<div class="figure" id="fig2_3_15-ja"><div class="figure-float"><div><img alt="横組で肩付きとした例 （このような配置法にはしない）" width="265" height="139" src="../image/Images-ja/img2_3_15.png"/><div class="figureCaption">図 3.64 <span class="caption-body">横組で肩付きとした例<span class="sub-caption">（このような配置法にはしない）</span></span></div></div></div></div>
+					
+				
+				
+   </li>
+				</ol><table class="t_note">
+					<tr>
+						<td class="ft" rowspan="1" colspan="1">
+							
+								<p>注1）</p>
+								
+							
+						</td>
+						<td rowspan="1" colspan="1">
+							
+								<p>活字組版においては，肩付きとする方法が一般的であったが，今日では縦組においても中付きとする方法が徐々に増えている．ただし，親文字とルビの上端をそろえた肩付きの方が慣れており，読みやすいという意見もある．</p>
+								
+							
+						</td>
+					</tr>
+				</table><p>親文字1文字に<a class="characterClass" href="cl-15.xhtml#cl-15">平仮名（cl-15）</a>の<span class="index" id="d5e10695">ルビ文字が3字以上付く場合</span>は，ルビ文字列はベタ組にする．しかし，親文字列よりルビ文字列が長くなるので，その配置位置が問題となる．ルビ文字が1字の場合にどの方法を採用したかにより異なる．一般に次のようにしている．なお，親文字からルビがはみ出した場合における前後にくる文字との字間処理は<a class="sec_ref" href="adjustments_of_ruby_with_length_longer_than_that_of_the_base_characters.xhtml#adjustments_of_ruby_with_length_longer_than_that_of_the_base_characters">3.3.8 ルビが親文字よりはみ出した場合の処理</a>で解説する．</p><ol>
+					<li>
+   
+    <p>縦組において，ルビ文字が1字の配置方法を中付きとした場合は，親文字の天地中央とルビ文字列全体の天地中央をそろえて配置する（<a class="figure_ref" href="positioning_of_monoruby_with_respect_to_base_characters.xhtml#fig2_3_16-ja">図 3.65</a>）．横組においては親文字の左右中央とルビ文字列全体の左右中央をそろえて配置する（<a class="figure_ref" href="positioning_of_monoruby_with_respect_to_base_characters.xhtml#fig2_3_16-ja">図 3.65</a>）．</p>
+    
+   
+   
+    <div class="figure" id="fig2_3_16-ja"><div class="figure-float"><div><img alt="親文字にルビ文字が3字以上付く場合の配置例1" width="234" height="266" src="../image/Images-ja/img2_3_16.png"/><div class="figureCaption">図 3.65 <span class="caption-body">親文字にルビ文字が3字以上付く場合の配置例1</span></div></div></div></div>
+    
+   
+   
+   </li>
+					<li>
+   
+    <p>縦組においてルビ文字が1字の配置方法を肩付きとした場合は，次の2つの方法がある．</p>
+    
+   
+   <ol>
+    <li>
+    
+     <p>親文字の天地中央とルビ文字列全体の天地中央をそろえて配置する（<a class="figure_ref" href="positioning_of_monoruby_with_respect_to_base_characters.xhtml#fig2_3_16-ja">図 3.65</a>）．</p>
+     
+    
+    </li>
+    <li>
+    
+     <p>親文字の前後に配置する文字の種類及びルビ文字の字数により親文字からのルビのはみ出しが後ろになるか，前になるか，又は両側になるかを決めるが，下側へのはみ出しを優先する（<a class="figure_ref" href="positioning_of_monoruby_with_respect_to_base_characters.xhtml#fig2_3_17-ja">図 3.66</a>）．</p>
+     
+    
+    </li>
+   </ol>
+   </li>
+				</ol><div class="figure" id="fig2_3_17-ja"><div class="figure-float"><div><img alt="親文字にルビ文字が3字以上付く場合の配置例2 （縦組）" width="437" height="275" src="../image/Images-ja/img2_3_17.png"/><div class="figureCaption">図 3.66 <span class="caption-body">親文字にルビ文字が3字以上付く場合の配置例2<span class="sub-caption">（縦組）</span></span></div></div></div></div><table class="t_note">
+					<tr>
+						<td class="ft" rowspan="1" colspan="1">
+							
+								<p>注1）</p>
+								
+							
+						</td>
+						<td rowspan="1" colspan="1">
+							
+								<p>肩付きと中付きは，従来は親文字1字で，かつルビ文字が1字の場合のルビの配置方法についてのみ使用されていた用語である．しかし，ルビ文字が3字以上の場合についても拡大解釈して使用する例もある．この文書では，肩付き及び中付きという用語は，本来の意味に限定して使用している．</p>
+								
+							
+						</td>
+					</tr>
+					<tr>
+						<td class="ft" rowspan="1" colspan="1">
+							
+								<p>注2）</p>
+								
+							
+						</td>
+						<td rowspan="1" colspan="1">
+							
+								<p>ルビ文字が3字以上付いた場合，下側へのはみ出しを優先するという方法は，親文字の字間及びその前後の字間をできるだけ空けない処理をするという考え方からのものである．活字組版で行われていた方法である．</p>
+								
+							
+						</td>
+					</tr>
+				</table><p><span class="index" id="d5e10905"><span class="index" id="d5e10906"><a class="termref2nd" href="terminology.xhtml#term.mono-ruby">モノルビ</a></span></span>の場合，親文字とそれに付くルビ文字の文字列は，一体として扱い，2行に分割してはならない．</p></body></html>

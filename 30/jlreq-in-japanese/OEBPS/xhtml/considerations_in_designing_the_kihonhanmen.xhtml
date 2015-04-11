@@ -1,0 +1,346 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja"><head><meta charset="UTF-8"/><meta name="author" content="Japanese Layout Task Force"/><title>日本語組版処理の要件（日本語版）</title><link rel="stylesheet" type="text/css" href="../css/W3C-WG-NOTE.css"/><link rel="stylesheet" type="text/css" href="../css/base.css"/></head><body><h4 id="considerations_in_designing_the_kihonhanmen">2.4.2 <span class="heading"><span class="index" id="ja-subheading1_4_2">基本版面の設計の注意点</span></span></h4><p>基本版面は，次のような事項を考慮し設計する（以下の説明は処理内容というよりは，どのように設計するかという問題についての解説である．なお，基本版面の指定については，JIS X 4051の7.4.1に規定がある）．</p><ol>
+					<li>
+ 
+ <p><a class="termref" href="terminology.xhtml#term.trim-size">仕上りサイズ</a>及び余白を考慮して決定する．一般には，仕上りサイズと<span class="index" id="d3e3839">基本版面のサイズ</span>がほぼ相似形になるように決める．</p>
+ 
+ 
+ </li>
+					<li>
+ 
+ <p>大人を読者対象とした本の場合の<span class="index" id="d3e3856">文字サイズ</span>は，一般に9ポイント（≒3.2mm）が多い．辞書など特別な本を除き，最低でも8ポイント（≒2.8mm）である．</p>
+ 
+ 
+ <table class="t_note">
+ <tr>
+ <td class="ft" rowspan="1" colspan="1">
+ 
+ <p>注1）</p>
+ 
+ 
+ </td>
+ <td rowspan="1" colspan="1">
+ 
+ <p>欧文の場合，10ポイント（≒3.5mm）又は12ポイント（≒4.2mm）がよく使用されている．これは和文文字と欧文文字との文字設計の違いによる．</p>
+ 
+ 
+ </td>
+ </tr>
+ </table>
+ 
+ </li>
+					<li>
+ 
+ <p>1行の<span class="index" id="d3e3903">行長</span>は，文字サイズの整数倍に設定する（<a class="figure_ref" href="considerations_in_designing_the_kihonhanmen.xhtml#fig1_27-ja">図 2.33</a>）．</p>
+ 
+ 
+ 
+ <div class="figure" id="fig1_27-ja"><div class="figure-float"><div><img alt="1行の行長は文字サイズの整数倍" width="356" height="390" src="../image/Images-ja/img1_27.png"/><div class="figureCaption">図 2.33 <span class="caption-body">1行の行長は文字サイズの整数倍</span></div></div></div></div>
+ 
+ 
+ 
+ <table class="t_note">
+ <tr>
+ <td class="ft" rowspan="1" colspan="1">
+ 
+ <p>注1）</p>
+ 
+ 
+ </td>
+ <td rowspan="1" colspan="1">
+ 
+ <p>これは，2つの理由による．この2つを満足させるために，<span class="index" id="d3e3960">行長は，文字サイズの整数倍に設定</span>する必要がある．</p>
+ 
+ 
+ <ol>
+ <li>
+ 
+ <p>日本語組版では，1行の行長に満たない段落の最終行を除き，行長をそろえるのが原則である．</p>
+ 
+ 
+ </li>
+ <li>
+ 
+ <p><a class="characterClass" href="cl-19.xhtml#cl-19">漢字等（cl-19）</a>，<a class="characterClass" href="cl-15.xhtml#cl-15">平仮名（cl-15）</a>，<a class="characterClass" href="cl-16.xhtml#cl-16">片仮名（cl-16）</a>などの印刷用の文字の<a class="termref" href="terminology.xhtml#term.character-frame">外枠</a>は，原則として正方形である．また，各文字間をベタ組とするのが原則である．</p>
+ 
+ 
+ </li>
+ </ol>
+ </td>
+ </tr>
+ <tr>
+ <td class="ft" rowspan="1" colspan="1">
+ 
+ <p>注2）</p>
+ 
+ 
+ </td>
+ <td rowspan="1" colspan="1">
+ 
+ <p>1行の行長（<span class="index" id="d3e4048">字詰め数</span>）は，縦組の場合，最大で52字くらい，横組では最大で40字くらいにする．仕上りサイズの関係で，1行の行長がこれ以上になる場合は，<a class="termref" href="terminology.xhtml#term.multi-column-format">段組</a>にして，1行の行長を短くすることが望ましい．</p>
+ 
+ 
+ </td>
+ </tr>
+ </table>
+ 
+ </li>
+					<li>
+ 
+ <p>行と行の間の空き量（<span class="index" id="d3e4090">行間</span>）は，特別な場合を除き，一定の値を確保する．また，各行の行の位置は，できるだけそろえるようにする．そこで，一般に<span class="index" id="d3e4093">基本版面の行送り方向のサイズ</span>は，行数と行間で設定する．</p>
+ 
+ 
+ <table class="t_note">
+ <tr>
+ <td class="ft" rowspan="1" colspan="1">
+ 
+ <p>注1）</p>
+ 
+ 
+ </td>
+ <td rowspan="1" colspan="1">
+ 
+ <p>日本語組版では，行間に<span class="index" id="d3e4123"><a class="termref" href="terminology.xhtml#term.ruby">ルビ</a></span>・<span class="index" id="d3e4127"><a class="termref" href="terminology.xhtml#term.emphasis-dots">圏点</a></span>・<span class="index" id="d3e4131"><a class="termref" href="terminology.xhtml#term.bousen">傍線</a></span>・<span class="index" id="d3e4135"><a class="termref" href="terminology.xhtml#term.underline">下線</a></span>などを配置する例がある．このようなものを配置した場合でも，行間は一定にし，変更しない（<a class="figure_ref" href="considerations_in_designing_the_kihonhanmen.xhtml#fig_ad1_5-ja">図 2.34</a>）．<a class="termref" href="terminology.xhtml#term.main-text">本文</a>中に<a class="termref" href="terminology.xhtml#term.note">注</a>とそれを参照するための<span class="index" id="d3e4149"><a class="termref" href="terminology.xhtml#term.reference-marks">合印</a></span>を行間に配置する方法があるが，この場合も同様に扱う．これらの要素が配置される文書では，基本版面の設計段階で，これらの要素との関連で，行間の大きさをどの程度にするか検討することが望ましい．なお，ルビなどの配置法そのものについては，<a class="sec_ref" href="line-composition.xhtml#line-composition">第3章 行の組版処理</a>で解説する．</p>
+ 
+ 
+ </td>
+ </tr>
+</table>
+ 
+ <div class="figure" id="fig_ad1_5-ja"><div class="figure-float"><div><img alt="行間にルビなどを配置した例" width="254" height="257" src="../image/Images-ja/img_ad1_5.png"/><div class="figureCaption">図 2.34 <span class="caption-body">行間にルビなどを配置した例</span></div></div></div></div>
+ 
+ 
+ 
+<table class="t_note">
+ <tr>
+ <td class="ft" rowspan="1" colspan="1">
+ 
+ <p>注2）</p>
+ 
+ 
+ </td>
+ <td rowspan="1" colspan="1">
+ 
+ <p><span class="index" id="d3e4234"><a class="termref" href="terminology.xhtml#term.warichu">割注</a></span>は，基本版面で設定した<a class="termref" href="terminology.xhtml#term.block-direction">行送り方向</a>の行の幅（基本版面で設定した文字サイズ）よりはみ出して配置する．この場合でも，割注の入らない部分の行間を一定にし，割注のある箇所は狭くなるようにする（<a class="figure_ref" href="considerations_in_designing_the_kihonhanmen.xhtml#fig_ad1_18-ja">図 2.35</a>）．したがって，割注が入る場合は，行間をある程度大きくしておく必要がある．この他に，<span class="index" id="d3e4265"><a class="termref" href="terminology.xhtml#term.tate-chu-yoko">縦中横</a></span>，<a class="termref" href="terminology.xhtml#term.superscript">上付き</a>・<a class="termref" href="terminology.xhtml#term.subscript">下付き</a>の<span class="index" id="d3e4276"><a class="termref" href="terminology.xhtml#term.ornament-characters">添え字</a></span>などについても，行送り方向の<span class="index" id="d3e4284">行の幅よりはみ出して配置する場合</span>は，同様に扱う．なお，割注などの配置法そのものについては，<a class="sec_ref" href="line-composition.xhtml#line-composition">第3章 行の組版処理</a>で解説する．</p>
+ 
+ 
+ </td>
+ </tr>
+</table>
+ 
+ <div class="figure" id="fig_ad1_18-ja"><div class="figure-float"><div><img alt="割注が入った場合の行間の処理例" width="260" height="496" src="../image/Images-ja/img_ad1_18.png"/><div class="figureCaption">図 2.35 <span class="caption-body">割注が入った場合の行間の処理例</span></div></div></div></div>
+ 
+ 
+ 
+<table class="t_note">
+ <tr>
+ <td class="ft" rowspan="1" colspan="1">
+ 
+ <p>注3）</p>
+ 
+ 
+ </td>
+ <td rowspan="1" colspan="1">
+ 
+ <p><span class="index" id="d3e4358">基本版面の<span class="index" id="d3e4360">行間</span></span>は，基本版面の文字サイズの<a class="termref" href="terminology.xhtml#term.half-em-space">二分アキ</a>以上，<a class="termref" href="terminology.xhtml#term.one-em-space">全角アキ</a>以下の範囲とすることが多い．行長が短い場合は，二分アキでもよい．35字を超えるような行長では，全角アキか，それよりやや詰めた行間にするのがよい．</p>
+ 
+ 
+ </td>
+ </tr>
+ <tr>
+ <td class="ft" rowspan="1" colspan="1">
+ 
+ <p>注4）</p>
+ 
+ 
+ </td>
+ <td rowspan="1" colspan="1">
+ 
+ <p>古典の注釈本などで，行間にルビやその他の要素を数多く配置する場合などを除き，行間を全角アキ以上にすることはない．行間を全角アキ以上にしたからといって，読みやすくなるわけではない．</p>
+ 
+ 
+ </td>
+ </tr>
+ <tr>
+ <td class="ft" rowspan="1" colspan="1">
+ 
+ <p>注5）</p>
+ 
+ 
+ </td>
+ <td rowspan="1" colspan="1">
+ 
+ <p>欧文の組版の<span class="index" id="d3e4435">行間</span>は，文字サイズの<a class="termref" href="terminology.xhtml#term.one-third-em-space">三分アキ</a>又はそれ以下とする場合も多い．これと比較すると日本語組版の行間は大きくなる．これも，和文文字と欧文文字との文字設計の違いによる．</p>
+ 
+ 
+ </td>
+ </tr>
+ <tr>
+ <td class="ft" rowspan="1" colspan="1">
+ 
+ <p>注6）</p>
+ 
+ 
+ </td>
+ <td rowspan="1" colspan="1">
+ 
+ <p>基本版面を指定する方法には，行間にかえ，<span class="index" id="d3e4471"><a class="termref" href="terminology.xhtml#term.line-feed">行送り</a></span>で設定する方法もある．行送りは，隣接する行同士の基準点から基準点までの距離である（<a class="figure_ref" href="considerations_in_designing_the_kihonhanmen.xhtml#fig_ad1_20-ja">図 2.36</a>）．基準点は，処理系により異なるが，縦組の場合は左右中央，横組の場合は天地中央とする例が多い．配置する文字が全部同じサイズの場合は，以下の<span class="index" id="d3e4478"><span class="index" id="d3e4479">関係</span></span>がある．</p>
+ 
+ 
+<ul>
+<li>
+  <p><span class="expr">行送り＝文字サイズ÷2＋行間＋文字サイズ÷2＝文字サイズ＋行間</span></p>
+  
+</li>
+<li>
+  <p><span class="expr">行間＝行送り－文字サイズ</span></p>
+  
+ </li>
+</ul>
+ </td>
+ </tr>
+ </table>
+ 
+ <div class="figure" id="fig_ad1_20-ja"><div class="figure-float"><div><img alt="基本版面を行送りで指定する方法" width="387" height="456" src="../image/Images-ja/img_ad1_20.png"/><div class="figureCaption">図 2.36 <span class="caption-body">基本版面を行送りで指定する方法</span></div></div></div></div>
+ 
+ 
+ 
+ 
+ </li>
+				</ol><p>以上のように設定した<span class="index" id="d3e4734">基本版面のサイズは，次のように計算</span>できる．</p><ul>
+					<li>
+ 
+ <p>縦組の1段の場合</p>
+ 
+ 
+ 
+ <p><span class="expr">左右サイズ＝使用する文字サイズ×1ページの行数＋行間×（1ページの行数－1）</span></p>
+ 
+ 
+<table class="t_sample">
+<tr><td class="ft">
+<p>例）</p>
+
+</td>
+<td>
+<p><span class="expr">298ポイント＝9ポイント×18行＋8ポイント×（18行－1）</span></p>
+
+</td></tr>
+</table>
+ 
+ <p><span class="expr">天地サイズ＝使用する文字サイズ×1行の行長</span></p>
+ 
+ 
+<table class="t_sample">
+<tr><td class="ft">
+<p>例）</p>
+
+</td>
+<td>
+<p><span class="expr">468ポイント＝9ポイント×52字</span></p>
+
+</td></tr>
+</table>
+</li>
+<li>
+ 
+ <p>縦組の多段の場合</p>
+ 
+ 
+ 
+ <p><span class="expr">左右サイズ＝使用する文字サイズ×1段の行数＋行間×（1段の行数－1）</span></p>
+ 
+ 
+<table class="t_sample">
+<tr><td class="ft">
+<p>例）</p>
+
+</td>
+<td>
+<p><span class="expr">309ポイント＝9ポイント×21行＋6ポイント×（21行－1）</span></p>
+
+</td></tr>
+</table>
+ 
+ <p><span class="expr">天地サイズ＝使用する文字サイズ×1行の行長×段数＋段間×（段数－1）</span></p>
+ 
+ 
+<table class="t_sample">
+<tr><td class="ft">
+<p>例）</p>
+
+</td>
+<td>
+<p><span class="expr">468ポイント＝9ポイント×25字×2段＋18ポイント×（2段－1）</span></p>
+
+</td></tr>
+</table>
+</li>
+<li>
+ 
+ <p>横組の1段の場合</p>
+ 
+ 
+ 
+ <p><span class="expr">左右サイズ＝使用する文字サイズ×1行の行長</span></p>
+ 
+ 
+<table class="t_sample">
+<tr><td class="ft">
+<p>例）</p>
+
+</td>
+<td>
+<p><span class="expr">315ポイント＝9ポイント×35字</span></p>
+
+</td></tr>
+</table>
+ 
+ <p><span class="expr">天地サイズ＝使用する文字サイズ×1ページの行数＋行間×（1ページの行数－1）</span></p>
+ 
+ 
+<table class="t_sample">
+<tr><td class="ft">
+<p>例）</p>
+
+</td>
+<td>
+<p><span class="expr">468ポイント＝9ポイント×28行＋8ポイント×（28行－1）</span></p>
+
+</td></tr>
+</table>
+</li>
+					<li>
+ 
+ <p>横組の多段の場合</p>
+ 
+ 
+ 
+ <p><span class="expr">左右サイズ＝使用する文字サイズ×1行の行長×段数＋段間×（段数－1）</span></p>
+ 
+ 
+<table class="t_sample">
+<tr><td class="ft">
+<p>例）</p>
+
+</td>
+<td>
+<p><span class="expr">320ポイント＝8ポイント×19字×2段＋16ポイント×（2段－1）</span></p>
+
+</td></tr>
+</table>
+ 
+ <p><span class="expr">天地サイズ＝使用する文字サイズ×1段の行数＋行間×（1段の行数－1）</span></p>
+ 
+ 
+<table class="t_sample">
+<tr><td class="ft">
+<p>例）</p>
+
+</td>
+<td>
+<p><span class="expr">476ポイント＝8ポイント×40行＋4ポイント×（40行－1）</span></p>
+
+</td></tr>
+</table>
+</li>
+				</ul></body></html>

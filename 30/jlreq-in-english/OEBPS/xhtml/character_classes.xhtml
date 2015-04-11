@@ -1,0 +1,30 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"><head><meta charset="UTF-8"/><title>Requirements for Japanese Text Layout</title><link rel="stylesheet" type="text/css" href="../css/base.css"/><link rel="stylesheet" type="text/css" href="../css/W3C-WG-NOTE.css"/></head><body><div xmlns:xhtm="http://www.w3.org/1999/xhtml" id="appendices"/><h2 id="character_classes">Appendix A <span class="heading"><span class="index" id="character-classes-en">Character Classes</span></span></h2><p>The following are lists of (non-ideographic) characters from a subset of ISO/IEC 10646 (collection number 285 "BASIC JAPANESE" and 286 "JAPANESE NON IDEOGRAPHICS EXTENSION") grouped by character class according to the classification explained in <a class="sec_ref" href="grouping_of_characters_and_symbols_depending_on_their_positioning.xhtml#grouping_of_characters_and_symbols_depending_on_their_positioning">3.9.2 Grouping of Characters and Symbols depending on their Positioning</a>.
+            </p><table class="t_note">
+            <tr>
+               <td class="ft" rowspan="1" colspan="1">
+                  
+                     
+                     <p>(note 1)</p>
+                  
+               </td>
+               <td rowspan="1" colspan="1">
+                  
+                     
+                     <p>General <a class="termref" href="terminology.xhtml#term.punctuation-marks">punctuation marks</a> are script neutral in ISO/IEC 10646
+                        and there is no "Opening Ideographic Parenthesis" specifically
+                        encoded for CJK scripts in the standard. However, because of the
+                        typographic difference among scripts with respect to <a class="termref" href="terminology.xhtml#term.base-line">base line</a>
+                        position as well as width and glyph design, the same set of
+                        punctuation marks usually do not fit to both Latin and Japanese
+                        text. To work around this issue, many existing implementations use
+                        compatibility characters encoded separately in the standard
+                        for the purpose of round-trip integrity with the legacy
+                        encoding standards. For example, while this document lists
+                        U+0028 LEFT PARENTHESIS as a member of <a class="characterClass" href="cl-01.xhtml#cl-01">opening brackets (cl-01)</a>,
+                        the compatibility counterpart U+FF08 FULLWIDTH LEFT PARENTHESIS
+                        is used in the Japanese context in most Japanese text layout
+                        software.</p>
+                  
+               </td>
+            </tr>
+         </table></body></html>

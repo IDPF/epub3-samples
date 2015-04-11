@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package xmlns="http://www.idpf.org/2007/opf" version="3.0" xml:lang="ja"
+      prefix="rendition: http://www.idpf.org/vocab/rendition/#"
+      unique-identifier="ootuya-id">
+      <metadata xmlns:opf="http://www.idpf.org/2007/opf" xmlns:dc="http://purl.org/dc/elements/1.1/"
+            xmlns:dcterms="http://purl.org/dc/terms/">
+            
+            <dc:identifier id="ootuya-id">urn:uuid:A649F639-6C1F-1014-8CC3-F813564D7508</dc:identifier>
+            <dc:title>ハルコさんの彼氏</dc:title>
+            <dc:language>ja-jp</dc:language>
+            <meta property="dcterms:modified">2012-05-24T00:00:00Z</meta>
+            <meta property="rendition:layout">pre-paginated</meta>
+            <meta property="rendition:orientation">portrait</meta>
+            <meta property="rendition:spread">landscape</meta>
+      </metadata>
+      <manifest>
+            <item id="default-style" href="css/default.css" media-type="text/css"/>
+            <item id="en-style" href="css/en.css" media-type="text/css"/>
+            <item id="ja-jp-style" href="css/ja-jp.css" media-type="text/css"/>
+            
+            <item id="j01" href="images/01.jpg" media-type="image/jpeg"/>
+            <item id="j02" href="images/02.jpg" media-type="image/jpeg"/>
+            <item id="j03" href="images/03.jpg" media-type="image/jpeg"/>
+            <item id="j04" href="images/04.jpg" media-type="image/jpeg"/>
+            <item id="j05" href="images/05.jpg" media-type="image/jpeg"/>
+            <item id="j06" href="images/06.jpg" media-type="image/jpeg"/>
+            <item id="j07" href="images/07.jpg" media-type="image/jpeg"/>
+            <item id="j08" href="images/08.jpg" media-type="image/jpeg"/>
+            <item id="j09" href="images/09.jpg" media-type="image/jpeg"/>
+            <item id="j10" href="images/10.jpg" media-type="image/jpeg"/>
+            <item id="j11" href="images/11.jpg" media-type="image/jpeg"/>
+            <item id="j12" href="images/12.jpg" media-type="image/jpeg"/>
+            
+            <item id="about" href="xhtml/AboutThisDocument.xhtml"
+                  media-type="application/xhtml+xml"/>
+            <item id="toc" properties="nav" href="xhtml/toc.xhtml"
+                  media-type="application/xhtml+xml"/>
+            <item id="p01" href="xhtml/p01.xhtml" media-type="application/xhtml+xml"/>
+            <item id="p02" href="xhtml/p02.xhtml" media-type="application/xhtml+xml"/>
+            <item id="p03" href="xhtml/p03.xhtml" media-type="application/xhtml+xml"/>
+            <item id="p04" href="xhtml/p04.xhtml" media-type="application/xhtml+xml"/>
+            <item id="p05" href="xhtml/p05.xhtml" media-type="application/xhtml+xml"/>
+            <item id="p06" href="xhtml/p06.xhtml" media-type="application/xhtml+xml"/>
+            <item id="p07" href="xhtml/p07.xhtml" media-type="application/xhtml+xml"/>
+            <item id="p08" href="xhtml/p08.xhtml" media-type="application/xhtml+xml"/>
+            <item id="p09" href="xhtml/p09.xhtml" media-type="application/xhtml+xml"/>
+            <item id="p10" href="xhtml/p10.xhtml" media-type="application/xhtml+xml"/>
+            <item id="p11" href="xhtml/p11.xhtml" media-type="application/xhtml+xml"/>
+            <item id="p12" href="xhtml/p12.xhtml" media-type="application/xhtml+xml"/>
+            <item id="ncxtoc" href="xhtml/toc.ncx" media-type="application/x-dtbncx+xml"/>
+      </manifest>
+      <spine toc="ncxtoc" page-progression-direction="rtl">
+            <itemref idref="p01" properties="page-spread-left" />
+            <itemref idref="p02" properties="page-spread-right" />
+            <itemref idref="p03" properties="page-spread-left" />
+            <itemref idref="p04" properties="page-spread-right" />
+            <itemref idref="p05" properties="page-spread-left" />
+            <itemref idref="p06" properties="page-spread-right" />
+            <itemref idref="p07" properties="page-spread-left" />
+            <itemref idref="p08" properties="page-spread-right" />
+            <itemref idref="p09" properties="page-spread-left" />
+            <itemref idref="p10" properties="page-spread-right" />
+            <itemref idref="p11" properties="page-spread-left" />
+            <itemref idref="p12" properties="page-spread-right" />
+            <itemref idref="about"  properties="page-spread-left rendition:layout-reflowable"  />
+      </spine>
+</package>

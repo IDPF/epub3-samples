@@ -1,0 +1,21 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"><head><meta charset="UTF-8"/><title>Requirements for Japanese Text Layout</title><link rel="stylesheet" type="text/css" href="../css/base.css"/><link rel="stylesheet" type="text/css" href="../css/W3C-WG-NOTE.css"/></head><body><h3 id="about_character_classes">3.9 <span class="heading"><span id="en-subheading2_9">About Character Classes</span></span></h3><h4 id="differences_in_positioning_of_characters_and_symbols">3.9.1 <span class="heading"><span class="index" id="en-subheading2_9_1">Differences in Positioning of Characters and Symbols</span></span></h4><p>The positioning of characters and symbols may vary depending on the following.</p><ol>
+					<li>
+					<p>Is the character width <a class="termref" href="terminology.xhtml#term.full-width">full-width</a>, <a class="termref" href="terminology.xhtml#term.half-width">half-width</a>, or something else?</p></li>
+					<li>
+					<p>Is it allowed or forbidden to place the character or symbol at the <a class="termref" href="terminology.xhtml#term.line-head">line head</a>? If it is allowed, how will it be placed?</p></li>
+					<li>
+					<p>Is it allowed or forbidden to place the character or symbol at the <a class="termref" href="terminology.xhtml#term.line-end">line end</a>? If it is allowed, how will it be placed?</p></li>
+					<li>
+					<p>Are characters and symbols appearing in sequence in <a class="termref" href="terminology.xhtml#term.solid-setting">solid setting</a>, or will there be a fixed size space between them? For example,
+               sequences of <a class="characterClass" href="cl-19.xhtml#cl-19">ideographic characters (cl-19)</a> and <a class="characterClass" href="cl-15.xhtml#cl-15">hiragana (cl-15)</a> are set solid, and for <a class="characterClass" href="cl-27.xhtml#cl-27">Western characters (cl-27)</a> following <a class="characterClass" href="cl-15.xhtml#cl-15">hiragana (cl-15)</a> there will be quarter em space.
+             </p></li>
+					<li>
+					<p>Is it allowed to have a line break within a sequence of characters? For example, there must not be a line break in a sequence
+               of <a class="characterClass" href="cl-24.xhtml#cl-24">grouped numerals (cl-24)</a>.
+             </p></li>
+					<li>
+					<p>Is it allowed to use the space between characters in a sequence during <a class="termref" href="terminology.xhtml#term.line-adjustment">line adjustment</a> processing? For example, is inter-character
+               space reduction or addition possible between the characters appearing in sequence? Another issue to be decided is the preferred
+               order for adjustment processing, and the amount of the allowed adjustment.
+             </p></li>
+				</ol></body></html>

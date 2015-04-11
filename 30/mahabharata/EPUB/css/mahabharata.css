@@ -1,0 +1,32 @@
+body {
+    margin : 3em 2em 2em 3em;
+    background-color: rgb(255,250,245);
+    color:black;
+}
+
+body.titlepage {
+    margin : 8em 2em 2em 2em;    
+}
+
+body.titlepage h1 {
+    text-align : center;
+}
+
+nav#toc ol {
+    list-style-type: none;
+}
+
+
+nav#toc ol li {
+    text-decoration : none;
+    color : black;
+}
+
+span.num {
+    margin-left: 2em;
+    margin-right: 1em;
+}
+
+span.lin {
+    margin-left: 5em;
+}

@@ -1,0 +1,96 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"><head><meta charset="UTF-8"/><title>Requirements for Japanese Text Layout</title><link rel="stylesheet" type="text/css" href="../css/base.css"/><link rel="stylesheet" type="text/css" href="../css/W3C-WG-NOTE.css"/></head><body><h3 id="basic_principles_for_development_of_this_document">1.3 <span class="heading"><span id="en-subheading0_3" class="index">Basic Principles for Development of This Document</span></span></h3><p>Japanese composition
+exhibits several differences from Western composition. Major differences include:</p><ol>
+				<li>
+           
+            
+            <p>The use of not only horizontal writing mode
+but also vertical writing mode.</p>
+           
+         </li>
+				<li>
+           
+            
+            <p>In principle, all <a class="termref" href="terminology.xhtml#term.character-frame">character frames</a> of  <a class="characterClass" href="cl-19.xhtml#cl-19">ideographic (cl-19)</a>, <a class="characterClass" href="cl-15.xhtml#cl-15">hiragana (cl-15)</a> and <a class="characterClass" href="cl-16.xhtml#cl-16">katakana (cl-16)</a> characters
+used in Japanese composition are designed in a square box, and these characters are composed without intervening spaces (i.e. set solid). In this document, notations such as <a class="characterClass" href="cl-19.xhtml#cl-19">ideographic (cl-19)</a> and <a class="characterClass" href="cl-15.xhtml#cl-15">hiragana (cl-15)</a> characters indicate character classes (see <a class="sec_ref" href="about_character_classes.xhtml#about_character_classes">3.9 About Character Classes</a>).</p>
+           
+         </li>
+			</ol><p>This document mainly explains the characteristics of Japanese composition along the lines of the following policy.</p><ol>
+				<li>
+           
+            
+            <p>It does not fully cover all issues of the Japanese composition system, but mainly discusses the differences from Western composition systems.
+            </p>
+           
+         </li>
+				<li>
+           
+            
+            <p>It focuses on the requirements for the Japanese visual presentation form of text composition. Technology-specific interpretations
+              of the requirements and/or how to implement them are out of scope for this document.
+            </p>
+           
+         </li>
+				<li>
+           
+            
+            <p>It explicitly refers to JIS X 4051 "Formatting rules for Japanese documents" as much as possible. This document focuses on fundamental and important issues of Japanese layout as much as possible, and for more detail
+              references the corresponding clause of JIS X 4051. The   JIS X 4051 topics that are not described in this document, are only  for exceptional, corner cases or to provide some specific line composition algorithms. On the other hand, some topics that are not described in JIS X 4051 are described in detail. Accordingly, this document is sufficient to implement Japanese layout processing for most parts of the Japanese market. </p>
+           
+           
+            
+            <p>In accordance with the stated policy, this document provides tutorial- or summary-like, supplementary explanations, related background, and additional
+              descriptions for JIS X 4051 information. This document covers all the fundamental issues of Japanese text layout, but the reader will need to refer to JIS X 4051 for advanced  discussion of exceptional topics.            </p>
+           
+         </li>
+				<li>
+           
+            
+            <p>It provides typical examples of actual use for key composition features, to enable better understanding of their usage.</p>
+           
+         </li>
+				<li>
+           
+            
+            <p>For non-Japanese readers, frequency of use is indicated for each requirement. These frequencies are not the outcome of any accurate
+              research, but arise from the long experience of the authors. They are intuitive for ordinary Japanese text readers; however, for non-Japanese readers it may be difficult to imagine without explicit information. These frequencies are only
+              rough information to prioritize the importance of issues. A couple of examples:            </p>
+           
+           
+            
+            <p>"warichu (inline cutting note) is not frequently used, but is useful to simply annotate persons, things, and so on, at the place where the text appears, especially in
+              classic texts or translations.",  or
+              "ruby is frequently used in modern documents, including newspapers."
+            </p>
+           
+         </li>
+				<li>
+           
+            
+            <p>In consideration of non-Japanese readers of this document, figures are used for explanations wherever possible.</p>
+           
+         </li>
+				<li>
+           
+            
+            <p>Text layout rules and recommendations for readable design are different things, however these two issues are difficult to
+              discuss independently. In this document, these two aspects are carefully separated. The aesthetic design recommendations are
+              mainly described using notes.
+            </p>
+           
+         </li>
+				<li>
+           
+            
+            <p>The main target of this document is common books. The authors' experiences are mainly related to common books, and the quality
+              required for common books is the highest in the market. There are many kinds of books in the market, and the requirements are quite
+              diverse. The task force has a lot of accumulated experience in requirements and solutions for Japanese text composition. Nonetheless, many issues, which have been discussed over a long period of time, are applicable for other kinds of publication.</p>
+           
+           
+            
+            <p>In terms of frequency
+	of use, the importance of magazines, technical manuals, and Web documents
+rates alongside
+common books. However, there are several characteristics in these publications, which are different from common books. These issues should be treated more fully in future documents.</p>
+           
+         </li>
+			</ol></body></html>
