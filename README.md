@@ -4,6 +4,10 @@ This repository contains the source for a variety of EPUB 3.0 sample documents. 
 
 Please see the [project page](http://idpf.github.io/epub3-samples/) for more general information about the samples, including a [table of samples](http://idpf.github.io/epub3-samples/samples.html) and [feature matrix](http://idpf.github.io/epub3-samples/feature-matrix.html).
 
+## Licensing
+
+Unless specified otherwise in the [samples table](http://idpf.github.io/epub3-samples/samples.html), all samples are licensed under [CC-BY-SA 3.0](http://creativecommons.org/licenses/by-sa/3.0/)
+
 ## Want to contribute?
 
 If you want to contribute to this project, here are your options:
