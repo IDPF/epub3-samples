@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package xmlns="http://www.idpf.org/2007/opf" version="3.0" unique-identifier="p9781573878296">
+<metadata xmlns:dc="http://purl.org/dc/elements/1.1/">
+<dc:title id="title">Indexing for Editors and Authors: A Practical Guide to Understanding Indexes</dc:title>
+<dc:creator>Fred Leise</dc:creator>
+<dc:creator>Kate Mertes</dc:creator>
+<dc:creator>Nan Badgett</dc:creator>
+<dc:publisher>Information Today, Inc.</dc:publisher>
+<dc:rights>Copyright &#x00A9; 2008 by American Society of Indexers, Inc.</dc:rights>
+<dc:rights>All rights reserved. No part of this book may be reproduced in any form by any electronic or mechanical means, including information storage and retrieval systems, without the express written permission from the Society except by a reviewer who may quote brief passages for a review.</dc:rights>
+<dc:identifier id="p9781573878296">9781573878296</dc:identifier>
+<dc:source id="src-id">urn:isbn:9781573878296</dc:source>
+<dc:language>en-US</dc:language>
+<meta property="dcterms:modified">2014-09-06T11:00:00Z</meta>
+</metadata>
+<manifest>
+<item id="cover" href="cover.xhtml" media-type="application/xhtml+xml"/>
+<item id="cover-image" properties="cover-image" href="images/9781573878296.jpg" media-type="image/jpeg"/>
+<item id="style" href="css/stylesheet.css" media-type="text/css"/>
+<item id="ncx" properties="nav" href="ncx.xhtml" media-type="application/xhtml+xml"/>
+<item id="ncx1" href="toc.ncx" media-type="application/x-dtbncx+xml"/>
+<item id="page-template" href="css/page-template.xpgt" media-type="application/adobe-page-template+xml"/>
+<item id="copyright" href="copyright.xhtml" media-type="application/xhtml+xml"/>
+<item id="toc" href="toc.xhtml" media-type="application/xhtml+xml"/>
+<item id="Art_1.jpg" href="images/Art_1.jpg" media-type="image/jpeg"/>
+<item id="Art_2.jpg" href="images/Art_2.jpg" media-type="image/jpeg"/>
+<item id="Art_3.jpg" href="images/Art_3.jpg" media-type="image/jpeg"/>
+<item id="Art_4.jpg" href="images/Art_4.jpg" media-type="image/jpeg"/>
+<item id="Art_5.jpg" href="images/Art_5.jpg" media-type="image/jpeg"/>
+<item id="Art_6.jpg" href="images/Art_6.jpg" media-type="image/jpeg"/>
+<item id="Art_7.jpg" href="images/Art_7.jpg" media-type="image/jpeg"/>
+<item id="Art_8.jpg" href="images/Art_8.jpg" media-type="image/jpeg"/>
+<item id="Art_P1.jpg" href="images/Art_P1.jpg" media-type="image/jpeg"/>
+<item id="Art_P2.jpg" href="images/Art_P2.jpg" media-type="image/jpeg"/>
+<item id="box.jpg" href="images/box.jpg" media-type="image/jpeg"/>
+<item id="titlepage" href="titlepage.xhtml" media-type="application/xhtml+xml"/>
+<item id="foreword001" href="foreword001.xhtml" media-type="application/xhtml+xml"/>
+<item id="introduction001" href="introduction001.xhtml" media-type="application/xhtml+xml"/>
+<item id="chapter001" href="chapter001.xhtml" media-type="application/xhtml+xml"/>
+<item id="chapter002" href="chapter002.xhtml" media-type="application/xhtml+xml"/>
+<item id="chapter003" href="chapter003.xhtml" media-type="application/xhtml+xml"/>
+<item id="chapter004" href="chapter004.xhtml" media-type="application/xhtml+xml"/>
+<item id="chapter005" href="chapter005.xhtml" media-type="application/xhtml+xml"/>
+<item id="chapter006" href="chapter006.xhtml" media-type="application/xhtml+xml"/>
+<item id="chapter007" href="chapter007.xhtml" media-type="application/xhtml+xml"/>
+<item id="chapter008" href="chapter008.xhtml" media-type="application/xhtml+xml"/>
+<item id="chapter009" href="chapter009.xhtml" media-type="application/xhtml+xml"/>
+<item id="chapter010" href="chapter010.xhtml" media-type="application/xhtml+xml"/>
+<item id="appendix001" href="appendix001.xhtml" media-type="application/xhtml+xml"/>
+<item id="appendix002" href="appendix002.xhtml" media-type="application/xhtml+xml"/>
+<item id="appendix003" href="appendix003.xhtml" media-type="application/xhtml+xml"/>
+<item id="author_bio001" href="author_bio001.xhtml" media-type="application/xhtml+xml"/>
+<item id="index1" href="index1.xhtml" media-type="application/xhtml+xml"/>
+<item id="index2" href="index2.xhtml" media-type="application/xhtml+xml"/>
+<item id="Times_New_Roman" href="fonts/times.ttf" media-type="application/x-font-ttf"/>
+<item id="Times_New_Roman_bold" href="fonts/timesbd.ttf" media-type="application/x-font-ttf"/>
+<item id="Times_New_Roman_italic" href="fonts/timesi.ttf" media-type="application/x-font-ttf"/>
+<item id="Times_New_Roman_bolditalic" href="fonts/timesbi.ttf" media-type="application/x-font-ttf"/>
+<item id="HelveticaLTStd-Bold" href="fonts/HelveticaLTStd-Bold.otf" media-type="application/x-font-otf"/>
+<item id="HelveticaLTStd-Obl" href="fonts/HelveticaLTStd-Obl.otf" media-type="application/x-font-otf"/>
+<item id="HelveticaLTStd-Roman" href="fonts/HelveticaLTStd-Roman.otf" media-type="application/x-font-otf"/>
+<item id="HelveticaLTStd-BoldObl" href="fonts/HelveticaLTStd-BoldObl.otf" media-type="application/x-font-otf"/>
+<item id="Century_Gothic" href="fonts/GOTHIC.TTF" media-type="application/x-font-otf"/>
+<item id="Century_Gothic-Obl" href="fonts/GOTHICI.TTF" media-type="application/x-font-otf"/>
+<item id="Century_Gothic-Roman" href="fonts/GOTHICBI.TTF" media-type="application/x-font-otf"/>
+<item id="Century_GothicObl" href="fonts/GOTHICB.TTF" media-type="application/x-font-otf"/>
+</manifest>
+
+<collection role="index">
+	<link href="index1.xhtml"/>
+	<link href="index2.xhtml"/>
+</collection>
+
+<spine toc="ncx1">
+<itemref idref="cover" linear="yes"/>
+<itemref idref="titlepage" linear="yes"/>
+<itemref idref="copyright" linear="yes"/>
+<itemref idref="toc" linear="yes"/>
+<itemref linear="yes" idref="foreword001"/>
+<itemref linear="yes" idref="introduction001"/>
+<itemref linear="yes" idref="chapter001"/>
+<itemref linear="yes" idref="chapter002"/>
+<itemref linear="yes" idref="chapter003"/>
+<itemref linear="yes" idref="chapter004"/>
+<itemref linear="yes" idref="chapter005"/>
+<itemref linear="yes" idref="chapter006"/>
+<itemref linear="yes" idref="chapter007"/>
+<itemref linear="yes" idref="chapter008"/>
+<itemref linear="yes" idref="chapter009"/>
+<itemref linear="yes" idref="chapter010"/>
+<itemref linear="yes" idref="appendix001"/>
+<itemref linear="yes" idref="appendix002"/>
+<itemref linear="yes" idref="appendix003"/>
+<itemref linear="yes" idref="author_bio001"/>
+<itemref linear="yes" idref="index1"/>
+<itemref linear="yes" idref="index2"/>
+</spine>
+</package>

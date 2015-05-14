@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ncx xmlns="http://www.daisy.org/z3986/2005/ncx/" version="2005-1" xml:lang="en-US">
+<head>
+<meta name="dtb:uid" content="9781573878296"/>
+<meta name="dtb:depth" content="1"/>
+<meta name="dtb:totalPageCount" content="0"/>
+<meta name="dtb:maxPageNumber" content="0"/>
+</head>
+<docTitle><text>Indexing for Editors and Authors: A Practical Guide to Understanding Indexes</text></docTitle>
+<docAuthor><text>Fred Leise, Kate Mertes, and Nan Badgett</text></docAuthor>
+<navMap>
+<navPoint id="cover" playOrder="1"><navLabel><text>Cover</text></navLabel><content src="cover.xhtml"/></navPoint>
+<navPoint id="copyright" playOrder="2"><navLabel><text>Copyright</text></navLabel><content src="copyright.xhtml"/></navPoint>
+<navPoint id="toc" playOrder="3"><navLabel><text>Contents</text></navLabel><content src="toc.xhtml"/></navPoint>
+<navPoint playOrder="4" id="fore-1"><navLabel><text>Foreword, by Dan Kirklin</text></navLabel><content src="foreword001.xhtml"/></navPoint>
+<navPoint playOrder="5" id="intr-1"><navLabel><text>Introduction</text></navLabel><content src="introduction001.xhtml"/></navPoint>
+<navPoint playOrder="6" id="chap-1"><navLabel><text>Chapter 1: What Is an Index?</text></navLabel><content src="chapter001.xhtml"/></navPoint>
+<navPoint playOrder="7" id="chap-2"><navLabel><text>Chapter 2: Numbers and Types of Indexes</text></navLabel><content src="chapter002.xhtml"/></navPoint>
+<navPoint playOrder="8" id="chap-3"><navLabel><text>Chapter 3: Characteristics of a Good Index</text></navLabel><content src="chapter003.xhtml"/></navPoint>
+<navPoint playOrder="9" id="chap-4"><navLabel><text>Chapter 4: Index Style and Format</text></navLabel><content src="chapter004.xhtml"/></navPoint>
+<navPoint playOrder="10" id="chap-5"><navLabel><text>Chapter 5: Index Length and Index Space</text></navLabel><content src="chapter005.xhtml"/></navPoint>
+<navPoint playOrder="11" id="chap-6"><navLabel><text>Chapter 6: Author/Editor/Indexer Relationships</text></navLabel><content src="chapter006.xhtml"/></navPoint>
+<navPoint playOrder="12" id="chap-7"><navLabel><text>Chapter 7: Hiring an Indexer</text></navLabel><content src="chapter007.xhtml"/></navPoint>
+<navPoint playOrder="13" id="chap-8"><navLabel><text>Chapter 8: What the Editor Needs to Tell the Indexer</text></navLabel><content src="chapter008.xhtml"/></navPoint>
+<navPoint playOrder="14" id="chap-9"><navLabel><text>Chapter 9: Editing an Index Without Tears</text></navLabel><content src="chapter009.xhtml"/></navPoint>
+<navPoint playOrder="15" id="chap-10"><navLabel><text>Chapter 10: Electronic Files</text></navLabel><content src="chapter010.xhtml"/></navPoint>
+<navPoint playOrder="16" id="app-1"><navLabel><text>Appendix A: American Society of Indexers Recommended Indexing Agreement</text></navLabel><content src="appendix001.xhtml"/></navPoint>
+<navPoint playOrder="17" id="app-2"><navLabel><text>Appendix B: Additional Resources</text></navLabel><content src="appendix002.xhtml"/></navPoint>
+<navPoint playOrder="18" id="app-3"><navLabel><text>Appendix C: Glossary of Indexing Terms</text></navLabel><content src="appendix003.xhtml"/></navPoint>
+<navPoint playOrder="19" id="auth-1"><navLabel><text>About the Authors</text></navLabel><content src="author_bio001.xhtml"/></navPoint>
+<navPoint playOrder="20" id="indx-1"><navLabel><text>Index</text></navLabel><content src="index1.xhtml"/>
+<navPoint playOrder="21" id="indexA"><navLabel><text>A</text></navLabel><content src="index1.xhtml#indexA"/></navPoint>
+<navPoint playOrder="22" id="indexB"><navLabel><text>B</text></navLabel><content src="index1.xhtml#indexB"/></navPoint>
+<navPoint playOrder="23" id="indexC"><navLabel><text>C</text></navLabel><content src="index1.xhtml#indexC"/></navPoint>
+<navPoint playOrder="24" id="indexD"><navLabel><text>D</text></navLabel><content src="index1.xhtml#indexD"/></navPoint>
+<navPoint playOrder="25" id="indexE"><navLabel><text>E</text></navLabel><content src="index1.xhtml#indexE"/></navPoint>
+<navPoint playOrder="26" id="indexF"><navLabel><text>F</text></navLabel><content src="index1.xhtml#indexF"/></navPoint>
+<navPoint playOrder="27" id="indexG"><navLabel><text>G</text></navLabel><content src="index1.xhtml#indexG"/></navPoint>
+<navPoint playOrder="28" id="indexH"><navLabel><text>H</text></navLabel><content src="index1.xhtml#indexH"/></navPoint>
+<navPoint playOrder="29" id="indexI"><navLabel><text>I</text></navLabel><content src="index1.xhtml#indexI"/></navPoint>
+<navPoint playOrder="30" id="indexJ"><navLabel><text>J</text></navLabel><content src="index1.xhtml#indexJ"/></navPoint>
+<navPoint playOrder="31" id="indexK"><navLabel><text>K</text></navLabel><content src="index1.xhtml#indexK"/></navPoint>
+<navPoint playOrder="32" id="indexL"><navLabel><text>L</text></navLabel><content src="index1.xhtml#indexL"/></navPoint>
+<navPoint playOrder="33" id="indexM"><navLabel><text>M</text></navLabel><content src="index2.xhtml#indexM"/></navPoint>
+<navPoint playOrder="34" id="indexN"><navLabel><text>N</text></navLabel><content src="index2.xhtml#indexN"/></navPoint>
+<navPoint playOrder="35" id="indexO"><navLabel><text>O</text></navLabel><content src="index2.xhtml#indexO"/></navPoint>
+<navPoint playOrder="36" id="indexP"><navLabel><text>P</text></navLabel><content src="index2.xhtml#indexP"/></navPoint>
+<navPoint playOrder="37" id="indexQ"><navLabel><text>Q</text></navLabel><content src="index2.xhtml#indexQ"/></navPoint>
+<navPoint playOrder="38" id="indexR"><navLabel><text>R</text></navLabel><content src="index2.xhtml#indexR"/></navPoint>
+<navPoint playOrder="39" id="indexS"><navLabel><text>S</text></navLabel><content src="index2.xhtml#indexS"/></navPoint>
+<navPoint playOrder="40" id="indexT"><navLabel><text>T</text></navLabel><content src="index2.xhtml#indexT"/></navPoint>
+<navPoint playOrder="41" id="indexU"><navLabel><text>U</text></navLabel><content src="index2.xhtml#indexU"/></navPoint>
+<navPoint playOrder="42" id="indexV"><navLabel><text>V</text></navLabel><content src="index2.xhtml#indexV"/></navPoint>
+<navPoint playOrder="43" id="indexW"><navLabel><text>W</text></navLabel><content src="index2.xhtml#indexW"/></navPoint>
+<navPoint playOrder="44" id="indexZ"><navLabel><text>Z</text></navLabel><content src="index2.xhtml#indexZ"/></navPoint></navPoint>
+</navMap>
+</ncx>
