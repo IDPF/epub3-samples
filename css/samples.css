@@ -81,3 +81,5 @@ th{
 .right {
     float: right;
 }
+
+.italic { font-style: italic; font-size: 90%; }
