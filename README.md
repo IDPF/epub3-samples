@@ -10,7 +10,7 @@ Unless specified otherwise in the [samples table](http://idpf.github.io/epub3-sa
 
 ## Compiling
 
-All of the latest samples are available for download from the [samples table](http://idpf.github.io/epub3-samples/samples.html). If needed, you can also create EPUB publications directly from the samples source. There are two sets of shell and batch scripts available at the root of the directory.
+All of the latest samples are available for download from the [samples table](http://idpf.github.io/epub3-samples/samples.html). If needed, you can also create EPUB publications directly from the samples source. There are two sets of shell and batch scripts available at the root of the repository.
 
 The first, pack-all, will build all of the samples:
 
