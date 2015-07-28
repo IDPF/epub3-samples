@@ -8,9 +8,29 @@ Please see the [project page](http://idpf.github.io/epub3-samples/) for more gen
 
 Unless specified otherwise in the [samples table](http://idpf.github.io/epub3-samples/samples.html), all samples are licensed under [CC-BY-SA 3.0](http://creativecommons.org/licenses/by-sa/3.0/)
 
+## Compiling
+
+All of the latest samples are available for download from the [samples table](http://idpf.github.io/epub3-samples/samples.html). If needed, you can also create EPUB publications directly from the samples source. There are two sets of shell and batch scripts available at the root of the directory.
+
+The first, pack-all, will build all of the samples:
+
+```
+pack-all.sh
+```
+
+The second script, pack-single, is used to build individual samples:
+
+```
+pack-single.sh 30/accessible_epub_3
+```
+
+The argument to this script is the relative path to the sample you want to build.
+
+Note: The batch script can be run on Windows OSes; there is no difference in functionality or how it is called.
+
 ## Want to contribute?
 
-If you want to contribute to this project, here are your options:
+If you want to contribute to this project, there are several options:
 
 ### Reporting Issues
 
