@@ -2,8 +2,6 @@
 <package xmlns="http://www.idpf.org/2007/opf" prefix="dc: http://purl.org/dc/elements/1.1/"
     unique-identifier="d21041e30" version="3.0">
     <metadata xmlns:dc="http://purl.org/dc/elements/1.1/">
-        <dc:type>edupub</dc:type>
-        <dc:type>distributable-object</dc:type>
         <dc:title id="d20201e20">World Cultures and Geography</dc:title>
         <meta property="title-type" refines="#d20201e20">main</meta>
         <dc:title id="d20201e1149">Legends of Landforms</dc:title>
@@ -17,7 +15,6 @@
         <meta property="source-of" refines="#src">pagination</meta>
         <meta property="dcterms:title">World Cultures and Geography</meta>
         <meta property="dcterms:creator">DAISY XML Techniques Team</meta>
-        <link rel="mods-record" href="zedai-mods.xml"/>
         <meta property="schema:accessibilityFeature">alternativeText</meta>
         <meta property="schema:accessibilityFeature">longDescription</meta>
         <meta property="schema:accessibilityFeature">printPageNumbers</meta>
