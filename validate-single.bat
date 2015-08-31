@@ -1,2 +1,2 @@
 @echo off
-java -jar lib/epubcheck-3.0.1/epubcheck-3.0.1.jar %1
+java -jar lib/epubcheck/epubcheck.jar -mode exp %1

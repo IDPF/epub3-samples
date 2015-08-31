@@ -62,41 +62,41 @@
             <p class="p"> In this section we will see how to use solutions to systems of equations to share a secret among a group of people. We will be able to break a secret up into, say 10 pieces, so as to distribute the secret among 10 people. But rather than requiring all 10 people to collaborate on restoring the secret, we can design the split so that any smaller group, of say just 4 of these people, can collaborate and restore the secret. The numbers 10 and 4 here are arbitrary, we can choose them to be anything. </p>
             <p class="p"> Suppose we have a secret, 
                 <span class="ph d4p_eqn_inline">
-                    <math xmlns="http://www.w3.org/1998/Math/MathML">
+                    <math alttext="Alternative text not available" xmlns="http://www.w3.org/1998/Math/MathML">
                         <mi>S</mi>
                     </math>
                 </span>. This could be the combination to a lock, a password on an account, or a recipe for chocolate chip cookies. If the secret is text, we will assume that the characters have been translated into integers (say with the ASCII code), and these numbers have been rolled up into one grand positive integer (perhaps by concatenating binary strings for the ASCII code numbers, and interpreting the longer string as one big base 2 integer). So we will assume 
                 <span class="ph d4p_eqn_inline">
-                    <math xmlns="http://www.w3.org/1998/Math/MathML">
+                    <math alttext="Alternative text not available" xmlns="http://www.w3.org/1998/Math/MathML">
                         <mi>S</mi>
                     </math>
                 </span> is some positive integer. 
             </p>
             <p class="p"> Suppose you wish to give parts of your secret to 
                 <span class="ph d4p_eqn_inline">
-                    <math xmlns="http://www.w3.org/1998/Math/MathML">
+                    <math alttext="Alternative text not available" xmlns="http://www.w3.org/1998/Math/MathML">
                         <mi>n</mi>
                     </math>
                 </span> people, and you wish to require that any group of 
                 <span class="ph d4p_eqn_inline">
-                    <math xmlns="http://www.w3.org/1998/Math/MathML">
+                    <math alttext="Alternative text not available" xmlns="http://www.w3.org/1998/Math/MathML">
                         <mi>m</mi>
                     </math>
                 </span> (or more) of these people should be able to combine their parts and recover the secret. Perhaps you are President and CEO of a small company and only you know the password that authorizes large transfers of money among the company’s bank accounts. If you were to die or become incapacitated, it would perhaps hamper the company’s ability to function if they couldn’t quickly rearrange their assets, especially since they are also without a CEO. So you might wish to give this secret to six of your trusted Vice-Presidents. But you don’t trust them that much and you certainly don’t want any one of these people to be able to access the company’s accounts all by themselves without anybody else in the company knowing about it. Simultaneously, you know that in an emergency, it might not be possible to get all six Vice-Presidents together and maybe even one or two of them have met the same unfortunate fate you did. So you would like any group of three Vice-Presidents to be able to combine their parts and recover 
                 <span class="ph d4p_eqn_inline">
-                    <math xmlns="http://www.w3.org/1998/Math/MathML">
+                    <math alttext="Alternative text not available" xmlns="http://www.w3.org/1998/Math/MathML">
                         <mi>S</mi>
                     </math>
                 </span>. So you would choose 
                 <span class="ph d4p_eqn_inline">
-                    <math xmlns="http://www.w3.org/1998/Math/MathML">
+                    <math alttext="Alternative text not available" xmlns="http://www.w3.org/1998/Math/MathML">
                         <mi>n</mi>
                         <mo class="MathClass-rel">=</mo>
                         <mn>6</mn>
                     </math>
                 </span> and 
                 <span class="ph d4p_eqn_inline">
-                    <math xmlns="http://www.w3.org/1998/Math/MathML">
+                    <math alttext="Alternative text not available" xmlns="http://www.w3.org/1998/Math/MathML">
                         <mi>m</mi>
                         <mo class="MathClass-rel">=</mo>
                         <mn>3</mn>
@@ -105,27 +105,27 @@
             </p>
             <p class="p"> We will describe the split, with no motivation. The explanation of how the secret recovery is handled will explain our choices here. Choose a large prime number, 
                 <span class="ph d4p_eqn_inline">
-                    <math xmlns="http://www.w3.org/1998/Math/MathML">
+                    <math alttext="Alternative text not available" xmlns="http://www.w3.org/1998/Math/MathML">
                         <mi>p</mi>
                     </math>
                 </span>, bigger than any possible secret. For a single number in a combination lock, 
                 <span class="ph d4p_eqn_inline">
-                    <math xmlns="http://www.w3.org/1998/Math/MathML">
+                    <math alttext="Alternative text not available" xmlns="http://www.w3.org/1998/Math/MathML">
                         <mi>p</mi>
                     </math>
                 </span> could be small. For a one-page recipe, 
                 <span class="ph d4p_eqn_inline">
-                    <math xmlns="http://www.w3.org/1998/Math/MathML">
+                    <math alttext="Alternative text not available" xmlns="http://www.w3.org/1998/Math/MathML">
                         <mi>p</mi>
                     </math>
                 </span> would need to be huge. All of our subsequent arithmetic will be modulo 
                 <span class="ph d4p_eqn_inline">
-                    <math xmlns="http://www.w3.org/1998/Math/MathML">
+                    <math alttext="Alternative text not available" xmlns="http://www.w3.org/1998/Math/MathML">
                         <mi>p</mi>
                     </math>
                 </span>, so consult Subsection F.FF for a brief description of how we do linear algebra when our field is 
                 <span class="ph d4p_eqn_inline">
-                    <math xmlns="http://www.w3.org/1998/Math/MathML">
+                    <math alttext="Alternative text not available" xmlns="http://www.w3.org/1998/Math/MathML">
                         <msub>
                             <mrow>
                                 <mi>ℤ</mi>
@@ -137,7 +137,7 @@
                     </math>
                 </span>. Build a polynomial, 
                 <span class="ph d4p_eqn_inline">
-                    <math xmlns="http://www.w3.org/1998/Math/MathML">
+                    <math alttext="Alternative text not available" xmlns="http://www.w3.org/1998/Math/MathML">
                         <mi>r</mi>
                         <mrow>
                             <mo class="MathClass-open">(</mo>
@@ -149,26 +149,26 @@
                     </math>
                 </span>, of degree 
                 <span class="ph d4p_eqn_inline">
-                    <math xmlns="http://www.w3.org/1998/Math/MathML">
+                    <math alttext="Alternative text not available" xmlns="http://www.w3.org/1998/Math/MathML">
                         <mi>m</mi>
                         <mo class="MathClass-bin">−</mo>
                         <mn>1</mn>
                     </math>
                 </span> as follows. Set the constant term to 
                 <span class="ph d4p_eqn_inline">
-                    <math xmlns="http://www.w3.org/1998/Math/MathML">
+                    <math alttext="Alternative text not available" xmlns="http://www.w3.org/1998/Math/MathML">
                         <mi>S</mi>
                     </math>
                 </span>, and choose the other 
                 <span class="ph d4p_eqn_inline">
-                    <math xmlns="http://www.w3.org/1998/Math/MathML">
+                    <math alttext="Alternative text not available" xmlns="http://www.w3.org/1998/Math/MathML">
                         <mi>m</mi>
                         <mo class="MathClass-bin">−</mo>
                         <mn>1</mn>
                     </math>
                 </span> coefficients at random from 
                 <span class="ph d4p_eqn_inline">
-                    <math xmlns="http://www.w3.org/1998/Math/MathML">
+                    <math alttext="Alternative text not available" xmlns="http://www.w3.org/1998/Math/MathML">
                         <msub>
                             <mrow>
                                 <mi>ℤ</mi>
@@ -182,7 +182,7 @@
             </p>
             <p class="p"> Compute the pairs 
                 <span class="ph d4p_eqn_inline">
-                    <math xmlns="http://www.w3.org/1998/Math/MathML">
+                    <math alttext="Alternative text not available" xmlns="http://www.w3.org/1998/Math/MathML">
                         <mrow>
                             <mo class="MathClass-open">(</mo>
                             <mrow>
@@ -203,7 +203,7 @@
                     </math>
                 </span>, 
                 <span class="ph d4p_eqn_inline">
-                    <math xmlns="http://www.w3.org/1998/Math/MathML">
+                    <math alttext="Alternative text not available" xmlns="http://www.w3.org/1998/Math/MathML">
                         <mn>1</mn>
                         <mo class="MathClass-rel">≤</mo>
                         <mi>i</mi>
@@ -212,17 +212,17 @@
                     </math>
                 </span>. To person 
                 <span class="ph d4p_eqn_inline">
-                    <math xmlns="http://www.w3.org/1998/Math/MathML">
+                    <math alttext="Alternative text not available" xmlns="http://www.w3.org/1998/Math/MathML">
                         <mi>i</mi>
                     </math>
                 </span>, of the 
                 <span class="ph d4p_eqn_inline">
-                    <math xmlns="http://www.w3.org/1998/Math/MathML">
+                    <math alttext="Alternative text not available" xmlns="http://www.w3.org/1998/Math/MathML">
                         <mi>n</mi>
                     </math>
                 </span> persons you will give a part of your secret, present the pair 
                 <span class="ph d4p_eqn_inline">
-                    <math xmlns="http://www.w3.org/1998/Math/MathML">
+                    <math alttext="Alternative text not available" xmlns="http://www.w3.org/1998/Math/MathML">
                         <mrow>
                             <mo class="MathClass-open">(</mo>
                             <mrow>
@@ -243,7 +243,7 @@
                     </math>
                 </span>, and instruct them to keep this secret, for all 
                 <span class="ph d4p_eqn_inline">
-                    <math xmlns="http://www.w3.org/1998/Math/MathML">
+                    <math alttext="Alternative text not available" xmlns="http://www.w3.org/1998/Math/MathML">
                         <mn>1</mn>
                         <mo class="MathClass-rel">≤</mo>
                         <mi>i</mi>
@@ -252,20 +252,20 @@
                     </math>
                 </span>. They could perhaps encrypt their pairs with AES (Advanced Encryption Standard) using a password known only to them individually. Or you could do this for each of them in advance and tell them the chose password orally, in private. At any rate, each person gets a pair of integers, an input to the polynomial, and the output of evaluating the polynomial, and they keep this information secret. They do not know the polynomial itself, and certainly not the constant term 
                 <span class="ph d4p_eqn_inline">
-                    <math xmlns="http://www.w3.org/1998/Math/MathML">
+                    <math alttext="Alternative text not available" xmlns="http://www.w3.org/1998/Math/MathML">
                         <mi>S</mi>
                     </math>
                 </span>, so the secret is still safe. 
             </p>
             <p class="p"> Now suppose that 
                 <span class="ph d4p_eqn_inline">
-                    <math xmlns="http://www.w3.org/1998/Math/MathML">
+                    <math alttext="Alternative text not available" xmlns="http://www.w3.org/1998/Math/MathML">
                         <mi>m</mi>
                     </math>
                 </span> of these people get together, in the event you are unable to act, or perhaps without your permission. Suppose they pool all of their pairs, or even just turn them over to one member of the group. What do they now know collectively? Suppose that 
             </p>
             <p class="p d4p_eqn_block">
-                <math xmlns="http://www.w3.org/1998/Math/MathML">
+                <math alttext="Alternative text not available" xmlns="http://www.w3.org/1998/Math/MathML">
                     <mtable columnalign="left" class="align-star">
                         <mtr>
                             <mtd columnalign="right" class="align-odd">
@@ -347,7 +347,7 @@
             </p>
             <p class="p">where, of course, 
                 <span class="ph d4p_eqn_inline">
-                    <math xmlns="http://www.w3.org/1998/Math/MathML">
+                    <math alttext="Alternative text not available" xmlns="http://www.w3.org/1998/Math/MathML">
                         <msub>
                             <mrow>
                                 <mi>a</mi>
@@ -361,7 +361,7 @@
                     </math>
                 </span> is the secret. A single pair, 
                 <span class="ph d4p_eqn_inline">
-                    <math xmlns="http://www.w3.org/1998/Math/MathML">
+                    <math alttext="Alternative text not available" xmlns="http://www.w3.org/1998/Math/MathML">
                         <mrow>
                             <mo class="MathClass-open">(</mo>
                             <mrow>
@@ -382,12 +382,12 @@
                     </math>
                 </span>, results in a linear equation whose unknowns are the 
                 <span class="ph d4p_eqn_inline">
-                    <math xmlns="http://www.w3.org/1998/Math/MathML">
+                    <math alttext="Alternative text not available" xmlns="http://www.w3.org/1998/Math/MathML">
                         <mi>m</mi>
                     </math>
                 </span> coefficients of 
                 <span class="ph d4p_eqn_inline">
-                    <math xmlns="http://www.w3.org/1998/Math/MathML">
+                    <math alttext="Alternative text not available" xmlns="http://www.w3.org/1998/Math/MathML">
                         <mi>r</mi>
                         <mrow>
                             <mo class="MathClass-open">(</mo>
@@ -399,23 +399,23 @@
                     </math>
                 </span>. With 
                 <span class="ph d4p_eqn_inline">
-                    <math xmlns="http://www.w3.org/1998/Math/MathML">
+                    <math alttext="Alternative text not available" xmlns="http://www.w3.org/1998/Math/MathML">
                         <mi>m</mi>
                     </math>
                 </span> pairs revealed, we now have 
                 <span class="ph d4p_eqn_inline">
-                    <math xmlns="http://www.w3.org/1998/Math/MathML">
+                    <math alttext="Alternative text not available" xmlns="http://www.w3.org/1998/Math/MathML">
                         <mi>m</mi>
                     </math>
                 </span> equations in 
                 <span class="ph d4p_eqn_inline">
-                    <math xmlns="http://www.w3.org/1998/Math/MathML">
+                    <math alttext="Alternative text not available" xmlns="http://www.w3.org/1998/Math/MathML">
                         <mi>m</mi>
                     </math>
                 </span> variables. Furthermore, the coefficient matrix of this system is a Vandermonde matrix (
                 <span class="xref broken fcla-xml-2.30li102.xhtml#d1e33__definition.VM">Definition VM</span>). With our inputs to the polynomial all different (we used 
                 <span class="ph d4p_eqn_inline">
-                    <math xmlns="http://www.w3.org/1998/Math/MathML">
+                    <math alttext="Alternative text not available" xmlns="http://www.w3.org/1998/Math/MathML">
                         <mn>1</mn>
                         <mo class="MathClass-punc">,</mo>
                         <mspace width="0.3em" class="thinspace"/>
@@ -434,7 +434,7 @@
                 <span class="xref broken fcla-xml-2.30li102.xhtml#d1e33__theorem.NVM">Theorem NVM</span>). Thus by 
                 <span class="xref broken fcla-xml-2.30li21.xhtml#d1e30__theorem.NMUS">Theorem NMUS</span> there is a unique solution for the coefficients of 
                 <span class="ph d4p_eqn_inline">
-                    <math xmlns="http://www.w3.org/1998/Math/MathML">
+                    <math alttext="Alternative text not available" xmlns="http://www.w3.org/1998/Math/MathML">
                         <mi>r</mi>
                         <mrow>
                             <mo class="MathClass-open">(</mo>
@@ -452,7 +452,7 @@
             </p>
             <p class="p"> Why do all this arithmetic over 
                 <span class="ph d4p_eqn_inline">
-                    <math xmlns="http://www.w3.org/1998/Math/MathML">
+                    <math alttext="Alternative text not available" xmlns="http://www.w3.org/1998/Math/MathML">
                         <msub>
                             <mrow>
                                 <mi>ℤ</mi>
@@ -464,7 +464,7 @@
                     </math>
                 </span>? If we worked with polynomials having real number coefficients, properties of polynomials as continuous functions might give an attacker the ability to compute the secret with a reasonable amount of computing time. For example, the magnitude of the output is going to dominated by the term of 
                 <span class="ph d4p_eqn_inline">
-                    <math xmlns="http://www.w3.org/1998/Math/MathML">
+                    <math alttext="Alternative text not available" xmlns="http://www.w3.org/1998/Math/MathML">
                         <mi>r</mi>
                         <mrow>
                             <mo class="MathClass-open">(</mo>
@@ -476,24 +476,24 @@
                     </math>
                 </span> having degree 
                 <span class="ph d4p_eqn_inline">
-                    <math xmlns="http://www.w3.org/1998/Math/MathML">
+                    <math alttext="Alternative text not available" xmlns="http://www.w3.org/1998/Math/MathML">
                         <mi>m</mi>
                         <mo class="MathClass-bin">−</mo>
                         <mn>1</mn>
                     </math>
                 </span>. Suppose an attacker had a few of the pairs, but not a full set of 
                 <span class="ph d4p_eqn_inline">
-                    <math xmlns="http://www.w3.org/1998/Math/MathML">
+                    <math alttext="Alternative text not available" xmlns="http://www.w3.org/1998/Math/MathML">
                         <mi>m</mi>
                     </math>
                 </span> of them. Or even worse, suppose some group of fewer than 
                 <span class="ph d4p_eqn_inline">
-                    <math xmlns="http://www.w3.org/1998/Math/MathML">
+                    <math alttext="Alternative text not available" xmlns="http://www.w3.org/1998/Math/MathML">
                         <mi>m</mi>
                     </math>
                 </span> of your trusted acquaintances were to conspire against you. It might be possible to guess a limited range of values for the coefficient of the largest term. With a limited range of values here, the next term might fall to a similar analysis. And so on. However, modular arithmetic is in some ways very unpredictable looking and as high powers “wrap-around” this sort of analysis will be frustrated. And we know it is no harder to do linear algebra in 
                 <span class="ph d4p_eqn_inline">
-                    <math xmlns="http://www.w3.org/1998/Math/MathML">
+                    <math alttext="Alternative text not available" xmlns="http://www.w3.org/1998/Math/MathML">
                         <msub>
                             <mrow>
                                 <mi>ℤ</mi>
@@ -505,7 +505,7 @@
                     </math>
                 </span> than in 
                 <span class="ph d4p_eqn_inline">
-                    <math xmlns="http://www.w3.org/1998/Math/MathML">
+                    <math alttext="Alternative text not available" xmlns="http://www.w3.org/1998/Math/MathML">
                         <mi>ℂ</mi>
                     </math>
                 </span>. 
@@ -518,7 +518,7 @@
                 <span class="ph cmbx-12">Sharing a secret 6 ways</span>
                 <br/> Let’s return to the CEO and his six Vice-Presidents. Suppose the password for the company’s accounts is a sequence of 5 two-digit numbers, which we will concatenate into a 10-digit number, in this case 
                 <span class="ph d4p_eqn_inline">
-                    <math xmlns="http://www.w3.org/1998/Math/MathML">
+                    <math alttext="Alternative text not available" xmlns="http://www.w3.org/1998/Math/MathML">
                         <mi>S</mi>
                         <mo class="MathClass-rel">=</mo>
                         <mn>0</mn>
@@ -534,12 +534,12 @@
                     </math>
                 </span>. For a prime 
                 <span class="ph d4p_eqn_inline">
-                    <math xmlns="http://www.w3.org/1998/Math/MathML">
+                    <math alttext="Alternative text not available" xmlns="http://www.w3.org/1998/Math/MathML">
                         <mi>p</mi>
                     </math>
                 </span> we choose the 11-digit prime number 
                 <span class="ph d4p_eqn_inline">
-                    <math xmlns="http://www.w3.org/1998/Math/MathML">
+                    <math alttext="Alternative text not available" xmlns="http://www.w3.org/1998/Math/MathML">
                         <mi>p</mi>
                         <mo class="MathClass-rel">=</mo>
                         <mn>2</mn>
@@ -556,25 +556,25 @@
                     </math>
                 </span>. From the requirement that 
                 <span class="ph d4p_eqn_inline">
-                    <math xmlns="http://www.w3.org/1998/Math/MathML">
+                    <math alttext="Alternative text not available" xmlns="http://www.w3.org/1998/Math/MathML">
                         <mi>m</mi>
                         <mo class="MathClass-rel">=</mo>
                         <mn>3</mn>
                     </math>
                 </span> Vice-Presidents are needed to recover the secret, we need a second-degree polynomial and so need two more coefficients, which we will construct at random between 
                 <span class="ph d4p_eqn_inline">
-                    <math xmlns="http://www.w3.org/1998/Math/MathML">
+                    <math alttext="Alternative text not available" xmlns="http://www.w3.org/1998/Math/MathML">
                         <mn>1</mn>
                     </math>
                 </span> and 
                 <span class="ph d4p_eqn_inline">
-                    <math xmlns="http://www.w3.org/1998/Math/MathML">
+                    <math alttext="Alternative text not available" xmlns="http://www.w3.org/1998/Math/MathML">
                         <mi>p</mi>
                     </math>
                 </span>. The resulting polynomial is 
             </p>
             <p class="p d4p_eqn_block">
-                <math xmlns="http://www.w3.org/1998/Math/MathML">
+                <math alttext="Alternative text not available" xmlns="http://www.w3.org/1998/Math/MathML">
                     <mtable columnalign="left" class="align-star">
                         <mtr>
                             <mtd columnalign="right" class="align-odd">
@@ -639,7 +639,7 @@
             </p>
             <p class="p">We will now build six pairs of inputs and outputs, where we will choose the inputs at random (not allowing duplicates) and we do all our arithmetic modulo 
                 <span class="ph d4p_eqn_inline">
-                    <math xmlns="http://www.w3.org/1998/Math/MathML">
+                    <math alttext="Alternative text not available" xmlns="http://www.w3.org/1998/Math/MathML">
                         <mi>p</mi>
                     </math>
                 </span>, 
@@ -647,7 +647,7 @@
             <p class="p">The two numbers of each row of the table are then given to the indicated Vice-President. Done. The secret has been split six ways, and any three VP’s can jointly recover the secret. </p>
             <p class="p"> Let’s test the recovery process, especially since it contains the relevant linear algebra. Suppose we write the unknown polynomial as 
                 <span class="ph d4p_eqn_inline">
-                    <math xmlns="http://www.w3.org/1998/Math/MathML">
+                    <math alttext="Alternative text not available" xmlns="http://www.w3.org/1998/Math/MathML">
                         <mi>r</mi>
                         <mrow>
                             <mo class="MathClass-open">(</mo>
@@ -696,7 +696,7 @@
                 </span> and the VP’s for Finance, Marketing and Legal all get together to recover the secret. The equations we arrive at are, 
             </p>
             <p class="p d4p_eqn_block">
-                <math xmlns="http://www.w3.org/1998/Math/MathML">
+                <math alttext="Alternative text not available" xmlns="http://www.w3.org/1998/Math/MathML">
                     <mtable columnalign="left" class="align-star">
                         <mtr>
                             <mtd columnalign="right" class="align-odd"/>
@@ -1309,7 +1309,7 @@
             </p>
             <p class="p">So they have a linear system, 
                 <span class="ph d4p_eqn_inline">
-                    <math xmlns="http://www.w3.org/1998/Math/MathML">
+                    <math alttext="Alternative text not available" xmlns="http://www.w3.org/1998/Math/MathML">
                         <mi mathvariant="bold-script">ℒ</mi>
                         <mi mathvariant="bold-script">S</mi>
                         <mspace width="0.3em" class="thinspace"/>
@@ -1325,7 +1325,7 @@
                 </span> with 
             </p>
             <p class="p d4p_eqn_block">
-                <math xmlns="http://www.w3.org/1998/Math/MathML">
+                <math alttext="Alternative text not available" xmlns="http://www.w3.org/1998/Math/MathML">
                     <mtable columnalign="left" class="align-star">
                         <mtr>
                             <mtd columnalign="right" class="align-odd">
@@ -1505,7 +1505,7 @@
                 <span class="xref broken fcla-xml-2.30li33.xhtml#d1e33__theorem.SNCM">Theorem SNCM</span> (or through row-reducing the augmented matrix) they arrive at the solution, 
             </p>
             <p class="p d4p_eqn_block">
-                <math xmlns="http://www.w3.org/1998/Math/MathML">
+                <math alttext="Alternative text not available" xmlns="http://www.w3.org/1998/Math/MathML">
                     <mtable columnalign="left" class="align-star">
                         <mtr>
                             <mtd columnalign="right" class="align-odd">
@@ -1758,7 +1758,7 @@
             </p>
             <p class="p">So the CEO’s password is the secret 
                 <span class="ph d4p_eqn_inline">
-                    <math xmlns="http://www.w3.org/1998/Math/MathML">
+                    <math alttext="Alternative text not available" xmlns="http://www.w3.org/1998/Math/MathML">
                         <mi>S</mi>
                         <mo class="MathClass-rel">=</mo>
                         <msub>
@@ -1793,7 +1793,7 @@
                     </math>
                 </span> (as expected). 
                 <span class="ph d4p_eqn_inline">
-                    <math xmlns="http://www.w3.org/1998/Math/MathML">
+                    <math alttext="Alternative text not available" xmlns="http://www.w3.org/1998/Math/MathML">
                         <mo class="MathClass-bin">⊠</mo>
                     </math>
                 </span>
