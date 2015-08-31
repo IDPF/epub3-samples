@@ -1,5 +1,12 @@
-<?xml version="1.0" encoding="UTF-8"?><container xmlns="urn:oasis:names:tc:opendocument:xmlns:container" version="1.0"><rootfiles><rootfile full-path="EPUB/package.opf" media-type="application/oebps-package+xml"/>
-                <rootfile xmlns:rendition="http://www.idpf.org/2013/rendition" full-path="EPUB/package-braille.opf" media-type="application/oebps-package+xml" rendition:accessMode="tactile" rendition:label="Pre-translated to braille"/>
-            </rootfiles>
-                <link href="renditionMapping.html" rel="mapping" media-type="application/xhtml+xml"/>
-            </container>
+<?xml version="1.0" encoding="UTF-8"?>
+<container xmlns="urn:oasis:names:tc:opendocument:xmlns:container" version="1.0">
+    <rootfiles>
+        <rootfile full-path="EPUB/package.opf" media-type="application/oebps-package+xml"/>
+        <rootfile xmlns:rendition="http://www.idpf.org/2013/rendition" full-path="EPUB/package-braille.opf"
+            media-type="application/oebps-package+xml" rendition:accessMode="tactile"
+            rendition:label="Pre-translated to braille"/>
+    </rootfiles>
+    <links>
+        <link href="renditionMapping.html" rel="mapping" media-type="application/xhtml+xml"/>
+    </links>
+</container>
