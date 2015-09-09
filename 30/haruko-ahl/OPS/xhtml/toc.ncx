@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!-- For compatibility with ePub2 Player -->
+<ncx:ncx xmlns:ncx="http://www.daisy.org/z3986/2005/ncx/" version="2005-1">
+  <ncx:head>
+    <ncx:meta name="dtb:uid" content="urn:uuid:A649F639-6C1F-1014-8CC3-F813564D7508"/>
+    <ncx:meta name="dtb:depth" content="-1"/>
+    <ncx:meta name="dtb:totalPageCount" content="0"/>
+    <ncx:meta name="dtb:maxPageNumber" content="0"/>
+  </ncx:head>
+  <ncx:docTitle>
+    <ncx:text>ハルコさんの彼氏/Haruko San No Kareshi</ncx:text>
+  </ncx:docTitle>
+  <ncx:docAuthor>
+    <ncx:text>倉塚 りこ/Kuratsuka Riko</ncx:text>
+  </ncx:docAuthor>
+  <ncx:navMap>
+    <ncx:navPoint id="p01" playOrder="1">
+      <ncx:navLabel>
+        <ncx:text>ハルコさんの彼氏/Haruko San No Kareshi</ncx:text>
+      </ncx:navLabel>
+      <ncx:content src="p01.xhtml"/>
+    </ncx:navPoint>
+
+    <ncx:navPoint id="about" playOrder="2">
+      <ncx:navLabel>
+        <ncx:text>この文書について/About this document</ncx:text>
+      </ncx:navLabel>
+      <ncx:content src="AboutThisDocument.xhtml"/>
+    </ncx:navPoint>
+  </ncx:navMap>
+</ncx:ncx>
