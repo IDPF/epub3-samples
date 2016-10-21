@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package xmlns="http://www.idpf.org/2007/opf" unique-identifier="identifier0" version="3.0" 
+    prefix="rendition:	http://www.idpf.org/vocab/rendition/#">
+    <metadata xmlns:dc="http://purl.org/dc/elements/1.1/">
+        <dc:identifier id="identifier0"
+            >urn:uuid:eb021b60-7282-11e6-8b77-86f30ca893d3</dc:identifier>
+        <meta refines="#identifier0" property="identifier-type" scheme="xsd:string">uuid</meta>
+        <dc:format>application/epub+zip</dc:format>
+        <!-- 作品名 -->
+        <dc:title id="title0">西遊少女#01</dc:title>
+        <meta refines="#title0" property="file-as">サイユウショウジョ01</meta>
+        <meta refines="#title0" property="display-seq">1</meta>
+        
+        <!-- 著者名 -->
+        <dc:creator id="creator01">萱島雄太</dc:creator>
+        <meta refines="#creator01" property="role" scheme="marc:relators">aut</meta>
+        <meta refines="#creator01" property="file-as">カヤシマユウタ</meta>
+        <meta refines="#creator01" property="display-seq">1</meta>
+        
+        <!-- 出版社名 -->
+        <dc:publisher id="publisher">電脳マヴォ合同会社</dc:publisher>
+        <meta refines="#publisher" property="file-as">デンノウマヴォカブシキガイシャ</meta>
+        
+        <!-- 言語 -->
+        <dc:language>ja</dc:language>
+        <meta property="rendition:layout">reflowable</meta>
+        <meta property="rendition:flow">scrolled-doc</meta>
+        <meta property="dcterms:modified">2016-10-20T06:59:25Z</meta>
+    </metadata>
+    <manifest>
+        <item media-type="text/css" href="style.css" id="_style.css"/>
+        <item media-type="application/xhtml+xml" href="nav.xhtml" id="_nav.xhtml" properties="nav"/>
+        <item media-type="application/xhtml+xml" href="main.xhtml" id="_main"/>
+       <item media-type="application/xhtml+xml" href="readme.xhtml" id="_readme"/>
+
+        <item media-type="image/jpeg" href="saiyu010000.jpg" 
+            properties="cover-image" id="saiyu010000"/>
+        <item media-type="image/jpeg" href="saiyu010001.jpg" id="saiyu010001"/>
+        <item media-type="image/jpeg" href="saiyu010002.jpg" id="saiyu010002"/>
+        <item media-type="image/jpeg" href="saiyu010003.jpg" id="saiyu010003"/>
+        <item media-type="image/jpeg" href="saiyu010004.jpg" id="saiyu010004"/>
+        <item media-type="image/jpeg" href="saiyu010005.jpg" id="saiyu010005"/>
+        <item media-type="image/jpeg" href="saiyu010006.jpg" id="saiyu010006"/>
+        <item media-type="image/jpeg" href="saiyu010007.jpg" id="saiyu010007"/>
+        <item media-type="image/jpeg" href="saiyu010008.jpg" id="saiyu010008"/>
+        <item media-type="image/jpeg" href="saiyu010009.jpg" id="saiyu010009"/>
+        <item media-type="image/jpeg" href="saiyu010010.jpg" id="saiyu010010"/>
+        <item media-type="image/jpeg" href="saiyu010011.jpg" id="saiyu010011"/>
+        <item media-type="image/jpeg" href="saiyu010012.jpg" id="saiyu010012"/>
+        <item media-type="image/jpeg" href="saiyu010013.jpg" id="saiyu010013"/>
+        <item media-type="image/jpeg" href="saiyu010014.jpg" id="saiyu010014"/>
+        <item media-type="image/jpeg" href="saiyu010015.jpg" id="saiyu010015"/>
+        <item media-type="image/jpeg" href="saiyu010016.jpg" id="saiyu010016"/>
+        <item media-type="image/jpeg" href="saiyu010017.jpg" id="saiyu010017"/>
+        <item media-type="image/jpeg" href="saiyu010018.jpg" id="saiyu010018"/>
+        <item media-type="image/jpeg" href="saiyu010019.jpg" id="saiyu010019"/>
+        <item media-type="image/jpeg" href="saiyu010020.jpg" id="saiyu010020"/>
+        <item media-type="image/jpeg" href="saiyu010021.jpg" id="saiyu010021"/>
+        <item media-type="image/jpeg" href="saiyu010022.jpg" id="saiyu010022"/>
+        <item media-type="image/jpeg" href="saiyu010023.jpg" id="saiyu010023"/>
+        <item media-type="image/jpeg" href="saiyu010024.jpg" id="saiyu010024"/>
+        <item media-type="image/jpeg" href="saiyu010025.jpg" id="saiyu010025"/>
+        <item media-type="image/jpeg" href="saiyu010026.jpg" id="saiyu010026"/>
+        <item media-type="image/jpeg" href="saiyu010027.jpg" id="saiyu010027"/>
+        <item media-type="image/jpeg" href="saiyu010028.jpg" id="saiyu010028"/>
+        <item media-type="image/jpeg" href="saiyu010029.jpg" id="saiyu010029"/>
+        <item media-type="image/jpeg" href="saiyu010030.jpg" id="saiyu010030"/>
+        <item media-type="image/jpeg" href="saiyu010031.jpg" id="saiyu010031"/>
+        <item media-type="image/jpeg" href="saiyu010032.jpg" id="saiyu010032"/>
+        <item media-type="image/jpeg" href="saiyu010033.jpg" id="saiyu010033"/>
+        <item media-type="image/jpeg" href="saiyu010034.jpg" id="saiyu010034"/>
+        <item media-type="image/jpeg" href="saiyu010035.jpg" id="saiyu010035"/>
+        <item media-type="image/jpeg" href="saiyu010036.jpg" id="saiyu010036"/>
+        <item media-type="image/jpeg" href="saiyu010037.jpg" id="saiyu010037"/>
+        <item media-type="image/jpeg" href="saiyu010038.jpg" id="saiyu010038"/>
+        <item media-type="image/jpeg" href="saiyu010039.jpg" id="saiyu010039"/>
+        <item media-type="image/jpeg" href="saiyu010040.jpg" id="saiyu010040"/>
+        <item media-type="image/jpeg" href="saiyu010041.jpg" id="saiyu010041"/>
+        <item media-type="image/jpeg" href="saiyu010042.jpg" id="saiyu010042"/>
+        
+    </manifest>
+    <spine> <!-- page-progression-direction="rtl"-->
+        <itemref idref="_main"/>
+        <itemref idref="_readme"/>
+    </spine>
+</package>
