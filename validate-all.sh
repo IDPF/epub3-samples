@@ -1,9 +1,8 @@
 #!/bin/bash
 
-for dir in `ls "30"`
+for dir in $(find 30 31 -mindepth 1 -maxdepth 1 -type d)
 do   
-  echo -e "\n<<<<<< $dir >>>>>>"  
-  if [ -d "30/$dir" ]; then
-    sh validate-single.sh 30/$dir
-  fi
+  echo "<<<<<< $dir >>>>>>"
+  sh validate-single.sh $dir
+  echo
 done

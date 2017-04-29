@@ -1,9 +1,8 @@
 #!/bin/bash
 
-for dir in `ls "30"`
+for dir in $(find 30 31 -mindepth 1 -maxdepth 1 -type d)
 do   
-  echo -e "\n<<<<<< $dir >>>>>>"  
-  if [ -d "30/$dir" ]; then
-    sh pack-single.sh 30/$dir
-  fi
+  echo "<<<<<< $dir >>>>>>"
+  sh pack-single.sh $dir
+  echo
 done
