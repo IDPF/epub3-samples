@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package xmlns="http://www.idpf.org/2007/opf" unique-identifier="identifier0" version="3.0"
+    prefix="rendition:	http://www.idpf.org/vocab/rendition/#">
+    <metadata xmlns:dc="http://purl.org/dc/elements/1.1/">
+        <dc:identifier id="identifier0"
+            >urn:uuid:12789c52-a84d-47db-959a-a74d3d122225</dc:identifier>
+        <meta refines="#identifier0" property="identifier-type" scheme="xsd:string">uuid</meta>
+
+        <dc:format>application/epub+zip</dc:format>
+
+
+        <!-- 作品名 -->
+        <dc:title id="title">信貴山縁起</dc:title>
+        <meta refines="#title" property="title-type">main</meta>
+        <meta refines="#title" property="display-seq">1</meta>
+        <meta refines="#title" property="file-as">シギサンエンギ</meta>
+        <dc:title id="subtitle">山崎長者の巻</dc:title>
+        <meta refines="#subtitle" property="title-type">subtitle</meta>
+        <meta refines="#subtitle" property="display-seq">1</meta>
+        <meta refines="#subtitle" property="file-as">ユマザキチョウジャノマキ</meta>
+        <dc:title id="fulltitle">信貴山縁起 山崎長者の巻</dc:title>
+        <meta refines="#fulltitle" property="title-type">expanded</meta> 
+        <meta refines="#fulltitle" property="file-as">シギサンエンギ ユマザキチョウジャノマキ</meta>
+        
+        <meta property="belongs-to-collection"  id="pub-collection">信貴山縁起</meta>
+        <meta refines="#pub-collection" property="collection-type">set</meta>
+        <meta refines="#pub-collection" property="group-position">1</meta>
+        
+
+
+        <!-- 著者名 -->
+        <dc:creator id="creator01">鳥羽僧正覚猷</dc:creator>
+        <meta refines="#creator01" property="role" scheme="marc:relators">aut</meta>
+        <meta refines="#creator01" property="display-seq">1</meta>
+
+        <!-- 言語 -->
+        <dc:language>ja</dc:language>
+        
+        <!-- スクロール -->
+        <meta property="rendition:layout">reflowable</meta>
+        <meta property="rendition:flow">scrolled-doc</meta>
+
+
+        <meta property="dcterms:modified">2016-10-20T11:03:28Z</meta>
+
+    </metadata>
+    <manifest>
+        <item media-type="text/css" href="style.css" id="_style.css"/>
+        <item media-type="text/css" href="readme.css" id="_readme.css"/>
+        <item media-type="application/xhtml+xml" href="nav.xhtml" id="_nav.xhtml" properties="nav"/>
+        <item media-type="application/xhtml+xml" href="main.xhtml"
+            id="_main.xhtml"/>
+        <item media-type="application/xhtml+xml" href="readme.xhtml"
+            id="_readme.xhtml"/>
+
+        <item media-type="image/jpeg" href="4.jpg" 
+            properties="cover-image"  id="s4"/>
+        <item media-type="image/jpeg" href="5.jpg" id="s5"/>
+        <item media-type="image/jpeg" href="6.jpg" id="s6"/>
+        <item media-type="image/jpeg" href="7.jpg" id="s7"/>
+        <item media-type="image/jpeg" href="8.jpg" id="s8"/>
+        <item media-type="image/jpeg" href="9.jpg" id="s9"/>
+        <item media-type="image/jpeg" href="10.jpg" id="s10"/>
+        <item media-type="image/jpeg" href="11.jpg" id="s11"/>
+        <item media-type="image/jpeg" href="12.jpg" id="s12"/>
+        <item media-type="image/jpeg" href="13.jpg" id="s13"/>
+        <item media-type="image/jpeg" href="14.jpg" id="s14"/>
+        <item media-type="image/jpeg" href="15.jpg" id="s15"/>
+        <item media-type="image/jpeg" href="16.jpg" id="s16"/>
+        <item media-type="image/jpeg" href="17.jpg" id="s17"/>
+        <item media-type="image/jpeg" href="18.jpg" id="s18"/>
+        <item media-type="image/jpeg" href="19.jpg" id="s19"/>
+        <item media-type="image/jpeg" href="20.jpg" id="s20"/>
+        <item media-type="image/jpeg" href="21.jpg" id="s21"/>
+        <item media-type="image/jpeg" href="22.jpg" id="s22"/>
+        <item media-type="image/jpeg" href="23.jpg" id="s23"/>
+        <item media-type="image/jpeg" href="24.jpg" id="s24"/>
+        <item media-type="image/jpeg" href="25.jpg" id="s25"/>
+    </manifest>
+    <spine page-progression-direction="rtl">
+        <itemref idref="_main.xhtml"/>
+        <itemref idref="_readme.xhtml"/>
+    </spine>
+</package>

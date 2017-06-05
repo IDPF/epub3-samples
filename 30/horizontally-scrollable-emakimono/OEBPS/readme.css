@@ -1,0 +1,47 @@
+body{
+  -webkit-writing-mode: vertical-rl; /* é¿ëïçœ */
+  -moz-writing-mode: vertical-rl; /* ñ¢é¿ëï */
+  -ms-writing-mode: tb-rl; /* é¿ëïçœ */
+  writing-mode: vertical-rl;
+  
+  -webkit-text-orientation: upright; /* é¿ëïçœ */
+  -moz-text-orientation: upright; /* ñ¢é¿ëï */
+  -ms-text-orientation: upright; /* ñ¢é¿ëï */
+  text-orientation: upright;
+
+  line-height: 150%;
+}
+
+.combine{
+  -webkit-text-combine: horizontal; /* é¿ëïçœ */
+  -moz-text-combine-upright: all; /* é¿ëïçœ(Firefox nightly î≈) */
+  -ms-text-combine-horizontal:all; /* é¿ëïçœ */
+  text-combine-upright: all;
+}
+
+ruby{
+  -webkit-ruby-position: over; /* é¿ëïçœ */
+  -moz-ruby-position: over; /* é¿ëïçœ */
+  -ms-ruby-position: over; /* é¿ëïçœ */
+  ruby-position: over; /* é¿ëïçœ */
+}
+
+.underline{
+  text-decoration: underline;
+  -webkit-text-underline-position: right; /* ñ¢é¿ëï */
+  -moz-text-underline-position: right; /* ñ¢é¿ëï */
+  -ms-text-underline-position: right; /* é¿ëïçœ */
+  text-underline-position: right;
+}
+
+.mark {
+  -webkit-text-emphasis-style: dot filled; /* é¿ëïçœ */
+  -moz-text-emphasis-style: dot filled; /* ñ¢é¿ëï */
+  -ms-text-emphasis-style: dot filled; /* ñ¢é¿ëï */
+  text-emphasis-style: dot filled;
+
+  -webkit-text-emphasis-color: #ff0000; /* é¿ëïçœ */
+  -moz-text-emphasis-color: #ff0000; /* ñ¢é¿ëï */
+  -ms-text-emphasis-color: #ff0000; /* ñ¢é¿ëï */
+  text-emphasis-color: #ff0000;
+}
