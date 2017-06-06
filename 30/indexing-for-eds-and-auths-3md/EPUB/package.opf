@@ -66,11 +66,6 @@
 <item id="Century_GothicObl" href="fonts/GOTHICB.TTF" media-type="application/x-font-otf"/>
 </manifest>
 
-<collection role="index">
-	<link href="index1.xhtml"/>
-	<link href="index2.xhtml"/>
-</collection>
-
 <spine toc="ncx1">
 <itemref idref="cover" linear="yes"/>
 <itemref idref="titlepage" linear="yes"/>
@@ -94,5 +89,11 @@
 <itemref linear="yes" idref="author_bio001"/>
 <itemref linear="yes" idref="index1"/>
 <itemref linear="yes" idref="index2"/>
+<itemref linear="yes" idref="ncx"/>
 </spine>
+    
+<collection role="index">
+    <link href="index1.xhtml"/>
+    <link href="index2.xhtml"/>
+</collection>
 </package>

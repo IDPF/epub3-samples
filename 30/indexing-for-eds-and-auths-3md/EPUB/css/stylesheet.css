@@ -1231,7 +1231,7 @@ margin-top: 1em;
 margin-bottom: 1em;
 border-collapse: collapse;
 border: 1px solid #000000;
-widht: 60%;
+width: 60%;
 }
 
 
@@ -1275,7 +1275,7 @@ font-size: x-small;
 .tdh1a {
 padding-left: 30pt;
 text-indent: -10pt;
-widht: 80%;
+width: 80%;
 }
 
 
@@ -1418,4 +1418,19 @@ li {
 .indexhead6 {
 }
 .indexhead7 {
+}
+
+
+ul.locatorlist {
+    list-style-type: none;
+    display: inline;
+    padding: 0;
+}
+
+ul.locatorlist > li {
+    display: inline;
+}
+
+ul.locatorlist > li:not(:last-child):after {
+    content: ', ';
 }

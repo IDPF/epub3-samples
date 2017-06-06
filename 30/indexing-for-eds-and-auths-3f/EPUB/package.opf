@@ -86,5 +86,6 @@
 <itemref linear="yes" idref="appendix003"/>
 <itemref linear="yes" idref="author_bio001"/>
 <itemref linear="yes" idref="index"/>
+<itemref linear="yes" idref="ncx"/>
 </spine>
 </package>
