@@ -1,11 +1,2 @@
-@echo off & setLocal EnableDelayedExpansion
-
-for /F "tokens=1,2,3 delims=/ " %%A in ('Date /t') do @( 
-	set fullDate=%%C%%B%%A
-)
-
-set fileName=%~n1
-set fileName=!fileName: =_!
-
+@echo off
 java -jar lib/epubcheck/epubcheck.jar %1 -mode "exp" -save
-move 30\!fileName!.epub !fileName!-!fullDate!.epub
