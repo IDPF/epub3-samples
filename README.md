@@ -1,16 +1,21 @@
 # EPUB 3 Samples
 
-This repository contains the source for a variety of EPUB 3.0 sample documents. The collection is intended to showcase features of the EPUB 3 standard, and to provide testing materials for Reading System developers.
+This repository contains the source for a variety of EPUB 3 sample documents. The collection is intended to showcase features of the EPUB standard, and to provide testing materials for Reading System developers. It is maintained by the W3C's [EPUB 3 Community Group](https://www.w3.org/community/epub3/).
 
-Please see the [project page](http://idpf.github.io/epub3-samples/) for more general information about the samples, including a [table of samples](http://idpf.github.io/epub3-samples/samples.html) and [feature matrix](http://idpf.github.io/epub3-samples/feature-matrix.html).
+Please see the [project page](http://idpf.github.io/epub3-samples/) for more general information about the samples. For more efficient access to the samples, please see:
+
+- the EPUB 3.1 [samples table](http://idpf.github.io/epub3-samples/31/samples.html) and [feature matrix](http://idpf.github.io/epub3-samples/31/feature-matrix.html)
+- the EPUB 3.0 [samples table](http://idpf.github.io/epub3-samples/30/samples.html) and [feature matrix](http://idpf.github.io/epub3-samples/30/feature-matrix.html) and .
 
 ## Licensing
 
-Unless specified otherwise in the [samples table](http://idpf.github.io/epub3-samples/samples.html), all samples are licensed under [CC-BY-SA 3.0](http://creativecommons.org/licenses/by-sa/3.0/)
+Unless specified otherwise in the [3.0](http://idpf.github.io/epub3-samples/30/samples.html) or [3.1](http://idpf.github.io/epub3-samples/31/samples.html) sample tables, all samples are licensed under [CC-BY-SA 3.0](http://creativecommons.org/licenses/by-sa/3.0/)
 
 ## Compiling
 
-All of the latest samples are available for download from the [samples table](http://idpf.github.io/epub3-samples/samples.html). If needed, you can also create EPUB publications directly from the samples source. There are two sets of shell and batch scripts available at the root of the repository.
+All of the latest samples are available for download from the [3.0](http://idpf.github.io/epub3-samples/30/samples.html) and [3.1](http://idpf.github.io/epub3-samples/31/samples.html) sample tables.
+
+If needed, you can also create EPUB publications directly from the samples source. There are two sets of shell and batch scripts available at the root of the repository.
 
 The first, pack-all, will build all of the samples:
 
@@ -38,7 +43,11 @@ We want to make sure all samples provided here are conformant, pristine, and emp
 
 ### Contributing new samples
 
-If you want to contribute sample(s), please contact the project owners. After an initial discussion, they will either give you write access to the repository, or arrange some other means of getting the content into the repository. Note that all submitted content is by default subject to CC-BY-SA 3.0 licensing. As a contributor, you are able to specify attribution metadata only in the sample's package file. Note also that the project owners may suggest or even require modifications to your submissions to be done in order to meet the desired quality level.
+If you want to contribute sample(s), please contact the project owners. After an initial discussion, they will either give you write access to the repository, or arrange some other means of getting the content into the repository. Note that all submitted content is by default subject to CC-BY-SA 3.0 licensing.
+
+This site does not list attribution for samples. As a contributor, you may specify attribution metadata only within the submitted EPUB Publication.
+
+Note also that the project owners may suggest or even require modifications to your submissions to be done in order to meet the desired quality level.
 
 ### Contributing variations / improvements to existing samples
 
