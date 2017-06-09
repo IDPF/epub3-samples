@@ -1,22 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<package xmlns="http://www.idpf.org/2007/opf" version="3.1" xml:lang="en" unique-identifier="pub-id"
-  prefix="dc: http://purl.org/dc/elements/1.1/">
-
+<package xmlns="http://www.idpf.org/2007/opf" xmlns:opf="http://www.idpf.org/2007/opf" version="3.1" xml:lang="en" unique-identifier="pub-id">
   <metadata xmlns:dc="http://purl.org/dc/elements/1.1/">
-
     <dc:title id="title">Moby-Dick</dc:title>
-    <dc:creator id="creator" file-as="Melville, Herman">Herman Melville</dc:creator>
+    <dc:creator id="creator" opf:file-as="Melville, Herman">Herman Melville</dc:creator>
     <dc:identifier id="pub-id">idpf.epub31.samples.moby-dick.xhtml</dc:identifier>
     <dc:language>en-US</dc:language>
     <meta property="dcterms:modified">2016-02-05T14:40:00Z</meta>
 
     <dc:publisher>Harper &amp; Brothers, Publishers</dc:publisher>
-    <meta property="dc:contributor">Dave Cramer</meta>
+    <dc:contributor opf:role="mrk">Dave Cramer</dc:contributor>
 
     <!--MEDIA OVERLAY METADATA-->
     <meta property="media:duration">0:23:23.500</meta>
     <meta property="media:narrator">Stuart Wills</meta>
-
     <meta property="media:active-class">-epub-media-overlay-active</meta>
   </metadata>
   <manifest>
@@ -179,11 +175,6 @@
     <item id="xchapter_135" href="chapter_135.xhtml" media-type="application/xhtml+xml"/>
     <item id="xchapter_136" href="chapter_136.xhtml" media-type="application/xhtml+xml"/>
     <item id="brief-toc" href="toc-short.xhtml" media-type="application/xhtml+xml"/>
-
-    <!-- 
-    <item id="ncx" href="toc.ncx" media-type="application/x-dtbncx+xml"/>
- -->
-
   </manifest>
   <spine>
     <itemref idref="cover" linear="no"/>
