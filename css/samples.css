@@ -1,85 +1,201 @@
 
-@font-face {
+@font-face{
     font-family: 'Raleway';
     src: url(../fonts/Raleway-Regular.ttf) format('truetype');
     font-weight: normal;
     font-style: normal;
 }
 
-body {
-	margin: 2em 2em 2em 5em;
-	width: 45em;
-	min-width: 20em;
-    background-color: rgb(253,253,253);
+body{
+    margin: 2em 2em 2em 5em;
+    width: 45em;
+    min-width: 20em;
+    background-color: rgb(253, 253, 253);
 }
 
-h1#site-name {
-   margin-bottom: 0;
-   padding: 0;
+body,
+caption,
+th,
+td,
+input,
+textarea,
+select,
+option,
+legend,
+fieldset{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #333;
 }
 
-#site-name a{background:transparent url(../images/header-logo.gif) left top no-repeat;}
-#site-name a{display:block;height:50px;width:150px;overflow:hidden;text-indent:-3000px;}
-
-h1, h2, h3, h4, h5, h6 {
-   font-family: 'Raleway',Arial,sans-serif;
+h1{
+    font-family: Georgia, "Times New Roman", Times, serif;
+    color: #195698;
+    font-size: 1.714em;
+    font-weight: normal;
+    line-height: normal;
+    margin-top: 0;
+    margin-bottom: 0.5em;
+}
+h2{
+    font-family: Georgia, "Times New Roman", Times, serif;
+    color: #195698;
+    font-size: 1.357em;
+    font-weight: normal;
+    line-height: normal;
+    margin-top: 0.667em;
+    margin-bottom: 0.667em;
+}
+h3{
+    font-size: 1em;
+    line-height: normal;
+    font-weight: bold;
+    color: #195698;
+}
+h4,
+h5,
+h6{
+    font-size: 1.1em;
+    line-height: 1.3em;
+    margin-top: 0.909em;
+    margin-bottom: 0.909em;
 }
 
-h2 {
-   font-size: 250%;
+a:link,
+a:visited{
+    color: #930;
+    text-decoration: none;
+}
+a:hover,
+a:focus,
+a:active{
+    color: #600;
+    text-decoration: underline;
 }
 
-h3 {
-   font-size: 150%;
-   font-weight: normal;
+h1#site-name{
+    margin: 0;
+    font-size: 1.2em;
+    font-weight: bold;
+    line-height: 1.3em;
+    margin-bottom: 0;
+    padding: 0;
 }
 
-.breadcrumb {
-   margin-bottom: 1.5em;
+#site-name a:link,
+#site-name a:visited{
+    color: #000;
+    text-decoration: none;
+}
+#site-name a:hover,
+#site-name a:focus{
+    text-decoration: underline;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+    font-family: 'Raleway', Arial, sans-serif;
+}
+
+h2{
+    font-size: 250%;
+}
+
+h3{
+    font-size: 150%;
+    font-weight: normal;
+}
+
+p,
+ul,
+ol,
+dl,
+pre,
+table,
+fieldset{
+    margin: 1em 0;
+}
+
+.breadcrumb{
+    margin-bottom: 1.5em;
 }
 
 table{
-	width:850px;
-	margin-bottom:3.5em;
+    width: 850px;
+    margin-bottom: 3.5em;
 }
 td,
 th{
-	vertical-align:top;
+    vertical-align: top;
 }
 .invisible{
-	position:absolute !important;
-	height:1px;
-	width:1px;
-	overflow:hidden;
-	clip:rect(1px, 1px, 1px, 1px);
+    position: absolute !important;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+    clip: rect(1px, 1px, 1px, 1px);
 }
 .s1{
-	width:200px;
+    width: 200px;
 }
 .s2{
-	width:400px;
+    width: 400px;
 }
 .s3{
-	width:100px;
+    width: 100px;
 }
 .s4{
-	width:75px;
+    width: 75px;
 }
 .s5{
-	width:75px;
+    width: 75px;
 }
 .m1{
-	width:200px;
+    width: 200px;
 }
 .m2{
-	width:250px;
+    width: 250px;
 }
 .m3{
-	width:400px;
+    width: 400px;
 }
 
-.right {
-    float: right;
+.italic{
+    font-style: italic;
+    font-size: 90%;
 }
 
-.italic { font-style: italic; font-size: 90%; }
+
+
+table{
+    border-collapse: collapse;
+}
+
+th,
+thead th,
+tbody th{
+    text-align: left;
+    padding: 0;
+    border-bottom: none;
+}
+
+tbody{
+    border-top: none;
+}
+
+table th,
+table td{
+    padding: 5px 10px;
+    border-bottom: 1px solid #ccdae8;
+}
+
+table th,
+thead th,
+tbody th{
+    background: #f2f5f9;
+    border-top: 1px solid #ccdae8;
+    font-weight: bold;
+}
