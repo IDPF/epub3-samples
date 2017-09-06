@@ -31,7 +31,6 @@
         <item media-type="text/css" href="style.css" id="_style.css"/>
         <item media-type="application/xhtml+xml" href="nav.xhtml" id="_nav.xhtml" properties="nav"/>
         <item media-type="application/xhtml+xml" href="main.xhtml" id="_main"/>
-        <item media-type="application/xhtml+xml" href="cover.xhtml" id="_cover"/>	
         <item media-type="application/xhtml+xml" href="readme.xhtml" id="_readme"/>
         <item media-type="image/jpeg" href="image/000.jpg" properties="cover-image" id="torinome000"/>
         <item media-type="image/jpeg" href="image/001.jpg" id="torinome001"/>
@@ -46,7 +45,6 @@
         <item media-type="image/jpeg" href="image/010.jpg" id="torinome010"/>	
     </manifest>
     <spine> <!-- page-progression-direction="rtl"-->
-        <itemref idref="_cover"/>    
         <itemref idref="_main"/>
         <itemref idref="_readme"/>
     </spine>
