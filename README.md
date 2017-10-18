@@ -5,7 +5,7 @@ This repository contains the source for a variety of EPUB 3 sample documents. Th
 Please see the [project page](http://idpf.github.io/epub3-samples/) for more general information about the samples. For more efficient access to the samples, please see:
 
 - the EPUB 3.1 [samples table](http://idpf.github.io/epub3-samples/31/samples.html) and [feature matrix](http://idpf.github.io/epub3-samples/31/feature-matrix.html)
-- the EPUB 3.0 [samples table](http://idpf.github.io/epub3-samples/30/samples.html) and [feature matrix](http://idpf.github.io/epub3-samples/30/feature-matrix.html) and .
+- the EPUB 3.0 [samples table](http://idpf.github.io/epub3-samples/30/samples.html) and [feature matrix](http://idpf.github.io/epub3-samples/30/feature-matrix.html).
 
 ## Licensing
 
