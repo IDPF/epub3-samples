@@ -2,18 +2,17 @@
 
 This repository contains the source for a variety of EPUB 3 sample documents. The collection is intended to showcase features of the EPUB standard, and to provide testing materials for Reading System developers. It is maintained by the W3C's [EPUB 3 Community Group](https://www.w3.org/community/epub3/).
 
-Please see the [project page](http://idpf.github.io/epub3-samples/) for more general information about the samples. For more efficient access to the samples, please see:
+For quick access to the samples, please see the [samples table](http://idpf.github.io/epub3-samples/30/samples.html) and [feature matrix](http://idpf.github.io/epub3-samples/30/feature-matrix.html).
 
-- the EPUB 3.1 [samples table](http://idpf.github.io/epub3-samples/31/samples.html) and [feature matrix](http://idpf.github.io/epub3-samples/31/feature-matrix.html)
-- the EPUB 3.0 [samples table](http://idpf.github.io/epub3-samples/30/samples.html) and [feature matrix](http://idpf.github.io/epub3-samples/30/feature-matrix.html) and .
+Please see the [project page](http://idpf.github.io/epub3-samples/) for more general information about the samples.
 
 ## Licensing
 
-Unless specified otherwise in the [3.0](http://idpf.github.io/epub3-samples/30/samples.html) or [3.1](http://idpf.github.io/epub3-samples/31/samples.html) sample tables, all samples are licensed under [CC-BY-SA 3.0](http://creativecommons.org/licenses/by-sa/3.0/)
+Unless specified otherwise in the [sample table](http://idpf.github.io/epub3-samples/30/samples.html), all samples are licensed under [CC-BY-SA 3.0](http://creativecommons.org/licenses/by-sa/3.0/)
 
 ## Compiling
 
-All of the latest samples are available for download from the [3.0](http://idpf.github.io/epub3-samples/30/samples.html) and [3.1](http://idpf.github.io/epub3-samples/31/samples.html) sample tables.
+All of the latest samples are available for download from the [sample table](http://idpf.github.io/epub3-samples/30/samples.html).
 
 If needed, you can also create EPUB publications directly from the samples source. There are two sets of shell and batch scripts available at the root of the repository.
 
