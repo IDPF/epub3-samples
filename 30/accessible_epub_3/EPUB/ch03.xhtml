@@ -6,8 +6,8 @@
 		<link rel="stylesheet" type="text/css" href="css/epub.css" />
 	</head>
 	<body>
-		<section class="chapter" title="Chapter 3. It’s Alive: Rich Content Accessibility" epub:type="chapter" id="its_alive">
-			<h2 class="title">Chapter 3. It’s Alive: Rich Content Accessibility</h2>
+		<section class="chapter" epub:type="chapter" role="doc-chapter" aria-labelledby="c3_h" id="its_alive">
+			<h2 id="c3_h" class="title">Chapter 3. It’s Alive: Rich Content Accessibility</h2>
 			<p>It’s now time to turn our attention to the features that EPUB 3 introduces to expand
 				on the traditional reading experience; the excitement around EPUB 3 doesn’t come
 				from text and images, after all.</p>
@@ -20,7 +20,7 @@
 				superstructures, because they are added on top of core EPUB content to enhance
 				accessibility.)</p>
 			<p>But let’s get back to business of being accessible…</p>
-			<section class="sect1" title="The Sound and the Fury: Audio and Video">
+			<section class="sect1">
 				<h2 class="title" id="_the_sound_and_the_fury_audio_and_video">The Sound and the
 					Fury: Audio and Video</h2>
 				<p>The new built-in support for audio and video in EPUB 3 has its pros and cons from
@@ -43,7 +43,7 @@
 					seemingly-simple solutions, like duplicating the format of all video content,
 					are only feasible on small scales and don’t take into account the potential cost
 					involved.</p>
-				<aside class="note" title="Note">
+				<aside class="note">
 					<h3 class="title">Note</h3>
 					<p>It is possible that some reading systems may provide no video support at
 						all.</p>
@@ -76,14 +76,14 @@
 					capabilities are available, even script-enabled systems may not render your
 					controls. You can always disable the native controls in your JavaScript code if
 					the system supports your custom controls.</p>
-				<aside class="note" title="Note">
+				<aside class="note">
 					<h3 class="title">Note</h3>
 					<p>See the <a class="ulink"
 							href="http://idpf.org/epub/30/spec/epub30-contentdocs.html#app-epubReadingSystem"
 							target="_top">epubReadingSystem</a> object for more information on how
 						to query what scripting capabilities a system has.</p>
 				</aside>
-				<section class="sect2" title="Timed Tracks">
+				<section class="sect2">
 					<h3 class="title" id="_timed_tracks">Timed Tracks</h3>
 					<p>Improved access to the content and the playback controls is only one half of
 						the problem; your content still needs to be accessible to be useful. To this

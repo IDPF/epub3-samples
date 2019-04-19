@@ -17,6 +17,17 @@
 		<dc:contributor>Karen Montgomery</dc:contributor>
 		<dc:publisher>O’Reilly Media, Inc.</dc:publisher>
 		<dc:rights>Copyright © 2012 O’Reilly Media, Inc</dc:rights>
+		<meta property="schema:accessMode">textual</meta>
+		<meta property="schema:accessMode">visual</meta>
+		<meta property="schema:accessModeSufficient">textual,visual</meta>
+		<meta property="schema:accessModeSufficient">textual</meta>
+		<meta property="schema:accessibilityHazard">none</meta>
+		<meta property="schema:accessibilityFeature">tableOfContents</meta>
+		<meta property="schema:accessibilityFeature">readingOrder</meta>
+		<meta property="schema:accessibilityFeature">alternativeText</meta>
+		<meta property="schema:accessibilitySummary">This EPUB Publication meets the requirements of the EPUB Accessibility specification with conformance to WCAG 2.0 Level AA. The publication is screen reader friendly.</meta>
+		<link rel="dcterms:conformsTo" href="http://www.idpf.org/epub/a11y/accessibility-20170105.html#wcag-aa"/>
+		<meta property="a11y:certifiedBy">Matt Garrish</meta>
 	</metadata>
 	<manifest>
 		<item id="htmltoc" properties="nav" media-type="application/xhtml+xml" href="bk01-toc.xhtml"/>

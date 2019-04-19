@@ -6,7 +6,7 @@
 		<link rel="stylesheet" type="text/css" href="css/epub.css" />
 	</head>
 	<body>
-		<section class="sect1" title="A Little Help: WAI-ARIA">
+		<section class="sect1">
 			<h2 class="title" id="_a_little_help_wai_aria">A Little Help: WAI-ARIA</h2>
 			<p>Although fallbacks are useful when scripting is not available, you should still aim
 				to make your scripted content accessible to all readers. Enter the W3C Web
@@ -20,7 +20,7 @@
 			<p>I’m now going to pick out three common cases for scripting to further explore how
 				ARIA can enhance the accessibility of EPUBs: custom controls, forms, and live
 				regions.</p>
-			<section class="sect2" title="Custom Controls">
+			<section class="sect2">
 				<h3 class="title" id="_custom_controls">Custom Controls</h3>
 				<p>Custom controls are not standard form elements that you stylize to suit your
 					needs, just to be clear. Those are the good kinds of custom controls—if you want
@@ -43,8 +43,8 @@
 					types in HTML5 holds out hope for a reduction in their use, but it would be
 					neglectful not to cover some of the basics of their accessible creation. Before
 					launching out on your own, it’s good to know what you’re getting into.</p>
-				<aside class="note" title="Note">
-					<h3 class="title">Note</h3>
+				<aside class="note">
+					<h4 class="title">Note</h4>
 					<p>There are widely available toolkits, like <a class="ulink"
 							href="http://jquery.com/" target="_top">jQuery</a>, that bake ARIA
 						accessibility into many of the custom widgets they allow you to create. You
@@ -131,8 +131,8 @@
 					<li class="listitem"><p> aria-posinset </p></li>
 					<li class="listitem"><p> aria-required </p></li>
 				</ul>
-				<aside class="note" title="Note">
-					<h3 class="title">Note</h3>
+				<aside class="note">
+					<h4 class="title">Note</h4>
 					<p>See <a class="ulink"
 							href="http://www.w3.org/TR/wai-aria/states_and_properties#state_prop_def"
 							target="_top">section 6.6</a> of the ARIA specification for a complete
@@ -151,8 +151,8 @@
 					reader will be interacting with your control, and how the states and properties
 					need to be modified to reflect the reality of the control as each action is
 					performed. There is no one-size-fits-all solution, in other words.</p>
-				<aside class="note" title="Note">
-					<h3 class="title">Note</h3>
+				<aside class="note">
+					<h4 class="title">Note</h4>
 					<p>To see which properties and states are supported by the type of control
 						you’re creating, refer to the <a class="ulink"
 							href="http://www.w3.org/TR/wai-aria/roles#role_definitions"
@@ -223,8 +223,8 @@
 					order in which all elements are traversed (i.e., it improves keyboard
 					accessibility). It is critical that you add the attribute to your custom
 					controls, otherwise readers won’t be able to navigate to them.</p>
-				<aside class="note" title="Note">
-					<h3 class="title">Note</h3>
+				<aside class="note">
+					<h4 class="title">Note</h4>
 					<p>What elements a reader can access by the keyboard by default is reading
 						system-dependent, but typically only links, form elements, and multimedia
 						and other interactive elements receive focus by default. Keep this in mind
@@ -259,8 +259,8 @@
 						>div</code> would be script-enabled. This would allow the reader to quickly
 					skip past the control set if they aren’t interested in what it does (otherwise
 					they would have to tab through every control inside it).</p>
-				<aside class="note" title="Note">
-					<h3 class="title">Note</h3>
+				<aside class="note">
+					<h4 class="title">Note</h4>
 					<p>See the HTML5 specification for more information on <a class="ulink"
 							href="http://dev.w3.org/html5/spec/Overview.html#attr-tabindex"
 							target="_top">how this attribute works</a>.</p>
@@ -292,7 +292,7 @@
 					scenarios to help discover these issues than to hope you’ve thought of
 					everything.</p>
 			</section>
-			<section class="sect2" title="Forms">
+			<section class="sect2">
 				<h3 class="title" id="_forms">Forms</h3>
 				<p>Having covered how to create custom controls, we’ll now turn to forms, which are
 					another common problem area ARIA helps address. To repeat myself for a moment,
@@ -417,7 +417,7 @@ and containing only alphanumeric characters"
 					forget that WAI-ARIA exists and has a number of useful properties and states
 					that can enhance your forms to make them more accessible.</p>
 			</section>
-			<section class="sect2" title="Live Regions">
+			<section class="sect2">
 				<h3 class="title" id="_live_regions">Live Regions</h3>
 				<p>Although manipulating the prose in your ebook by script is forbidden, it doesn’t
 					mean you can’t dynamically insert or modify any text. Automatically displaying
@@ -510,8 +510,8 @@ and containing only alphanumeric characters"
 					changes you make to the content. It’s not a complicated process, but you need to
 					remember to ensure that you set these regions otherwise a segment of your
 					readers will not get your updates.</p>
-				<aside class="note" title="Note">
-					<h3 class="title">Note</h3>
+				<aside class="note">
+					<h4 class="title">Note</h4>
 					<p>My hope is these sections have given you an easy introduction to ARIA and the
 						features it provides to make EPUB content accessible</p>
 					<p>For additional information, some good starting points include: the coverage

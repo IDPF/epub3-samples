@@ -18,7 +18,7 @@
 			hreflang="fr" />
 	</head>
 	<body>
-		<section class="sect1" title="Tell It Like It Is: Text-to-Speech (TTS)">
+		<section class="sect1">
 			<h2 class="title" id="_tell_it_like_it_is_text_to_speech_tts">Tell It Like It Is: Text-to-Speech (TTS)</h2>
 			<p>An alternative (and complement) to human narration, and the associated costs of
 				creating and distributing it, is speech synthesis—when done right, that is. The mere
@@ -104,7 +104,7 @@
 				production: PLS lexicon files, SSML markup, and CSS3 Speech style sheets. We’ll go
 				into each of these in turn and explore how you can now combine them to optimize the
 				quality of your ebooks.</p>
-			<section class="sect2" title="PLS Lexicons">
+			<section class="sect2">
 				<h3 class="title" id="_pls_lexicons">PLS Lexicons</h3>
 				<p>The first of the new synthetic speech enhancement layers we’ll look at is PLS
 					files, which are xml lexicon files that conform to the <a class="ulink"
@@ -124,8 +124,8 @@
 					pronunciation you deem the most commonly used in your PLS file, as it may be the
 					only case in your ebook(s). It also ensures that you know how the heteronym will
 					always be pronounced by default, to remove the element of chance.</p>
-				<aside class="note" title="Note">
-					<h3 class="title">Note</h3>
+				<aside class="note">
+					<h4 class="title">Note</h4>
 					<p>The PLS specification does define a role attribute to enable
 						context-dependent pronunciations (e.g., to differentiate the pronunciation
 						of a word when used as a verb or noun), but support for it is not widespread
@@ -150,8 +150,8 @@
 					attribute on the root <code class="literal">lexicon</code> element defines the
 					phonetic alphabet we’re going to use to write our pronunciations. In this case,
 					I’m indicating that I’m going to write them using X-SAMPA.</p>
-				<aside class="note" title="Note">
-					<h3 class="title">Note</h3>
+				<aside class="note">
+					<h4 class="title">Note</h4>
 					<p>X-SAMPA is the Extended Speech Assessment Methods Phonetic Alphabet. Being an
 						ASCII-based phonetic alphabet, I’ve chosen to use it here only because it is
 						more easily writable (by mere mortals like this author) than the
@@ -293,7 +293,7 @@
 				<p>Now that we know how to globally define pronunciation rules, let’s turn to how we
 					can override and/or define behavior at the markup level.</p>
 			</section>
-			<section class="sect2" title="SSML">
+			<section class="sect2">
 				<h3 class="title" id="_ssml">SSML</h3>
 				<p>Although PLS files are a great way to globally set the pronunciation of words,
 					their primary failing is that they aren’t a lot of help where context matters in
@@ -363,8 +363,8 @@
 					voice the provided pronunciations instead of applying its own rules. In other
 					words, no more ambiguity and no more rendering problem; it really is that
 					simple.</p>
-				<aside class="note" title="Note">
-					<h3 class="title">Note</h3>
+				<aside class="note">
+					<h4 class="title">Note</h4>
 					<p>The second <code class="literal">ssml:ph</code> attribute includes an
 						&amp;amp; entity as the actual X-SAMPA spelling is: <span class="spell">b&amp;s</span>. Ampersands are
 						special characters in XHTML that denote the start of a character entity, so
@@ -421,8 +421,8 @@
     The guitarist was playing a bass that was shaped like a
     &lt;span ssml:ph="b&amp;amp;s"&gt;<span ssml:ph="b&amp;s">bass</span>&lt;/span&gt;.
 &lt;/p&gt;</pre>
-				<aside class="note" title="Note">
-					<h3 class="title">Note</h3>
+				<aside class="note">
+					<h4 class="title">Note</h4>
 					<p>If you’re planning to share content across ebooks or across content files
 						within one, it’s better to keep the attributes paired so that there is no
 						confusion about which alphabet was used to define the pronunciation. It’s
@@ -489,7 +489,7 @@
 					opinion, but it may make more sense to internal production to only use a single
 					technology and/or support for PLS may not prove universal (it’s too early to
 					know yet).</p></section>
-			<section class="sect2" title="CSS3 Speech">
+			<section class="sect2">
 				<h3 class="title" id="_css3_speech">CSS3 Speech</h3>
 				<p>You might be thinking the global definition power of PLS lexicons combined with
 					the granular override abilities of SSML might be sufficient to cover all cases,
@@ -515,8 +515,8 @@
 }</pre>
 				<p>It’s no longer left to the rendering engine to determine whether the acronym is
 					“wordy” enough to attempt to voice as a word now.</p>
-				<aside class="note" title="Note">
-					<h3 class="title">Note</h3>
+				<aside class="note">
+					<h4 class="title">Note</h4>
 					<p>Note that the properties are all prefixed with “-epub-” because the Speech
 						module was not a recommendation at the time that EPUB 3 was finalized. You
 						must use this prefix until the Speech module is finalized and reading
@@ -633,8 +633,8 @@
 					whatever voice it has available, but this property gives you the ability to be
 					more creative with your text-to-speech renderings for those systems that do
 					provide better support.</p>
-				<aside class="note" title="Note">
-					<h3 class="title">Note</h3>
+				<aside class="note">
+					<h4 class="title">Note</h4>
 					<p>The CSS3 Speech module contains more properties than I’ve covered here, but
 						reading systems are only required to implement the limited set of features
 						described in this section. You may use the additional properties the module

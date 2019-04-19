@@ -127,8 +127,8 @@ h3 {
 }
 
 h4 {
-  font-size: bold;
-  font-weight: 1em;
+  font-size: 1em;
+  font-weight: bold;
   font-family: "Free Sans Bold", sans-serif;
   color: #555;
   margin: 9px 0 !important;

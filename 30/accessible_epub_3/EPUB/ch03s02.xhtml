@@ -6,7 +6,7 @@
 		<link rel="stylesheet" type="text/css" href="css/epub.css" />
 	</head>
 	<body>
-		<section class="sect1" title="Talk to Me: Media Overlays">
+		<section class="sect1">
 			<h2 class="title" id="_talk_to_me_media_overlays">Talk to Me: Media Overlays</h2>
 			<p>When you watch words get highlighted in your reading system as a narrator speaks, the
 				term <em>media overlay</em> probably doesn’t immediately jump to mind as the best
@@ -59,7 +59,7 @@
 				expressed using a subset of SMIL that we’ll cover as we move along, combined with
 				the <code class="literal">epub:type</code> attribute we ran into earlier for
 				semantic inflection.</p>
-			<aside class="note" title="Note">
+			<aside class="note">
 				<h3 class="title">Note</h3>
 				<p>SMIL (pronounced “smile”) is the shorthand way of referring to the Synchronized
 					Multimedia Integration Language. For more information on this technology, see <a
@@ -81,7 +81,7 @@
 			<p>This process of playback and resynchronization continues over and over until you
 				reach the end of the book, giving the appearance to the reader that their system has
 				come alive and is guiding them through it.</p>
-			<aside class="note" title="Note">
+			<aside class="note">
 				<h3 class="title">Note</h3>
 				<p>This portrayal is intentionally simple. In practice, overlay synchronization
 					points may, for example, omit an audio reference when the reading system is
@@ -110,7 +110,7 @@
 			<p>Let’s turn to the practical construction of an overlay to discover why the complexity
 				increases by level, though. Understanding the issues will give better insight into
 				which model you ultimately decide to use.</p>
-			<section class="sect2" title="Building an Overlay">
+			<section class="sect2">
 				<h3 class="title" id="_building_an_overlay">Building an Overlay</h3>
 				<p>Every overlay document begins with root <code class="literal">smil</code> element
 					and a <code class="literal">body</code>, as exemplified in the following
@@ -301,8 +301,8 @@
 					narrate and synchronize at the word level, however, is a tricky process to
 					perform effectively, as people naturally talk more fluidly than any process can
 					keep up with, even if two people are involved.</p>
-				<aside class="note" title="Note">
-					<h3 class="title">Note</h3>
+				<aside class="note">
+					<h4 class="title">Note</h4>
 					<p>The real-world experience I describe here comes from the creation of DAISY
 						talking books, to be clear. Tools for the similar production of EPUB 3
 						overlays will undoubtedly appear in time, as well, but as of writing are in
@@ -317,8 +317,8 @@
 					is on screen at any given time).</p>
 				<p>We’re not completely done yet, though. There are a few quick details to run
 					through in order to now include this overlay in our EPUB.</p>
-				<aside class="note" title="Note">
-					<h3 class="title">Note</h3>
+				<aside class="note">
+					<h4 class="title">Note</h4>
 					<p>The following instructions assume a basic level of familiarity with EPUB
 						publication files. Refer to the <a class="ulink"
 							href="http://idpf.org/epub/30/spec/epub30-publications.html"
@@ -368,7 +368,7 @@
 }</pre>
 				<p>And that’s the long and short of creating overlays.</p>
 			</section>
-			<section class="sect2" title="Structural Considerations">
+			<section class="sect2">
 				<h3 class="title" id="_structural_considerations">Structural Considerations</h3>
 				<p>I briefly touched on the need to escape nested structures, and skip unwanted
 					ones, but let’s go back to this functionality as a first best practice, as it is

@@ -6,10 +6,8 @@
 		<link rel="stylesheet" type="text/css" href="css/epub.css" />
 	</head>
 	<body>
-		<section class="chapter"
-			title="Chapter 2. Building a Better EPUB: Fundamental Accessibility" epub:type="chapter"
-			id="building_a_better_epub">
-			<h2 class="title">Chapter 2. Building a Better EPUB: Fundamental Accessibility</h2>
+		<section class="chapter" epub:type="chapter" role="doc-chapter" aria-labelledby="c2_h" id="building_a_better_epub">
+			<h2 id="c2_h" class="title">Chapter 2. Building a Better EPUB: Fundamental Accessibility</h2>
 			<p>This guide takes a slightly different approach to accessibility because of the
 				feature-rich nature of EPUB 3. Instead of grouping all the practices together under
 				a single rubric of essentiality, I’m going to instead take a two-tier approach to
@@ -20,7 +18,7 @@
 			<p>I’m going to start with a section on the fundamentals of accessible content,
 				naturally enough, because if you get your foundation wrong, everything else degrades
 				along with it.</p>
-			<section class="sect1" title="A Solid Foundation: Structure and Semantics">
+			<section class="sect1">
 				<h2 class="title" id="_a_solid_foundation_structure_and_semantics">A Solid
 					Foundation: Structure and Semantics</h2>
 				<p>The way to begin a discussion on the importance of structure and semantics is not
@@ -117,7 +115,7 @@
 				<p>With that bit of high-level knowledge under our belts, let’s now turn to how the
 					two work together in practice in EPUB 3 to make content richer and more
 					accessible.</p>
-				<section class="sect2" title="Data Integrity">
+				<section class="sect2">
 					<h3 class="title" id="_data_integrity">Data Integrity</h3>
 					<p>The most important rule to remember when structuring your content is to use
 						the right element for the right job. It seems like an obvious statement, but
@@ -183,8 +181,8 @@
 						The ability to skip structures and escape from them starts with meaningfully
 						tagged data. The ability to move through a document without going to a table
 						of contents starts with meaningfully tagged data.</p>
-					<aside class="note" title="Note">
-						<h3 class="title">Note</h3>
+					<aside class="note">
+						<h4 class="title">Note</h4>
 						<p>Skipping and escaping are terms that will come up repeatedly in this
 							guide. <em>Skipping</em>, as you might expect, is the ability to ignore
 							elements completely, to skip by them. Accessible reading systems
@@ -206,7 +204,7 @@
 						use it to create other outputs. Start making bad data now and expect to be
 						paying for your mistakes later.</p>
 				</section>
-				<section class="sect2" title="Separation of Style">
+				<section class="sect2">
 					<h3 class="title" id="_separation_of_style">Separation of Style</h3>
 					<p>Some old lessons have to be continuously relearned and reinforced, and not
 						mixing content and style is a familiar friend to revisit whenever talking
@@ -252,7 +250,7 @@
 						side, anyway, and this simple standard practice nets you an accessibility
 						benefit.</p>
 				</section>
-				<section class="sect2" title="Semantic Inflection">
+				<section class="sect2">
 					<h3 class="title" id="_semantic_inflection">Semantic Inflection</h3>
 					<p>I’m not going to rehash the reasons for semantic markup again, but I
 						intentionally neglected getting into the specifics of how they’re added in
@@ -315,7 +313,7 @@
 						you could provide fast term lookups. The easier you make it for machines to
 						analyze and process your data, the more valuable it becomes.</p>
 				</section>
-				<section class="sect2" title="Language">
+				<section class="sect2">
 					<h3 class="title" id="_language">Language</h3>
 					<p>Although the global language for the publication is set in the EPUB package
 						file metadata, it’s still a good practice to specify the language in each of
@@ -350,7 +348,7 @@
 						the proper lexicon files, as we’ll return to in more detail in the
 						text-to-speech section.</p>
 				</section>
-				<section class="sect2" title="Logical Reading Order">
+				<section class="sect2">
 					<h3 class="title" id="_logical_reading_order">Logical Reading Order</h3>
 					<p>Although you’ll hear that all EPUB 3s have a default reading order, it’s not
 						necessarily the same thing as the logical reading order, or primary
@@ -421,7 +419,7 @@
 						given structure. Each of the semantics defined in this vocabulary indicates
 						what HTML element(s) it is intended to be used in conjunction with.</p>
 				</section>
-				<section class="sect2" title="Sections and Headings">
+				<section class="sect2">
 					<h3 class="title" id="_sections_and_headings">Sections and Headings</h3>
 					<p>As I touched on in the introduction to this section, always group related
 						content that is structurally significant in <code class="literal"
@@ -489,8 +487,8 @@
 							target="_top">construction of this outline</a> is defined in HTML5).
 						There is only limited support for this method of navigation at this time,
 						however.</p>
-					<aside class="note" title="Note">
-						<h3 class="title">Note</h3>
+					<aside class="note">
+						<h4 class="title">Note</h4>
 						<p>It’s also worth briefly noting that the <code class="literal"
 								>hgroup</code> element should probably only be used judiciously, if
 							at all, for title and subtitle grouping at this time. The element is not
@@ -519,7 +517,7 @@
 						confusion for someone trying to piece back together what heading(s) they’ve
 						actually run into.</p>
 				</section>
-				<section class="sect2" title="Context Changes">
+				<section class="sect2">
 					<h3 class="title" id="_context_changes">Context Changes</h3>
 					<p>A nasty side-effect of current print-based export processes is that changes
 						in context are visually styled either using CSS and/or with images. When you
@@ -558,7 +556,7 @@
 					<p>Styling the <code class="literal">hr</code> element ensures that the context
 						change isn’t lost in the rush to be visually appealing.</p>
 				</section>
-				<section class="sect2" title="Lists">
+				<section class="sect2">
 					<h3 class="title" id="_lists">Lists</h3>
 					<p>You’d typically not expect to have to hear the advice that you should use
 						lists for sets of related items, but rely too heavily on print tools to
@@ -594,7 +592,7 @@
 					<p>Lists have these semantics for good purpose, so don’t use CSS to play visual
 						games with them.</p>
 				</section>
-				<section class="sect2" title="Tables">
+				<section class="sect2">
 					<h3 class="title" id="_tables">Tables</h3>
 					<p>The reflowable, paginated nature of ebook reading has fortunately kept tables
 						from being used for presentational purposes in ebooks. In theory, this
@@ -745,7 +743,7 @@
 						not prove a great solution in the long run, but until the landscape settles
 						it’s the best on offer.</p>
 				</section>
-				<section class="sect2" title="Figures">
+				<section class="sect2">
 					<h3 class="title" id="_figures">Figures</h3>
 					<p>Coming up for a quick breath of fresh air before descending into another
 						accessibility attribute pain point, HTML5 introduces the handy new <code
@@ -767,7 +765,7 @@
 						alternative is semantically meaningless <code class="literal">div</code>
 						elements.</p>
 				</section>
-				<section class="sect2" title="Images">
+				<section class="sect2">
 					<h3 class="title" id="_images">Images</h3>
 					<p>Images present a challenge for a variety of disabilities, and the means of
 						handling them are not new, but HTML5 has added a new barrier in taking away
@@ -838,7 +836,7 @@
 						systems and assistive technologies to skip readers past them without
 						interrupting their reading experience.</p>
 				</section>
-				<section class="sect2" title="SVG">
+				<section class="sect2">
 					<h3 class="title" id="_svg">SVG</h3>
 					<p>Rounding out the tour of image functionality is SVG. It comes up for debate
 						every so often just how accessible SVG really is, and while you can argue
@@ -876,7 +874,7 @@
 						the richness and complexity of your content, in which case fallback text
 						serializations should be considered.</p>
 				</section>
-				<section class="sect2" title="MathML">
+				<section class="sect2">
 					<h3 class="title" id="_mathml">MathML</h3>
 					<p>Why is MathML important for accessibility? Consider the following simple
 						description of an equation: the square root of a over b. If you hastily
@@ -912,7 +910,7 @@
         &lt;m:mi&gt;b&lt;/m:mi&gt;
     &lt;/m:mfrac&gt;
 &lt;/m:math&gt;</pre>
-					<aside class="note" title="Note">
+					<aside class="note">
 						<h3 class="title">Note</h3>
 						<p>The preceding description was written in MathSpeak. For more information,
 							see the <a class="ulink" href="http://www.gh-mathspeak.com/"
@@ -941,7 +939,7 @@
 						entire equation. This element is required in order for the addition of the
 						annotation-xml element to be valid.</p>
 				</section>
-				<section class="sect2" title="Footnotes">
+				<section class="sect2">
 					<h3 class="title" id="_footnotes">Footnotes</h3>
 					<p>Footnotes present another challenge to reading enjoyment. Prior to EPUB 3,
 						note references could not be easily distinguished from regular hyperlinks,
@@ -979,7 +977,7 @@
 						the narrative prose. A configurable reading system that lets you decide what
 						content you want to see is within reach with semantically meaningful
 						data.</p></section>
-				<section class="sect2" title="Page Numbering">
+				<section class="sect2">
 					<h3 class="title" id="_page_numbering">Page Numbering</h3>
 					<p>It might seem odd to talk about page numbering in a digital format guide, but
 						ebooks have been used by students the world over for more than a decade to
