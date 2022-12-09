@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package xmlns="http://www.idpf.org/2007/opf" version="3.0" unique-identifier="uid">
+    <metadata xmlns:dc="http://purl.org/dc/elements/1.1/">
+        <dc:identifier id="uid">croneri.tax_reporter</dc:identifier>
+        <dc:title>Tax Reporter</dc:title>
+        <dc:creator>Croner-i</dc:creator>
+        <dc:language>en</dc:language>
+        <meta property="dcterms:modified">2022-12-08T14:34:35Z</meta>
+    </metadata>
+    <manifest>
+        <item href="xhtml/topicindex.xhtml" id="topicindex" media-type="application/xhtml+xml"/>
+        <item href="xhtml/idxa-toc.xhtml" id="idxa" media-type="application/xhtml+xml"/>
+        <item href="xhtml/toc-nav.xhtml" id="idxa-toc" media-type="application/xhtml+xml" properties="nav"/>
+        <item href="xhtml/idxabatement.xhtml" id="idxabatement"  media-type="application/xhtml+xml"/>
+        <item href="xhtml/idxabnormalpaypractices.xhtml" id="idxabnormalpaypractices" media-type="application/xhtml+xml"/>
+        <item href="xhtml/idxabsencefromtheuk.xhtml" id="idxabsencefromtheuk" media-type="application/xhtml+xml"/>
+    </manifest>
+    <spine>
+        <itemref idref="topicindex"/>
+        <itemref idref="idxa" linear="no"/>
+        <itemref idref="idxabatement"/>
+        <itemref idref="idxabnormalpaypractices"/>
+        <itemref idref="idxabsencefromtheuk"/>
+    </spine>
+</package>
