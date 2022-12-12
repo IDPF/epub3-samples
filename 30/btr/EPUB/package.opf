@@ -14,6 +14,18 @@
         <item href="xhtml/idxabatement.xhtml" id="idxabatement"  media-type="application/xhtml+xml"/>
         <item href="xhtml/idxabnormalpaypractices.xhtml" id="idxabnormalpaypractices" media-type="application/xhtml+xml"/>
         <item href="xhtml/idxabsencefromtheuk.xhtml" id="idxabsencefromtheuk" media-type="application/xhtml+xml"/>
+        <item href="xhtml/645-600.xhtml" id="r645-600" media-type="application/xhtml+xml"/>
+        <item href="xhtml/630-850.xhtml" id="r630-850" media-type="application/xhtml+xml"/>
+        <item href="xhtml/645-150.xhtml" id="r645-150" media-type="application/xhtml+xml"/>
+        <item href="xhtml/646-600.xhtml" id="r646-600" media-type="application/xhtml+xml"/>
+        <item href="xhtml/inheritancetax.xhtml" id="inheritancetax" media-type="application/xhtml+xml"/>
+        <item href="xhtml/624-tran-1.xhtml" id="r624tran1" media-type="application/xhtml+xml"/>
+        <item href="xhtml/624-tran-13.xhtml" id="r624tran13" media-type="application/xhtml+xml"/>
+        <item href="xhtml/624-tran-19.xhtml" id="r624tran19" media-type="application/xhtml+xml"/>
+        <item href="xhtml/ihta84-iht-s-37.xhtml" id="ihta84-iht-s-37" media-type="application/xhtml+xml"/>
+        <item href="xhtml/ihta84-iht-s-38.xhtml" id="ihta84-iht-s-38" media-type="application/xhtml+xml"/>
+        <item href="xhtml/631-000.xhtml" id="r631-000" media-type="application/xhtml+xml"/>
+        <item href="xhtml/ihta84-iht-s-40.xhtml" id="ihta84-iht-s-40" media-type="application/xhtml+xml"/>
     </manifest>
     <spine>
         <itemref idref="topicindex"/>
@@ -21,5 +33,17 @@
         <itemref idref="idxabatement"/>
         <itemref idref="idxabnormalpaypractices"/>
         <itemref idref="idxabsencefromtheuk"/>
+        <itemref idref="r645-600"/>
+        <itemref idref="r630-850"/>
+        <itemref idref="r645-150"/>
+        <itemref idref="r646-600"/>
+        <itemref idref="inheritancetax"/>
+        <itemref idref="r624tran1"/>
+        <itemref idref="r624tran13"/>
+        <itemref idref="r624tran19"/>
+        <itemref idref="ihta84-iht-s-37"/>
+        <itemref idref="ihta84-iht-s-38"/>
+        <itemref idref="r631-000"/>
+        <itemref idref="ihta84-iht-s-40"/>
     </spine>
 </package>
