@@ -17,7 +17,7 @@
 <item id="cover" href="cover.xhtml" media-type="application/xhtml+xml"/>
 <item id="cover-image" properties="cover-image" href="images/9781573878296.jpg" media-type="image/jpeg"/>
 <item id="style" href="css/stylesheet.css" media-type="text/css"/>
-<item id="ncx" properties="nav" href="ncx.xhtml" media-type="application/xhtml+xml"/>
+<item id="ncx" properties="nav" href="nav.xhtml" media-type="application/xhtml+xml"/>
 <item id="ncx1" href="toc.ncx" media-type="application/x-dtbncx+xml"/>
 <item id="page-template" href="css/page-template.xpgt" media-type="application/adobe-page-template+xml"/>
 <item id="copyright" href="copyright.xhtml" media-type="application/xhtml+xml"/>
@@ -52,18 +52,18 @@
 <item id="author_bio001" href="author_bio001.xhtml" media-type="application/xhtml+xml"/>
 <item id="index1" href="index1.xhtml" media-type="application/xhtml+xml"/>
 <item id="index2" href="index2.xhtml" media-type="application/xhtml+xml"/>
-<item id="Times_New_Roman" href="fonts/times.ttf" media-type="application/x-font-ttf"/>
-<item id="Times_New_Roman_bold" href="fonts/timesbd.ttf" media-type="application/x-font-ttf"/>
-<item id="Times_New_Roman_italic" href="fonts/timesi.ttf" media-type="application/x-font-ttf"/>
-<item id="Times_New_Roman_bolditalic" href="fonts/timesbi.ttf" media-type="application/x-font-ttf"/>
-<item id="HelveticaLTStd-Bold" href="fonts/HelveticaLTStd-Bold.otf" media-type="application/x-font-otf"/>
-<item id="HelveticaLTStd-Obl" href="fonts/HelveticaLTStd-Obl.otf" media-type="application/x-font-otf"/>
-<item id="HelveticaLTStd-Roman" href="fonts/HelveticaLTStd-Roman.otf" media-type="application/x-font-otf"/>
-<item id="HelveticaLTStd-BoldObl" href="fonts/HelveticaLTStd-BoldObl.otf" media-type="application/x-font-otf"/>
-<item id="Century_Gothic" href="fonts/GOTHIC.TTF" media-type="application/x-font-otf"/>
-<item id="Century_Gothic-Obl" href="fonts/GOTHICI.TTF" media-type="application/x-font-otf"/>
-<item id="Century_Gothic-Roman" href="fonts/GOTHICBI.TTF" media-type="application/x-font-otf"/>
-<item id="Century_GothicObl" href="fonts/GOTHICB.TTF" media-type="application/x-font-otf"/>
+<item id="Times_New_Roman" href="fonts/times.ttf" media-type="font/ttf"/>
+<item id="Times_New_Roman_bold" href="fonts/timesbd.ttf" media-type="font/ttf"/>
+<item id="Times_New_Roman_italic" href="fonts/timesi.ttf" media-type="font/ttf"/>
+<item id="Times_New_Roman_bolditalic" href="fonts/timesbi.ttf" media-type="font/ttf"/>
+<item id="HelveticaLTStd-Bold" href="fonts/HelveticaLTStd-Bold.otf" media-type="font/otf"/>
+<item id="HelveticaLTStd-Obl" href="fonts/HelveticaLTStd-Obl.otf" media-type="font/otf"/>
+<item id="HelveticaLTStd-Roman" href="fonts/HelveticaLTStd-Roman.otf" media-type="font/otf"/>
+<item id="HelveticaLTStd-BoldObl" href="fonts/HelveticaLTStd-BoldObl.otf" media-type="font/otf"/>
+<item id="Century_Gothic" href="fonts/GOTHIC.TTF" media-type="font/otf"/>
+<item id="Century_Gothic-Obl" href="fonts/GOTHICI.TTF" media-type="font/otf"/>
+<item id="Century_Gothic-Roman" href="fonts/GOTHICBI.TTF" media-type="font/otf"/>
+<item id="Century_GothicObl" href="fonts/GOTHICB.TTF" media-type="font/otf"/>
 </manifest>
 
 <spine toc="ncx1">

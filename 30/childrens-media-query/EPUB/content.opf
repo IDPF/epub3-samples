@@ -40,8 +40,8 @@
 
     <item href="childrens-book-style.css" id="css1" media-type="text/css"/>
     <item href="small-screen.css" id="css2" media-type="text/css"/>
-    <item href="childrens-book-flowers.jpg" id="image1" media-type="text/jpeg"/>
-    <item href="childrens-book-swans.jpg" id="image2" media-type="text/jpeg"/>
+    <item href="childrens-book-flowers.jpg" id="image1" media-type="image/jpeg"/>
+    <item href="childrens-book-swans.jpg" id="image2" media-type="image/jpeg"/>
     <item href="childrens-book-page.xhtml" id="page1" media-type="application/xhtml+xml"/>
     <item href="toc.ncx" id="ncx" media-type="application/x-dtbncx+xml"/>
     <item id="toc" properties="nav" href="toc.xhtml" media-type="application/xhtml+xml"/>

@@ -2,7 +2,7 @@
 <!-- For compatibility with ePub2 Player -->
 <ncx:ncx xmlns:ncx="http://www.daisy.org/z3986/2005/ncx/" version="2005-1">
   <ncx:head>
-    <ncx:meta name="dtb:uid" content="http://www.aozora.gr.jp/cards/000148/card776.html"/>
+  	<ncx:meta name="dtb:uid" content="urn:uuid:f86268a4-683a-4bba-acf1-f78e8e39e580"/>
     <ncx:meta name="dtb:depth" content="-1"/>
     <ncx:meta name="dtb:totalPageCount" content="0"/>
     <ncx:meta name="dtb:maxPageNumber" content="0"/>

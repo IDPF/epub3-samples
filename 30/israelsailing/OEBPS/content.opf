@@ -29,11 +29,11 @@
 <item id="ncx" href="toc.ncx" media-type="application/x-dtbncx+xml"/>
 <item id="toc" properties="nav" href="toc.xhtml" media-type="application/xhtml+xml" />
 <item id="css" href="default.css" media-type="text/css"/>
-<item id="DejaVuSans" href="Fonts/DejaVuSans.ttf" media-type="application/x-font-ttf" />
-<item id="DejaVuSans-Oblique" href="Fonts/DejaVuSans-Oblique.ttf" media-type="application/x-font-ttf" />
-<item id="DejaVuSans-Bold" href="Fonts/DejaVuSans-Bold.ttf" media-type="application/x-font-ttf" />
-<item id="DejaVuSans-BoldOblique" href="Fonts/DejaVuSans-BoldOblique.ttf" media-type="application/x-font-ttf" />
-<item id="pdheb" href="Fonts/pdheb.ttf" media-type="application/x-font-ttf" />
+<item id="DejaVuSans" href="Fonts/DejaVuSans.ttf" media-type="font/ttf" />
+<item id="DejaVuSans-Oblique" href="Fonts/DejaVuSans-Oblique.ttf" media-type="font/ttf" />
+<item id="DejaVuSans-Bold" href="Fonts/DejaVuSans-Bold.ttf" media-type="font/ttf" />
+<item id="DejaVuSans-BoldOblique" href="Fonts/DejaVuSans-BoldOblique.ttf" media-type="font/ttf" />
+<item id="pdheb" href="Fonts/pdheb.ttf" media-type="font/ttf" />
 <item id="cover-image" href="israelsailing.jpg" media-type="image/jpeg" />
 <item id="licenselogo" href="logo_ccbysa.png" media-type="image/png" />
 <item id="cover" href="cover.xhtml" media-type="application/xhtml+xml"/>
