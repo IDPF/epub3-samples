@@ -74,7 +74,7 @@ span.c8 {
     margin-left: 1em
 }
 
-span[epub|type~='pagebreak'] {
+span[role~="doc-pagebreak"] {
     font-size: smaller;
     color: rgb(180,180,180);
 	text-align: center;
